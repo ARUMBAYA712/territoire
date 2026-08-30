@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page témoin — chaîne de déploiement</title>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#EDF0EA;color:#16211C;
+       margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  main{background:#fff;border:1px solid #D5DCD3;border-radius:3px;padding:32px;max-width:520px}
+  h1{font-size:20px;margin:0 0 4px}
+  p{font-size:14px;line-height:1.55;color:#5D6E64;margin:0 0 16px}
+  .v{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:32px;color:#2C6B4C;margin:20px 0}
+  ol{font-size:14px;line-height:1.7;color:#5D6E64;padding-left:20px;margin:0}
+  code{background:#EDF0EA;padding:1px 5px;border-radius:2px;font-size:13px}
+  hr{border:0;border-top:1px solid #D5DCD3;margin:22px 0}
+</style>
+</head>
+<body>
+<main>
+  <h1>La chaîne de déploiement fonctionne</h1>
+  <p>Cette page a été publiée depuis GitHub vers l'hébergement OVH.</p>
+
+  <div class="v">version 1</div>
+
+  <hr>
+
+  <p><strong>Vérifier le déploiement automatique :</strong></p>
+  <ol>
+    <li>Sur GitHub, ouvrez <code>index.html</code> et cliquez sur le crayon.</li>
+    <li>Remplacez <code>version 1</code> par <code>version 2</code>.</li>
+    <li>Enregistrez la modification (bouton <code>Commit changes</code>).</li>
+    <li>Attendez une minute, puis rechargez cette page.</li>
+  </ol>
+
+  <hr>
+  <p>Si le numéro a changé, le webhook est opérationnel et toute la chaîne
+     est validée. S'il n'a pas changé, consultez les informations du dernier
+     déploiement dans l'espace client OVH, onglet Multisite.</p>
+</main>
+</body>
+</html>
