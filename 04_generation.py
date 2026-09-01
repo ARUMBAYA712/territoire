@@ -301,9 +301,14 @@ JS = """
   bulle.setAttribute('aria-hidden', 'true');
   document.body.appendChild(bulle);
 
-  var bloc = document.getElementById('carte-donnees');
-  var couches = bloc ? JSON.parse(bloc.textContent) : null;
-  var active = couches ? couches.defaut : null;
+  var couches = null, active = null;
+  try{
+    var bloc = document.getElementById('carte-donnees');
+    if(bloc){
+      couches = JSON.parse(bloc.textContent);
+      active = couches.defaut;
+    }
+  }catch(err){ couches = null; }
 
   function formeDe(cible){
     return cible.closest ? cible.closest('path') : null;
@@ -328,8 +333,10 @@ JS = """
     for(var i = 0; i < formes.length; i++){
       var f = formes[i];
       var code = f.getAttribute('data-code');
-      f.className.baseVal = f.className.baseVal
-        .replace(/\\s*n[0-4]\\b|\\s*nd\\b/g, '') + ' ' + (c.classes[code] || 'nd');
+      // classList fonctionne sur les éléments SVG ;
+      // className y est en lecture seule, contrairement au HTML.
+      f.classList.remove('n0', 'n1', 'n2', 'n3', 'n4', 'nd');
+      f.classList.add(c.classes[code] || 'nd');
     }
     var u = document.getElementById('carte-unite');
     if(u) u.textContent = c.unite;
@@ -339,7 +346,6 @@ JS = """
   for(var k = 0; k < choix.length; k++){
     choix[k].addEventListener('change', function(){ appliquer(this.value); });
   }
-  if(active) appliquer(active);
 
   carte.addEventListener('mousemove', function(e){
     var forme = formeDe(e.target);
@@ -372,6 +378,9 @@ JS = """
   carte.addEventListener('focusout', function(){
     bulle.className = 'carte-bulle';
   });
+
+  // en dernier : une erreur ici ne doit plus empêcher le survol de fonctionner
+  if(active) appliquer(active);
 })();
 """
 
