@@ -128,6 +128,11 @@ svg.carte a:focus{outline:none}
 svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
   fill-opacity:.85}
 .carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
+.carte-bulle{position:fixed;z-index:50;display:none;pointer-events:none;
+  background:var(--ink);color:var(--surface);font-size:12px;line-height:1.3;
+  padding:4px 9px;border-radius:var(--radius);white-space:nowrap;
+  box-shadow:0 4px 14px rgba(0,0,0,.22)}
+.carte-bulle.on{display:block}
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
@@ -245,6 +250,59 @@ JS = """
     if(!e.target.closest('.find')) boite.className = 'hits';
   });
 })();
+
+// ── Infobulle des cartes ────────────────────────────────────────────
+// L'infobulle native du SVG n'est pas fiable quand la forme est placée
+// dans un lien. On l'affiche donc nous-mêmes. Le <title> reste présent
+// dans le document : il sert de secours et aux lecteurs d'écran.
+(function(){
+  var carte = document.querySelector('svg.carte');
+  if(!carte) return;
+
+  var bulle = document.createElement('div');
+  bulle.className = 'carte-bulle';
+  bulle.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(bulle);
+
+  function nomDe(cible){
+    var forme = cible.closest ? cible.closest('path') : null;
+    if(!forme) return null;
+    var t = forme.querySelector('title');
+    return t ? t.textContent : null;
+  }
+
+  carte.addEventListener('mousemove', function(e){
+    var nom = nomDe(e.target);
+    if(!nom){ bulle.className = 'carte-bulle'; return; }
+    bulle.textContent = nom;
+    bulle.className = 'carte-bulle on';
+    var x = e.clientX + 14, y = e.clientY + 16;
+    var large = bulle.offsetWidth;
+    if(x + large > window.innerWidth - 8) x = e.clientX - large - 14;
+    bulle.style.left = x + 'px';
+    bulle.style.top = y + 'px';
+  });
+
+  carte.addEventListener('mouseleave', function(){
+    bulle.className = 'carte-bulle';
+  });
+
+  // au clavier, le nom s'affiche aussi lors du parcours par tabulation
+  carte.addEventListener('focusin', function(e){
+    var lien = e.target.closest('a');
+    if(!lien) return;
+    var t = lien.querySelector('title');
+    if(!t) return;
+    var r = lien.getBoundingClientRect();
+    bulle.textContent = t.textContent;
+    bulle.className = 'carte-bulle on';
+    bulle.style.left = (r.left + window.scrollX) + 'px';
+    bulle.style.top = (r.bottom + window.scrollY + 6) + 'px';
+  });
+  carte.addEventListener('focusout', function(){
+    bulle.className = 'carte-bulle';
+  });
+})();
 """
 
 # ══════════════════════════════════════════════════════════════════
@@ -353,7 +411,7 @@ def bloc_carte(t, base, adresses):
         if not cible or code == t["code"]:
             return forme
         return (f'<a href="{base}/{cible}" aria-label="{nom}">'
-                f'{forme}</a>')
+                f'<title>{nom}</title>{forme}</a>')
 
     svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
 
