@@ -119,12 +119,14 @@ main .wrap{padding:26px 20px 48px}
   border-radius:var(--radius);padding:16px}
 .carte-bloc .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:10px}
 svg.carte{display:block;width:100%;height:auto;max-height:440px}
+svg.carte a{cursor:pointer}
 svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
-  cursor:help;transition:fill .12s}
-svg.carte .c-voisine:hover{fill:var(--accent-soft);stroke:var(--accent)}
+  transition:fill .12s,stroke .12s}
+svg.carte a:hover .c-voisine,svg.carte a:focus .c-voisine{
+  fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.4}
+svg.carte a:focus{outline:none}
 svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
-  fill-opacity:.85;cursor:help}
-svg.carte .c-ici:hover{fill-opacity:1}
+  fill-opacity:.85}
 .carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
@@ -325,20 +327,41 @@ def bloc_rattachements(d, base, adresses):
     </section>"""
 
 
-def bloc_carte(t):
+MOTIF_FORME = re.compile(
+    r'<path class="(c-voisine|c-ici)" data-code="([^"]+)" '
+    r'd="([^"]*)"><title>([^<]*)</title></path>')
+
+
+def bloc_carte(t, base, adresses):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
     Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
-    ainsi des couleurs du thème, et reste donc pilotable depuis style.css.
+    ainsi des couleurs du thème, et ses formes peuvent devenir des liens.
+
+    Chaque commune voisine renvoie vers sa propre fiche ; la commune
+    courante reste inerte, puisqu'on y est déjà.
     """
     fichier = RACINE / "assets" / "cartes" / t["niveau"] / f"{t['code']}.svg"
     if not fichier.exists():
         return ""
-    svg = fichier.read_text(encoding="utf-8")
-    legende = ("Situation dans le territoire — survolez une commune "
-               "pour afficher son nom" if t["niveau"] == "commune"
-               else "Communes membres — survolez une commune "
-                    "pour afficher son nom")
+
+    def relier(m):
+        classe, code, trace, nom = m.groups()
+        forme = (f'<path class="{classe}" d="{trace}">'
+                 f'<title>{nom}</title></path>')
+        cible = adresses.get(("commune", code))
+        if not cible or code == t["code"]:
+            return forme
+        return (f'<a href="{base}/{cible}" aria-label="{nom}">'
+                f'{forme}</a>')
+
+    svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
+
+    legende = ("Situation dans le territoire — cliquez une commune "
+               "pour ouvrir sa fiche" if t["niveau"] == "commune"
+               else "Communes membres — cliquez une commune "
+                    "pour ouvrir sa fiche")
+
     return f"""    <section class="carte-bloc">
       <span class="dsp">Carte</span>
       {svg}
@@ -412,7 +435,7 @@ def page(d, base, canonique, adresses, accueil=False):
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
 {bloc_rattachements(d, base, adresses)}
-{bloc_carte(t)}
+{bloc_carte(t, base, adresses)}
 </div></main>
 
 <footer class="site"><div class="wrap">

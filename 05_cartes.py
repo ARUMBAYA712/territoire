@@ -172,9 +172,9 @@ def echapper(texte):
 def carte(contours, codes_fond, code_evidence, titre):
     """Dessine les communes du fond, celle mise en évidence par-dessus.
 
-    Chaque forme porte son nom dans une balise <title> : le navigateur
-    l'affiche au survol, et les lecteurs d'écran le restituent. Aucun
-    JavaScript n'est nécessaire.
+    Chaque forme porte son nom dans une balise <title> et son code INSEE
+    en attribut. Le générateur de pages s'appuie sur ce code pour
+    transformer les formes en liens vers les fiches correspondantes.
     """
     geometries = [contours[c]["contour"] for c in codes_fond if c in contours]
     if not geometries:
@@ -190,16 +190,16 @@ def carte(contours, codes_fond, code_evidence, titre):
         d = tracer(contours[code]["contour"], projeter, TOLERANCE)
         if d:
             nom = echapper(contours[code]["nom"])
-            fond.append(f'<path class="c-voisine" d="{d}">'
-                        f'<title>{nom}</title></path>')
+            fond.append(f'<path class="c-voisine" data-code="{code}" '
+                        f'd="{d}"><title>{nom}</title></path>')
 
     evidence = ""
     if code_evidence and code_evidence in contours:
         d = tracer(contours[code_evidence]["contour"], projeter, TOLERANCE / 3)
         if d:
             nom = echapper(contours[code_evidence]["nom"])
-            evidence = (f'<path class="c-ici" d="{d}">'
-                        f'<title>{nom}</title></path>')
+            evidence = (f'<path class="c-ici" data-code="{code_evidence}" '
+                        f'd="{d}"><title>{nom}</title></path>')
 
     return (f'<svg class="carte" viewBox="0 0 {LARGEUR} {HAUTEUR}" '
             f'xmlns="http://www.w3.org/2000/svg" role="img" '

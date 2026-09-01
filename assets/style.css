@@ -66,12 +66,14 @@ main .wrap{padding:26px 20px 48px}
   border-radius:var(--radius);padding:16px}
 .carte-bloc .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:10px}
 svg.carte{display:block;width:100%;height:auto;max-height:440px}
+svg.carte a{cursor:pointer}
 svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
-  cursor:help;transition:fill .12s}
-svg.carte .c-voisine:hover{fill:var(--accent-soft);stroke:var(--accent)}
+  transition:fill .12s,stroke .12s}
+svg.carte a:hover .c-voisine,svg.carte a:focus .c-voisine{
+  fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.4}
+svg.carte a:focus{outline:none}
 svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
-  fill-opacity:.85;cursor:help}
-svg.carte .c-ici:hover{fill-opacity:1}
+  fill-opacity:.85}
 .carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
