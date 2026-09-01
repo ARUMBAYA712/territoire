@@ -72,3 +72,89 @@
     if(!e.target.closest('.find')) boite.className = 'hits';
   });
 })();
+
+// ── Infobulle des cartes ────────────────────────────────────────────
+// L'infobulle native du SVG n'est pas fiable quand la forme est placée
+// dans un lien. On l'affiche donc nous-mêmes. Le <title> reste présent
+// dans le document : il sert de secours et aux lecteurs d'écran.
+(function(){
+  var carte = document.querySelector('svg.carte');
+  if(!carte) return;
+
+  var bulle = document.createElement('div');
+  bulle.className = 'carte-bulle';
+  bulle.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(bulle);
+
+  var bloc = document.getElementById('carte-donnees');
+  var couches = bloc ? JSON.parse(bloc.textContent) : null;
+  var active = couches ? couches.defaut : null;
+
+  function formeDe(cible){
+    return cible.closest ? cible.closest('path') : null;
+  }
+
+  function contenu(forme){
+    var t = forme.querySelector('title');
+    var nom = t ? t.textContent : '';
+    if(!couches || !active) return '<b>' + nom + '</b>';
+    var code = forme.getAttribute('data-code');
+    var c = couches.couches[active];
+    var valeur = c.libelles[code] || 'non disponible';
+    return '<b>' + nom + '</b><i>' + c.nom + ' : ' + valeur + '</i>';
+  }
+
+  // Change la donnée représentée : recolore les formes et met à jour l'unité.
+  function appliquer(ident){
+    if(!couches || !couches.couches[ident]) return;
+    active = ident;
+    var c = couches.couches[ident];
+    var formes = carte.querySelectorAll('path[data-code]');
+    for(var i = 0; i < formes.length; i++){
+      var f = formes[i];
+      var code = f.getAttribute('data-code');
+      f.className.baseVal = f.className.baseVal
+        .replace(/\s*n[0-4]\b|\s*nd\b/g, '') + ' ' + (c.classes[code] || 'nd');
+    }
+    var u = document.getElementById('carte-unite');
+    if(u) u.textContent = c.unite;
+  }
+
+  var choix = document.querySelectorAll('.carte-menu input[name="donnee"]');
+  for(var k = 0; k < choix.length; k++){
+    choix[k].addEventListener('change', function(){ appliquer(this.value); });
+  }
+  if(active) appliquer(active);
+
+  carte.addEventListener('mousemove', function(e){
+    var forme = formeDe(e.target);
+    if(!forme){ bulle.className = 'carte-bulle'; return; }
+    bulle.innerHTML = contenu(forme);
+    bulle.className = 'carte-bulle on';
+    var x = e.clientX + 14, y = e.clientY + 16;
+    var large = bulle.offsetWidth;
+    if(x + large > window.innerWidth - 8) x = e.clientX - large - 14;
+    bulle.style.left = x + 'px';
+    bulle.style.top = y + 'px';
+  });
+
+  carte.addEventListener('mouseleave', function(){
+    bulle.className = 'carte-bulle';
+  });
+
+  // au clavier, le nom s'affiche aussi lors du parcours par tabulation
+  carte.addEventListener('focusin', function(e){
+    var lien = e.target.closest('a');
+    if(!lien) return;
+    var forme = lien.querySelector('path');
+    if(!forme) return;
+    var r = lien.getBoundingClientRect();
+    bulle.innerHTML = contenu(forme);
+    bulle.className = 'carte-bulle on';
+    bulle.style.left = (r.left + window.scrollX) + 'px';
+    bulle.style.top = (r.bottom + window.scrollY + 6) + 'px';
+  });
+  carte.addEventListener('focusout', function(){
+    bulle.className = 'carte-bulle';
+  });
+})();
