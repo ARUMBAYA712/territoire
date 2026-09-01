@@ -21,8 +21,10 @@ Utilisation :
 """
 
 import json
+import re
 import shutil
 import sys
+import unicodedata
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -161,23 +163,30 @@ JS = """
   if(!champ) return;
   var index = null;
 
-  fetch(BASE + '/data/publie/v1/index.json')
+  fetch(BASE + '/assets/recherche.json')
     .then(function(r){ return r.json(); })
-    .then(function(d){ index = d.territoires; })
+    .then(function(d){ index = d; })
     .catch(function(){ champ.placeholder = 'Recherche indisponible'; });
+
+  function correspond(t, v){
+    if(t.nom.toLowerCase().indexOf(v) !== -1) return true;
+    if(t.code.indexOf(v) === 0) return true;
+    return (t.codes_postaux || []).some(function(cp){
+      return cp.indexOf(v) === 0;
+    });
+  }
 
   champ.addEventListener('input', function(){
     var v = champ.value.trim().toLowerCase();
     if(!v || !index){ boite.className = 'hits'; return; }
-    var hits = index.filter(function(t){
-      return t.nom.toLowerCase().indexOf(v) !== -1 || t.code.indexOf(v) === 0;
-    }).slice(0, 8);
+    var hits = index.filter(function(t){ return correspond(t, v); }).slice(0, 8);
     boite.innerHTML = hits.length
       ? hits.map(function(t){
-          return '<a href="' + BASE + '/' + t.niveau + '/' + t.code + '/">'
+          var cp = (t.codes_postaux || [])[0] || t.code;
+          return '<a href="' + BASE + '/' + t.url + '">'
             + '<span class="tag">' + t.niveau + '</span>'
             + '<span class="nm">' + t.nom + '</span>'
-            + '<span class="cd">' + t.code + '</span></a>';
+            + '<span class="cd">' + cp + '</span></a>';
         }).join('')
       : '<p class="vide">Aucun territoire ne correspond</p>';
     boite.className = 'hits on';
@@ -189,10 +198,22 @@ JS = """
 })();
 """
 
-
 # ══════════════════════════════════════════════════════════════════
 # GABARIT
 # ══════════════════════════════════════════════════════════════════
+
+def slug(nom):
+    """Transforme un nom de commune en fragment d'adresse lisible.
+
+    « Saint-Antoine-l'Abbaye » devient « saint-antoine-l-abbaye ».
+    Le code INSEE reste en tête de l'adresse : c'est lui qui identifie
+    le territoire de façon stable, le nom n'est là que pour la lisibilité.
+    """
+    texte = unicodedata.normalize("NFD", nom.lower())
+    texte = "".join(c for c in texte if unicodedata.category(c) != "Mn")
+    texte = re.sub(r"[^a-z0-9]+", "-", texte)
+    return texte.strip("-")
+
 
 def nombre(v):
     """Formatage français : espace fine insécable pour les milliers,
@@ -214,12 +235,14 @@ def carte(ident, m):
       </article>"""
 
 
-def lien(r, base):
-    return (f'<a class="chip" href="{base}/{r["niveau"]}/{r["code"]}/">'
-            f'{escape(r["nom"])}</a>')
+def lien(r, base, adresses):
+    cible = adresses.get((r["niveau"], r["code"]))
+    if not cible:
+        return f'<span class="chip">{escape(r["nom"])}</span>'
+    return f'<a class="chip" href="{base}/{cible}">{escape(r["nom"])}</a>' 
 
 
-def bloc_rattachements(d, base):
+def bloc_rattachements(d, base, adresses):
     t, r = d["territoire"], d["rattachements"]
     lignes = []
 
@@ -228,7 +251,7 @@ def bloc_rattachements(d, base):
     connus = [x for x in dessus if x["niveau"] != "departement"]
     if connus:
         lignes.append(f"""      <div class="rung"><span class="lvl">Au-dessus</span>
-        <div class="chips">{''.join(lien(x, base) for x in connus)}</div></div>""")
+        <div class="chips">{''.join(lien(x, base, adresses) for x in connus)}</div></div>""")
 
     lignes.append(f"""      <div class="rung ici"><span class="lvl">Ici</span>
         <div class="chips"><span class="chip now">{escape(t['nom'])}</span></div></div>""")
@@ -236,7 +259,7 @@ def bloc_rattachements(d, base):
     dessous = r.get("en_dessous", [])
     if dessous:
         lignes.append(f"""      <div class="rung"><span class="lvl">Communes</span>
-        <div class="chips">{''.join(lien(x, base) for x in dessous)}</div></div>""")
+        <div class="chips">{''.join(lien(x, base, adresses) for x in dessous)}</div></div>""")
 
     note = ""
     if t["niveau"] == "commune":
@@ -255,7 +278,7 @@ def bloc_rattachements(d, base):
     </section>"""
 
 
-def page(d, base, canonique, accueil=False):
+def page(d, base, canonique, adresses, accueil=False):
     t = d["territoire"]
     niveau = LIBELLE.get(t["niveau"], t["niveau"])
 
@@ -265,8 +288,20 @@ def page(d, base, canonique, accueil=False):
     description = (f"{t['nom']} ({niveau}) : {resume}. "
                    f"Données publiques INSEE et IGN.")
 
-    sous_titre = (f"{t['nombre_communes']} communes · code {t['code']}"
-                  if t.get("nombre_communes") else f"Code INSEE {t['code']}")
+    codes = t.get("codes_postaux") or []
+    if codes:
+        libelle_cp = "Codes postaux" if len(codes) > 1 else "Code postal"
+        sous_titre = (f"<strong>{libelle_cp} {escape(', '.join(codes))}</strong>"
+                      f" · Code INSEE {escape(t['code'])}")
+    elif t.get("nombre_communes"):
+        sous_titre = (f"{t['nombre_communes']} communes"
+                      f" · Code {escape(t['code'])}")
+    else:
+        sous_titre = f"Code INSEE {escape(t['code'])}"
+
+    if codes:
+        description = (f"{t['nom']} ({codes[0]}) : {resume}. "
+                       f"Données publiques INSEE et IGN.")
 
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
 
@@ -292,7 +327,7 @@ def page(d, base, canonique, accueil=False):
 <div class="top"><div class="wrap">
   <a class="logo" href="{base}/">{escape(TITRE_SITE)}</a>
   <div class="find">
-    <input id="q" type="text" placeholder="Rechercher une commune…"
+    <input id="q" type="text" placeholder="Commune, code postal…"
            autocomplete="off" aria-label="Rechercher un territoire">
     <div class="hits" id="hits"></div>
   </div>
@@ -301,14 +336,14 @@ def page(d, base, canonique, accueil=False):
 <div class="terr"><div class="wrap">
   <div class="kind dsp">{escape(niveau)}</div>
   <h1>{escape(t['nom'])}</h1>
-  <div class="sub">{escape(sous_titre)}</div>
+  <div class="sub">{sous_titre}</div>
 </div></div>
 
 <main><div class="wrap">
     <div class="cards">
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
-{bloc_rattachements(d, base)}
+{bloc_rattachements(d, base, adresses)}
 </div></main>
 
 <footer class="site"><div class="wrap">
@@ -346,33 +381,71 @@ def main():
     (ASSETS / "style.css").write_text(CSS.strip(), encoding="utf-8")
     (ASSETS / "recherche.js").write_text(JS.strip(), encoding="utf-8")
 
-    adresses, produites = [], 0
-
+    # ── premier passage : table des adresses ─────────────────────
+    # Le nom porté par un territoire dans ses propres données fait foi.
+    # Les rattachements peuvent l'abréger, d'où cette table de référence.
+    fiches, adresses = {}, {}
     for t in index["territoires"]:
         fichier = PUBLIE / t["niveau"] / f"{t['code']}.json"
         if not fichier.exists():
             print(f"  [ignoré] {fichier} absent")
             continue
         d = json.loads(fichier.read_text(encoding="utf-8"))
+        cle = (t["niveau"], t["code"])
+        fiches[cle] = d
+        adresses[cle] = f"{t['niveau']}/{t['code']}-{slug(d['territoire']['nom'])}/"
 
-        dossier = RACINE / t["niveau"] / t["code"]
+    if not fiches:
+        print("\n[BLOCAGE] Aucune fiche exploitable.")
+        sys.exit(1)
+
+    # ── second passage : écriture des pages ──────────────────────
+    liens_site, recherche, redirections = [], [], []
+
+    for (niveau, code), d in fiches.items():
+        t = d["territoire"]
+        chemin = adresses[(niveau, code)]
+        dossier = RACINE / chemin
         dossier.mkdir(parents=True, exist_ok=True)
-        url = f"{SITE}/{t['niveau']}/{t['code']}/"
-        dossier.joinpath("index.html").write_text(
-            page(d, "..\u002f..", url), encoding="utf-8")
-        adresses.append(url)
-        produites += 1
+        url = f"{SITE}/{chemin}"
 
-        if (t["niveau"], t["code"]) == ACCUEIL:
+        dossier.joinpath("index.html").write_text(
+            page(d, "..\u002f..", url, adresses), encoding="utf-8")
+        liens_site.append(url)
+
+        recherche.append({
+            "nom": t["nom"],
+            "niveau": niveau,
+            "code": code,
+            "codes_postaux": t.get("codes_postaux", []),
+            "url": chemin,
+        })
+
+        # ancienne adresse sans le nom : redirigée, jamais cassée
+        redirections.append((f"/{niveau}/{code}", f"/{chemin}"))
+
+        if (niveau, code) == ACCUEIL:
             (RACINE / "index.html").write_text(
-                page(d, ".", SITE + "/", accueil=True), encoding="utf-8")
-            adresses.append(SITE + "/")
+                page(d, ".", SITE + "/", adresses, accueil=True), encoding="utf-8")
+            liens_site.append(SITE + "/")
+
+    # index de recherche : propre à l'affichage, distinct du contrat v1
+    recherche.sort(key=lambda x: (x["niveau"] != "commune", x["nom"]))
+    (ASSETS / "recherche.json").write_text(
+        json.dumps(recherche, ensure_ascii=False), encoding="utf-8")
+
+    # redirections des anciennes adresses
+    lignes = "\n".join(f"Redirect 301 {a} {b}" for a, b in sorted(redirections))
+    (RACINE / ".htaccess").write_text(
+        "# Fichier généré par 04_generation.py — ne pas modifier à la main.\n"
+        "# Redirige les anciennes adresses sans nom vers les nouvelles.\n"
+        f"{lignes}\n", encoding="utf-8")
 
     # plan du site
     aujourdhui = date.today().isoformat()
     entrees = "\n".join(
         f"  <url><loc>{u}</loc><lastmod>{aujourdhui}</lastmod></url>"
-        for u in sorted(set(adresses)))
+        for u in sorted(set(liens_site)))
     (RACINE / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -382,12 +455,14 @@ def main():
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n",
         encoding="utf-8")
 
+    produites = len(fiches)
     print(f"\n  Pages produites : {produites}")
     print(f"  Accueil         : index.html ({ACCUEIL[0]} {ACCUEIL[1]})")
     print(f"  Thème           : assets/style.css")
-    print(f"  Plan du site    : sitemap.xml ({len(set(adresses))} adresses)")
+    print(f"  Redirections    : .htaccess ({len(redirections)} anciennes adresses)")
+    print(f"  Plan du site    : sitemap.xml ({len(set(liens_site))} adresses)")
     print(f"\n  Exemples d'adresses :")
-    for u in list(sorted(set(adresses)))[:3]:
+    for u in list(sorted(set(liens_site)))[:3]:
         print(f"    {u}")
     print()
 
