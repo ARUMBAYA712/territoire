@@ -133,6 +133,38 @@ svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
   padding:4px 9px;border-radius:var(--radius);white-space:nowrap;
   box-shadow:0 4px 14px rgba(0,0,0,.22)}
 .carte-bulle.on{display:block}
+.carte-bulle b{display:block;font-size:13px}
+.carte-bulle i{font-style:normal;color:var(--accent-soft)}
+
+.carte-grille{display:grid;grid-template-columns:172px 1fr;gap:16px;align-items:start}
+.carte-menu{display:flex;flex-direction:column;gap:2px;border:1px solid var(--line);
+  border-radius:var(--radius);padding:6px;background:var(--sunken)}
+.carte-menu .opt{display:flex;align-items:center;gap:8px;padding:7px 9px;
+  font-size:13px;border-radius:var(--radius);cursor:pointer}
+.carte-menu .opt:hover{background:var(--surface)}
+.carte-menu .opt input{accent-color:var(--accent);margin:0}
+.carte-menu .opt:has(input:checked){background:var(--accent);color:var(--surface);
+  font-weight:600}
+
+.carte-echelle{display:flex;align-items:center;gap:3px;margin-top:10px;
+  font-size:11px;color:var(--soft)}
+.carte-echelle .pal{width:26px;height:11px;border:1px solid var(--line);
+  background:var(--accent)}
+.carte-echelle .unite{margin-left:auto;font-family:var(--font-data)}
+.carte-echelle .bas{margin-right:4px}
+.carte-echelle .haut{margin-left:4px}
+
+svg.carte .n0,.carte-echelle .n0{fill-opacity:.14;opacity:.14}
+svg.carte .n1,.carte-echelle .n1{fill-opacity:.32;opacity:.32}
+svg.carte .n2,.carte-echelle .n2{fill-opacity:.52;opacity:.52}
+svg.carte .n3,.carte-echelle .n3{fill-opacity:.74;opacity:.74}
+svg.carte .n4,.carte-echelle .n4{fill-opacity:1;opacity:1}
+svg.carte path.n0,svg.carte path.n1,svg.carte path.n2,
+svg.carte path.n3,svg.carte path.n4{fill:var(--accent);stroke:var(--surface);
+  stroke-width:.8}
+svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
+svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
+  stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
@@ -164,6 +196,11 @@ footer.site{border-top:1px solid var(--line);background:var(--surface);
 footer.site a{color:var(--link)}
 
 @media(max-width:820px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+  .carte-grille{grid-template-columns:1fr}
+  .carte-menu{flex-direction:row;flex-wrap:wrap}
+  .carte-menu .opt{font-size:12px;padding:6px 8px}
+}
 @media(max-width:560px){
   .cards{grid-template-columns:1fr}
   .terr h1{font-size:27px}
@@ -264,17 +301,50 @@ JS = """
   bulle.setAttribute('aria-hidden', 'true');
   document.body.appendChild(bulle);
 
-  function nomDe(cible){
-    var forme = cible.closest ? cible.closest('path') : null;
-    if(!forme) return null;
-    var t = forme.querySelector('title');
-    return t ? t.textContent : null;
+  var bloc = document.getElementById('carte-donnees');
+  var couches = bloc ? JSON.parse(bloc.textContent) : null;
+  var active = couches ? couches.defaut : null;
+
+  function formeDe(cible){
+    return cible.closest ? cible.closest('path') : null;
   }
 
+  function contenu(forme){
+    var t = forme.querySelector('title');
+    var nom = t ? t.textContent : '';
+    if(!couches || !active) return '<b>' + nom + '</b>';
+    var code = forme.getAttribute('data-code');
+    var c = couches.couches[active];
+    var valeur = c.libelles[code] || 'non disponible';
+    return '<b>' + nom + '</b><i>' + c.nom + ' : ' + valeur + '</i>';
+  }
+
+  // Change la donnée représentée : recolore les formes et met à jour l'unité.
+  function appliquer(ident){
+    if(!couches || !couches.couches[ident]) return;
+    active = ident;
+    var c = couches.couches[ident];
+    var formes = carte.querySelectorAll('path[data-code]');
+    for(var i = 0; i < formes.length; i++){
+      var f = formes[i];
+      var code = f.getAttribute('data-code');
+      f.className.baseVal = f.className.baseVal
+        .replace(/\\s*n[0-4]\\b|\\s*nd\\b/g, '') + ' ' + (c.classes[code] || 'nd');
+    }
+    var u = document.getElementById('carte-unite');
+    if(u) u.textContent = c.unite;
+  }
+
+  var choix = document.querySelectorAll('.carte-menu input[name="donnee"]');
+  for(var k = 0; k < choix.length; k++){
+    choix[k].addEventListener('change', function(){ appliquer(this.value); });
+  }
+  if(active) appliquer(active);
+
   carte.addEventListener('mousemove', function(e){
-    var nom = nomDe(e.target);
-    if(!nom){ bulle.className = 'carte-bulle'; return; }
-    bulle.textContent = nom;
+    var forme = formeDe(e.target);
+    if(!forme){ bulle.className = 'carte-bulle'; return; }
+    bulle.innerHTML = contenu(forme);
     bulle.className = 'carte-bulle on';
     var x = e.clientX + 14, y = e.clientY + 16;
     var large = bulle.offsetWidth;
@@ -291,10 +361,10 @@ JS = """
   carte.addEventListener('focusin', function(e){
     var lien = e.target.closest('a');
     if(!lien) return;
-    var t = lien.querySelector('title');
-    if(!t) return;
+    var forme = lien.querySelector('path');
+    if(!forme) return;
     var r = lien.getBoundingClientRect();
-    bulle.textContent = t.textContent;
+    bulle.innerHTML = contenu(forme);
     bulle.className = 'carte-bulle on';
     bulle.style.left = (r.left + window.scrollX) + 'px';
     bulle.style.top = (r.bottom + window.scrollY + 6) + 'px';
@@ -389,23 +459,120 @@ MOTIF_FORME = re.compile(
     r'<path class="(c-voisine|c-ici)" data-code="([^"]+)" '
     r'd="([^"]*)"><title>([^<]*)</title></path>')
 
+# Ordre de présentation des données proposées sur la carte.
+# Les identifiants absents des fiches sont simplement ignorés :
+# ajouter les élections plus tard ne demandera rien d'autre ici.
+ORDRE_CARTE = ["POP-01", "GEO-13", "POP-10"]
 
-def bloc_carte(t, base, adresses):
+NB_CLASSES = 5
+
+
+def quantiles(valeurs, nb=NB_CLASSES):
+    """Découpe en classes d'effectifs comparables.
+
+    Les distributions territoriales sont très déséquilibrées : une commune
+    de 7 700 habitants voisine avec des villages de 200. Un découpage à
+    intervalles réguliers produirait une carte presque uniforme, avec une
+    seule commune détachée. Les quantiles répartissent les nuances.
+    """
+    tri = sorted(set(valeurs))
+    if len(tri) < 2:
+        return []
+    nb = min(nb, len(tri))
+    return [tri[round(i * (len(tri) - 1) / nb)] for i in range(1, nb)]
+
+
+def classe(valeur, seuils):
+    if valeur is None:
+        return "nd"
+    if not seuils:                      # valeurs toutes identiques
+        return f"n{NB_CLASSES // 2}"
+    for i, seuil in enumerate(seuils):
+        if valeur < seuil:
+            return f"n{i}"
+    return f"n{len(seuils)}"
+
+
+def format_valeur(v, unite):
+    return f"{nombre(v)}\u202f{unite}" if v is not None else "non disponible"
+
+
+def donnees_carte(membres, fiches):
+    """Prépare les données de coloration pour les communes membres."""
+    dispo = {}
+    for m in membres:
+        f = fiches.get(("commune", m["code"]))
+        if not f:
+            continue
+        for ident, mesure in f["mesures"].items():
+            if isinstance(mesure.get("valeur"), (int, float)):
+                dispo.setdefault(ident, {"nom": mesure["nom"],
+                                         "unite": mesure["unite"],
+                                         "valeurs": {}})
+                dispo[ident]["valeurs"][m["code"]] = mesure["valeur"]
+
+    idents = ([i for i in ORDRE_CARTE if i in dispo]
+              + sorted(i for i in dispo if i not in ORDRE_CARTE))
+    if not idents:
+        return None
+
+    couches = {}
+    for ident in idents:
+        d = dispo[ident]
+        seuils = quantiles(list(d["valeurs"].values()))
+        couches[ident] = {
+            "nom": d["nom"],
+            "unite": d["unite"],
+            "seuils": seuils,
+            "classes": {code: classe(v, seuils)
+                        for code, v in d["valeurs"].items()},
+            "libelles": {code: format_valeur(v, d["unite"])
+                         for code, v in d["valeurs"].items()},
+            "bornes": [nombre(s) for s in seuils],
+        }
+    return {"defaut": idents[0], "ordre": idents, "couches": couches}
+
+
+def menu_carte(carte):
+    """Sélecteur vertical des données affichables."""
+    boutons = []
+    for i, ident in enumerate(carte["ordre"]):
+        c = carte["couches"][ident]
+        coche = " checked" if ident == carte["defaut"] else ""
+        boutons.append(
+            f'<label class="opt"><input type="radio" name="donnee" '
+            f'value="{ident}"{coche}> <span>{escape(c["nom"])}</span></label>')
+    return ('<div class="carte-menu" role="group" '
+            'aria-label="Donnée représentée">'
+            + "".join(boutons) + '</div>')
+
+
+def legende_carte(carte):
+    paliers = "".join(f'<span class="pal n{i}"></span>'
+                      for i in range(NB_CLASSES))
+    return (f'<div class="carte-echelle"><span class="bas">moins</span>'
+            f'{paliers}<span class="haut">plus</span>'
+            f'<span class="unite" id="carte-unite"></span></div>')
+
+
+def bloc_carte(t, base, adresses, fiches, membres):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
     Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
-    ainsi des couleurs du thème, et ses formes peuvent devenir des liens.
-
-    Chaque commune voisine renvoie vers sa propre fiche ; la commune
-    courante reste inerte, puisqu'on y est déjà.
+    ainsi des couleurs du thème, ses formes deviennent des liens, et elles
+    peuvent être colorées selon la donnée choisie.
     """
     fichier = RACINE / "assets" / "cartes" / t["niveau"] / f"{t['code']}.svg"
     if not fichier.exists():
         return ""
 
+    carte = donnees_carte(membres, fiches) if membres else None
+    defaut = carte["couches"][carte["defaut"]]["classes"] if carte else {}
+
     def relier(m):
-        classe, code, trace, nom = m.groups()
-        forme = (f'<path class="{classe}" d="{trace}">'
+        cl, code, trace, nom = m.groups()
+        teinte = f" {defaut.get(code, 'nd')}" if carte else ""
+        forme = (f'<path class="{cl}{teinte}" data-code="{code}" d="{trace}">'
                  f'<title>{nom}</title></path>')
         cible = adresses.get(("commune", code))
         if not cible or code == t["code"]:
@@ -415,19 +582,39 @@ def bloc_carte(t, base, adresses):
 
     svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
 
-    legende = ("Situation dans le territoire — cliquez une commune "
-               "pour ouvrir sa fiche" if t["niveau"] == "commune"
-               else "Communes membres — cliquez une commune "
-                    "pour ouvrir sa fiche")
-
-    return f"""    <section class="carte-bloc">
+    if not carte:
+        legende = ("Situation dans le territoire — cliquez une commune "
+                   "pour ouvrir sa fiche")
+        return f"""    <section class="carte-bloc">
       <span class="dsp">Carte</span>
       {svg}
       <p class="carte-legende">{legende}</p>
     </section>"""
 
+    charge = json.dumps({
+        "defaut": carte["defaut"],
+        "couches": {i: {"nom": c["nom"], "unite": c["unite"],
+                        "classes": c["classes"], "libelles": c["libelles"]}
+                    for i, c in carte["couches"].items()},
+    }, ensure_ascii=False)
 
-def page(d, base, canonique, adresses, accueil=False):
+    return f"""    <section class="carte-bloc">
+      <span class="dsp">Carte</span>
+      <div class="carte-grille">
+        {menu_carte(carte)}
+        <div class="carte-zone">
+          {svg}
+          {legende_carte(carte)}
+        </div>
+      </div>
+      <p class="carte-legende">Survolez une commune pour lire sa valeur,
+         cliquez pour ouvrir sa fiche. Les nuances sont réparties en cinq
+         groupes d'effectifs comparables.</p>
+      <script type="application/json" id="carte-donnees">{charge}</script>
+    </section>"""
+
+
+def page(d, base, canonique, adresses, fiches, accueil=False):
     t = d["territoire"]
     niveau = LIBELLE.get(t["niveau"], t["niveau"])
 
@@ -493,7 +680,7 @@ def page(d, base, canonique, adresses, accueil=False):
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
 {bloc_rattachements(d, base, adresses)}
-{bloc_carte(t, base, adresses)}
+{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"))}
 </div></main>
 
 <footer class="site"><div class="wrap">
@@ -571,7 +758,7 @@ def main():
         url = f"{SITE}/{chemin}"
 
         dossier.joinpath("index.html").write_text(
-            page(d, "..\u002f..", url, adresses), encoding="utf-8")
+            page(d, "..\u002f..", url, adresses, fiches), encoding="utf-8")
         liens_site.append(url)
 
         recherche.append({
@@ -588,7 +775,7 @@ def main():
 
         if (niveau, code) == ACCUEIL:
             (RACINE / "index.html").write_text(
-                page(d, ".", SITE + "/", adresses, accueil=True), encoding="utf-8")
+                page(d, ".", SITE + "/", adresses, fiches, accueil=True), encoding="utf-8")
             liens_site.append(SITE + "/")
 
     # ── contrôle d'exhaustivité de la recherche ──────────────────
