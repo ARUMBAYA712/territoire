@@ -34,7 +34,7 @@ from pathlib import Path
 # ══════════════════════════════════════════════════════════════════
 
 SITE = "https://territoire.sudgresiv.com"
-TITRE_SITE = "Sud Grésivaudan"
+TITRE_SITE = "Sud Grésiv'"
 SOUS_TITRE = "Données publiques du territoire"
 
 RACINE = Path(".")
@@ -119,9 +119,12 @@ main .wrap{padding:26px 20px 48px}
   border-radius:var(--radius);padding:16px}
 .carte-bloc .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:10px}
 svg.carte{display:block;width:100%;height:auto;max-height:440px}
-svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8}
+svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
+  cursor:help;transition:fill .12s}
+svg.carte .c-voisine:hover{fill:var(--accent-soft);stroke:var(--accent)}
 svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
-  fill-opacity:.85}
+  fill-opacity:.85;cursor:help}
+svg.carte .c-ici:hover{fill-opacity:1}
 .carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
@@ -332,8 +335,10 @@ def bloc_carte(t):
     if not fichier.exists():
         return ""
     svg = fichier.read_text(encoding="utf-8")
-    legende = ("Situation dans le territoire" if t["niveau"] == "commune"
-               else "Communes membres")
+    legende = ("Situation dans le territoire — survolez une commune "
+               "pour afficher son nom" if t["niveau"] == "commune"
+               else "Communes membres — survolez une commune "
+                    "pour afficher son nom")
     return f"""    <section class="carte-bloc">
       <span class="dsp">Carte</span>
       {svg}
@@ -406,8 +411,8 @@ def page(d, base, canonique, adresses, accueil=False):
     <div class="cards">
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
-{bloc_carte(t)}
 {bloc_rattachements(d, base, adresses)}
+{bloc_carte(t)}
 </div></main>
 
 <footer class="site"><div class="wrap">

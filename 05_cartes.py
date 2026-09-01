@@ -164,8 +164,18 @@ def tracer(geometrie, projeter, tolerance):
 # PRODUCTION DES SVG
 # ══════════════════════════════════════════════════════════════════
 
+def echapper(texte):
+    return (texte.replace("&", "&amp;").replace("<", "&lt;")
+                 .replace(">", "&gt;").replace('"', "&quot;"))
+
+
 def carte(contours, codes_fond, code_evidence, titre):
-    """Dessine les communes du fond, celle mise en évidence par-dessus."""
+    """Dessine les communes du fond, celle mise en évidence par-dessus.
+
+    Chaque forme porte son nom dans une balise <title> : le navigateur
+    l'affiche au survol, et les lecteurs d'écran le restituent. Aucun
+    JavaScript n'est nécessaire.
+    """
     geometries = [contours[c]["contour"] for c in codes_fond if c in contours]
     if not geometries:
         return None
@@ -179,13 +189,17 @@ def carte(contours, codes_fond, code_evidence, titre):
             continue
         d = tracer(contours[code]["contour"], projeter, TOLERANCE)
         if d:
-            fond.append(f'<path class="c-voisine" d="{d}"/>')
+            nom = echapper(contours[code]["nom"])
+            fond.append(f'<path class="c-voisine" d="{d}">'
+                        f'<title>{nom}</title></path>')
 
     evidence = ""
     if code_evidence and code_evidence in contours:
         d = tracer(contours[code_evidence]["contour"], projeter, TOLERANCE / 3)
         if d:
-            evidence = f'<path class="c-ici" d="{d}"/>'
+            nom = echapper(contours[code_evidence]["nom"])
+            evidence = (f'<path class="c-ici" d="{d}">'
+                        f'<title>{nom}</title></path>')
 
     return (f'<svg class="carte" viewBox="0 0 {LARGEUR} {HAUTEUR}" '
             f'xmlns="http://www.w3.org/2000/svg" role="img" '
