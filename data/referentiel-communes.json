@@ -1,0 +1,778 @@
+{
+  "version_contrat": "1.0",
+  "genere_le": "2026-09-01",
+  "source": "API Découpage administratif (geo.api.gouv.fr) — INSEE, IGN",
+  "licence": "Licence Ouverte 2.0",
+  "perimetre": {
+    "epci": [
+      "200070431"
+    ]
+  },
+  "nombre_communes": 47,
+  "population_totale": 45296,
+  "communes": [
+    {
+      "code": "38004",
+      "nom": "L'Albenc",
+      "population": 1255,
+      "surface_ha": 1020.04,
+      "longitude": 5.4598,
+      "latitude": 45.2199,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38018",
+      "nom": "Auberives-en-Royans",
+      "population": 367,
+      "surface_ha": 512.51,
+      "longitude": 5.312,
+      "latitude": 45.0656,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38033",
+      "nom": "Beaulieu",
+      "population": 635,
+      "surface_ha": 882.31,
+      "longitude": 5.3975,
+      "latitude": 45.1895,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38036",
+      "nom": "Beauvoir-en-Royans",
+      "population": 96,
+      "surface_ha": 204.68,
+      "longitude": 5.3481,
+      "latitude": 45.1168,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38041",
+      "nom": "Bessins",
+      "population": 123,
+      "surface_ha": 460.44,
+      "longitude": 5.2627,
+      "latitude": 45.2053,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38074",
+      "nom": "Chantesse",
+      "population": 397,
+      "surface_ha": 583.95,
+      "longitude": 5.4489,
+      "latitude": 45.2448,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38086",
+      "nom": "Chasselay",
+      "population": 444,
+      "surface_ha": 947.07,
+      "longitude": 5.3404,
+      "latitude": 45.2624,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38092",
+      "nom": "Châtelus",
+      "population": 97,
+      "surface_ha": 1257.32,
+      "longitude": 5.3994,
+      "latitude": 45.0533,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38095",
+      "nom": "Chatte",
+      "population": 2518,
+      "surface_ha": 2285.92,
+      "longitude": 5.2815,
+      "latitude": 45.1419,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38099",
+      "nom": "Chevrières",
+      "population": 742,
+      "surface_ha": 1646.49,
+      "longitude": 5.2947,
+      "latitude": 45.1949,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38108",
+      "nom": "Choranche",
+      "population": 144,
+      "surface_ha": 1069.05,
+      "longitude": 5.399,
+      "latitude": 45.0744,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38117",
+      "nom": "Cognin-les-Gorges",
+      "population": 615,
+      "surface_ha": 1267.72,
+      "longitude": 5.4167,
+      "latitude": 45.1715,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38137",
+      "nom": "Cras",
+      "population": 407,
+      "surface_ha": 550.82,
+      "longitude": 5.4401,
+      "latitude": 45.2733,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38195",
+      "nom": "Izeron",
+      "population": 809,
+      "surface_ha": 1707.52,
+      "longitude": 5.4009,
+      "latitude": 45.1438,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38216",
+      "nom": "Malleval-en-Vercors",
+      "population": 57,
+      "surface_ha": 1416.16,
+      "longitude": 5.444,
+      "latitude": 45.1538,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38245",
+      "nom": "Montagne",
+      "population": 273,
+      "surface_ha": 877.6,
+      "longitude": 5.2034,
+      "latitude": 45.1417,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38248",
+      "nom": "Montaud",
+      "population": 530,
+      "surface_ha": 1442.04,
+      "longitude": 5.5652,
+      "latitude": 45.2614,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": null,
+      "commune_scindee": false
+    },
+    {
+      "code": "38263",
+      "nom": "Morette",
+      "population": 358,
+      "surface_ha": 631.68,
+      "longitude": 5.4516,
+      "latitude": 45.2846,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38272",
+      "nom": "Murinais",
+      "population": 412,
+      "surface_ha": 819.83,
+      "longitude": 5.3219,
+      "latitude": 45.2146,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38275",
+      "nom": "Serre-Nerpol",
+      "population": 307,
+      "surface_ha": 1313.06,
+      "longitude": 5.373,
+      "latitude": 45.2566,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38278",
+      "nom": "Notre-Dame-de-l'Osier",
+      "population": 535,
+      "surface_ha": 854.3,
+      "longitude": 5.4112,
+      "latitude": 45.2384,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38310",
+      "nom": "Poliénas",
+      "population": 1111,
+      "surface_ha": 1370.22,
+      "longitude": 5.4818,
+      "latitude": 45.2472,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": null,
+      "commune_scindee": false
+    },
+    {
+      "code": "38319",
+      "nom": "Pont-en-Royans",
+      "population": 805,
+      "surface_ha": 288.6,
+      "longitude": 5.3452,
+      "latitude": 45.0622,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38322",
+      "nom": "Presles",
+      "population": 102,
+      "surface_ha": 2553.41,
+      "longitude": 5.406,
+      "latitude": 45.0927,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38330",
+      "nom": "Quincieu",
+      "population": 106,
+      "surface_ha": 475.27,
+      "longitude": 5.3898,
+      "latitude": 45.2771,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38333",
+      "nom": "Rencurel",
+      "population": 358,
+      "surface_ha": 3457.07,
+      "longitude": 5.4752,
+      "latitude": 45.1178,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38338",
+      "nom": "La Rivière",
+      "population": 720,
+      "surface_ha": 1828.59,
+      "longitude": 5.5117,
+      "latitude": 45.2236,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38345",
+      "nom": "Rovon",
+      "population": 605,
+      "surface_ha": 1197.5,
+      "longitude": 5.4639,
+      "latitude": 45.1843,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38356",
+      "nom": "Saint-André-en-Royans",
+      "population": 342,
+      "surface_ha": 1044.55,
+      "longitude": 5.3406,
+      "latitude": 45.0797,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38359",
+      "nom": "Saint Antoine l'Abbaye",
+      "population": 1263,
+      "surface_ha": 3603.22,
+      "longitude": 5.2124,
+      "latitude": 45.1793,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38360",
+      "nom": "Saint-Appolinard",
+      "population": 395,
+      "surface_ha": 1074.5,
+      "longitude": 5.259,
+      "latitude": 45.1896,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38370",
+      "nom": "Saint-Bonnet-de-Chavagne",
+      "population": 655,
+      "surface_ha": 1517.92,
+      "longitude": 5.2284,
+      "latitude": 45.1179,
+      "codes_postaux": [
+        "38840"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38390",
+      "nom": "Saint-Gervais",
+      "population": 538,
+      "surface_ha": 1326.6,
+      "longitude": 5.4959,
+      "latitude": 45.1881,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38394",
+      "nom": "Saint-Hilaire-du-Rosier",
+      "population": 2004,
+      "surface_ha": 1637.57,
+      "longitude": 5.2466,
+      "latitude": 45.0931,
+      "codes_postaux": [
+        "38840"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38409",
+      "nom": "Saint-Just-de-Claix",
+      "population": 1401,
+      "surface_ha": 1162.32,
+      "longitude": 5.2757,
+      "latitude": 45.0822,
+      "codes_postaux": [
+        "38680"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38410",
+      "nom": "Saint-Lattier",
+      "population": 1486,
+      "surface_ha": 1819.4,
+      "longitude": 5.1802,
+      "latitude": 45.0935,
+      "codes_postaux": [
+        "38840"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38416",
+      "nom": "Saint-Marcellin",
+      "population": 7700,
+      "surface_ha": 778.74,
+      "longitude": 5.3166,
+      "latitude": 45.1526,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38443",
+      "nom": "Saint-Pierre-de-Chérennes",
+      "population": 461,
+      "surface_ha": 1185.1,
+      "longitude": 5.39,
+      "latitude": 45.1234,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38450",
+      "nom": "Saint-Quentin-sur-Isère",
+      "population": 1466,
+      "surface_ha": 1941.85,
+      "longitude": 5.554,
+      "latitude": 45.275,
+      "codes_postaux": [
+        "38210"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": null,
+      "commune_scindee": false
+    },
+    {
+      "code": "38453",
+      "nom": "Saint-Romans",
+      "population": 1897,
+      "surface_ha": 1711.51,
+      "longitude": 5.3178,
+      "latitude": 45.1049,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38454",
+      "nom": "Saint-Sauveur",
+      "population": 2127,
+      "surface_ha": 935.94,
+      "longitude": 5.3457,
+      "latitude": 45.1433,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38463",
+      "nom": "Saint-Vérand",
+      "population": 1711,
+      "surface_ha": 1778.12,
+      "longitude": 5.3426,
+      "latitude": 45.1816,
+      "codes_postaux": [
+        "38160"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38495",
+      "nom": "La Sône",
+      "population": 634,
+      "surface_ha": 304.61,
+      "longitude": 5.2782,
+      "latitude": 45.1173,
+      "codes_postaux": [
+        "38840"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38500",
+      "nom": "Têche",
+      "population": 596,
+      "surface_ha": 505.05,
+      "longitude": 5.3763,
+      "latitude": 45.1806,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38523",
+      "nom": "Varacieux",
+      "population": 881,
+      "surface_ha": 1850.99,
+      "longitude": 5.3409,
+      "latitude": 45.2277,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38526",
+      "nom": "Vatilieu",
+      "population": 373,
+      "surface_ha": 935.64,
+      "longitude": 5.4109,
+      "latitude": 45.2594,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    },
+    {
+      "code": "38559",
+      "nom": "Vinay",
+      "population": 4438,
+      "surface_ha": 1606.44,
+      "longitude": 5.4078,
+      "latitude": 45.2144,
+      "codes_postaux": [
+        "38470"
+      ],
+      "code_epci": "200070431",
+      "code_departement": "38",
+      "code_region": "84",
+      "code_canton": "3823",
+      "commune_scindee": false
+    }
+  ],
+  "cantons": [
+    {
+      "code": "3823",
+      "nom": "Le Sud Grésivaudan",
+      "bureau_centralisateur": "38416",
+      "depuis": "2015",
+      "communes_scindees": false,
+      "source_liste": "à confronter au décret de découpage 2015 / INSEE"
+    }
+  ],
+  "communes_rattachees_canton": 44
+}

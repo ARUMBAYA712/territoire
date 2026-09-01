@@ -1,42 +1,266 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="topo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page témoin — chaîne de déploiement</title>
+<title>Données publiques du Sud Grésivaudan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#EDF0EA;color:#16211C;
-       margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-  main{background:#fff;border:1px solid #D5DCD3;border-radius:3px;padding:32px;max-width:520px}
-  h1{font-size:20px;margin:0 0 4px}
-  p{font-size:14px;line-height:1.55;color:#5D6E64;margin:0 0 16px}
-  .v{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:32px;color:#2C6B4C;margin:20px 0}
-  ol{font-size:14px;line-height:1.7;color:#5D6E64;padding-left:20px;margin:0}
-  code{background:#EDF0EA;padding:1px 5px;border-radius:2px;font-size:13px}
-  hr{border:0;border-top:1px solid #D5DCD3;margin:22px 0}
+/* ═══ THÈME — zone de personnalisation, aucune couleur ailleurs ═══ */
+:root{
+  --paper:#EDF0EA; --surface:#FFFFFF; --sunken:#F5F7F3;
+  --ink:#16211C; --soft:#5D6E64; --dim:#9AA79F; --line:#D5DCD3;
+  --accent:#2C6B4C; --accent-soft:#EAF3EE; --link:#2A6F97; --mark:#9C8340;
+  --font-display:"Barlow Condensed",sans-serif;
+  --font-body:"IBM Plex Sans",system-ui,sans-serif;
+  --font-data:"IBM Plex Mono",monospace;
+  --radius:3px;
+}
+
+/* ═══ STRUCTURE — n'utilise que les variables ci-dessus ═══ */
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5}
+button,input{font:inherit;color:inherit}
+button{background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.dsp{font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:.09em}
+.num{font-family:var(--font-data);font-variant-numeric:tabular-nums}
+
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:60px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.logo{font-family:var(--font-display);font-weight:600;font-size:19px;white-space:nowrap}
+.find{position:relative;flex:1;min-width:200px;max-width:400px}
+.find input{width:100%;height:36px;padding:0 12px;background:var(--sunken);
+  border:1px solid var(--line);border-radius:var(--radius);font-size:14px}
+.find input::placeholder{color:var(--dim)}
+.find input:focus{border-color:var(--accent);background:var(--surface);outline:none}
+.hits{position:absolute;top:40px;left:0;right:0;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 10px 26px rgba(0,0,0,.13);max-height:300px;overflow:auto;display:none;z-index:30}
+.hits.on{display:block}
+.hits button{display:flex;width:100%;gap:10px;align-items:center;padding:8px 12px;
+  text-align:left;border-bottom:1px solid var(--line)}
+.hits button:last-child{border-bottom:none}
+.hits button:hover{background:var(--sunken)}
+.tag{font-size:10px;padding:2px 6px;border-radius:var(--radius);
+  background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.hits .nm{flex:1;font-size:14px}
+.hits .cd{font-family:var(--font-data);font-size:11px;color:var(--dim)}
+
+.terr{background:var(--surface);border-bottom:1px solid var(--line)}
+.terr .wrap{padding:24px 20px}
+.terr .kind{font-size:11px;color:var(--soft)}
+.terr h1{font-family:var(--font-display);font-size:34px;line-height:1.05;
+  text-transform:none;letter-spacing:.01em}
+.terr .sub{font-size:13px;color:var(--soft);margin-top:4px}
+
+main .wrap{padding:26px 20px 48px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;display:flex;flex-direction:column;gap:8px}
+.card .id{font-family:var(--font-data);font-size:10px;color:var(--dim)}
+.card h2{font-size:13px;font-weight:600}
+.card .v{font-family:var(--font-data);font-size:28px;color:var(--accent);line-height:1}
+.card .u{font-size:12px;color:var(--soft)}
+.card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
+  display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--soft)}
+.pill{border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px}
+
+.ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:20px}
+.ratt > .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:14px}
+.spine{position:relative;padding-left:30px}
+.spine::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:1px;
+  background:repeating-linear-gradient(to bottom,var(--mark) 0 3px,transparent 3px 7px)}
+.rung{position:relative;padding:10px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.rung::before{content:"";position:absolute;left:-21px;top:50%;width:13px;height:1px;background:var(--mark)}
+.rung::after{content:"";position:absolute;left:-24px;top:calc(50% - 3px);width:7px;height:7px;
+  border-radius:50%;background:var(--surface);border:1px solid var(--mark)}
+.rung.ici::after{background:var(--accent);border-color:var(--accent)}
+.rung .lvl{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.08em;
+  font-size:11px;color:var(--soft);width:96px;flex-shrink:0}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{border:1px solid var(--line);border-radius:var(--radius);padding:4px 10px;font-size:13px}
+.chip:hover{border-color:var(--link);color:var(--link)}
+.chip.now{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);
+  font-weight:600;cursor:default}
+.note{margin-top:14px;border-left:2px solid var(--mark);padding:8px 12px;font-size:12px;
+  color:var(--soft);background:var(--sunken);border-radius:var(--radius)}
+
+.etat{font-size:12px;color:var(--soft);padding:40px 0;text-align:center}
+footer.site{border-top:1px solid var(--line);background:var(--surface);padding:18px 0;
+  font-size:11px;color:var(--soft)}
+
+@media(max-width:820px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){
+  .cards{grid-template-columns:1fr}
+  .terr h1{font-size:27px}
+  .rung .lvl{width:100%}
+}
 </style>
 </head>
 <body>
-<main>
-  <h1>La chaîne de déploiement fonctionne</h1>
-  <p>Cette page a été publiée depuis GitHub vers l'hébergement OVH.</p>
 
+<<<<<<< Updated upstream
   <div class="v">version 4</div>
+=======
+<div class="top"><div class="wrap">
+  <span class="logo">Sud Grésivaudan</span>
+  <div class="find">
+    <input id="q" type="text" placeholder="Rechercher une commune…"
+           autocomplete="off" aria-label="Rechercher un territoire">
+    <div class="hits" id="hits"></div>
+  </div>
+</div></div>
+>>>>>>> Stashed changes
 
-  <hr>
+<div class="terr"><div class="wrap">
+  <div class="kind dsp" id="kind">—</div>
+  <h1 id="nom">Chargement…</h1>
+  <div class="sub" id="sub"></div>
+</div></div>
 
-  <p><strong>Vérifier le déploiement automatique :</strong></p>
-  <ol>
-    <li>Sur GitHub, ouvrez <code>index.html</code> et cliquez sur le crayon.</li>
-    <li>Remplacez <code>version 1</code> par <code>version 2</code>.</li>
-    <li>Enregistrez la modification (bouton <code>Commit changes</code>).</li>
-    <li>Attendez une minute, puis rechargez cette page.</li>
-  </ol>
+<main><div class="wrap" id="vue">
+  <p class="etat">Chargement des données…</p>
+</div></main>
 
-  <hr>
-  <p>Si le numéro a changé, le webhook est opérationnel et toute la chaîne
-     est validée. S'il n'a pas changé, consultez les informations du dernier
-     déploiement dans l'espace client OVH, onglet Multisite.</p>
-</main>
+<footer class="site"><div class="wrap" id="pied">
+  Données publiques — Licence Ouverte 2.0
+</div></footer>
+
+<script>
+/* ═══ Le site ne connaît que le contrat d'échange publié.
+       Il ignore d'où viennent les données et comment elles sont calculées. ═══ */
+
+const BASE = "data/publie/v1";
+const $ = s => document.querySelector(s);
+const nb = v => typeof v === "number" ? v.toLocaleString("fr-FR") : "—";
+
+let index = null;
+
+async function charger(url){
+  const r = await fetch(url);
+  if(!r.ok) throw new Error(`${r.status} sur ${url}`);
+  return r.json();
+}
+
+function chemin(niveau, code){ return `${BASE}/${niveau}/${code}.json`; }
+
+function carte(id, m){
+  return `<article class="card">
+    <span class="id">${id}</span>
+    <h2>${m.nom}</h2>
+    <div><span class="v">${nb(m.valeur)}</span> <span class="u">${m.unite}</span></div>
+    <footer>
+      <span class="pill">${m.source}</span>
+      <span class="pill">${m.obtention}</span>
+    </footer>
+  </article>`;
+}
+
+function chip(r, actuel){
+  const now = actuel ? " now" : "";
+  return `<button class="chip${now}" data-n="${r.niveau}" data-c="${r.code}"
+    ${actuel ? "disabled" : ""}>${r.nom}</button>`;
+}
+
+function rattachements(d){
+  const t = d.territoire, r = d.rattachements;
+  let h = "";
+  if(r.au_dessus?.length){
+    h += `<div class="rung"><span class="lvl">Au-dessus</span>
+      <div class="chips">${r.au_dessus.map(x => chip(x)).join("")}</div></div>`;
+  }
+  h += `<div class="rung ici"><span class="lvl">Ici</span>
+    <div class="chips">${chip({niveau:t.niveau, code:t.code, nom:t.nom}, true)}</div></div>`;
+  if(r.en_dessous?.length){
+    h += `<div class="rung"><span class="lvl">Communes</span>
+      <div class="chips">${r.en_dessous.map(x => chip(x)).join("")}</div></div>`;
+  }
+
+  let note = "";
+  if(t.niveau === "commune"){
+    note = `Cette commune relève d'un canton et d'une intercommunalité qui ne
+            regroupent pas les mêmes communes : les deux périmètres se recouvrent
+            sans coïncider.`;
+  } else if(t.niveau === "canton" && t.communes_scindees === false){
+    note = `Ce canton est composé de ${t.nombre_communes} communes entières.
+            Les valeurs agrégées y sont donc exactes.`;
+  }
+
+  return `<section class="ratt"><span class="dsp">Rattachements</span>
+    <div class="spine">${h}</div>
+    ${note ? `<div class="note">${note}</div>` : ""}</section>`;
+}
+
+async function afficher(niveau, code){
+  try{
+    const d = await charger(chemin(niveau, code));
+    const t = d.territoire;
+
+    $("#kind").textContent = t.niveau;
+    $("#nom").textContent = t.nom;
+    $("#sub").textContent = t.nombre_communes
+      ? `${t.nombre_communes} communes · code ${t.code}`
+      : `Code INSEE ${t.code}`;
+
+    const mesures = Object.entries(d.mesures)
+      .filter(([, m]) => m.valeur !== null)
+      .map(([id, m]) => carte(id, m)).join("");
+
+    $("#vue").innerHTML = `<div class="cards">${mesures}</div>${rattachements(d)}`;
+    $("#pied").innerHTML =
+      `Données publiques — Licence Ouverte 2.0 · Contrat v${d.version_contrat}
+       · Mise à jour du ${new Date(d.genere_le).toLocaleDateString("fr-FR")}`;
+
+    $("#vue").querySelectorAll(".chip:not(.now)").forEach(b =>
+      b.onclick = () => afficher(b.dataset.n, b.dataset.c));
+
+    history.replaceState(null, "", `#${niveau}/${code}`);
+    window.scrollTo({top:0, behavior:"smooth"});
+  }catch(e){
+    $("#vue").innerHTML = `<p class="etat">Données indisponibles.<br>${e.message}</p>`;
+  }
+}
+
+$("#q").oninput = e => {
+  const v = e.target.value.trim().toLowerCase(), box = $("#hits");
+  if(!v || !index){ box.classList.remove("on"); return; }
+  const hits = index.territoires
+    .filter(t => t.nom.toLowerCase().includes(v) || t.code.startsWith(v))
+    .slice(0, 8);
+  box.innerHTML = hits.length
+    ? hits.map(t => `<button data-n="${t.niveau}" data-c="${t.code}">
+        <span class="tag">${t.niveau}</span><span class="nm">${t.nom}</span>
+        <span class="cd">${t.code}</span></button>`).join("")
+    : `<button disabled style="color:var(--dim)">Aucun territoire ne correspond</button>`;
+  box.querySelectorAll("button[data-n]").forEach(b => b.onclick = () => {
+    afficher(b.dataset.n, b.dataset.c);
+    box.classList.remove("on"); $("#q").value = "";
+  });
+  box.classList.add("on");
+};
+document.addEventListener("click", e => {
+  if(!e.target.closest(".find")) $("#hits").classList.remove("on");
+});
+
+(async function(){
+  try{
+    index = await charger(`${BASE}/index.json`);
+    const dep = location.hash.slice(1).split("/");
+    if(dep.length === 2) await afficher(dep[0], dep[1]);
+    else await afficher("canton", "3823");
+  }catch(e){
+    $("#nom").textContent = "Données indisponibles";
+    $("#vue").innerHTML = `<p class="etat">Impossible de charger l'index.<br>
+      ${e.message}<br><br>Si vous ouvrez cette page directement depuis le disque,
+      lancez plutôt <code>python -m http.server</code> dans le dossier du projet,
+      puis ouvrez <code>http://localhost:8000</code>.</p>`;
+  }
+})();
+</script>
 </body>
 </html>

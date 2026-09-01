@@ -1,0 +1,58 @@
+{
+  "version_contrat": "1.0",
+  "genere_le": "2026-09-01",
+  "territoire": {
+    "niveau": "commune",
+    "code": "38263",
+    "nom": "Morette",
+    "longitude": 5.4516,
+    "latitude": 45.2846,
+    "codes_postaux": [
+      "38210"
+    ]
+  },
+  "rattachements": {
+    "au_dessus": [
+      {
+        "niveau": "canton",
+        "code": "3823",
+        "nom": "Le Sud Grésivaudan"
+      },
+      {
+        "niveau": "epci",
+        "code": "200070431",
+        "nom": "Saint-Marcellin Vercors Isère"
+      }
+    ],
+    "en_dessous": []
+  },
+  "mesures": {
+    "POP-01": {
+      "valeur": 358,
+      "unite": "habitants",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "nom": "Population municipale"
+    },
+    "GEO-13": {
+      "valeur": 6.3,
+      "unite": "km²",
+      "obtention": "natif",
+      "source": "IGN — Admin Express",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "nom": "Superficie"
+    },
+    "POP-10": {
+      "valeur": 56.8,
+      "unite": "hab./km²",
+      "obtention": "recalculé",
+      "source": "Calculé — INSEE et IGN",
+      "licence": "Licence Ouverte 2.0",
+      "format": "carte",
+      "nom": "Densité de population"
+    }
+  }
+}

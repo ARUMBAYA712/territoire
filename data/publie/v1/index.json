@@ -1,0 +1,251 @@
+{
+  "version_contrat": "1.0",
+  "genere_le": "2026-09-01",
+  "territoires": [
+    {
+      "niveau": "commune",
+      "code": "38004",
+      "nom": "L'Albenc"
+    },
+    {
+      "niveau": "commune",
+      "code": "38018",
+      "nom": "Auberives-en-Royans"
+    },
+    {
+      "niveau": "commune",
+      "code": "38033",
+      "nom": "Beaulieu"
+    },
+    {
+      "niveau": "commune",
+      "code": "38036",
+      "nom": "Beauvoir-en-Royans"
+    },
+    {
+      "niveau": "commune",
+      "code": "38041",
+      "nom": "Bessins"
+    },
+    {
+      "niveau": "commune",
+      "code": "38074",
+      "nom": "Chantesse"
+    },
+    {
+      "niveau": "commune",
+      "code": "38086",
+      "nom": "Chasselay"
+    },
+    {
+      "niveau": "commune",
+      "code": "38092",
+      "nom": "Châtelus"
+    },
+    {
+      "niveau": "commune",
+      "code": "38095",
+      "nom": "Chatte"
+    },
+    {
+      "niveau": "commune",
+      "code": "38099",
+      "nom": "Chevrières"
+    },
+    {
+      "niveau": "commune",
+      "code": "38108",
+      "nom": "Choranche"
+    },
+    {
+      "niveau": "commune",
+      "code": "38117",
+      "nom": "Cognin-les-Gorges"
+    },
+    {
+      "niveau": "commune",
+      "code": "38137",
+      "nom": "Cras"
+    },
+    {
+      "niveau": "commune",
+      "code": "38195",
+      "nom": "Izeron"
+    },
+    {
+      "niveau": "commune",
+      "code": "38216",
+      "nom": "Malleval-en-Vercors"
+    },
+    {
+      "niveau": "commune",
+      "code": "38245",
+      "nom": "Montagne"
+    },
+    {
+      "niveau": "commune",
+      "code": "38248",
+      "nom": "Montaud"
+    },
+    {
+      "niveau": "commune",
+      "code": "38263",
+      "nom": "Morette"
+    },
+    {
+      "niveau": "commune",
+      "code": "38272",
+      "nom": "Murinais"
+    },
+    {
+      "niveau": "commune",
+      "code": "38275",
+      "nom": "Serre-Nerpol"
+    },
+    {
+      "niveau": "commune",
+      "code": "38278",
+      "nom": "Notre-Dame-de-l'Osier"
+    },
+    {
+      "niveau": "commune",
+      "code": "38310",
+      "nom": "Poliénas"
+    },
+    {
+      "niveau": "commune",
+      "code": "38319",
+      "nom": "Pont-en-Royans"
+    },
+    {
+      "niveau": "commune",
+      "code": "38322",
+      "nom": "Presles"
+    },
+    {
+      "niveau": "commune",
+      "code": "38330",
+      "nom": "Quincieu"
+    },
+    {
+      "niveau": "commune",
+      "code": "38333",
+      "nom": "Rencurel"
+    },
+    {
+      "niveau": "commune",
+      "code": "38338",
+      "nom": "La Rivière"
+    },
+    {
+      "niveau": "commune",
+      "code": "38345",
+      "nom": "Rovon"
+    },
+    {
+      "niveau": "commune",
+      "code": "38356",
+      "nom": "Saint-André-en-Royans"
+    },
+    {
+      "niveau": "commune",
+      "code": "38359",
+      "nom": "Saint Antoine l'Abbaye"
+    },
+    {
+      "niveau": "commune",
+      "code": "38360",
+      "nom": "Saint-Appolinard"
+    },
+    {
+      "niveau": "commune",
+      "code": "38370",
+      "nom": "Saint-Bonnet-de-Chavagne"
+    },
+    {
+      "niveau": "commune",
+      "code": "38390",
+      "nom": "Saint-Gervais"
+    },
+    {
+      "niveau": "commune",
+      "code": "38394",
+      "nom": "Saint-Hilaire-du-Rosier"
+    },
+    {
+      "niveau": "commune",
+      "code": "38409",
+      "nom": "Saint-Just-de-Claix"
+    },
+    {
+      "niveau": "commune",
+      "code": "38410",
+      "nom": "Saint-Lattier"
+    },
+    {
+      "niveau": "commune",
+      "code": "38416",
+      "nom": "Saint-Marcellin"
+    },
+    {
+      "niveau": "commune",
+      "code": "38443",
+      "nom": "Saint-Pierre-de-Chérennes"
+    },
+    {
+      "niveau": "commune",
+      "code": "38450",
+      "nom": "Saint-Quentin-sur-Isère"
+    },
+    {
+      "niveau": "commune",
+      "code": "38453",
+      "nom": "Saint-Romans"
+    },
+    {
+      "niveau": "commune",
+      "code": "38454",
+      "nom": "Saint-Sauveur"
+    },
+    {
+      "niveau": "commune",
+      "code": "38463",
+      "nom": "Saint-Vérand"
+    },
+    {
+      "niveau": "commune",
+      "code": "38495",
+      "nom": "La Sône"
+    },
+    {
+      "niveau": "commune",
+      "code": "38500",
+      "nom": "Têche"
+    },
+    {
+      "niveau": "commune",
+      "code": "38523",
+      "nom": "Varacieux"
+    },
+    {
+      "niveau": "commune",
+      "code": "38526",
+      "nom": "Vatilieu"
+    },
+    {
+      "niveau": "commune",
+      "code": "38559",
+      "nom": "Vinay"
+    },
+    {
+      "niveau": "canton",
+      "code": "3823",
+      "nom": "Le Sud Grésivaudan"
+    },
+    {
+      "niveau": "epci",
+      "code": "200070431",
+      "nom": "Saint-Marcellin Vercors Isère Communauté"
+    }
+  ]
+}
