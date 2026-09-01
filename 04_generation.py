@@ -115,6 +115,15 @@ main .wrap{padding:26px 20px 48px}
   display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--soft)}
 .pill{border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px}
 
+.carte-bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:16px}
+.carte-bloc .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:10px}
+svg.carte{display:block;width:100%;height:auto;max-height:440px}
+svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8}
+svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
+  fill-opacity:.85}
+.carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
+
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
 .ratt > .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:14px}
@@ -172,16 +181,15 @@ JS = """
     return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   }
 
-  // Score de pertinence : plus il est bas, plus le résultat remonte.
-  // Un nom qui commence par la saisie prime sur un nom qui la contient,
-  // qui prime sur une correspondance de code postal.
+  // Deux groupes seulement : ce qui commence par la saisie, puis le reste.
+  // À l'intérieur de chaque groupe, l'ordre alphabétique s'applique.
   function score(t, v){
     var nom = sansAccents(t.nom);
     if(nom.indexOf(v) === 0) return 0;
     if(nom.indexOf(v) !== -1) return 1;
-    if(t.code.indexOf(v) === 0) return 2;
+    if(t.code.indexOf(v) === 0) return 1;
     var cp = (t.codes_postaux || []).some(function(c){ return c.indexOf(v) === 0; });
-    if(cp) return 3;
+    if(cp) return 1;
     return -1;
   }
 
@@ -197,12 +205,10 @@ JS = """
       if(s >= 0) trouves.push({ t: index[i], s: s });
     }
 
-    // à pertinence égale, la commune la plus peuplée d'abord :
-    // sur un code postal partagé, c'est presque toujours celle que l'on cherche
+    // Les noms commençant par la saisie remontent en tête ;
+    // à l'intérieur de chaque groupe, ordre alphabétique.
     trouves.sort(function(a, b){
       if(a.s !== b.s) return a.s - b.s;
-      var pa = a.t.population || 0, pb = b.t.population || 0;
-      if(pa !== pb) return pb - pa;
       return a.t.nom.localeCompare(b.t.nom, 'fr');
     });
 
@@ -316,6 +322,25 @@ def bloc_rattachements(d, base, adresses):
     </section>"""
 
 
+def bloc_carte(t):
+    """Insère la carte du territoire si elle a été produite par 05_cartes.py.
+
+    Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
+    ainsi des couleurs du thème, et reste donc pilotable depuis style.css.
+    """
+    fichier = RACINE / "assets" / "cartes" / t["niveau"] / f"{t['code']}.svg"
+    if not fichier.exists():
+        return ""
+    svg = fichier.read_text(encoding="utf-8")
+    legende = ("Situation dans le territoire" if t["niveau"] == "commune"
+               else "Communes membres")
+    return f"""    <section class="carte-bloc">
+      <span class="dsp">Carte</span>
+      {svg}
+      <p class="carte-legende">{legende}</p>
+    </section>"""
+
+
 def page(d, base, canonique, adresses, accueil=False):
     t = d["territoire"]
     niveau = LIBELLE.get(t["niveau"], t["niveau"])
@@ -381,6 +406,7 @@ def page(d, base, canonique, adresses, accueil=False):
     <div class="cards">
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
+{bloc_carte(t)}
 {bloc_rattachements(d, base, adresses)}
 </div></main>
 
@@ -411,11 +437,22 @@ def main():
     index = json.loads((PUBLIE / "index.json").read_text(encoding="utf-8"))
 
     # nettoyage des dossiers générés uniquement
+    # Les cartes sont produites par 05_cartes.py : on les préserve.
+    cartes = ASSETS / "cartes"
+    garde = None
+    if cartes.exists():
+        garde = RACINE / ".cartes-tmp"
+        if garde.exists():
+            shutil.rmtree(garde)
+        shutil.move(str(cartes), str(garde))
+
     for sous in ("commune", "canton", "epci", "assets"):
         if (RACINE / sous).exists():
             shutil.rmtree(RACINE / sous)
 
-    ASSETS.mkdir(parents=True)
+    ASSETS.mkdir(parents=True, exist_ok=True)
+    if garde:
+        shutil.move(str(garde), str(cartes))
     (ASSETS / "style.css").write_text(CSS.strip(), encoding="utf-8")
     (ASSETS / "recherche.js").write_text(JS.strip(), encoding="utf-8")
 

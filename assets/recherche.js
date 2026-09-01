@@ -13,16 +13,15 @@
     return t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
   }
 
-  // Score de pertinence : plus il est bas, plus le résultat remonte.
-  // Un nom qui commence par la saisie prime sur un nom qui la contient,
-  // qui prime sur une correspondance de code postal.
+  // Deux groupes seulement : ce qui commence par la saisie, puis le reste.
+  // À l'intérieur de chaque groupe, l'ordre alphabétique s'applique.
   function score(t, v){
     var nom = sansAccents(t.nom);
     if(nom.indexOf(v) === 0) return 0;
     if(nom.indexOf(v) !== -1) return 1;
-    if(t.code.indexOf(v) === 0) return 2;
+    if(t.code.indexOf(v) === 0) return 1;
     var cp = (t.codes_postaux || []).some(function(c){ return c.indexOf(v) === 0; });
-    if(cp) return 3;
+    if(cp) return 1;
     return -1;
   }
 
@@ -38,12 +37,10 @@
       if(s >= 0) trouves.push({ t: index[i], s: s });
     }
 
-    // à pertinence égale, la commune la plus peuplée d'abord :
-    // sur un code postal partagé, c'est presque toujours celle que l'on cherche
+    // Les noms commençant par la saisie remontent en tête ;
+    // à l'intérieur de chaque groupe, ordre alphabétique.
     trouves.sort(function(a, b){
       if(a.s !== b.s) return a.s - b.s;
-      var pa = a.t.population || 0, pb = b.t.population || 0;
-      if(pa !== pb) return pb - pa;
       return a.t.nom.localeCompare(b.t.nom, 'fr');
     });
 
