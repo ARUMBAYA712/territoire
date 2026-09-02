@@ -73,6 +73,35 @@
   });
 })();
 
+// ── Bandeau du territoire : collant, et compressé au défilement ────
+// La hauteur de la barre du haut est mesurée plutôt que devinée :
+// elle varie selon la largeur d'écran et la longueur du nom du site.
+(function(){
+  var haut = document.querySelector('.top');
+  var terr = document.querySelector('.terr');
+  if(!haut || !terr) return;
+
+  function caler(){
+    document.documentElement.style.setProperty(
+      '--h-top', haut.offsetHeight + 'px');
+  }
+
+  var enCours = false;
+  function defiler(){
+    if(enCours) return;
+    enCours = true;
+    window.requestAnimationFrame(function(){
+      terr.classList.toggle('compact', window.scrollY > 40);
+      enCours = false;
+    });
+  }
+
+  caler();
+  window.addEventListener('resize', caler, {passive:true});
+  window.addEventListener('scroll', defiler, {passive:true});
+  defiler();
+})();
+
 // ── Infobulle des cartes ────────────────────────────────────────────
 // L'infobulle native du SVG n'est pas fiable quand la forme est placée
 // dans un lien. On l'affiche donc nous-mêmes. Le <title> reste présent
@@ -100,8 +129,7 @@
   }
 
   function contenu(forme){
-    var t = forme.querySelector('title');
-    var nom = t ? t.textContent : '';
+    var nom = forme.getAttribute('data-nom') || '';
     if(!couches || !active) return '<b>' + nom + '</b>';
     var code = forme.getAttribute('data-code');
     var c = couches.couches[active];
