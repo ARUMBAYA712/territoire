@@ -73,10 +73,15 @@ button{background:none;border:none;cursor:pointer}
 
 .top{position:sticky;top:0;z-index:20;background:var(--surface);
   border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;gap:18px;min-height:60px;
-  flex-wrap:wrap;padding:8px 20px}
-.logo{font-family:var(--font-display);font-weight:600;font-size:19px;white-space:nowrap}
-.find{position:relative;flex:1;min-width:200px;max-width:400px}
+.top .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  gap:18px;min-height:60px;padding:8px 20px}
+.logo{font-family:var(--font-display);font-weight:600;font-size:19px;
+  white-space:nowrap;justify-self:start}
+.find-groupe{display:flex;align-items:center;gap:10px;justify-self:center}
+.find-label{font-family:var(--font-display);font-weight:600;
+  text-transform:uppercase;letter-spacing:.09em;font-size:11px;
+  color:var(--soft);white-space:nowrap;cursor:pointer}
+.find{position:relative;width:340px;max-width:44vw}
 .find input{width:100%;height:36px;padding:0 12px;background:var(--sunken);
   border:1px solid var(--line);border-radius:var(--radius);font-size:14px}
 .find input::placeholder{color:var(--dim)}
@@ -96,8 +101,14 @@ button{background:none;border:none;cursor:pointer}
 .hits .cd{font-family:var(--font-data);font-size:11px;color:var(--dim)}
 .vide{padding:8px 12px;font-size:13px;color:var(--dim)}
 
-.terr{background:var(--surface);border-bottom:1px solid var(--line)}
-.terr .wrap{padding:24px 20px}
+.terr{background:var(--surface);border-bottom:1px solid var(--line);
+  position:sticky;top:var(--h-top,61px);z-index:19}
+.terr .wrap{padding:24px 20px;transition:padding .16s ease}
+.terr h1{transition:font-size .16s ease}
+.terr.compact .wrap{padding-top:7px;padding-bottom:7px}
+.terr.compact h1{font-size:22px}
+.terr.compact .kind{font-size:10px}
+.terr.compact .sub{margin-top:1px;font-size:12px}
 .terr .kind{font-size:11px;color:var(--soft)}
 .terr h1{font-family:var(--font-display);font-size:34px;line-height:1.05;
   text-transform:none;letter-spacing:.01em;font-weight:600}
@@ -108,7 +119,7 @@ main .wrap{padding:26px 20px 48px}
 .card{background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
 .card .id{font-family:var(--font-data);font-size:10px;color:var(--dim)}
-.card h2{font-size:13px;font-weight:600}
+.card h2{font-size:15px;font-weight:600;line-height:1.25}
 .card .v{font-family:var(--font-data);font-size:28px;color:var(--accent);line-height:1}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
@@ -117,7 +128,9 @@ main .wrap{padding:26px 20px 48px}
 
 .carte-bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px}
-.carte-bloc .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:10px}
+.carte-bloc .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
+  text-transform:none;letter-spacing:0;color:var(--ink);display:block;
+  margin-bottom:12px}
 svg.carte{display:block;width:100%;height:auto;max-height:440px}
 svg.carte a{cursor:pointer}
 svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
@@ -127,7 +140,7 @@ svg.carte a:hover .c-voisine,svg.carte a:focus .c-voisine{
 svg.carte a:focus{outline:none}
 svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
   fill-opacity:.85}
-.carte-legende{font-size:11px;color:var(--soft);margin-top:8px}
+.carte-legende{font-size:14px;color:var(--soft);margin-top:10px;line-height:1.45}
 .carte-bulle{position:fixed;z-index:50;display:none;pointer-events:none;
   background:var(--ink);color:var(--surface);font-size:12px;line-height:1.3;
   padding:4px 9px;border-radius:var(--radius);white-space:nowrap;
@@ -150,7 +163,8 @@ svg.carte .c-ici{fill:var(--accent);stroke:var(--accent);stroke-width:1.2;
   font-size:11px;color:var(--soft)}
 .carte-echelle .pal{width:26px;height:11px;border:1px solid var(--line);
   background:var(--accent)}
-.carte-echelle .unite{margin-left:auto;font-family:var(--font-data)}
+.carte-echelle .unite{margin-left:auto;font-family:var(--font-data);
+  font-size:18px;font-weight:500;color:var(--ink)}
 .carte-echelle .bas{margin-right:4px}
 .carte-echelle .haut{margin-left:4px}
 
@@ -168,7 +182,9 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
-.ratt > .dsp{font-size:11px;color:var(--soft);display:block;margin-bottom:14px}
+.ratt > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
+  text-transform:none;letter-spacing:0;color:var(--ink);display:block;
+  margin-bottom:14px}
 .spine{position:relative;padding-left:30px}
 .spine::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:1px;
   background:repeating-linear-gradient(to bottom,var(--mark) 0 3px,transparent 3px 7px)}
@@ -185,7 +201,9 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .chips{display:flex;flex-wrap:wrap;gap:5px}
 .chip{border:1px solid var(--line);border-radius:var(--radius);padding:4px 10px;
   font-size:13px;display:inline-block}
-a.chip:hover{border-color:var(--link);color:var(--link)}
+a.chip{transition:background .12s,color .12s,border-color .12s}
+a.chip:hover,a.chip:focus-visible{background:var(--accent);color:var(--surface);
+  border-color:var(--accent);font-weight:600}
 .chip.now{background:var(--accent-soft);border-color:var(--accent);
   color:var(--accent);font-weight:600}
 .note{margin-top:14px;border-left:2px solid var(--mark);padding:8px 12px;
@@ -200,6 +218,13 @@ footer.site a{color:var(--link)}
   .carte-grille{grid-template-columns:1fr}
   .carte-menu{flex-direction:row;flex-wrap:wrap}
   .carte-menu .opt{font-size:12px;padding:6px 8px}
+}
+@media(max-width:640px){
+  .top .wrap{grid-template-columns:1fr;gap:8px;justify-items:stretch}
+  .logo{justify-self:center}
+  .find-groupe{justify-self:stretch}
+  .find{width:auto;max-width:none;flex:1}
+  .top-fin{display:none}
 }
 @media(max-width:560px){
   .cards{grid-template-columns:1fr}
@@ -288,6 +313,35 @@ JS = """
   });
 })();
 
+// ── Bandeau du territoire : collant, et compressé au défilement ────
+// La hauteur de la barre du haut est mesurée plutôt que devinée :
+// elle varie selon la largeur d'écran et la longueur du nom du site.
+(function(){
+  var haut = document.querySelector('.top');
+  var terr = document.querySelector('.terr');
+  if(!haut || !terr) return;
+
+  function caler(){
+    document.documentElement.style.setProperty(
+      '--h-top', haut.offsetHeight + 'px');
+  }
+
+  var enCours = false;
+  function defiler(){
+    if(enCours) return;
+    enCours = true;
+    window.requestAnimationFrame(function(){
+      terr.classList.toggle('compact', window.scrollY > 40);
+      enCours = false;
+    });
+  }
+
+  caler();
+  window.addEventListener('resize', caler, {passive:true});
+  window.addEventListener('scroll', defiler, {passive:true});
+  defiler();
+})();
+
 // ── Infobulle des cartes ────────────────────────────────────────────
 // L'infobulle native du SVG n'est pas fiable quand la forme est placée
 // dans un lien. On l'affiche donc nous-mêmes. Le <title> reste présent
@@ -315,8 +369,7 @@ JS = """
   }
 
   function contenu(forme){
-    var t = forme.querySelector('title');
-    var nom = t ? t.textContent : '';
+    var nom = forme.getAttribute('data-nom') || '';
     if(!couches || !active) return '<b>' + nom + '</b>';
     var code = forme.getAttribute('data-code');
     var c = couches.couches[active];
@@ -503,7 +556,16 @@ def classe(valeur, seuils):
 
 
 def format_valeur(v, unite):
-    return f"{nombre(v)}\u202f{unite}" if v is not None else "non disponible"
+    """Espace normale avant un mot, espace fine avant un symbole.
+
+    « 7 700 habitants » se lit mieux avec une vraie espace ;
+    « 12,4 km² » ou « 76,9 hab./km² » avec une espace fine.
+    Une unité entièrement alphabétique est traitée comme un mot.
+    """
+    if v is None:
+        return "non disponible"
+    separateur = "\u00a0" if unite.isalpha() else "\u202f"
+    return f"{nombre(v)}{separateur}{unite}"
 
 
 def donnees_carte(membres, fiches):
@@ -581,13 +643,15 @@ def bloc_carte(t, base, adresses, fiches, membres):
     def relier(m):
         cl, code, trace, nom = m.groups()
         teinte = f" {defaut.get(code, 'nd')}" if carte else ""
-        forme = (f'<path class="{cl}{teinte}" data-code="{code}" d="{trace}">'
-                 f'<title>{nom}</title></path>')
+        # Le nom est porté par un attribut plutôt que par une balise <title> :
+        # celle-ci déclencherait l'infobulle native du navigateur, qui se
+        # superposerait à la nôtre. L'accessibilité passe par aria-label.
+        forme = (f'<path class="{cl}{teinte}" data-code="{code}" '
+                 f'data-nom="{nom}" d="{trace}"/>')
         cible = adresses.get(("commune", code))
         if not cible or code == t["code"]:
-            return forme
-        return (f'<a href="{base}/{cible}" aria-label="{nom}">'
-                f'<title>{nom}</title>{forme}</a>')
+            return f'<g role="img" aria-label="{nom}">{forme}</g>'
+        return f'<a href="{base}/{cible}" aria-label="{nom}">{forme}</a>' 
 
     svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
 
@@ -671,11 +735,15 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
 
 <div class="top"><div class="wrap">
   <a class="logo" href="{base}/">{escape(TITRE_SITE)}</a>
-  <div class="find">
-    <input id="q" type="text" placeholder="Commune, code postal…"
-           autocomplete="off" aria-label="Rechercher un territoire">
-    <div class="hits" id="hits"></div>
+  <div class="find-groupe">
+    <label class="find-label" for="q">Recherche</label>
+    <div class="find">
+      <input id="q" type="text" placeholder="Commune, code postal…"
+             autocomplete="off">
+      <div class="hits" id="hits"></div>
+    </div>
   </div>
+  <div class="top-fin"></div>
 </div></div>
 
 <div class="terr"><div class="wrap">
