@@ -110,12 +110,28 @@ button{background:none;border:none;cursor:pointer}
 
 .terr{background:var(--surface);border-bottom:1px solid var(--line);
   position:sticky;top:var(--h-top,61px);z-index:19}
-.terr .wrap{padding:24px 20px;transition:padding .16s ease}
+.terr .wrap{padding:24px 20px;transition:padding .16s ease;
+  display:flex;align-items:center;justify-content:space-between;gap:24px}
+.terr-identite{min-width:0}
+
+/* Rappel des territoires de rattachement, à droite du nom.
+   Taille voisine du tiers du titre, alignée à droite, centrée
+   verticalement sur le bloc d'identité. */
+.terr-parents{text-align:right;flex-shrink:0;display:flex;
+  flex-direction:column;gap:3px;font-size:15px;line-height:1.3}
+.terr-parents .p-ligne{display:block;color:var(--ink)}
+.terr-parents .p-role{display:block;font-family:var(--font-display);
+  font-weight:600;text-transform:uppercase;letter-spacing:.09em;
+  font-size:10px;color:var(--dim);line-height:1.4}
+.terr-parents a{color:inherit;border-bottom:1px solid transparent}
+.terr-parents a:hover{color:var(--accent);border-bottom-color:currentColor}
 .terr h1{transition:font-size .16s ease}
 .terr.compact .wrap{padding-top:5px;padding-bottom:6px}
 .terr.compact h1{font-size:20px}
 .terr.compact .kind{font-size:10px}
 .terr.compact .sub{margin-top:1px;font-size:12px}
+.terr.compact .terr-parents{font-size:12px;gap:0}
+.terr.compact .terr-parents .p-role{font-size:9px;line-height:1.2}
 .terr .kind{font-size:11px;color:var(--soft)}
 .terr h1{font-family:var(--font-display);font-size:34px;line-height:1.05;
   text-transform:none;letter-spacing:.01em;font-weight:600}
@@ -304,6 +320,13 @@ footer.site a{color:var(--link)}
   .find-groupe{justify-self:stretch}
   .find{width:auto;max-width:none;flex:1}
   .top-fin{display:none}
+}
+@media(max-width:700px){
+  .terr .wrap{flex-direction:column;align-items:flex-start;gap:10px}
+  .terr-parents{text-align:left;flex-direction:row;flex-wrap:wrap;
+    gap:6px 18px;font-size:13px}
+  .terr-parents .p-role{display:inline;font-size:10px;margin-right:5px}
+  .terr.compact .terr-parents{font-size:12px}
 }
 @media(max-width:560px){
   .bl-grille{grid-template-columns:1fr}
@@ -1016,6 +1039,31 @@ def bloc_liste(d, rubrique, sous=None):
     return "\n".join(sorties)
 
 
+ROLES = {"canton": "Canton", "epci": "Intercommunalité",
+         "departement": "Département", "region": "Région"}
+
+
+def rappel_parents(d, base, adresses):
+    """Rappelle les territoires auxquels la fiche se rattache.
+
+    Affiché dans le bandeau, à droite du nom : un habitant sait
+    rarement de quel canton relève sa commune, et encore moins de
+    quelle intercommunalité.
+    """
+    lignes = []
+    for r in (d["rattachements"].get("au_dessus") or []):
+        role = ROLES.get(r["niveau"], r["niveau"].capitalize())
+        cible = adresses.get((r["niveau"], r["code"]))
+        nom = escape(r["nom"])
+        contenu = (f'<a href="{base}/{cible}">{nom}</a>' if cible else nom)
+        lignes.append(f'<span class="p-ligne">'
+                      f'<span class="p-role">{escape(role)}</span>'
+                      f'{contenu}</span>')
+    if not lignes:
+        return ""
+    return f'<div class="terr-parents">{"".join(lignes)}</div>'
+
+
 def page(d, base, canonique, adresses, fiches, rubrique,
          chemin_territoire, actives, sous=None, sous_dispo=(),
          accueil=False):
@@ -1116,9 +1164,12 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 </div></div>
 
 <div class="terr"><div class="wrap">
-  <div class="kind dsp">{escape(niveau)}</div>
-  <h1>{escape(t['nom'])}</h1>
-  <div class="sub">{sous_titre}</div>
+  <div class="terr-identite">
+    <div class="kind dsp">{escape(niveau)}</div>
+    <h1>{escape(t['nom'])}</h1>
+    <div class="sub">{sous_titre}</div>
+  </div>
+  {rappel_parents(d, base, adresses)}
 </div></div>
 
 {nav_rubriques(base, chemin_territoire, actives, rubrique["id"])}
