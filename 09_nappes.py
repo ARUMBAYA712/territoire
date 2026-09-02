@@ -41,7 +41,10 @@ API = "https://hubeau.eaufrance.fr/api/v1/niveaux_nappes"
 SOURCE = "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 1
+VERSION = 2
+
+RUBRIQUE = "environnement"
+SOUS_RUBRIQUE = "nappes"
 MARGE = 0.08          # degrés ajoutés autour du territoire pour la recherche
 SEUIL_ELOIGNEMENT = 15    # km au-delà desquels la station devient indicative
 FRAICHEUR_JOURS = 120     # ancienneté maximale pour servir de référence
@@ -155,7 +158,8 @@ def distance_km(a, b):
 def mesure(valeur, unite, nom, **habillage):
     base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": "natif", "source": SOURCE, "licence": LICENCE,
-            "format": "texte"}
+            "format": "texte",
+            "rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE}
     base.update(habillage)
     return base
 
@@ -306,7 +310,7 @@ def synthetiser(stations, mesures_par_station):
         "EAU-20": mesure(
             situation["appreciation"][0] if situation else "Non comparable",
             "", "Niveau des nappes souterraines",
-            mise_en_avant=True, ancre=ANCRE,
+            mise_en_avant=True, ancre=ANCRE, rang=10,
             explication=("Comparaison de la dernière mesure aux valeurs "
                          "relevées le même mois les années précédentes, "
                          "sur la station de référence du territoire."),
@@ -314,13 +318,13 @@ def synthetiser(stations, mesures_par_station):
                if situation and situation["appreciation"][1] else {})),
         "EAU-21": mesure(len(exploitables),
                          "station" if len(exploitables) == 1 else "stations",
-                         "Stations piézométriques suivies", ancre=ANCRE),
+                         "Stations piézométriques suivies", ancre=ANCRE, rang=30),
     }
 
     if derniere and derniere.get("profondeur") is not None:
         mesures["EAU-22"] = mesure(
             round(float(derniere["profondeur"]), 2), "m",
-            "Profondeur de la nappe",
+            "Profondeur de la nappe", rang=20,
             repere=(f"Mesure du {_date_fr(derniere['date'])} · "
                     f"{reference['nom']}"
                     + (f" · à {reference['distance']:.0f} km"
@@ -360,7 +364,8 @@ def synthetiser(stations, mesures_par_station):
         items.append(item)
 
     blocs = [{
-        "rubrique": "environnement",
+        "rubrique": RUBRIQUE,
+        "sous_rubrique": SOUS_RUBRIQUE,
         "id": ANCRE,
         "titre": "Stations de mesure des nappes",
         "items": items,

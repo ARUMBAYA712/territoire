@@ -146,7 +146,15 @@ ANCRE = "reseaux-eau-potable"
 # À incrémenter dès que libellés, repères ou structure changent.
 # La collecte étant longue, une version obsolète n'est pas jetée :
 # elle est réhabillée automatiquement, sans nouvel appel réseau.
-VERSION = 2
+VERSION = 3
+
+RUBRIQUE = "environnement"
+SOUS_RUBRIQUE = "eau-potable"
+
+# Rang d'affichage : l'ordre alphabétique des identifiants n'a aucun
+# sens pour le lecteur. On classe du plus parlant au plus technique.
+RANGS = {"EAU-01": 10, "EAU-08": 20, "EAU-02": 30, "EAU-03": 40,
+         "EAU-04": 50, "EAU-05": 60, "EAU-06": 70, "EAU-07": 80}
 
 # ══════════════════════════════════════════════════════════════════
 # REPÈRES DE LECTURE
@@ -239,7 +247,11 @@ def sans_ancre_orpheline(mesures, blocs):
 
 
 def habiller(ident, m):
-    """Applique à une mesure son libellé et ses repères de lecture."""
+    """Applique à une mesure son libellé, ses repères et son rangement."""
+    m["rubrique"] = RUBRIQUE
+    m["sous_rubrique"] = SOUS_RUBRIQUE
+    if ident in RANGS:
+        m["rang"] = RANGS[ident]
     repere = REPERES.get(ident)
     if not repere:
         return m
@@ -268,7 +280,8 @@ def mesure(valeur, unite, nom, ident_source=SOURCE, obtention="natif",
     base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": obtention, "source": ident_source,
             "licence": LICENCE, "format": "texte",
-            "niveaux": ["commune"]}
+            "niveaux": ["commune"],
+            "rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE}
     base.update(habillage)
     return base
 
@@ -408,7 +421,8 @@ def synthetiser(commune, reseaux, analyses):
         items.append({"titre": r["nom"], "etat": etat, "details": details})
 
     blocs = [{
-        "rubrique": "environnement",
+        "rubrique": RUBRIQUE,
+        "sous_rubrique": SOUS_RUBRIQUE,
         "id": ANCRE,
         "titre": "Réseaux d'eau potable desservant la commune",
         "items": items,

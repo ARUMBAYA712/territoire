@@ -66,7 +66,10 @@
         "commune"
       ],
       "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
-      "ancre": "reseaux-eau-potable"
+      "ancre": "reseaux-eau-potable",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 10
     },
     "EAU-02": {
       "valeur": 5,
@@ -79,7 +82,10 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Nombre de prélèvements réalisés par l'agence régionale de santé. Leur fréquence dépend de la taille du réseau."
+      "explication": "Nombre de prélèvements réalisés par l'agence régionale de santé. Leur fréquence dépend de la taille du réseau.",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 30
     },
     "EAU-03": {
       "valeur": 1,
@@ -93,7 +99,10 @@
         "commune"
       ],
       "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs.",
-      "ancre": "reseaux-eau-potable"
+      "ancre": "reseaux-eau-potable",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 40
     },
     "EAU-08": {
       "valeur": 0,
@@ -107,7 +116,10 @@
         "commune"
       ],
       "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
-      "ancre": "reseaux-eau-potable"
+      "ancre": "reseaux-eau-potable",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 20
     },
     "EAU-04": {
       "valeur": 19.4,
@@ -121,7 +133,10 @@
         "commune"
       ],
       "explication": "Composé azoté d'origine surtout agricole et domestique. Sa présence signale une influence des activités humaines sur la ressource.",
-      "repere": "Limite de qualité : 50 mg/L"
+      "repere": "Limite de qualité : 50 mg/L",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 50
     },
     "EAU-05": {
       "valeur": 19.98,
@@ -135,7 +150,10 @@
         "commune"
       ],
       "explication": "Teneur en calcium et magnésium, exprimée en degrés français. Une eau dure entartre les appareils, une eau douce est plus agressive pour les canalisations. Sans effet sanitaire connu.",
-      "repere": "Aucun seuil réglementaire · douce sous 15 °f, moyennement dure de 15 à 30, dure au-delà"
+      "repere": "Aucun seuil réglementaire · douce sous 15 °f, moyennement dure de 15 à 30, dure au-delà",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 60
     },
     "EAU-06": {
       "valeur": 7.6,
@@ -149,7 +167,10 @@
         "commune"
       ],
       "explication": "Mesure l'acidité de l'eau. Une valeur trop basse favorise la dissolution des métaux des canalisations.",
-      "repere": "Référence de qualité : entre 6,5 et 9"
+      "repere": "Référence de qualité : entre 6,5 et 9",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 70
     },
     "EAU-07": {
       "valeur": 0.0,
@@ -163,7 +184,10 @@
         "commune"
       ],
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
-      "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
+      "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L",
+      "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "rang": 80
     },
     "ENV-01": {
       "valeur": 0,
@@ -176,7 +200,10 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "rang": 20
     },
     "ENV-02": {
       "valeur": 4,
@@ -190,7 +217,10 @@
         "commune"
       ],
       "ancre": "catastrophes-naturelles",
-      "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+      "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "rang": 10
     },
     "ENV-03": {
       "valeur": "Faible, avec facteurs géologiques locaux",
@@ -205,7 +235,10 @@
       ],
       "repere": "Catégorie 2 sur 3",
       "ton": "attention",
-      "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+      "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "rang": 50
     },
     "ENV-04": {
       "valeur": "Moyenne",
@@ -220,7 +253,10 @@
       ],
       "repere": "Zone 4 sur 5",
       "ton": "attention",
-      "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+      "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "rang": 60
     },
     "EAU-10": {
       "valeur": "Alerte renforcée",
@@ -233,9 +269,12 @@
       "niveaux": [
         "commune"
       ],
+      "rubrique": "environnement",
+      "sous_rubrique": "secheresse",
       "mise_en_avant": true,
       "ton": "alerte",
-      "ancre": "restrictions-usages-eau"
+      "ancre": "restrictions-usages-eau",
+      "rang": 10
     },
     "EAU-11": {
       "valeur": 3,
@@ -248,7 +287,10 @@
       "niveaux": [
         "commune"
       ],
-      "ancre": "restrictions-usages-eau"
+      "rubrique": "environnement",
+      "sous_rubrique": "secheresse",
+      "ancre": "restrictions-usages-eau",
+      "rang": 20
     }
   },
   "blocs": [
@@ -295,6 +337,7 @@
     },
     {
       "rubrique": "environnement",
+      "sous_rubrique": "secheresse",
       "id": "restrictions-usages-eau",
       "titre": "Restrictions des usages de l'eau",
       "items": [

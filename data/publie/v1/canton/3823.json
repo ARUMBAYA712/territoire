@@ -269,66 +269,63 @@
       "nom": "Densité de population"
     },
     "EAU-20": {
-      "valeur": "Proche des valeurs habituelles",
+      "valeur": "Sous les valeurs habituelles",
       "unite": "",
       "nom": "Niveau des nappes souterraines",
       "obtention": "natif",
       "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
       "licence": "Licence Ouverte 2.0",
       "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "nappes",
       "mise_en_avant": true,
       "ancre": "stations-piezometriques",
-      "explication": "Comparaison de la dernière mesure aux valeurs relevées le même mois les années précédentes, sur la station de référence du territoire."
+      "rang": 10,
+      "explication": "Comparaison de la dernière mesure aux valeurs relevées le même mois les années précédentes, sur la station de référence du territoire.",
+      "ton": "attention"
     },
     "EAU-21": {
-      "valeur": 9,
+      "valeur": 7,
       "unite": "stations",
       "nom": "Stations piézométriques suivies",
       "obtention": "natif",
       "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
       "licence": "Licence Ouverte 2.0",
       "format": "texte",
-      "ancre": "stations-piezometriques"
+      "rubrique": "environnement",
+      "sous_rubrique": "nappes",
+      "ancre": "stations-piezometriques",
+      "rang": 30
     },
     "EAU-22": {
-      "valeur": 38.59,
+      "valeur": 41.29,
       "unite": "m",
       "nom": "Profondeur de la nappe",
       "obtention": "natif",
       "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
       "licence": "Licence Ouverte 2.0",
       "format": "texte",
-      "repere": "Mesure du 31/08/2026 · PIEZOMETRE - VEYER (ST-ETIENNE-ST-GEOIRS - BRGM 38) - BSH",
+      "rubrique": "environnement",
+      "sous_rubrique": "nappes",
+      "rang": 20,
+      "repere": "Mesure du 23/08/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
       "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
   },
   "blocs": [
     {
       "rubrique": "environnement",
+      "sous_rubrique": "nappes",
       "id": "stations-piezometriques",
       "titre": "Stations de mesure des nappes",
       "items": [
         {
-          "titre": "PIEZOMETRE - VEYER (ST-ETIENNE-ST-GEOIRS - BRGM 38) - BSH — station de référence",
-          "details": {
-            "Code BSS": "07714X0054/F",
-            "Commune": "Saint-Étienne-de-Saint-Geoirs",
-            "Profondeur": "38.59 m",
-            "Altitude de la nappe": "362.62 m NGF",
-            "Dernière mesure": "31/08/2026",
-            "Mesures sur 5 ans": 1824
-          },
-          "etat": [
-            "Proche des valeurs habituelles",
-            "neutre"
-          ],
-          "texte": "Médiane des mois comparables : 38.48 m sur 154 relevés. Écart : +0.11 m."
-        },
-        {
-          "titre": "PUITS - FONTCHAUDE (SAINT-BONNET-DE-CHAVAGNE - BRGM 38) - BSH",
+          "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
           "details": {
             "Code BSS": "07953X0104/P",
             "Commune": "Saint-Bonnet-de-Chavagne",
+            "Distance du centre du territoire": "12 km",
+            "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
             "Profondeur": "7.67 m",
             "Altitude de la nappe": "249.55 m NGF",
             "Dernière mesure": "31/08/2026",
@@ -341,42 +338,29 @@
           "texte": "Médiane des mois comparables : 7.52 m sur 133 relevés. Écart : +0.15 m."
         },
         {
-          "titre": "PIEZOMETRE - BOIS DES BURETTES (PENOL - BRGM 38) - BSH",
+          "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
           "details": {
-            "Code BSS": "07476X0029/S",
-            "Commune": "Penol",
-            "Profondeur": "30.86 m",
-            "Altitude de la nappe": "298.03 m NGF",
+            "Code BSS": "07714X0054/F",
+            "Commune": "Saint-Étienne-de-Saint-Geoirs",
+            "Distance du centre du territoire": "20 km",
+            "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
+            "Profondeur": "38.59 m",
+            "Altitude de la nappe": "362.62 m NGF",
             "Dernière mesure": "31/08/2026",
             "Mesures sur 5 ans": 1824
-          },
-          "etat": [
-            "Sous les valeurs habituelles",
-            "attention"
-          ],
-          "texte": "Médiane des mois comparables : 30.15 m sur 154 relevés. Écart : +0.71 m."
-        },
-        {
-          "titre": "PIEZOMETRE - VEOLIA (CHATUZANGE LE GOUBET - BRGM 26) - BSH",
-          "details": {
-            "Code BSS": "07955X0099/P1",
-            "Commune": "Chatuzange-le-Goubet",
-            "Profondeur": "85.83 m",
-            "Altitude de la nappe": "168.67 m NGF",
-            "Dernière mesure": "30/08/2026",
-            "Mesures sur 5 ans": 1823
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 85.93 m sur 153 relevés. Écart : -0.10 m."
+          "texte": "Médiane des mois comparables : 38.48 m sur 154 relevés. Écart : +0.11 m."
         },
         {
-          "titre": "PIEZOMETRE - LA FONTANILLE (CHATILLON ST JEAN - 26)",
+          "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
           "details": {
             "Code BSS": "07951X0028/F",
             "Commune": "Châtillon-Saint-Jean",
+            "Distance du centre du territoire": "21 km",
             "Profondeur": "49.73 m",
             "Altitude de la nappe": "240.84 m NGF",
             "Dernière mesure": "30/08/2026",
@@ -389,10 +373,12 @@
           "texte": "Médiane des mois comparables : 50.41 m sur 153 relevés. Écart : -0.68 m."
         },
         {
-          "titre": "Forage - Croix du platre (Vatilieu - BRGM 38)",
+          "titre": "Forage de Croix du platre — Vatilieu — station de référence",
           "details": {
             "Code BSS": "07725X0071/F3",
             "Commune": "Vatilieu",
+            "Distance du centre du territoire": "12 km",
+            "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
             "Profondeur": "41.29 m",
             "Altitude de la nappe": "568.71 m NGF",
             "Dernière mesure": "23/08/2026",
@@ -405,10 +391,12 @@
           "texte": "Médiane des mois comparables : 40.77 m sur 146 relevés. Écart : +0.52 m."
         },
         {
-          "titre": "SOURCE - PIED CHATELET (SAINT JULIEN EN VERCORS - 26)",
+          "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
           "details": {
             "Code BSS": "07965X0092/F",
             "Commune": "Saint-Julien-en-Vercors",
+            "Distance du centre du territoire": "15 km",
+            "Masse d'eau": "Calcaires et marnes crétacés du massif du Vercors",
             "Profondeur": "-0.15 m",
             "Altitude de la nappe": "986.15 m NGF",
             "Dernière mesure": "21/01/2026",
@@ -421,10 +409,12 @@
           "texte": "Médiane des mois comparables : -0.18 m sur 142 relevés. Écart : +0.03 m."
         },
         {
-          "titre": "PZ4 AVAL CET",
+          "titre": "Pz4 Aval Cet — Chatuzange-le-Goubet",
           "details": {
             "Code BSS": "BSS004NBZY/X",
             "Commune": "Chatuzange-le-Goubet",
+            "Distance du centre du territoire": "25 km",
+            "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
             "Profondeur": "61.11 m",
             "Altitude de la nappe": "161.59 m NGF",
             "Dernière mesure": "05/08/2025",
@@ -437,10 +427,12 @@
           "texte": "Médiane des mois comparables : 61.07 m sur 35 relevés. Écart : +0.04 m."
         },
         {
-          "titre": "Source - l Adouin (Saint Martin en Vercors - 26)",
+          "titre": "Source de l Adouin — Saint-Martin-en-Vercors",
           "details": {
             "Code BSS": "07965X0081/HY",
             "Commune": "Saint-Martin-en-Vercors",
+            "Distance du centre du territoire": "18 km",
+            "Masse d'eau": "Calcaires et marnes crétacés du massif du Vercors",
             "Profondeur": "1.30 m",
             "Altitude de la nappe": "798.70 m NGF",
             "Dernière mesure": "17/09/2022",

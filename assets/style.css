@@ -74,6 +74,14 @@ a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
   font-weight:600}
 .nav-item.vide{color:var(--dim);cursor:default}
 
+.sous-nav{background:var(--surface);border-bottom:1px solid var(--line)}
+.sous-nav .wrap{display:flex;gap:4px;padding:0 20px;overflow-x:auto}
+.sous-item{display:inline-block;white-space:nowrap;padding:8px 13px;
+  font-size:13px;color:var(--soft);border-radius:var(--radius);
+  margin:6px 0;transition:background .12s,color .12s}
+a.sous-item:hover{background:var(--accent-soft);color:var(--accent)}
+.sous-item.actif{background:var(--accent);color:var(--surface);font-weight:600}
+
 main .wrap{padding:26px 20px 48px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .card{background:var(--surface);border:1px solid var(--line);
@@ -231,6 +239,8 @@ footer.site a{color:var(--link)}
 @media(max-width:640px){
   .nav .wrap{padding:0 12px}
   .nav-item{padding:10px 11px;font-size:13px}
+  .sous-nav .wrap{padding:0 12px}
+  .sous-item{padding:7px 10px;font-size:12px}
   .top .wrap{grid-template-columns:1fr;gap:8px;justify-items:stretch}
   .logo{justify-self:center}
   .find-groupe{justify-self:stretch}

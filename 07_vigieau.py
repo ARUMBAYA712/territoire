@@ -40,7 +40,10 @@ SOURCE = "VigiEau — ministère de la Transition écologique"
 # À incrémenter dès que la forme des données produites change.
 # Une collecte réalisée avec une version antérieure est ignorée : sans
 # cela, la reprise conserverait indéfiniment un format périmé.
-VERSION = 2
+VERSION = 3
+
+RUBRIQUE = "environnement"
+SOUS_RUBRIQUE = "secheresse"
 LICENCE = "Licence Ouverte 2.0"
 
 PAUSE = 0.3
@@ -133,7 +136,8 @@ def mesure(valeur, unite, nom, **habillage):
     """
     base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": "natif", "source": SOURCE, "licence": LICENCE,
-            "format": "texte", "niveaux": ["commune"]}
+            "format": "texte", "niveaux": ["commune"],
+            "rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE}
     base.update(habillage)
     return base
 
@@ -154,7 +158,7 @@ def synthetiser(zones):
             "mesures": {
                 "EAU-10": mesure("Aucune restriction en vigueur", "",
                                  "Restrictions sécheresse",
-                                 mise_en_avant=True),
+                                 mise_en_avant=True, rang=10),
                 "EAU-11": mesure(0, "zones d'alerte",
                                  "Zones d'alerte concernant la commune"),
             },
@@ -205,13 +209,14 @@ def synthetiser(zones):
     return {
         "mesures": {
             "EAU-10": mesure(pires[1], "", "Restrictions sécheresse",
-                             mise_en_avant=True, ton=pires[2], ancre=ANCRE),
+                             mise_en_avant=True, ton=pires[2], ancre=ANCRE, rang=10),
             "EAU-11": mesure(len(zones), "zones d'alerte",
                              "Zones d'alerte concernant la commune",
-                             ancre=ANCRE),
+                             ancre=ANCRE, rang=20),
         },
         "blocs": [{
-            "rubrique": "environnement",
+            "rubrique": RUBRIQUE,
+            "sous_rubrique": SOUS_RUBRIQUE,
             "id": ANCRE,
             "titre": "Restrictions des usages de l'eau",
             "items": items,

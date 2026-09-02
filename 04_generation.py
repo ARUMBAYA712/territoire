@@ -132,6 +132,14 @@ a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
   font-weight:600}
 .nav-item.vide{color:var(--dim);cursor:default}
 
+.sous-nav{background:var(--surface);border-bottom:1px solid var(--line)}
+.sous-nav .wrap{display:flex;gap:4px;padding:0 20px;overflow-x:auto}
+.sous-item{display:inline-block;white-space:nowrap;padding:8px 13px;
+  font-size:13px;color:var(--soft);border-radius:var(--radius);
+  margin:6px 0;transition:background .12s,color .12s}
+a.sous-item:hover{background:var(--accent-soft);color:var(--accent)}
+.sous-item.actif{background:var(--accent);color:var(--surface);font-weight:600}
+
 main .wrap{padding:26px 20px 48px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .card{background:var(--surface);border:1px solid var(--line);
@@ -289,6 +297,8 @@ footer.site a{color:var(--link)}
 @media(max-width:640px){
   .nav .wrap{padding:0 12px}
   .nav-item{padding:10px 11px;font-size:13px}
+  .sous-nav .wrap{padding:0 12px}
+  .sous-item{padding:7px 10px;font-size:12px}
   .top .wrap{grid-template-columns:1fr;gap:8px;justify-items:stretch}
   .logo{justify-self:center}
   .find-groupe{justify-self:stretch}
@@ -639,50 +649,169 @@ ORDRE_CARTE = ["POP-01", "GEO-13", "POP-10"]
 # ══════════════════════════════════════════════════════════════════
 
 RUBRIQUES = [
-    {"id": "",              "nom": "Aperçu",        "prefixes": None, "prevue": True},
-    {"id": "population",    "nom": "Population",    "prefixes": ["POP"], "prevue": True},
-    {"id": "geographie",    "nom": "Géographie",    "prefixes": ["GEO"], "prevue": True},
-    {"id": "urbanisme",     "nom": "Urbanisme",     "prefixes": ["URB"], "prevue": True},
-    {"id": "environnement", "nom": "Environnement", "prefixes": ["ENV", "EAU", "MET"], "prevue": True},
-    {"id": "transports",    "nom": "Transports",    "prefixes": ["TRA"], "prevue": True},
-    {"id": "elections",     "nom": "Élections",     "prefixes": ["POL"], "prevue": True},
+    {"id": "", "nom": "Aperçu", "prefixes": None, "prevue": True,
+     "selection": ["POP-01", "GEO-13", "POP-10",
+                   "EAU-10", "EAU-01", "ENV-02"]},
+
+    {"id": "population", "nom": "Population", "prefixes": ["POP"],
+     "prevue": True},
+
+    {"id": "geographie", "nom": "Géographie", "prefixes": ["GEO"],
+     "prevue": True},
+
+    {"id": "urbanisme", "nom": "Urbanisme", "prefixes": ["URB"],
+     "prevue": True},
+
+    {"id": "environnement", "nom": "Environnement",
+     "prefixes": ["ENV", "EAU", "MET"], "prevue": True,
+     "selection": ["EAU-10", "EAU-01", "ENV-02"],
+     "sous": [
+         {"id": "eau-potable", "nom": "Eau potable"},
+         {"id": "secheresse", "nom": "Sécheresse"},
+         {"id": "nappes", "nom": "Nappes"},
+         {"id": "risques", "nom": "Risques"},
+     ]},
+
+    {"id": "transports", "nom": "Transports", "prefixes": ["TRA"],
+     "prevue": True},
+
+    {"id": "elections", "nom": "Élections", "prefixes": ["POL"],
+     "prevue": True},
 ]
 
 
-def indicateurs_de(rubrique, mesures):
-    """Sélectionne les mesures relevant d'une rubrique."""
-    if rubrique["prefixes"] is None:
-        return dict(mesures)
-    return {k: v for k, v in mesures.items()
-            if any(k.startswith(pref) for pref in rubrique["prefixes"])}
+def rubrique_par_id(ident):
+    for r in RUBRIQUES:
+        if r["id"] == ident:
+            return r
+    return None
 
 
-def rubriques_actives(mesures):
-    """Rubriques disposant d'au moins une valeur pour ce territoire."""
+def appartient(mesure, ident, prefixes, cle):
+    """La mesure relève-t-elle de cette rubrique ou sous-rubrique ?
+
+    Une mesure peut déclarer elle-même où elle s'affiche — c'est le
+    collecteur qui le sait le mieux. À défaut, on retombe sur le préfixe
+    de son identifiant, ce qui suffit aux familles simples.
+    """
+    declare = mesure.get(cle)
+    if declare is not None:
+        return declare == ident
+    if cle == "sous_rubrique":
+        return ident is None
+    if prefixes is None:
+        return True
+    return False
+
+
+def indicateurs_de(rubrique, mesures, sous=None, identifiants=None):
+    """Mesures affichées sur une page donnée.
+
+    · identifiants → sélection explicite, dans l'ordre indiqué
+    · sous          → contenu d'une sous-rubrique
+    · sinon         → tout le contenu de la rubrique
+    """
+    if identifiants is not None:
+        return {i: mesures[i] for i in identifiants if i in mesures}
+
+    prefixes = rubrique["prefixes"]
+    retenues = {}
+    for ident, m in mesures.items():
+        if rubrique["id"] == "":
+            retenues[ident] = m
+            continue
+        declaree = m.get("rubrique")
+        if declaree is not None:
+            dans_rubrique = declaree == rubrique["id"]
+        else:
+            dans_rubrique = bool(prefixes) and any(
+                ident.startswith(p) for p in prefixes)
+        if not dans_rubrique:
+            continue
+        if sous is not None and m.get("sous_rubrique") != sous["id"]:
+            continue
+        retenues[ident] = m
+    return retenues
+
+
+def blocs_de(fiche, rubrique, sous=None):
+    cible_sous = sous["id"] if sous else None
+    return [b for b in (fiche.get("blocs") or [])
+            if b.get("rubrique") == rubrique["id"]
+            and (b.get("sous_rubrique") or None) == cible_sous]
+
+
+def alertes(mesures, deja):
+    """Indicateurs en alerte, remontés sur l'aperçu même hors sélection."""
+    return {i: m for i, m in mesures.items()
+            if m.get("ton") == "alerte" and i not in deja
+            and m.get("valeur") is not None}
+
+
+def sous_actives(rubrique, fiche):
+    """Sous-rubriques disposant d'au moins une mesure ou un bloc."""
+    actives = []
+    for sr in rubrique.get("sous", []):
+        a_mesure = any(
+            m.get("valeur") is not None
+            for m in indicateurs_de(rubrique, fiche["mesures"], sr).values())
+        if a_mesure or blocs_de(fiche, rubrique, sr):
+            actives.append(sr)
+    return actives
+
+
+def rubriques_actives(fiche):
+    """Rubriques disposant d'un contenu pour ce territoire."""
+    mesures = fiche["mesures"]
     actives = set()
     for r in RUBRIQUES:
+        if not r["id"]:
+            continue
         contenu = indicateurs_de(r, mesures)
         if any(m.get("valeur") is not None for m in contenu.values()):
+            actives.add(r["id"])
+        elif any(b.get("rubrique") == r["id"] for b in (fiche.get("blocs") or [])):
             actives.add(r["id"])
     return actives
 
 
-def nav_rubriques(base, chemin_territoire, actives, courante):
+def nav_rubriques(base, chemin, actives, courante):
     liens = []
     for r in RUBRIQUES:
         libelle = escape(r["nom"])
         if r["id"] == courante:
             liens.append(f'<span class="nav-item actif" '
                          f'aria-current="page">{libelle}</span>')
-        elif r["id"] in actives:
+        elif r["id"] in actives or not r["id"]:
             suffixe = f"{r['id']}/" if r["id"] else ""
             liens.append(f'<a class="nav-item" '
-                         f'href="{base}/{chemin_territoire}{suffixe}">{libelle}</a>')
+                         f'href="{base}/{chemin}{suffixe}">{libelle}</a>')
         elif r["prevue"]:
             liens.append(f'<span class="nav-item vide" '
                          f'title="Données à venir">{libelle}</span>')
     return ('<nav class="nav" aria-label="Rubriques"><div class="wrap">'
             + "".join(liens) + "</div></nav>")
+
+
+def nav_sous(base, chemin, rubrique, sous_dispo, courante):
+    if not sous_dispo:
+        return ""
+    liens = [f'<a class="sous-item{"" if courante else " actif"}" '
+             f'href="{base}/{chemin}{rubrique["id"]}/">Vue d\'ensemble</a>'
+             if courante else
+             '<span class="sous-item actif">Vue d\'ensemble</span>']
+    for sr in sous_dispo:
+        if courante and sr["id"] == courante["id"]:
+            liens.append(f'<span class="sous-item actif" aria-current="page">'
+                         f'{escape(sr["nom"])}</span>')
+        else:
+            liens.append(
+                f'<a class="sous-item" '
+                f'href="{base}/{chemin}{rubrique["id"]}/{sr["id"]}/">'
+                f'{escape(sr["nom"])}</a>')
+    return ('<nav class="sous-nav" aria-label="Sous-rubriques">'
+            '<div class="wrap">' + "".join(liens) + "</div></nav>")
+
 
 NB_CLASSES = 5
 
@@ -726,14 +855,14 @@ def format_valeur(v, unite):
     return f"{nombre(v)}{separateur}{unite}"
 
 
-def donnees_carte(membres, fiches, rubrique):
+def donnees_carte(membres, fiches, rubrique, sous=None):
     """Prépare les données de coloration pour les communes membres."""
     dispo = {}
     for m in membres:
         f = fiches.get(("commune", m["code"]))
         if not f:
             continue
-        for ident, mesure in indicateurs_de(rubrique, f["mesures"]).items():
+        for ident, mesure in indicateurs_de(rubrique, f["mesures"], sous).items():
             if isinstance(mesure.get("valeur"), (int, float)):
                 dispo.setdefault(ident, {"nom": mesure["nom"],
                                          "unite": mesure["unite"],
@@ -784,7 +913,7 @@ def legende_carte(carte):
             f'<span class="unite" id="carte-unite"></span></div>')
 
 
-def bloc_carte(t, base, adresses, fiches, membres, rubrique):
+def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
     Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
@@ -795,7 +924,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique):
     if not fichier.exists():
         return ""
 
-    carte = donnees_carte(membres, fiches, rubrique) if membres else None
+    carte = donnees_carte(membres, fiches, rubrique, sous) if membres else None
     defaut = carte["couches"][carte["defaut"]]["classes"] if carte else {}
 
     def relier(m):
@@ -845,7 +974,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique):
     </section>"""
 
 
-def bloc_liste(d, rubrique):
+def bloc_liste(d, rubrique, sous=None):
     """Rend les blocs détaillés attachés à une rubrique.
 
     Certaines données ne se réduisent pas à un chiffre : les réseaux
@@ -853,8 +982,7 @@ def bloc_liste(d, rubrique):
     avec ses propres caractéristiques. Ils ont donc leur propre gabarit,
     distinct des cartes d'indicateurs.
     """
-    blocs = [b for b in (d.get("blocs") or [])
-             if b.get("rubrique") == rubrique["id"]]
+    blocs = blocs_de(d, rubrique, sous)
     if not blocs:
         return ""
 
@@ -889,19 +1017,43 @@ def bloc_liste(d, rubrique):
 
 
 def page(d, base, canonique, adresses, fiches, rubrique,
-         chemin_territoire, actives, accueil=False):
+         chemin_territoire, actives, sous=None, sous_dispo=(),
+         accueil=False):
     t = d["territoire"]
     niveau = LIBELLE.get(t["niveau"], t["niveau"])
 
-    toutes = indicateurs_de(rubrique, d["mesures"])
+    # Une page de rubrique dotée de sous-rubriques n'affiche qu'une
+    # sélection : le détail vit dans les sous-rubriques. Sans sélection
+    # définie, on affiche tout le contenu de la rubrique.
+    selection = rubrique.get("selection") if sous is None else None
+
+    toutes = indicateurs_de(rubrique, d["mesures"], sous, selection)
     mesures = {k: v for k, v in toutes.items() if v["valeur"] is not None}
-    # les indicateurs mis en avant passent en tête de grille
-    mesures = dict(sorted(mesures.items(),
-                          key=lambda kv: (not kv[1].get("mise_en_avant"), kv[0])))
+
+    # Tout indicateur en alerte remonte, même hors sélection : une eau
+    # non conforme ou une nappe très basse doit se voir dès l'entrée.
+    # Sur une page de sélection, l'ordre voulu est celui de la liste :
+    # les rangs internes aux collecteurs ne valent qu'à l'intérieur de
+    # leur propre sous-rubrique.
+    if selection is not None:
+        ordre = {ident: i for i, ident in enumerate(selection)}
+        mesures.update(alertes(indicateurs_de(rubrique, d["mesures"]), mesures))
+    else:
+        ordre = {}
+
+    def rang_de(ident, m):
+        if selection is not None:
+            return ordre.get(ident, 900)      # alertes remontées en fin
+        return m.get("rang", 500)
+
+    mesures = dict(sorted(
+        mesures.items(),
+        key=lambda kv: (not kv[1].get("mise_en_avant"),
+                        rang_de(kv[0], kv[1]),
+                        kv[0])))
 
     # ancres réellement disponibles sur cette page
-    ancres = {b["id"] for b in (d.get("blocs") or [])
-              if b.get("rubrique") == rubrique["id"] and b.get("id")}
+    ancres = {b["id"] for b in blocs_de(d, rubrique, sous) if b.get("id")}
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
                        for m in list(mesures.values())[:3])
     description = (f"{t['nom']} ({niveau}) : {resume}. "
@@ -926,7 +1078,8 @@ def page(d, base, canonique, adresses, fiches, rubrique,
         description = (f"{t['nom']} ({codes[0]}) : {resume}. "
                        f"Données publiques INSEE et IGN.")
 
-    suffixe_titre = rubrique["nom"] if rubrique["id"] else niveau
+    suffixe_titre = (sous["nom"] if sous
+                     else (rubrique["nom"] if rubrique["id"] else niveau))
 
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
 
@@ -969,14 +1122,15 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 </div></div>
 
 {nav_rubriques(base, chemin_territoire, actives, rubrique["id"])}
+{nav_sous(base, chemin_territoire, rubrique, sous_dispo, sous)}
 
 <main><div class="wrap">
     <div class="cards">
 {chr(10).join(carte(k, v, ancres) for k, v in mesures.items())}
     </div>
-{bloc_liste(d, rubrique)}
+{bloc_liste(d, rubrique, sous)}
 {bloc_rattachements(d, base, adresses)}
-{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique)}
+{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous)}
 </div></main>
 
 <footer class="site"><div class="wrap">
@@ -1053,22 +1207,29 @@ def main():
     for (niveau, code), d in fiches.items():
         t = d["territoire"]
         chemin = adresses[(niveau, code)]
-        actives = rubriques_actives(d["mesures"])
+        actives = rubriques_actives(d)
+
+        def ecrire(rubrique, sous, sous_dispo):
+            morceaux = [rubrique["id"], sous["id"] if sous else ""]
+            suffixe = "".join(f"{m}/" for m in morceaux if m)
+            dossier = RACINE / chemin / suffixe.rstrip("/") if suffixe \
+                else RACINE / chemin
+            dossier.mkdir(parents=True, exist_ok=True)
+            url = f"{SITE}/{chemin}{suffixe}"
+            profondeur = "../" * (2 + sum(1 for m in morceaux if m))
+            dossier.joinpath("index.html").write_text(
+                page(d, profondeur.rstrip("/"), url, adresses, fiches,
+                     rubrique, chemin, actives, sous, sous_dispo),
+                encoding="utf-8")
+            liens_site.append(url)
 
         for r in RUBRIQUES:
             if r["id"] and r["id"] not in actives:
                 continue
-            suffixe = f"{r['id']}/" if r["id"] else ""
-            dossier = RACINE / chemin / r["id"] if r["id"] else RACINE / chemin
-            dossier.mkdir(parents=True, exist_ok=True)
-            url = f"{SITE}/{chemin}{suffixe}"
-            profondeur = "../" * (2 + (1 if r["id"] else 0))
-
-            dossier.joinpath("index.html").write_text(
-                page(d, profondeur.rstrip("/"), url, adresses, fiches,
-                     r, chemin, actives),
-                encoding="utf-8")
-            liens_site.append(url)
+            dispo = sous_actives(r, d)
+            ecrire(r, None, dispo)
+            for sr in dispo:
+                ecrire(r, sr, dispo)
 
         recherche.append({
             "nom": t["nom"],
@@ -1079,13 +1240,14 @@ def main():
             "url": chemin,
         })
 
-        # ancienne adresse sans le nom : redirigée, jamais cassée
         redirections.append((f"/{niveau}/{code}", f"/{chemin}"))
 
         if (niveau, code) == ACCUEIL:
+            racine_rubrique = RUBRIQUES[0]
             (RACINE / "index.html").write_text(
                 page(d, ".", SITE + "/", adresses, fiches,
-                     RUBRIQUES[0], chemin, actives, accueil=True),
+                     racine_rubrique, chemin, actives, None, (),
+                     accueil=True),
                 encoding="utf-8")
             liens_site.append(SITE + "/")
 
@@ -1149,7 +1311,7 @@ def main():
     par_rubrique = {}
     for r in RUBRIQUES:
         n = sum(1 for d in fiches.values()
-                if r["id"] in rubriques_actives(d["mesures"]) or not r["id"])
+                if r["id"] in rubriques_actives(d) or not r["id"])
         if n:
             par_rubrique[r["nom"]] = n
     print(f"\n  Territoires     : {len(fiches)}")

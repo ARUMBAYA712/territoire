@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-02",
- "version": 1,
+ "version": 2,
  "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
  "licence": "Licence Ouverte 2.0",
  "frequence": "hebdomadaire",
@@ -15,8 +15,11 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
      "mise_en_avant": true,
      "ancre": "stations-piezometriques",
+     "rang": 10,
      "explication": "Comparaison de la dernière mesure aux valeurs relevées le même mois les années précédentes, sur la station de référence du territoire.",
      "ton": "attention"
     },
@@ -28,7 +31,10 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
-     "ancre": "stations-piezometriques"
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
+     "ancre": "stations-piezometriques",
+     "rang": 30
     },
     "EAU-22": {
      "valeur": 41.29,
@@ -38,6 +44,9 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
+     "rang": 20,
      "repere": "Mesure du 23/08/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
@@ -45,6 +54,7 @@
    "blocs": [
     {
      "rubrique": "environnement",
+     "sous_rubrique": "nappes",
      "id": "stations-piezometriques",
      "titre": "Stations de mesure des nappes",
      "items": [
@@ -188,8 +198,11 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
      "mise_en_avant": true,
      "ancre": "stations-piezometriques",
+     "rang": 10,
      "explication": "Comparaison de la dernière mesure aux valeurs relevées le même mois les années précédentes, sur la station de référence du territoire.",
      "ton": "attention"
     },
@@ -201,7 +214,10 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
-     "ancre": "stations-piezometriques"
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
+     "ancre": "stations-piezometriques",
+     "rang": 30
     },
     "EAU-22": {
      "valeur": 41.29,
@@ -211,6 +227,9 @@
      "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
      "licence": "Licence Ouverte 2.0",
      "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "nappes",
+     "rang": 20,
      "repere": "Mesure du 23/08/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
@@ -218,6 +237,7 @@
    "blocs": [
     {
      "rubrique": "environnement",
+     "sous_rubrique": "nappes",
      "id": "stations-piezometriques",
      "titre": "Stations de mesure des nappes",
      "items": [

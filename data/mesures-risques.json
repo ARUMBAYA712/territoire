@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-02",
- "version": 1,
+ "version": 2,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
  "frequence": "trimestrielle",
@@ -18,7 +18,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -32,7 +35,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -46,7 +52,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -61,7 +70,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -106,7 +118,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -120,7 +135,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -134,7 +152,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -149,7 +170,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -188,7 +212,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -202,7 +229,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -216,7 +246,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -231,7 +264,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -276,7 +312,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -290,7 +329,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -304,7 +346,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -319,7 +364,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -358,7 +406,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -372,7 +423,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -386,7 +440,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -401,7 +458,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -440,7 +500,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -454,7 +517,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -468,7 +534,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -483,7 +552,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -522,7 +594,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -536,7 +611,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -550,7 +628,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -565,7 +646,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -604,7 +688,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -618,7 +705,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -632,7 +722,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -647,7 +740,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -686,7 +782,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 7,
@@ -700,7 +799,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -714,7 +816,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -729,7 +834,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -774,7 +882,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -788,7 +899,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -802,7 +916,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -817,7 +934,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -856,7 +976,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -870,7 +993,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -884,7 +1010,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -899,7 +1028,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -938,7 +1070,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -952,7 +1087,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -966,7 +1104,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -981,7 +1122,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1020,7 +1164,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -1034,7 +1181,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1048,7 +1198,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1063,7 +1216,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1102,7 +1258,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -1116,7 +1275,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1130,7 +1292,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -1145,7 +1310,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1190,7 +1358,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -1204,7 +1375,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1218,7 +1392,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1233,7 +1410,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1272,7 +1452,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -1286,7 +1469,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1300,7 +1486,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -1315,7 +1504,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1354,7 +1546,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -1368,7 +1563,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1382,7 +1580,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -1397,7 +1598,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1448,7 +1652,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 10,
@@ -1462,7 +1669,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1476,7 +1686,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -1491,7 +1704,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1530,7 +1746,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -1544,7 +1763,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1558,7 +1780,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1573,7 +1798,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1612,7 +1840,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -1626,7 +1857,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1640,7 +1874,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1655,7 +1892,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1694,7 +1934,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -1708,7 +1951,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1722,7 +1968,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -1737,7 +1986,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1776,7 +2028,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -1790,7 +2045,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1804,7 +2062,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1819,7 +2080,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1858,7 +2122,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -1872,7 +2139,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1886,7 +2156,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1901,7 +2174,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -1940,7 +2216,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -1954,7 +2233,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -1968,7 +2250,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -1983,7 +2268,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2022,7 +2310,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -2036,7 +2327,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible, avec facteurs géologiques locaux",
@@ -2051,7 +2345,10 @@
      ],
      "repere": "Catégorie 2 sur 3",
      "ton": "attention",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2066,7 +2363,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2105,7 +2405,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 10,
@@ -2119,7 +2422,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible, avec facteurs géologiques locaux",
@@ -2134,7 +2440,10 @@
      ],
      "repere": "Catégorie 2 sur 3",
      "ton": "attention",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -2149,7 +2458,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2194,7 +2506,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -2208,7 +2523,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible, avec facteurs géologiques locaux",
@@ -2223,7 +2541,10 @@
      ],
      "repere": "Catégorie 2 sur 3",
      "ton": "attention",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -2238,7 +2559,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2277,7 +2601,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -2291,7 +2618,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2305,7 +2635,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -2320,7 +2653,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2359,7 +2695,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -2373,7 +2712,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2387,7 +2729,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2402,7 +2747,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2441,7 +2789,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -2455,7 +2806,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2469,7 +2823,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2484,7 +2841,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2523,7 +2883,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -2537,7 +2900,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2551,7 +2917,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2566,7 +2935,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2605,7 +2977,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 7,
@@ -2619,7 +2994,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2633,7 +3011,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2648,7 +3029,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2687,7 +3071,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -2701,7 +3088,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2715,7 +3105,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2730,7 +3123,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2769,7 +3165,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -2783,7 +3182,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible, avec facteurs géologiques locaux",
@@ -2798,7 +3200,10 @@
      ],
      "repere": "Catégorie 2 sur 3",
      "ton": "attention",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2813,7 +3218,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2858,7 +3266,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -2872,7 +3283,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2886,7 +3300,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2901,7 +3318,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -2940,7 +3360,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 3,
@@ -2954,7 +3377,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -2968,7 +3394,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -2983,7 +3412,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3022,7 +3454,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -3036,7 +3471,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3050,7 +3488,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3065,7 +3506,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3110,7 +3554,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -3124,7 +3571,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3138,7 +3588,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3153,7 +3606,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3198,7 +3654,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -3212,7 +3671,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3226,7 +3688,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3241,7 +3706,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3286,7 +3754,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -3300,7 +3771,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3314,7 +3788,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -3329,7 +3806,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3368,7 +3848,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 9,
@@ -3382,7 +3865,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3396,7 +3882,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -3411,7 +3900,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3450,7 +3942,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 10,
@@ -3464,7 +3959,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3478,7 +3976,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3493,7 +3994,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3538,7 +4042,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 4,
@@ -3552,7 +4059,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3566,7 +4076,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3581,7 +4094,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3620,7 +4136,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -3634,7 +4153,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3648,7 +4170,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3663,7 +4188,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3702,7 +4230,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 6,
@@ -3716,7 +4247,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3730,7 +4264,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3745,7 +4282,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3796,7 +4336,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 2,
@@ -3810,7 +4353,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3824,7 +4370,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Moyenne",
@@ -3839,7 +4388,10 @@
      ],
      "repere": "Zone 4 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [
@@ -3878,7 +4430,10 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20
     },
     "ENV-02": {
      "valeur": 5,
@@ -3892,7 +4447,10 @@
       "commune"
      ],
      "ancre": "catastrophes-naturelles",
-     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 10
     },
     "ENV-03": {
      "valeur": "Faible",
@@ -3906,7 +4464,10 @@
       "commune"
      ],
      "repere": "Catégorie 1 sur 3",
-     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 50
     },
     "ENV-04": {
      "valeur": "Modérée",
@@ -3921,7 +4482,10 @@
      ],
      "repere": "Zone 3 sur 5",
      "ton": "attention",
-     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 60
     }
    },
    "blocs": [

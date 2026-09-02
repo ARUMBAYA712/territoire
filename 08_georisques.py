@@ -41,7 +41,12 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 1
+VERSION = 2
+
+RUBRIQUE = "environnement"
+SOUS_RUBRIQUE = "risques"
+RANGS = {"ENV-02": 10, "ENV-01": 20, "ENV-06": 30,
+         "ENV-05": 40, "ENV-03": 50, "ENV-04": 60}
 PAUSE = 0.25
 DELAI = 90
 TENTATIVES = 4
@@ -155,7 +160,8 @@ def unite_de(ident, nombre):
 def mesure(valeur, unite, nom, **habillage):
     base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": "natif", "source": SOURCE, "licence": LICENCE,
-            "format": "texte", "niveaux": ["commune"]}
+            "format": "texte", "niveaux": ["commune"],
+            "rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE}
     base.update(habillage)
     return base
 
@@ -179,6 +185,10 @@ EXPLICATIONS = {
 
 
 def habiller(ident, m):
+    m["rubrique"] = RUBRIQUE
+    m["sous_rubrique"] = SOUS_RUBRIQUE
+    if ident in RANGS:
+        m["rang"] = RANGS[ident]
     if ident in EXPLICATIONS:
         m["explication"] = EXPLICATIONS[ident]
     valeur = m.get("valeur")
@@ -256,7 +266,8 @@ def synthetiser(lots):
                                ancre=ANCRE_RISQUES)
     if libelles:
         blocs.append({
-            "rubrique": "environnement",
+            "rubrique": RUBRIQUE,
+            "sous_rubrique": SOUS_RUBRIQUE,
             "id": ANCRE_RISQUES,
             "titre": "Risques identifiés sur la commune",
             "items": [{"titre": lib, "details": {}} for lib in sorted(libelles)],
@@ -303,7 +314,8 @@ def synthetiser(lots):
                                      "date_publication_arrete")) if dernier else None
 
         blocs.append({
-            "rubrique": "environnement",
+            "rubrique": RUBRIQUE,
+            "sous_rubrique": SOUS_RUBRIQUE,
             "id": ANCRE_CATNAT,
             "titre": "Catastrophes naturelles reconnues depuis 1982",
             "items": items,
