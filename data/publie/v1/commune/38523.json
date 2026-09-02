@@ -165,6 +165,62 @@
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
+    "ENV-01": {
+      "valeur": 0,
+      "unite": "risque recensé",
+      "nom": "Risques identifiés sur la commune",
+      "obtention": "natif",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ],
+      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+      "valeur": 6,
+      "unite": "arrêtés",
+      "nom": "Arrêtés de catastrophe naturelle",
+      "obtention": "natif",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ],
+      "ancre": "catastrophes-naturelles",
+      "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+      "valeur": "Faible",
+      "unite": "",
+      "nom": "Potentiel radon",
+      "obtention": "natif",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ],
+      "repere": "Catégorie 1 sur 3",
+      "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+      "valeur": "Modérée",
+      "unite": "",
+      "nom": "Sismicité",
+      "obtention": "natif",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ],
+      "repere": "Zone 3 sur 5",
+      "ton": "attention",
+      "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    },
     "EAU-10": {
       "valeur": "Alerte renforcée",
       "unite": "",
@@ -228,6 +284,26 @@
       ],
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 04/06/2026.",
       "id": "reseaux-eau-potable"
+    },
+    {
+      "rubrique": "environnement",
+      "id": "catastrophes-naturelles",
+      "titre": "Catastrophes naturelles reconnues depuis 1982",
+      "items": [
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Nombre d'arrêtés": 5
+          }
+        },
+        {
+          "titre": "Tempête",
+          "details": {
+            "Nombre d'arrêtés": 1
+          }
+        }
+      ],
+      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {
       "rubrique": "environnement",

@@ -1,0 +1,3529 @@
+{
+ "genere_le": "2026-09-02",
+ "version": 1,
+ "source": "Géorisques — BRGM et ministère de la Transition écologique",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "trimestrielle",
+ "communes": {
+  "38004": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38018": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38033": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38036": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38041": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 4
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38074": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 7,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 4
+       }
+      },
+      {
+       "titre": "Sécheresse",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Sécheresse",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Sécheresse",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 10,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 9
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 4
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 5
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 5
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 10,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 7
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 4
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 7,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 6
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 4
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 2
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 3
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 5
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 9,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 8
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 10,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "ancre": "catastrophes-naturelles",
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Catégorie 1 sur 3",
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Nombre d'arrêtés": 8
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Nombre d'arrêtés": 1
+       }
+      }
+     ],
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  }
+ }
+}
