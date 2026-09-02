@@ -558,6 +558,5559 @@
      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
     }
    ]
+  },
+  "38041": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 3,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 0,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.15,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.41,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.18,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": []
+  },
+  "38074": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 5,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 7.39,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 24.29,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.3,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.06,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHANTESSE ND DE L'OSIER RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000111",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "17/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 17/06/2026."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 6,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.15,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 13.01,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.16,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "SERRE NERPOL RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000153",
+        "Secteur desservi": "les marions",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "VARACIEUX HAUT SERVICE CHASSELAY",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003079",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "19/01/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 03/06/2026."
+    }
+   ]
+  },
+  "38092": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 3,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 7.2,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 16.79,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.23,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHATELUS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002095",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "21/05/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 15,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.29,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 28.92,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.4,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.05,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHATTE ET SONE NORD",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000476",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 12,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.27,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 29.4,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.0,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.09,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST MARCELLIN CHAVOSAN ET COTEAUX",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000473",
+        "Secteur desservi": "Blagneux",
+        "Dernier prélèvement": "12/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "CHEVRIERES BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002026",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "12/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "COMBE MESSIN",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002629",
+        "Secteur desservi": "combe messin",
+        "Dernier prélèvement": "12/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/06/2026."
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 4,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 4.03,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 22.59,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.15,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "PONT EN ROYANS ET HAUT CHORANCHE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001568",
+        "Secteur desservi": "haut service",
+        "Dernier prélèvement": "21/05/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "CHORANCHE BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002031",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "24/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 7,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.1,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 21.58,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 1.7,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "COGNIN RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001893",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "10/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 10/06/2026."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 6,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 2.3,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 19.79,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.23,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CRAS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002043",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 03/06/2026."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 8,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 7.11,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 22.75,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.6,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "IZERON RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001896",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 6,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.02,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 19.66,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.9,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.28,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "MALLEVAL BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002102",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "01/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 01/06/2026."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 1,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.04,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.87,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.8,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST BONNET ST ANTOINE",
+       "etat": [
+        "Sans donnée",
+        "neutre"
+       ],
+       "details": {
+        "Code réseau": "038001534",
+        "Secteur desservi": "les bruyères",
+        "Dernier prélèvement": "aucun sur la période"
+       }
+      },
+      {
+       "titre": "MONTAGNE - HAUT ST LATTIER",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001565",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "16/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 16/06/2026."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 7,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 3.7,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 14.69,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.16,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.28,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "MONTAUD RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002112",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "01/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 01/06/2026."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 7,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.07,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 19.45,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.8,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "MORETTE PRINCIPALE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002139",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "MORETTE LA COMBE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002140",
+        "Secteur desservi": "combe",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 03/06/2026."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 10,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.09,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 30.92,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.5,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "MURINAIS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002145",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "12/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "MURINAIS FAITAS",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002791",
+        "Secteur desservi": "faitas",
+        "Dernier prélèvement": "31/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/06/2026."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 1,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 8.0,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "SERRE NERPOL RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000153",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "17/11/2025",
+        "Analyses réalisées": 21
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 17/11/2025."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 2,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 6.4,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.51,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.13,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.14,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHANTESSE ND DE L'OSIER RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000111",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "19/01/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 19/01/2026."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 15,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 8.3,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 24.71,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.8,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "POLIENAS PRINCIPAL",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001899",
+        "Secteur desservi": "bourg, le moulin, le puits",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 400
+       }
+      },
+      {
+       "titre": "POLIENAS FONTAINE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003291",
+        "Secteur desservi": "roche",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "POLIENAS PAUTRES",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003835",
+        "Secteur desservi": "LES PAUTRES",
+        "Dernier prélèvement": "09/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 03/06/2026."
+    }
+   ]
+  },
+  "38319": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 6,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.07,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 22.73,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.2,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "PONT EN ROYANS ET HAUT CHORANCHE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001568",
+        "Secteur desservi": "reseau",
+        "Dernier prélèvement": "24/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/03/2026."
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 3,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.12,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.78,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.32,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "PRESLES RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002122",
+        "Secteur desservi": "commune",
+        "Dernier prélèvement": "12/05/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/05/2026."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 4,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.09,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 18.32,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 8.0,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "QUINCIEU BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001965",
+        "Secteur desservi": "chabertiere tivolet",
+        "Dernier prélèvement": "29/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 29/06/2026."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 8,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.03,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 16.48,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.12,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "RENCUREL BOURG - BALME",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002151",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "21/05/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "RENCUREL ROMEYERE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002152",
+        "Secteur desservi": "romeyere",
+        "Dernier prélèvement": "24/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 11,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.06,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 23.52,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.2,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "LA RIVIERE RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002107",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "29/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 29/06/2026."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 9,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 2.4,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 21.02,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.64,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.06,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ROVON RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002157",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "01/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 01/06/2026."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 5,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 19.4,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 19.98,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.6,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST ANDRE BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002189",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "21/05/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 14,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 2.5,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 14.34,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.4,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.09,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST ANTOINE NORD EST",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001533",
+        "Secteur desservi": "nord est",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "ST BONNET ST ANTOINE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001534",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "DIONAY",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038007349",
+        "Secteur desservi": "dionay",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 5,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.12,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.29,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.3,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST APPOLINARD BESSINS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002092",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "12/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/06/2026."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 2,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.49,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 27.3,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.0,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.19,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST BONNET ST ANTOINE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001534",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "25/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/03/2026."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 12,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.21,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 28.7,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.4,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ALBENC ST GERVAIS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000042",
+        "Secteur desservi": "le port, bourg",
+        "Dernier prélèvement": "01/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "ST GERVAIS PIERRE MOUTON",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002195",
+        "Secteur desservi": "pierre mouton",
+        "Dernier prélèvement": "29/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "ST GERVAIS HAUT SERVICE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002619",
+        "Secteur desservi": "haut service",
+        "Dernier prélèvement": "16/03/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 29/06/2026."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 90.9,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 11,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 1,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 20.9,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 25.42,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.21,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST HILAIRE DU ROSIER RESEAU",
+       "etat": [
+        "Non conforme",
+        "alerte"
+       ],
+       "details": {
+        "Code réseau": "038001550",
+        "Secteur desservi": "reseau",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4,
+        "Non-conformités sur 12 mois": "25/06/2026 (physico-chimie)"
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 4,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 26.3,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 38.2,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.81,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST ROMANS ST JUST PRINCIPAL",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000985",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 19,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 1.5,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 24.53,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.15,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST LATTIER VILLAGE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001563",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "16/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "MONTAGNE - HAUT ST LATTIER",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001565",
+        "Secteur desservi": "haut service",
+        "Dernier prélèvement": "26/03/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "ST LATTIER BAUDIERE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038008563",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "16/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 16/06/2026."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 21,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.27,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 30.84,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.2,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.1,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST MARCELLIN PRINCIPAL",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000472",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "ST MARCELLIN CHAVOSAN ET COTEAUX",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000473",
+        "Secteur desservi": "chavosan",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/06/2026."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 5,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 3,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 20.1,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 26.7,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "PRESLES RESEAU",
+       "etat": [
+        "Sans donnée",
+        "neutre"
+       ],
+       "details": {
+        "Code réseau": "038002122",
+        "Secteur desservi": "le Faz",
+        "Dernier prélèvement": "aucun sur la période"
+       }
+      },
+      {
+       "titre": "ST PIERRE CHERENNES BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002171",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "12/05/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "ST PIERRE DE CHERENNES GUINARDS",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003369",
+        "Secteur desservi": "guinards, raillets",
+        "Dernier prélèvement": "12/05/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/05/2026."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 11,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 8.3,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 17.92,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.7,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST QUENTIN RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001559",
+        "Secteur desservi": "reseau",
+        "Dernier prélèvement": "10/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 10/06/2026."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 9,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 28.3,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 38.91,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.4,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST ROMANS ST JUST PRINCIPAL",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000985",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 16,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 5.1,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 32.18,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.11,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.25,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST SAUVEUR RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001545",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "PERRON",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002547",
+        "Secteur desservi": "perron",
+        "Dernier prélèvement": "16/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/06/2026."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 90.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 10,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 1,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 1,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.23,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 29.26,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.0,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.08,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "ST VERAND RESEAU",
+       "etat": [
+        "Non conforme",
+        "alerte"
+       ],
+       "details": {
+        "Code réseau": "038001552",
+        "Secteur desservi": "reseau",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4,
+        "Non-conformités sur 12 mois": "24/06/2026 (physico-chimie)"
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/06/2026."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 85.7,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 7,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 1,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 27.1,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 30.05,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.1,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHATTE ET SONE NORD",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000476",
+        "Secteur desservi": "la Sône nord - Epînasse",
+        "Dernier prélèvement": "06/11/2025",
+        "Analyses réalisées": 21
+       }
+      },
+      {
+       "titre": "LA SONE BOURG",
+       "etat": [
+        "Non conforme",
+        "alerte"
+       ],
+       "details": {
+        "Code réseau": "038001955",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4,
+        "Non-conformités sur 12 mois": "25/06/2026 (physico-chimie)"
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/06/2026."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 8,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.48,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 32.37,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.23,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "TECHE BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002175",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "SARRELOUP",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002176",
+        "Secteur desservi": "sarreloup",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/06/2026."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 9,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.06,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 24.32,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 7.5,
+     "unite": "unité pH",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.09,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "VARACIEUX FOITY",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002748",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "04/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "VARACIEUX HAUT SERVICE CHASSELAY",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003079",
+        "Secteur desservi": "Roua",
+        "Dernier prélèvement": "04/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 04/06/2026."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 7,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 2,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 8.1,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 23.69,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.13,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "CHANTESSE ND DE L'OSIER RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000111",
+        "Secteur desservi": "Jaconnière",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "VATILIEU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002185",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 03/06/2026."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "EAU-01": {
+     "valeur": 100.0,
+     "unite": "%",
+     "nom": "Conformité des prélèvements (12 mois)",
+     "obtention": "recalculé",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-02": {
+     "valeur": 15,
+     "unite": "prélèvements",
+     "nom": "Contrôles sanitaires sur 12 mois",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-03": {
+     "valeur": 4,
+     "unite": "réseaux",
+     "nom": "Réseaux desservant la commune",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-08": {
+     "valeur": 0,
+     "unite": "prélèvements",
+     "nom": "Prélèvements non conformes (12 mois)",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-04": {
+     "valeur": 0.23,
+     "unite": "mg/L",
+     "nom": "Nitrates",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-05": {
+     "valeur": 0.0,
+     "unite": "°f",
+     "nom": "Dureté",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-06": {
+     "valeur": 0.0,
+     "unite": "NFU",
+     "nom": "pH",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-07": {
+     "valeur": 0.0,
+     "unite": "mg(Cl2)/L",
+     "nom": "Chlore libre",
+     "obtention": "natif",
+     "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Réseaux d'eau potable desservant la commune",
+     "items": [
+      {
+       "titre": "VINAY BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000049",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "17/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "BLACHE VINAY BEAULIEU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000059",
+        "Secteur desservi": "blache",
+        "Dernier prélèvement": "16/02/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "CHANTESSE ND DE L'OSIER RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000111",
+        "Secteur desservi": "Mayoussière",
+        "Dernier prélèvement": "09/03/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "VINAY LES_AYES",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038007216",
+        "Secteur desservi": "AYES",
+        "Dernier prélèvement": "02/06/2026",
+        "Analyses réalisées": 30
+       }
+      }
+     ],
+     "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 17/06/2026."
+    }
+   ]
   }
  }
 }
