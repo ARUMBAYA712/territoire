@@ -57,14 +57,16 @@
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
-      "nom": "Conformité des prélèvements (12 mois)",
+      "nom": "Conformité des prélèvements sur 12 mois",
       "obtention": "recalculé",
       "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
       "licence": "Licence Ouverte 2.0",
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
+      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
       "valeur": 3,
@@ -76,7 +78,8 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Nombre de prélèvements réalisés par l'agence régionale de santé. Leur fréquence dépend de la taille du réseau."
     },
     "EAU-03": {
       "valeur": 1,
@@ -88,19 +91,23 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs.",
+      "ancre": "reseaux-eau-potable"
     },
     "EAU-08": {
       "valeur": 0,
       "unite": "prélèvements",
-      "nom": "Prélèvements non conformes (12 mois)",
+      "nom": "Prélèvements non conformes sur 12 mois",
       "obtention": "natif",
       "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
       "licence": "Licence Ouverte 2.0",
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
+      "ancre": "reseaux-eau-potable"
     },
     "EAU-04": {
       "valeur": 7.2,
@@ -112,7 +119,9 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Composé azoté d'origine surtout agricole et domestique. Sa présence signale une influence des activités humaines sur la ressource.",
+      "repere": "Limite de qualité : 50 mg/L"
     },
     "EAU-05": {
       "valeur": 16.79,
@@ -124,7 +133,9 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Teneur en calcium et magnésium, exprimée en degrés français. Une eau dure entartre les appareils, une eau douce est plus agressive pour les canalisations. Sans effet sanitaire connu.",
+      "repere": "Aucun seuil réglementaire · douce sous 15 °f, moyennement dure de 15 à 30, dure au-delà"
     },
     "EAU-06": {
       "valeur": 0.23,
@@ -136,7 +147,9 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Mesure l'acidité de l'eau. Une valeur trop basse favorise la dissolution des métaux des canalisations.",
+      "repere": "Référence de qualité : entre 6,5 et 9"
     },
     "EAU-07": {
       "valeur": 0.0,
@@ -148,7 +161,9 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
+      "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
     "EAU-10": {
       "valeur": "Alerte renforcée",
@@ -194,7 +209,8 @@
           }
         }
       ],
-      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
+      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026.",
+      "id": "reseaux-eau-potable"
     },
     {
       "rubrique": "environnement",

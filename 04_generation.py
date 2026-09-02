@@ -149,6 +149,12 @@ main .wrap{padding:26px 20px 48px}
 .card.ton-alerte{background:var(--alerte-soft);border-color:var(--alerte);
   border-width:2px}
 .card.ton-alerte .v{color:var(--alerte)}
+.card-repere{font-size:11px;color:var(--ink);font-family:var(--font-data);
+  background:var(--sunken);border:1px solid var(--line);border-radius:var(--radius);
+  padding:3px 8px;align-self:flex-start;line-height:1.4}
+.card.ton-attention .card-repere{background:var(--surface);border-color:var(--attention)}
+.card.ton-alerte .card-repere{background:var(--surface);border-color:var(--alerte)}
+.card-expl{font-size:12px;color:var(--soft);line-height:1.45}
 .card-lien{display:inline-block;font-size:12px;color:var(--link);
   border-bottom:1px solid currentColor;align-self:flex-start}
 .card-lien:hover{color:var(--accent)}
@@ -547,6 +553,10 @@ def carte(ident, m):
 
     lien = (f'<a class="card-lien" href="#{escape(m["ancre"])}">Voir le détail</a>'
             if m.get("ancre") else "")
+    repere = (f'<p class="card-repere">{escape(m["repere"])}</p>'
+              if m.get("repere") else "")
+    explication = (f'<p class="card-expl">{escape(m["explication"])}</p>'
+                   if m.get("explication") else "")
     unite = (f' <span class="u">{escape(m["unite"])}</span>'
              if m.get("unite") else "")
 
@@ -554,6 +564,8 @@ def carte(ident, m):
         <span class="id">{escape(ident)}</span>
         <h2>{escape(m['nom'])}</h2>
         <div><span class="v">{nombre(m['valeur'])}</span>{unite}</div>
+        {repere}
+        {explication}
         {lien}
         <footer><span class="pill">{escape(m['source'])}</span><span class="pill">{escape(m['obtention'])}</span></footer>
       </article>"""

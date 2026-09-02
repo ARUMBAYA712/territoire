@@ -18,7 +18,10 @@ Produit :
     data/mesures-eau.json   repris par 03_agregation.py
 
 Utilisation :
-    python 06_eau.py
+    python 06_eau.py               collecte, en reprenant là où on s'est arrêté
+    python 06_eau.py --tout        recollecte intégrale
+    python 06_eau.py --habillage   réapplique seulement libellés et repères,
+                                   sans aucun appel réseau
 """
 
 import json
@@ -131,6 +134,99 @@ def en_texte(valeur):
 
 
 ANCRE = "reseaux-eau-potable"
+
+# ══════════════════════════════════════════════════════════════════
+# REPÈRES DE LECTURE
+#
+# Une valeur brute ne dit rien à un visiteur : « 24 °f » n'a de sens
+# qu'accompagné de ce qu'est la dureté et de ce qui est habituel.
+#
+# Attention à la nature des seuils. Une LIMITE de qualité est
+# réglementaire et sanitaire ; une RÉFÉRENCE de qualité est un
+# indicateur de bon fonctionnement sans effet direct sur la santé ;
+# et certains paramètres, comme la dureté, n'ont aucun seuil
+# réglementaire. Les confondre induirait le lecteur en erreur.
+# ══════════════════════════════════════════════════════════════════
+
+REPERES = {
+    "EAU-01": {
+        "nom": "Conformité des prélèvements sur 12 mois",
+        "explication": ("Part des contrôles sanitaires jugés conformes aux "
+                        "limites de qualité réglementaires."),
+        "ancre": ANCRE,
+    },
+    "EAU-02": {
+        "nom": "Contrôles sanitaires sur 12 mois",
+        "explication": ("Nombre de prélèvements réalisés par l'agence "
+                        "régionale de santé. Leur fréquence dépend de la "
+                        "taille du réseau."),
+    },
+    "EAU-03": {
+        "nom": "Réseaux desservant la commune",
+        "explication": ("Une commune peut être alimentée par plusieurs "
+                        "unités de distribution, selon les secteurs."),
+        "ancre": ANCRE,
+    },
+    "EAU-04": {
+        "nom": "Nitrates",
+        "explication": ("Composé azoté d'origine surtout agricole et "
+                        "domestique. Sa présence signale une influence des "
+                        "activités humaines sur la ressource."),
+        "repere": "Limite de qualité : 50 mg/L",
+        "seuil_alerte": 50,
+        "seuil_attention": 40,
+    },
+    "EAU-05": {
+        "nom": "Dureté",
+        "explication": ("Teneur en calcium et magnésium, exprimée en degrés "
+                        "français. Une eau dure entartre les appareils, une "
+                        "eau douce est plus agressive pour les canalisations. "
+                        "Sans effet sanitaire connu."),
+        "repere": ("Aucun seuil réglementaire · douce sous 15 °f, "
+                   "moyennement dure de 15 à 30, dure au-delà"),
+    },
+    "EAU-06": {
+        "nom": "pH",
+        "explication": ("Mesure l'acidité de l'eau. Une valeur trop basse "
+                        "favorise la dissolution des métaux des "
+                        "canalisations."),
+        "repere": "Référence de qualité : entre 6,5 et 9",
+    },
+    "EAU-07": {
+        "nom": "Chlore libre",
+        "explication": ("Résiduel du traitement de désinfection, qui protège "
+                        "l'eau jusqu'au robinet. C'est lui que l'on sent "
+                        "parfois au goût ou à l'odeur."),
+        "repere": ("Aucune limite sanitaire · le goût devient perceptible "
+                   "vers 0,3 mg/L"),
+    },
+    "EAU-08": {
+        "nom": "Prélèvements non conformes sur 12 mois",
+        "explication": ("Un écart ponctuel est le plus souvent transitoire "
+                        "et suivi de mesures correctives par le "
+                        "distributeur."),
+        "ancre": ANCRE,
+    },
+}
+
+
+def habiller(ident, m):
+    """Applique à une mesure son libellé et ses repères de lecture."""
+    repere = REPERES.get(ident)
+    if not repere:
+        return m
+    m["nom"] = repere["nom"]
+    for champ in ("explication", "repere", "ancre"):
+        if repere.get(champ):
+            m[champ] = repere[champ]
+
+    valeur = m.get("valeur")
+    if isinstance(valeur, (int, float)):
+        if repere.get("seuil_alerte") and valeur >= repere["seuil_alerte"]:
+            m["ton"] = "alerte"
+        elif repere.get("seuil_attention") and valeur >= repere["seuil_attention"]:
+            m["ton"] = "attention"
+    return m
 
 
 def mesure(valeur, unite, nom, ident_source=SOURCE, obtention="natif",
@@ -299,6 +395,8 @@ def synthetiser(commune, reseaux, analyses):
                  "compte : " + _date_fr(dernier["date"]) + "."),
     }] if items else []
 
+    mesures = {k: habiller(k, v) for k, v in mesures.items()}
+
     return {"mesures": mesures, "blocs": blocs,
             "_diagnostic": {"juges": len(juges),
                             "indetermines": indetermines,
@@ -414,7 +512,40 @@ def _dimension(prelevement):
 
 # ══════════════════════════════════════════════════════════════════
 
+def rehabiller():
+    """Réapplique libellés, explications et ancres au fichier existant.
+
+    Utile quand seule la présentation change : aucune interrogation de
+    Hub'Eau, donc aucune attente. Les valeurs collectées ne bougent pas.
+    """
+    if not SORTIE.exists():
+        print(f"\n[ERREUR] {SORTIE} introuvable : rien à réhabiller.")
+        sys.exit(1)
+
+    contenu = json.loads(SORTIE.read_text(encoding="utf-8"))
+    communes = contenu.get("communes", {})
+    touchees = 0
+
+    for code, bloc in communes.items():
+        bloc["mesures"] = {k: habiller(k, v)
+                           for k, v in bloc.get("mesures", {}).items()}
+        for b in bloc.get("blocs", []):
+            b.setdefault("id", ANCRE)
+        touchees += 1
+
+    SORTIE.write_text(json.dumps(contenu, ensure_ascii=False, indent=1),
+                      encoding="utf-8")
+    print(f"\nRéhabillage — Hub'Eau")
+    print("─" * 46)
+    print(f"  {touchees} commune(s) mises à jour sans nouvel appel réseau.")
+    print(f"  Fichier : {SORTIE}\n")
+
+
 def main():
+    if "--habillage" in sys.argv:
+        rehabiller()
+        return
+
     print("\nQualité de l'eau potable — Hub'Eau")
     print("─" * 46)
 
