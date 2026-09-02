@@ -90,7 +90,14 @@ def appeler(code_commune, longitude, latitude):
                 url, headers={"User-Agent": "portail-territorial/1.0",
                               "Accept": "application/json"})
             with urllib.request.urlopen(requete, timeout=DELAI) as reponse:
-                donnees = json.loads(reponse.read().decode("utf-8"))
+                statut = getattr(reponse, "status", 200)
+                corps = reponse.read()
+            if statut == 204 or not corps.strip():
+                return []
+            try:
+                donnees = json.loads(corps.decode("utf-8"))
+            except json.JSONDecodeError:
+                return None
             return donnees if isinstance(donnees, list) else [donnees]
         except urllib.error.HTTPError as e:
             if e.code == 404:

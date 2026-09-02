@@ -80,7 +80,19 @@ def appeler(chemin, **params):
                 url, headers={"User-Agent": "portail-territorial/1.0",
                               "Accept": "application/json"})
             with urllib.request.urlopen(requete, timeout=DELAI) as reponse:
-                brut = json.loads(reponse.read().decode("utf-8"))
+                statut = getattr(reponse, "status", 200)
+                corps = reponse.read()
+
+            # Géorisques répond « 204 : pas de contenu » avec un corps vide
+            # quand la commune n'a rien sur ce point d'entrée. Ce n'est pas
+            # une erreur : c'est une absence de donnée.
+            if statut == 204 or not corps.strip():
+                return []
+            try:
+                brut = json.loads(corps.decode("utf-8"))
+            except json.JSONDecodeError:
+                print("[réponse illisible] ", end="", flush=True)
+                return None
         except urllib.error.HTTPError as e:
             if e.code in (204, 404):
                 return []

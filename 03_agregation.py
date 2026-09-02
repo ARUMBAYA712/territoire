@@ -148,16 +148,35 @@ def charger_complements():
     où elles ont un sens. La qualité de l'eau, rattachée à des réseaux
     qui ne suivent pas les limites administratives, reste communale.
     """
-    complements = {}
+    communes, territoires = {}, {}
+
     for fichier in sorted(DOSSIER.glob("mesures-*.json")):
         contenu = json.loads(fichier.read_text(encoding="utf-8"))
+
         for code, bloc in contenu.get("communes", {}).items():
-            entree = complements.setdefault(code, {"mesures": {}, "blocs": []})
+            entree = communes.setdefault(code, {"mesures": {}, "blocs": []})
             entree["mesures"].update(bloc.get("mesures", {}))
             entree["blocs"].extend(bloc.get("blocs", []))
+
+        # Certaines données n'ont de sens qu'à une échelle large : le
+        # niveau d'une nappe, le débit d'une rivière se mesurent en
+        # stations, et une valeur communale serait trompeuse. Ces
+        # mesures sont rattachées directement au territoire, sous une
+        # clé « niveau:code ».
+        for cle, bloc in contenu.get("territoires", {}).items():
+            entree = territoires.setdefault(cle, {"mesures": {}, "blocs": []})
+            entree["mesures"].update(bloc.get("mesures", {}))
+            entree["blocs"].extend(bloc.get("blocs", []))
+
+        detail = []
+        if contenu.get("communes"):
+            detail.append(f"{len(contenu['communes'])} communes")
+        if contenu.get("territoires"):
+            detail.append(f"{len(contenu['territoires'])} territoires")
         print(f"  Complément repris : {fichier.name} "
-              f"({len(contenu.get('communes', {}))} communes)")
-    return complements
+              f"({', '.join(detail) or 'vide'})")
+
+    return communes, territoires
 
 
 def enveloppe(territoire, mesures, rattachements, blocs=None):
@@ -185,7 +204,7 @@ def main():
 
     donnees = json.loads(SOURCE.read_text(encoding="utf-8"))
     communes = donnees["communes"]
-    complements = charger_complements()
+    complements, complements_territoires = charger_complements()
 
     if not donnees.get("cantons"):
         print("\n[ERREUR] Rattachement cantonal absent.")
@@ -254,14 +273,19 @@ def main():
     # canton
     membres = [{"niveau": "commune", "code": c["code"], "nom": c["nom"]}
                for c in sorted(du_canton, key=lambda x: x["nom"])]
+    extra = complements_territoires.get(f"canton:{canton['code']}", {})
+    mesures_canton = mesurer(du_canton, "canton")
+    mesures_canton.update(extra.get("mesures", {}))
+
     fichier = enveloppe(
         {"niveau": "canton", "code": canton["code"], "nom": canton["nom"],
          "bureau_centralisateur": canton["bureau_centralisateur"],
          "communes_scindees": canton["communes_scindees"],
          "nombre_communes": len(du_canton)},
-        mesurer(du_canton, "canton"),
+        mesures_canton,
         {"au_dessus": [{"niveau": "departement", "code": "38", "nom": "Isère"}],
-         "en_dessous": membres})
+         "en_dessous": membres},
+        extra.get("blocs", []))
     (PUBLIE / "canton" / f"{canton['code']}.json").write_text(
         json.dumps(fichier, ensure_ascii=False, indent=2), encoding="utf-8")
     index["territoires"].append(
@@ -270,13 +294,18 @@ def main():
     # epci
     membres = [{"niveau": "commune", "code": c["code"], "nom": c["nom"]}
                for c in sorted(de_l_epci, key=lambda x: x["nom"])]
+    extra = complements_territoires.get(f"epci:{code_epci}", {})
+    mesures_epci = mesurer(de_l_epci, "epci")
+    mesures_epci.update(extra.get("mesures", {}))
+
     fichier = enveloppe(
         {"niveau": "epci", "code": code_epci,
          "nom": "Saint-Marcellin Vercors Isère Communauté",
          "nombre_communes": len(de_l_epci)},
-        mesurer(de_l_epci, "epci"),
+        mesures_epci,
         {"au_dessus": [{"niveau": "departement", "code": "38", "nom": "Isère"}],
-         "en_dessous": membres})
+         "en_dessous": membres},
+        extra.get("blocs", []))
     (PUBLIE / "epci" / f"{code_epci}.json").write_text(
         json.dumps(fichier, ensure_ascii=False, indent=2), encoding="utf-8")
     index["territoires"].append(

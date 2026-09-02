@@ -83,7 +83,15 @@ def appeler(operation, **params):
             requete = urllib.request.Request(
                 url, headers={"User-Agent": "portail-territorial/1.0"})
             with urllib.request.urlopen(requete, timeout=DELAI) as reponse:
-                return json.loads(reponse.read().decode("utf-8")).get("data", [])
+                statut = getattr(reponse, "status", 200)
+                corps = reponse.read()
+            # une réponse vide signale une absence de donnée, pas une panne
+            if statut == 204 or not corps.strip():
+                return []
+            try:
+                return json.loads(corps.decode("utf-8")).get("data", [])
+            except json.JSONDecodeError:
+                return None
         except urllib.error.HTTPError as e:
             if e.code == 404:
                 return []
