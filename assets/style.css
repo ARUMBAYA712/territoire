@@ -134,7 +134,31 @@ main .wrap{padding:26px 20px 48px}
 .carte-bloc .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
   text-transform:none;letter-spacing:0;color:var(--ink);display:block;
   margin-bottom:12px}
-svg.carte{display:block;width:100%;height:auto;max-height:440px}
+.carte-fonds{display:flex;gap:2px;margin-bottom:10px;flex-wrap:wrap}
+.carte-fonds .opt{display:flex;align-items:center;gap:7px;padding:6px 11px;
+  font-size:13px;border:1px solid var(--line);border-radius:var(--radius);
+  cursor:pointer;background:var(--sunken)}
+.carte-fonds .opt:hover{background:var(--surface)}
+.carte-fonds .opt input{accent-color:var(--accent);margin:0}
+.carte-fonds .opt:has(input:checked){background:var(--accent);
+  color:var(--surface);border-color:var(--accent);font-weight:600}
+
+.carte-cadre{position:relative;width:100%;overflow:hidden;
+  border-radius:var(--radius);background:var(--sunken)}
+.carte-fond{position:absolute;inset:0;display:none}
+.carte-fond img{position:absolute;display:block}
+.carte-cadre[data-fond="plan"] .carte-fond[data-fond="plan"],
+.carte-cadre[data-fond="photo"] .carte-fond[data-fond="photo"]{display:block}
+
+svg.carte{display:block;width:100%;height:auto;position:relative}
+
+.carte-credits{font-size:11px;color:var(--dim);margin-top:6px;text-align:right}
+.carte-credit{display:none}
+.carte-credit[data-credit="schema"]{display:inline}
+.carte-bloc[data-fond="plan"] .carte-credit[data-credit="plan"],
+.carte-bloc[data-fond="photo"] .carte-credit[data-credit="photo"]{display:inline}
+.carte-bloc[data-fond="plan"] .carte-credit[data-credit="schema"],
+.carte-bloc[data-fond="photo"] .carte-credit[data-credit="schema"]{display:none}
 svg.carte a{cursor:pointer}
 svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
   transition:fill .12s,stroke .12s}
@@ -180,6 +204,17 @@ svg.carte path.n0,svg.carte path.n1,svg.carte path.n2,
 svg.carte path.n3,svg.carte path.n4{fill:var(--accent);stroke:var(--surface);
   stroke-width:.8}
 svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
+
+/* Avec un fond de plan, le dessin s'efface : contours seuls pour les
+   voisines, remplissage translucide pour la commune mise en avant,
+   afin que la carte reste lisible dessous. */
+.carte-cadre[data-fond] svg.carte .c-voisine{fill:none;stroke:var(--ink);
+  stroke-width:1;stroke-opacity:.45}
+.carte-cadre[data-fond] svg.carte a:hover .c-voisine{fill:var(--accent);
+  fill-opacity:.28;stroke-opacity:1}
+.carte-cadre[data-fond] svg.carte .c-ici{fill-opacity:.35;stroke-width:2.5}
+.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.55;
+  stroke:var(--surface)}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 

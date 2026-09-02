@@ -41,7 +41,10 @@ API = "https://geo.api.gouv.fr"
 # contours anguleux. 0.0003 est un bon compromis à cette échelle.
 TOLERANCE = 0.0003
 
-LARGEUR, HAUTEUR, MARGE = 640, 440, 12
+TAILLE_TUILE = 256        # pixels, standard des tuiles cartographiques
+LARGEUR_CIBLE = 1400      # largeur maximale du dessin, en pixels
+HAUTEUR_CIBLE = 1000
+MARGE_RELATIVE = 0.06     # respiration autour du territoire
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -122,29 +125,68 @@ def anneaux(geometrie):
     return []
 
 
+def merca(lon, lat, zoom):
+    """Coordonnées en pixels dans la projection Web Mercator.
+
+    C'est la projection des tuiles cartographiques. En l'adoptant, le
+    dessin s'aligne exactement sur un fond de plan sans aucun calcul
+    côté navigateur.
+    """
+    n = TAILLE_TUILE * (2 ** zoom)
+    x = (lon + 180.0) / 360.0 * n
+    phi = math.radians(max(-85.05, min(85.05, lat)))
+    y = (1.0 - math.log(math.tan(phi) + 1.0 / math.cos(phi)) / math.pi) / 2.0 * n
+    return x, y
+
+
+def choisir_zoom(lon_min, lat_min, lon_max, lat_max):
+    """Plus grand niveau de zoom tenant dans la largeur visée."""
+    for zoom in range(18, 3, -1):
+        x0, y0 = merca(lon_min, lat_max, zoom)
+        x1, y1 = merca(lon_max, lat_min, zoom)
+        if (x1 - x0) <= LARGEUR_CIBLE and (y1 - y0) <= HAUTEUR_CIBLE:
+            return zoom
+    return 4
+
+
 def cadrage(geometries):
-    """Calcule l'emprise et la fonction de projection."""
+    """Emprise, projection et grille de tuiles correspondante."""
     lons = [p[0] for g in geometries for a in anneaux(g) for p in a]
     lats = [p[1] for g in geometries for a in anneaux(g) for p in a]
     if not lons:
         return None
 
-    lat_moy = (min(lats) + max(lats)) / 2
-    k = math.cos(math.radians(lat_moy))   # corrige l'étirement en longitude
+    marge_lon = (max(lons) - min(lons)) * MARGE_RELATIVE
+    marge_lat = (max(lats) - min(lats)) * MARGE_RELATIVE
+    lon_min, lon_max = min(lons) - marge_lon, max(lons) + marge_lon
+    lat_min, lat_max = min(lats) - marge_lat, max(lats) + marge_lat
 
-    x0, x1 = min(lons) * k, max(lons) * k
-    y0, y1 = -max(lats), -min(lats)
-    largeur, hauteur = (x1 - x0) or 1e-9, (y1 - y0) or 1e-9
-
-    echelle = min((LARGEUR - 2 * MARGE) / largeur, (HAUTEUR - 2 * MARGE) / hauteur)
-    dx = (LARGEUR - largeur * echelle) / 2
-    dy = (HAUTEUR - hauteur * echelle) / 2
+    zoom = choisir_zoom(lon_min, lat_min, lon_max, lat_max)
+    x0, y0 = merca(lon_min, lat_max, zoom)
+    x1, y1 = merca(lon_max, lat_min, zoom)
+    largeur, hauteur = max(x1 - x0, 1.0), max(y1 - y0, 1.0)
 
     def projeter(point):
-        return (round((point[0] * k - x0) * echelle + dx, 1),
-                round((-point[1] - y0) * echelle + dy, 1))
+        x, y = merca(point[0], point[1], zoom)
+        return (round(x - x0, 1), round(y - y0, 1))
 
-    return projeter
+    # tuiles couvrant l'emprise, repérées en pourcentage du cadre pour
+    # que le fond se redimensionne avec lui, sans JavaScript
+    tuiles = []
+    for tx in range(int(x0 // TAILLE_TUILE), int(x1 // TAILLE_TUILE) + 1):
+        for ty in range(int(y0 // TAILLE_TUILE), int(y1 // TAILLE_TUILE) + 1):
+            tuiles.append({
+                "x": tx, "y": ty,
+                "gauche": round((tx * TAILLE_TUILE - x0) / largeur * 100, 4),
+                "haut": round((ty * TAILLE_TUILE - y0) / hauteur * 100, 4),
+                "l": round(TAILLE_TUILE / largeur * 100, 4),
+                "h": round(TAILLE_TUILE / hauteur * 100, 4),
+            })
+
+    return projeter, {"zoom": zoom,
+                      "largeur": round(largeur),
+                      "hauteur": round(hauteur),
+                      "tuiles": tuiles}
 
 
 def tracer(geometrie, projeter, tolerance):
@@ -178,10 +220,11 @@ def carte(contours, codes_fond, code_evidence, titre):
     """
     geometries = [contours[c]["contour"] for c in codes_fond if c in contours]
     if not geometries:
-        return None
-    projeter = cadrage(geometries)
-    if not projeter:
-        return None
+        return None, None
+    resultat = cadrage(geometries)
+    if not resultat:
+        return None, None
+    projeter, grille = resultat
 
     fond = []
     for code in codes_fond:
@@ -201,10 +244,11 @@ def carte(contours, codes_fond, code_evidence, titre):
             evidence = (f'<path class="c-ici" data-code="{code_evidence}" '
                         f'd="{d}"><title>{nom}</title></path>')
 
-    return (f'<svg class="carte" viewBox="0 0 {LARGEUR} {HAUTEUR}" '
-            f'xmlns="http://www.w3.org/2000/svg" role="img" '
-            f'aria-label="{titre}">'
-            f'{"".join(fond)}{evidence}</svg>')
+    svg = (f'<svg class="carte" viewBox="0 0 {grille["largeur"]} '
+           f'{grille["hauteur"]}" xmlns="http://www.w3.org/2000/svg" '
+           f'role="img" aria-label="{titre}" preserveAspectRatio="none">'
+           f'{"".join(fond)}{evidence}</svg>')
+    return svg, grille
 
 
 def main():
@@ -244,25 +288,33 @@ def main():
     # dans l'intercommunalité sinon.
     for c in communes:
         fond = du_canton if c["code"] in du_canton else de_l_epci
-        svg = carte(contours, fond, c["code"],
-                    f"Situation de {c['nom']} dans son territoire")
+        svg, grille = carte(contours, fond, c["code"],
+                            f"Situation de {c['nom']} dans son territoire")
         if svg:
             chemin = SORTIE / "commune" / f"{c['code']}.svg"
             chemin.write_text(svg, encoding="utf-8")
+            chemin.with_suffix(".json").write_text(
+                json.dumps(grille), encoding="utf-8")
             total += chemin.stat().st_size
             produites += 1
 
     if canton:
-        svg = carte(contours, du_canton, None,
-                    f"Carte du canton {canton['nom']}")
+        svg, grille = carte(contours, du_canton, None,
+                            f"Carte du canton {canton['nom']}")
         if svg:
-            (SORTIE / "canton" / f"{canton['code']}.svg").write_text(
-                svg, encoding="utf-8")
+            base = SORTIE / "canton" / canton["code"]
+            base.with_suffix(".svg").write_text(svg, encoding="utf-8")
+            base.with_suffix(".json").write_text(json.dumps(grille),
+                                                 encoding="utf-8")
             produites += 1
 
-    svg = carte(contours, de_l_epci, None, "Carte de l'intercommunalité")
+    svg, grille = carte(contours, de_l_epci, None,
+                        "Carte de l'intercommunalité")
     if svg:
-        (SORTIE / "epci" / f"{codes_epci[0]}.svg").write_text(svg, encoding="utf-8")
+        base = SORTIE / "epci" / codes_epci[0]
+        base.with_suffix(".svg").write_text(svg, encoding="utf-8")
+        base.with_suffix(".json").write_text(json.dumps(grille),
+                                             encoding="utf-8")
         produites += 1
 
     moyenne = (total / max(1, len(communes))) / 1024

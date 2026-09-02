@@ -195,3 +195,38 @@
   // en dernier : une erreur ici ne doit plus empêcher le survol de fonctionner
   if(active) appliquer(active);
 })();
+
+// ── Fond de plan ───────────────────────────────────────────────────
+// Les tuiles ne sont téléchargées qu'au moment où le fond est demandé.
+// Sans JavaScript, la carte reste affichée en schéma : le contenu ne
+// dépend donc jamais de ce script.
+(function(){
+  var cadre = document.querySelector('.carte-cadre');
+  var bloc = document.querySelector('.carte-bloc');
+  var choix = document.querySelectorAll('.carte-fonds input[name="fond"]');
+  if(!cadre || !choix.length) return;
+
+  function charger(couche){
+    var images = couche.querySelectorAll('img[data-src]');
+    for(var i = 0; i < images.length; i++){
+      images[i].src = images[i].getAttribute('data-src');
+      images[i].removeAttribute('data-src');
+    }
+  }
+
+  function appliquer(id){
+    if(id === 'schema'){
+      cadre.removeAttribute('data-fond');
+      if(bloc) bloc.removeAttribute('data-fond');
+      return;
+    }
+    var couche = cadre.querySelector('.carte-fond[data-fond="' + id + '"]');
+    if(couche) charger(couche);
+    cadre.setAttribute('data-fond', id);
+    if(bloc) bloc.setAttribute('data-fond', id);
+  }
+
+  for(var k = 0; k < choix.length; k++){
+    choix[k].addEventListener('change', function(){ appliquer(this.value); });
+  }
+})();

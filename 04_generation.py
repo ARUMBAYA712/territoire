@@ -192,7 +192,31 @@ main .wrap{padding:26px 20px 48px}
 .carte-bloc .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
   text-transform:none;letter-spacing:0;color:var(--ink);display:block;
   margin-bottom:12px}
-svg.carte{display:block;width:100%;height:auto;max-height:440px}
+.carte-fonds{display:flex;gap:2px;margin-bottom:10px;flex-wrap:wrap}
+.carte-fonds .opt{display:flex;align-items:center;gap:7px;padding:6px 11px;
+  font-size:13px;border:1px solid var(--line);border-radius:var(--radius);
+  cursor:pointer;background:var(--sunken)}
+.carte-fonds .opt:hover{background:var(--surface)}
+.carte-fonds .opt input{accent-color:var(--accent);margin:0}
+.carte-fonds .opt:has(input:checked){background:var(--accent);
+  color:var(--surface);border-color:var(--accent);font-weight:600}
+
+.carte-cadre{position:relative;width:100%;overflow:hidden;
+  border-radius:var(--radius);background:var(--sunken)}
+.carte-fond{position:absolute;inset:0;display:none}
+.carte-fond img{position:absolute;display:block}
+.carte-cadre[data-fond="plan"] .carte-fond[data-fond="plan"],
+.carte-cadre[data-fond="photo"] .carte-fond[data-fond="photo"]{display:block}
+
+svg.carte{display:block;width:100%;height:auto;position:relative}
+
+.carte-credits{font-size:11px;color:var(--dim);margin-top:6px;text-align:right}
+.carte-credit{display:none}
+.carte-credit[data-credit="schema"]{display:inline}
+.carte-bloc[data-fond="plan"] .carte-credit[data-credit="plan"],
+.carte-bloc[data-fond="photo"] .carte-credit[data-credit="photo"]{display:inline}
+.carte-bloc[data-fond="plan"] .carte-credit[data-credit="schema"],
+.carte-bloc[data-fond="photo"] .carte-credit[data-credit="schema"]{display:none}
 svg.carte a{cursor:pointer}
 svg.carte .c-voisine{fill:var(--sunken);stroke:var(--line);stroke-width:.8;
   transition:fill .12s,stroke .12s}
@@ -238,6 +262,17 @@ svg.carte path.n0,svg.carte path.n1,svg.carte path.n2,
 svg.carte path.n3,svg.carte path.n4{fill:var(--accent);stroke:var(--surface);
   stroke-width:.8}
 svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
+
+/* Avec un fond de plan, le dessin s'efface : contours seuls pour les
+   voisines, remplissage translucide pour la commune mise en avant,
+   afin que la carte reste lisible dessous. */
+.carte-cadre[data-fond] svg.carte .c-voisine{fill:none;stroke:var(--ink);
+  stroke-width:1;stroke-opacity:.45}
+.carte-cadre[data-fond] svg.carte a:hover .c-voisine{fill:var(--accent);
+  fill-opacity:.28;stroke-opacity:1}
+.carte-cadre[data-fond] svg.carte .c-ici{fill-opacity:.35;stroke-width:2.5}
+.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.55;
+  stroke:var(--surface)}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
@@ -538,6 +573,41 @@ JS = """
   // en dernier : une erreur ici ne doit plus empêcher le survol de fonctionner
   if(active) appliquer(active);
 })();
+
+// ── Fond de plan ───────────────────────────────────────────────────
+// Les tuiles ne sont téléchargées qu'au moment où le fond est demandé.
+// Sans JavaScript, la carte reste affichée en schéma : le contenu ne
+// dépend donc jamais de ce script.
+(function(){
+  var cadre = document.querySelector('.carte-cadre');
+  var bloc = document.querySelector('.carte-bloc');
+  var choix = document.querySelectorAll('.carte-fonds input[name="fond"]');
+  if(!cadre || !choix.length) return;
+
+  function charger(couche){
+    var images = couche.querySelectorAll('img[data-src]');
+    for(var i = 0; i < images.length; i++){
+      images[i].src = images[i].getAttribute('data-src');
+      images[i].removeAttribute('data-src');
+    }
+  }
+
+  function appliquer(id){
+    if(id === 'schema'){
+      cadre.removeAttribute('data-fond');
+      if(bloc) bloc.removeAttribute('data-fond');
+      return;
+    }
+    var couche = cadre.querySelector('.carte-fond[data-fond="' + id + '"]');
+    if(couche) charger(couche);
+    cadre.setAttribute('data-fond', id);
+    if(bloc) bloc.setAttribute('data-fond', id);
+  }
+
+  for(var k = 0; k < choix.length; k++){
+    choix[k].addEventListener('change', function(){ appliquer(this.value); });
+  }
+})();
 """
 
 # ══════════════════════════════════════════════════════════════════
@@ -660,6 +730,33 @@ MOTIF_FORME = re.compile(
 # Les identifiants absents des fiches sont simplement ignorés :
 # ajouter les élections plus tard ne demandera rien d'autre ici.
 ORDRE_CARTE = ["POP-01", "GEO-13", "POP-10"]
+
+# ══════════════════════════════════════════════════════════════════
+# FONDS DE PLAN
+#
+# Les tuiles d'OpenStreetMap ne conviennent pas : leur politique
+# d'usage réserve le service aux usages qui ne le mettent pas sous
+# tension, et prévient que l'accès peut être retiré à tout moment aux
+# services commerciaux. La Géoplateforme de l'IGN diffuse Plan IGN et
+# les photographies aériennes gratuitement et sans inscription — et
+# Plan IGN intègre lui-même des données OpenStreetMap.
+# ══════════════════════════════════════════════════════════════════
+
+GEOPF = ("https://data.geopf.fr/wmts?SERVICE=WMTS&amp;REQUEST=GetTile"
+         "&amp;VERSION=1.0.0&amp;LAYER={couche}&amp;STYLE=normal"
+         "&amp;FORMAT={format}&amp;TILEMATRIXSET=PM"
+         "&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}")
+
+FONDS = [
+    {"id": "schema", "nom": "Schéma", "couche": None,
+     "credit": "Contours IGN Admin Express"},
+    {"id": "plan", "nom": "Plan IGN",
+     "couche": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2", "format": "image/png",
+     "credit": "Plan IGN © IGN — Géoplateforme"},
+    {"id": "photo", "nom": "Photo aérienne",
+     "couche": "ORTHOIMAGERY.ORTHOPHOTOS", "format": "image/jpeg",
+     "credit": "Photographies aériennes © IGN — Géoplateforme"},
+]
 
 # ══════════════════════════════════════════════════════════════════
 # RUBRIQUES
@@ -936,6 +1033,59 @@ def legende_carte(carte):
             f'<span class="unite" id="carte-unite"></span></div>')
 
 
+def couches_tuiles(grille):
+    """Fonds de plan superposables au dessin.
+
+    Les tuiles sont positionnées en pourcentage : le fond suit donc le
+    redimensionnement du cadre sans une ligne de JavaScript. L'adresse
+    réelle reste dans data-src tant que le fond n'est pas demandé, pour
+    ne rien télécharger inutilement.
+    """
+    couches = []
+    for fond in FONDS:
+        if not fond["couche"]:
+            continue
+        images = []
+        for tuile in grille["tuiles"]:
+            adresse = (GEOPF.replace("{couche}", fond["couche"])
+                            .replace("{format}", fond["format"])
+                            .replace("{z}", str(grille["zoom"]))
+                            .replace("{x}", str(tuile["x"]))
+                            .replace("{y}", str(tuile["y"])))
+            images.append(
+                f'<img data-src="{adresse}" alt="" loading="lazy" '
+                f'style="left:{tuile["gauche"]}%;top:{tuile["haut"]}%;'
+                f'width:{tuile["l"]}%;height:{tuile["h"]}%">')
+        couches.append(f'<div class="carte-fond" data-fond="{fond["id"]}">'
+                       + "".join(images) + "</div>")
+    return "".join(couches)
+
+
+def choix_fond(grille):
+    boutons = "".join(
+        f'<label class="opt"><input type="radio" name="fond" '
+        f'value="{f["id"]}"{" checked" if f["id"] == "schema" else ""}> '
+        f'<span>{escape(f["nom"])}</span></label>' for f in FONDS)
+    credits = "".join(
+        f'<span class="carte-credit" data-credit="{f["id"]}">'
+        f'{escape(f["credit"])}</span>' for f in FONDS)
+    return (f'<div class="carte-fonds" role="group" '
+            f'aria-label="Fond de plan">{boutons}</div>', credits)
+
+
+def enrober_carte(svg, chemin_grille):
+    """Place le dessin dans un cadre pouvant recevoir un fond de plan."""
+    if not chemin_grille.exists():
+        return f'<div class="carte-cadre">{svg}</div>'
+    grille = json.loads(chemin_grille.read_text(encoding="utf-8"))
+    selecteur, credits = choix_fond(grille)
+    proportion = f"{grille['largeur']} / {grille['hauteur']}"
+    return (f'{selecteur}'
+            f'<div class="carte-cadre" style="aspect-ratio:{proportion}">'
+            f'{couches_tuiles(grille)}{svg}</div>'
+            f'<p class="carte-credits">{credits}</p>')
+
+
 def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
@@ -964,6 +1114,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
         return f'<a href="{base}/{cible}" aria-label="{nom}">{forme}</a>' 
 
     svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
+    svg = enrober_carte(svg, fichier.with_suffix(".json"))
 
     if not carte:
         legende = ("Situation dans le territoire — cliquez une commune "
