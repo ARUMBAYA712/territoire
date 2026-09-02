@@ -196,6 +196,31 @@ svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
+.bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px}
+.bloc > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
+  text-transform:none;letter-spacing:0;color:var(--ink);display:block;
+  margin-bottom:12px}
+.bl-grille{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.bl-item{border:1px solid var(--line);border-radius:var(--radius);
+  padding:13px 14px;background:var(--sunken)}
+.bl-item header{display:flex;align-items:flex-start;justify-content:space-between;
+  gap:10px;margin-bottom:9px}
+.bl-item h3{font-size:14px;font-weight:600;line-height:1.3}
+.bl-etat{font-size:10px;font-weight:600;padding:3px 8px;border-radius:var(--radius);
+  white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
+.bl-etat.ok{background:var(--accent);color:var(--surface)}
+.bl-etat.alerte{background:var(--mark);color:var(--surface)}
+.bl-etat.neutre{background:var(--line);color:var(--soft)}
+.bl-ligne{display:flex;justify-content:space-between;gap:12px;font-size:13px;
+  padding:3px 0;border-top:1px solid var(--line)}
+.bl-ligne:first-of-type{border-top:none}
+.bl-cle{color:var(--soft)}
+.bl-val{font-family:var(--font-data);text-align:right}
+.bl-note{font-size:12px;color:var(--soft);margin-top:12px;
+  border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
+  border-radius:var(--radius)}
+
 .ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
 .ratt > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
@@ -245,6 +270,7 @@ footer.site a{color:var(--link)}
   .top-fin{display:none}
 }
 @media(max-width:560px){
+  .bl-grille{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .terr h1{font-size:27px}
   .rung .lvl{width:100%}
@@ -761,6 +787,41 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique):
     </section>"""
 
 
+def bloc_liste(d, rubrique):
+    """Rend les blocs détaillés attachés à une rubrique.
+
+    Certaines données ne se réduisent pas à un chiffre : les réseaux
+    d'eau qui desservent une commune forment une liste d'objets, chacun
+    avec ses propres caractéristiques. Ils ont donc leur propre gabarit,
+    distinct des cartes d'indicateurs.
+    """
+    blocs = [b for b in (d.get("blocs") or [])
+             if b.get("rubrique") == rubrique["id"]]
+    if not blocs:
+        return ""
+
+    sorties = []
+    for b in blocs:
+        entrees = []
+        for item in b["items"]:
+            lignes = "".join(
+                f'<div class="bl-ligne"><span class="bl-cle">{escape(k)}</span>'
+                f'<span class="bl-val">{escape(str(v))}</span></div>'
+                for k, v in item.get("details", {}).items())
+            etat = item.get("etat")
+            pastille = (f'<span class="bl-etat {escape(etat[1])}">'
+                        f'{escape(etat[0])}</span>') if etat else ""
+            entrees.append(
+                f'<article class="bl-item"><header><h3>{escape(item["titre"])}</h3>'
+                f'{pastille}</header>{lignes}</article>')
+        note = (f'<p class="bl-note">{escape(b["note"])}</p>'
+                if b.get("note") else "")
+        sorties.append(
+            f'    <section class="bloc"><span class="dsp">{escape(b["titre"])}</span>'
+            f'<div class="bl-grille">{"".join(entrees)}</div>{note}</section>')
+    return "\n".join(sorties)
+
+
 def page(d, base, canonique, adresses, fiches, rubrique,
          chemin_territoire, actives, accueil=False):
     t = d["territoire"]
@@ -773,16 +834,20 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     description = (f"{t['nom']} ({niveau}) : {resume}. "
                    f"Données publiques INSEE et IGN.")
 
+    # Le code d'un EPCI est un numéro SIREN, pas un code INSEE :
+    # les nommer pareil serait une erreur de fond.
+    ref = ("Code SIREN Intercommunalité" if t["niveau"] == "epci"
+           else f"Code INSEE {niveau}")
     codes = t.get("codes_postaux") or []
     if codes:
         libelle_cp = "Codes postaux" if len(codes) > 1 else "Code postal"
         sous_titre = (f"<strong>{libelle_cp} {escape(', '.join(codes))}</strong>"
-                      f" · Code INSEE {escape(t['code'])}")
+                      f" · {ref} {escape(t['code'])}")
     elif t.get("nombre_communes"):
         sous_titre = (f"{t['nombre_communes']} communes"
-                      f" · Code {escape(t['code'])}")
+                      f" · {ref} {escape(t['code'])}")
     else:
-        sous_titre = f"Code INSEE {escape(t['code'])}"
+        sous_titre = f"{ref} {escape(t['code'])}"
 
     if codes:
         description = (f"{t['nom']} ({codes[0]}) : {resume}. "
@@ -836,6 +901,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     <div class="cards">
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
+{bloc_liste(d, rubrique)}
 {bloc_rattachements(d, base, adresses)}
 {bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique)}
 </div></main>
