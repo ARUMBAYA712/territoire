@@ -200,6 +200,9 @@ main .wrap{padding:26px 20px 48px}
 .carte-fonds .opt input{accent-color:var(--accent);margin:0}
 .carte-fonds .opt:has(input:checked){background:var(--accent);
   color:var(--surface);border-color:var(--accent);font-weight:600}
+.carte-fonds .bascule{margin-left:auto}
+.carte-fonds .bascule:has(input:checked){background:var(--sunken);
+  color:var(--ink);border-color:var(--line);font-weight:400}
 
 .carte-cadre{position:relative;width:100%;overflow:hidden;
   border-radius:var(--radius);background:var(--sunken)}
@@ -262,6 +265,18 @@ svg.carte path.n0,svg.carte path.n1,svg.carte path.n2,
 svg.carte path.n3,svg.carte path.n4{fill:var(--accent);stroke:var(--surface);
   stroke-width:.8}
 svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
+
+/* Noms de communes : cerclés d'un liseré pour rester lisibles au-dessus
+   d'un fond de plan comme d'un aplat de couleur. Ils ne captent pas le
+   pointeur, afin de ne pas gêner le survol ni les liens. */
+svg.carte .c-noms{pointer-events:none}
+svg.carte .c-nom{fill:var(--ink);font-family:var(--font-body);font-weight:500;
+  paint-order:stroke;stroke:var(--surface);stroke-width:3;
+  stroke-linejoin:round}
+svg.carte .c-nom.principal{font-weight:600;fill:var(--accent)}
+.carte-cadre[data-fond] svg.carte .c-nom{stroke-width:3.5}
+.carte-cadre[data-fond="photo"] svg.carte .c-nom{fill:#111;stroke:#fff}
+.carte-cadre.sans-noms svg.carte .c-noms{display:none}
 
 /* Avec un fond de plan, le dessin s'efface : contours seuls pour les
    voisines, remplissage translucide pour la commune mise en avant,
@@ -606,6 +621,13 @@ JS = """
 
   for(var k = 0; k < choix.length; k++){
     choix[k].addEventListener('change', function(){ appliquer(this.value); });
+  }
+
+  var bascule = document.getElementById('carte-noms');
+  if(bascule){
+    bascule.addEventListener('change', function(){
+      cadre.classList.toggle('sans-noms', !this.checked);
+    });
   }
 })();
 """
@@ -1069,8 +1091,10 @@ def choix_fond(grille):
     credits = "".join(
         f'<span class="carte-credit" data-credit="{f["id"]}">'
         f'{escape(f["credit"])}</span>' for f in FONDS)
+    noms = ('<label class="opt bascule"><input type="checkbox" id="carte-noms" '
+            'checked> <span>Noms des communes</span></label>')
     return (f'<div class="carte-fonds" role="group" '
-            f'aria-label="Fond de plan">{boutons}</div>', credits)
+            f'aria-label="Fond de plan">{boutons}{noms}</div>', credits)
 
 
 def enrober_carte(svg, chemin_grille):

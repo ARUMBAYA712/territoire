@@ -45,6 +45,8 @@ TAILLE_TUILE = 256        # pixels, standard des tuiles cartographiques
 LARGEUR_CIBLE = 1400      # largeur maximale du dessin, en pixels
 HAUTEUR_CIBLE = 1000
 MARGE_RELATIVE = 0.06     # respiration autour du territoire
+TAILLE_NOM = 12           # taille des noms de communes, en unités du dessin
+SURFACE_MINIMALE = 900    # aire minimale pour mériter un nom, en pixels²
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -189,6 +191,66 @@ def cadrage(geometries):
                       "tuiles": tuiles}
 
 
+def aire(points):
+    """Aire algébrique d'un anneau (formule des lacets)."""
+    total = 0.0
+    for i in range(len(points) - 1):
+        total += points[i][0] * points[i + 1][1] - points[i + 1][0] * points[i][1]
+    return total / 2.0
+
+
+def dedans(point, anneau):
+    """Le point est-il à l'intérieur de l'anneau ?"""
+    x, y = point
+    interieur = False
+    for i in range(len(anneau) - 1):
+        x1, y1 = anneau[i]
+        x2, y2 = anneau[i + 1]
+        if (y1 > y) != (y2 > y):
+            coupe = x1 + (y - y1) / (y2 - y1) * (x2 - x1)
+            if x < coupe:
+                interieur = not interieur
+    return interieur
+
+
+def centre_visuel(anneau):
+    """Point d'ancrage du nom, garanti à l'intérieur de la forme.
+
+    Le centre de gravité suffit pour une forme compacte, mais tombe
+    hors du territoire pour une commune en croissant — fréquent dans
+    les vallées. Dans ce cas on retient le milieu du plus long segment
+    horizontal intérieur, qui reste toujours dans la forme.
+    """
+    a = aire(anneau)
+    if abs(a) > 1e-9:
+        cx = sum((anneau[i][0] + anneau[i + 1][0]) *
+                 (anneau[i][0] * anneau[i + 1][1] - anneau[i + 1][0] * anneau[i][1])
+                 for i in range(len(anneau) - 1)) / (6 * a)
+        cy = sum((anneau[i][1] + anneau[i + 1][1]) *
+                 (anneau[i][0] * anneau[i + 1][1] - anneau[i + 1][0] * anneau[i][1])
+                 for i in range(len(anneau) - 1)) / (6 * a)
+        if dedans((cx, cy), anneau):
+            return cx, cy
+    else:
+        cy = sum(p[1] for p in anneau) / len(anneau)
+        cx = sum(p[0] for p in anneau) / len(anneau)
+
+    # repli : plus long segment horizontal intérieur, à hauteur du centre
+    coupes = []
+    for i in range(len(anneau) - 1):
+        x1, y1 = anneau[i]
+        x2, y2 = anneau[i + 1]
+        if (y1 > cy) != (y2 > cy):
+            coupes.append(x1 + (cy - y1) / (y2 - y1) * (x2 - x1))
+    coupes.sort()
+    meilleur, largeur = (cx, cy), -1
+    for i in range(0, len(coupes) - 1, 2):
+        if coupes[i + 1] - coupes[i] > largeur:
+            largeur = coupes[i + 1] - coupes[i]
+            meilleur = ((coupes[i] + coupes[i + 1]) / 2, cy)
+    return meilleur
+
+
 def tracer(geometrie, projeter, tolerance):
     """Convertit une géométrie en attribut « d » de chemin SVG."""
     morceaux = []
@@ -209,6 +271,57 @@ def tracer(geometrie, projeter, tolerance):
 def echapper(texte):
     return (texte.replace("&", "&amp;").replace("<", "&lt;")
                  .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def etiquettes(contours, codes, code_evidence, projeter, grille):
+    """Place les noms de communes en évitant les chevauchements.
+
+    Les plus grandes formes sont servies en premier — un nom placé sur
+    un grand territoire gêne moins qu'un nom flottant sur un hameau.
+    La commune mise en évidence est prioritaire dans tous les cas.
+    """
+    echelle = grille["largeur"] / 700.0
+    taille = round(TAILLE_NOM * echelle, 1)
+    hauteur_boite = taille * 1.2
+
+    candidats = []
+    for code in codes:
+        if code not in contours:
+            continue
+        anneaux_px = []
+        for anneau in anneaux(contours[code]["contour"]):
+            if len(anneau) < 4:
+                continue
+            anneaux_px.append([projeter(p) for p in anneau])
+        if not anneaux_px:
+            continue
+        principal = max(anneaux_px, key=lambda a: abs(aire(a)))
+        surface = abs(aire(principal))
+        if surface < SURFACE_MINIMALE * echelle * echelle and code != code_evidence:
+            continue
+        x, y = centre_visuel(principal)
+        candidats.append({"code": code, "nom": contours[code]["nom"],
+                          "x": x, "y": y, "surface": surface})
+
+    candidats.sort(key=lambda c: (c["code"] != code_evidence, -c["surface"]))
+
+    posees, sorties = [], []
+    for c in candidats:
+        largeur_boite = len(c["nom"]) * taille * 0.5
+        boite = (c["x"] - largeur_boite / 2, c["y"] - hauteur_boite / 2,
+                 c["x"] + largeur_boite / 2, c["y"] + hauteur_boite / 2)
+        if boite[0] < 0 or boite[2] > grille["largeur"]:
+            continue
+        if any(not (boite[2] < a[0] or boite[0] > a[2] or
+                    boite[3] < a[1] or boite[1] > a[3]) for a in posees):
+            continue
+        posees.append(boite)
+        classe = "c-nom principal" if c["code"] == code_evidence else "c-nom"
+        sorties.append(
+            f'<text class="{classe}" x="{c["x"]:.1f}" y="{c["y"]:.1f}" '
+            f'font-size="{taille}" text-anchor="middle" '
+            f'dominant-baseline="middle">{echapper(c["nom"])}</text>')
+    return "".join(sorties), len(sorties), len(candidats)
 
 
 def carte(contours, codes_fond, code_evidence, titre):
@@ -244,10 +357,16 @@ def carte(contours, codes_fond, code_evidence, titre):
             evidence = (f'<path class="c-ici" data-code="{code_evidence}" '
                         f'd="{d}"><title>{nom}</title></path>')
 
+    noms, poses, proposes = etiquettes(contours, codes_fond, code_evidence,
+                                       projeter, grille)
+    grille["noms_poses"] = poses
+    grille["noms_proposes"] = proposes
+
     svg = (f'<svg class="carte" viewBox="0 0 {grille["largeur"]} '
            f'{grille["hauteur"]}" xmlns="http://www.w3.org/2000/svg" '
            f'role="img" aria-label="{titre}" preserveAspectRatio="none">'
-           f'{"".join(fond)}{evidence}</svg>')
+           f'{"".join(fond)}{evidence}'
+           f'<g class="c-noms">{noms}</g></svg>')
     return svg, grille
 
 
@@ -319,6 +438,12 @@ def main():
 
     moyenne = (total / max(1, len(communes))) / 1024
     print(f"\n  Cartes produites : {produites}")
+    if canton:
+        grille_canton = json.loads(
+            (SORTIE / "canton" / f"{canton['code']}.json").read_text(
+                encoding="utf-8"))
+        print(f"  Noms sur le canton : {grille_canton['noms_poses']} placés "
+              f"sur {grille_canton['noms_proposes']} proposés")
     print(f"  Poids moyen      : {moyenne:.1f} Ko par commune")
     if moyenne > 40:
         print(f"  [attention] Cartes lourdes. Augmentez TOLERANCE "

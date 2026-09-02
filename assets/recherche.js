@@ -229,4 +229,11 @@
   for(var k = 0; k < choix.length; k++){
     choix[k].addEventListener('change', function(){ appliquer(this.value); });
   }
+
+  var bascule = document.getElementById('carte-noms');
+  if(bascule){
+    bascule.addEventListener('change', function(){
+      cadre.classList.toggle('sans-noms', !this.checked);
+    });
+  }
 })();
