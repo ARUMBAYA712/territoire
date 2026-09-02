@@ -52,14 +52,25 @@ button{background:none;border:none;cursor:pointer}
   position:sticky;top:var(--h-top,61px);z-index:19}
 .terr .wrap{padding:24px 20px;transition:padding .16s ease}
 .terr h1{transition:font-size .16s ease}
-.terr.compact .wrap{padding-top:7px;padding-bottom:7px}
-.terr.compact h1{font-size:22px}
+.terr.compact .wrap{padding-top:5px;padding-bottom:6px}
+.terr.compact h1{font-size:20px}
 .terr.compact .kind{font-size:10px}
 .terr.compact .sub{margin-top:1px;font-size:12px}
 .terr .kind{font-size:11px;color:var(--soft)}
 .terr h1{font-family:var(--font-display);font-size:34px;line-height:1.05;
   text-transform:none;letter-spacing:.01em;font-weight:600}
 .terr .sub{font-size:13px;color:var(--soft);margin-top:4px}
+
+.nav{background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:2px;padding:0 20px;overflow-x:auto;
+  scrollbar-width:thin}
+.nav-item{display:inline-block;white-space:nowrap;padding:11px 15px;
+  font-size:14px;color:var(--soft);border-bottom:2px solid transparent;
+  transition:color .12s,border-color .12s,background .12s}
+a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
+.nav-item.actif{color:var(--accent);border-bottom-color:var(--accent);
+  font-weight:600}
+.nav-item.vide{color:var(--dim);cursor:default}
 
 main .wrap{padding:26px 20px 48px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -167,6 +178,8 @@ footer.site a{color:var(--link)}
   .carte-menu .opt{font-size:12px;padding:6px 8px}
 }
 @media(max-width:640px){
+  .nav .wrap{padding:0 12px}
+  .nav-item{padding:10px 11px;font-size:13px}
   .top .wrap{grid-template-columns:1fr;gap:8px;justify-items:stretch}
   .logo{justify-self:center}
   .find-groupe{justify-self:stretch}

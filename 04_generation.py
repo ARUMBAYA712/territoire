@@ -20,6 +20,7 @@ Utilisation :
     python 04_generation.py
 """
 
+import hashlib
 import json
 import re
 import shutil
@@ -41,6 +42,10 @@ RACINE = Path(".")
 PUBLIE = RACINE / "data" / "publie" / "v1"
 ASSETS = RACINE / "assets"
 ACCUEIL = ("canton", "3823")
+
+# Empreinte du thème et du script : ajoutée aux adresses des ressources
+# pour que les navigateurs rechargent d'eux-mêmes après chaque génération.
+EMPREINTE = ""
 
 LIBELLE = {"commune": "Commune", "canton": "Canton",
            "epci": "Intercommunalité", "departement": "Département"}
@@ -105,14 +110,25 @@ button{background:none;border:none;cursor:pointer}
   position:sticky;top:var(--h-top,61px);z-index:19}
 .terr .wrap{padding:24px 20px;transition:padding .16s ease}
 .terr h1{transition:font-size .16s ease}
-.terr.compact .wrap{padding-top:7px;padding-bottom:7px}
-.terr.compact h1{font-size:22px}
+.terr.compact .wrap{padding-top:5px;padding-bottom:6px}
+.terr.compact h1{font-size:20px}
 .terr.compact .kind{font-size:10px}
 .terr.compact .sub{margin-top:1px;font-size:12px}
 .terr .kind{font-size:11px;color:var(--soft)}
 .terr h1{font-family:var(--font-display);font-size:34px;line-height:1.05;
   text-transform:none;letter-spacing:.01em;font-weight:600}
 .terr .sub{font-size:13px;color:var(--soft);margin-top:4px}
+
+.nav{background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:2px;padding:0 20px;overflow-x:auto;
+  scrollbar-width:thin}
+.nav-item{display:inline-block;white-space:nowrap;padding:11px 15px;
+  font-size:14px;color:var(--soft);border-bottom:2px solid transparent;
+  transition:color .12s,border-color .12s,background .12s}
+a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
+.nav-item.actif{color:var(--accent);border-bottom-color:var(--accent);
+  font-weight:600}
+.nav-item.vide{color:var(--dim);cursor:default}
 
 main .wrap{padding:26px 20px 48px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -220,6 +236,8 @@ footer.site a{color:var(--link)}
   .carte-menu .opt{font-size:12px;padding:6px 8px}
 }
 @media(max-width:640px){
+  .nav .wrap{padding:0 12px}
+  .nav-item{padding:10px 11px;font-size:13px}
   .top .wrap{grid-template-columns:1fr;gap:8px;justify-items:stretch}
   .logo{justify-self:center}
   .find-groupe{justify-self:stretch}
@@ -526,6 +544,62 @@ MOTIF_FORME = re.compile(
 # ajouter les élections plus tard ne demandera rien d'autre ici.
 ORDRE_CARTE = ["POP-01", "GEO-13", "POP-10"]
 
+# ══════════════════════════════════════════════════════════════════
+# RUBRIQUES
+#
+# Chaque rubrique regroupe les indicateurs dont l'identifiant commence
+# par l'un de ses préfixes. « prevue » signale une rubrique affichée
+# dans la navigation même si elle est encore vide : le visiteur voit
+# ce qui existe et ce qui vient, plutôt qu'un menu qui s'allonge sans
+# prévenir. Ajouter une rubrique se fait ici, et nulle part ailleurs.
+# ══════════════════════════════════════════════════════════════════
+
+RUBRIQUES = [
+    {"id": "",              "nom": "Aperçu",        "prefixes": None, "prevue": True},
+    {"id": "population",    "nom": "Population",    "prefixes": ["POP"], "prevue": True},
+    {"id": "geographie",    "nom": "Géographie",    "prefixes": ["GEO"], "prevue": True},
+    {"id": "urbanisme",     "nom": "Urbanisme",     "prefixes": ["URB"], "prevue": True},
+    {"id": "environnement", "nom": "Environnement", "prefixes": ["ENV", "EAU", "MET"], "prevue": True},
+    {"id": "transports",    "nom": "Transports",    "prefixes": ["TRA"], "prevue": True},
+    {"id": "elections",     "nom": "Élections",     "prefixes": ["POL"], "prevue": True},
+]
+
+
+def indicateurs_de(rubrique, mesures):
+    """Sélectionne les mesures relevant d'une rubrique."""
+    if rubrique["prefixes"] is None:
+        return dict(mesures)
+    return {k: v for k, v in mesures.items()
+            if any(k.startswith(pref) for pref in rubrique["prefixes"])}
+
+
+def rubriques_actives(mesures):
+    """Rubriques disposant d'au moins une valeur pour ce territoire."""
+    actives = set()
+    for r in RUBRIQUES:
+        contenu = indicateurs_de(r, mesures)
+        if any(m.get("valeur") is not None for m in contenu.values()):
+            actives.add(r["id"])
+    return actives
+
+
+def nav_rubriques(base, chemin_territoire, actives, courante):
+    liens = []
+    for r in RUBRIQUES:
+        libelle = escape(r["nom"])
+        if r["id"] == courante:
+            liens.append(f'<span class="nav-item actif" '
+                         f'aria-current="page">{libelle}</span>')
+        elif r["id"] in actives:
+            suffixe = f"{r['id']}/" if r["id"] else ""
+            liens.append(f'<a class="nav-item" '
+                         f'href="{base}/{chemin_territoire}{suffixe}">{libelle}</a>')
+        elif r["prevue"]:
+            liens.append(f'<span class="nav-item vide" '
+                         f'title="Données à venir">{libelle}</span>')
+    return ('<nav class="nav" aria-label="Rubriques"><div class="wrap">'
+            + "".join(liens) + "</div></nav>")
+
 NB_CLASSES = 5
 
 
@@ -568,14 +642,14 @@ def format_valeur(v, unite):
     return f"{nombre(v)}{separateur}{unite}"
 
 
-def donnees_carte(membres, fiches):
+def donnees_carte(membres, fiches, rubrique):
     """Prépare les données de coloration pour les communes membres."""
     dispo = {}
     for m in membres:
         f = fiches.get(("commune", m["code"]))
         if not f:
             continue
-        for ident, mesure in f["mesures"].items():
+        for ident, mesure in indicateurs_de(rubrique, f["mesures"]).items():
             if isinstance(mesure.get("valeur"), (int, float)):
                 dispo.setdefault(ident, {"nom": mesure["nom"],
                                          "unite": mesure["unite"],
@@ -626,7 +700,7 @@ def legende_carte(carte):
             f'<span class="unite" id="carte-unite"></span></div>')
 
 
-def bloc_carte(t, base, adresses, fiches, membres):
+def bloc_carte(t, base, adresses, fiches, membres, rubrique):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
     Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
@@ -637,7 +711,7 @@ def bloc_carte(t, base, adresses, fiches, membres):
     if not fichier.exists():
         return ""
 
-    carte = donnees_carte(membres, fiches) if membres else None
+    carte = donnees_carte(membres, fiches, rubrique) if membres else None
     defaut = carte["couches"][carte["defaut"]]["classes"] if carte else {}
 
     def relier(m):
@@ -687,11 +761,13 @@ def bloc_carte(t, base, adresses, fiches, membres):
     </section>"""
 
 
-def page(d, base, canonique, adresses, fiches, accueil=False):
+def page(d, base, canonique, adresses, fiches, rubrique,
+         chemin_territoire, actives, accueil=False):
     t = d["territoire"]
     niveau = LIBELLE.get(t["niveau"], t["niveau"])
 
-    mesures = {k: v for k, v in d["mesures"].items() if v["valeur"] is not None}
+    toutes = indicateurs_de(rubrique, d["mesures"])
+    mesures = {k: v for k, v in toutes.items() if v["valeur"] is not None}
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
                        for m in list(mesures.values())[:3])
     description = (f"{t['nom']} ({niveau}) : {resume}. "
@@ -712,6 +788,8 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
         description = (f"{t['nom']} ({codes[0]}) : {resume}. "
                        f"Données publiques INSEE et IGN.")
 
+    suffixe_titre = rubrique["nom"] if rubrique["id"] else niveau
+
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
 
     return f"""<!DOCTYPE html>
@@ -719,7 +797,7 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{escape(t['nom'])} — {escape(niveau)} | {escape(TITRE_SITE)}</title>
+<title>{escape(t['nom'])} — {escape(suffixe_titre)} | {escape(TITRE_SITE)}</title>
 <meta name="description" content="{escape(description)}">
 <link rel="canonical" href="{canonique}">
 <meta property="og:title" content="{escape(t['nom'])} — {escape(TITRE_SITE)}">
@@ -729,7 +807,7 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{base}/assets/style.css">
+<link rel="stylesheet" href="{base}/assets/style.css?v={EMPREINTE}">
 </head>
 <body>
 
@@ -752,12 +830,14 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
   <div class="sub">{sous_titre}</div>
 </div></div>
 
+{nav_rubriques(base, chemin_territoire, actives, rubrique["id"])}
+
 <main><div class="wrap">
     <div class="cards">
 {chr(10).join(carte(k, v) for k, v in mesures.items())}
     </div>
 {bloc_rattachements(d, base, adresses)}
-{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"))}
+{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique)}
 </div></main>
 
 <footer class="site"><div class="wrap">
@@ -767,7 +847,7 @@ def page(d, base, canonique, adresses, fiches, accueil=False):
 </div></footer>
 
 <script>var BASE="{base}";</script>
-<script src="{base}/assets/recherche.js"></script>
+<script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>
 </body>
 </html>
 """
@@ -801,6 +881,10 @@ def main():
             shutil.rmtree(RACINE / sous)
 
     ASSETS.mkdir(parents=True, exist_ok=True)
+
+    global EMPREINTE
+    EMPREINTE = hashlib.sha1(
+        (CSS + JS).encode("utf-8")).hexdigest()[:8]
     if garde:
         shutil.move(str(garde), str(cartes))
     (ASSETS / "style.css").write_text(CSS.strip(), encoding="utf-8")
@@ -830,13 +914,22 @@ def main():
     for (niveau, code), d in fiches.items():
         t = d["territoire"]
         chemin = adresses[(niveau, code)]
-        dossier = RACINE / chemin
-        dossier.mkdir(parents=True, exist_ok=True)
-        url = f"{SITE}/{chemin}"
+        actives = rubriques_actives(d["mesures"])
 
-        dossier.joinpath("index.html").write_text(
-            page(d, "..\u002f..", url, adresses, fiches), encoding="utf-8")
-        liens_site.append(url)
+        for r in RUBRIQUES:
+            if r["id"] and r["id"] not in actives:
+                continue
+            suffixe = f"{r['id']}/" if r["id"] else ""
+            dossier = RACINE / chemin / r["id"] if r["id"] else RACINE / chemin
+            dossier.mkdir(parents=True, exist_ok=True)
+            url = f"{SITE}/{chemin}{suffixe}"
+            profondeur = "../" * (2 + (1 if r["id"] else 0))
+
+            dossier.joinpath("index.html").write_text(
+                page(d, profondeur.rstrip("/"), url, adresses, fiches,
+                     r, chemin, actives),
+                encoding="utf-8")
+            liens_site.append(url)
 
         recherche.append({
             "nom": t["nom"],
@@ -852,7 +945,9 @@ def main():
 
         if (niveau, code) == ACCUEIL:
             (RACINE / "index.html").write_text(
-                page(d, ".", SITE + "/", adresses, fiches, accueil=True), encoding="utf-8")
+                page(d, ".", SITE + "/", adresses, fiches,
+                     RUBRIQUES[0], chemin, actives, accueil=True),
+                encoding="utf-8")
             liens_site.append(SITE + "/")
 
     # ── contrôle d'exhaustivité de la recherche ──────────────────
@@ -911,8 +1006,17 @@ def main():
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n",
         encoding="utf-8")
 
-    produites = len(fiches)
-    print(f"\n  Pages produites : {produites}")
+    produites = len(set(liens_site))
+    par_rubrique = {}
+    for r in RUBRIQUES:
+        n = sum(1 for d in fiches.values()
+                if r["id"] in rubriques_actives(d["mesures"]) or not r["id"])
+        if n:
+            par_rubrique[r["nom"]] = n
+    print(f"\n  Territoires     : {len(fiches)}")
+    print(f"  Pages produites : {produites}")
+    print(f"  Rubriques       : "
+          + ", ".join(f"{k} ({v})" for k, v in par_rubrique.items()))
     print(f"  Accueil         : index.html ({ACCUEIL[0]} {ACCUEIL[1]})")
     print(f"  Thème           : assets/style.css")
     print(f"  Redirections    : .htaccess ({len(redirections)} anciennes adresses)")
