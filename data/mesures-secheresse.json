@@ -1,0 +1,4426 @@
+{
+ "genere_le": "2026-09-02",
+ "source": "VigiEau — ministère de la Transition écologique",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "quotidienne",
+ "communes": {
+  "38004": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38018": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38033": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38036": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38041": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38074": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38092": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38319": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Vercors (sout.)",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Vercors",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "EAU-10": {
+     "valeur": "Alerte renforcée",
+     "unite": "",
+     "nom": "Restrictions sécheresse",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    },
+    "EAU-11": {
+     "valeur": 3,
+     "unite": "zones d'alerte",
+     "nom": "Zones d'alerte concernant la commune",
+     "obtention": "natif",
+     "source": "VigiEau — ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ]
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "titre": "Restrictions des usages de l'eau",
+     "items": [
+      {
+       "titre": "Alerte renforcée — Eau potable (réseau)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eau potable (réseau)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 27
+       },
+       "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux souterraines (nappes)",
+        "Zone d'alerte": "Nappes de Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 43
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      },
+      {
+       "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+       "etat": [
+        "Alerte renforcée",
+        "alerte"
+       ],
+       "details": {
+        "Type d'eau": "Eaux superficielles (rivières)",
+        "Zone d'alerte": "Chambaran",
+        "En vigueur depuis": "20/08/2026",
+        "Jusqu'au": "30/09/2026",
+        "Usages concernés": 56
+       },
+       "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+       "lien": {
+        "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+        "libelle": "Lire l'arrêté préfectoral"
+       }
+      }
+     ],
+     "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+   ]
+  }
+ }
+}

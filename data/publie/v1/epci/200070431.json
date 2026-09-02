@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-01",
+  "genere_le": "2026-09-02",
   "territoire": {
     "niveau": "epci",
     "code": "200070431",
@@ -281,5 +281,6 @@
       "format": "carte",
       "nom": "Densité de population"
     }
-  }
+  },
+  "blocs": []
 }

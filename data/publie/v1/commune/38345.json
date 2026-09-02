@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-01",
+  "genere_le": "2026-09-02",
   "territoire": {
     "niveau": "commune",
     "code": "38345",
@@ -53,6 +53,212 @@
       "licence": "Licence Ouverte 2.0",
       "format": "carte",
       "nom": "Densité de population"
+    },
+    "EAU-01": {
+      "valeur": 100.0,
+      "unite": "%",
+      "nom": "Conformité des prélèvements (12 mois)",
+      "obtention": "recalculé",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-02": {
+      "valeur": 9,
+      "unite": "prélèvements",
+      "nom": "Contrôles sanitaires sur 12 mois",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-03": {
+      "valeur": 1,
+      "unite": "réseaux",
+      "nom": "Réseaux desservant la commune",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-08": {
+      "valeur": 0,
+      "unite": "prélèvements",
+      "nom": "Prélèvements non conformes (12 mois)",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-04": {
+      "valeur": 2.4,
+      "unite": "mg/L",
+      "nom": "Nitrates",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-05": {
+      "valeur": 21.02,
+      "unite": "°f",
+      "nom": "Dureté",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-06": {
+      "valeur": 0.64,
+      "unite": "NFU",
+      "nom": "pH",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-07": {
+      "valeur": 0.06,
+      "unite": "mg(Cl2)/L",
+      "nom": "Chlore libre",
+      "obtention": "natif",
+      "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-10": {
+      "valeur": "Alerte renforcée",
+      "unite": "",
+      "nom": "Restrictions sécheresse",
+      "obtention": "natif",
+      "source": "VigiEau — ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
+    },
+    "EAU-11": {
+      "valeur": 3,
+      "unite": "zones d'alerte",
+      "nom": "Zones d'alerte concernant la commune",
+      "obtention": "natif",
+      "source": "VigiEau — ministère de la Transition écologique",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "niveaux": [
+        "commune"
+      ]
     }
-  }
+  },
+  "blocs": [
+    {
+      "rubrique": "environnement",
+      "titre": "Réseaux d'eau potable desservant la commune",
+      "items": [
+        {
+          "titre": "ROVON RESEAU",
+          "etat": [
+            "Conforme",
+            "ok"
+          ],
+          "details": {
+            "Code réseau": "038002157",
+            "Secteur desservi": "-",
+            "Dernier prélèvement": "01/06/2026",
+            "Analyses réalisées": 30
+          }
+        }
+      ],
+      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 01/06/2026."
+    },
+    {
+      "rubrique": "environnement",
+      "titre": "Restrictions des usages de l'eau",
+      "items": [
+        {
+          "titre": "Alerte renforcée — Eau potable (réseau)",
+          "etat": [
+            "Alerte renforcée",
+            "alerte"
+          ],
+          "details": {
+            "Type d'eau": "Eau potable (réseau)",
+            "Zone d'alerte": "Vercors",
+            "En vigueur depuis": "20/08/2026",
+            "Jusqu'au": "30/09/2026",
+            "Usages concernés": 27
+          },
+          "texte": "Restrictions portant sur : arroser, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer, remplir ou vidanger, icpe, prélever.",
+          "lien": {
+            "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+            "libelle": "Lire l'arrêté préfectoral"
+          }
+        },
+        {
+          "titre": "Alerte renforcée — Eaux souterraines (nappes)",
+          "etat": [
+            "Alerte renforcée",
+            "alerte"
+          ],
+          "details": {
+            "Type d'eau": "Eaux souterraines (nappes)",
+            "Zone d'alerte": "Terrasses de l'Isère rive gauche",
+            "En vigueur depuis": "20/08/2026",
+            "Jusqu'au": "30/09/2026",
+            "Usages concernés": 43
+          },
+          "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+          "lien": {
+            "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+            "libelle": "Lire l'arrêté préfectoral"
+          }
+        },
+        {
+          "titre": "Alerte renforcée — Eaux superficielles (rivières)",
+          "etat": [
+            "Alerte renforcée",
+            "alerte"
+          ],
+          "details": {
+            "Type d'eau": "Eaux superficielles (rivières)",
+            "Zone d'alerte": "Vercors",
+            "En vigueur depuis": "20/08/2026",
+            "Jusqu'au": "30/09/2026",
+            "Usages concernés": 56
+          },
+          "texte": "Restrictions portant sur : remplir ou vidanger, arroser, irriguer, prélever, activités économiques, alimenter des fontaines et autres usages de loisirs, installations de production d'électricité, nettoyer…",
+          "lien": {
+            "url": "https://regleau.s3.gra.perf.cloud.ovh.net/arrete-restriction/37806/7b9dc374-a8fa-4b5b-ad8b-06b5db600b33/AP_N%C3%82%C2%B038-2026-08-20-00004.pdf",
+            "libelle": "Lire l'arrêté préfectoral"
+          }
+        }
+      ],
+      "note": "Situation au 02/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ]
 }

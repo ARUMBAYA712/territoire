@@ -217,6 +217,10 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-ligne:first-of-type{border-top:none}
 .bl-cle{color:var(--soft)}
 .bl-val{font-family:var(--font-data);text-align:right}
+.bl-texte{font-size:12px;color:var(--soft);margin-top:9px;line-height:1.45}
+.bl-lien{display:inline-block;margin-top:9px;font-size:12px;color:var(--link);
+  border-bottom:1px solid currentColor}
+.bl-lien:hover{color:var(--accent)}
 .bl-note{font-size:12px;color:var(--soft);margin-top:12px;
   border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
   border-radius:var(--radius)}
@@ -501,6 +505,8 @@ def slug(nom):
 def nombre(v):
     """Formatage français : espace fine insécable pour les milliers,
     virgule pour les décimales."""
+    if isinstance(v, str):
+        return v
     if not isinstance(v, (int, float)):
         return "—"
     if isinstance(v, float) and not v.is_integer():
@@ -811,9 +817,15 @@ def bloc_liste(d, rubrique):
             etat = item.get("etat")
             pastille = (f'<span class="bl-etat {escape(etat[1])}">'
                         f'{escape(etat[0])}</span>') if etat else ""
+            texte = (f'<p class="bl-texte">{escape(item["texte"])}</p>'
+                     if item.get("texte") else "")
+            lien = item.get("lien")
+            ancre = (f'<a class="bl-lien" href="{escape(lien["url"])}" '
+                     f'target="_blank" rel="noopener">{escape(lien["libelle"])}</a>'
+                     if lien else "")
             entrees.append(
                 f'<article class="bl-item"><header><h3>{escape(item["titre"])}</h3>'
-                f'{pastille}</header>{lignes}</article>')
+                f'{pastille}</header>{lignes}{texte}{ancre}</article>')
         note = (f'<p class="bl-note">{escape(b["note"])}</p>'
                 if b.get("note") else "")
         sorties.append(
