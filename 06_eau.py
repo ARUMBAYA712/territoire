@@ -130,11 +130,23 @@ def en_texte(valeur):
     return liste[0] if liste else ""
 
 
-def mesure(valeur, unite, nom, ident_source=SOURCE, obtention="natif"):
-    return {"valeur": valeur, "unite": unite, "nom": nom,
+ANCRE = "reseaux-eau-potable"
+
+
+def mesure(valeur, unite, nom, ident_source=SOURCE, obtention="natif",
+           **habillage):
+    """Indicateur communal.
+
+    « habillage » transporte les consignes d'affichage facultatives —
+    ancre vers un bloc détaillé, mise en avant, ton — lues par le
+    générateur de pages.
+    """
+    base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": obtention, "source": ident_source,
             "licence": LICENCE, "format": "texte",
             "niveaux": ["commune"]}
+    base.update(habillage)
+    return base
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -216,14 +228,14 @@ def synthetiser(commune, reseaux, analyses):
     indetermines = len(recents) - len(juges)
 
     mesures = {
-        "EAU-01": mesure(taux, "%", "Conformité des prélèvements (12 mois)",
+        "EAU-01": mesure(taux, "%", "Conformité des prélèvements sur 12 mois",
                          obtention="recalculé"),
         "EAU-02": mesure(len(recents), "prélèvements",
                          "Contrôles sanitaires sur 12 mois"),
         "EAU-03": mesure(len(reseaux), "réseaux",
-                         "Réseaux desservant la commune"),
+                         "Réseaux desservant la commune", ancre=ANCRE),
         "EAU-08": mesure(len(juges) - conformes, "prélèvements",
-                         "Prélèvements non conformes (12 mois)"),
+                         "Prélèvements non conformes sur 12 mois"),
     }
 
     # paramètres suivis : dernière valeur mesurée
@@ -273,6 +285,7 @@ def synthetiser(commune, reseaux, analyses):
 
     blocs = [{
         "rubrique": "environnement",
+        "id": ANCRE,
         "titre": "Réseaux d'eau potable desservant la commune",
         "items": items,
         "note": ("Un réseau de distribution dessert souvent plusieurs communes, "

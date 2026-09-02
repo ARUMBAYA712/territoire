@@ -60,6 +60,8 @@ CSS = """
   --paper:#EDF0EA; --surface:#FFF; --sunken:#F5F7F3;
   --ink:#16211C; --soft:#5D6E64; --dim:#9AA79F; --line:#D5DCD3;
   --accent:#2C6B4C; --accent-soft:#EAF3EE; --link:#2A6F97; --mark:#9C8340;
+  --attention:#B4610E; --attention-soft:#FBF0E4;
+  --alerte:#A32C1B; --alerte-soft:#FBEAE7;
   --font-display:"Barlow Condensed",sans-serif;
   --font-body:"IBM Plex Sans",system-ui,sans-serif;
   --font-data:"IBM Plex Mono",monospace;
@@ -140,6 +142,19 @@ main .wrap{padding:26px 20px 48px}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
   display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--soft)}
+.card.pleine{grid-column:1/-1}
+.card.pleine .v{font-size:34px}
+.card.ton-attention{background:var(--attention-soft);border-color:var(--attention)}
+.card.ton-attention .v{color:var(--attention)}
+.card.ton-alerte{background:var(--alerte-soft);border-color:var(--alerte);
+  border-width:2px}
+.card.ton-alerte .v{color:var(--alerte)}
+.card-lien{display:inline-block;font-size:12px;color:var(--link);
+  border-bottom:1px solid currentColor;align-self:flex-start}
+.card-lien:hover{color:var(--accent)}
+.card.ton-alerte .card-lien{color:var(--alerte)}
+.card.ton-attention .card-lien{color:var(--attention)}
+.bloc{scroll-margin-top:calc(var(--h-top,61px) + 84px)}
 .pill{border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px}
 
 .carte-bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
@@ -210,7 +225,8 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-etat{font-size:10px;font-weight:600;padding:3px 8px;border-radius:var(--radius);
   white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
 .bl-etat.ok{background:var(--accent);color:var(--surface)}
-.bl-etat.alerte{background:var(--mark);color:var(--surface)}
+.bl-etat.alerte{background:var(--alerte);color:var(--surface)}
+.bl-etat.attention{background:var(--attention);color:var(--surface)}
 .bl-etat.neutre{background:var(--line);color:var(--soft)}
 .bl-ligne{display:flex;justify-content:space-between;gap:12px;font-size:13px;
   padding:3px 0;border-top:1px solid var(--line)}
@@ -516,10 +532,29 @@ def nombre(v):
 
 
 def carte(ident, m):
-    return f"""      <article class="card">
+    """Rend une carte d'indicateur.
+
+    Trois habillages facultatifs, pilotés par la donnée elle-même :
+      · mise_en_avant → la carte occupe toute la largeur, en tête de grille
+      · ton           → « attention » ou « alerte » colore la carte
+      · ancre         → un lien mène au bloc détaillé plus bas dans la page
+    """
+    classes = ["card"]
+    if m.get("mise_en_avant"):
+        classes.append("pleine")
+    if m.get("ton") in ("attention", "alerte"):
+        classes.append("ton-" + m["ton"])
+
+    lien = (f'<a class="card-lien" href="#{escape(m["ancre"])}">Voir le détail</a>'
+            if m.get("ancre") else "")
+    unite = (f' <span class="u">{escape(m["unite"])}</span>'
+             if m.get("unite") else "")
+
+    return f"""      <article class="{' '.join(classes)}">
         <span class="id">{escape(ident)}</span>
         <h2>{escape(m['nom'])}</h2>
-        <div><span class="v">{nombre(m['valeur'])}</span> <span class="u">{escape(m['unite'])}</span></div>
+        <div><span class="v">{nombre(m['valeur'])}</span>{unite}</div>
+        {lien}
         <footer><span class="pill">{escape(m['source'])}</span><span class="pill">{escape(m['obtention'])}</span></footer>
       </article>"""
 
@@ -828,8 +863,10 @@ def bloc_liste(d, rubrique):
                 f'{pastille}</header>{lignes}{texte}{ancre}</article>')
         note = (f'<p class="bl-note">{escape(b["note"])}</p>'
                 if b.get("note") else "")
+        ancre = f' id="{escape(b["id"])}"' if b.get("id") else ""
         sorties.append(
-            f'    <section class="bloc"><span class="dsp">{escape(b["titre"])}</span>'
+            f'    <section class="bloc"{ancre}>'
+            f'<span class="dsp">{escape(b["titre"])}</span>'
             f'<div class="bl-grille">{"".join(entrees)}</div>{note}</section>')
     return "\n".join(sorties)
 
@@ -841,6 +878,9 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 
     toutes = indicateurs_de(rubrique, d["mesures"])
     mesures = {k: v for k, v in toutes.items() if v["valeur"] is not None}
+    # les indicateurs mis en avant passent en tête de grille
+    mesures = dict(sorted(mesures.items(),
+                          key=lambda kv: (not kv[1].get("mise_en_avant"), kv[0])))
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
                        for m in list(mesures.values())[:3])
     description = (f"{t['nom']} ({niveau}) : {resume}. "

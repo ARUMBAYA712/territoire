@@ -43,12 +43,15 @@ DELAI = 60
 TENTATIVES = 4
 
 # Niveaux réglementaires, du plus faible au plus sévère.
+# rang, libellé, ton d'affichage
 NIVEAUX = {
-    "vigilance": (1, "Vigilance", "neutre"),
-    "alerte": (2, "Alerte", "alerte"),
+    "vigilance": (1, "Vigilance", "attention"),
+    "alerte": (2, "Alerte", "attention"),
     "alerte_renforcee": (3, "Alerte renforcée", "alerte"),
     "crise": (4, "Crise", "alerte"),
 }
+
+ANCRE = "restrictions-usages-eau"
 
 TYPES_EAU = {
     "SUP": "Eaux superficielles (rivières)",
@@ -110,10 +113,17 @@ def appeler(code_commune, longitude, latitude):
     return None
 
 
-def mesure(valeur, unite, nom):
-    return {"valeur": valeur, "unite": unite, "nom": nom,
+def mesure(valeur, unite, nom, **habillage):
+    """Indicateur communal.
+
+    « habillage » transporte les consignes d'affichage facultatives —
+    mise en avant, ton, ancre — que le générateur de pages sait lire.
+    """
+    base = {"valeur": valeur, "unite": unite, "nom": nom,
             "obtention": "natif", "source": SOURCE, "licence": LICENCE,
             "format": "texte", "niveaux": ["commune"]}
+    base.update(habillage)
+    return base
 
 
 def _date_fr(iso):
@@ -131,7 +141,8 @@ def synthetiser(zones):
         return {
             "mesures": {
                 "EAU-10": mesure("Aucune restriction en vigueur", "",
-                                 "Restrictions sécheresse"),
+                                 "Restrictions sécheresse",
+                                 mise_en_avant=True),
                 "EAU-11": mesure(0, "zones d'alerte",
                                  "Zones d'alerte concernant la commune"),
             },
@@ -181,12 +192,15 @@ def synthetiser(zones):
 
     return {
         "mesures": {
-            "EAU-10": mesure(pires[1], "", "Restrictions sécheresse"),
+            "EAU-10": mesure(pires[1], "", "Restrictions sécheresse",
+                             mise_en_avant=True, ton=pires[2], ancre=ANCRE),
             "EAU-11": mesure(len(zones), "zones d'alerte",
-                             "Zones d'alerte concernant la commune"),
+                             "Zones d'alerte concernant la commune",
+                             ancre=ANCRE),
         },
         "blocs": [{
             "rubrique": "environnement",
+            "id": ANCRE,
             "titre": "Restrictions des usages de l'eau",
             "items": items,
             "note": ("Situation au " + date.today().strftime("%d/%m/%Y")
