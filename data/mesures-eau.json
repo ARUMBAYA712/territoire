@@ -1,5 +1,6 @@
 {
  "genere_le": "2026-09-02",
+ "version": 2,
  "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
  "licence": "Licence Ouverte 2.0",
  "frequence": "mensuelle",
@@ -636,8 +637,7 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
-     "ancre": "reseaux-eau-potable"
+     "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires."
     },
     "EAU-02": {
      "valeur": 3,
@@ -663,8 +663,7 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs.",
-     "ancre": "reseaux-eau-potable"
+     "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs."
     },
     "EAU-08": {
      "valeur": 0,
@@ -677,8 +676,7 @@
      "niveaux": [
       "commune"
      ],
-     "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
-     "ancre": "reseaux-eau-potable"
+     "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur."
     },
     "EAU-04": {
      "valeur": 0.15,

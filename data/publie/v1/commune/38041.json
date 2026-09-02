@@ -65,8 +65,7 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
-      "ancre": "reseaux-eau-potable"
+      "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires."
     },
     "EAU-02": {
       "valeur": 3,
@@ -92,8 +91,7 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs.",
-      "ancre": "reseaux-eau-potable"
+      "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs."
     },
     "EAU-08": {
       "valeur": 0,
@@ -106,8 +104,7 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
-      "ancre": "reseaux-eau-potable"
+      "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur."
     },
     "EAU-04": {
       "valeur": 0.15,
@@ -175,7 +172,10 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "mise_en_avant": true,
+      "ton": "alerte",
+      "ancre": "restrictions-usages-eau"
     },
     "EAU-11": {
       "valeur": 3,
@@ -187,12 +187,14 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "ancre": "restrictions-usages-eau"
     }
   },
   "blocs": [
     {
       "rubrique": "environnement",
+      "id": "restrictions-usages-eau",
       "titre": "Restrictions des usages de l'eau",
       "items": [
         {
@@ -203,7 +205,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Chambaran",
+            "Zone d'alerte": "Nappes de Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27

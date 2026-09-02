@@ -537,13 +537,18 @@ def nombre(v):
     return f"{int(v):,}".replace(",", "\u202f")
 
 
-def carte(ident, m):
+def carte(ident, m, ancres=frozenset()):
     """Rend une carte d'indicateur.
 
     Trois habillages facultatifs, pilotés par la donnée elle-même :
       · mise_en_avant → la carte occupe toute la largeur, en tête de grille
       · ton           → « attention » ou « alerte » colore la carte
       · ancre         → un lien mène au bloc détaillé plus bas dans la page
+
+    Le lien n'est posé que si le bloc visé existe réellement sur cette
+    page. Un collecteur peut annoncer une ancre alors que le bloc n'a
+    pas été produit — commune sans réseau connu, sans prélèvement — et
+    le lien mènerait alors dans le vide.
     """
     classes = ["card"]
     if m.get("mise_en_avant"):
@@ -552,7 +557,7 @@ def carte(ident, m):
         classes.append("ton-" + m["ton"])
 
     lien = (f'<a class="card-lien" href="#{escape(m["ancre"])}">Voir le détail</a>'
-            if m.get("ancre") else "")
+            if m.get("ancre") in ancres else "")
     repere = (f'<p class="card-repere">{escape(m["repere"])}</p>'
               if m.get("repere") else "")
     explication = (f'<p class="card-expl">{escape(m["explication"])}</p>'
@@ -893,6 +898,10 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     # les indicateurs mis en avant passent en tête de grille
     mesures = dict(sorted(mesures.items(),
                           key=lambda kv: (not kv[1].get("mise_en_avant"), kv[0])))
+
+    # ancres réellement disponibles sur cette page
+    ancres = {b["id"] for b in (d.get("blocs") or [])
+              if b.get("rubrique") == rubrique["id"] and b.get("id")}
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
                        for m in list(mesures.values())[:3])
     description = (f"{t['nom']} ({niveau}) : {resume}. "
@@ -963,7 +972,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 
 <main><div class="wrap">
     <div class="cards">
-{chr(10).join(carte(k, v) for k, v in mesures.items())}
+{chr(10).join(carte(k, v, ancres) for k, v in mesures.items())}
     </div>
 {bloc_liste(d, rubrique)}
 {bloc_rattachements(d, base, adresses)}

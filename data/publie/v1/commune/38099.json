@@ -175,7 +175,10 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "mise_en_avant": true,
+      "ton": "alerte",
+      "ancre": "restrictions-usages-eau"
     },
     "EAU-11": {
       "valeur": 3,
@@ -187,7 +190,8 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "ancre": "restrictions-usages-eau"
     }
   },
   "blocs": [
@@ -240,6 +244,7 @@
     },
     {
       "rubrique": "environnement",
+      "id": "restrictions-usages-eau",
       "titre": "Restrictions des usages de l'eau",
       "items": [
         {
@@ -250,7 +255,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Chambaran",
+            "Zone d'alerte": "Nappes de Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27

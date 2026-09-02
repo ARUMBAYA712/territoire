@@ -135,6 +135,11 @@ def en_texte(valeur):
 
 ANCRE = "reseaux-eau-potable"
 
+# À incrémenter dès que libellés, repères ou structure changent.
+# La collecte étant longue, une version obsolète n'est pas jetée :
+# elle est réhabillée automatiquement, sans nouvel appel réseau.
+VERSION = 2
+
 # ══════════════════════════════════════════════════════════════════
 # REPÈRES DE LECTURE
 #
@@ -208,6 +213,21 @@ REPERES = {
         "ancre": ANCRE,
     },
 }
+
+
+def sans_ancre_orpheline(mesures, blocs):
+    """Retire les renvois vers un bloc qui n'existe pas.
+
+    Une commune sans réseau connu ou sans prélèvement récent ne produit
+    aucun bloc détaillé : annoncer « voir le détail » y mènerait dans le
+    vide. Le générateur de pages fait la même vérification de son côté,
+    mais mieux vaut ne pas publier une donnée incohérente.
+    """
+    presentes = {b.get("id") for b in (blocs or []) if b.get("id")}
+    for m in mesures.values():
+        if m.get("ancre") and m["ancre"] not in presentes:
+            m.pop("ancre")
+    return mesures
 
 
 def habiller(ident, m):
@@ -396,6 +416,7 @@ def synthetiser(commune, reseaux, analyses):
     }] if items else []
 
     mesures = {k: habiller(k, v) for k, v in mesures.items()}
+    mesures = sans_ancre_orpheline(mesures, blocs)
 
     return {"mesures": mesures, "blocs": blocs,
             "_diagnostic": {"juges": len(juges),
@@ -512,7 +533,7 @@ def _dimension(prelevement):
 
 # ══════════════════════════════════════════════════════════════════
 
-def rehabiller():
+def rehabiller(silencieux=False):
     """Réapplique libellés, explications et ancres au fichier existant.
 
     Utile quand seule la présentation change : aucune interrogation de
@@ -531,10 +552,16 @@ def rehabiller():
                            for k, v in bloc.get("mesures", {}).items()}
         for b in bloc.get("blocs", []):
             b.setdefault("id", ANCRE)
+        bloc["mesures"] = sans_ancre_orpheline(bloc["mesures"],
+                                               bloc.get("blocs"))
         touchees += 1
 
+    contenu["version"] = VERSION
     SORTIE.write_text(json.dumps(contenu, ensure_ascii=False, indent=1),
                       encoding="utf-8")
+    if silencieux:
+        print(f"  {touchees} commune(s) remises au format courant.\n")
+        return
     print(f"\nRéhabillage — Hub'Eau")
     print("─" * 46)
     print(f"  {touchees} commune(s) mises à jour sans nouvel appel réseau.")
@@ -555,6 +582,17 @@ def main():
         sys.exit(1)
 
     reprise = "--tout" not in sys.argv
+
+    # Une collecte antérieure au format actuel est remise à niveau
+    # avant toute chose : les valeurs sont conservées, la présentation
+    # est reconstruite.
+    if reprise and SORTIE.exists():
+        precedent = json.loads(SORTIE.read_text(encoding="utf-8"))
+        if precedent.get("version") != VERSION:
+            print("  Collecte précédente à un format antérieur : "
+                  "réhabillage automatique.")
+            rehabiller(silencieux=True)
+
     acquis = {}
     if reprise and SORTIE.exists():
         acquis = json.loads(SORTIE.read_text(encoding="utf-8")).get("communes", {})
@@ -573,6 +611,7 @@ def main():
         DONNEES.mkdir(exist_ok=True)
         SORTIE.write_text(json.dumps({
             "genere_le": date.today().isoformat(),
+            "version": VERSION,
             "source": SOURCE, "licence": LICENCE, "frequence": "mensuelle",
             "communes": {k: {ck: cv for ck, cv in v.items()
                              if not ck.startswith("_")}

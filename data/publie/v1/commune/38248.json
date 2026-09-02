@@ -170,7 +170,10 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "mise_en_avant": true,
+      "ton": "alerte",
+      "ancre": "restrictions-usages-eau"
     },
     "EAU-11": {
       "valeur": 3,
@@ -182,7 +185,8 @@
       "format": "texte",
       "niveaux": [
         "commune"
-      ]
+      ],
+      "ancre": "restrictions-usages-eau"
     }
   },
   "blocs": [
@@ -209,6 +213,7 @@
     },
     {
       "rubrique": "environnement",
+      "id": "restrictions-usages-eau",
       "titre": "Restrictions des usages de l'eau",
       "items": [
         {

@@ -36,6 +36,11 @@ SORTIE = DONNEES / "mesures-secheresse.json"
 
 API = "https://api.vigieau.gouv.fr/api/zones"
 SOURCE = "VigiEau — ministère de la Transition écologique"
+
+# À incrémenter dès que la forme des données produites change.
+# Une collecte réalisée avec une version antérieure est ignorée : sans
+# cela, la reprise conserverait indéfiniment un format périmé.
+VERSION = 2
 LICENCE = "Licence Ouverte 2.0"
 
 PAUSE = 0.3
@@ -228,7 +233,10 @@ def main():
     if reprise and SORTIE.exists():
         precedent = json.loads(SORTIE.read_text(encoding="utf-8"))
         # Une collecte de la veille est périmée : cette donnée est quotidienne.
-        if precedent.get("genere_le") == date.today().isoformat():
+        if precedent.get("version") != VERSION:
+            print(f"  Collecte précédente produite par une version "
+                  f"antérieure du script : elle est ignorée.\n")
+        elif precedent.get("genere_le") == date.today().isoformat():
             acquis = precedent.get("communes", {})
             if acquis:
                 print(f"  Reprise du jour : {len(acquis)} commune(s) déjà "
@@ -245,6 +253,7 @@ def main():
         DONNEES.mkdir(exist_ok=True)
         SORTIE.write_text(json.dumps({
             "genere_le": date.today().isoformat(),
+            "version": VERSION,
             "source": SOURCE, "licence": LICENCE, "frequence": "quotidienne",
             "communes": resultat,
         }, ensure_ascii=False, indent=1), encoding="utf-8")
