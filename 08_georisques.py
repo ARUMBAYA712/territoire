@@ -41,7 +41,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 4
+VERSION = 5
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -56,13 +56,31 @@ ANCRE_CATNAT = "catastrophes-naturelles"
 # Page de référence Géorisques pour une commune. À vérifier une fois en
 # ligne : l'adresse est susceptible d'évoluer, et elle est isolée ici
 # pour n'avoir qu'un seul endroit à corriger.
-FICHE_GEORISQUES = ("https://www.georisques.gouv.fr/mes-risques/"
-                    "connaitre-les-risques-pres-de-chez-moi/rapport?city={code}")
+# Lien vers le dossier communal de Géorisques. L'adresse que j'avais
+# supposée renvoyait une erreur 404 : elle est donc laissée vide plutôt
+# que de publier un lien mort. Pour l'activer, naviguez jusqu'au dossier
+# d'une commune sur georisques.gouv.fr, relevez l'adresse et remplacez
+# le code INSEE par {code}. Un seul endroit à modifier.
+FICHE_GEORISQUES = ""
 
-# Un arrêté de catastrophe naturelle est publié au Journal officiel.
-# Si l'API livre son identifiant, le texte devient consultable en un clic.
-JORF = "https://www.legifrance.gouv.fr/jorf/id/{identifiant}"
-MOTIF_JORF = re.compile(r"JORF(?:TEXT)?\d{6,}", re.IGNORECASE)
+# Les arrêtés sont identifiés par leur numéro NOR, en vigueur depuis 1987 :
+# quatre lettres pour le ministère et la direction, deux chiffres d'année,
+# cinq chiffres de séquence, une lettre pour la nature du texte.
+# Exemple : INTE0500697A — Intérieur, 2005, arrêté.
+MOTIF_NOR = re.compile(r"^[A-Z]{4}\d{7}[A-Z]$")
+
+# Avant 1987, l'API substitue au NOR une chaîne encodant la date de
+# publication au Journal officiel. Ce n'est pas un identifiant : aucun
+# lien n'est possible, mais la date est récupérable.
+MOTIF_SUBSTITUT = re.compile(r"^NOR(\d{4})(\d{2})(\d{2})$")
+
+# Adresse de recherche officielle par NOR sur Légifrance.
+LEGIFRANCE_NOR = (
+    "https://www.legifrance.gouv.fr/search/jorf"
+    "?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D"
+    "&nor={nor}&isAdvancedResult=true"
+    "&sortValue=SIGNATURE_DATE_DESC&pageSize=10"
+    "&typeRecherche=date&init=true&page=1")
 
 # Nombre d'arrêtés détaillés ; au-delà, seul le décompte est donné.
 ARRETES_DETAILLES = 15
@@ -219,22 +237,39 @@ def sans_ancre_orpheline(mesures, blocs):
     return mesures
 
 
-def lien_arrete(enregistrement):
-    """Cherche de quoi consulter l'arrêté.
+def nor_de(enregistrement):
+    """Numéro NOR de l'arrêté, s'il en existe un.
 
-    Deux formes possibles : une adresse web livrée telle quelle, ou un
-    identifiant de texte au Journal officiel dont l'adresse se déduit.
-    Aucune n'est garantie — d'où la recherche sur l'ensemble des champs
-    plutôt que sur un nom de champ supposé.
+    Les textes antérieurs à 1987 n'en ont pas : l'API leur substitue une
+    chaîne encodant la date de publication, qui ne permet aucun lien.
     """
+    for valeur in enregistrement.values():
+        texte = str(valeur or "").strip().upper()
+        if MOTIF_NOR.match(texte):
+            return texte
+    return None
+
+
+def lien_arrete(enregistrement):
+    """Adresse permettant de consulter l'arrêté au Journal officiel."""
     for valeur in enregistrement.values():
         texte = str(valeur or "")
         if texte.lower().startswith(("http://", "https://")):
             return texte
+    nor = nor_de(enregistrement)
+    return LEGIFRANCE_NOR.format(nor=nor) if nor else None
+
+
+def date_substitut(enregistrement):
+    """Date de publication déduite du substitut de NOR, avant 1987."""
     for valeur in enregistrement.values():
-        trouve = MOTIF_JORF.search(str(valeur or ""))
+        trouve = MOTIF_SUBSTITUT.match(str(valeur or "").strip().upper())
         if trouve:
-            return JORF.format(identifiant=trouve.group(0).upper())
+            annee, mois, jour = trouve.groups()
+            try:
+                return date(int(annee), int(mois), int(jour))
+            except ValueError:
+                return None
     return None
 
 
@@ -247,13 +282,68 @@ def _jour(valeur):
         return None
 
 
+def date_objet(enregistrement, *fragments, exclus=()):
+    """Première date exploitable parmi les champs dont le nom correspond."""
+    for cle, valeur in enregistrement.items():
+        nom = str(cle).lower()
+        if not any(f in nom for f in fragments):
+            continue
+        if any(x in nom for x in exclus):
+            continue
+        try:
+            return date.fromisoformat(str(valeur or "")[:10])
+        except ValueError:
+            continue
+    return None
+
+
+def date_tri(enregistrement):
+    """Date servant au classement chronologique, du plus récent au plus ancien.
+
+    Le classement doit reposer sur la même détection que l'affichage,
+    sans quoi un arrêté daté correctement à l'écran se retrouverait mal
+    placé dans la liste.
+    """
+    return (date_objet(enregistrement, "debut")
+            or date_objet(enregistrement, "publi", "arrete", "jo",
+                          exclus=("debut", "fin"))
+            or date_substitut(enregistrement)
+            or date.min)
+
+
+def date_dont_le_nom_contient(enregistrement, *fragments, exclus=()):
+    """Première date exploitable parmi les champs dont le nom correspond.
+
+    Les intitulés varient d'une version de l'API à l'autre. Chercher par
+    fragment de nom évite de dépendre d'une orthographe exacte, et
+    surtout évite qu'une date manquante passe inaperçue.
+    """
+    for cle, valeur in enregistrement.items():
+        nom = str(cle).lower()
+        if not any(f in nom for f in fragments):
+            continue
+        if any(x in nom for x in exclus):
+            continue
+        jour = _jour(valeur)
+        if jour:
+            return jour
+    return None
+
+
 def periode(enregistrement):
     """Formule décrivant la durée de l'événement."""
-    debut = _jour(champ(enregistrement, "date_debut_evt", "date_debut_evenement"))
-    fin = _jour(champ(enregistrement, "date_fin_evt", "date_fin_evenement"))
+    debut = date_dont_le_nom_contient(enregistrement, "debut")
+    fin = date_dont_le_nom_contient(enregistrement, "fin")
     if debut and fin and debut != fin:
         return f"du {debut} au {fin}"
-    return debut or fin or "date non précisée"
+    if debut or fin:
+        return debut or fin
+
+    # dernier recours : la date encodée dans le substitut de NOR
+    substitut = date_substitut(enregistrement)
+    if substitut:
+        return f"publié au Journal officiel le {substitut.strftime('%d/%m/%Y')}"
+    return "date non précisée"
 
 
 def _annee(valeur):
@@ -328,7 +418,7 @@ def synthetiser(lots, code_commune=None):
             "items": [{"titre": lib, "details": {}} for lib in sorted(libelles)],
             "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
                       "libelle": "Consulter le rapport officiel sur Géorisques"}
-                     if code_commune else None),
+                     if FICHE_GEORISQUES and code_commune else None),
             "note": ("Recensement établi par les services de l'État. La "
                      "présence d'un risque ne signifie pas que l'ensemble "
                      "de la commune y est exposé : consultez le document "
@@ -343,54 +433,61 @@ def synthetiser(lots, code_commune=None):
     if catnat:
         # Un arrêté par entrée, du plus récent au plus ancien : le
         # visiteur cherche « quand » et « pour quoi », pas un décompte.
-        classes = sorted(
-            catnat,
-            key=lambda a: str(champ(a, "date_debut_evt",
-                                    "date_publication_arrete",
-                                    "date_debut_evenement") or ""),
-            reverse=True)
+        classes = sorted(catnat, key=date_tri, reverse=True)
 
         items, avec_lien = [], 0
         for a in classes[:ARRETES_DETAILLES]:
             libelle = str(champ(a, "libelle_risque_jo", "libelle_risque",
                                 "libelle") or "Catastrophe naturelle")
             details = {"Événement": periode(a)}
-            publication = _jour(champ(a, "date_publication_arrete",
-                                      "date_publication_jo"))
+            publication = date_dont_le_nom_contient(
+                a, "publi", "arrete", "jo", exclus=("debut", "fin"))
             if publication:
                 details["Arrêté publié le"] = publication
-            reference = champ(a, "code_national_catnat", "code_national",
-                              "num_arrete")
-            if reference:
-                details["Référence"] = str(reference)
+
+            nor = nor_de(a)
+            if nor:
+                details["Numéro NOR"] = nor
+            else:
+                reference = champ(a, "code_national_catnat", "code_national",
+                                  "num_arrete")
+                if reference and not MOTIF_SUBSTITUT.match(
+                        str(reference).strip().upper()):
+                    details["Référence"] = str(reference)
 
             item = {"titre": libelle, "details": details}
             adresse = lien_arrete(a)
             if adresse:
                 item["lien"] = {"url": adresse,
-                                "libelle": "Lire l'arrêté au Journal officiel"}
+                                "libelle": "Consulter l'arrêté sur Légifrance"}
                 avec_lien += 1
             items.append(item)
 
+        detailles_avant_resume = len(items)
         reste = len(catnat) - len(items)
         if reste > 0:
+            plus_ancien = date_tri(classes[-1])
             items.append({
                 "titre": f"{reste} arrêté(s) plus ancien(s)",
-                "details": {"Période": f"jusqu'en "
-                            f"{_annee(champ(classes[-1], 'date_debut_evt', 'date_publication_arrete')) or '—'}"},
-                "texte": "Consultables sur Géorisques, lien ci-dessous.",
+                "details": {"Remontant jusqu'à": (
+                    plus_ancien.strftime("%Y") if plus_ancien != date.min
+                    else "date inconnue")},
+                "texte": "Consultables sur le portail Géorisques.",
             })
 
         # Le visiteur doit savoir pourquoi certains arrêtés n'ont pas de
         # lien : c'est une limite de la source, pas un oubli du site.
+        detailles = detailles_avant_resume
         if avec_lien == 0:
-            precision = ("La source ne fournit pas de lien vers le texte de "
-                         "chaque arrêté. Le détail complet est consultable "
-                         "sur Géorisques.")
-        elif avec_lien < len(items):
-            precision = (f"{avec_lien} arrêté(s) sur {len(items)} renvoient "
-                         "au texte publié au Journal officiel ; la source ne "
-                         "fournit pas de lien pour les autres.")
+            precision = ("Aucun de ces arrêtés ne porte de numéro NOR : "
+                         "ce système d'identification n'existe que depuis "
+                         "1987, et les textes antérieurs ne sont pas "
+                         "consultables en ligne par ce biais.")
+        elif avec_lien < detailles:
+            precision = (f"{avec_lien} arrêté(s) sur {detailles} renvoient au "
+                         "texte publié au Journal officiel. Les autres sont "
+                         "antérieurs à 1987, année d'entrée en vigueur du "
+                         "numéro NOR, et ne sont pas identifiables en ligne.")
         else:
             precision = ("Chaque arrêté renvoie au texte publié au Journal "
                          "officiel.")
@@ -403,7 +500,7 @@ def synthetiser(lots, code_commune=None):
             "items": items,
             "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
                       "libelle": "Consulter le dossier complet sur Géorisques"}
-                     if code_commune else None),
+                     if FICHE_GEORISQUES and code_commune else None),
             "note": ("Un arrêté de catastrophe naturelle ouvre la voie à "
                      "l'indemnisation des dommages par les assurances. "
                      + precision
@@ -483,8 +580,11 @@ def inspecter(code):
             for k, v in lot[0].items():
                 print(f"       {k:<34} {str(v)[:60]}")
             if cle == "catnat":
+                print(f"     → NOR détecté      : {nor_de(lot[0]) or 'aucun'}")
+                print(f"     → date d'événement : "
+                      f"{periode(lot[0])}")
                 adresse = lien_arrete(lot[0])
-                print(f"     → lien détecté : {adresse or 'aucun'}")
+                print(f"     → lien             : {adresse or 'aucun'}")
         time.sleep(PAUSE)
     print()
 

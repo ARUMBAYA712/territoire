@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-03",
- "version": 4,
+ "version": 5,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
  "frequence": "trimestrielle",
@@ -84,46 +84,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Glissement de Terrain",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9400171A"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0200563A"
+        "Numéro NOR": "INTE9400171A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9400171A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38004",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -208,37 +215,40 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0200563A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38018",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -321,46 +331,43 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
-       }
-      },
-      {
        "titre": "Glissement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38033",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -445,23 +452,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38036",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -544,46 +546,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38041",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -666,39 +675,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38074",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -781,39 +793,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38086",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -896,39 +911,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9600421A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE9600421A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9600421A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOME2226252A"
+        "Numéro NOR": "IOME2226252A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2226252A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38092",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1011,6 +1029,18 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
@@ -1021,29 +1051,16 @@
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38095",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1128,58 +1145,73 @@
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOCE0771383A"
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Sécheresse",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE1928914A"
+        "Numéro NOR": "INTE1928914A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1928914A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0771383A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0771383A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Sécheresse",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOME2316198A"
+        "Numéro NOR": "IOME2316198A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2316198A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38099",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 5 arrêté(s) sur 7 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1262,46 +1294,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0500697A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9600421A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0500697A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0500697A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOME2226252A"
+        "Numéro NOR": "INTE9600421A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9600421A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOME2226252A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2226252A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38108",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1386,23 +1425,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38117",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1485,39 +1519,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38137",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1602,23 +1639,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38195",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1703,23 +1735,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38216",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1802,46 +1829,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300601A"
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Sécheresse",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE1917051A"
+        "Numéro NOR": "INTE1917051A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1917051A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300601A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38245",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -1924,32 +1958,31 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9200405A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE9200405A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9200405A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38248",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2032,32 +2065,31 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38263",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2140,53 +2172,54 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Glissement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Sécheresse",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOME2308745A"
+        "Numéro NOR": "IOME2308745A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2308745A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38272",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2271,79 +2304,106 @@
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1402613A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300315A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9400127A"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1402613A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1402613A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9400127A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9400127A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38275",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 8 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2426,46 +2486,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0200563A"
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38278",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2548,32 +2615,31 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38310",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2656,53 +2722,64 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0500697A"
+        "Numéro NOR": "INTE0500697A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0500697A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Mouvement de Terrain",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE1824833A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9600421A"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE1824833A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1824833A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Sécheresse",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE1928914A"
+        "Numéro NOR": "INTE1928914A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1928914A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9600421A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9600421A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38319",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2787,23 +2864,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38322",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -2886,53 +2958,64 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1402613A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300315A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE1402613A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1402613A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38330",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3015,53 +3098,64 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9200405A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9000196A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9600421A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE9000196A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9000196A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE9200405A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9200405A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9600421A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9600421A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38333",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3144,39 +3238,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1502134A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE1502134A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1502134A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38338",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3261,23 +3358,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38345",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3363,37 +3455,40 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0200563A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "IOCE1123049A"
+        "Numéro NOR": "IOCE1123049A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1123049A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38356",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3479,79 +3574,96 @@
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19830720"
+        "Événement": "publié au Journal officiel le 20/07/1983"
        }
       },
       {
        "titre": "Mouvement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19830720"
+        "Événement": "publié au Journal officiel le 20/07/1983"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1402613A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1418131A"
-       }
-      },
-      {
-       "titre": "Mouvement de Terrain",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100760A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9300601A"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100760A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100760A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1402613A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1402613A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1418131A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1418131A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300601A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38359",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3635,46 +3747,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOA8800084A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38360",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3757,32 +3876,31 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0000173A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38370",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3865,39 +3983,42 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE1430243A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE1430243A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1430243A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38390",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -3982,23 +4103,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38394",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4083,23 +4199,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38409",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4184,44 +4295,51 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300601A"
+        "Numéro NOR": "INTE9300601A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Mouvement de Terrain",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOCE0916951A"
+        "Numéro NOR": "IOCE0916951A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0916951A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOCE0916951A"
+        "Numéro NOR": "IOCE0916951A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0916951A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38410",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4304,10 +4422,15 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "IOME2330890A"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
@@ -4321,43 +4444,49 @@
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0400864A"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0400864A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0400864A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0400864A"
+        "Numéro NOR": "INTE0400864A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0400864A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOCE0771383A"
+        "Numéro NOR": "IOCE0771383A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0771383A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOME2330890A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2330890A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38416",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 7 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4442,23 +4571,18 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38443",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4542,46 +4666,53 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "IOCE0823835A"
-       }
-      },
-      {
-       "titre": "Mouvement de Terrain",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300001A"
-       }
-      },
-      {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Mouvement de Terrain",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "IOCE1109682A"
+        "Numéro NOR": "INTE9300001A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300001A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0823835A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0823835A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE1109682A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1109682A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38450",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4666,30 +4797,29 @@
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "IOCE1123049A"
+        "Numéro NOR": "IOCE1123049A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1123049A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38453",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4772,32 +4902,27 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
         "Référence": "ECOZ890006A"
        }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38454",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -4880,6 +5005,30 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
@@ -4887,46 +5036,19 @@
        }
       },
       {
-       "titre": "Glissement de Terrain",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
-       }
-      },
-      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19841016"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "IOCE0771383A"
+        "Numéro NOR": "IOCE0771383A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0771383A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38463",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -5011,37 +5133,30 @@
       {
        "titre": "Mouvement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19830720"
+        "Événement": "publié au Journal officiel le 20/07/1983"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19830720"
+        "Événement": "publié au Journal officiel le 20/07/1983"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38495",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -5124,46 +5239,43 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
-       }
-      },
-      {
        "titre": "Glissement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38500",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -5246,10 +5358,15 @@
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
       {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
@@ -5263,36 +5380,38 @@
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Tempête",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE9900488A"
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38523",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -5377,72 +5496,90 @@
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9200405A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19830621"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300315A"
+        "Événement": "publié au Journal officiel le 21/06/1983"
        }
       },
       {
        "titre": "Tempête",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "INTE0200563A"
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9200405A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9200405A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38526",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 9 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   },
@@ -5527,79 +5664,88 @@
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300602A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE2424582A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOZ890006A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "ECOZ890006A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE0100227A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "INTE9300315A"
-       }
-      },
-      {
-       "titre": "Inondations et/ou Coulées de Boue",
-       "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
        }
       },
       {
        "titre": "Glissement de Terrain",
        "details": {
-        "Événement": "date non précisée",
-        "Référence": "NOR19841016"
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
        }
       },
       {
        "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Référence": "ECOZ890006A"
        }
       },
       {
-       "titre": "Tempête",
+       "titre": "Inondations et/ou Coulées de Boue",
        "details": {
         "Événement": "date non précisée",
-        "Référence": "NOR19821118"
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
        }
       }
      ],
-     "lien": {
-      "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38559",
-      "libelle": "Consulter le dossier complet sur Géorisques"
-     },
-     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
   }

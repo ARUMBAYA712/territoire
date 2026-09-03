@@ -30,6 +30,19 @@ RACINE = Path(__file__).resolve().parent
 # « python lancer.py » sans option : le strict nécessaire pour que les
 # corrections livrées prennent effet.
 #
+# Livraison du 3 septembre 2026 — arrêtés : dates et liens Légifrance
+#   · 08_georisques.py détecte les dates sans présumer du nom des champs,
+#     classe les arrêtés du plus récent au plus ancien, et relie ceux qui
+#     portent un numéro NOR au texte publié au Journal officiel
+#   · le lien vers Géorisques est retiré : l'adresse supposée renvoyait 404
+#   · recollecte complète nécessaire, la structure des blocs change
+# ══════════════════════════════════════════════════════════════════
+# PLAN DE LA DERNIÈRE LIVRAISON
+#
+# Mis à jour à chaque envoi de fichiers modifiés. C'est ce que lance
+# « python lancer.py » sans option : le strict nécessaire pour que les
+# corrections livrées prennent effet.
+#
 # Livraison du 3 septembre 2026 — arrêtés de catastrophe naturelle
 #   · 08_georisques.py détaille chaque arrêté et cherche son lien officiel
 #   · la structure des blocs change : recollecte complète nécessaire,
