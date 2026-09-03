@@ -2782,6 +2782,2972 @@
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
+  },
+  "38322": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1402613A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1402613A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9000196A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9000196A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9200405A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9200405A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9600421A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9600421A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1502134A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1502134A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE1123049A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1123049A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 10,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 20/07/1983"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 20/07/1983"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100760A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100760A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1402613A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1402613A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1418131A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1418131A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300601A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "ECOA8800084A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0000173A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE1430243A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE1430243A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300601A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0916951A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0916951A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0916951A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0916951A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 7,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0400864A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0400864A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0400864A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0400864A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0771383A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0771383A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOME2330890A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2330890A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 7 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 2,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible, avec facteurs géologiques locaux",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 2 sur 3",
+     "ton": "attention",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300001A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300001A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0823835A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0823835A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE1109682A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1109682A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE1123049A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE1123049A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 3,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "IOCE0771383A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOCE0771383A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 4,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Mouvement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 20/07/1983"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 20/07/1983"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 5,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 6,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9900488A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9900488A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 9,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Modérée",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 3 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 21/06/1983"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0200563A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0200563A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9200405A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9200405A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 9 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "ENV-01": {
+     "valeur": 0,
+     "unite": "risque recensé",
+     "nom": "Risques identifiés sur la commune",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "rang": 20,
+     "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
+    },
+    "ENV-02": {
+     "valeur": 10,
+     "unite": "arrêtés",
+     "nom": "Arrêtés de catastrophe naturelle",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "ancre": "catastrophes-naturelles",
+     "rang": 10,
+     "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
+    },
+    "ENV-03": {
+     "valeur": "Faible",
+     "unite": "",
+     "nom": "Potentiel radon",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Catégorie 1 sur 3",
+     "rang": 50,
+     "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
+    },
+    "ENV-04": {
+     "valeur": "Moyenne",
+     "unite": "",
+     "nom": "Sismicité",
+     "obtention": "natif",
+     "source": "Géorisques — BRGM et ministère de la Transition écologique",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "niveaux": [
+      "commune"
+     ],
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "repere": "Zone 4 sur 5",
+     "ton": "attention",
+     "rang": 60,
+     "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "catastrophes-naturelles",
+     "titre": "Catastrophes naturelles reconnues depuis 1982",
+     "items": [
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Glissement de Terrain",
+       "details": {
+        "Événement": "publié au Journal officiel le 16/10/1984"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Tempête",
+       "details": {
+        "Événement": "publié au Journal officiel le 18/11/1982"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Référence": "ECOZ890006A"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE0100227A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE2424582A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE2424582A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300315A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300315A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      },
+      {
+       "titre": "Inondations et/ou Coulées de Boue",
+       "details": {
+        "Événement": "date non précisée",
+        "Numéro NOR": "INTE9300602A"
+       },
+       "lien": {
+        "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300602A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+        "libelle": "Consulter l'arrêté sur Légifrance"
+       }
+      }
+     ],
+     "lien": null,
+     "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+    }
+   ]
   }
  }
 }
