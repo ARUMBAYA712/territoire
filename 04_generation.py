@@ -666,7 +666,9 @@ def nombre(v):
     """Formatage français : espace fine insécable pour les milliers,
     virgule pour les décimales."""
     if isinstance(v, str):
-        return v
+        # Une valeur peut provenir d'une source externe : elle est
+        # échappée comme n'importe quel texte affiché.
+        return escape(v)
     if not isinstance(v, (int, float)):
         return "—"
     if isinstance(v, float) and not v.is_integer():
@@ -1068,6 +1070,15 @@ def legende_carte(carte):
             f'<span class="unite" id="carte-unite"></span></div>')
 
 
+def _json_sur(donnees):
+    """JSON destiné à une balise script : la séquence « </ » y est neutralisée.
+
+    Sans cela, une valeur contenant « </script> » clorait la balise et
+    tout ce qui suit serait interprété comme du HTML.
+    """
+    return json.dumps(donnees, ensure_ascii=False).replace("</", "<\\/")
+
+
 def couches_tuiles(grille):
     """Fonds de plan superposables au dessin.
 
@@ -1162,12 +1173,12 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
       <p class="carte-legende">{legende}</p>
     </section>"""
 
-    charge = json.dumps({
+    charge = _json_sur({
         "defaut": carte["defaut"],
         "couches": {i: {"nom": c["nom"], "unite": c["unite"],
                         "classes": c["classes"], "libelles": c["libelles"]}
                     for i, c in carte["couches"].items()},
-    }, ensure_ascii=False)
+    })
 
     return f"""    <section class="carte-bloc">
       <span class="dsp">Carte</span>
@@ -1211,19 +1222,21 @@ def bloc_liste(d, rubrique, sous=None):
             texte = (f'<p class="bl-texte">{escape(item["texte"])}</p>'
                      if item.get("texte") else "")
             lien = item.get("lien")
-            ancre = (f'<a class="bl-lien" href="{escape(lien["url"])}" '
-                     f'target="_blank" rel="noopener">{escape(lien["libelle"])}</a>'
-                     if lien else "")
+            adresse = lien_sur(lien.get("url")) if lien else ""
+            ancre = (f'<a class="bl-lien" href="{escape(adresse)}" '
+                     f'target="_blank" rel="noopener noreferrer">'
+                     f'{escape(lien["libelle"])}</a>' if adresse else "")
             entrees.append(
                 f'<article class="bl-item"><header><h3>{escape(item["titre"])}</h3>'
                 f'{pastille}</header>{lignes}{texte}{ancre}</article>')
         note = (f'<p class="bl-note">{escape(b["note"])}</p>'
                 if b.get("note") else "")
         source = b.get("lien")
-        renvoi = (f'<p class="bl-source"><a href="{escape(source["url"])}" '
-                  f'target="_blank" rel="noopener">'
+        adresse_source = lien_sur(source.get("url")) if source else ""
+        renvoi = (f'<p class="bl-source"><a href="{escape(adresse_source)}" '
+                  f'target="_blank" rel="noopener noreferrer">'
                   f'{escape(source["libelle"])}</a></p>'
-                  if source else "")
+                  if adresse_source else "")
         ancre = f' id="{escape(b["id"])}"' if b.get("id") else ""
         sorties.append(
             f'    <section class="bloc"{ancre}>'
@@ -1231,6 +1244,17 @@ def bloc_liste(d, rubrique, sous=None):
             f'<div class="bl-grille">{"".join(entrees)}</div>'
             f'{renvoi}{note}</section>')
     return "\n".join(sorties)
+
+
+def lien_sur(url):
+    """N'accepte qu'une adresse web.
+
+    Un lien fourni par une source externe pourrait porter un schéma
+    « javascript: » ou « data: ». L'échappement HTML ne protège pas de
+    ce cas : il faut contrôler le schéma lui-même.
+    """
+    texte = str(url or "").strip()
+    return texte if texte.lower().startswith(("https://", "http://")) else ""
 
 
 ROLES = {"canton": "Canton", "epci": "Intercommunalité",
@@ -1438,6 +1462,12 @@ def main():
             print(f"  [ignoré] {fichier} absent")
             continue
         d = json.loads(fichier.read_text(encoding="utf-8"))
+        # Le code sert à construire un chemin de fichier : on refuse tout
+        # ce qui n'est pas alphanumérique, par principe.
+        if not t["code"].replace("-", "").isalnum():
+            print(f"  [BLOCAGE] Code de territoire inattendu : {t['code']!r}")
+            sys.exit(1)
+
         cle = (t["niveau"], t["code"])
         fiches[cle] = d
         adresses[cle] = f"{t['niveau']}/{t['code']}-{slug(d['territoire']['nom'])}/"
@@ -1489,12 +1519,16 @@ def main():
 
         if (niveau, code) == ACCUEIL:
             racine_rubrique = RUBRIQUES[0]
+            # L'accueil reprend la fiche du canton. Sans précaution, deux
+            # adresses serviraient un contenu identique — les moteurs de
+            # recherche pénalisent ce cas. L'adresse canonique de l'accueil
+            # désigne donc la fiche du canton, et l'accueil reste hors du
+            # plan du site.
             (RACINE / "index.html").write_text(
-                page(d, ".", SITE + "/", adresses, fiches,
+                page(d, ".", f"{SITE}/{chemin}", adresses, fiches,
                      racine_rubrique, chemin, actives, None, (),
                      accueil=True),
                 encoding="utf-8")
-            liens_site.append(SITE + "/")
 
     # ── contrôle d'exhaustivité de la recherche ──────────────────
     # Toute commune du référentiel doit être atteignable depuis la barre
@@ -1532,10 +1566,17 @@ def main():
         json.dumps(recherche, ensure_ascii=False), encoding="utf-8")
 
     # redirections des anciennes adresses
-    lignes = "\n".join(f"Redirect 301 {a} {b}" for a, b in sorted(redirections))
+    # ATTENTION : la directive Redirect d'Apache opère par PRÉFIXE d'URL.
+    # « Redirect /commune/38416 » capturerait aussi
+    # « /commune/38416-saint-marcellin/ » et produirait une adresse absurde.
+    # RedirectMatch avec une expression ancrée est le seul moyen sûr.
+    lignes = "\n".join(
+        f'RedirectMatch 301 "^{a}/?$" "{b}"' for a, b in sorted(redirections))
     (RACINE / ".htaccess").write_text(
         "# Fichier généré par 04_generation.py — ne pas modifier à la main.\n"
         "# Redirige les anciennes adresses sans nom vers les nouvelles.\n"
+        "# RedirectMatch et non Redirect : ce dernier opère par préfixe et\n"
+        "# capturerait les adresses complètes.\n"
         f"{lignes}\n", encoding="utf-8")
 
     # plan du site

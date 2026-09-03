@@ -249,6 +249,10 @@ def synthetiser(lots, code_commune=None):
     if lots.get("risques") is None and lots.get("catnat") is None:
         return None
 
+    # Un point d'entrée en échec ne doit pas se confondre avec une
+    # absence de donnée : on retient lesquels afin de le dire.
+    manquants = [cle for cle, valeur in lots.items() if valeur is None]
+
     risques = lots.get("risques") or []
     catnat = lots.get("catnat") or []
     ppr = lots.get("ppr") or []
@@ -388,7 +392,10 @@ def synthetiser(lots, code_commune=None):
 
     mesures = {k: habiller(k, v) for k, v in mesures.items()}
     mesures = sans_ancre_orpheline(mesures, blocs)
-    return {"mesures": mesures, "blocs": blocs}
+    resultat = {"mesures": mesures, "blocs": blocs}
+    if manquants:
+        resultat["_incomplet"] = manquants
+    return resultat
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -482,7 +489,9 @@ def main():
             "genere_le": date.today().isoformat(),
             "version": VERSION,
             "source": SOURCE, "licence": LICENCE, "frequence": "trimestrielle",
-            "communes": resultat,
+            "communes": {code: {c: v for c, v in bloc.items()
+                                if not c.startswith("_")}
+                         for code, bloc in resultat.items()},
         }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     for i, c in enumerate(communes, start=1):
@@ -505,8 +514,10 @@ def main():
         resultat[c["code"]] = synthese
         sauver()
         m = synthese["mesures"]
+        reserve = (f"  [incomplet : {', '.join(synthese['_incomplet'])}]"
+                   if synthese.get("_incomplet") else "")
         print(f"{m['ENV-01']['valeur']} risque(s), "
-              f"{m['ENV-02']['valeur']} arrêté(s) CatNat")
+              f"{m['ENV-02']['valeur']} arrêté(s) CatNat{reserve}")
 
     sauver()
 

@@ -245,6 +245,9 @@ def chronique(code_bss):
         mesures.append({"date": str(jour)[:10],
                         "profondeur": profondeur,
                         "niveau": niveau})
+    # Le tri est demandé à l'API, mais le code ne doit pas en dépendre :
+    # toute la lecture suppose la mesure la plus récente en tête.
+    mesures.sort(key=lambda m: m["date"], reverse=True)
     return mesures
 
 

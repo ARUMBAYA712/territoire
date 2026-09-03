@@ -37,7 +37,7 @@
      "rang": 30
     },
     "EAU-22": {
-     "valeur": 41.29,
+     "valeur": 41.32,
      "unite": "m",
      "nom": "Profondeur de la nappe",
      "obtention": "natif",
@@ -47,7 +47,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "nappes",
      "rang": 20,
-     "repere": "Mesure du 23/08/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+     "repere": "Mesure du 02/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
    },
@@ -59,6 +59,24 @@
      "titre": "Stations de mesure des nappes",
      "items": [
       {
+       "titre": "Forage de Croix du platre — Vatilieu — station de référence",
+       "details": {
+        "Code BSS": "07725X0071/F3",
+        "Commune": "Vatilieu",
+        "Distance du centre du territoire": "12 km",
+        "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
+        "Profondeur": "41.32 m",
+        "Altitude de la nappe": "568.68 m NGF",
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1825
+       },
+       "etat": [
+        "Sous les valeurs habituelles",
+        "attention"
+       ],
+       "texte": "Médiane des mois comparables : 40.75 m sur 148 relevés. Écart : +0.57 m."
+      },
+      {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
        "details": {
         "Code BSS": "07953X0104/P",
@@ -67,14 +85,14 @@
         "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
-        "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1788
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1790
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 7.52 m sur 133 relevés. Écart : +0.15 m."
+       "texte": "Médiane des mois comparables : 7.52 m sur 140 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
@@ -83,16 +101,16 @@
         "Commune": "Saint-Étienne-de-Saint-Geoirs",
         "Distance du centre du territoire": "20 km",
         "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.59 m",
-        "Altitude de la nappe": "362.62 m NGF",
-        "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1823
+        "Profondeur": "38.61 m",
+        "Altitude de la nappe": "362.60 m NGF",
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 38.48 m sur 154 relevés. Écart : +0.11 m."
+       "texte": "Médiane des mois comparables : 38.45 m sur 148 relevés. Écart : +0.16 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -102,32 +120,14 @@
         "Distance du centre du territoire": "21 km",
         "Profondeur": "49.73 m",
         "Altitude de la nappe": "240.84 m NGF",
-        "Dernière mesure": "30/08/2026",
-        "Mesures sur 5 ans": 1822
+        "Dernière mesure": "01/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
-        "Au-dessus des valeurs habituelles",
+        "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 50.41 m sur 153 relevés. Écart : -0.68 m."
-      },
-      {
-       "titre": "Forage de Croix du platre — Vatilieu — station de référence",
-       "details": {
-        "Code BSS": "07725X0071/F3",
-        "Commune": "Vatilieu",
-        "Distance du centre du territoire": "12 km",
-        "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
-        "Profondeur": "41.29 m",
-        "Altitude de la nappe": "568.71 m NGF",
-        "Dernière mesure": "23/08/2026",
-        "Mesures sur 5 ans": 1815
-       },
-       "etat": [
-        "Sous les valeurs habituelles",
-        "attention"
-       ],
-       "texte": "Médiane des mois comparables : 40.77 m sur 146 relevés. Écart : +0.52 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.31 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -220,7 +220,7 @@
      "rang": 30
     },
     "EAU-22": {
-     "valeur": 41.29,
+     "valeur": 41.32,
      "unite": "m",
      "nom": "Profondeur de la nappe",
      "obtention": "natif",
@@ -230,7 +230,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "nappes",
      "rang": 20,
-     "repere": "Mesure du 23/08/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+     "repere": "Mesure du 02/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
    },
@@ -242,6 +242,24 @@
      "titre": "Stations de mesure des nappes",
      "items": [
       {
+       "titre": "Forage de Croix du platre — Vatilieu — station de référence",
+       "details": {
+        "Code BSS": "07725X0071/F3",
+        "Commune": "Vatilieu",
+        "Distance du centre du territoire": "12 km",
+        "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
+        "Profondeur": "41.32 m",
+        "Altitude de la nappe": "568.68 m NGF",
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1825
+       },
+       "etat": [
+        "Sous les valeurs habituelles",
+        "attention"
+       ],
+       "texte": "Médiane des mois comparables : 40.75 m sur 148 relevés. Écart : +0.57 m."
+      },
+      {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
        "details": {
         "Code BSS": "07953X0104/P",
@@ -250,14 +268,14 @@
         "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
-        "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1788
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1790
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 7.52 m sur 133 relevés. Écart : +0.15 m."
+       "texte": "Médiane des mois comparables : 7.52 m sur 140 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
@@ -266,16 +284,16 @@
         "Commune": "Saint-Étienne-de-Saint-Geoirs",
         "Distance du centre du territoire": "20 km",
         "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.59 m",
-        "Altitude de la nappe": "362.62 m NGF",
-        "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1823
+        "Profondeur": "38.61 m",
+        "Altitude de la nappe": "362.60 m NGF",
+        "Dernière mesure": "02/09/2026",
+        "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 38.48 m sur 154 relevés. Écart : +0.11 m."
+       "texte": "Médiane des mois comparables : 38.45 m sur 148 relevés. Écart : +0.16 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -285,32 +303,14 @@
         "Distance du centre du territoire": "21 km",
         "Profondeur": "49.73 m",
         "Altitude de la nappe": "240.84 m NGF",
-        "Dernière mesure": "30/08/2026",
-        "Mesures sur 5 ans": 1822
+        "Dernière mesure": "01/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
-        "Au-dessus des valeurs habituelles",
+        "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 50.41 m sur 153 relevés. Écart : -0.68 m."
-      },
-      {
-       "titre": "Forage de Croix du platre — Vatilieu — station de référence",
-       "details": {
-        "Code BSS": "07725X0071/F3",
-        "Commune": "Vatilieu",
-        "Distance du centre du territoire": "12 km",
-        "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
-        "Profondeur": "41.29 m",
-        "Altitude de la nappe": "568.71 m NGF",
-        "Dernière mesure": "23/08/2026",
-        "Mesures sur 5 ans": 1815
-       },
-       "etat": [
-        "Sous les valeurs habituelles",
-        "attention"
-       ],
-       "texte": "Médiane des mois comparables : 40.77 m sur 146 relevés. Écart : +0.52 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.31 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",

@@ -88,32 +88,44 @@ def telecharger_contours(codes_epci):
 # ══════════════════════════════════════════════════════════════════
 
 def simplifier(points, tolerance):
-    """Algorithme de Douglas-Peucker : retire les points superflus
-    sans déformer visiblement le tracé."""
+    """Algorithme de Douglas-Peucker, en version itérative.
+
+    La version récursive dépasse la pile d'appels de Python sur un
+    contour très découpé — plusieurs milliers de points, ce qui arrive
+    en montagne. La pile est donc gérée explicitement.
+    """
     if len(points) < 3:
         return points
 
-    debut, fin = points[0], points[-1]
-    dx, dy = fin[0] - debut[0], fin[1] - debut[1]
-    longueur = math.hypot(dx, dy)
+    garder = [False] * len(points)
+    garder[0] = garder[-1] = True
+    pile = [(0, len(points) - 1)]
 
-    ecart_max, indice = 0.0, 0
-    for i in range(1, len(points) - 1):
-        px, py = points[i]
-        if longueur == 0:
-            ecart = math.hypot(px - debut[0], py - debut[1])
-        else:
-            ecart = abs(dy * px - dx * py + fin[0] * debut[1]
-                        - fin[1] * debut[0]) / longueur
-        if ecart > ecart_max:
-            ecart_max, indice = ecart, i
+    while pile:
+        debut_i, fin_i = pile.pop()
+        if fin_i <= debut_i + 1:
+            continue
+        debut, fin = points[debut_i], points[fin_i]
+        dx, dy = fin[0] - debut[0], fin[1] - debut[1]
+        longueur = math.hypot(dx, dy)
 
-    if ecart_max <= tolerance:
-        return [debut, fin]
+        ecart_max, indice = 0.0, -1
+        for i in range(debut_i + 1, fin_i):
+            px, py = points[i]
+            if longueur == 0:
+                ecart = math.hypot(px - debut[0], py - debut[1])
+            else:
+                ecart = abs(dy * px - dx * py + fin[0] * debut[1]
+                            - fin[1] * debut[0]) / longueur
+            if ecart > ecart_max:
+                ecart_max, indice = ecart, i
 
-    gauche = simplifier(points[:indice + 1], tolerance)
-    droite = simplifier(points[indice:], tolerance)
-    return gauche[:-1] + droite
+        if indice != -1 and ecart_max > tolerance:
+            garder[indice] = True
+            pile.append((debut_i, indice))
+            pile.append((indice, fin_i))
+
+    return [point for point, g in zip(points, garder) if g]
 
 
 def anneaux(geometrie):
