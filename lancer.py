@@ -40,6 +40,8 @@ RACINE = Path(__file__).resolve().parent
 #   · 03_agregation.py les mesures des collecteurs peuvent remonter au
 #                      canton et à l'intercommunalité si elles le déclarent
 #   · 10_ecoles.py     NOUVEAU — établissements scolaires
+#   · 11_population.py NOUVEAU — population détaillée. Demande une mise en
+#                      route en trois commandes, voir LIVRAISON.md
 #   · durée mesurée de la chaîne complète : environ 8 min 30, plus les
 #     écoles, encore inconnues
 # ══════════════════════════════════════════════════════════════════
@@ -60,6 +62,7 @@ PLAN_LIVRAISON = [
     ("07_vigieau.py", ["--tout"]),
     ("08_georisques.py", ["--tout"]),
     ("10_ecoles.py", []),
+    ("11_population.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
@@ -79,6 +82,7 @@ COLLECTEURS = [
     ("08_georisques.py", []),
     ("09_nappes.py", []),
     ("10_ecoles.py", []),
+    ("11_population.py", []),
 ]
 
 PUBLICATION = [
