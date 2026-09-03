@@ -30,18 +30,15 @@ RACINE = Path(__file__).resolve().parent
 # « python lancer.py » sans option : le strict nécessaire pour que les
 # corrections livrées prennent effet.
 #
-# Livraison du 3 septembre 2026 — corrections d'audit
-#   · 08_georisques.py change de version : réhabillage automatique
-#   · 09_nappes.py corrige le classement des mesures
-#   · 05_cartes.py corrige la simplification des tracés
-#   · 04_generation.py corrige les redirections — À REPUBLIER EN PRIORITÉ
+# Livraison du 3 septembre 2026 — arrêtés de catastrophe naturelle
+#   · 08_georisques.py détaille chaque arrêté et cherche son lien officiel
+#   · la structure des blocs change : recollecte complète nécessaire,
+#     le réhabillage ne suffirait pas
 # ══════════════════════════════════════════════════════════════════
 
 PLAN_LIVRAISON = [
-    ("08_georisques.py", []),
-    ("09_nappes.py", []),
+    ("08_georisques.py", ["--tout"]),
     ("03_agregation.py", []),
-    ("05_cartes.py", []),
     ("04_generation.py", []),
 ]
 

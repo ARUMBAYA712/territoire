@@ -24,12 +24,12 @@ Utilisation :
 """
 
 import json
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
 import urllib.error
-from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -41,7 +41,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 3
+VERSION = 4
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -58,6 +58,14 @@ ANCRE_CATNAT = "catastrophes-naturelles"
 # pour n'avoir qu'un seul endroit à corriger.
 FICHE_GEORISQUES = ("https://www.georisques.gouv.fr/mes-risques/"
                     "connaitre-les-risques-pres-de-chez-moi/rapport?city={code}")
+
+# Un arrêté de catastrophe naturelle est publié au Journal officiel.
+# Si l'API livre son identifiant, le texte devient consultable en un clic.
+JORF = "https://www.legifrance.gouv.fr/jorf/id/{identifiant}"
+MOTIF_JORF = re.compile(r"JORF(?:TEXT)?\d{6,}", re.IGNORECASE)
+
+# Nombre d'arrêtés détaillés ; au-delà, seul le décompte est donné.
+ARRETES_DETAILLES = 15
 ANCRE_RISQUES = "risques-recenses"
 
 # Le potentiel radon est publié en trois catégories réglementaires.
@@ -211,6 +219,43 @@ def sans_ancre_orpheline(mesures, blocs):
     return mesures
 
 
+def lien_arrete(enregistrement):
+    """Cherche de quoi consulter l'arrêté.
+
+    Deux formes possibles : une adresse web livrée telle quelle, ou un
+    identifiant de texte au Journal officiel dont l'adresse se déduit.
+    Aucune n'est garantie — d'où la recherche sur l'ensemble des champs
+    plutôt que sur un nom de champ supposé.
+    """
+    for valeur in enregistrement.values():
+        texte = str(valeur or "")
+        if texte.lower().startswith(("http://", "https://")):
+            return texte
+    for valeur in enregistrement.values():
+        trouve = MOTIF_JORF.search(str(valeur or ""))
+        if trouve:
+            return JORF.format(identifiant=trouve.group(0).upper())
+    return None
+
+
+def _jour(valeur):
+    """Date au format français, ou None."""
+    texte = str(valeur or "")[:10]
+    try:
+        return date.fromisoformat(texte).strftime("%d/%m/%Y")
+    except ValueError:
+        return None
+
+
+def periode(enregistrement):
+    """Formule décrivant la durée de l'événement."""
+    debut = _jour(champ(enregistrement, "date_debut_evt", "date_debut_evenement"))
+    fin = _jour(champ(enregistrement, "date_fin_evt", "date_fin_evenement"))
+    if debut and fin and debut != fin:
+        return f"du {debut} au {fin}"
+    return debut or fin or "date non précisée"
+
+
 def _annee(valeur):
     texte = str(valeur or "")[:4]
     return texte if texte.isdigit() else None
@@ -296,42 +341,59 @@ def synthetiser(lots, code_commune=None):
                                "Arrêtés de catastrophe naturelle",
                                ancre=ANCRE_CATNAT)
     if catnat:
-        par_type = Counter()
-        for a in catnat:
-            libelle = champ(a, "libelle_risque_jo", "libelle_risque",
-                            "libelle") or "Non précisé"
-            par_type[str(libelle)] += 1
-
-        recents = sorted(
+        # Un arrêté par entrée, du plus récent au plus ancien : le
+        # visiteur cherche « quand » et « pour quoi », pas un décompte.
+        classes = sorted(
             catnat,
-            key=lambda a: str(champ(a, "date_debut_evt", "date_publication_arrete",
+            key=lambda a: str(champ(a, "date_debut_evt",
+                                    "date_publication_arrete",
                                     "date_debut_evenement") or ""),
-            reverse=True)[:6]
+            reverse=True)
 
-        items = []
-        for libelle, nombre in par_type.most_common():
-            annees = sorted({_annee(champ(a, "date_debut_evt",
-                                          "date_publication_arrete"))
-                             for a in catnat
-                             if str(champ(a, "libelle_risque_jo",
-                                          "libelle_risque", "libelle")) == libelle}
-                            - {None}, reverse=True)
-            details = {"Nombre d'arrêtés": nombre}
-            publications = sorted(
-                {_annee(champ(a, "date_publication_arrete"))
-                 for a in catnat
-                 if str(champ(a, "libelle_risque_jo", "libelle_risque",
-                              "libelle")) == libelle} - {None}, reverse=True)
-            if publications:
-                details["Dernier arrêté publié"] = publications[0]
-            if annees:
-                details["Années concernées"] = ", ".join(annees[:8]) + (
-                    "…" if len(annees) > 8 else "")
-            items.append({"titre": libelle, "details": details})
+        items, avec_lien = [], 0
+        for a in classes[:ARRETES_DETAILLES]:
+            libelle = str(champ(a, "libelle_risque_jo", "libelle_risque",
+                                "libelle") or "Catastrophe naturelle")
+            details = {"Événement": periode(a)}
+            publication = _jour(champ(a, "date_publication_arrete",
+                                      "date_publication_jo"))
+            if publication:
+                details["Arrêté publié le"] = publication
+            reference = champ(a, "code_national_catnat", "code_national",
+                              "num_arrete")
+            if reference:
+                details["Référence"] = str(reference)
 
-        dernier = recents[0] if recents else None
-        derniere_date = _annee(champ(dernier, "date_debut_evt",
-                                     "date_publication_arrete")) if dernier else None
+            item = {"titre": libelle, "details": details}
+            adresse = lien_arrete(a)
+            if adresse:
+                item["lien"] = {"url": adresse,
+                                "libelle": "Lire l'arrêté au Journal officiel"}
+                avec_lien += 1
+            items.append(item)
+
+        reste = len(catnat) - len(items)
+        if reste > 0:
+            items.append({
+                "titre": f"{reste} arrêté(s) plus ancien(s)",
+                "details": {"Période": f"jusqu'en "
+                            f"{_annee(champ(classes[-1], 'date_debut_evt', 'date_publication_arrete')) or '—'}"},
+                "texte": "Consultables sur Géorisques, lien ci-dessous.",
+            })
+
+        # Le visiteur doit savoir pourquoi certains arrêtés n'ont pas de
+        # lien : c'est une limite de la source, pas un oubli du site.
+        if avec_lien == 0:
+            precision = ("La source ne fournit pas de lien vers le texte de "
+                         "chaque arrêté. Le détail complet est consultable "
+                         "sur Géorisques.")
+        elif avec_lien < len(items):
+            precision = (f"{avec_lien} arrêté(s) sur {len(items)} renvoient "
+                         "au texte publié au Journal officiel ; la source ne "
+                         "fournit pas de lien pour les autres.")
+        else:
+            precision = ("Chaque arrêté renvoie au texte publié au Journal "
+                         "officiel.")
 
         blocs.append({
             "rubrique": RUBRIQUE,
@@ -340,13 +402,12 @@ def synthetiser(lots, code_commune=None):
             "titre": "Catastrophes naturelles reconnues depuis 1982",
             "items": items,
             "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
-                      "libelle": "Consulter les arrêtés sur Géorisques"}
+                      "libelle": "Consulter le dossier complet sur Géorisques"}
                      if code_commune else None),
             "note": ("Un arrêté de catastrophe naturelle ouvre la voie à "
                      "l'indemnisation des dommages par les assurances. "
-                     + (f"Dernier arrêté recensé : {derniere_date}. "
-                        if derniere_date else "")
-                     + "Les données de l'API peuvent accuser un léger retard "
+                     + precision
+                     + " Les données de l'API peuvent accuser un léger retard "
                        "sur le site Géorisques ; en cas d'écart, ce dernier "
                        "fait référence."),
         })
@@ -419,9 +480,11 @@ def inspecter(code):
             print("     aucune donnée")
         else:
             print(f"     {len(lot)} enregistrement(s), champs du premier :")
-            for k, v in list(lot[0].items())[:20]:
-                apercu = str(v)[:60]
-                print(f"       {k:<34} {apercu}")
+            for k, v in lot[0].items():
+                print(f"       {k:<34} {str(v)[:60]}")
+            if cle == "catnat":
+                adresse = lien_arrete(lot[0])
+                print(f"     → lien détecté : {adresse or 'aucun'}")
         time.sleep(PAUSE)
     print()
 

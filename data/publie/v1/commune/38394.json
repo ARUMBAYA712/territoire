@@ -200,10 +200,10 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques.",
       "rubrique": "environnement",
       "sous_rubrique": "risques",
-      "rang": 20
+      "rang": 20,
+      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
     "ENV-02": {
       "valeur": 2,
@@ -216,11 +216,11 @@
       "niveaux": [
         "commune"
       ],
-      "ancre": "catastrophes-naturelles",
-      "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances.",
       "rubrique": "environnement",
       "sous_rubrique": "risques",
-      "rang": 10
+      "ancre": "catastrophes-naturelles",
+      "rang": 10,
+      "explication": "Depuis 1982. Un arrêté ouvre la voie à l'indemnisation des dommages par les assurances."
     },
     "ENV-03": {
       "valeur": "Faible",
@@ -233,11 +233,11 @@
       "niveaux": [
         "commune"
       ],
-      "repere": "Catégorie 1 sur 3",
-      "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé.",
       "rubrique": "environnement",
       "sous_rubrique": "risques",
-      "rang": 50
+      "repere": "Catégorie 1 sur 3",
+      "rang": 50,
+      "explication": "Le radon est un gaz radioactif naturel issu du sous-sol. Son accumulation dans les bâtiments mal ventilés présente un risque pour la santé."
     },
     "ENV-04": {
       "valeur": "Moyenne",
@@ -250,12 +250,12 @@
       "niveaux": [
         "commune"
       ],
-      "repere": "Zone 4 sur 5",
-      "ton": "attention",
-      "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables.",
       "rubrique": "environnement",
       "sous_rubrique": "risques",
-      "rang": 60
+      "repere": "Zone 4 sur 5",
+      "ton": "attention",
+      "rang": 60,
+      "explication": "Classement réglementaire déterminant les règles de construction parasismique applicables."
     },
     "EAU-10": {
       "valeur": "Alerte renforcée",
@@ -317,23 +317,30 @@
     },
     {
       "rubrique": "environnement",
+      "sous_rubrique": "risques",
       "id": "catastrophes-naturelles",
       "titre": "Catastrophes naturelles reconnues depuis 1982",
       "items": [
         {
           "titre": "Tempête",
           "details": {
-            "Nombre d'arrêtés": 1
+            "Événement": "date non précisée",
+            "Référence": "NOR19821118"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Nombre d'arrêtés": 1
+            "Événement": "date non précisée",
+            "Référence": "NOR19821118"
           }
         }
       ],
-      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38394",
+        "libelle": "Consulter le dossier complet sur Géorisques"
+      },
+      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {
       "rubrique": "environnement",
