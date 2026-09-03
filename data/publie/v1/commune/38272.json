@@ -334,53 +334,54 @@
       "titre": "Catastrophes naturelles reconnues depuis 1982",
       "items": [
         {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
-            "Référence": "INTE0100227A"
-          }
-        },
-        {
           "titre": "Glissement de Terrain",
           "details": {
-            "Événement": "date non précisée",
-            "Référence": "NOR19841016"
+            "Événement": "publié au Journal officiel le 16/10/1984"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
-            "Référence": "NOR19841016"
+            "Événement": "publié au Journal officiel le 16/10/1984"
           }
         },
         {
           "titre": "Tempête",
           "details": {
-            "Événement": "date non précisée",
-            "Référence": "NOR19821118"
+            "Événement": "publié au Journal officiel le 18/11/1982"
+          }
+        },
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "publié au Journal officiel le 18/11/1982"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
             "Événement": "date non précisée",
-            "Référence": "NOR19821118"
+            "Numéro NOR": "INTE0100227A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100227A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
           }
         },
         {
           "titre": "Sécheresse",
           "details": {
             "Événement": "date non précisée",
-            "Référence": "IOME2308745A"
+            "Numéro NOR": "IOME2308745A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2308745A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
           }
         }
       ],
-      "lien": {
-        "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38272",
-        "libelle": "Consulter le dossier complet sur Géorisques"
-      },
-      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+      "lien": null,
+      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {
       "rubrique": "environnement",

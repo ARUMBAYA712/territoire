@@ -323,23 +323,18 @@
         {
           "titre": "Tempête",
           "details": {
-            "Événement": "date non précisée",
-            "Référence": "NOR19821118"
+            "Événement": "publié au Journal officiel le 18/11/1982"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
-            "Référence": "NOR19821118"
+            "Événement": "publié au Journal officiel le 18/11/1982"
           }
         }
       ],
-      "lien": {
-        "url": "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport?city=38195",
-        "libelle": "Consulter le dossier complet sur Géorisques"
-      },
-      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. La source ne fournit pas de lien vers le texte de chaque arrêté. Le détail complet est consultable sur Géorisques. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
+      "lien": null,
+      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {
       "rubrique": "environnement",
