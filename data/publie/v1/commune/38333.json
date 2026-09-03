@@ -65,11 +65,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
-      "ancre": "reseaux-eau-potable",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 10
+      "rang": 10,
+      "explication": "Part des contrôles sanitaires jugés conformes aux limites de qualité réglementaires.",
+      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
       "valeur": 8,
@@ -82,10 +82,10 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Nombre de prélèvements réalisés par l'agence régionale de santé. Leur fréquence dépend de la taille du réseau.",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 30
+      "rang": 30,
+      "explication": "Nombre de prélèvements réalisés par l'agence régionale de santé. Leur fréquence dépend de la taille du réseau."
     },
     "EAU-03": {
       "valeur": 2,
@@ -98,11 +98,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs.",
-      "ancre": "reseaux-eau-potable",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 40
+      "ancre": "reseaux-eau-potable",
+      "rang": 40,
+      "explication": "Une commune peut être alimentée par plusieurs unités de distribution, selon les secteurs."
     },
     "EAU-08": {
       "valeur": 0,
@@ -115,11 +115,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
-      "ancre": "reseaux-eau-potable",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 20
+      "rang": 20,
+      "explication": "Un écart ponctuel est le plus souvent transitoire et suivi de mesures correctives par le distributeur.",
+      "ancre": "reseaux-eau-potable"
     },
     "EAU-04": {
       "valeur": 0.03,
@@ -132,11 +132,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Composé azoté d'origine surtout agricole et domestique. Sa présence signale une influence des activités humaines sur la ressource.",
-      "repere": "Limite de qualité : 50 mg/L",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 50
+      "rang": 50,
+      "explication": "Composé azoté d'origine surtout agricole et domestique. Sa présence signale une influence des activités humaines sur la ressource.",
+      "repere": "Limite de qualité : 50 mg/L"
     },
     "EAU-05": {
       "valeur": 16.48,
@@ -149,11 +149,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Teneur en calcium et magnésium, exprimée en degrés français. Une eau dure entartre les appareils, une eau douce est plus agressive pour les canalisations. Sans effet sanitaire connu.",
-      "repere": "Aucun seuil réglementaire · douce sous 15 °f, moyennement dure de 15 à 30, dure au-delà",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 60
+      "rang": 60,
+      "explication": "Teneur en calcium et magnésium, exprimée en degrés français. Une eau dure entartre les appareils, une eau douce est plus agressive pour les canalisations. Sans effet sanitaire connu.",
+      "repere": "Aucun seuil réglementaire · douce sous 15 °f, moyennement dure de 15 à 30, dure au-delà"
     },
     "EAU-06": {
       "valeur": 7.7,
@@ -166,11 +166,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Mesure l'acidité de l'eau. Une valeur trop basse favorise la dissolution des métaux des canalisations.",
-      "repere": "Référence de qualité : entre 6,5 et 9",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 70
+      "rang": 70,
+      "explication": "Mesure l'acidité de l'eau. Une valeur trop basse favorise la dissolution des métaux des canalisations.",
+      "repere": "Référence de qualité : entre 6,5 et 9"
     },
     "EAU-07": {
       "valeur": 0.12,
@@ -183,11 +183,11 @@
       "niveaux": [
         "commune"
       ],
-      "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
-      "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L",
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
-      "rang": 80
+      "rang": 80,
+      "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
+      "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
     "ENV-01": {
       "valeur": 0,
@@ -295,6 +295,8 @@
   "blocs": [
     {
       "rubrique": "environnement",
+      "sous_rubrique": "eau-potable",
+      "id": "reseaux-eau-potable",
       "titre": "Réseaux d'eau potable desservant la commune",
       "items": [
         {
@@ -324,8 +326,7 @@
           }
         }
       ],
-      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026.",
-      "id": "reseaux-eau-potable"
+      "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 21/05/2026."
     },
     {
       "rubrique": "environnement",

@@ -30,7 +30,7 @@ import time
 import urllib.parse
 import urllib.request
 import urllib.error
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 DONNEES = Path("data")
@@ -41,11 +41,11 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 5
+VERSION = 6
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
-RANGS = {"ENV-02": 10, "ENV-01": 20, "ENV-06": 30,
+RANGS = {"ENV-07": 5, "ENV-02": 10, "ENV-01": 20, "ENV-06": 30,
          "ENV-05": 40, "ENV-03": 50, "ENV-04": 60}
 PAUSE = 0.25
 DELAI = 90
@@ -84,6 +84,11 @@ LEGIFRANCE_NOR = (
 
 # Nombre d'arrêtés détaillés ; au-delà, seul le décompte est donné.
 ARRETES_DETAILLES = 15
+
+# Un arrêté récent est signalé en bandeau, comme une restriction
+# sécheresse : c'est l'information la plus susceptible de concerner
+# directement un habitant, notamment pour une déclaration d'assurance.
+RECONNAISSANCE_RECENTE_MOIS = 24
 ANCRE_RISQUES = "risques-recenses"
 
 # Le potentiel radon est publié en trois catégories réglementaires.
@@ -213,6 +218,9 @@ EXPLICATIONS = {
                "Les sécheresses répétées aggravent le phénomène."),
     "ENV-06": ("Documents qui délimitent les zones exposées et fixent les "
                "règles d'urbanisme et de construction qui s'y appliquent."),
+    "ENV-07": ("Une reconnaissance récente ouvre la voie à l'indemnisation "
+               "des dommages par les assurances. Les délais de déclaration "
+               "sont courts."),
 }
 
 
@@ -508,6 +516,22 @@ def synthetiser(lots, code_commune=None):
                        "sur le site Géorisques ; en cas d'écart, ce dernier "
                        "fait référence."),
         })
+
+    # ── reconnaissance récente, mise en bandeau ──
+    if catnat:
+        recent = classes[0]
+        quand = date_tri(recent)
+        limite = date.today() - timedelta(days=30 * RECONNAISSANCE_RECENTE_MOIS)
+        if quand != date.min and quand >= limite:
+            libelle = str(champ(recent, "libelle_risque_jo", "libelle_risque",
+                                "libelle") or "Catastrophe naturelle")
+            mesures["ENV-07"] = mesure(
+                libelle, "", "Catastrophe naturelle reconnue",
+                mise_en_avant=True, ton="attention", ancre=ANCRE_CATNAT,
+                repere=f"Événement {periode(recent)}",
+                explication=("Une reconnaissance récente ouvre la voie à "
+                             "l'indemnisation des dommages par les assurances. "
+                             "Les délais de déclaration sont courts."))
 
     # ── potentiel radon ──────────────────────────────────────────
     if radon:

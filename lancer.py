@@ -30,12 +30,16 @@ RACINE = Path(__file__).resolve().parent
 # « python lancer.py » sans option : le strict nécessaire pour que les
 # corrections livrées prennent effet.
 #
-# Livraison du 3 septembre 2026 — arrêtés : dates et liens Légifrance
-#   · 08_georisques.py détecte les dates sans présumer du nom des champs,
-#     classe les arrêtés du plus récent au plus ancien, et relie ceux qui
-#     portent un numéro NOR au texte publié au Journal officiel
-#   · le lien vers Géorisques est retiré : l'adresse supposée renvoyait 404
-#   · recollecte complète nécessaire, la structure des blocs change
+# Livraison cumulée — en attente d'installation
+#   · 04_generation.py bandeaux d'alerte compacts, deux par ligne au-delà
+#                      de deux, renvois « Voir le détail » vers la page
+#                      qui porte le bloc
+#   · 06_eau.py        réseaux classés du contrôle le plus récent au plus ancien
+#   · 07_vigieau.py    zones classées de la plus grave à la moins grave
+#   · 08_georisques.py dates des arrêtés, classement chronologique, liens
+#                      Légifrance par NOR, bandeau de reconnaissance récente
+#   · les trois collecteurs changent de version : recollecte nécessaire
+#   · 06_eau est le seul long, environ deux heures selon Hub'Eau
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -50,6 +54,8 @@ RACINE = Path(__file__).resolve().parent
 # ══════════════════════════════════════════════════════════════════
 
 PLAN_LIVRAISON = [
+    ("06_eau.py", ["--tout"]),
+    ("07_vigieau.py", ["--tout"]),
     ("08_georisques.py", ["--tout"]),
     ("03_agregation.py", []),
     ("04_generation.py", []),

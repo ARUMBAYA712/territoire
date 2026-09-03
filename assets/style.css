@@ -108,8 +108,17 @@ main .wrap{padding:26px 20px 48px}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
   display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--soft)}
-.card.pleine{grid-column:1/-1}
-.card.pleine .v{font-size:34px}
+/* Bandeaux d'alerte : compacts, un ou deux par ligne selon leur nombre. */
+.alertes{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+.alertes.deux-colonnes{grid-template-columns:repeat(2,1fr)}
+.card.pleine{gap:6px;padding:13px 16px}
+.card-tete{display:flex;align-items:baseline;justify-content:space-between;
+  gap:12px}
+.card-tete h2{font-size:15px}
+.card-tete .id{flex-shrink:0}
+.card.pleine .v{font-size:22px;line-height:1.15}
+.card.pleine .card-expl{margin-top:2px}
+.card.pleine footer{padding-top:6px}
 .card.ton-attention{background:var(--attention-soft);border-color:var(--attention)}
 .card.ton-attention .v{color:var(--attention)}
 .card.ton-alerte{background:var(--alerte-soft);border-color:var(--alerte);
@@ -309,7 +318,10 @@ footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
 
-@media(max-width:820px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:820px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .alertes.deux-colonnes{grid-template-columns:1fr}
+}
 @media(max-width:700px){
   .carte-grille{grid-template-columns:1fr}
   .carte-menu{flex-direction:row;flex-wrap:wrap}

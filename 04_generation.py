@@ -166,8 +166,17 @@ main .wrap{padding:26px 20px 48px}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
   display:flex;gap:6px;flex-wrap:wrap;font-size:10px;color:var(--soft)}
-.card.pleine{grid-column:1/-1}
-.card.pleine .v{font-size:34px}
+/* Bandeaux d'alerte : compacts, un ou deux par ligne selon leur nombre. */
+.alertes{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+.alertes.deux-colonnes{grid-template-columns:repeat(2,1fr)}
+.card.pleine{gap:6px;padding:13px 16px}
+.card-tete{display:flex;align-items:baseline;justify-content:space-between;
+  gap:12px}
+.card-tete h2{font-size:15px}
+.card-tete .id{flex-shrink:0}
+.card.pleine .v{font-size:22px;line-height:1.15}
+.card.pleine .card-expl{margin-top:2px}
+.card.pleine footer{padding-top:6px}
 .card.ton-attention{background:var(--attention-soft);border-color:var(--attention)}
 .card.ton-attention .v{color:var(--attention)}
 .card.ton-alerte{background:var(--alerte-soft);border-color:var(--alerte);
@@ -367,7 +376,10 @@ footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
 
-@media(max-width:820px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:820px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .alertes.deux-colonnes{grid-template-columns:1fr}
+}
 @media(max-width:700px){
   .carte-grille{grid-template-columns:1fr}
   .carte-menu{flex-direction:row;flex-wrap:wrap}
@@ -677,7 +689,48 @@ def nombre(v):
     return f"{int(v):,}".replace(",", "\u202f")
 
 
-def carte(ident, m, ancres=frozenset()):
+def bloc_bandeaux(bandeaux, renvois):
+    """Bandeaux d'alerte, au-dessus de la grille ordinaire.
+
+    Un seul ou deux : pleine largeur chacun. Au-delà, deux par ligne,
+    sans quoi la page d'aperçu deviendrait une colonne d'alertes.
+    """
+    if not bandeaux:
+        return ""
+    classe = "alertes" + (" deux-colonnes" if len(bandeaux) > 2 else "")
+    contenu = chr(10).join(carte(k, v, renvois) for k, v in bandeaux.items())
+    return f'    <div class="{classe}">\n{contenu}\n    </div>'
+
+
+def index_des_blocs(fiche):
+    """Où se trouve chaque bloc détaillé, page par page.
+
+    Un indicateur mis en avant sur l'aperçu renvoie souvent vers un bloc
+    qui vit dans une sous-rubrique. Sans cet index, le contrôle
+    anti-lien-mort supprimerait le renvoi au lieu de le rediriger.
+    """
+    index = {}
+    for b in (fiche.get("blocs") or []):
+        if b.get("id"):
+            index[b["id"]] = (b.get("rubrique") or "",
+                              b.get("sous_rubrique") or "")
+    return index
+
+
+def adresse_du_detail(ancre, index, rubrique, sous, base, chemin):
+    """Adresse menant au bloc visé, sur cette page ou sur une autre."""
+    if ancre not in index:
+        return None
+    cible_rubrique, cible_sous = index[ancre]
+    ici = (rubrique["id"], sous["id"] if sous else "")
+    if (cible_rubrique, cible_sous) == ici:
+        return f"#{ancre}"
+    morceaux = [m for m in (cible_rubrique, cible_sous) if m]
+    suffixe = "".join(f"{m}/" for m in morceaux)
+    return f"{base}/{chemin}{suffixe}#{ancre}"
+
+
+def carte(ident, m, renvois=None):
     """Rend une carte d'indicateur.
 
     Trois habillages facultatifs, pilotés par la donnée elle-même :
@@ -696,8 +749,9 @@ def carte(ident, m, ancres=frozenset()):
     if m.get("ton") in ("attention", "alerte"):
         classes.append("ton-" + m["ton"])
 
-    lien = (f'<a class="card-lien" href="#{escape(m["ancre"])}">Voir le détail</a>'
-            if m.get("ancre") in ancres else "")
+    destination = (renvois or {}).get(m.get("ancre"))
+    lien = (f'<a class="card-lien" href="{escape(destination)}">'
+            f'Voir le détail</a>' if destination else "")
     repere = (f'<p class="card-repere">{escape(m["repere"])}</p>'
               if m.get("repere") else "")
     explication = (f'<p class="card-expl">{escape(m["explication"])}</p>'
@@ -705,9 +759,17 @@ def carte(ident, m, ancres=frozenset()):
     unite = (f' <span class="u">{escape(m["unite"])}</span>'
              if m.get("unite") else "")
 
+    if m.get("mise_en_avant"):
+        # Bandeau d'alerte : titre et référence sur une même ligne, pour
+        # gagner en hauteur sans perdre d'information.
+        entete = (f'<header class="card-tete"><h2>{escape(m["nom"])}</h2>'
+                  f'<span class="id">{escape(ident)}</span></header>')
+    else:
+        entete = (f'<span class="id">{escape(ident)}</span>'
+                  f'<h2>{escape(m["nom"])}</h2>')
+
     return f"""      <article class="{' '.join(classes)}">
-        <span class="id">{escape(ident)}</span>
-        <h2>{escape(m['nom'])}</h2>
+        {entete}
         <div><span class="v">{nombre(m['valeur'])}</span>{unite}</div>
         {repere}
         {explication}
@@ -809,6 +871,8 @@ RUBRIQUES = [
     {"id": "", "nom": "Aperçu", "prefixes": None, "prevue": True,
      "selection": ["POP-01", "GEO-13", "POP-10",
                    "EAU-10", "EAU-01", "ENV-02"]},
+    # ENV-07, mis en avant par le collecteur, remonte automatiquement
+    # sur l'aperçu par la règle des alertes.
 
     {"id": "population", "nom": "Population", "prefixes": ["POP"],
      "prevue": True},
@@ -899,10 +963,16 @@ def blocs_de(fiche, rubrique, sous=None):
 
 
 def alertes(mesures, deja):
-    """Indicateurs en alerte, remontés sur l'aperçu même hors sélection."""
+    """Indicateurs à remonter sur l'aperçu, même hors sélection.
+
+    Deux cas : un indicateur en alerte, et un indicateur que le
+    collecteur a explicitement désigné comme bandeau. Le second couvre
+    les situations qui méritent d'être vues sans relever de l'alerte,
+    comme une reconnaissance récente de catastrophe naturelle.
+    """
     return {i: m for i, m in mesures.items()
-            if m.get("ton") == "alerte" and i not in deja
-            and m.get("valeur") is not None}
+            if i not in deja and m.get("valeur") is not None
+            and (m.get("ton") == "alerte" or m.get("mise_en_avant"))}
 
 
 def sous_actives(rubrique, fiche):
@@ -1318,8 +1388,23 @@ def page(d, base, canonique, adresses, fiches, rubrique,
                         rang_de(kv[0], kv[1]),
                         kv[0])))
 
-    # ancres réellement disponibles sur cette page
-    ancres = {b["id"] for b in blocs_de(d, rubrique, sous) if b.get("id")}
+    # Destination de chaque renvoi « Voir le détail » : ancre locale si le
+    # bloc est sur cette page, adresse complète sinon.
+    index = index_des_blocs(d)
+    renvois = {}
+    for m in mesures.values():
+        ancre = m.get("ancre")
+        if not ancre or ancre in renvois:
+            continue
+        destination = adresse_du_detail(ancre, index, rubrique, sous,
+                                        base, chemin_territoire)
+        if destination:
+            renvois[ancre] = destination
+
+    # Les indicateurs mis en avant forment un bandeau à part, au-dessus
+    # de la grille ordinaire.
+    bandeaux = {k: v for k, v in mesures.items() if v.get("mise_en_avant")}
+    ordinaires = {k: v for k, v in mesures.items() if not v.get("mise_en_avant")}
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
                        for m in list(mesures.values())[:3])
     description = (f"{t['nom']} ({niveau}) : {resume}. "
@@ -1395,8 +1480,9 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 
 <main><div class="wrap">
 {bloc_rattachements(d, base, adresses)}
+{bloc_bandeaux(bandeaux, renvois)}
     <div class="cards">
-{chr(10).join(carte(k, v, ancres) for k, v in mesures.items())}
+{chr(10).join(carte(k, v, renvois) for k, v in ordinaires.items())}
     </div>
 {bloc_liste(d, rubrique, sous)}
 {bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous)}
