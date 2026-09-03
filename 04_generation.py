@@ -281,13 +281,23 @@ svg.carte .c-nom.principal{font-weight:600;fill:var(--accent)}
 /* Avec un fond de plan, le dessin s'efface : contours seuls pour les
    voisines, remplissage translucide pour la commune mise en avant,
    afin que la carte reste lisible dessous. */
+/* Sur un fond de plan, les limites communales doivent rester nettes :
+   trait sombre appuyé, doublé d'un halo clair pour ressortir aussi bien
+   sur une zone urbaine dense que sur une forêt. */
+.carte-cadre[data-fond] svg.carte .c-formes{
+  filter:drop-shadow(0 0 1.5px rgba(255,255,255,.95))}
 .carte-cadre[data-fond] svg.carte .c-voisine{fill:none;stroke:var(--ink);
-  stroke-width:1;stroke-opacity:.45}
+  stroke-width:1.7;stroke-opacity:.95;stroke-linejoin:round}
 .carte-cadre[data-fond] svg.carte a:hover .c-voisine{fill:var(--accent);
-  fill-opacity:.28;stroke-opacity:1}
-.carte-cadre[data-fond] svg.carte .c-ici{fill-opacity:.35;stroke-width:2.5}
-.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.55;
-  stroke:var(--surface)}
+  fill-opacity:.3;stroke-width:2.4}
+.carte-cadre[data-fond] svg.carte .c-ici{fill:var(--accent);fill-opacity:.28;
+  stroke:var(--accent);stroke-width:3.2;stroke-opacity:1}
+.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.45;
+  stroke:var(--ink);stroke-width:1.4;stroke-opacity:.85}
+.carte-cadre[data-fond="photo"] svg.carte .c-voisine{stroke:#fff;
+  stroke-opacity:1}
+.carte-cadre[data-fond="photo"] svg.carte .c-formes{
+  filter:drop-shadow(0 0 2px rgba(0,0,0,.85))}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
@@ -317,11 +327,14 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-lien{display:inline-block;margin-top:9px;font-size:12px;color:var(--link);
   border-bottom:1px solid currentColor}
 .bl-lien:hover{color:var(--accent)}
+.bl-source{margin-top:12px}
+.bl-source a{font-size:13px;color:var(--link);border-bottom:1px solid currentColor}
+.bl-source a:hover{color:var(--accent)}
 .bl-note{font-size:12px;color:var(--soft);margin-top:12px;
   border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
   border-radius:var(--radius)}
 
-.ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
+.ratt{margin-bottom:26px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
 .ratt > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
   text-transform:none;letter-spacing:0;color:var(--ink);display:block;
@@ -1206,11 +1219,17 @@ def bloc_liste(d, rubrique, sous=None):
                 f'{pastille}</header>{lignes}{texte}{ancre}</article>')
         note = (f'<p class="bl-note">{escape(b["note"])}</p>'
                 if b.get("note") else "")
+        source = b.get("lien")
+        renvoi = (f'<p class="bl-source"><a href="{escape(source["url"])}" '
+                  f'target="_blank" rel="noopener">'
+                  f'{escape(source["libelle"])}</a></p>'
+                  if source else "")
         ancre = f' id="{escape(b["id"])}"' if b.get("id") else ""
         sorties.append(
             f'    <section class="bloc"{ancre}>'
             f'<span class="dsp">{escape(b["titre"])}</span>'
-            f'<div class="bl-grille">{"".join(entrees)}</div>{note}</section>')
+            f'<div class="bl-grille">{"".join(entrees)}</div>'
+            f'{renvoi}{note}</section>')
     return "\n".join(sorties)
 
 
@@ -1351,11 +1370,11 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 {nav_sous(base, chemin_territoire, rubrique, sous_dispo, sous)}
 
 <main><div class="wrap">
+{bloc_rattachements(d, base, adresses)}
     <div class="cards">
 {chr(10).join(carte(k, v, ancres) for k, v in mesures.items())}
     </div>
 {bloc_liste(d, rubrique, sous)}
-{bloc_rattachements(d, base, adresses)}
 {bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous)}
 </div></main>
 
@@ -1545,6 +1564,16 @@ def main():
     print(f"  Rubriques       : "
           + ", ".join(f"{k} ({v})" for k, v in par_rubrique.items()))
     print(f"  Accueil         : index.html ({ACCUEIL[0]} {ACCUEIL[1]})")
+    cartes = RACINE / "assets" / "cartes"
+    if cartes.exists():
+        fichiers = list(cartes.rglob("*.svg"))
+        avec_noms = sum(1 for f in fichiers
+                        if 'class="c-nom' in f.read_text(encoding="utf-8"))
+        etat = "ok" if avec_noms == len(fichiers) else "RELANCEZ 05_cartes.py"
+        print(f"  Cartes          : {avec_noms}/{len(fichiers)} portent "
+              f"les noms de communes — {etat}")
+    else:
+        print("  Cartes          : absentes — lancez 05_cartes.py")
     print(f"  Thème           : assets/style.css")
     print(f"  Redirections    : .htaccess ({len(redirections)} anciennes adresses)")
     print(f"  Plan du site    : sitemap.xml ({len(set(liens_site))} adresses)")

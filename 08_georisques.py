@@ -41,7 +41,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 2
+VERSION = 3
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -52,6 +52,12 @@ DELAI = 90
 TENTATIVES = 4
 
 ANCRE_CATNAT = "catastrophes-naturelles"
+
+# Page de référence Géorisques pour une commune. À vérifier une fois en
+# ligne : l'adresse est susceptible d'évoluer, et elle est isolée ici
+# pour n'avoir qu'un seul endroit à corriger.
+FICHE_GEORISQUES = ("https://www.georisques.gouv.fr/mes-risques/"
+                    "connaitre-les-risques-pres-de-chez-moi/rapport?city={code}")
 ANCRE_RISQUES = "risques-recenses"
 
 # Le potentiel radon est publié en trois catégories réglementaires.
@@ -238,7 +244,7 @@ def collecter(commune):
     return lots
 
 
-def synthetiser(lots):
+def synthetiser(lots, code_commune=None):
     """Construit indicateurs et blocs à partir des réponses de l'API."""
     if lots.get("risques") is None and lots.get("catnat") is None:
         return None
@@ -271,6 +277,9 @@ def synthetiser(lots):
             "id": ANCRE_RISQUES,
             "titre": "Risques identifiés sur la commune",
             "items": [{"titre": lib, "details": {}} for lib in sorted(libelles)],
+            "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
+                      "libelle": "Consulter le rapport officiel sur Géorisques"}
+                     if code_commune else None),
             "note": ("Recensement établi par les services de l'État. La "
                      "présence d'un risque ne signifie pas que l'ensemble "
                      "de la commune y est exposé : consultez le document "
@@ -304,6 +313,13 @@ def synthetiser(lots):
                                           "libelle_risque", "libelle")) == libelle}
                             - {None}, reverse=True)
             details = {"Nombre d'arrêtés": nombre}
+            publications = sorted(
+                {_annee(champ(a, "date_publication_arrete"))
+                 for a in catnat
+                 if str(champ(a, "libelle_risque_jo", "libelle_risque",
+                              "libelle")) == libelle} - {None}, reverse=True)
+            if publications:
+                details["Dernier arrêté publié"] = publications[0]
             if annees:
                 details["Années concernées"] = ", ".join(annees[:8]) + (
                     "…" if len(annees) > 8 else "")
@@ -319,6 +335,9 @@ def synthetiser(lots):
             "id": ANCRE_CATNAT,
             "titre": "Catastrophes naturelles reconnues depuis 1982",
             "items": items,
+            "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
+                      "libelle": "Consulter les arrêtés sur Géorisques"}
+                     if code_commune else None),
             "note": ("Un arrêté de catastrophe naturelle ouvre la voie à "
                      "l'indemnisation des dommages par les assurances. "
                      + (f"Dernier arrêté recensé : {derniere_date}. "
@@ -472,7 +491,7 @@ def main():
         print(f"  [{i:>2}/{len(communes)}] {c['nom'][:30]:<30}", end=" ", flush=True)
 
         try:
-            synthese = synthetiser(collecter(c))
+            synthese = synthetiser(collecter(c), c["code"])
         except Exception as erreur:
             en_erreur.append(f"{c['nom']} ({type(erreur).__name__}: {erreur})")
             print("erreur de traitement")

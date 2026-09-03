@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-02",
+ "genere_le": "2026-09-03",
  "version": 2,
  "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
  "licence": "Licence Ouverte 2.0",
@@ -68,7 +68,7 @@
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
         "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1789
+        "Mesures sur 5 ans": 1788
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -86,7 +86,7 @@
         "Profondeur": "38.59 m",
         "Altitude de la nappe": "362.62 m NGF",
         "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1824
+        "Mesures sur 5 ans": 1823
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -103,7 +103,7 @@
         "Profondeur": "49.73 m",
         "Altitude de la nappe": "240.84 m NGF",
         "Dernière mesure": "30/08/2026",
-        "Mesures sur 5 ans": 1823
+        "Mesures sur 5 ans": 1822
        },
        "etat": [
         "Au-dessus des valeurs habituelles",
@@ -121,7 +121,7 @@
         "Profondeur": "41.29 m",
         "Altitude de la nappe": "568.71 m NGF",
         "Dernière mesure": "23/08/2026",
-        "Mesures sur 5 ans": 1816
+        "Mesures sur 5 ans": 1815
        },
        "etat": [
         "Sous les valeurs habituelles",
@@ -139,7 +139,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1599
+        "Mesures sur 5 ans": 1598
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -175,13 +175,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 380
+        "Mesures sur 5 ans": 379
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 44 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 43 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."
@@ -251,7 +251,7 @@
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
         "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1789
+        "Mesures sur 5 ans": 1788
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -269,7 +269,7 @@
         "Profondeur": "38.59 m",
         "Altitude de la nappe": "362.62 m NGF",
         "Dernière mesure": "31/08/2026",
-        "Mesures sur 5 ans": 1824
+        "Mesures sur 5 ans": 1823
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -286,7 +286,7 @@
         "Profondeur": "49.73 m",
         "Altitude de la nappe": "240.84 m NGF",
         "Dernière mesure": "30/08/2026",
-        "Mesures sur 5 ans": 1823
+        "Mesures sur 5 ans": 1822
        },
        "etat": [
         "Au-dessus des valeurs habituelles",
@@ -304,7 +304,7 @@
         "Profondeur": "41.29 m",
         "Altitude de la nappe": "568.71 m NGF",
         "Dernière mesure": "23/08/2026",
-        "Mesures sur 5 ans": 1816
+        "Mesures sur 5 ans": 1815
        },
        "etat": [
         "Sous les valeurs habituelles",
@@ -322,7 +322,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1599
+        "Mesures sur 5 ans": 1598
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -358,13 +358,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 380
+        "Mesures sur 5 ans": 379
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 44 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 43 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."

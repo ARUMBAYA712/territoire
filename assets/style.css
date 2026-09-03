@@ -223,13 +223,23 @@ svg.carte .c-nom.principal{font-weight:600;fill:var(--accent)}
 /* Avec un fond de plan, le dessin s'efface : contours seuls pour les
    voisines, remplissage translucide pour la commune mise en avant,
    afin que la carte reste lisible dessous. */
+/* Sur un fond de plan, les limites communales doivent rester nettes :
+   trait sombre appuyé, doublé d'un halo clair pour ressortir aussi bien
+   sur une zone urbaine dense que sur une forêt. */
+.carte-cadre[data-fond] svg.carte .c-formes{
+  filter:drop-shadow(0 0 1.5px rgba(255,255,255,.95))}
 .carte-cadre[data-fond] svg.carte .c-voisine{fill:none;stroke:var(--ink);
-  stroke-width:1;stroke-opacity:.45}
+  stroke-width:1.7;stroke-opacity:.95;stroke-linejoin:round}
 .carte-cadre[data-fond] svg.carte a:hover .c-voisine{fill:var(--accent);
-  fill-opacity:.28;stroke-opacity:1}
-.carte-cadre[data-fond] svg.carte .c-ici{fill-opacity:.35;stroke-width:2.5}
-.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.55;
-  stroke:var(--surface)}
+  fill-opacity:.3;stroke-width:2.4}
+.carte-cadre[data-fond] svg.carte .c-ici{fill:var(--accent);fill-opacity:.28;
+  stroke:var(--accent);stroke-width:3.2;stroke-opacity:1}
+.carte-cadre[data-fond] svg.carte path[class*="n"]{fill-opacity:.45;
+  stroke:var(--ink);stroke-width:1.4;stroke-opacity:.85}
+.carte-cadre[data-fond="photo"] svg.carte .c-voisine{stroke:#fff;
+  stroke-opacity:1}
+.carte-cadre[data-fond="photo"] svg.carte .c-formes{
+  filter:drop-shadow(0 0 2px rgba(0,0,0,.85))}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
@@ -259,11 +269,14 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-lien{display:inline-block;margin-top:9px;font-size:12px;color:var(--link);
   border-bottom:1px solid currentColor}
 .bl-lien:hover{color:var(--accent)}
+.bl-source{margin-top:12px}
+.bl-source a{font-size:13px;color:var(--link);border-bottom:1px solid currentColor}
+.bl-source a:hover{color:var(--accent)}
 .bl-note{font-size:12px;color:var(--soft);margin-top:12px;
   border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
   border-radius:var(--radius)}
 
-.ratt{margin-top:30px;background:var(--surface);border:1px solid var(--line);
+.ratt{margin-bottom:26px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:20px}
 .ratt > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
   text-transform:none;letter-spacing:0;color:var(--ink);display:block;

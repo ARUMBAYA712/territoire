@@ -365,7 +365,7 @@ def carte(contours, codes_fond, code_evidence, titre):
     svg = (f'<svg class="carte" viewBox="0 0 {grille["largeur"]} '
            f'{grille["hauteur"]}" xmlns="http://www.w3.org/2000/svg" '
            f'role="img" aria-label="{titre}" preserveAspectRatio="none">'
-           f'{"".join(fond)}{evidence}'
+           f'<g class="c-formes">{"".join(fond)}{evidence}</g>'
            f'<g class="c-noms">{noms}</g></svg>')
     return svg, grille
 
