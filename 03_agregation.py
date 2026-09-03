@@ -179,6 +179,40 @@ def charger_complements():
     return communes, territoires
 
 
+def agreger_complements(communes_membres, complements):
+    """Somme, au niveau du territoire, les mesures qui s'y prêtent.
+
+    Une mesure venue d'un collecteur ne remonte que si elle le déclare
+    explicitement, par le champ « agregation ». La qualité de l'eau ne
+    remonte pas — les réseaux ne suivent pas les limites administratives —
+    mais un nombre d'écoles, lui, s'additionne sans ambiguïté.
+    """
+    totaux, modeles = {}, {}
+    for commune in communes_membres:
+        bloc = complements.get(commune["code"], {})
+        for ident, mesure in bloc.get("mesures", {}).items():
+            if mesure.get("agregation") != "somme":
+                continue
+            valeur = mesure.get("valeur")
+            if not isinstance(valeur, (int, float)):
+                continue
+            totaux[ident] = totaux.get(ident, 0) + valeur
+            modeles.setdefault(ident, mesure)
+
+    agregees = {}
+    for ident, total in totaux.items():
+        modele = dict(modeles[ident])
+        modele["valeur"] = round(total, 2) if isinstance(total, float) else total
+        modele["obtention"] = "agrégé"
+        # Le renvoi vers un bloc détaillé n'a de sens qu'à la commune :
+        # le bloc n'existe pas au niveau agrégé.
+        modele.pop("ancre", None)
+        modele.pop("mise_en_avant", None)
+        modele.pop("ton", None)
+        agregees[ident] = modele
+    return agregees
+
+
 def enveloppe(territoire, mesures, rattachements, blocs=None):
     """Forme commune à tous les fichiers publiés — le contrat d'échange."""
     return {
@@ -275,6 +309,7 @@ def main():
                for c in sorted(du_canton, key=lambda x: x["nom"])]
     extra = complements_territoires.get(f"canton:{canton['code']}", {})
     mesures_canton = mesurer(du_canton, "canton")
+    mesures_canton.update(agreger_complements(du_canton, complements))
     mesures_canton.update(extra.get("mesures", {}))
 
     fichier = enveloppe(
@@ -296,6 +331,7 @@ def main():
                for c in sorted(de_l_epci, key=lambda x: x["nom"])]
     extra = complements_territoires.get(f"epci:{code_epci}", {})
     mesures_epci = mesurer(de_l_epci, "epci")
+    mesures_epci.update(agreger_complements(de_l_epci, complements))
     mesures_epci.update(extra.get("mesures", {}))
 
     fichier = enveloppe(

@@ -31,15 +31,17 @@ RACINE = Path(__file__).resolve().parent
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py bandeaux d'alerte compacts, deux par ligne au-delà
-#                      de deux, renvois « Voir le détail » vers la page
-#                      qui porte le bloc
+#   · 04_generation.py bandeaux d'alerte compacts, renvois vers la page
+#                      portant le bloc, rubrique Éducation
 #   · 06_eau.py        réseaux classés du contrôle le plus récent au plus ancien
 #   · 07_vigieau.py    zones classées de la plus grave à la moins grave
-#   · 08_georisques.py dates des arrêtés, classement chronologique, liens
-#                      Légifrance par NOR, bandeau de reconnaissance récente
-#   · les trois collecteurs changent de version : recollecte nécessaire
-#   · 06_eau est le seul long, environ deux heures selon Hub'Eau
+#   · 08_georisques.py dates des arrêtés, liens Légifrance par NOR,
+#                      bandeau de reconnaissance récente
+#   · 03_agregation.py les mesures des collecteurs peuvent remonter au
+#                      canton et à l'intercommunalité si elles le déclarent
+#   · 10_ecoles.py     NOUVEAU — établissements scolaires
+#   · durée mesurée de la chaîne complète : environ 8 min 30, plus les
+#     écoles, encore inconnues
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -57,6 +59,7 @@ PLAN_LIVRAISON = [
     ("06_eau.py", ["--tout"]),
     ("07_vigieau.py", ["--tout"]),
     ("08_georisques.py", ["--tout"]),
+    ("10_ecoles.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
@@ -75,6 +78,7 @@ COLLECTEURS = [
     ("07_vigieau.py", []),
     ("08_georisques.py", []),
     ("09_nappes.py", []),
+    ("10_ecoles.py", []),
 ]
 
 PUBLICATION = [

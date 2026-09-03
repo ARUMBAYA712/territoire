@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-03",
+  "genere_le": "2026-09-04",
   "territoire": {
     "niveau": "commune",
     "code": "38416",
@@ -189,6 +189,46 @@
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
+    "EDU-01": {
+      "valeur": 11,
+      "unite": "établissements",
+      "nom": "Établissements scolaires",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "ancre": "etablissements-scolaires",
+      "rang": 10,
+      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-03": {
+      "valeur": 6,
+      "unite": "écoles",
+      "nom": "Premier degré",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 30,
+      "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    },
+    "EDU-04": {
+      "valeur": 4,
+      "unite": "établissements",
+      "nom": "Second degré",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
+    },
     "ENV-01": {
       "valeur": 0,
       "unite": "risque recensé",
@@ -329,6 +369,124 @@
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 24/06/2026."
     },
     {
+      "rubrique": "education",
+      "id": "etablissements-scolaires",
+      "titre": "Établissements de la commune",
+      "items": [
+        {
+          "titre": "Collège le Savouret",
+          "details": {
+            "Type": "Collège",
+            "Statut": "Public",
+            "Adresse": "Avenue de la Saulaie",
+            "Téléphone": "04 76 38 15 96"
+          },
+          "lien": {
+            "url": "https://savouret-isere.ent.auvergnerhonealpes.fr/",
+            "libelle": "Site de l'établissement"
+          }
+        },
+        {
+          "titre": "Lycée d'enseignement agricole privé Bellevue",
+          "details": {
+            "Type": "Lycée",
+            "Statut": "Privé",
+            "Adresse": "4 rue des Recollets",
+            "Téléphone": "04 76 38 20 17"
+          },
+          "lien": {
+            "url": "https://lycee-bellevue.fr",
+            "libelle": "Site de l'établissement"
+          }
+        },
+        {
+          "titre": "Lycée polyvalent La Saulaie",
+          "details": {
+            "Type": "Lycée",
+            "Statut": "Public",
+            "Adresse": "La Saulaie",
+            "Téléphone": "04 76 64 06 06"
+          },
+          "lien": {
+            "url": "https://lasaulaie.ent.auvergnerhonealpes.fr/",
+            "libelle": "Site de l'établissement"
+          }
+        },
+        {
+          "titre": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
+          "details": {
+            "Type": "Collège",
+            "Statut": "Public",
+            "Adresse": "AVENUE DE LA SAULAIE",
+            "Téléphone": "0476381596"
+          }
+        },
+        {
+          "titre": "Ecole maternelle Centre",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "1  BOULEVARD DU CHAMP DE MARS",
+            "Téléphone": "0476382141"
+          }
+        },
+        {
+          "titre": "Ecole maternelle Le Stade",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "31 avenue Docteur Carrier",
+            "Téléphone": "0476384019"
+          }
+        },
+        {
+          "titre": "Ecole primaire Centre",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "9 boulevard Gambetta",
+            "Téléphone": "0476380802"
+          }
+        },
+        {
+          "titre": "Ecole primaire La Plaine",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "6 rue de la Plaine",
+            "Téléphone": "0476383596"
+          }
+        },
+        {
+          "titre": "Ecole primaire Le Stade",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "29 avenue du Docteur Carrier",
+            "Téléphone": "0476383550"
+          }
+        },
+        {
+          "titre": "Ecole primaire privée Le Dauphin",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Privé",
+            "Adresse": "5 rue des Dauphins",
+            "Téléphone": "0476382826"
+          }
+        },
+        {
+          "titre": "Circonscription d'inspection du 1er degré de Saint Marcellin",
+          "details": {
+            "Type": "Service Administratif",
+            "Adresse": "2 avenue du Collège",
+            "Téléphone": "0476382056"
+          }
+        }
+      ],
+      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    },
+    {
       "rubrique": "environnement",
       "sous_rubrique": "risques",
       "id": "catastrophes-naturelles",
@@ -465,7 +623,7 @@
           }
         }
       ],
-      "note": "Situation au 03/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }

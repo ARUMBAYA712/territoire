@@ -893,6 +893,9 @@ RUBRIQUES = [
          {"id": "risques", "nom": "Risques"},
      ]},
 
+    {"id": "education", "nom": "Éducation", "prefixes": ["EDU"],
+     "prevue": True},
+
     {"id": "transports", "nom": "Transports", "prefixes": ["TRA"],
      "prevue": True},
 

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-03",
+  "genere_le": "2026-09-04",
   "territoire": {
     "niveau": "epci",
     "code": "200070431",
@@ -280,6 +280,45 @@
       "licence": "Licence Ouverte 2.0",
       "format": "carte",
       "nom": "Densité de population"
+    },
+    "EDU-01": {
+      "valeur": 65,
+      "unite": "établissement",
+      "nom": "Établissements scolaires",
+      "obtention": "agrégé",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 10,
+      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-03": {
+      "valeur": 53,
+      "unite": "école",
+      "nom": "Premier degré",
+      "obtention": "agrégé",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 30,
+      "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    },
+    "EDU-04": {
+      "valeur": 9,
+      "unite": "établissement",
+      "nom": "Second degré",
+      "obtention": "agrégé",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
     },
     "EAU-20": {
       "valeur": "Sous les valeurs habituelles",

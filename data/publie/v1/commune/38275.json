@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-03",
+  "genere_le": "2026-09-04",
   "territoire": {
     "niveau": "commune",
     "code": "38275",
@@ -155,6 +155,46 @@
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
+    "EDU-01": {
+      "valeur": 4,
+      "unite": "établissements",
+      "nom": "Établissements scolaires",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "ancre": "etablissements-scolaires",
+      "rang": 10,
+      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-03": {
+      "valeur": 2,
+      "unite": "écoles",
+      "nom": "Premier degré",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 30,
+      "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    },
+    "EDU-04": {
+      "valeur": 2,
+      "unite": "établissements",
+      "nom": "Second degré",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
+    },
     "ENV-01": {
       "valeur": 0,
       "unite": "risque recensé",
@@ -280,6 +320,50 @@
         }
       ],
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 17/11/2025."
+    },
+    {
+      "rubrique": "education",
+      "id": "etablissements-scolaires",
+      "titre": "Établissements de la commune",
+      "items": [
+        {
+          "titre": "Collège privé Saint Joseph",
+          "details": {
+            "Type": "Collège",
+            "Statut": "Privé",
+            "Adresse": "110 chemin DES PLANTEES",
+            "Téléphone": "0476642411"
+          }
+        },
+        {
+          "titre": "Ecole secondaire privée Saint Joseph",
+          "details": {
+            "Type": "Lycée",
+            "Statut": "Privé",
+            "Adresse": "110 chemin Des plantées",
+            "Téléphone": "0476642411"
+          }
+        },
+        {
+          "titre": "Ecole primaire",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Public",
+            "Adresse": "235 route de Vinay",
+            "Téléphone": "0476642660"
+          }
+        },
+        {
+          "titre": "Ecole primaire privée St-Joseph",
+          "details": {
+            "Type": "Ecole",
+            "Statut": "Privé",
+            "Adresse": "110 chemin des plantées",
+            "Téléphone": "0476642411"
+          }
+        }
+      ],
+      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
     },
     {
       "rubrique": "environnement",
@@ -455,7 +539,7 @@
           }
         }
       ],
-      "note": "Situation au 03/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }
