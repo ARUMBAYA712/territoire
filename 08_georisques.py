@@ -36,7 +36,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 7
+VERSION_SCRIPT = 9
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -46,7 +46,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 7
+VERSION = 9
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -61,12 +61,28 @@ ANCRE_CATNAT = "catastrophes-naturelles"
 # Page de référence Géorisques pour une commune. À vérifier une fois en
 # ligne : l'adresse est susceptible d'évoluer, et elle est isolée ici
 # pour n'avoir qu'un seul endroit à corriger.
-# Lien vers le dossier communal de Géorisques. L'adresse que j'avais
-# supposée renvoyait une erreur 404 : elle est donc laissée vide plutôt
-# que de publier un lien mort. Pour l'activer, naviguez jusqu'au dossier
-# d'une commune sur georisques.gouv.fr, relevez l'adresse et remplacez
-# le code INSEE par {code}. Un seul endroit à modifier.
-FICHE_GEORISQUES = ""
+# Géorisques n'expose pas d'adresse directe vers le dossier d'une
+# commune : la consultation passe par un formulaire de recherche. Plutôt
+# qu'un lien profond deviné — le précédent renvoyait une erreur 404 —
+# on renvoie vers le portail, avec un libellé qui n'annonce pas un accès
+# direct. Si vous relevez un jour l'adresse exacte d'un dossier communal,
+# remplacez la valeur ci-dessous en y plaçant {code} à l'endroit du code
+# INSEE ; le libellé s'ajustera automatiquement.
+FICHE_GEORISQUES = "https://www.georisques.gouv.fr/"
+
+# État des risques réglementaire, utile lors d'une vente ou d'une
+# location. Adresse stable, indiquée sur le portail Géorisques.
+ERRIAL = "https://errial.georisques.gouv.fr/#/"
+
+
+def renvoi_georisques(code_commune, libelle_direct, libelle_general):
+    """Lien vers Géorisques, direct si l'adresse le permet."""
+    if not FICHE_GEORISQUES:
+        return None
+    if "{code}" in FICHE_GEORISQUES and code_commune:
+        return {"url": FICHE_GEORISQUES.format(code=code_commune),
+                "libelle": libelle_direct}
+    return {"url": FICHE_GEORISQUES, "libelle": libelle_general}
 
 # Les arrêtés sont identifiés par leur numéro NOR, en vigueur depuis 1987 :
 # quatre lettres pour le ministère et la direction, deux chiffres d'année,
@@ -163,6 +179,37 @@ def appeler(chemin, **params):
             return brut.get("data") or brut.get("results") or []
         return []
     return None
+
+
+def libelles_risques(enregistrement):
+    """Intitulés des risques portés par un enregistrement.
+
+    L'API imbrique les risques dans une liste d'objets plutôt que de les
+    poser à plat : chercher au premier niveau ramenait la liste entière
+    convertie en texte, ou le nom de la commune. On parcourt donc la
+    structure en profondeur, en ne retenant que les champs dont le nom
+    associe « libellé » et « risque ».
+    """
+    trouves = []
+
+    def visiter(objet):
+        if isinstance(objet, dict):
+            for cle, valeur in objet.items():
+                if isinstance(valeur, (dict, list)):
+                    visiter(valeur)
+                    continue
+                nom = str(cle).lower()
+                if "libelle" not in nom or "risque" not in nom:
+                    continue
+                texte = str(valeur or "").strip()
+                if len(texte) >= 4 and not texte.isdigit():
+                    trouves.append(texte)
+        elif isinstance(objet, list):
+            for element in objet:
+                visiter(element)
+
+    visiter(enregistrement)
+    return trouves
 
 
 def champ(enregistrement, *candidats):
@@ -411,21 +458,9 @@ def synthetiser(lots, code_commune=None):
     mesures, blocs = {}, []
 
     # ── risques recensés ─────────────────────────────────────────
-    # Les intitulés de champ varient : plutôt que de deviner un nom, on
-    # retient toute valeur textuelle portée par un champ dont le nom
-    # évoque un libellé ou un risque. Une valeur purement numérique ou
-    # un code court sont écartés.
     libelles = []
     for r in risques:
-        for cle, valeur in r.items():
-            nom = str(cle).lower()
-            if not ("libelle" in nom or "risque" in nom or "alea" in nom):
-                continue
-            if "code" in nom or "num" in nom or "id" in nom:
-                continue
-            texte = str(valeur or "").strip()
-            if len(texte) < 4 or texte.isdigit():
-                continue
+        for texte in libelles_risques(r):
             if texte not in libelles:
                 libelles.append(texte)
 
@@ -440,13 +475,16 @@ def synthetiser(lots, code_commune=None):
             "id": ANCRE_RISQUES,
             "titre": "Risques identifiés sur la commune",
             "items": [{"titre": lib, "details": {}} for lib in sorted(libelles)],
-            "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
-                      "libelle": "Consulter le rapport officiel sur Géorisques"}
-                     if FICHE_GEORISQUES and code_commune else None),
+            "lien": renvoi_georisques(
+                code_commune,
+                "Consulter le rapport officiel sur Géorisques",
+                "Rechercher cette commune sur Géorisques"),
             "note": ("Recensement établi par les services de l'État. La "
                      "présence d'un risque ne signifie pas que l'ensemble "
                      "de la commune y est exposé : consultez le document "
-                     "d'information communal en mairie."),
+                     "d'information communal en mairie. Pour une vente ou "
+                     "une location, l'état des risques réglementaire "
+                     "s'établit sur ERRIAL, service gratuit de l'État."),
         })
 
     # ── arrêtés de catastrophe naturelle ─────────────────────────
@@ -522,9 +560,10 @@ def synthetiser(lots, code_commune=None):
             "id": ANCRE_CATNAT,
             "titre": "Catastrophes naturelles reconnues depuis 1982",
             "items": items,
-            "lien": ({"url": FICHE_GEORISQUES.format(code=code_commune),
-                      "libelle": "Consulter le dossier complet sur Géorisques"}
-                     if FICHE_GEORISQUES and code_commune else None),
+            "lien": renvoi_georisques(
+                code_commune,
+                "Consulter le dossier complet sur Géorisques",
+                "Rechercher cette commune sur Géorisques"),
             "note": ("Un arrêté de catastrophe naturelle ouvre la voie à "
                      "l'indemnisation des dommages par les assurances. "
                      + precision
@@ -736,8 +775,9 @@ def main():
                     vus[item["titre"]] += 1
     if vus:
         print(f"\n  Risques reconnus :")
-        for libelle, nombre in vus.most_common(10):
-            print(f"    {nombre:>3} commune(s)   {libelle[:60]}")
+        for libelle, nombre in vus.most_common(12):
+            print(f"    {nombre:>3} commune(s)   {libelle[:56]}")
+        print(f"    {len(vus)} libellé(s) distinct(s) au total.")
 
     print(f"\n  Communes renseignées : {len(resultat)}/{len(communes)}")
     if resultat:

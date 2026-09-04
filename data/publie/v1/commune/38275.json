@@ -369,8 +369,8 @@
       "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
     },
     "ENV-01": {
-      "valeur": 2,
-      "unite": "risques recensés",
+      "valeur": 1,
+      "unite": "risque recensé",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
       "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -698,16 +698,15 @@
       "titre": "Risques identifiés sur la commune",
       "items": [
         {
-          "titre": "SERRE-NERPOL",
-          "details": {}
-        },
-        {
-          "titre": "[{'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+          "titre": "Séisme",
           "details": {}
         }
       ],
-      "lien": null,
-      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
+      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
       "rubrique": "environnement",
@@ -816,7 +815,10 @@
           }
         }
       ],
-      "lien": null,
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
       "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 8 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {

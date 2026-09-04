@@ -22,7 +22,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 1
+VERSION_SCRIPT = 2
 
 DOSSIER = Path("data")
 FICHIER = DOSSIER / "referentiel-communes.json"
@@ -34,10 +34,11 @@ FICHIER = DOSSIER / "referentiel-communes.json"
 # Bureau centralisateur : Saint-Marcellin.
 # 44 communes entières, aucune commune scindée.
 #
-# ATTENTION : liste établie à partir de sources encyclopédiques.
-# Elle DOIT être confrontée au décret de découpage de 2015 ou aux
-# métadonnées INSEE avant toute mise en production. Le contrôle de
-# cardinalité ci-dessous ne vérifie que le nombre, pas l'exactitude.
+# SOURCE VÉRIFIÉE : décret n° 2014-180 du 18 février 2014 portant
+# délimitation des cantons dans le département de l'Isère, canton n° 23.
+# Le décret énumère 45 communes ; Dionay a fusionné avec
+# Saint-Antoine-l'Abbaye au 1er janvier 2016 et ne figure donc plus ici.
+# Confrontation effectuée nom par nom : aucun écart hors Dionay.
 # ══════════════════════════════════════════════════════════════════
 
 CANTON = {
@@ -46,7 +47,8 @@ CANTON = {
     "bureau_centralisateur": "38416",
     "depuis": "2015",
     "communes_scindees": False,
-    "source_liste": "à confronter au décret de découpage 2015 / INSEE",
+    "source_liste": ("décret n° 2014-180 du 18 février 2014, canton n° 23 ; "
+                     "Dionay retiré après sa fusion du 1er janvier 2016"),
 }
 
 COMMUNES_CANTON = [
@@ -116,6 +118,7 @@ def main():
         print(f"\n[BLOCAGE] La liste de référence contient "
               f"{len(COMMUNES_CANTON)} communes au lieu de 44.")
         sys.exit(1)
+    print(f"  Source : {CANTON['source_liste']}")
 
     verifier_collisions([(normaliser(c["nom"]), c["nom"]) for c in communes],
                         "le référentiel")

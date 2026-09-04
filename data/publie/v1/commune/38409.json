@@ -434,7 +434,7 @@
       "explication": "Services aux particuliers : administration, artisanat, services de proximité."
     },
     "ENV-01": {
-      "valeur": 2,
+      "valeur": 4,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -749,16 +749,27 @@
       "titre": "Risques identifiés sur la commune",
       "items": [
         {
-          "titre": "SAINT-JUST-DE-CLAIX",
+          "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
           "details": {}
         },
         {
-          "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+          "titre": "Mouvement de terrain",
+          "details": {}
+        },
+        {
+          "titre": "Séisme",
+          "details": {}
+        },
+        {
+          "titre": "Transport de marchandises dangereuses",
           "details": {}
         }
       ],
-      "lien": null,
-      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
+      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
       "rubrique": "environnement",
@@ -779,7 +790,10 @@
           }
         }
       ],
-      "lien": null,
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
       "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {

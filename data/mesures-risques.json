@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-04",
- "version": 7,
+ "version": 9,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
  "frequence": "trimestrielle",
@@ -8,7 +8,7 @@
   "38004": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 11,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -85,16 +85,55 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "L'ALBENC",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par ruissellement et coulée de boue",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -148,7 +187,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -156,7 +198,7 @@
   "38018": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 8,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -233,16 +275,43 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "AUBERIVES-EN-ROYANS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -285,7 +354,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -293,7 +365,7 @@
   "38033": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -370,16 +442,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "BEAULIEU",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -423,7 +514,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -431,7 +525,7 @@
   "38036": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -508,16 +602,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "BEAUVOIR-EN-ROYANS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -538,7 +651,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -546,7 +662,7 @@
   "38041": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -623,16 +739,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "BESSINS",
+       "titre": "Inondation",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -686,7 +809,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -694,7 +820,7 @@
   "38074": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -771,16 +897,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHANTESSE",
+       "titre": "Inondation",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -823,7 +956,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -831,7 +967,7 @@
   "38086": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -908,16 +1044,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHASSELAY",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -960,7 +1111,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -968,7 +1122,7 @@
   "38092": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 9,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1045,16 +1199,47 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHATELUS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}]",
+       "titre": "Avalanche",
+       "details": {}
+      },
+      {
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1097,7 +1282,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1105,7 +1293,7 @@
   "38095": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 11,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1182,16 +1370,55 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHATTE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par ruissellement et coulée de boue",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1230,7 +1457,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1238,7 +1468,7 @@
   "38099": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1315,16 +1545,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHEVRIERES",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1400,7 +1645,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 5 arrêté(s) sur 7 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1408,7 +1656,7 @@
   "38108": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 8,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1485,16 +1733,43 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CHORANCHE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1548,7 +1823,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1556,7 +1834,7 @@
   "38117": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 10,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1633,16 +1911,51 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "COGNIN-LES-GORGES",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par ruissellement et coulée de boue",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1663,7 +1976,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1671,7 +1987,7 @@
   "38137": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1748,16 +2064,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "CRAS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1800,7 +2123,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1808,7 +2134,7 @@
   "38195": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 10,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1885,16 +2211,51 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "IZERON",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -1915,7 +2276,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -1923,7 +2287,7 @@
   "38216": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 9,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2000,16 +2364,47 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "MALLEVAL-EN-VERCORS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2030,7 +2425,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2038,7 +2436,7 @@
   "38245": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2115,16 +2513,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "MONTAGNE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2178,7 +2583,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2186,7 +2594,7 @@
   "38248": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 11,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2263,16 +2671,55 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "MONTAUD",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}]",
+       "titre": "Avalanche",
+       "details": {}
+      },
+      {
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par ruissellement et coulée de boue",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2304,7 +2751,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2312,7 +2762,7 @@
   "38263": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2389,16 +2839,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "MORETTE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2430,7 +2895,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2438,7 +2906,7 @@
   "38272": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2515,16 +2983,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "MURINAIS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2579,7 +3054,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2587,8 +3065,8 @@
   "38275": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
-     "unite": "risques recensés",
+     "valeur": 1,
+     "unite": "risque recensé",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2664,16 +3142,15 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SERRE-NERPOL",
-       "details": {}
-      },
-      {
-       "titre": "[{'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2782,7 +3259,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 8 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2790,8 +3270,8 @@
   "38278": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
-     "unite": "risques recensés",
+     "valeur": 1,
+     "unite": "risque recensé",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2867,16 +3347,15 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "NOTRE-DAME-DE-L'OSIER",
-       "details": {}
-      },
-      {
-       "titre": "[{'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -2930,7 +3409,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -2938,7 +3420,7 @@
   "38310": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3015,16 +3497,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "POLIENAS",
+       "titre": "Inondation",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
+       "details": {}
+      },
+      {
+       "titre": "Transport de marchandises dangereuses",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3056,7 +3553,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3064,7 +3564,7 @@
   "38319": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 8,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3141,16 +3641,43 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "PONT-EN-ROYANS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3215,7 +3742,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3223,7 +3753,7 @@
   "38322": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 8,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3300,16 +3830,43 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "PRESLES",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3330,7 +3887,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3338,7 +3898,7 @@
   "38330": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3415,16 +3975,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "QUINCIEU",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3489,7 +4064,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3497,7 +4075,7 @@
   "38333": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 9,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3574,16 +4152,47 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "RENCUREL",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3648,7 +4257,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3656,7 +4268,7 @@
   "38338": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3733,16 +4345,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "LA RIVIERE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3785,7 +4416,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3793,7 +4427,7 @@
   "38345": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3870,16 +4504,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "ROVON",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -3900,7 +4553,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -3908,7 +4564,7 @@
   "38356": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 9,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3986,16 +4642,47 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-ANDRE-EN-ROYANS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4038,7 +4725,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4046,7 +4736,7 @@
   "38359": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 9,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4124,16 +4814,47 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT ANTOINE L'ABBAYE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4232,7 +4953,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4240,7 +4964,7 @@
   "38360": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4318,16 +5042,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-APPOLINARD",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4381,7 +5112,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4389,7 +5123,7 @@
   "38370": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4466,16 +5200,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-BONNET-DE-CHAVAGNE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4507,7 +5256,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4515,7 +5267,7 @@
   "38390": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4592,16 +5344,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-GERVAIS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4644,7 +5415,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 2 arrêté(s) sur 4 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4652,7 +5426,7 @@
   "38394": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4729,16 +5503,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-HILAIRE-DU-ROSIER",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4759,7 +5552,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4767,7 +5563,7 @@
   "38409": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4844,16 +5640,27 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-JUST-DE-CLAIX",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
+       "details": {}
+      },
+      {
+       "titre": "Transport de marchandises dangereuses",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -4874,7 +5681,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -4882,7 +5692,7 @@
   "38410": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4959,16 +5769,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-LATTIER",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5022,7 +5851,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5030,7 +5862,7 @@
   "38416": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5107,16 +5939,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-MARCELLIN",
+       "titre": "Inondation",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5188,7 +6027,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 7 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5196,7 +6038,7 @@
   "38443": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 12,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5273,16 +6115,59 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-PIERRE-DE-CHERENNES",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Avalanche",
+       "details": {}
+      },
+      {
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par ruissellement et coulée de boue",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5303,7 +6188,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5311,7 +6199,7 @@
   "38450": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 14,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5389,16 +6277,67 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-QUENTIN-SUR-ISERE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '21', 'libelle_risque_long': 'Risque industriel', 'zone_sismicite': None}, {'num_risque': '211', 'libelle_risque_long': 'Effet thermique', 'zone_sismicite': None}, {'num_risque': '212', 'libelle_risque_long': 'Effet de surpression', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "titre": "Eboulement ou chutes de pierres et de blocs",
+       "details": {}
+      },
+      {
+       "titre": "Effet de surpression",
+       "details": {}
+      },
+      {
+       "titre": "Effet thermique",
+       "details": {}
+      },
+      {
+       "titre": "Glissement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par remontées de nappes naturelles",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Risque industriel",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
+       "details": {}
+      },
+      {
+       "titre": "Transport de marchandises dangereuses",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5452,7 +6391,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5460,7 +6402,7 @@
   "38453": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5537,16 +6479,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-ROMANS",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5578,7 +6539,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 3 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5586,7 +6550,7 @@
   "38454": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5663,16 +6627,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-SAUVEUR",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5700,7 +6683,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5708,7 +6694,7 @@
   "38463": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5785,16 +6771,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "SAINT-VERAND",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5845,7 +6846,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5853,7 +6857,7 @@
   "38495": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5930,16 +6934,27 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "LA SONE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -5972,7 +6987,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -5980,7 +6998,7 @@
   "38500": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6057,16 +7075,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "TECHE",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -6110,7 +7147,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 1 arrêté(s) sur 5 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -6118,7 +7158,7 @@
   "38523": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6195,16 +7235,31 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "VARACIEUX",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -6265,7 +7320,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 3 arrêté(s) sur 6 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -6273,7 +7331,7 @@
   "38526": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 3,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6350,16 +7408,23 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "VATILIEU",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -6452,7 +7517,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 6 arrêté(s) sur 9 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]
@@ -6460,7 +7528,7 @@
   "38559": {
    "mesures": {
     "ENV-01": {
-     "valeur": 2,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6537,16 +7605,35 @@
      "titre": "Risques identifiés sur la commune",
      "items": [
       {
-       "titre": "VINAY",
+       "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
        "details": {}
       },
       {
-       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "titre": "Inondation",
+       "details": {}
+      },
+      {
+       "titre": "Mouvement de terrain",
+       "details": {}
+      },
+      {
+       "titre": "Par une crue à débordement lent de cours d'eau",
+       "details": {}
+      },
+      {
+       "titre": "Rupture de barrage",
+       "details": {}
+      },
+      {
+       "titre": "Séisme",
        "details": {}
       }
      ],
-     "lien": null,
-     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
      "rubrique": "environnement",
@@ -6637,7 +7724,10 @@
        }
       }
      ],
-     "lien": null,
+     "lien": {
+      "url": "https://www.georisques.gouv.fr/",
+      "libelle": "Rechercher cette commune sur Géorisques"
+     },
      "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. 4 arrêté(s) sur 10 renvoient au texte publié au Journal officiel. Les autres sont antérieurs à 1987, année d'entrée en vigueur du numéro NOR, et ne sont pas identifiables en ligne. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     }
    ]

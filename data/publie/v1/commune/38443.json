@@ -374,7 +374,7 @@
       "explication": "Part des résidences principales occupées par leur propriétaire."
     },
     "ENV-01": {
-      "valeur": 2,
+      "valeur": 12,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -673,16 +673,59 @@
       "titre": "Risques identifiés sur la commune",
       "items": [
         {
-          "titre": "SAINT-PIERRE-DE-CHERENNES",
+          "titre": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
           "details": {}
         },
         {
-          "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+          "titre": "Avalanche",
+          "details": {}
+        },
+        {
+          "titre": "Eboulement ou chutes de pierres et de blocs",
+          "details": {}
+        },
+        {
+          "titre": "Glissement de terrain",
+          "details": {}
+        },
+        {
+          "titre": "Inondation",
+          "details": {}
+        },
+        {
+          "titre": "Mouvement de terrain",
+          "details": {}
+        },
+        {
+          "titre": "Par remontées de nappes naturelles",
+          "details": {}
+        },
+        {
+          "titre": "Par ruissellement et coulée de boue",
+          "details": {}
+        },
+        {
+          "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
+          "details": {}
+        },
+        {
+          "titre": "Par une crue à débordement lent de cours d'eau",
+          "details": {}
+        },
+        {
+          "titre": "Rupture de barrage",
+          "details": {}
+        },
+        {
+          "titre": "Séisme",
           "details": {}
         }
       ],
-      "lien": null,
-      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
+      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie. Pour une vente ou une location, l'état des risques réglementaire s'établit sur ERRIAL, service gratuit de l'État."
     },
     {
       "rubrique": "environnement",
@@ -703,7 +746,10 @@
           }
         }
       ],
-      "lien": null,
+      "lien": {
+        "url": "https://www.georisques.gouv.fr/",
+        "libelle": "Rechercher cette commune sur Géorisques"
+      },
       "note": "Un arrêté de catastrophe naturelle ouvre la voie à l'indemnisation des dommages par les assurances. Aucun de ces arrêtés ne porte de numéro NOR : ce système d'identification n'existe que depuis 1987, et les textes antérieurs ne sont pas consultables en ligne par ce biais. Les données de l'API peuvent accuser un léger retard sur le site Géorisques ; en cas d'écart, ce dernier fait référence."
     },
     {

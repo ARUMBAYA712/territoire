@@ -39,13 +39,13 @@ RACINE = Path(__file__).resolve().parent
 
 VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
-    "02_canton.py": 1,
+    "02_canton.py": 2,
     "03_agregation.py": 3,
     "04_generation.py": 6,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
-    "08_georisques.py": 7,
+    "08_georisques.py": 9,
     "09_nappes.py": 2,
     "10_ecoles.py": 5,
     "11_population.py": 4,
@@ -96,16 +96,13 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · TOUS les scripts portent désormais un numéro de version, affiché à
-#     l'exécution. Le lanceur vérifie qu'ils sont bien tous remplacés et
-#     refuse de partir sinon : un fichier oublié produisait jusqu'ici des
-#     résultats incohérents sans le moindre message.
-#   · 03_agregation.py le repère d'une commune n'est plus repris au
-#                      niveau agrégé, et la forme plurielle est rétablie
-#   · 10_ecoles.py     formes plurielles déclarées
-#   · 11_population.py équipements reconnus, formes plurielles déclarées
-#
-#   Installez les onze scripts et le lanceur, puis « python lancer.py ».
+#   · 08_georisques.py deux corrections :
+#       – les risques sont imbriqués dans une liste d'objets ; la lecture
+#         à plat ramenait la liste convertie en texte, ou le nom de la
+#         commune. Lecture en profondeur désormais.
+#       – renvoi vers Géorisques rétabli, en lien générique correctement
+#         libellé : le portail n'expose pas d'adresse par commune.
+#     Recollecte nécessaire.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -123,8 +120,7 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
-    ("10_ecoles.py", ["--tout"]),
-    ("11_population.py", []),
+    ("08_georisques.py", ["--tout"]),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
