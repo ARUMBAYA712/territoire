@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-03",
+ "genere_le": "2026-09-04",
  "version": 2,
  "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
  "licence": "Licence Ouverte 2.0",
@@ -59,6 +59,24 @@
      "titre": "Stations de mesure des nappes",
      "items": [
       {
+       "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
+       "details": {
+        "Code BSS": "07714X0054/F",
+        "Commune": "Saint-Étienne-de-Saint-Geoirs",
+        "Distance du centre du territoire": "20 km",
+        "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
+        "Profondeur": "38.62 m",
+        "Altitude de la nappe": "362.59 m NGF",
+        "Dernière mesure": "03/09/2026",
+        "Mesures sur 5 ans": 1825
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 38.47 m sur 148 relevés. Écart : +0.15 m."
+      },
+      {
        "titre": "Forage de Croix du platre — Vatilieu — station de référence",
        "details": {
         "Code BSS": "07725X0071/F3",
@@ -68,13 +86,13 @@
         "Profondeur": "41.32 m",
         "Altitude de la nappe": "568.68 m NGF",
         "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 40.75 m sur 148 relevés. Écart : +0.57 m."
+       "texte": "Médiane des mois comparables : 40.76 m sur 147 relevés. Écart : +0.56 m."
       },
       {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -86,31 +104,13 @@
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
         "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1790
+        "Mesures sur 5 ans": 1789
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 7.52 m sur 140 relevés. Écart : +0.15 m."
-      },
-      {
-       "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
-       "details": {
-        "Code BSS": "07714X0054/F",
-        "Commune": "Saint-Étienne-de-Saint-Geoirs",
-        "Distance du centre du territoire": "20 km",
-        "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.61 m",
-        "Altitude de la nappe": "362.60 m NGF",
-        "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1825
-       },
-       "etat": [
-        "Proche des valeurs habituelles",
-        "neutre"
-       ],
-       "texte": "Médiane des mois comparables : 38.45 m sur 148 relevés. Écart : +0.16 m."
+       "texte": "Médiane des mois comparables : 7.52 m sur 139 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -118,16 +118,16 @@
         "Code BSS": "07951X0028/F",
         "Commune": "Châtillon-Saint-Jean",
         "Distance du centre du territoire": "21 km",
-        "Profondeur": "49.73 m",
-        "Altitude de la nappe": "240.84 m NGF",
-        "Dernière mesure": "01/09/2026",
+        "Profondeur": "49.72 m",
+        "Altitude de la nappe": "240.85 m NGF",
+        "Dernière mesure": "02/09/2026",
         "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.31 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.30 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -139,7 +139,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1598
+        "Mesures sur 5 ans": 1597
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -175,13 +175,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 379
+        "Mesures sur 5 ans": 378
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 43 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 42 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."
@@ -242,6 +242,24 @@
      "titre": "Stations de mesure des nappes",
      "items": [
       {
+       "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
+       "details": {
+        "Code BSS": "07714X0054/F",
+        "Commune": "Saint-Étienne-de-Saint-Geoirs",
+        "Distance du centre du territoire": "20 km",
+        "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
+        "Profondeur": "38.62 m",
+        "Altitude de la nappe": "362.59 m NGF",
+        "Dernière mesure": "03/09/2026",
+        "Mesures sur 5 ans": 1825
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 38.47 m sur 148 relevés. Écart : +0.15 m."
+      },
+      {
        "titre": "Forage de Croix du platre — Vatilieu — station de référence",
        "details": {
         "Code BSS": "07725X0071/F3",
@@ -251,13 +269,13 @@
         "Profondeur": "41.32 m",
         "Altitude de la nappe": "568.68 m NGF",
         "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 40.75 m sur 148 relevés. Écart : +0.57 m."
+       "texte": "Médiane des mois comparables : 40.76 m sur 147 relevés. Écart : +0.56 m."
       },
       {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -269,31 +287,13 @@
         "Profondeur": "7.67 m",
         "Altitude de la nappe": "249.55 m NGF",
         "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1790
+        "Mesures sur 5 ans": 1789
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 7.52 m sur 140 relevés. Écart : +0.15 m."
-      },
-      {
-       "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
-       "details": {
-        "Code BSS": "07714X0054/F",
-        "Commune": "Saint-Étienne-de-Saint-Geoirs",
-        "Distance du centre du territoire": "20 km",
-        "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.61 m",
-        "Altitude de la nappe": "362.60 m NGF",
-        "Dernière mesure": "02/09/2026",
-        "Mesures sur 5 ans": 1825
-       },
-       "etat": [
-        "Proche des valeurs habituelles",
-        "neutre"
-       ],
-       "texte": "Médiane des mois comparables : 38.45 m sur 148 relevés. Écart : +0.16 m."
+       "texte": "Médiane des mois comparables : 7.52 m sur 139 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -301,16 +301,16 @@
         "Code BSS": "07951X0028/F",
         "Commune": "Châtillon-Saint-Jean",
         "Distance du centre du territoire": "21 km",
-        "Profondeur": "49.73 m",
-        "Altitude de la nappe": "240.84 m NGF",
-        "Dernière mesure": "01/09/2026",
+        "Profondeur": "49.72 m",
+        "Altitude de la nappe": "240.85 m NGF",
+        "Dernière mesure": "02/09/2026",
         "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.31 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.30 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -322,7 +322,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1598
+        "Mesures sur 5 ans": 1597
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -358,13 +358,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 379
+        "Mesures sur 5 ans": 378
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 43 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 42 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."

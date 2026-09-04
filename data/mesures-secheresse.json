@@ -799,7 +799,7 @@
        ],
        "details": {
         "Type d'eau": "Eau potable (réseau)",
-        "Zone d'alerte": "Vercors (sout.)",
+        "Zone d'alerte": "Vercors",
         "En vigueur depuis": "20/08/2026",
         "Jusqu'au": "30/09/2026",
         "Usages concernés": 27
@@ -1117,7 +1117,7 @@
        ],
        "details": {
         "Type d'eau": "Eau potable (réseau)",
-        "Zone d'alerte": "Vercors (sout.)",
+        "Zone d'alerte": "Vercors",
         "En vigueur depuis": "20/08/2026",
         "Jusqu'au": "30/09/2026",
         "Usages concernés": 27
@@ -3131,7 +3131,7 @@
        ],
        "details": {
         "Type d'eau": "Eau potable (réseau)",
-        "Zone d'alerte": "Chambaran",
+        "Zone d'alerte": "Nappes de Chambaran",
         "En vigueur depuis": "20/08/2026",
         "Jusqu'au": "30/09/2026",
         "Usages concernés": 27

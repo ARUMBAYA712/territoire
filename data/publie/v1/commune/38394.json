@@ -203,6 +203,21 @@
       "rang": 10,
       "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+      "valeur": 1,
+      "unite": "établissement",
+      "nom": "Restauration scolaire",
+      "obtention": "natif",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "ancre": "etablissements-scolaires",
+      "repere": "sur 1 établissement(s)",
+      "rang": 20,
+      "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
       "valeur": 1,
       "unite": "école",
@@ -216,9 +231,201 @@
       "rang": 30,
       "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
     },
+    "POP-20": {
+      "valeur": 16.2,
+      "unite": "%",
+      "nom": "Moins de 15 ans",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "ancre": "repartition-age",
+      "repere": "314 habitants sur 1 935",
+      "rang": 10,
+      "explication": "Part des moins de 15 ans. Un indicateur de renouvellement : il traduit la présence de familles avec enfants."
+    },
+    "POP-24": {
+      "valeur": 10.5,
+      "unite": "%",
+      "nom": "75 ans et plus",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "ancre": "repartition-age",
+      "repere": "204 habitants sur 1 935",
+      "rang": 15,
+      "explication": "Part des 75 ans et plus. Un indicateur de vieillissement, utile pour dimensionner services et équipements."
+    },
+    "POP-21": {
+      "valeur": 49.9,
+      "unite": "%",
+      "nom": "Part des femmes",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "repere": "966 femmes, 968 hommes",
+      "rang": 20,
+      "explication": "Part des femmes dans la population municipale."
+    },
+    "POP-22": {
+      "valeur": 841,
+      "unite": "ménages",
+      "nom": "Ménages",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "repere": "2.3 personnes par ménage en moyenne",
+      "rang": 30,
+      "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
+    },
+    "POP-23": {
+      "valeur": 583,
+      "unite": "familles",
+      "nom": "Familles",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
+    },
+    "LOG-01": {
+      "valeur": 925,
+      "unite": "logements",
+      "nom": "Logements",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "agregation": "somme",
+      "ancre": "composition-parc-logements",
+      "rang": 10,
+      "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
+    },
+    "LOG-02": {
+      "valeur": 6.1,
+      "unite": "%",
+      "nom": "Logements vacants",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "ancre": "composition-parc-logements",
+      "repere": "56 sur 925",
+      "rang": 20,
+      "explication": "Part des logements inoccupés. Une vacance élevée peut signaler un parc ancien ou un marché détendu ; quelques pour cent sont normaux et traduisent la rotation."
+    },
+    "LOG-03": {
+      "valeur": 2.9,
+      "unite": "%",
+      "nom": "Résidences secondaires",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "ancre": "composition-parc-logements",
+      "repere": "27 sur 925",
+      "rang": 30,
+      "explication": "Part des résidences secondaires et logements occasionnels. Un indicateur de pression touristique sur le logement."
+    },
+    "LOG-04": {
+      "valeur": 83.5,
+      "unite": "%",
+      "nom": "Maisons",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "repere": "772 sur 925",
+      "rang": 40,
+      "explication": "Part des maisons individuelles dans le parc, par opposition aux appartements."
+    },
+    "LOG-05": {
+      "valeur": 72.5,
+      "unite": "%",
+      "nom": "Propriétaires occupants",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "repere": "610 résidences principales sur 841",
+      "rang": 50,
+      "explication": "Part des résidences principales occupées par leur propriétaire."
+    },
+    "EQU-01": {
+      "valeur": 2,
+      "unite": "équipements",
+      "nom": "Commerces",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "ancre": "equipements-par-domaine",
+      "rang": 10,
+      "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+    },
+    "EQU-02": {
+      "valeur": 3,
+      "unite": "équipements",
+      "nom": "Santé et action sociale",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "ancre": "equipements-par-domaine",
+      "rang": 20,
+      "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+    },
+    "EQU-03": {
+      "valeur": 1,
+      "unite": "équipements",
+      "nom": "Sport, loisir et culture",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "ancre": "equipements-par-domaine",
+      "rang": 30,
+      "explication": "Équipements sportifs, de loisir et de culture."
+    },
+    "EQU-04": {
+      "valeur": 5,
+      "unite": "équipements",
+      "nom": "Services aux particuliers",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "ancre": "equipements-par-domaine",
+      "rang": 40,
+      "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+    },
     "ENV-01": {
-      "valeur": 0,
-      "unite": "risque recensé",
+      "valeur": 2,
+      "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
       "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -229,6 +436,7 @@
       ],
       "rubrique": "environnement",
       "sous_rubrique": "risques",
+      "ancre": "risques-recenses",
       "rang": 20,
       "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -351,14 +559,180 @@
         {
           "titre": "Ecole primaire Le Village",
           "details": {
-            "Type": "Ecole",
+            "Type": "Ecole de niveau elementaire",
             "Statut": "Public",
             "Adresse": "140 rue des marronniers",
-            "Téléphone": "0438902601"
+            "Téléphone": "0438902601",
+            "Services": "restauration"
           }
         }
       ],
+      "points": [
+        {
+          "nom": "Ecole primaire Le Village",
+          "lat": 45.09986,
+          "lon": 5.24783,
+          "info": "Ecole",
+          "categorie": "premier"
+        }
+      ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    },
+    {
+      "rubrique": "population",
+      "id": "repartition-age",
+      "titre": "Population par tranche d'âge — recensement 2022",
+      "items": [
+        {
+          "titre": "0 à 14 ans",
+          "details": {
+            "Habitants": "314",
+            "Part": "16.2 %"
+          }
+        },
+        {
+          "titre": "15 à 29 ans",
+          "details": {
+            "Habitants": "295",
+            "Part": "15.2 %"
+          }
+        },
+        {
+          "titre": "30 à 44 ans",
+          "details": {
+            "Habitants": "323",
+            "Part": "16.7 %"
+          }
+        },
+        {
+          "titre": "45 à 59 ans",
+          "details": {
+            "Habitants": "423",
+            "Part": "21.9 %"
+          }
+        },
+        {
+          "titre": "60 à 74 ans",
+          "details": {
+            "Habitants": "376",
+            "Part": "19.4 %"
+          }
+        },
+        {
+          "titre": "75 à 89 ans",
+          "details": {
+            "Habitants": "188",
+            "Part": "9.7 %"
+          }
+        },
+        {
+          "titre": "90 ans et plus",
+          "details": {
+            "Habitants": "16",
+            "Part": "0.8 %"
+          }
+        }
+      ],
+      "note": "Les tranches d'âge sont celles publiées par l'INSEE. Leur somme peut différer légèrement de la population municipale, les deux chiffres ne relevant pas du même traitement."
+    },
+    {
+      "rubrique": "urbanisme",
+      "id": "composition-parc-logements",
+      "titre": "Composition du parc de logements",
+      "items": [
+        {
+          "titre": "Résidences principales",
+          "details": {
+            "Logements": "841",
+            "Part": "90.9 %"
+          }
+        },
+        {
+          "titre": "Résidences secondaires",
+          "details": {
+            "Logements": "27",
+            "Part": "2.9 %"
+          }
+        },
+        {
+          "titre": "Logements vacants",
+          "details": {
+            "Logements": "56",
+            "Part": "6.1 %"
+          }
+        },
+        {
+          "titre": "Maisons",
+          "details": {
+            "Logements": "772",
+            "Part": "83.5 %"
+          }
+        },
+        {
+          "titre": "Appartements",
+          "details": {
+            "Logements": "151",
+            "Part": "16.3 %"
+          }
+        }
+      ],
+      "note": "Maisons et appartements se recoupent avec les catégories d'occupation : un même logement est compté dans les deux ensembles."
+    },
+    {
+      "rubrique": "equipements",
+      "id": "equipements-par-domaine",
+      "titre": "Équipements par domaine — 2024",
+      "items": [
+        {
+          "titre": "Commerces",
+          "details": {
+            "Équipements": "2"
+          }
+        },
+        {
+          "titre": "Santé et action sociale",
+          "details": {
+            "Équipements": "3"
+          }
+        },
+        {
+          "titre": "Sport, loisir et culture",
+          "details": {
+            "Équipements": "1"
+          }
+        },
+        {
+          "titre": "Services aux particuliers",
+          "details": {
+            "Équipements": "5"
+          }
+        },
+        {
+          "titre": "Enseignement",
+          "details": {
+            "Équipements": "1"
+          }
+        }
+      ],
+      "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "id": "risques-recenses",
+      "titre": "Risques identifiés sur la commune",
+      "items": [
+        {
+          "titre": "SAINT-HILAIRE-DU-ROSIER",
+          "details": {}
+        },
+        {
+          "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+          "details": {}
+        }
+      ],
+      "lien": null,
+      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
     },
     {
       "rubrique": "environnement",

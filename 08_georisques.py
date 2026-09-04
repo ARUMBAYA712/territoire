@@ -23,6 +23,7 @@ Utilisation :
                                            commune, pour calibrer le script
 """
 
+from collections import Counter
 import json
 import re
 import sys
@@ -41,7 +42,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 6
+VERSION = 7
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -406,12 +407,23 @@ def synthetiser(lots, code_commune=None):
     mesures, blocs = {}, []
 
     # ── risques recensés ─────────────────────────────────────────
+    # Les intitulés de champ varient : plutôt que de deviner un nom, on
+    # retient toute valeur textuelle portée par un champ dont le nom
+    # évoque un libellé ou un risque. Une valeur purement numérique ou
+    # un code court sont écartés.
     libelles = []
     for r in risques:
-        libelle = champ(r, "libelle_risque_long", "libelle_risque",
-                        "num_risque_jo", "libelle")
-        if libelle and libelle not in libelles:
-            libelles.append(str(libelle))
+        for cle, valeur in r.items():
+            nom = str(cle).lower()
+            if not ("libelle" in nom or "risque" in nom or "alea" in nom):
+                continue
+            if "code" in nom or "num" in nom or "id" in nom:
+                continue
+            texte = str(valeur or "").strip()
+            if len(texte) < 4 or texte.isdigit():
+                continue
+            if texte not in libelles:
+                libelles.append(texte)
 
     mesures["ENV-01"] = mesure(len(libelles),
                                unite_de("ENV-01", len(libelles)),
@@ -707,6 +719,20 @@ def main():
               f"{m['ENV-02']['valeur']} arrêté(s) CatNat{reserve}")
 
     sauver()
+
+    # Les libellés étant reconnus par motif, il faut pouvoir vérifier
+    # d'un coup d'œil que ce sont bien des risques et non un champ
+    # attrapé par erreur.
+    vus = Counter()
+    for bloc in resultat.values():
+        for b in bloc.get("blocs", []):
+            if b.get("id") == ANCRE_RISQUES:
+                for item in b["items"]:
+                    vus[item["titre"]] += 1
+    if vus:
+        print(f"\n  Risques reconnus :")
+        for libelle, nombre in vus.most_common(10):
+            print(f"    {nombre:>3} commune(s)   {libelle[:60]}")
 
     print(f"\n  Communes renseignées : {len(resultat)}/{len(communes)}")
     if resultat:

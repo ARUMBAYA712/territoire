@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-04",
- "version": 6,
+ "version": 7,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
  "frequence": "trimestrielle",
@@ -8,8 +8,8 @@
   "38004": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -20,6 +20,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -77,6 +78,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "L'ALBENC",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -137,8 +156,8 @@
   "38018": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -149,6 +168,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -209,6 +229,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "AUBERIVES-EN-ROYANS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -255,8 +293,8 @@
   "38033": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -267,6 +305,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -327,6 +366,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "BEAULIEU",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -374,8 +431,8 @@
   "38036": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -386,6 +443,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -446,6 +504,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "BEAUVOIR-EN-ROYANS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -470,8 +546,8 @@
   "38041": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -482,6 +558,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -542,6 +619,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "BESSINS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -599,8 +694,8 @@
   "38074": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -611,6 +706,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -668,6 +764,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHANTESSE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -717,8 +831,8 @@
   "38086": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -729,6 +843,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -789,6 +904,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHASSELAY",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -835,8 +968,8 @@
   "38092": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -847,6 +980,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -907,6 +1041,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHATELUS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -953,8 +1105,8 @@
   "38095": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -965,6 +1117,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1025,6 +1178,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHATTE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1067,8 +1238,8 @@
   "38099": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1079,6 +1250,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1136,6 +1308,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHEVRIERES",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -1218,8 +1408,8 @@
   "38108": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1230,6 +1420,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1287,6 +1478,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CHORANCHE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -1347,8 +1556,8 @@
   "38117": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1359,6 +1568,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1419,6 +1629,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "COGNIN-LES-GORGES",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1443,8 +1671,8 @@
   "38137": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1455,6 +1683,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1515,6 +1744,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "CRAS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1561,8 +1808,8 @@
   "38195": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1573,6 +1820,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1630,6 +1878,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "IZERON",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -1657,8 +1923,8 @@
   "38216": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1669,6 +1935,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1729,6 +1996,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "MALLEVAL-EN-VERCORS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1753,8 +2038,8 @@
   "38245": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1765,6 +2050,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1825,6 +2111,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "MONTAGNE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1882,8 +2186,8 @@
   "38248": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -1894,6 +2198,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -1954,6 +2259,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "MONTAUD",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -1989,8 +2312,8 @@
   "38263": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2001,6 +2324,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2061,6 +2385,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "MORETTE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -2096,8 +2438,8 @@
   "38272": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2108,6 +2450,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2165,6 +2508,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "MURINAIS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -2226,8 +2587,8 @@
   "38275": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2238,6 +2599,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2295,6 +2657,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SERRE-NERPOL",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -2410,8 +2790,8 @@
   "38278": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2422,6 +2802,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2482,6 +2863,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "NOTRE-DAME-DE-L'OSIER",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -2539,8 +2938,8 @@
   "38310": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2551,6 +2950,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2611,6 +3011,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "POLIENAS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -2646,8 +3064,8 @@
   "38319": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2658,6 +3076,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2715,6 +3134,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "PONT-EN-ROYANS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -2786,8 +3223,8 @@
   "38322": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2798,6 +3235,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2858,6 +3296,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "PRESLES",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -2882,8 +3338,8 @@
   "38330": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -2894,6 +3350,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -2951,6 +3408,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "QUINCIEU",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -3022,8 +3497,8 @@
   "38333": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3034,6 +3509,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3091,6 +3567,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "RENCUREL",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -3162,8 +3656,8 @@
   "38338": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3174,6 +3668,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3234,6 +3729,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "LA RIVIERE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -3280,8 +3793,8 @@
   "38345": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3292,6 +3805,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3352,6 +3866,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "ROVON",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -3376,8 +3908,8 @@
   "38356": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3388,6 +3920,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3449,6 +3982,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-ANDRE-EN-ROYANS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -3495,8 +4046,8 @@
   "38359": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3507,6 +4058,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3565,6 +4117,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT ANTOINE L'ABBAYE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -3670,8 +4240,8 @@
   "38360": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3682,6 +4252,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3743,6 +4314,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-APPOLINARD",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -3800,8 +4389,8 @@
   "38370": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3812,6 +4401,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3872,6 +4462,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-BONNET-DE-CHAVAGNE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -3907,8 +4515,8 @@
   "38390": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -3919,6 +4527,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -3979,6 +4588,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-GERVAIS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4025,8 +4652,8 @@
   "38394": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4037,6 +4664,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4094,6 +4722,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-HILAIRE-DU-ROSIER",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -4121,8 +4767,8 @@
   "38409": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4133,6 +4779,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4193,6 +4840,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-JUST-DE-CLAIX",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4217,8 +4882,8 @@
   "38410": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4229,6 +4894,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4289,6 +4955,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-LATTIER",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4346,8 +5030,8 @@
   "38416": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4358,6 +5042,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4415,6 +5100,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-MARCELLIN",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -4493,8 +5196,8 @@
   "38443": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4505,6 +5208,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4565,6 +5269,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-PIERRE-DE-CHERENNES",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '114', 'libelle_risque_long': 'Par ruissellement et coulée de boue', 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '14', 'libelle_risque_long': 'Avalanche', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4589,8 +5311,8 @@
   "38450": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4601,6 +5323,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4662,6 +5385,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-QUENTIN-SUR-ISERE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '113', 'libelle_risque_long': \"Par une crue torrentielle ou à montée rapide de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '21', 'libelle_risque_long': 'Risque industriel', 'zone_sismicite': None}, {'num_risque': '211', 'libelle_risque_long': 'Effet thermique', 'zone_sismicite': None}, {'num_risque': '212', 'libelle_risque_long': 'Effet de surpression', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}, {'num_risque': '24', 'libelle_risque_long': 'Transport de marchandises dangereuses', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4719,8 +5460,8 @@
   "38453": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4731,6 +5472,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4788,6 +5530,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-ROMANS",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -4826,8 +5586,8 @@
   "38454": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4838,6 +5598,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -4898,6 +5659,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-SAUVEUR",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -4929,8 +5708,8 @@
   "38463": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -4941,6 +5720,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5001,6 +5781,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "SAINT-VERAND",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -5055,8 +5853,8 @@
   "38495": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -5067,6 +5865,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5127,6 +5926,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "LA SONE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -5163,8 +5980,8 @@
   "38500": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -5175,6 +5992,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5235,6 +6053,24 @@
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "TECHE",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
      "id": "catastrophes-naturelles",
      "titre": "Catastrophes naturelles reconnues depuis 1982",
      "items": [
@@ -5282,8 +6118,8 @@
   "38523": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -5294,6 +6130,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5351,6 +6188,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "VARACIEUX",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -5418,8 +6273,8 @@
   "38526": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -5430,6 +6285,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5487,6 +6343,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "VATILIEU",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",
@@ -5586,8 +6460,8 @@
   "38559": {
    "mesures": {
     "ENV-01": {
-     "valeur": 0,
-     "unite": "risque recensé",
+     "valeur": 2,
+     "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
      "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -5598,6 +6472,7 @@
      ],
      "rubrique": "environnement",
      "sous_rubrique": "risques",
+     "ancre": "risques-recenses",
      "rang": 20,
      "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -5655,6 +6530,24 @@
     }
    },
    "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "risques",
+     "id": "risques-recenses",
+     "titre": "Risques identifiés sur la commune",
+     "items": [
+      {
+       "titre": "VINAY",
+       "details": {}
+      },
+      {
+       "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}, {'num_risque': '23', 'libelle_risque_long': 'Rupture de barrage', 'zone_sismicite': None}]",
+       "details": {}
+      }
+     ],
+     "lien": null,
+     "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
+    },
     {
      "rubrique": "environnement",
      "sous_rubrique": "risques",

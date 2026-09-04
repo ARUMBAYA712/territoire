@@ -189,9 +189,145 @@
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
     },
+    "POP-20": {
+      "valeur": 19.0,
+      "unite": "%",
+      "nom": "Moins de 15 ans",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "ancre": "repartition-age",
+      "repere": "19 habitants sur 100",
+      "rang": 10,
+      "explication": "Part des moins de 15 ans. Un indicateur de renouvellement : il traduit la présence de familles avec enfants."
+    },
+    "POP-24": {
+      "valeur": 5.0,
+      "unite": "%",
+      "nom": "75 ans et plus",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "ancre": "repartition-age",
+      "repere": "5 habitants sur 100",
+      "rang": 15,
+      "explication": "Part des 75 ans et plus. Un indicateur de vieillissement, utile pour dimensionner services et équipements."
+    },
+    "POP-21": {
+      "valeur": 42.0,
+      "unite": "%",
+      "nom": "Part des femmes",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "repere": "42 femmes, 58 hommes",
+      "rang": 20,
+      "explication": "Part des femmes dans la population municipale."
+    },
+    "POP-22": {
+      "valeur": 44,
+      "unite": "ménages",
+      "nom": "Ménages",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "repere": "2.3 personnes par ménage en moyenne",
+      "rang": 30,
+      "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
+    },
+    "POP-23": {
+      "valeur": 31,
+      "unite": "familles",
+      "nom": "Familles",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
+    },
+    "LOG-01": {
+      "valeur": 76,
+      "unite": "logements",
+      "nom": "Logements",
+      "obtention": "natif",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "agregation": "somme",
+      "ancre": "composition-parc-logements",
+      "rang": 10,
+      "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
+    },
+    "LOG-02": {
+      "valeur": 1.3,
+      "unite": "%",
+      "nom": "Logements vacants",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "ancre": "composition-parc-logements",
+      "repere": "1 sur 76",
+      "rang": 20,
+      "explication": "Part des logements inoccupés. Une vacance élevée peut signaler un parc ancien ou un marché détendu ; quelques pour cent sont normaux et traduisent la rotation."
+    },
+    "LOG-03": {
+      "valeur": 39.5,
+      "unite": "%",
+      "nom": "Résidences secondaires",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "ancre": "composition-parc-logements",
+      "repere": "30 sur 76",
+      "rang": 30,
+      "explication": "Part des résidences secondaires et logements occasionnels. Un indicateur de pression touristique sur le logement."
+    },
+    "LOG-04": {
+      "valeur": 93.4,
+      "unite": "%",
+      "nom": "Maisons",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "repere": "71 sur 76",
+      "rang": 40,
+      "explication": "Part des maisons individuelles dans le parc, par opposition aux appartements."
+    },
+    "LOG-05": {
+      "valeur": 81.8,
+      "unite": "%",
+      "nom": "Propriétaires occupants",
+      "obtention": "recalculé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "repere": "36 résidences principales sur 44",
+      "rang": 50,
+      "explication": "Part des résidences principales occupées par leur propriétaire."
+    },
     "ENV-01": {
-      "valeur": 0,
-      "unite": "risque recensé",
+      "valeur": 2,
+      "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
       "source": "Géorisques — BRGM et ministère de la Transition écologique",
@@ -202,6 +338,7 @@
       ],
       "rubrique": "environnement",
       "sous_rubrique": "risques",
+      "ancre": "risques-recenses",
       "rang": 20,
       "explication": "Types de risques identifiés par l'État sur le territoire communal, qu'ils soient naturels ou technologiques."
     },
@@ -314,6 +451,124 @@
         }
       ],
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 12/05/2026."
+    },
+    {
+      "rubrique": "population",
+      "id": "repartition-age",
+      "titre": "Population par tranche d'âge — recensement 2022",
+      "items": [
+        {
+          "titre": "0 à 14 ans",
+          "details": {
+            "Habitants": "19",
+            "Part": "19.0 %"
+          }
+        },
+        {
+          "titre": "15 à 29 ans",
+          "details": {
+            "Habitants": "12",
+            "Part": "12.0 %"
+          }
+        },
+        {
+          "titre": "30 à 44 ans",
+          "details": {
+            "Habitants": "23",
+            "Part": "23.0 %"
+          }
+        },
+        {
+          "titre": "45 à 59 ans",
+          "details": {
+            "Habitants": "16",
+            "Part": "16.0 %"
+          }
+        },
+        {
+          "titre": "60 à 74 ans",
+          "details": {
+            "Habitants": "25",
+            "Part": "25.0 %"
+          }
+        },
+        {
+          "titre": "75 à 89 ans",
+          "details": {
+            "Habitants": "4",
+            "Part": "4.0 %"
+          }
+        },
+        {
+          "titre": "90 ans et plus",
+          "details": {
+            "Habitants": "1",
+            "Part": "1.0 %"
+          }
+        }
+      ],
+      "note": "Les tranches d'âge sont celles publiées par l'INSEE. Leur somme peut différer légèrement de la population municipale, les deux chiffres ne relevant pas du même traitement."
+    },
+    {
+      "rubrique": "urbanisme",
+      "id": "composition-parc-logements",
+      "titre": "Composition du parc de logements",
+      "items": [
+        {
+          "titre": "Résidences principales",
+          "details": {
+            "Logements": "44",
+            "Part": "57.9 %"
+          }
+        },
+        {
+          "titre": "Résidences secondaires",
+          "details": {
+            "Logements": "30",
+            "Part": "39.5 %"
+          }
+        },
+        {
+          "titre": "Logements vacants",
+          "details": {
+            "Logements": "1",
+            "Part": "1.3 %"
+          }
+        },
+        {
+          "titre": "Maisons",
+          "details": {
+            "Logements": "71",
+            "Part": "93.4 %"
+          }
+        },
+        {
+          "titre": "Appartements",
+          "details": {
+            "Logements": "3",
+            "Part": "3.9 %"
+          }
+        }
+      ],
+      "note": "Maisons et appartements se recoupent avec les catégories d'occupation : un même logement est compté dans les deux ensembles."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "id": "risques-recenses",
+      "titre": "Risques identifiés sur la commune",
+      "items": [
+        {
+          "titre": "PRESLES",
+          "details": {}
+        },
+        {
+          "titre": "[{'num_risque': '11', 'libelle_risque_long': 'Inondation', 'zone_sismicite': None}, {'num_risque': '112', 'libelle_risque_long': \"Par une crue à débordement lent de cours d'eau\", 'zone_sismicite': None}, {'num_risque': '116', 'libelle_risque_long': 'Par remontées de nappes naturelles', 'zone_sismicite': None}, {'num_risque': '12', 'libelle_risque_long': 'Mouvement de terrain', 'zone_sismicite': None}, {'num_risque': '121', 'libelle_risque_long': \"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)\", 'zone_sismicite': None}, {'num_risque': '123', 'libelle_risque_long': 'Eboulement ou chutes de pierres et de blocs', 'zone_sismicite': None}, {'num_risque': '124', 'libelle_risque_long': 'Glissement de terrain', 'zone_sismicite': None}, {'num_risque': '13', 'libelle_risque_long': 'Séisme', 'zone_sismicite': None}]",
+          "details": {}
+        }
+      ],
+      "lien": null,
+      "note": "Recensement établi par les services de l'État. La présence d'un risque ne signifie pas que l'ensemble de la commune y est exposé : consultez le document d'information communal en mairie."
     },
     {
       "rubrique": "environnement",

@@ -220,6 +220,14 @@ svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
 /* Noms de communes : cerclés d'un liseré pour rester lisibles au-dessus
    d'un fond de plan comme d'un aplat de couleur. Ils ne captent pas le
    pointeur, afin de ne pas gêner le survol ni les liens. */
+/* Points d'intérêt : établissements, équipements. Cerclés de la couleur
+   du fond pour rester visibles sur un aplat comme sur une photo. */
+svg.carte .c-point{fill:var(--link);stroke:var(--surface);stroke-width:1.6;
+  cursor:help}
+svg.carte .c-point.second{fill:var(--mark)}
+svg.carte .c-point:hover{stroke:var(--ink);stroke-width:2.2}
+.carte-cadre[data-fond="photo"] svg.carte .c-point{stroke:#fff;stroke-width:2}
+
 svg.carte .c-noms{pointer-events:none}
 svg.carte .c-nom{fill:var(--ink);font-family:var(--font-body);font-weight:500;
   paint-order:stroke;stroke:var(--surface);stroke-width:3;

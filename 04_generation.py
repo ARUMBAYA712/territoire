@@ -22,6 +22,7 @@ Utilisation :
 
 import hashlib
 import json
+import math
 import re
 import shutil
 import sys
@@ -278,6 +279,14 @@ svg.carte path.nd{fill:var(--sunken);stroke:var(--line)}
 /* Noms de communes : cerclés d'un liseré pour rester lisibles au-dessus
    d'un fond de plan comme d'un aplat de couleur. Ils ne captent pas le
    pointeur, afin de ne pas gêner le survol ni les liens. */
+/* Points d'intérêt : établissements, équipements. Cerclés de la couleur
+   du fond pour rester visibles sur un aplat comme sur une photo. */
+svg.carte .c-point{fill:var(--link);stroke:var(--surface);stroke-width:1.6;
+  cursor:help}
+svg.carte .c-point.second{fill:var(--mark)}
+svg.carte .c-point:hover{stroke:var(--ink);stroke-width:2.2}
+.carte-cadre[data-fond="photo"] svg.carte .c-point{stroke:#fff;stroke-width:2}
+
 svg.carte .c-noms{pointer-events:none}
 svg.carte .c-nom{fill:var(--ink);font-family:var(--font-body);font-weight:500;
   paint-order:stroke;stroke:var(--surface);stroke-width:3;
@@ -543,11 +552,15 @@ JS = """
   }catch(err){ couches = null; }
 
   function formeDe(cible){
-    return cible.closest ? cible.closest('path') : null;
+    return cible.closest ? cible.closest('path, circle') : null;
   }
 
   function contenu(forme){
     var nom = forme.getAttribute('data-nom') || '';
+    var info = forme.getAttribute('data-info');
+    // un point d'intérêt porte son propre complément, indépendant de la
+    // donnée choisie pour colorer la carte
+    if(info !== null) return '<b>' + nom + '</b><i>' + info + '</i>';
     if(!couches || !active) return '<b>' + nom + '</b>';
     var code = forme.getAttribute('data-code');
     var c = couches.couches[active];
@@ -880,7 +893,7 @@ RUBRIQUES = [
     {"id": "geographie", "nom": "Géographie", "prefixes": ["GEO"],
      "prevue": True},
 
-    {"id": "urbanisme", "nom": "Urbanisme", "prefixes": ["URB"],
+    {"id": "urbanisme", "nom": "Urbanisme", "prefixes": ["URB", "LOG"],
      "prevue": True},
 
     {"id": "environnement", "nom": "Environnement",
@@ -894,6 +907,9 @@ RUBRIQUES = [
      ]},
 
     {"id": "education", "nom": "Éducation", "prefixes": ["EDU"],
+     "prevue": True},
+
+    {"id": "equipements", "nom": "Équipements", "prefixes": ["EQU"],
      "prevue": True},
 
     {"id": "transports", "nom": "Transports", "prefixes": ["TRA"],
@@ -1194,11 +1210,71 @@ def choix_fond(grille):
             f'aria-label="Fond de plan">{boutons}{noms}</div>', credits)
 
 
-def enrober_carte(svg, chemin_grille):
+def mercator(lon, lat, zoom):
+    """Coordonnées en pixels dans la projection des tuiles.
+
+    Reprise de 05_cartes.py : le dessin et les tuiles partagent cette
+    projection, donc un point placé ainsi tombe exactement au bon
+    endroit, fond de plan affiché ou non.
+    """
+    n = 256 * (2 ** zoom)
+    x = (lon + 180.0) / 360.0 * n
+    phi = math.radians(max(-85.05, min(85.05, lat)))
+    y = (1.0 - math.log(math.tan(phi) + 1.0 / math.cos(phi)) / math.pi) / 2.0 * n
+    return x, y
+
+
+def origine(grille):
+    """Retrouve le coin haut-gauche du dessin, en pixels de projection.
+
+    La grille ne l'enregistre pas, mais la première tuile suffit à le
+    déduire : sa position en pourcentage donne l'écart avec l'origine.
+    """
+    tuiles = grille.get("tuiles") or []
+    if not tuiles:
+        return None
+    premiere = tuiles[0]
+    x0 = premiere["x"] * 256 - premiere["gauche"] / 100 * grille["largeur"]
+    y0 = premiere["y"] * 256 - premiere["haut"] / 100 * grille["hauteur"]
+    return x0, y0
+
+
+def couche_points(points, grille):
+    """Points d'intérêt superposés au dessin du territoire."""
+    if not points or not grille:
+        return ""
+    repere = origine(grille)
+    if not repere:
+        return ""
+    x0, y0 = repere
+    rayon = max(3.5, grille["largeur"] / 190)
+
+    cercles = []
+    for pt in points:
+        try:
+            x, y = mercator(float(pt["lon"]), float(pt["lat"]), grille["zoom"])
+        except (TypeError, ValueError, KeyError):
+            continue
+        cx, cy = x - x0, y - y0
+        if not (0 <= cx <= grille["largeur"] and 0 <= cy <= grille["hauteur"]):
+            continue
+        classe = "c-point " + escape(str(pt.get("categorie") or "autre"))
+        cercles.append(
+            f'<circle class="{classe}" cx="{cx:.1f}" cy="{cy:.1f}" '
+            f'r="{rayon:.1f}" data-nom="{escape(str(pt.get("nom") or ""))}" '
+            f'data-info="{escape(str(pt.get("info") or ""))}"/>')
+
+    return f'<g class="c-points">{"".join(cercles)}</g>' if cercles else ""
+
+
+def enrober_carte(svg, chemin_grille, points=None):
     """Place le dessin dans un cadre pouvant recevoir un fond de plan."""
     if not chemin_grille.exists():
         return f'<div class="carte-cadre">{svg}</div>'
     grille = json.loads(chemin_grille.read_text(encoding="utf-8"))
+    marqueurs = couche_points(points, grille)
+    if marqueurs:
+        svg = svg.replace("</svg>", marqueurs + "</svg>")
     selecteur, credits = choix_fond(grille)
     proportion = f"{grille['largeur']} / {grille['hauteur']}"
     return (f'{selecteur}'
@@ -1207,7 +1283,8 @@ def enrober_carte(svg, chemin_grille):
             f'<p class="carte-credits">{credits}</p>')
 
 
-def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
+def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None,
+               points=None):
     """Insère la carte du territoire si elle a été produite par 05_cartes.py.
 
     Le SVG est intégré dans la page plutôt qu'appelé en image : il hérite
@@ -1235,7 +1312,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
         return f'<a href="{base}/{cible}" aria-label="{nom}">{forme}</a>' 
 
     svg = MOTIF_FORME.sub(relier, fichier.read_text(encoding="utf-8"))
-    svg = enrober_carte(svg, fichier.with_suffix(".json"))
+    svg = enrober_carte(svg, fichier.with_suffix(".json"), points)
 
     if not carte:
         legende = ("Situation dans le territoire — cliquez une commune "
@@ -1262,7 +1339,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None):
           {legende_carte(carte)}
         </div>
       </div>
-      <p class="carte-legende">Survolez une commune pour lire sa valeur,
+      <p class="carte-legende">Survolez une commune ou un point pour lire sa valeur,
          cliquez pour ouvrir sa fiche. Les nuances sont réparties en cinq
          groupes d'effectifs comparables.</p>
       <script type="application/json" id="carte-donnees">{charge}</script>
@@ -1404,6 +1481,12 @@ def page(d, base, canonique, adresses, fiches, rubrique,
         if destination:
             renvois[ancre] = destination
 
+    # Points d'intérêt des blocs présents sur cette page : ils se
+    # superposent à la carte du territoire.
+    points = []
+    for b in blocs_de(d, rubrique, sous):
+        points.extend(b.get("points") or [])
+
     # Les indicateurs mis en avant forment un bandeau à part, au-dessus
     # de la grille ordinaire.
     bandeaux = {k: v for k, v in mesures.items() if v.get("mise_en_avant")}
@@ -1488,7 +1571,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 {chr(10).join(carte(k, v, renvois) for k, v in ordinaires.items())}
     </div>
 {bloc_liste(d, rubrique, sous)}
-{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous)}
+{bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous, points)}
 </div></main>
 
 <footer class="site"><div class="wrap">

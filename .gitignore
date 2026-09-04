@@ -1,0 +1,41 @@
+# .gitignore — portail territorial
+#
+# Ce qui n'a pas sa place dans le dépôt : les fichiers volumineux qui se
+# régénèrent, les caches de travail, et tout secret éventuel.
+#
+# Rappel : un fichier déjà validé reste dans l'historique même après
+# suppression. Si l'un d'eux a été ajouté par erreur, retirez-le de
+# l'index avant de valider :
+#     git rm --cached data/dossier-complet.zip
+
+# ── Fichiers sources volumineux, retéléchargeables ──
+data/dossier-complet.zip
+data/cache-population.csv
+data/contours.json
+data/*.zip
+
+# ── Caches de collecte : régénérés par les collecteurs ──
+# À conserver si vous voulez éviter de resolliciter les serveurs à
+# chaque installation sur une nouvelle machine ; à ignorer si vous
+# préférez un dépôt léger. Décommentez selon votre choix.
+# data/mesures-*.json
+# data/referentiel-communes.json
+
+# ── Secrets ──
+# Toute clé d'API, y compris celle de l'INSEE si elle vous est accordée.
+secrets.json
+*.key
+.env
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── Système et éditeurs ──
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-04",
- "version": 1,
+ "version": 4,
  "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
  "licence": "Licence Ouverte 2.0",
  "frequence": "annuelle",
@@ -20,6 +20,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -44,11 +59,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Place du Champ de Mars",
-        "Téléphone": "0476647283"
+        "Téléphone": "0476647283",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.224344,
+       "lon": 5.44078,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -94,11 +119,20 @@
       {
        "titre": "Ecole Primaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "730 route du Vercors",
         "Téléphone": "0476360646"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Primaire Publique",
+       "lat": 45.063281,
+       "lon": 5.30097,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -120,6 +154,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -144,11 +193,21 @@
       {
        "titre": "Ecole Primaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "28 chemin de l'école",
-        "Téléphone": "0476366943"
+        "Téléphone": "0476366943",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Primaire Publique",
+       "lat": 45.192099,
+       "lon": 5.39092,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -179,6 +238,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 1,
      "unite": "école",
@@ -202,11 +276,21 @@
       {
        "titre": "Ecole primaire Le Village",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476647255"
+        "Téléphone": "0476647255",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Le Village",
+       "lat": 45.24477,
+       "lon": 5.44879,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -228,6 +312,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -252,11 +351,21 @@
       {
        "titre": "Ecole Elementaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476642629"
+        "Téléphone": "0476642629",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Elementaire Publique",
+       "lat": 45.25581,
+       "lon": 5.33832,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -282,6 +391,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 4,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 4 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 2,
@@ -319,10 +443,11 @@
       {
        "titre": "Collège Olympe de Gouges",
        "details": {
-        "Type": "Collège",
+        "Type": "College",
         "Statut": "Public",
         "Adresse": "310 avenue du collège",
-        "Téléphone": "04 76 36 04 00"
+        "Téléphone": "04 76 36 04 00",
+        "Services": "restauration"
        },
        "lien": {
         "url": "https://degouges-isere.ent.auvergnerhonealpes.fr/",
@@ -332,29 +457,62 @@
       {
        "titre": "Ecole maternelle Les Chatons",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "Place du Champ de Mars",
-        "Téléphone": "0476383987"
+        "Téléphone": "0476383987",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire Léa Blain",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "146 place DU CHAMP DE MARS",
-        "Téléphone": "0476381941"
+        "Téléphone": "0476381941",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Maison Familiale Rurale de Chatte",
        "details": {
-        "Type": "Autre",
+        "Type": "Maison familiale rurale education orient",
         "Statut": "Privé",
         "Adresse": "387 route De Saint Marcellin",
-        "Téléphone": "0476384306"
+        "Téléphone": "0476384306",
+        "Services": "restauration, internat"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Collège Olympe de Gouges",
+       "lat": 45.139456,
+       "lon": 5.29169,
+       "info": "Collège",
+       "categorie": "second"
+      },
+      {
+       "nom": "Maison Familiale Rurale de Chatte",
+       "lat": 45.146094,
+       "lon": 5.302294,
+       "info": "Autre",
+       "categorie": "autre"
+      },
+      {
+       "nom": "Ecole primaire Léa Blain",
+       "lat": 45.141967,
+       "lon": 5.283235,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole maternelle Les Chatons",
+       "lat": 45.141873,
+       "lon": 5.28377,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -376,6 +534,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -400,11 +573,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476641220"
+        "Téléphone": "0476641220",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.187448,
+       "lon": 5.289901,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -431,6 +614,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 1,
      "unite": "école",
@@ -454,11 +652,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "103 RUE DU 29 JANVIER 1944",
-        "Téléphone": "0476381695"
+        "Téléphone": "0476381695",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.171612,
+       "lon": 5.41245,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -480,6 +688,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -504,11 +727,21 @@
       {
        "titre": "Ecole Primaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "4 route des Ecoles",
-        "Téléphone": "0476354443"
+        "Téléphone": "0476354443",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Primaire Publique",
+       "lat": 45.267498,
+       "lon": 5.44894,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -530,6 +763,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -554,11 +802,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "159 rue de la collandière",
-        "Téléphone": "0476384056"
+        "Téléphone": "0476384056",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.145832,
+       "lon": 5.376509,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -585,6 +843,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 1,
      "unite": "école",
@@ -608,11 +881,21 @@
       {
        "titre": "Ecole élémentaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Le village",
-        "Téléphone": "0476364567"
+        "Téléphone": "0476364567",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole élémentaire",
+       "lat": 45.14171,
+       "lon": 5.19282,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -634,6 +917,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -658,11 +956,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476936390"
+        "Téléphone": "0476936390",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.261554,
+       "lon": 5.564979,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -684,6 +992,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -708,11 +1031,21 @@
       {
        "titre": "Ecole Elementaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "4 place Joseph Garavel",
-        "Téléphone": "0476077096"
+        "Téléphone": "0476077096",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Elementaire Publique",
+       "lat": 45.28529,
+       "lon": 5.45345,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -734,6 +1067,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -758,11 +1106,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476642238"
+        "Téléphone": "0476642238",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.212918,
+       "lon": 5.314409,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -784,6 +1142,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 4 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 2,
@@ -821,16 +1194,17 @@
       {
        "titre": "Collège privé Saint Joseph",
        "details": {
-        "Type": "Collège",
+        "Type": "College",
         "Statut": "Privé",
         "Adresse": "110 chemin DES PLANTEES",
-        "Téléphone": "0476642411"
+        "Téléphone": "0476642411",
+        "Services": "restauration, internat"
        }
       },
       {
        "titre": "Ecole secondaire privée Saint Joseph",
        "details": {
-        "Type": "Lycée",
+        "Type": "Lycee d enseignement general",
         "Statut": "Privé",
         "Adresse": "110 chemin Des plantées",
         "Téléphone": "0476642411"
@@ -839,20 +1213,51 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "235 route de Vinay",
-        "Téléphone": "0476642660"
+        "Téléphone": "0476642660",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire privée St-Joseph",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Privé",
         "Adresse": "110 chemin des plantées",
         "Téléphone": "0476642411"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Collège privé Saint Joseph",
+       "lat": 45.249989,
+       "lon": 5.36298,
+       "info": "Collège",
+       "categorie": "second"
+      },
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.257978,
+       "lon": 5.37423,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole primaire privée St-Joseph",
+       "lat": 45.251189,
+       "lon": 5.36529,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole secondaire privée Saint Joseph",
+       "lat": 45.250449,
+       "lon": 5.360617,
+       "info": "Lycée",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -875,46 +1280,10 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
-    "EDU-03": {
-     "valeur": 1,
-     "unite": "école",
-     "nom": "Premier degré",
-     "obtention": "natif",
-     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "education",
-     "agregation": "somme",
-     "rang": 30,
-     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
-    }
-   },
-   "blocs": [
-    {
-     "rubrique": "education",
-     "id": "etablissements-scolaires",
-     "titre": "Établissements de la commune",
-     "items": [
-      {
-       "titre": "Ecole primaire",
-       "details": {
-        "Type": "Ecole",
-        "Statut": "Public",
-        "Adresse": "LE VILLAGE",
-        "Téléphone": "0476366605"
-       }
-      }
-     ],
-     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
-    }
-   ]
-  },
-  "38310": {
-   "mesures": {
-    "EDU-01": {
+    "EDU-02": {
      "valeur": 1,
      "unite": "établissement",
-     "nom": "Établissements scolaires",
+     "nom": "Restauration scolaire",
      "obtention": "natif",
      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
      "licence": "Licence Ouverte 2.0",
@@ -922,8 +1291,9 @@
      "rubrique": "education",
      "agregation": "somme",
      "ancre": "etablissements-scolaires",
-     "rang": 10,
-     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -948,11 +1318,96 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
+        "Statut": "Public",
+        "Adresse": "LE VILLAGE",
+        "Téléphone": "0476366605",
+        "Services": "restauration"
+       }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.239037,
+       "lon": 5.40567,
+       "info": "Ecole",
+       "categorie": "premier"
+      }
+     ],
+     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "EDU-01": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Établissements scolaires",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "rang": 10,
+     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
+    "EDU-03": {
+     "valeur": 1,
+     "unite": "école",
+     "nom": "Premier degré",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "rang": 30,
+     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "education",
+     "id": "etablissements-scolaires",
+     "titre": "Établissements de la commune",
+     "items": [
+      {
+       "titre": "Ecole primaire",
+       "details": {
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "6 place du Docteur Valois",
-        "Téléphone": "0967494363"
+        "Téléphone": "0967494363",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.249375,
+       "lon": 5.471928,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -974,6 +1429,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 2 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1011,10 +1481,11 @@
       {
        "titre": "Collège Raymond Guelen",
        "details": {
-        "Type": "Collège",
+        "Type": "College",
         "Statut": "Public",
         "Adresse": "23 montée du collège",
-        "Téléphone": "04 76 36 02 08"
+        "Téléphone": "04 76 36 02 08",
+        "Services": "restauration, internat"
        },
        "lien": {
         "url": "https://college-raymond-guelen-pont-en-royans.web.ac-grenoble.fr/",
@@ -1024,11 +1495,28 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "1 allée des écoles",
-        "Téléphone": "0975472643"
+        "Téléphone": "0975472643",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.062161,
+       "lon": 5.343367,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Collège Raymond Guelen",
+       "lat": 45.064219,
+       "lon": 5.34223,
+       "info": "Collège",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1059,6 +1547,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 2 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 2,
      "unite": "écoles",
@@ -1082,20 +1585,38 @@
       {
        "titre": "ECOLE PRIMAIRE PUBLIQUE La Balme",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "91 chemin des Gondrans",
-        "Téléphone": "0476389875"
+        "Téléphone": "0476389875",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire Le Village",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "411 rue de la mairie",
-        "Téléphone": "0476389652"
+        "Téléphone": "0476389652",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "ECOLE PRIMAIRE PUBLIQUE La Balme",
+       "lat": 45.088739,
+       "lon": 5.46704,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole primaire Le Village",
+       "lat": 45.104155,
+       "lon": 5.472941,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1117,6 +1638,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1141,11 +1677,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Le village",
-        "Téléphone": "0476936023"
+        "Téléphone": "0476936023",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.23484,
+       "lon": 5.50715,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1167,6 +1713,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1191,11 +1752,21 @@
       {
        "titre": "Ecole Primaire Publique",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "216   LE VILLAGE",
-        "Téléphone": "0476647275"
+        "Téléphone": "0476647275",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole Primaire Publique",
+       "lat": 45.202189,
+       "lon": 5.46119,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1217,6 +1788,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1241,11 +1827,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE BOURG",
-        "Téléphone": "0476360458"
+        "Téléphone": "0476360458",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.086252,
+       "lon": 5.33883,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1267,6 +1863,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1291,11 +1902,21 @@
       {
        "titre": "Ecole primaire des Tilleuls",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Rue de la Ménagerie",
-        "Téléphone": "0476364425"
+        "Téléphone": "0476364425",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire des Tilleuls",
+       "lat": 45.173916,
+       "lon": 5.21909,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1318,46 +1939,10 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
-    "EDU-03": {
-     "valeur": 1,
-     "unite": "école",
-     "nom": "Premier degré",
-     "obtention": "natif",
-     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "education",
-     "agregation": "somme",
-     "rang": 30,
-     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
-    }
-   },
-   "blocs": [
-    {
-     "rubrique": "education",
-     "id": "etablissements-scolaires",
-     "titre": "Établissements de la commune",
-     "items": [
-      {
-       "titre": "Ecole primaire",
-       "details": {
-        "Type": "Ecole",
-        "Statut": "Public",
-        "Adresse": "35 route de Montluisant",
-        "Téléphone": "0476641811"
-       }
-      }
-     ],
-     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
-    }
-   ]
-  },
-  "38370": {
-   "mesures": {
-    "EDU-01": {
+    "EDU-02": {
      "valeur": 1,
      "unite": "établissement",
-     "nom": "Établissements scolaires",
+     "nom": "Restauration scolaire",
      "obtention": "natif",
      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
      "licence": "Licence Ouverte 2.0",
@@ -1365,8 +1950,9 @@
      "rubrique": "education",
      "agregation": "somme",
      "ancre": "etablissements-scolaires",
-     "rang": 10,
-     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1391,11 +1977,96 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
+        "Statut": "Public",
+        "Adresse": "35 route de Montluisant",
+        "Téléphone": "0476641811",
+        "Services": "restauration"
+       }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.188608,
+       "lon": 5.26308,
+       "info": "Ecole",
+       "categorie": "premier"
+      }
+     ],
+     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "EDU-01": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Établissements scolaires",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "rang": 10,
+     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
+    "EDU-03": {
+     "valeur": 1,
+     "unite": "école",
+     "nom": "Premier degré",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "rang": 30,
+     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "education",
+     "id": "etablissements-scolaires",
+     "titre": "Établissements de la commune",
+     "items": [
+      {
+       "titre": "Ecole primaire",
+       "details": {
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0438901755"
+        "Téléphone": "0438901755",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.125501,
+       "lon": 5.231351,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1417,6 +2088,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1441,11 +2127,21 @@
       {
        "titre": "Ecole maternelle",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "200 route des Ecoles",
-        "Téléphone": "0476647887"
+        "Téléphone": "0476647887",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.201464,
+       "lon": 5.479049,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1467,6 +2163,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1491,11 +2202,21 @@
       {
        "titre": "Ecole primaire Le Village",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "140 rue des marronniers",
-        "Téléphone": "0438902601"
+        "Téléphone": "0438902601",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Le Village",
+       "lat": 45.09986,
+       "lon": 5.24783,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1517,6 +2238,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 2 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 2,
@@ -1541,20 +2277,38 @@
       {
        "titre": "Ecole maternelle",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "33 rue de l'Aubertière",
-        "Téléphone": "0604049862"
+        "Téléphone": "0604049862",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "54 grande rue",
-        "Téléphone": "0475484543"
+        "Téléphone": "0475484543",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.074246,
+       "lon": 5.28338,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.074246,
+       "lon": 5.28338,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1576,6 +2330,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1600,11 +2369,21 @@
       {
        "titre": "Ecole primaire Robert Desnos",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "35 rue de la Mairie",
-        "Téléphone": "0476645015"
+        "Téléphone": "0476645015",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Robert Desnos",
+       "lat": 45.087726,
+       "lon": 5.20087,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1627,6 +2406,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 9,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 11 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 6,
      "unite": "écoles",
@@ -1641,7 +2435,7 @@
      "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
     },
     "EDU-04": {
-     "valeur": 4,
+     "valeur": 3,
      "unite": "établissements",
      "nom": "Second degré",
      "obtention": "natif",
@@ -1663,10 +2457,11 @@
       {
        "titre": "Collège le Savouret",
        "details": {
-        "Type": "Collège",
+        "Type": "College",
         "Statut": "Public",
         "Adresse": "Avenue de la Saulaie",
-        "Téléphone": "04 76 38 15 96"
+        "Téléphone": "04 76 38 15 96",
+        "Services": "restauration, dispositif ULIS, SEGPA"
        },
        "lien": {
         "url": "https://savouret-isere.ent.auvergnerhonealpes.fr/",
@@ -1676,10 +2471,11 @@
       {
        "titre": "Lycée d'enseignement agricole privé Bellevue",
        "details": {
-        "Type": "Lycée",
+        "Type": "Lycee professionnel",
         "Statut": "Privé",
         "Adresse": "4 rue des Recollets",
-        "Téléphone": "04 76 38 20 17"
+        "Téléphone": "04 76 38 20 17",
+        "Services": "restauration, internat, apprentissage"
        },
        "lien": {
         "url": "https://lycee-bellevue.fr",
@@ -1689,10 +2485,11 @@
       {
        "titre": "Lycée polyvalent La Saulaie",
        "details": {
-        "Type": "Lycée",
+        "Type": "Lycee polyvalent",
         "Statut": "Public",
         "Adresse": "La Saulaie",
-        "Téléphone": "04 76 64 06 06"
+        "Téléphone": "04 76 64 06 06",
+        "Services": "restauration, internat"
        },
        "lien": {
         "url": "https://lasaulaie.ent.auvergnerhonealpes.fr/",
@@ -1700,75 +2497,161 @@
        }
       },
       {
-       "titre": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
-       "details": {
-        "Type": "Collège",
-        "Statut": "Public",
-        "Adresse": "AVENUE DE LA SAULAIE",
-        "Téléphone": "0476381596"
-       }
-      },
-      {
        "titre": "Ecole maternelle Centre",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "1  BOULEVARD DU CHAMP DE MARS",
-        "Téléphone": "0476382141"
+        "Téléphone": "0476382141",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole maternelle Le Stade",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "31 avenue Docteur Carrier",
-        "Téléphone": "0476384019"
+        "Téléphone": "0476384019",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire Centre",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "9 boulevard Gambetta",
-        "Téléphone": "0476380802"
+        "Téléphone": "0476380802",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire La Plaine",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "6 rue de la Plaine",
-        "Téléphone": "0476383596"
+        "Téléphone": "0476383596",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire Le Stade",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "29 avenue du Docteur Carrier",
-        "Téléphone": "0476383550"
+        "Téléphone": "0476383550",
+        "Services": "restauration, dispositif ULIS"
        }
       },
       {
        "titre": "Ecole primaire privée Le Dauphin",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Privé",
         "Adresse": "5 rue des Dauphins",
-        "Téléphone": "0476382826"
+        "Téléphone": "0476382826",
+        "Services": "dispositif ULIS"
        }
       },
       {
        "titre": "Circonscription d'inspection du 1er degré de Saint Marcellin",
        "details": {
-        "Type": "Service Administratif",
+        "Type": "Circonscriptions inspection educ nat",
         "Adresse": "2 avenue du Collège",
         "Téléphone": "0476382056"
        }
+      },
+      {
+       "titre": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
+       "details": {
+        "Type": "Section enseignt gen. et prof. adapte",
+        "Statut": "Public",
+        "Adresse": "AVENUE DE LA SAULAIE",
+        "Téléphone": "0476381596",
+        "Services": "restauration"
+       }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Le Stade",
+       "lat": 45.150796,
+       "lon": 5.3139,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
+       "lat": 45.15765,
+       "lon": 5.31767,
+       "info": "Collège",
+       "categorie": "autre"
+      },
+      {
+       "nom": "Ecole primaire Centre",
+       "lat": 45.152406,
+       "lon": 5.32117,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Collège le Savouret",
+       "lat": 45.158639,
+       "lon": 5.31907,
+       "info": "Collège",
+       "categorie": "second"
+      },
+      {
+       "nom": "Ecole primaire privée Le Dauphin",
+       "lat": 45.152952,
+       "lon": 5.32381,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Circonscription d'inspection du 1er degré de Saint Marcellin",
+       "lat": 45.154268,
+       "lon": 5.320337,
+       "info": "Service Administratif",
+       "categorie": "autre"
+      },
+      {
+       "nom": "Ecole maternelle Le Stade",
+       "lat": 45.15102,
+       "lon": 5.31423,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole maternelle Centre",
+       "lat": 45.153239,
+       "lon": 5.31875,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Lycée polyvalent La Saulaie",
+       "lat": 45.15765,
+       "lon": 5.31767,
+       "info": "Lycée",
+       "categorie": "second"
+      },
+      {
+       "nom": "Ecole primaire La Plaine",
+       "lat": 45.148222,
+       "lon": 5.319721,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Lycée d'enseignement agricole privé Bellevue",
+       "lat": 45.157108,
+       "lon": 5.321999,
+       "info": "Lycée",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1791,6 +2674,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 1,
      "unite": "école",
@@ -1814,11 +2712,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE BOURG",
-        "Téléphone": "0476384852"
+        "Téléphone": "0476384852",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.121581,
+       "lon": 5.36182,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1841,55 +2749,10 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
-    "EDU-03": {
-     "valeur": 2,
-     "unite": "écoles",
-     "nom": "Premier degré",
-     "obtention": "natif",
-     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "education",
-     "agregation": "somme",
-     "rang": 30,
-     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
-    }
-   },
-   "blocs": [
-    {
-     "rubrique": "education",
-     "id": "etablissements-scolaires",
-     "titre": "Établissements de la commune",
-     "items": [
-      {
-       "titre": "Ecole maternelle",
-       "details": {
-        "Type": "Ecole",
-        "Statut": "Public",
-        "Adresse": "440 rue du Vercors",
-        "Téléphone": "0476936573"
-       }
-      },
-      {
-       "titre": "Ecole primaire Louis Pergaud",
-       "details": {
-        "Type": "Ecole",
-        "Statut": "Public",
-        "Adresse": "441 rue du Vercors",
-        "Téléphone": "0476936051"
-       }
-      }
-     ],
-     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
-    }
-   ]
-  },
-  "38453": {
-   "mesures": {
-    "EDU-01": {
+    "EDU-02": {
      "valeur": 2,
      "unite": "établissements",
-     "nom": "Établissements scolaires",
+     "nom": "Restauration scolaire",
      "obtention": "natif",
      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
      "licence": "Licence Ouverte 2.0",
@@ -1897,8 +2760,9 @@
      "rubrique": "education",
      "agregation": "somme",
      "ancre": "etablissements-scolaires",
-     "rang": 10,
-     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+     "repere": "sur 2 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 2,
@@ -1923,20 +2787,130 @@
       {
        "titre": "Ecole maternelle",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
+        "Statut": "Public",
+        "Adresse": "440 rue du Vercors",
+        "Téléphone": "0476936573",
+        "Services": "restauration"
+       }
+      },
+      {
+       "titre": "Ecole primaire Louis Pergaud",
+       "details": {
+        "Type": "Ecole de niveau elementaire",
+        "Statut": "Public",
+        "Adresse": "441 rue du Vercors",
+        "Téléphone": "0476936051",
+        "Services": "restauration"
+       }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.280299,
+       "lon": 5.54275,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole primaire Louis Pergaud",
+       "lat": 45.280055,
+       "lon": 5.54357,
+       "info": "Ecole",
+       "categorie": "premier"
+      }
+     ],
+     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "EDU-01": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Établissements scolaires",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "rang": 10,
+     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 2,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 2 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
+    "EDU-03": {
+     "valeur": 2,
+     "unite": "écoles",
+     "nom": "Premier degré",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "rang": 30,
+     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "education",
+     "id": "etablissements-scolaires",
+     "titre": "Établissements de la commune",
+     "items": [
+      {
+       "titre": "Ecole maternelle",
+       "details": {
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "LE VILLAGE",
-        "Téléphone": "0476640509"
+        "Téléphone": "0476640509",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Le village",
-        "Téléphone": "0476383191"
+        "Téléphone": "0476383191",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.115068,
+       "lon": 5.32746,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.115068,
+       "lon": 5.32746,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1958,6 +2932,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -1982,11 +2971,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "LE BOURG",
-        "Téléphone": "0476380152"
+        "Téléphone": "0476380152",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.152756,
+       "lon": 5.33855,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2008,6 +3007,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -2032,11 +3046,21 @@
       {
        "titre": "Ecole primaire Alice Milliat",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "2 ter rue de l'église",
-        "Téléphone": "0476382496"
+        "Téléphone": "0476382496",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Alice Milliat",
+       "lat": 45.173441,
+       "lon": 5.33261,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2058,6 +3082,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -2082,11 +3121,21 @@
       {
        "titre": "Ecole primaire Les Marronniers",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "8 allée des Grands Prés",
-        "Téléphone": "0438900098"
+        "Téléphone": "0438900098",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire Les Marronniers",
+       "lat": 45.110762,
+       "lon": 5.27735,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2109,6 +3158,21 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
      "valeur": 1,
      "unite": "école",
@@ -2132,11 +3196,21 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Le village",
-        "Téléphone": "0476367282"
+        "Téléphone": "0476367282",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.182878,
+       "lon": 5.38094,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2159,46 +3233,10 @@
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
-    "EDU-03": {
-     "valeur": 1,
-     "unite": "école",
-     "nom": "Premier degré",
-     "obtention": "natif",
-     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "education",
-     "agregation": "somme",
-     "rang": 30,
-     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
-    }
-   },
-   "blocs": [
-    {
-     "rubrique": "education",
-     "id": "etablissements-scolaires",
-     "titre": "Établissements de la commune",
-     "items": [
-      {
-       "titre": "Ecole primaire",
-       "details": {
-        "Type": "Ecole",
-        "Statut": "Public",
-        "Adresse": "17 route Chambarans",
-        "Téléphone": "0476368323"
-       }
-      }
-     ],
-     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
-    }
-   ]
-  },
-  "38526": {
-   "mesures": {
-    "EDU-01": {
+    "EDU-02": {
      "valeur": 1,
      "unite": "établissement",
-     "nom": "Établissements scolaires",
+     "nom": "Restauration scolaire",
      "obtention": "natif",
      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
      "licence": "Licence Ouverte 2.0",
@@ -2206,8 +3244,9 @@
      "rubrique": "education",
      "agregation": "somme",
      "ancre": "etablissements-scolaires",
-     "rang": 10,
-     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 1,
@@ -2232,11 +3271,96 @@
       {
        "titre": "Ecole primaire",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
+        "Statut": "Public",
+        "Adresse": "17 route Chambarans",
+        "Téléphone": "0476368323",
+        "Services": "restauration"
+       }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.232124,
+       "lon": 5.337339,
+       "info": "Ecole",
+       "categorie": "premier"
+      }
+     ],
+     "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "EDU-01": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Établissements scolaires",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "rang": 10,
+     "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 1,
+     "unite": "établissement",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 1 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
+    "EDU-03": {
+     "valeur": 1,
+     "unite": "école",
+     "nom": "Premier degré",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "rang": 30,
+     "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "education",
+     "id": "etablissements-scolaires",
+     "titre": "Établissements de la commune",
+     "items": [
+      {
+       "titre": "Ecole primaire",
+       "details": {
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "Le village",
-        "Téléphone": "0476077518"
+        "Téléphone": "0476077518",
+        "Services": "restauration"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.256289,
+       "lon": 5.40993,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2258,6 +3382,21 @@
      "ancre": "etablissements-scolaires",
      "rang": 10,
      "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
+    },
+    "EDU-02": {
+     "valeur": 3,
+     "unite": "établissements",
+     "nom": "Restauration scolaire",
+     "obtention": "natif",
+     "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "education",
+     "agregation": "somme",
+     "ancre": "etablissements-scolaires",
+     "repere": "sur 5 établissement(s)",
+     "rang": 20,
+     "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
      "valeur": 3,
@@ -2295,10 +3434,11 @@
       {
        "titre": "Collège Joseph Chassigneux",
        "details": {
-        "Type": "Collège",
+        "Type": "College",
         "Statut": "Public",
         "Adresse": "8 avenue Joseph Chassigneux",
-        "Téléphone": "04 76 36 92 05"
+        "Téléphone": "04 76 36 92 05",
+        "Services": "restauration, dispositif ULIS"
        },
        "lien": {
         "url": "https://chassigneux-isere.ent.auvergnerhonealpes.fr/",
@@ -2308,25 +3448,27 @@
       {
        "titre": "Ecole Elementaire Publique La Mayette",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Public",
         "Adresse": "3 avenue Paul Martinais",
-        "Téléphone": "0476367567"
+        "Téléphone": "0476367567",
+        "Services": "restauration, dispositif ULIS"
        }
       },
       {
        "titre": "Ecole maternelle",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole maternelle",
         "Statut": "Public",
         "Adresse": "12 avenue Brun Faulquier",
-        "Téléphone": "0476367551"
+        "Téléphone": "0476367551",
+        "Services": "restauration"
        }
       },
       {
        "titre": "Ecole primaire privée de la Providence",
        "details": {
-        "Type": "Ecole",
+        "Type": "Ecole de niveau elementaire",
         "Statut": "Privé",
         "Adresse": "4 rue de la Providence",
         "Téléphone": "0476366635"
@@ -2335,11 +3477,48 @@
       {
        "titre": "institut médico éducatif",
        "details": {
-        "Type": "Médico-social",
+        "Type": "Institut medico-educatif",
         "Statut": "Privé",
         "Adresse": "110  IMPASSE DE LA PISCINE",
         "Téléphone": "0476367287"
        }
+      }
+     ],
+     "points": [
+      {
+       "nom": "Ecole primaire privée de la Providence",
+       "lat": 45.209957,
+       "lon": 5.40416,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole Elementaire Publique La Mayette",
+       "lat": 45.208725,
+       "lon": 5.406051,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Collège Joseph Chassigneux",
+       "lat": 45.210015,
+       "lon": 5.40734,
+       "info": "Collège",
+       "categorie": "second"
+      },
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.208713,
+       "lon": 5.40538,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "institut médico éducatif",
+       "lat": 45.206889,
+       "lon": 5.40097,
+       "info": "Médico-social",
+       "categorie": "autre"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

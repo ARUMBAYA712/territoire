@@ -125,11 +125,15 @@
   }catch(err){ couches = null; }
 
   function formeDe(cible){
-    return cible.closest ? cible.closest('path') : null;
+    return cible.closest ? cible.closest('path, circle') : null;
   }
 
   function contenu(forme){
     var nom = forme.getAttribute('data-nom') || '';
+    var info = forme.getAttribute('data-info');
+    // un point d'intérêt porte son propre complément, indépendant de la
+    // donnée choisie pour colorer la carte
+    if(info !== null) return '<b>' + nom + '</b><i>' + info + '</i>';
     if(!couches || !active) return '<b>' + nom + '</b>';
     var code = forme.getAttribute('data-code');
     var c = couches.couches[active];

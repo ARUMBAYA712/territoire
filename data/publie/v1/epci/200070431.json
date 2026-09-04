@@ -294,6 +294,20 @@
       "rang": 10,
       "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
+    "EDU-02": {
+      "valeur": 58,
+      "unite": "établissement",
+      "nom": "Restauration scolaire",
+      "obtention": "agrégé",
+      "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "education",
+      "agregation": "somme",
+      "repere": "sur 1 établissement(s)",
+      "rang": 20,
+      "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
+    },
     "EDU-03": {
       "valeur": 53,
       "unite": "école",
@@ -307,8 +321,87 @@
       "rang": 30,
       "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
     },
+    "POP-22": {
+      "valeur": 19903,
+      "unite": "ménages",
+      "nom": "Ménages",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "repere": "2.5 personnes par ménage en moyenne",
+      "rang": 30,
+      "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
+    },
+    "POP-23": {
+      "valeur": 13231,
+      "unite": "familles",
+      "nom": "Familles",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "population",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
+    },
+    "LOG-01": {
+      "valeur": 22921,
+      "unite": "logements",
+      "nom": "Logements",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "urbanisme",
+      "agregation": "somme",
+      "rang": 10,
+      "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
+    },
+    "EQU-01": {
+      "valeur": 75,
+      "unite": "équipements",
+      "nom": "Commerces",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "rang": 10,
+      "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+    },
+    "EQU-02": {
+      "valeur": 201,
+      "unite": "équipements",
+      "nom": "Santé et action sociale",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "rang": 20,
+      "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+    },
+    "EQU-04": {
+      "valeur": 68,
+      "unite": "équipements",
+      "nom": "Services aux particuliers",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "rang": 40,
+      "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+    },
     "EDU-04": {
-      "valeur": 9,
+      "valeur": 8,
       "unite": "établissement",
       "nom": "Second degré",
       "obtention": "agrégé",
@@ -319,6 +412,19 @@
       "agregation": "somme",
       "rang": 40,
       "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
+    },
+    "EQU-03": {
+      "valeur": 16,
+      "unite": "équipements",
+      "nom": "Sport, loisir et culture",
+      "obtention": "agrégé",
+      "source": "INSEE — recensement de la population",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "equipements",
+      "agregation": "somme",
+      "rang": 30,
+      "explication": "Équipements sportifs, de loisir et de culture."
     },
     "EAU-20": {
       "valeur": "Sous les valeurs habituelles",
@@ -372,6 +478,24 @@
       "titre": "Stations de mesure des nappes",
       "items": [
         {
+          "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
+          "details": {
+            "Code BSS": "07714X0054/F",
+            "Commune": "Saint-Étienne-de-Saint-Geoirs",
+            "Distance du centre du territoire": "20 km",
+            "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
+            "Profondeur": "38.62 m",
+            "Altitude de la nappe": "362.59 m NGF",
+            "Dernière mesure": "03/09/2026",
+            "Mesures sur 5 ans": 1825
+          },
+          "etat": [
+            "Proche des valeurs habituelles",
+            "neutre"
+          ],
+          "texte": "Médiane des mois comparables : 38.47 m sur 148 relevés. Écart : +0.15 m."
+        },
+        {
           "titre": "Forage de Croix du platre — Vatilieu — station de référence",
           "details": {
             "Code BSS": "07725X0071/F3",
@@ -381,13 +505,13 @@
             "Profondeur": "41.32 m",
             "Altitude de la nappe": "568.68 m NGF",
             "Dernière mesure": "02/09/2026",
-            "Mesures sur 5 ans": 1825
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Sous les valeurs habituelles",
             "attention"
           ],
-          "texte": "Médiane des mois comparables : 40.75 m sur 148 relevés. Écart : +0.57 m."
+          "texte": "Médiane des mois comparables : 40.76 m sur 147 relevés. Écart : +0.56 m."
         },
         {
           "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -399,31 +523,13 @@
             "Profondeur": "7.67 m",
             "Altitude de la nappe": "249.55 m NGF",
             "Dernière mesure": "02/09/2026",
-            "Mesures sur 5 ans": 1790
+            "Mesures sur 5 ans": 1789
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 7.52 m sur 140 relevés. Écart : +0.15 m."
-        },
-        {
-          "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
-          "details": {
-            "Code BSS": "07714X0054/F",
-            "Commune": "Saint-Étienne-de-Saint-Geoirs",
-            "Distance du centre du territoire": "20 km",
-            "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-            "Profondeur": "38.61 m",
-            "Altitude de la nappe": "362.60 m NGF",
-            "Dernière mesure": "02/09/2026",
-            "Mesures sur 5 ans": 1825
-          },
-          "etat": [
-            "Proche des valeurs habituelles",
-            "neutre"
-          ],
-          "texte": "Médiane des mois comparables : 38.45 m sur 148 relevés. Écart : +0.16 m."
+          "texte": "Médiane des mois comparables : 7.52 m sur 139 relevés. Écart : +0.15 m."
         },
         {
           "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -431,16 +537,16 @@
             "Code BSS": "07951X0028/F",
             "Commune": "Châtillon-Saint-Jean",
             "Distance du centre du territoire": "21 km",
-            "Profondeur": "49.73 m",
-            "Altitude de la nappe": "240.84 m NGF",
-            "Dernière mesure": "01/09/2026",
+            "Profondeur": "49.72 m",
+            "Altitude de la nappe": "240.85 m NGF",
+            "Dernière mesure": "02/09/2026",
             "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.31 m."
+          "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +0.30 m."
         },
         {
           "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -452,7 +558,7 @@
             "Profondeur": "-0.15 m",
             "Altitude de la nappe": "986.15 m NGF",
             "Dernière mesure": "21/01/2026",
-            "Mesures sur 5 ans": 1598
+            "Mesures sur 5 ans": 1597
           },
           "etat": [
             "Proche des valeurs habituelles",
@@ -488,13 +594,13 @@
             "Profondeur": "1.30 m",
             "Altitude de la nappe": "798.70 m NGF",
             "Dernière mesure": "17/09/2022",
-            "Mesures sur 5 ans": 379
+            "Mesures sur 5 ans": 378
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 1.29 m sur 43 relevés. Écart : +0.01 m."
+          "texte": "Médiane des mois comparables : 1.29 m sur 42 relevés. Écart : +0.01 m."
         }
       ],
       "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."

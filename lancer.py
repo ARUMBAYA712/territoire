@@ -13,7 +13,11 @@ Utilisation :
     python lancer.py --tout       séquence entière, en recollectant tout
     python lancer.py --collecte   collecteurs, puis agrégation et site
     python lancer.py --site       régénère le site sans rien collecter
+    python lancer.py --initial    remise à niveau après installation, une fois
     python lancer.py --liste      affiche ce qui serait lancé, sans le lancer
+
+Pour éprouver un changement d'affichage, préférez --site : il ne sollicite
+aucun serveur public et régénère les pages en une seconde.
 """
 
 import subprocess
@@ -31,19 +35,9 @@ RACINE = Path(__file__).resolve().parent
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py bandeaux d'alerte compacts, renvois vers la page
-#                      portant le bloc, rubrique Éducation
-#   · 06_eau.py        réseaux classés du contrôle le plus récent au plus ancien
-#   · 07_vigieau.py    zones classées de la plus grave à la moins grave
-#   · 08_georisques.py dates des arrêtés, liens Légifrance par NOR,
-#                      bandeau de reconnaissance récente
-#   · 03_agregation.py les mesures des collecteurs peuvent remonter au
-#                      canton et à l'intercommunalité si elles le déclarent
-#   · 10_ecoles.py     NOUVEAU — établissements scolaires
-#   · 11_population.py NOUVEAU — population détaillée. Demande une mise en
-#                      route en trois commandes, voir LIVRAISON.md
-#   · durée mesurée de la chaîne complète : environ 8 min 30, plus les
-#     écoles, encore inconnues
+#   · 11_population.py équipements enfin reconnus : les colonnes portent
+#                      leur millésime dans leur nom, BPE_2024_A501 et non
+#                      NB_A501. Seul le millésime le plus récent est retenu.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -57,7 +51,19 @@ RACINE = Path(__file__).resolve().parent
 #     le réhabillage ne suffirait pas
 # ══════════════════════════════════════════════════════════════════
 
+# Usage courant : aucune option de recollecte. Chaque collecteur décide
+# lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
+# les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("11_population.py", []),
+    ("03_agregation.py", []),
+    ("04_generation.py", []),
+]
+
+# À ne lancer qu'une seule fois après l'installation de cette livraison :
+# la structure des blocs a changé dans 06, 07 et 08, et seul un nouveau
+# passage complet la reconstruit. Ensuite, revenez au plan courant.
+PLAN_INITIAL = [
     ("06_eau.py", ["--tout"]),
     ("07_vigieau.py", ["--tout"]),
     ("08_georisques.py", ["--tout"]),
@@ -100,6 +106,8 @@ def avec_option(etapes, option):
 
 
 PLANS = {
+    "--initial": ("remise à niveau après installation, une seule fois",
+                  PLAN_INITIAL),
     "--complet": ("séquence entière", COMPLET),
     "--tout": ("séquence entière, recollecte intégrale",
                REFERENTIEL + avec_option(COLLECTEURS, "--tout") + PUBLICATION),

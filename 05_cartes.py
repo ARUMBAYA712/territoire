@@ -39,14 +39,20 @@ API = "https://geo.api.gouv.fr"
 # Tolérance de simplification, en degrés (~0.0002 ≈ 20 m).
 # Plus la valeur est élevée, plus les fichiers sont légers et les
 # contours anguleux. 0.0003 est un bon compromis à cette échelle.
-TOLERANCE = 0.0003
+# Relevé sur les contours réels du Sud Grésivaudan : à 0.0003, chaque
+# carte pesait 45 Ko, soit autant ajouté à chacune des 381 pages. À
+# 0.0009 le tracé reste fidèle à l'échelle d'affichage, pour un poids
+# divisé par trois environ. La commune mise en évidence conserve un
+# tracé plus fin, elle seule justifie le détail.
+TOLERANCE = 0.0009
 
 TAILLE_TUILE = 256        # pixels, standard des tuiles cartographiques
 LARGEUR_CIBLE = 1400      # largeur maximale du dessin, en pixels
 HAUTEUR_CIBLE = 1000
 MARGE_RELATIVE = 0.06     # respiration autour du territoire
 TAILLE_NOM = 12           # taille des noms de communes, en unités du dessin
-SURFACE_MINIMALE = 900    # aire minimale pour mériter un nom, en pixels²
+SURFACE_MINIMALE = 500    # aire minimale pour mériter un nom, en pixels²
+SERRAGE = 0.86            # tolérance de chevauchement entre étiquettes
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -319,10 +325,13 @@ def etiquettes(contours, codes, code_evidence, projeter, grille):
 
     posees, sorties = [], []
     for c in candidats:
-        largeur_boite = len(c["nom"]) * taille * 0.5
+        # Les boîtes sont légèrement resserrées : une étiquette occupe
+        # moins de place que son rectangle théorique, et l'estimation
+        # large faisait sacrifier des noms qui tenaient en réalité.
+        largeur_boite = len(c["nom"]) * taille * 0.5 * SERRAGE
         boite = (c["x"] - largeur_boite / 2, c["y"] - hauteur_boite / 2,
                  c["x"] + largeur_boite / 2, c["y"] + hauteur_boite / 2)
-        if boite[0] < 0 or boite[2] > grille["largeur"]:
+        if boite[0] < -taille or boite[2] > grille["largeur"] + taille:
             continue
         if any(not (boite[2] < a[0] or boite[0] > a[2] or
                     boite[3] < a[1] or boite[1] > a[3]) for a in posees):
@@ -363,7 +372,7 @@ def carte(contours, codes_fond, code_evidence, titre):
 
     evidence = ""
     if code_evidence and code_evidence in contours:
-        d = tracer(contours[code_evidence]["contour"], projeter, TOLERANCE / 3)
+        d = tracer(contours[code_evidence]["contour"], projeter, TOLERANCE / 5)
         if d:
             nom = echapper(contours[code_evidence]["nom"])
             evidence = (f'<path class="c-ici" data-code="{code_evidence}" '

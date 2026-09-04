@@ -41,7 +41,7 @@ API = ("https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/"
 SOURCE = "Annuaire de l'éducation — ministère de l'Éducation nationale"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 1
+VERSION = 4
 RUBRIQUE = "education"
 SOUS_RUBRIQUE = None
 ANCRE = "etablissements-scolaires"
@@ -56,9 +56,8 @@ RANGS = {"EDU-01": 10, "EDU-02": 20, "EDU-03": 30, "EDU-04": 40}
 EXPLICATIONS = {
     "EDU-01": ("Écoles, collèges et lycées en activité, publics et privés "
                "confondus, implantés sur le territoire."),
-    "EDU-02": ("Effectif total déclaré par les établissements. Certains ne "
-               "renseignent pas ce champ : le total peut être inférieur à la "
-               "réalité."),
+    "EDU-02": ("Établissements proposant un service de restauration, "
+               "d'après l'annuaire de l'éducation."),
     "EDU-03": ("Nombre d'écoles maternelles et élémentaires, premier degré."),
     "EDU-04": ("Collèges et lycées, second degré. Leur absence sur une "
                "commune ne signifie pas que les élèves n'en fréquentent pas : "
@@ -131,6 +130,23 @@ def champ(enregistrement, *noms):
     return None
 
 
+def effectif(enregistrement):
+    """Nombre d'élèves, quel que soit le nom du champ.
+
+    L'annuaire ne nomme pas ce champ de la même façon selon les
+    millésimes. On retient le premier champ dont le nom évoque un
+    effectif et dont la valeur est un nombre plausible.
+    """
+    for cle, valeur in enregistrement.items():
+        nom = str(cle).lower()
+        if "eleve" not in nom and "élève" not in nom and "effectif" not in nom:
+            continue
+        n = entier(valeur)
+        if n and 0 < n < 20000:
+            return n
+    return None
+
+
 def entier(valeur):
     try:
         return int(float(str(valeur).replace(",", ".")))
@@ -176,8 +192,28 @@ PREMIER_DEGRE = ("ecole", "école", "maternelle", "elementaire", "élémentaire"
 SECOND_DEGRE = ("college", "collège", "lycee", "lycée")
 
 
-def degre(type_etablissement):
-    texte = str(type_etablissement or "").lower()
+def vrai(valeur):
+    """L'annuaire code ses indicateurs en 1 ou 0, parfois en texte."""
+    return str(valeur or "").strip().lower() in ("1", "true", "oui")
+
+
+def degre(etablissement):
+    """Premier ou second degré, d'après les indicateurs de l'annuaire.
+
+    Les champs voie_generale, voie_technologique et voie_professionnelle
+    ne sont renseignés que pour le second degré ; ecole_maternelle et
+    ecole_elementaire pour le premier. C'est plus sûr que d'interpréter
+    un libellé de type.
+    """
+    if any(vrai(etablissement.get(c)) for c in
+           ("voie_generale", "voie_technologique", "voie_professionnelle")):
+        return "second"
+    if any(vrai(etablissement.get(c)) for c in
+           ("ecole_maternelle", "ecole_elementaire")):
+        return "premier"
+
+    texte = str(champ(etablissement, "libelle_nature",
+                      "type_etablissement") or "").lower()
     if any(mot in texte for mot in SECOND_DEGRE):
         return "second"
     if any(mot in texte for mot in PREMIER_DEGRE):
@@ -189,33 +225,31 @@ def synthetiser(lot):
     """Construit indicateurs et bloc détaillé pour une commune."""
     if lot is None:
         return None
+
+    # L'annuaire conserve les établissements fermés : les publier
+    # ferait croire à une offre qui n'existe plus.
+    lot = [e for e in (lot or [])
+           if str(champ(e, "etat") or "OUVERT").upper().startswith("OUVERT")]
     if not lot:
         return {"mesures": {}, "blocs": []}
 
     premier = sum(1 for e in lot
-                  if degre(champ(e, "type_etablissement")) == "premier")
+                  if degre(e) == "premier")
     second = sum(1 for e in lot
-                 if degre(champ(e, "type_etablissement")) == "second")
+                 if degre(e) == "second")
 
-    effectifs = [entier(champ(e, "nombre_d_eleves", "nombre_eleves"))
-                 for e in lot]
-    effectifs = [n for n in effectifs if n]
-    total_eleves = sum(effectifs) if effectifs else None
+    restauration = sum(1 for e in lot if vrai(e.get("restauration")))
 
     mesures = {
         "EDU-01": mesure(len(lot), pluriel(len(lot), "établissement"),
                          "Établissements scolaires",
                          agregation="somme", ancre=ANCRE),
     }
-    if total_eleves:
+    if restauration:
         mesures["EDU-02"] = mesure(
-            total_eleves, pluriel(total_eleves, "élève"), "Élèves scolarisés",
-            agregation="somme",
-            repere=(f"Effectif déclaré par {len(effectifs)} établissement(s) "
-                    f"sur {len(lot)}"
-                    if len(effectifs) < len(lot) else None))
-        if mesures["EDU-02"].get("repere") is None:
-            mesures["EDU-02"].pop("repere")
+            restauration, pluriel(restauration, "établissement"),
+            "Restauration scolaire", agregation="somme", ancre=ANCRE,
+            repere=f"sur {len(lot)} établissement(s)")
     if premier:
         mesures["EDU-03"] = mesure(premier, pluriel(premier, "école"),
                                    "Premier degré", agregation="somme")
@@ -227,22 +261,19 @@ def synthetiser(lot):
     # ── bloc détaillé, par degré puis par nom ──
     def rang_degre(e):
         return {"second": 0, "premier": 1, "autre": 2}[
-            degre(champ(e, "type_etablissement"))]
+            degre(e)]
 
     items = []
     for e in sorted(lot, key=lambda x: (rang_degre(x),
                                         str(champ(x, "nom_etablissement") or ""))):
         nom = str(champ(e, "nom_etablissement") or "Établissement")
         details = {}
-        type_etab = champ(e, "type_etablissement")
+        type_etab = champ(e, "libelle_nature", "type_etablissement")
         if type_etab:
-            details["Type"] = str(type_etab)
+            details["Type"] = str(type_etab).capitalize()
         statut = champ(e, "statut_public_prive")
         if statut:
             details["Statut"] = str(statut)
-        eleves = entier(champ(e, "nombre_d_eleves", "nombre_eleves"))
-        if eleves:
-            details["Élèves"] = eleves
         adresse = champ(e, "adresse_1", "adresse_uai")
         if adresse:
             details["Adresse"] = str(adresse)
@@ -250,17 +281,49 @@ def synthetiser(lot):
         if telephone:
             details["Téléphone"] = str(telephone)
 
+        services = [libelle for cle, libelle in
+                    (("restauration", "restauration"),
+                     ("hebergement", "internat"),
+                     ("ulis", "dispositif ULIS"),
+                     ("segpa", "SEGPA"),
+                     ("apprentissage", "apprentissage"))
+                    if vrai(e.get(cle))]
+        if services:
+            details["Services"] = ", ".join(services)
+
         item = {"titre": nom, "details": details}
         site = str(champ(e, "web") or "")
         if site.lower().startswith(("http://", "https://")):
             item["lien"] = {"url": site, "libelle": "Site de l'établissement"}
         items.append(item)
 
+    # Coordonnées de chaque établissement : le générateur en fait des
+    # points sur la carte du territoire.
+    points = []
+    for e in lot:
+        lat = champ(e, "latitude")
+        lon = champ(e, "longitude")
+        try:
+            lat, lon = float(lat), float(lon)
+        except (TypeError, ValueError):
+            continue
+        eleves = effectif(e)
+        details = str(champ(e, "type_etablissement") or "")
+        if eleves:
+            details += f" — {eleves} élèves"
+        points.append({
+            "nom": str(champ(e, "nom_etablissement") or "Établissement"),
+            "lat": round(lat, 6), "lon": round(lon, 6),
+            "info": details.strip(" —"),
+            "categorie": degre(e),
+        })
+
     blocs = [{
         "rubrique": RUBRIQUE,
         "id": ANCRE,
         "titre": "Établissements de la commune",
         "items": items,
+        "points": points,
         "note": ("Recensement du ministère de l'Éducation nationale. La "
                  "sectorisation ne suit pas les limites communales : les "
                  "élèves d'une commune sans collège en fréquentent un "
@@ -288,8 +351,10 @@ def inspecter(code):
     print(f"  {len(lot)} établissement(s), champs du premier :\n")
     for cle, valeur in lot[0].items():
         print(f"    {cle:<34} {str(valeur)[:56]}")
-    print(f"\n  → degré déduit : "
-          f"{degre(champ(lot[0], 'type_etablissement'))}")
+    print(f"\n  → degré déduit     : "
+          f"{degre(lot[0])}")
+    print(f"  → coordonnées      : "
+          f"{champ(lot[0], 'latitude')}, {champ(lot[0], 'longitude')}")
     print()
 
 
@@ -384,19 +449,20 @@ def main():
             sans_etablissement.append(c["nom"])
             print("aucun établissement")
         else:
-            eleves = synthese["mesures"].get("EDU-02", {}).get("valeur")
+            cantines = synthese["mesures"].get("EDU-02", {}).get("valeur")
             print(f"{nombre} établissement(s)"
-                  + (f", {eleves} élèves" if eleves else ""))
+                  + (f", dont {cantines} avec restauration" if cantines else ""))
 
     sauver()
 
     total_etab = sum(v["mesures"].get("EDU-01", {}).get("valeur", 0)
                      for v in resultat.values())
-    total_eleves = sum(v["mesures"].get("EDU-02", {}).get("valeur", 0) or 0
-                       for v in resultat.values())
+    total_cantines = sum(v["mesures"].get("EDU-02", {}).get("valeur", 0) or 0
+                         for v in resultat.values())
     print(f"\n  Communes renseignées : {len(resultat)}/{len(communes)}")
     print(f"  Établissements       : {total_etab}")
-    print(f"  Élèves déclarés      : {total_eleves}")
+    print(f"  Avec restauration    : {total_cantines}")
+    print(f"  Les effectifs d'élèves ne sont pas publiés par cette source.")
     if sans_etablissement:
         print(f"  Sans établissement ({len(sans_etablissement)}) : "
               f"{', '.join(sans_etablissement[:6])}"
