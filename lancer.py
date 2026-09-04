@@ -35,9 +35,10 @@ RACINE = Path(__file__).resolve().parent
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 11_population.py équipements enfin reconnus : les colonnes portent
-#                      leur millésime dans leur nom, BPE_2024_A501 et non
-#                      NB_A501. Seul le millésime le plus récent est retenu.
+#   · 03_agregation.py le repère d'une commune n'est plus repris au
+#                      niveau agrégé, et la forme plurielle est rétablie
+#   · 10_ecoles.py     formes plurielles déclarées
+#   · 11_population.py équipements reconnus, formes plurielles déclarées
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -55,6 +56,7 @@ RACINE = Path(__file__).resolve().parent
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("10_ecoles.py", ["--tout"]),
     ("11_population.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),

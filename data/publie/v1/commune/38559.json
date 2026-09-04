@@ -200,6 +200,7 @@
       "rubrique": "education",
       "agregation": "somme",
       "ancre": "etablissements-scolaires",
+      "unite_pluriel": "établissements",
       "rang": 10,
       "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
@@ -214,7 +215,8 @@
       "rubrique": "education",
       "agregation": "somme",
       "ancre": "etablissements-scolaires",
-      "repere": "sur 5 établissement(s)",
+      "unite_pluriel": "établissements",
+      "repere": "sur 5 établissements de la commune",
       "rang": 20,
       "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
@@ -228,6 +230,7 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
+      "unite_pluriel": "écoles",
       "rang": 30,
       "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
     },
@@ -241,6 +244,7 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
+      "unite_pluriel": "établissements",
       "rang": 40,
       "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
     },
@@ -296,6 +300,7 @@
       "rubrique": "population",
       "agregation": "somme",
       "repere": "2.2 personnes par ménage en moyenne",
+      "unite_pluriel": "ménages",
       "rang": 30,
       "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
     },
@@ -309,6 +314,7 @@
       "format": "texte",
       "rubrique": "population",
       "agregation": "somme",
+      "unite_pluriel": "familles",
       "rang": 40,
       "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
     },
@@ -323,6 +329,7 @@
       "rubrique": "urbanisme",
       "agregation": "somme",
       "ancre": "composition-parc-logements",
+      "unite_pluriel": "logements",
       "rang": 10,
       "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
     },
@@ -391,6 +398,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "ancre": "equipements-par-domaine",
+      "unite_pluriel": "équipements",
       "rang": 10,
       "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
     },
@@ -405,6 +413,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "ancre": "equipements-par-domaine",
+      "unite_pluriel": "équipements",
       "rang": 20,
       "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
     },
@@ -419,6 +428,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "ancre": "equipements-par-domaine",
+      "unite_pluriel": "équipements",
       "rang": 30,
       "explication": "Équipements sportifs, de loisir et de culture."
     },
@@ -433,6 +443,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "ancre": "equipements-par-domaine",
+      "unite_pluriel": "équipements",
       "rang": 40,
       "explication": "Services aux particuliers : administration, artisanat, services de proximité."
     },

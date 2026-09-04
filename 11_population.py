@@ -588,12 +588,14 @@ def synthetiser(ligne, colonnes, millesime):
         if total:
             habillage["repere"] = (
                 f"{total / menages:.1f} personnes par ménage en moyenne")
+        habillage["unite_pluriel"] = "ménages"
         mesures["POP-22"] = mesure(menages, "ménages", "Ménages", **habillage)
 
     familles = nombre(ligne.get(colonnes.get("familles", ""), ""))
     if familles:
         mesures["POP-23"] = mesure(familles, "familles", "Familles",
-                                   agregation="somme")
+                                   agregation="somme",
+                                   unite_pluriel="familles")
 
     # ── logement ──
     cols = colonnes.get("logement") or {}
@@ -603,7 +605,8 @@ def synthetiser(ligne, colonnes, millesime):
     if total_log:
         mesures["LOG-01"] = mesure(total_log, "logements",
                                    "Logements", agregation="somme",
-                                   ancre=ANCRE_LOGEMENT)
+                                   ancre=ANCRE_LOGEMENT,
+                                   unite_pluriel="logements")
         for ident, cle, nom in (("LOG-02", "vacants", "Logements vacants"),
                                 ("LOG-03", "secondaires",
                                  "Résidences secondaires")):
@@ -649,7 +652,8 @@ def synthetiser(ligne, colonnes, millesime):
         if par_domaine.get(lettre):
             mesures[ident] = mesure(
                 par_domaine[lettre], "équipements", nom,
-                agregation="somme", ancre=ANCRE_EQUIPEMENTS)
+                agregation="somme", ancre=ANCRE_EQUIPEMENTS,
+                unite_pluriel="équipements")
 
     blocs = []
     if tranches:

@@ -241,6 +241,7 @@
       "rubrique": "population",
       "agregation": "somme",
       "repere": "2.4 personnes par ménage en moyenne",
+      "unite_pluriel": "ménages",
       "rang": 30,
       "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
     },
@@ -254,6 +255,7 @@
       "format": "texte",
       "rubrique": "population",
       "agregation": "somme",
+      "unite_pluriel": "familles",
       "rang": 40,
       "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
     },
@@ -268,6 +270,7 @@
       "rubrique": "urbanisme",
       "agregation": "somme",
       "ancre": "composition-parc-logements",
+      "unite_pluriel": "logements",
       "rang": 10,
       "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
     },

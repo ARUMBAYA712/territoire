@@ -41,7 +41,7 @@ API = ("https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/"
 SOURCE = "Annuaire de l'éducation — ministère de l'Éducation nationale"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 4
+VERSION = 5
 RUBRIQUE = "education"
 SOUS_RUBRIQUE = None
 ANCRE = "etablissements-scolaires"
@@ -243,20 +243,24 @@ def synthetiser(lot):
     mesures = {
         "EDU-01": mesure(len(lot), pluriel(len(lot), "établissement"),
                          "Établissements scolaires",
-                         agregation="somme", ancre=ANCRE),
+                         agregation="somme", ancre=ANCRE,
+                         unite_pluriel="établissements"),
     }
     if restauration:
         mesures["EDU-02"] = mesure(
             restauration, pluriel(restauration, "établissement"),
             "Restauration scolaire", agregation="somme", ancre=ANCRE,
-            repere=f"sur {len(lot)} établissement(s)")
+            unite_pluriel="établissements",
+            repere=(f"sur {len(lot)} "
+                    f"{pluriel(len(lot), 'établissement')} de la commune"))
     if premier:
         mesures["EDU-03"] = mesure(premier, pluriel(premier, "école"),
-                                   "Premier degré", agregation="somme")
+                                   "Premier degré", agregation="somme",
+                                   unite_pluriel="écoles")
     if second:
         mesures["EDU-04"] = mesure(
             second, pluriel(second, "établissement"), "Second degré",
-            agregation="somme")
+            agregation="somme", unite_pluriel="établissements")
 
     # ── bloc détaillé, par degré puis par nom ──
     def rang_degre(e):
