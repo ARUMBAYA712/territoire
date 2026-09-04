@@ -26,6 +26,10 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 3
+
 DOSSIER = Path("data")
 SOURCE = DOSSIER / "referentiel-communes.json"
 PUBLIE = DOSSIER / "publie" / "v1"
@@ -187,7 +191,7 @@ def agreger_complements(communes_membres, complements):
     remonte pas — les réseaux ne suivent pas les limites administratives —
     mais un nombre d'écoles, lui, s'additionne sans ambiguïté.
     """
-    totaux, modeles = {}, {}
+    totaux, modeles, references = {}, {}, {}
     for commune in communes_membres:
         bloc = complements.get(commune["code"], {})
         for ident, mesure in bloc.get("mesures", {}).items():
@@ -197,18 +201,33 @@ def agreger_complements(communes_membres, complements):
             if not isinstance(valeur, (int, float)):
                 continue
             totaux[ident] = totaux.get(ident, 0) + valeur
-            modeles.setdefault(ident, mesure)
+            # On retient la commune à la plus forte valeur comme modèle :
+            # ses libellés sont ceux d'un effectif pluriel, ce qui évite
+            # d'hériter du singulier d'une commune à un seul élément.
+            if valeur >= references.get(ident, -1):
+                references[ident] = valeur
+                modeles[ident] = mesure
 
     agregees = {}
     for ident, total in totaux.items():
         modele = dict(modeles[ident])
         modele["valeur"] = round(total, 2) if isinstance(total, float) else total
         modele["obtention"] = "agrégé"
+
+        # Le repère décrit une commune précise — « sur 1 établissement » —
+        # et devient faux dès qu'on additionne. Il est écarté.
+        modele.pop("repere", None)
+
         # Le renvoi vers un bloc détaillé n'a de sens qu'à la commune :
         # le bloc n'existe pas au niveau agrégé.
         modele.pop("ancre", None)
         modele.pop("mise_en_avant", None)
         modele.pop("ton", None)
+
+        # Forme plurielle si le collecteur l'a déclarée.
+        if modele.get("unite_pluriel") and total > 1:
+            modele["unite"] = modele["unite_pluriel"]
+        modele.pop("unite_pluriel", None)
         agregees[ident] = modele
     return agregees
 
@@ -230,6 +249,7 @@ def enveloppe(territoire, mesures, rattachements, blocs=None):
 def main():
     print("\nGénération des fichiers publiés")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not SOURCE.exists():
         print(f"\n[ERREUR] {SOURCE} introuvable.")

@@ -270,7 +270,7 @@
     },
     "EDU-01": {
       "valeur": 61,
-      "unite": "établissement",
+      "unite": "établissements",
       "nom": "Établissements scolaires",
       "obtention": "agrégé",
       "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
@@ -278,13 +278,12 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
-      "unite_pluriel": "établissements",
       "rang": 10,
       "explication": "Écoles, collèges et lycées en activité, publics et privés confondus, implantés sur le territoire."
     },
     "EDU-02": {
       "valeur": 54,
-      "unite": "établissement",
+      "unite": "établissements",
       "nom": "Restauration scolaire",
       "obtention": "agrégé",
       "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
@@ -292,14 +291,12 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
-      "unite_pluriel": "établissements",
-      "repere": "sur 1 établissement de la commune",
       "rang": 20,
       "explication": "Établissements proposant un service de restauration, d'après l'annuaire de l'éducation."
     },
     "EDU-03": {
       "valeur": 49,
-      "unite": "école",
+      "unite": "écoles",
       "nom": "Premier degré",
       "obtention": "agrégé",
       "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
@@ -307,7 +304,6 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
-      "unite_pluriel": "écoles",
       "rang": 30,
       "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
     },
@@ -321,8 +317,6 @@
       "format": "texte",
       "rubrique": "population",
       "agregation": "somme",
-      "repere": "2.5 personnes par ménage en moyenne",
-      "unite_pluriel": "ménages",
       "rang": 30,
       "explication": "Un ménage désigne l'ensemble des personnes occupant un même logement, qu'elles aient ou non un lien de parenté."
     },
@@ -336,7 +330,6 @@
       "format": "texte",
       "rubrique": "population",
       "agregation": "somme",
-      "unite_pluriel": "familles",
       "rang": 40,
       "explication": "Une famille comprend au moins deux personnes : un couple avec ou sans enfant, ou un parent avec ses enfants."
     },
@@ -350,7 +343,6 @@
       "format": "texte",
       "rubrique": "urbanisme",
       "agregation": "somme",
-      "unite_pluriel": "logements",
       "rang": 10,
       "explication": "Ensemble des logements recensés : résidences principales, secondaires et logements vacants."
     },
@@ -364,7 +356,6 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "unite_pluriel": "équipements",
       "rang": 10,
       "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
     },
@@ -378,7 +369,6 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "unite_pluriel": "équipements",
       "rang": 20,
       "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
     },
@@ -392,13 +382,12 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "unite_pluriel": "équipements",
       "rang": 40,
       "explication": "Services aux particuliers : administration, artisanat, services de proximité."
     },
     "EDU-04": {
       "valeur": 8,
-      "unite": "établissement",
+      "unite": "établissements",
       "nom": "Second degré",
       "obtention": "agrégé",
       "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
@@ -406,7 +395,6 @@
       "format": "texte",
       "rubrique": "education",
       "agregation": "somme",
-      "unite_pluriel": "établissements",
       "rang": 40,
       "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
     },
@@ -420,7 +408,6 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "unite_pluriel": "équipements",
       "rang": 30,
       "explication": "Équipements sportifs, de loisir et de culture."
     },

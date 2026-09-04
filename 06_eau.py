@@ -35,6 +35,10 @@ from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 4
+
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
 SORTIE = DONNEES / "mesures-eau.json"
@@ -146,7 +150,7 @@ ANCRE = "reseaux-eau-potable"
 # À incrémenter dès que libellés, repères ou structure changent.
 # La collecte étant longue, une version obsolète n'est pas jetée :
 # elle est réhabillée automatiquement, sans nouvel appel réseau.
-VERSION = 3
+VERSION = 4
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "eau-potable"
@@ -397,8 +401,14 @@ def synthetiser(commune, reseaux, analyses):
         for code in p["reseaux"]:
             par_reseau[code].append(p)
 
+    # Même règle : le réseau au contrôle le plus récent en tête, les
+    # réseaux sans contrôle sur la période en dernier.
+    def fraicheur_reseau(reseau):
+        lot = par_reseau.get(reseau["code"], [])
+        return lot[0]["date"] if lot else ""
+
     items = []
-    for r in reseaux:
+    for r in sorted(reseaux, key=fraicheur_reseau, reverse=True):
         lot = par_reseau.get(r["code"], [])
         recent = lot[0] if lot else None
         details = {"Code réseau": r["code"]}
@@ -597,6 +607,7 @@ def main():
 
     print("\nQualité de l'eau potable — Hub'Eau")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not REFERENTIEL.exists():
         print(f"\n[ERREUR] {REFERENTIEL} introuvable.")

@@ -30,6 +30,10 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 4
+
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
 SORTIE = DONNEES / "mesures-secheresse.json"
@@ -40,7 +44,7 @@ SOURCE = "VigiEau — ministère de la Transition écologique"
 # À incrémenter dès que la forme des données produites change.
 # Une collecte réalisée avec une version antérieure est ignorée : sans
 # cela, la reprise conserverait indéfiniment un format périmé.
-VERSION = 3
+VERSION = 4
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "secheresse"
@@ -169,7 +173,15 @@ def synthetiser(zones):
                 for z in zones)
     items = []
 
-    for z in sorted(zones, key=lambda x: TYPES_EAU.get(x.get("type"), "zzz")):
+    # Règle générale du site : ce qui compte le plus vient en premier.
+    # Pour un historique, c'est le plus récent ; pour un état en cours,
+    # c'est le plus grave. Un visiteur en alerte renforcée ne doit pas
+    # avoir à chercher sa zone sous une simple vigilance.
+    def gravite(zone):
+        return -NIVEAUX.get(zone.get("niveauGravite"), (0,))[0]
+
+    for z in sorted(zones, key=lambda x: (gravite(x),
+                                          TYPES_EAU.get(x.get("type"), "zzz"))):
         rang, libelle, ton = NIVEAUX.get(
             z.get("niveauGravite"), (0, "Niveau non précisé", "neutre"))
         arrete = z.get("arrete") or {}
@@ -234,6 +246,7 @@ def synthetiser(zones):
 def main():
     print("\nRestrictions sécheresse — VigiEau")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not REFERENTIEL.exists():
         print(f"\n[ERREUR] {REFERENTIEL} introuvable.")

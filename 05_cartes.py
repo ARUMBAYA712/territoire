@@ -29,6 +29,10 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 3
+
 RACINE = Path(".")
 DONNEES = RACINE / "data"
 CONTOURS = DONNEES / "contours.json"
@@ -394,6 +398,7 @@ def carte(contours, codes_fond, code_evidence, titre):
 def main():
     print("\nGénération des cartes")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     referentiel = DONNEES / "referentiel-communes.json"
     if not referentiel.exists():

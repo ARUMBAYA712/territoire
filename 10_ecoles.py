@@ -32,6 +32,10 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 5
+
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
 SORTIE = DONNEES / "mesures-ecoles.json"
@@ -397,6 +401,7 @@ def main():
 
     print("\nÉtablissements scolaires — annuaire de l'éducation")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not REFERENTIEL.exists():
         print(f"\n[ERREUR] {REFERENTIEL} introuvable.")

@@ -15,6 +15,7 @@ Utilisation :
     python lancer.py --site       régénère le site sans rien collecter
     python lancer.py --initial    remise à niveau après installation, une fois
     python lancer.py --liste      affiche ce qui serait lancé, sans le lancer
+    python lancer.py --forcer     passe outre un contrôle de version
 
 Pour éprouver un changement d'affichage, préférez --site : il ne sollicite
 aucun serveur public et régénère les pages en une seconde.
@@ -28,6 +29,66 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent
 
 # ══════════════════════════════════════════════════════════════════
+# VERSIONS ATTENDUES
+#
+# Mises à jour à chaque livraison. Le lanceur compare avec ce que
+# déclarent les fichiers présents et signale ceux qui n'ont pas été
+# remplacés — un script oublié produit des résultats incohérents sans
+# le moindre message d'erreur.
+# ══════════════════════════════════════════════════════════════════
+
+VERSIONS_ATTENDUES = {
+    "01_referentiel.py": 1,
+    "02_canton.py": 1,
+    "03_agregation.py": 3,
+    "04_generation.py": 6,
+    "05_cartes.py": 3,
+    "06_eau.py": 4,
+    "07_vigieau.py": 4,
+    "08_georisques.py": 7,
+    "09_nappes.py": 2,
+    "10_ecoles.py": 5,
+    "11_population.py": 4,
+}
+
+
+def version_installee(script):
+    """Numéro déclaré par le fichier présent, ou None."""
+    chemin = RACINE / script
+    if not chemin.exists():
+        return None
+    for ligne in chemin.read_text(encoding="utf-8").split("\n")[:80]:
+        if ligne.startswith("VERSION_SCRIPT"):
+            try:
+                return int(ligne.split("=")[1].strip())
+            except (IndexError, ValueError):
+                return None
+    return None
+
+
+def controler_versions():
+    """Signale les scripts qui n'ont pas été remplacés."""
+    retard = []
+    for script, attendue in sorted(VERSIONS_ATTENDUES.items()):
+        installee = version_installee(script)
+        if installee is None or installee < attendue:
+            retard.append((script, installee, attendue))
+    if not retard:
+        return True
+    print()
+    print("═" * 62)
+    print("  ATTENTION — fichiers non remplacés")
+    print("═" * 62)
+    for script, installee, attendue in retard:
+        etat = "absent" if installee is None else f"version {installee}"
+        print(f"    {script:<24} {etat:<14} attendu : version {attendue}")
+    print()
+    print("  Ces scripts produiront des résultats incohérents avec les")
+    print("  autres. Installez-les avant de relancer.")
+    print("═" * 62)
+    return False
+
+# ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
 # Mis à jour à chaque envoi de fichiers modifiés. C'est ce que lance
@@ -35,10 +96,16 @@ RACINE = Path(__file__).resolve().parent
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
+#   · TOUS les scripts portent désormais un numéro de version, affiché à
+#     l'exécution. Le lanceur vérifie qu'ils sont bien tous remplacés et
+#     refuse de partir sinon : un fichier oublié produisait jusqu'ici des
+#     résultats incohérents sans le moindre message.
 #   · 03_agregation.py le repère d'une commune n'est plus repris au
 #                      niveau agrégé, et la forme plurielle est rétablie
 #   · 10_ecoles.py     formes plurielles déclarées
 #   · 11_population.py équipements reconnus, formes plurielles déclarées
+#
+#   Installez les onze scripts et le lanceur, puis « python lancer.py ».
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -133,6 +200,10 @@ def lancer(etapes, libelle):
     print(f"  {len(etapes)} étape(s)")
     print("═" * 62)
 
+    if not controler_versions() and "--forcer" not in sys.argv:
+        print("\n  Relancez avec --forcer pour passer outre.\n")
+        return 1
+
     manquants = [s for s, _ in etapes if not (RACINE / s).exists()]
     if manquants:
         print(f"\n[ARRÊT] Script(s) introuvable(s) : {', '.join(manquants)}")
@@ -189,6 +260,7 @@ def main():
     liste_seule = "--liste" in options
     options = [o for o in options if o != "--liste"]
 
+    options = [o for o in options if o != "--forcer"]
     inconnues = [o for o in options if o not in PLANS]
     if inconnues:
         print(f"\n[ERREUR] Option inconnue : {', '.join(inconnues)}")

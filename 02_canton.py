@@ -20,6 +20,10 @@ import unicodedata
 from datetime import date
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 1
+
 DOSSIER = Path("data")
 FICHIER = DOSSIER / "referentiel-communes.json"
 
@@ -97,6 +101,7 @@ def verifier_collisions(index, libelle):
 def main():
     print("\nRattachement cantonal")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not FICHIER.exists():
         print(f"\n[ERREUR] {FICHIER} introuvable.")

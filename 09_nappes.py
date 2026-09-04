@@ -33,6 +33,10 @@ import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 2
+
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
 SORTIE = DONNEES / "mesures-nappes.json"
@@ -433,6 +437,7 @@ def main():
 
     print("\nNiveau des nappes souterraines — Hub'Eau")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
     print(f"  Emprise : {boite[0]}, {boite[1]} → {boite[2]}, {boite[3]}")
 
     repere = centre(communes)

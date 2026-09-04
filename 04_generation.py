@@ -31,6 +31,10 @@ from datetime import date
 from html import escape
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 6
+
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════════════
@@ -1592,6 +1596,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 def main():
     print("\nGénération des pages statiques")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     if not (PUBLIE / "index.json").exists():
         print(f"\n[ERREUR] {PUBLIE / 'index.json'} introuvable.")

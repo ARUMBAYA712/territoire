@@ -23,6 +23,10 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
+# Numéro de version du script, affiché à l'exécution : il permet
+# de vérifier d'un coup d'œil que le fichier installé est le bon.
+VERSION_SCRIPT = 1
+
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION DU PÉRIMÈTRE
 #
@@ -177,6 +181,7 @@ def ecrire(donnees):
 def main():
     print("\nConstruction du référentiel de territoires")
     print("─" * 46)
+    print(f"  version {VERSION_SCRIPT} du script")
 
     communes = recuperer_communes()
 
