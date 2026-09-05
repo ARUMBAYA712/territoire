@@ -5,7 +5,7 @@ Document interne
 
 | | |
 |---|---|
-| Version du document | 1.5 |
+| Version du document | 1.6 |
 | Date | Septembre 2026 |
 | Plateforme cible | Site web statique — ordinateur, tablette, téléphone |
 | Adresse | territoire.sudgresiv.com |
@@ -172,7 +172,7 @@ Applicable les soirs de scrutin uniquement. Le reste du temps, la rubrique
 | ENF-10 | Portabilité | Aucune dépendance à l'hébergeur hors déploiement ; le site peut être servi ailleurs sans modification. |
 | ENF-11 | Reprise | Toute collecte est reprenable ; une coupure ne fait perdre que l'élément en cours. |
 | ENF-12 | Traçabilité | Chaque collecteur porte un numéro de version ; une collecte à un format périmé est détectée. |
-| ENF-13 | Administration | Section de suivi à `/Terri_Admin/`, majuscules volontaires, appelée depuis les pages d'administration de sudgresiv.com et non depuis le portail. Ni indexée, ni liée, ni mentionnée dans le robots.txt. |
+| ENF-13 | Administration | Section de suivi à `/Terri_Admin/`, majuscules volontaires, appelée depuis les pages d'administration de sudgresiv.com et non depuis le portail. Ni indexée, ni liée, ni mentionnée dans le robots.txt. La documentation du projet y sera copiée dans un sous-dossier. |
 | ENF-14 | Leurre | L'ancienne adresse `/administration/` présente une fausse page de connexion, impose une attente et consigne les tentatives. Adresses tronquées d'un segment, conservation limitée, aucun identifiant saisi enregistré. |
 
 ---
@@ -321,6 +321,7 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Moyenne | Éprouver la chaîne du direct hors période électorale | Un premier essai en conditions réelles ne doit pas avoir lieu un soir de scrutin |
 | Faible | Logo et identité typographique | Le nom doit rester du texte, non une image |
 | À planifier | Regroupement avec sudgresiv.com | Après carburants et élections ; conditionne l'arborescence et le thème |
+| À planifier | Documentation copiée dans un sous-dossier de `/Terri_Admin/` | Doit être exclue de l'indexation et de la recherche interne ; contient des informations internes, donc à protéger par mot de passe plutôt que par la seule discrétion |
 
 ---
 
