@@ -289,6 +289,8 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-source{margin-top:12px}
 .bl-source a{font-size:13px;color:var(--link);border-bottom:1px solid currentColor}
 .bl-source a:hover{color:var(--accent)}
+.bl-item .chips{margin-top:10px}
+.bl-item .chip{background:var(--surface)}
 .bl-note{font-size:12px;color:var(--soft);margin-top:12px;
   border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
   border-radius:var(--radius)}

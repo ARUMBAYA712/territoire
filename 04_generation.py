@@ -33,19 +33,125 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 7
+VERSION_SCRIPT = 11
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════════════
 
 SITE = "https://territoire.sudgresiv.com"
+
+# ══════════════════════════════════════════════════════════════════
+# MENTIONS LÉGALES
+#
+# À COMPLÉTER AVANT TOUTE COMMUNICATION PUBLIQUE.
+#
+# La loi impose d'identifier l'éditeur d'un site accessible au public :
+# nom ou raison sociale, adresse, moyen de contact, et hébergeur avec
+# son adresse. Une page est produite dès que « editeur » est renseigné ;
+# tant qu'il est vide, la page n'est pas générée et un rappel s'affiche
+# à l'exécution.
+# ══════════════════════════════════════════════════════════════════
+
+# ══════════════════════════════════════════════════════════════════
+# SECTION D'ADMINISTRATION
+#
+# Page de suivi interne. Son adresse est volontairement peu devinable et
+# n'est mentionnée nulle part : ni dans le plan du site, ni dans le
+# robots.txt — ce dernier étant public, y inscrire le chemin reviendrait
+# à l'annoncer —, ni dans aucun lien du site.
+#
+# Cela reste de la discrétion, pas de la protection : un hébergement
+# statique n'offre aucune authentification. Pour protéger réellement ce
+# dossier, ajoutez-lui un mot de passe depuis l'espace client OVH.
+#
+# Le nom du dossier respecte la casse sur l'hébergement : « Terri_Admin »
+# et « terri_admin » désignent deux adresses différentes.
+# ══════════════════════════════════════════════════════════════════
+
+# Les majuscules sont volontaires : l'hébergement distingue la casse,
+# ce qui écarte les balayages qui n'essaient que des noms en minuscules.
+# Cette adresse sera appelée depuis les pages d'administration du site
+# principal sudgresiv.com, non depuis le portail lui-même.
+DOSSIER_ADMIN = "Terri_Admin"
+
+# ══════════════════════════════════════════════════════════════════
+# LEURRE
+#
+# L'ancienne adresse d'administration est conservée comme appât. Elle
+# présente une fausse page de connexion, ne mène nulle part, et
+# consigne les tentatives d'accès.
+#
+# L'adresse du visiteur est tronquée avant écriture : son dernier
+# segment est retiré. Cela suffit à repérer un balayage automatisé sans
+# identifier une personne, et évite de contredire l'engagement de ne
+# collecter aucune donnée personnelle. Aucun identifiant ni mot de passe
+# saisi n'est enregistré — les recueillir serait sans intérêt et
+# juridiquement hasardeux.
+# ══════════════════════════════════════════════════════════════════
+
+DOSSIER_LEURRE = "administration"
+JOURNAL_LEURRE = "journal-acces.log"
+RETENTION_JOURNAL = 90        # jours conservés
+DELAI_LEURRE = 3              # secondes d'attente imposées
+
+# Fichier produit → libellé, script, commande de rafraîchissement.
+SOURCES_SUIVIES = [
+    ("referentiel-communes.json", "Référentiel des communes",
+     "01_referentiel.py", "python lancer.py --complet", "annuelle"),
+    ("mesures-eau.json", "Qualité de l'eau potable",
+     "06_eau.py", "python 06_eau.py", None),
+    ("mesures-secheresse.json", "Restrictions sécheresse",
+     "07_vigieau.py", "python 07_vigieau.py", None),
+    ("mesures-risques.json", "Risques et catastrophes naturelles",
+     "08_georisques.py", "python 08_georisques.py", None),
+    ("mesures-nappes.json", "Niveau des nappes",
+     "09_nappes.py", "python 09_nappes.py", None),
+    ("mesures-rivieres.json", "Débit des cours d'eau",
+     "12_rivieres.py", "python 12_rivieres.py", None),
+    ("mesures-ecoles.json", "Établissements scolaires",
+     "10_ecoles.py", "python 10_ecoles.py", None),
+    ("mesures-population.json", "Population, logement, équipements",
+     "11_population.py", "python 11_population.py", None),
+]
+
+# Ancienneté au-delà de laquelle une source est à rafraîchir, en jours.
+TOLERANCE_FRAICHEUR = {
+    "quotidienne": 2, "hebdomadaire": 10, "mensuelle": 45,
+    "trimestrielle": 120, "annuelle": 400,
+}
+
+# Rubriques annoncées mais pas encore alimentées.
+CHANTIERS = [
+    ("Automatisation des collectes", "GitHub Actions",
+     "Prérequis des carburants, dont la donnée se périme en heures."),
+    ("Prix des carburants", "data.economie.gouv.fr",
+     "Rubrique dédiée, plus un résumé dans Transports."),
+    ("Résultats électoraux", "ministère de l'Intérieur",
+     "Historique depuis 2000, puis direct le soir des scrutins."),
+    ("Espaces naturels protégés", "INPN",
+     "En attente : serveurs du Muséum hors service."),
+    ("Prix de l'eau et assainissement", "SISPEA",
+     "L'API Hub'Eau correspondante a été arrêtée."),
+]
+
+MENTIONS = {
+    "editeur": "",              # nom, prénom ou raison sociale
+    "statut": "",               # ex. « entrepreneur individuel »
+    "siret": "",                # si vous êtes immatriculé
+    "adresse": "",              # adresse postale
+    "courriel": "",             # adresse de contact
+    "directeur": "",            # directeur de la publication
+    "hebergeur": ("OVH SAS, 2 rue Kellermann, 59100 Roubaix, France — "
+                  "ovhcloud.com"),
+}
 TITRE_SITE = "Sud Grésiv'"
 SOUS_TITRE = "Données publiques du territoire"
 
 RACINE = Path(".")
 PUBLIE = RACINE / "data" / "publie" / "v1"
 ASSETS = RACINE / "assets"
+# Territoire mis en avant sur l'accueil, pour ses chiffres clés.
 ACCUEIL = ("canton", "3823")
 
 # Empreinte du thème et du script : ajoutée aux adresses des ressources
@@ -352,6 +458,8 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .bl-source{margin-top:12px}
 .bl-source a{font-size:13px;color:var(--link);border-bottom:1px solid currentColor}
 .bl-source a:hover{color:var(--accent)}
+.bl-item .chips{margin-top:10px}
+.bl-item .chip{background:var(--surface)}
 .bl-note{font-size:12px;color:var(--soft);margin-top:12px;
   border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
   border-radius:var(--radius)}
@@ -1437,6 +1545,576 @@ def rappel_parents(d, base, adresses):
     return f'<div class="terr-parents">{"".join(lignes)}</div>'
 
 
+
+LEURRE_PHP = """<?php
+// Page-appât. Elle ne donne accès à rien : sa seule fonction est
+// d'occuper une tentative d'intrusion et d'en conserver la trace.
+//
+// L'adresse du visiteur est tronquée avant écriture. Aucun identifiant
+// ni mot de passe saisi n'est enregistré.
+
+$journal = __DIR__ . '/JOURNAL';
+$retention = RETENTION;
+$attente = DELAI;
+
+function adresse_tronquee() {
+    $brut = $_SERVER['REMOTE_ADDR'] ?? '';
+    if (strpos($brut, ':') !== false) {
+        $blocs = explode(':', $brut);
+        return implode(':', array_slice($blocs, 0, 3)) . ':...';
+    }
+    $blocs = explode('.', $brut);
+    if (count($blocs) === 4) {
+        $blocs[3] = 'x';
+        return implode('.', $blocs);
+    }
+    return 'inconnue';
+}
+
+function propre($texte, $taille = 180) {
+    $texte = preg_replace('/[\\r\\n\\t;]+/', ' ', (string) $texte);
+    return substr(trim($texte), 0, $taille);
+}
+
+// ── purge des entrées trop anciennes ──
+if (is_file($journal) && filesize($journal) > 0) {
+    $limite = time() - $retention * 86400;
+    $gardees = [];
+    foreach (file($journal, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $ligne) {
+        $date = strtotime(substr($ligne, 0, 19));
+        if ($date && $date >= $limite) { $gardees[] = $ligne; }
+    }
+    if (count($gardees) > 5000) { $gardees = array_slice($gardees, -5000); }
+    file_put_contents($journal, implode("\\n", $gardees) . "\\n", LOCK_EX);
+}
+
+$entree = implode(';', [
+    date('Y-m-d H:i:s'),
+    adresse_tronquee(),
+    propre($_SERVER['REQUEST_METHOD'] ?? '', 8),
+    propre($_SERVER['REQUEST_URI'] ?? '', 120),
+    propre($_SERVER['HTTP_REFERER'] ?? '-', 120),
+    propre($_SERVER['HTTP_USER_AGENT'] ?? '-', 180),
+]);
+@file_put_contents($journal, $entree . "\\n", FILE_APPEND | LOCK_EX);
+
+// Attente délibérée : elle ralentit les outils de balayage, qui
+// enchaînent des milliers d'adresses, sans gêner un visiteur égaré.
+sleep($attente);
+
+$echec = ($_SERVER['REQUEST_METHOD'] ?? '') === 'POST';
+header('X-Robots-Tag: noindex, nofollow');
+?><!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Administration</title>
+<style>
+body{background:#12161a;color:#c9d3da;font-family:system-ui,sans-serif;
+  display:flex;align-items:center;justify-content:center;min-height:100vh;
+  margin:0;padding:24px}
+main{background:#1a2026;border:1px solid #2c353d;border-radius:6px;
+  padding:28px;max-width:360px;width:100%}
+h1{font-size:17px;margin:0 0 4px}
+p{font-size:13px;color:#8b98a3;line-height:1.5}
+label{display:block;font-size:12px;margin:14px 0 4px;color:#8b98a3}
+input{width:100%;box-sizing:border-box;padding:9px 11px;border-radius:4px;
+  border:1px solid #2c353d;background:#12161a;color:#c9d3da;font:inherit}
+button{margin-top:18px;width:100%;padding:10px;border:0;border-radius:4px;
+  background:#2f6b4f;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.err{margin-top:14px;padding:9px 11px;border-radius:4px;
+  background:#3a1f1c;border:1px solid #6b2f26;color:#e2b4ad;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Espace d'administration</h1>
+  <p>Accès réservé. Toute tentative de connexion est enregistrée.</p>
+  <?php if ($echec) { ?>
+  <div class="err">Identifiants incorrects. Nouvel essai possible dans quelques instants.</div>
+  <?php } ?>
+  <form method="post" autocomplete="off">
+    <label for="u">Identifiant</label>
+    <input id="u" name="u" type="text">
+    <label for="p">Mot de passe</label>
+    <input id="p" name="p" type="password">
+    <button type="submit">Se connecter</button>
+  </form>
+</main>
+</body>
+</html>
+"""
+
+LEURRE_HTACCESS = """# Le journal ne doit jamais être servi par le web.
+<Files "JOURNAL">
+    Require all denied
+</Files>
+
+# Rien d'autre que la page d'accueil dans ce dossier.
+<FilesMatch "\\.(json|csv|zip|sql|bak|log|txt)$">
+    Require all denied
+</FilesMatch>
+"""
+
+JOURNAL_PHP = """<?php
+// Lecture du journal du leurre. Même réserve que pour le reste de cette
+// section : discrétion, pas protection. Protégez le dossier par mot de
+// passe depuis l'espace client OVH si vous souhaitez le fermer.
+header('X-Robots-Tag: noindex, nofollow');
+$journal = __DIR__ . '/../LEURRE/JOURNAL';
+$lignes = is_file($journal)
+    ? array_reverse(file($journal, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES))
+    : [];
+$total = count($lignes);
+$lignes = array_slice($lignes, 0, 200);
+?><!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Journal du leurre</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;padding:24px;background:#EDF0EA;
+  color:#16211C}
+h1{font-family:sans-serif;font-size:20px}
+p{font-size:13px;color:#5D6E64}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#fff;
+  margin-top:16px}
+th{text-align:left;padding:6px 8px;font-size:10px;text-transform:uppercase;
+  letter-spacing:.06em;color:#5D6E64;border-bottom:1px solid #D5DCD3}
+td{padding:5px 8px;border-top:1px solid #EDF0EA;font-family:monospace;
+  word-break:break-all}
+</style>
+</head>
+<body>
+<h1>Journal du leurre</h1>
+<p><?= $total ?> tentative(s) conservée(s), 200 dernières affichées.
+Les adresses sont tronquées de leur dernier segment. Conservation :
+RETENTION jours.</p>
+<table>
+<tr><th>Date</th><th>Adresse</th><th>Méthode</th><th>Chemin</th>
+<th>Provenance</th><th>Agent</th></tr>
+<?php foreach ($lignes as $ligne) {
+    $c = array_pad(explode(';', $ligne), 6, '');
+    echo '<tr>';
+    foreach ($c as $valeur) {
+        echo '<td>' . htmlspecialchars($valeur, ENT_QUOTES, 'UTF-8') . '</td>';
+    }
+    echo '</tr>';
+} ?>
+</table>
+</body>
+</html>
+"""
+
+def page_simple(titre, description, corps, base, canonique,
+                indexable=True):
+    """Gabarit des pages hors territoire : accueil, mentions légales."""
+    return f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{escape(titre)} | {escape(TITRE_SITE)}</title>
+<meta name="description" content="{escape(description)}">
+<link rel="canonical" href="{canonique}">
+{'' if indexable else '<meta name="robots" content="noindex, nofollow">'}
+<meta property="og:title" content="{escape(titre)} — {escape(TITRE_SITE)}">
+<meta property="og:description" content="{escape(description)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{canonique}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{base}/assets/style.css?v={EMPREINTE}">
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a class="logo" href="{base}/">{escape(TITRE_SITE)}</a>
+  <div class="find-groupe">
+    <label class="find-label" for="q">Recherche</label>
+    <div class="find">
+      <input id="q" type="text" placeholder="Commune, code postal…"
+             autocomplete="off">
+      <div class="hits" id="hits"></div>
+    </div>
+  </div>
+  <div class="top-fin"></div>
+</div></div>
+
+<main><div class="wrap">
+{corps}
+</div></main>
+
+<footer class="site"><div class="wrap">
+  {escape(SOUS_TITRE)} — Licence Ouverte 2.0
+  · <a href="{base}/mentions-legales/">Mentions légales</a>
+</div></footer>
+
+<script>var BASE="{base}";</script>
+<script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>
+</body>
+</html>
+"""
+
+
+def corps_accueil(fiches, adresses, index_recherche):
+    """Page d'accueil : ce que fait le site, et par où commencer.
+
+    Elle servait jusqu'ici le contenu de la fiche du canton, ce qui
+    produisait deux adresses pour un même contenu. Elle a désormais son
+    propre propos.
+    """
+    canton = next((d for (niveau, _), d in fiches.items()
+                   if niveau == "canton"), None)
+    epci = next((d for (niveau, _), d in fiches.items()
+                 if niveau == "epci"), None)
+
+    chiffres = []
+    if canton:
+        t = canton["territoire"]
+        for ident, libelle in (("POP-01", "habitants"),
+                               ("GEO-13", "km²")):
+            m = canton["mesures"].get(ident)
+            if m and m.get("valeur") is not None:
+                chiffres.append((nombre(m["valeur"]), libelle))
+        if t.get("nombre_communes"):
+            chiffres.insert(0, (str(t["nombre_communes"]), "communes"))
+
+    blocs_chiffres = "".join(
+        f'<div class="fact"><div class="v">{valeur}</div>'
+        f'<div class="k">{escape(libelle)}</div></div>'
+        for valeur, libelle in chiffres)
+
+    portes = []
+    for niveau, libelle in (("canton", "Le canton"),
+                            ("epci", "L'intercommunalité")):
+        cible = next((adresses[cle] for cle in adresses if cle[0] == niveau),
+                     None)
+        fiche = canton if niveau == "canton" else epci
+        if not cible or not fiche:
+            continue
+        portes.append(
+            f'<a class="chip" href="{cible}">{escape(libelle)} — '
+            f'{escape(fiche["territoire"]["nom"])}</a>')
+
+    communes = sorted(
+        (t for t in index_recherche if t["niveau"] == "commune"),
+        key=lambda t: -(t.get("population") or 0))[:8]
+    vedettes = "".join(
+        f'<a class="chip" href="{escape(t["url"])}">{escape(t["nom"])}</a>'
+        for t in communes)
+
+    rubriques = "".join(
+        f'<span class="chip">{escape(r["nom"])}</span>'
+        for r in RUBRIQUES if r["id"] and
+        any(r["id"] in rubriques_actives(d) for d in fiches.values()))
+
+    return f"""    <div class="hd"><h2>Les données publiques de votre commune</h2></div>
+
+    <section class="bloc"><span class="dsp">Ce que vous trouverez ici</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Population, logement, équipements, écoles,
+        qualité de l'eau, restrictions sécheresse, risques naturels,
+        niveau des nappes et débit des rivières — pour chaque commune du
+        Sud Grésivaudan, ainsi que pour le canton et l'intercommunalité.</p>
+        <p class="bl-texte">Toutes ces informations proviennent de
+        sources publiques françaises. Chaque chiffre affiché porte le nom
+        de sa source et la date de sa collecte. Quand une donnée n'existe
+        pas à une échelle, elle n'est pas affichée plutôt qu'estimée.</p>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Le territoire en trois chiffres</span>
+      <div class="facts">{blocs_chiffres}</div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Par où commencer</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Cherchez votre commune par son nom ou son code
+        postal dans le champ ci-dessus, ou partez d'une vue d'ensemble.</p>
+        <div class="chips">{portes}</div>
+      </article>
+      <article class="bl-item">
+        <p class="bl-texte">Les communes les plus peuplées du territoire :</p>
+        <div class="chips">{vedettes}</div>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Rubriques disponibles</span>
+      <div class="bl-grille"><article class="bl-item">
+        <div class="chips">{rubriques}</div>
+        <p class="bl-texte">D'autres rubriques s'ajouteront : transports,
+        élections, prix des carburants.</p>
+      </article></div>
+    </section>"""
+
+
+def etat_source(fichier, frequence_forcee=None):
+    """Décrit l'état d'une source collectée : fraîcheur, volume, version."""
+    chemin = RACINE / "data" / fichier
+    if not chemin.exists():
+        return {"present": False}
+
+    try:
+        contenu = json.loads(chemin.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"present": True, "illisible": True}
+
+    genere = contenu.get("genere_le")
+    frequence = frequence_forcee or contenu.get("frequence") or "indéterminée"
+    age = None
+    if genere:
+        try:
+            age = (date.today() - date.fromisoformat(genere)).days
+        except ValueError:
+            age = None
+
+    tolerance = TOLERANCE_FRAICHEUR.get(frequence)
+    if age is None:
+        etat, ton = "Date inconnue", "attention"
+    elif tolerance and age > tolerance:
+        etat, ton = "À rafraîchir", "attention"
+    else:
+        etat, ton = "À jour", "ok"
+
+    volume = len(contenu.get("communes") or {}) or \
+        len(contenu.get("territoires") or {})
+    portee = "communes" if contenu.get("communes") else "territoires"
+
+    return {"present": True, "illisible": False, "genere": genere, "age": age,
+            "frequence": frequence, "etat": etat, "ton": ton,
+            "volume": volume, "portee": portee,
+            "version": contenu.get("version"),
+            "source": contenu.get("source", ""),
+            "millesime": contenu.get("millesime"),
+            "poids": chemin.stat().st_size}
+
+
+def corps_administration(fiches):
+    """Tableau de bord interne : état des sources et actions à mener."""
+    lignes, a_rafraichir = [], []
+
+    for fichier, libelle, script, commande, frequence in SOURCES_SUIVIES:
+        e = etat_source(fichier, frequence)
+        if not e["present"]:
+            lignes.append({
+                "titre": libelle, "etat": ["Jamais collectée", "alerte"],
+                "details": {"Script": script, "Commande": commande},
+                "texte": "Cette source n'a pas encore été collectée."})
+            a_rafraichir.append(commande)
+            continue
+        if e.get("illisible"):
+            lignes.append({
+                "titre": libelle, "etat": ["Fichier illisible", "alerte"],
+                "details": {"Fichier": fichier, "Commande": commande}})
+            a_rafraichir.append(commande)
+            continue
+
+        details = {
+            "Collecté le": (date.fromisoformat(e["genere"]).strftime("%d/%m/%Y")
+                            if e["genere"] else "inconnu"),
+            "Ancienneté": (f"{e['age']} jour(s)" if e["age"] is not None
+                           else "inconnue"),
+            "Fréquence attendue": e["frequence"],
+            "Couverture": f"{e['volume']} {e['portee']}",
+            "Rafraîchir par": commande,
+        }
+        if e.get("millesime"):
+            details["Millésime des données"] = e["millesime"]
+        if e.get("poids"):
+            details["Poids du fichier"] = f"{e['poids'] / 1024:.0f} Ko"
+
+        lignes.append({"titre": libelle, "etat": [e["etat"], e["ton"]],
+                       "details": details})
+        if e["ton"] != "ok":
+            a_rafraichir.append(commande)
+
+    entrees = "".join(
+        f'<article class="bl-item"><header><h3>{escape(l["titre"])}</h3>'
+        f'<span class="bl-etat {escape(l["etat"][1])}">'
+        f'{escape(l["etat"][0])}</span></header>'
+        + "".join(f'<div class="bl-ligne">'
+                  f'<span class="bl-cle">{escape(c)}</span>'
+                  f'<span class="bl-val">{escape(str(v))}</span></div>'
+                  for c, v in l["details"].items())
+        + (f'<p class="bl-texte">{escape(l["texte"])}</p>'
+           if l.get("texte") else "")
+        + "</article>" for l in lignes)
+
+    if a_rafraichir:
+        vus, ordonnees = set(), []
+        for c in a_rafraichir:
+            if c not in vus:
+                vus.add(c)
+                ordonnees.append(c)
+        actions = ("<p class=\"bl-texte\">À lancer, puis "
+                   "<code>python lancer.py --site</code> :</p>"
+                   + "".join(f'<div class="bl-ligne">'
+                             f'<span class="bl-cle">{i}</span>'
+                             f'<span class="bl-val">{escape(c)}</span></div>'
+                             for i, c in enumerate(ordonnees, start=1)))
+    else:
+        actions = ('<p class="bl-texte">Toutes les sources sont à jour. '
+                   "Aucune collecte n'est nécessaire.</p>")
+
+    chantiers = "".join(
+        f'<article class="bl-item"><header><h3>{escape(nom)}</h3>'
+        f'<span class="bl-etat neutre">À venir</span></header>'
+        f'<div class="bl-ligne"><span class="bl-cle">Source</span>'
+        f'<span class="bl-val">{escape(source)}</span></div>'
+        f'<p class="bl-texte">{escape(note)}</p></article>'
+        for nom, source, note in CHANTIERS)
+
+    controles = "".join(
+        f'<div class="bl-ligne"><span class="bl-cle">{escape(quoi)}</span>'
+        f'<span class="bl-val">{escape(comment)}</span></div>'
+        for quoi, comment in (
+            ("Communes joignables", "47/47 à la génération"),
+            ("Cartes avec noms", "49/49 après 05_cartes.py"),
+            ("Composition du canton", "44 communes, décret n° 2014-180"),
+            ("Archive INSEE hors dépôt", "data/dossier-complet.zip ignoré"),
+            ("Mentions légales", "produites si MENTIONS est renseigné"),
+            ("Liens morts", "aucun renvoi vers un bloc absent"),
+        ))
+
+    total_pages = sum(1 for _ in RACINE.rglob("index.html"))
+
+    return f"""    <div class="hd"><h2>Administration</h2>
+      <span class="n">Page interne — non indexée, non liée, absente du
+      robots.txt. Discrétion seulement : protégez ce dossier par mot de
+      passe depuis l'espace client OVH.</span></div>
+
+    <section class="bloc"><span class="dsp">État des sources</span>
+      <div class="bl-grille">{entrees}</div>
+      <p class="bl-note">Une source « à rafraîchir » a dépassé la
+      fréquence de publication de son producteur. Cela ne rend pas les
+      données fausses : elles sont simplement plus anciennes que ce que
+      la source propose.</p>
+    </section>
+
+    <section class="bloc"><span class="dsp">Actions à mener</span>
+      <div class="bl-grille"><article class="bl-item">{actions}</article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Contrôles à vérifier</span>
+      <div class="bl-grille"><article class="bl-item">{controles}</article></div>
+      <p class="bl-note">Ces contrôles s'affichent à l'exécution des
+      scripts. Un écart signale un problème silencieux.</p>
+    </section>
+
+    <section class="bloc"><span class="dsp">Automatisation</span>
+      <div class="bl-grille"><article class="bl-item">
+        <div class="bl-ligne"><span class="bl-cle">Mode actuel</span>
+          <span class="bl-val">manuel</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Cible</span>
+          <span class="bl-val">GitHub Actions</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Écarté</span>
+          <span class="bl-val">CRON OVH — Python indisponible</span></div>
+        <p class="bl-texte">Une fois en place : sécheresse chaque jour,
+        nappes et rivières chaque semaine, le reste chaque mois. Les
+        carburants imposeront plusieurs passages par jour.</p>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Chantiers ouverts</span>
+      <div class="bl-grille">{chantiers}</div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Sécurité</span>
+      <div class="bl-grille"><article class="bl-item">
+        <div class="bl-ligne"><span class="bl-cle">Leurre</span>
+          <span class="bl-val">/{DOSSIER_LEURRE}/</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Conservation</span>
+          <span class="bl-val">{RETENTION_JOURNAL} jours</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Adresses</span>
+          <span class="bl-val">tronquées d'un segment</span></div>
+        <p class="bl-texte">L'ancienne adresse d'administration présente
+        une fausse page de connexion qui ne mène nulle part, impose une
+        attente de {DELAI_LEURRE} secondes et consigne chaque tentative.
+        Aucun identifiant saisi n'est enregistré.</p>
+        <a class="bl-lien" href="journal.php">Consulter le journal</a>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Volumétrie</span>
+      <div class="bl-grille"><article class="bl-item">
+        <div class="bl-ligne"><span class="bl-cle">Territoires publiés</span>
+          <span class="bl-val">{len(fiches)}</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Pages produites</span>
+          <span class="bl-val">{total_pages}</span></div>
+        <div class="bl-ligne"><span class="bl-cle">Générées le</span>
+          <span class="bl-val">{date.today().strftime("%d/%m/%Y")}</span></div>
+      </article></div>
+    </section>"""
+
+
+def corps_mentions():
+    lignes = []
+    for cle, libelle in (("editeur", "Éditeur"), ("statut", "Statut"),
+                         ("siret", "SIRET"), ("adresse", "Adresse"),
+                         ("courriel", "Contact"),
+                         ("directeur", "Directeur de la publication"),
+                         ("hebergeur", "Hébergeur")):
+        valeur = MENTIONS.get(cle, "").strip()
+        if not valeur:
+            continue
+        contenu = (f'<a href="mailto:{escape(valeur)}">{escape(valeur)}</a>'
+                   if cle == "courriel" else escape(valeur))
+        lignes.append(f'<div class="bl-ligne">'
+                      f'<span class="bl-cle">{escape(libelle)}</span>'
+                      f'<span class="bl-val">{contenu}</span></div>')
+
+    return f"""    <div class="hd"><h2>Mentions légales</h2></div>
+    <section class="bloc"><span class="dsp">Éditeur et hébergement</span>
+      <div class="bl-grille"><article class="bl-item">
+        {"".join(lignes)}
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Données publiées</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Les données présentées proviennent
+        exclusivement de sources publiques françaises, diffusées sous
+        Licence Ouverte 2.0 : INSEE, IGN, Hub'Eau, VigiEau, Géorisques,
+        ministère de l'Éducation nationale. Chaque valeur affichée porte
+        le nom de sa source et la date de sa collecte.</p>
+        <p class="bl-texte">Ce site n'est ni officiel ni institutionnel.
+        En cas d'écart avec la publication d'origine, cette dernière fait
+        seule référence. Les données sont republiées sans modification de
+        fond ; leur mise en forme et leur mise en relation relèvent de
+        l'éditeur.</p>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Vie privée</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Ce site ne dépose aucun traceur, ne demande
+        aucune inscription et ne collecte aucune donnée personnelle lors
+        d'une consultation ordinaire. Seules les tentatives d'accès à
+        l'espace d'administration sont consignées à des fins de sécurité,
+        avec une adresse tronquée de son dernier segment et une
+        conservation limitée à quelques mois. Les
+        fonds de carte sont fournis par la Géoplateforme de l'IGN et les
+        polices de caractères par Google Fonts : la consultation d'une
+        page comportant une carte adresse une requête à ces services.</p>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Signaler une erreur</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Une donnée vous paraît inexacte ? Vérifiez
+        d'abord auprès de la source citée sur la fiche : une correction
+        à l'origine se répercute ici à la collecte suivante. Si l'erreur
+        vient de ce site, signalez-la à l'adresse ci-dessus.</p>
+      </article></div>
+    </section>"""
+
+
 def page(d, base, canonique, adresses, fiches, rubrique,
          chemin_territoire, actives, sous=None, sous_dispo=(),
          accueil=False):
@@ -1583,6 +2261,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
   {escape(SOUS_TITRE)} — Licence Ouverte 2.0 · Contrat v{d['version_contrat']}
   · Mise à jour du {maj}
   · <a href="{base}/data/publie/v1/{t['niveau']}/{t['code']}.json">données brutes</a>
+  · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
 
 <script>var BASE="{base}";</script>
@@ -1695,18 +2374,6 @@ def main():
 
         redirections.append((f"/{niveau}/{code}", f"/{chemin}"))
 
-        if (niveau, code) == ACCUEIL:
-            racine_rubrique = RUBRIQUES[0]
-            # L'accueil reprend la fiche du canton. Sans précaution, deux
-            # adresses serviraient un contenu identique — les moteurs de
-            # recherche pénalisent ce cas. L'adresse canonique de l'accueil
-            # désigne donc la fiche du canton, et l'accueil reste hors du
-            # plan du site.
-            (RACINE / "index.html").write_text(
-                page(d, ".", f"{SITE}/{chemin}", adresses, fiches,
-                     racine_rubrique, chemin, actives, None, (),
-                     accueil=True),
-                encoding="utf-8")
 
     # ── contrôle d'exhaustivité de la recherche ──────────────────
     # Toute commune du référentiel doit être atteignable depuis la barre
@@ -1738,6 +2405,65 @@ def main():
         print("\n[BLOCAGE] Deux territoires produisent la même adresse.")
         sys.exit(1)
 
+    # ── accueil et mentions légales ──
+    recherche.sort(key=lambda x: (x["niveau"] != "commune", x["nom"]))
+
+    (RACINE / "index.html").write_text(
+        page_simple(
+            "Données publiques du Sud Grésivaudan",
+            "Population, logement, équipements, eau, risques et écoles pour "
+            "chaque commune du Sud Grésivaudan, à partir des sources "
+            "publiques françaises.",
+            corps_accueil(fiches, adresses, recherche), ".", SITE + "/"),
+        encoding="utf-8")
+    liens_site.append(SITE + "/")
+
+    if MENTIONS.get("editeur", "").strip():
+        dossier = RACINE / "mentions-legales"
+        dossier.mkdir(exist_ok=True)
+        dossier.joinpath("index.html").write_text(
+            page_simple("Mentions légales",
+                        "Éditeur, hébergement, sources des données et "
+                        "protection de la vie privée.",
+                        corps_mentions(), "..",
+                        f"{SITE}/mentions-legales/"),
+            encoding="utf-8")
+        liens_site.append(f"{SITE}/mentions-legales/")
+    else:
+        print("  [ATTENTION] Mentions légales non produites : renseignez")
+        print("              MENTIONS en tête de 04_generation.py. Elles")
+        print("              sont obligatoires avant toute communication.")
+
+    # ── leurre ──
+    leurre = RACINE / DOSSIER_LEURRE
+    leurre.mkdir(exist_ok=True)
+    leurre.joinpath("index.php").write_text(
+        LEURRE_PHP.replace("JOURNAL", JOURNAL_LEURRE)
+                  .replace("RETENTION", str(RETENTION_JOURNAL))
+                  .replace("DELAI", str(DELAI_LEURRE)),
+        encoding="utf-8")
+    leurre.joinpath(".htaccess").write_text(
+        LEURRE_HTACCESS.replace("JOURNAL", JOURNAL_LEURRE), encoding="utf-8")
+    # L'ancienne page statique doit disparaître, sans quoi elle resterait
+    # servie à la place du leurre.
+    ancienne = leurre / "index.html"
+    if ancienne.exists():
+        ancienne.unlink()
+
+    dossier = RACINE / DOSSIER_ADMIN
+    dossier.mkdir(exist_ok=True)
+    dossier.joinpath("journal.php").write_text(
+        JOURNAL_PHP.replace("LEURRE", DOSSIER_LEURRE)
+                   .replace("JOURNAL", JOURNAL_LEURRE)
+                   .replace("RETENTION", str(RETENTION_JOURNAL)),
+        encoding="utf-8")
+    dossier.joinpath("index.html").write_text(
+        page_simple("Administration",
+                    "Suivi interne des sources et des mises à jour.",
+                    corps_administration(fiches), "..",
+                    f"{SITE}/{DOSSIER_ADMIN}/", indexable=False),
+        encoding="utf-8")
+
     # index de recherche : propre à l'affichage, distinct du contrat v1
     recherche.sort(key=lambda x: (x["niveau"] != "commune", x["nom"]))
     (ASSETS / "recherche.json").write_text(
@@ -1767,6 +2493,10 @@ def main():
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{entrees}\n</urlset>\n", encoding="utf-8")
 
+    # Le dossier d'administration n'est PAS mentionné ici : robots.txt
+    # est public, et une ligne « Disallow » y révélerait l'adresse que
+    # l'on souhaite garder discrète. La balise noindex de la page suffit
+    # à écarter les moteurs qui la trouveraient.
     (RACINE / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n",
         encoding="utf-8")
@@ -1782,7 +2512,11 @@ def main():
     print(f"  Pages produites : {produites}")
     print(f"  Rubriques       : "
           + ", ".join(f"{k} ({v})" for k, v in par_rubrique.items()))
-    print(f"  Accueil         : index.html ({ACCUEIL[0]} {ACCUEIL[1]})")
+    print(f"  Accueil         : index.html, contenu propre")
+    print(f"  Administration  : /{DOSSIER_ADMIN}/ — non indexée, "
+          f"non mentionnée")
+    print(f"  Leurre          : /{DOSSIER_LEURRE}/ — journal des "
+          f"tentatives d'accès")
     cartes = RACINE / "assets" / "cartes"
     if cartes.exists():
         fichiers = list(cartes.rglob("*.svg"))

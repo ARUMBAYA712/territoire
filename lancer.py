@@ -41,7 +41,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 7,
+    "04_generation.py": 11,
     "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,
@@ -97,10 +97,12 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 12_rivieres.py   les débits fonctionnent. Ajout : signalement de
-#                      l'affluent le plus bas, et explication de la
-#                      contradiction apparente entre un grand cours d'eau
-#                      au débit normal et des restrictions sécheresse.
+#   · 04_generation.py administration à /Terri_Admin/, et ancienne
+#     adresse /administration/ transformée en leurre : fausse page de
+#     connexion, attente imposée, journal des tentatives. Les adresses
+#     y sont tronquées d'un segment avant écriture.
+#   · Journal consultable depuis /Terri_Admin/journal.php
+#   · MENTIONS reste à renseigner en tête du fichier.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -118,8 +120,6 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
-    ("12_rivieres.py", []),
-    ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
 

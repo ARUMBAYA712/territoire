@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-05",
+ "genere_le": "2026-09-06",
  "version": 1,
  "source": "Hub'Eau — hydrométrie, services de l'État",
  "licence": "Licence Ouverte 2.0",
@@ -88,7 +88,7 @@
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 161.84 m³/s sur 407 relevés. Débit actuel à 97 % de cette valeur."
+       "texte": "Médiane des mois comparables : 162.44 m³/s sur 404 relevés. Débit actuel à 96 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -98,13 +98,13 @@
         "Distance du centre du territoire": "13 km",
         "Débit": "109 L/s",
         "Dernière mesure": "04/09/2026",
-        "Mesures sur 5 ans": 3358
+        "Mesures sur 5 ans": 3356
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 308 L/s sur 237 relevés. Débit actuel à 35 % de cette valeur."
+       "texte": "Médiane des mois comparables : 308 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -114,13 +114,13 @@
         "Distance du centre du territoire": "14 km",
         "Débit": "42 L/s",
         "Dernière mesure": "04/09/2026",
-        "Mesures sur 5 ans": 3638
+        "Mesures sur 5 ans": 3636
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 48 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 47 % de cette valeur."
       },
       {
        "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
@@ -226,7 +226,7 @@
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 161.84 m³/s sur 407 relevés. Débit actuel à 97 % de cette valeur."
+       "texte": "Médiane des mois comparables : 162.44 m³/s sur 404 relevés. Débit actuel à 96 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -236,13 +236,13 @@
         "Distance du centre du territoire": "13 km",
         "Débit": "109 L/s",
         "Dernière mesure": "04/09/2026",
-        "Mesures sur 5 ans": 3358
+        "Mesures sur 5 ans": 3356
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 308 L/s sur 237 relevés. Débit actuel à 35 % de cette valeur."
+       "texte": "Médiane des mois comparables : 308 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -252,13 +252,13 @@
         "Distance du centre du territoire": "14 km",
         "Débit": "42 L/s",
         "Dernière mesure": "04/09/2026",
-        "Mesures sur 5 ans": 3638
+        "Mesures sur 5 ans": 3636
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 48 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 47 % de cette valeur."
       },
       {
        "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",

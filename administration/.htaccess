@@ -1,0 +1,9 @@
+# Le journal ne doit jamais être servi par le web.
+<Files "journal-acces.log">
+    Require all denied
+</Files>
+
+# Rien d'autre que la page d'accueil dans ce dossier.
+<FilesMatch "\.(json|csv|zip|sql|bak|log|txt)$">
+    Require all denied
+</FilesMatch>
