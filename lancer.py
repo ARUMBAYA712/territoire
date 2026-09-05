@@ -42,7 +42,7 @@ VERSIONS_ATTENDUES = {
     "02_canton.py": 2,
     "03_agregation.py": 3,
     "04_generation.py": 7,
-    "12_rivieres.py": 1,
+    "12_rivieres.py": 2,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,

@@ -32,7 +32,7 @@ import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
 
-VERSION_SCRIPT = 1
+VERSION_SCRIPT = 2
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -84,7 +84,20 @@ def appeler(operation, **params):
                 time.sleep(attente)
                 attente *= 2
                 continue
-            print(f"\n  [ERREUR] Hub'Eau a répondu {e.code}\n  {url}")
+            # Le corps de la réponse porte souvent le motif exact du
+            # refus : « paramètre inconnu », « valeur hors bornes »…
+            detail = ""
+            try:
+                corps = e.read().decode("utf-8", errors="replace")
+                donnees = json.loads(corps)
+                detail = str(donnees.get("api_message")
+                             or donnees.get("message") or corps)[:200]
+            except Exception:
+                pass
+            print(f"\n  [ERREUR] Hub'Eau a répondu {e.code}")
+            if detail:
+                print(f"  {detail}")
+            print(f"  {url}")
             return None
         except (urllib.error.URLError, OSError) as e:
             if tentative < TENTATIVES:
@@ -205,10 +218,25 @@ def chronique(code_station):
     année sur l'autre.
     """
     depuis = (date.today() - timedelta(days=365 * HISTORIQUE)).isoformat()
-    lot = appeler("obs_elab", code_entite=code_station,
-                  grandeur_hydro_elab="QmJ", date_debut_obs_elab=depuis,
-                  size=5000, sort="desc")
-    if lot is None:
+
+    # Les paramètres acceptés varient d'une version de l'API à l'autre.
+    # Plutôt que d'en supposer un jeu, on essaie les combinaisons par
+    # ordre de préférence et on retient la première qui répond.
+    tentatives = [
+        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
+         "date_debut_obs_elab": depuis, "size": 5000},
+        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
+         "date_debut_obs_elab": depuis, "size": 2000},
+        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
+         "size": 2000},
+        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ"},
+    ]
+    lot = None
+    for params in tentatives:
+        lot = appeler("obs_elab", **params)
+        if lot:
+            break
+    if not lot:
         lot = []
 
     mesures = []
@@ -372,15 +400,32 @@ def inspecter(boite):
         print(f"    {cle:<36} {str(valeur)[:52]}")
 
     code = champ(lot[0], "code_station")
-    if code:
-        obs = appeler("obs_elab", code_entite=code, grandeur_hydro_elab="QmJ",
-                      size=2, sort="desc")
-        print(f"\n  Observations de {code} — champs :")
+    if not code:
+        print()
+        return
+
+    depuis = (date.today() - timedelta(days=90)).isoformat()
+    variantes = [
+        ("date + taille", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
+                           "date_debut_obs_elab": depuis, "size": 5}),
+        ("taille seule", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
+                          "size": 5}),
+        ("minimale", {"code_entite": code, "grandeur_hydro_elab": "QmJ"}),
+        ("avec tri", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
+                      "size": 5, "sort": "desc"}),
+    ]
+    print(f"\n  Observations de {code} — recherche du bon appel :")
+    for libelle, params in variantes:
+        obs = appeler("obs_elab", **params)
+        etat = ("aucune donnée" if obs == [] else
+                "échec" if obs is None else f"{len(obs)} enregistrement(s)")
+        print(f"    {libelle:<18} {etat}")
         if obs:
+            print(f"\n    Champs du premier :")
             for cle, valeur in obs[0].items():
-                print(f"    {cle:<36} {str(valeur)[:52]}")
-        else:
-            print("    aucune observation")
+                print(f"      {cle:<34} {str(valeur)[:50]}")
+            break
+        time.sleep(PAUSE)
     print()
 
 
