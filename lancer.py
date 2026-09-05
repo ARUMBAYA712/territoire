@@ -41,7 +41,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 12,
+    "04_generation.py": 13,
     "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,

@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 12
+VERSION_SCRIPT = 13
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -136,17 +136,17 @@ CHANTIERS = [
 ]
 
 MENTIONS = {
-    "editeur": "F. LAFONT",              # nom, prénom ou raison sociale
+    "editeur": "",              # nom, prénom ou raison sociale
     "statut": "",               # ex. « entrepreneur individuel »
     "siret": "",                # si vous êtes immatriculé
     "adresse": "",              # adresse postale
-    "courriel": "contact@sudgresiv.com",             # adresse de contact
-    "directeur": "F. LAFONT",            # directeur de la publication
+    "courriel": "",             # adresse de contact
+    "directeur": "",            # directeur de la publication
     "hebergeur": ("OVH SAS, 2 rue Kellermann, 59100 Roubaix, France — "
                   "ovhcloud.com"),
 }
 TITRE_SITE = "Sud Grésiv'"
-SOUS_TITRE = "Section Territoire : Données publiques du territoire"
+SOUS_TITRE = "Données publiques du territoire"
 
 RACINE = Path(".")
 PUBLIE = RACINE / "data" / "publie" / "v1"
@@ -1894,6 +1894,7 @@ def corps_accueil(fiches, adresses, index_recherche):
         portes.append(
             f'<a class="chip" href="{cible}">{escape(libelle)} — '
             f'{escape(fiche["territoire"]["nom"])}</a>')
+    portes = "".join(portes)
 
     communes = sorted(
         (t for t in index_recherche if t["niveau"] == "commune"),
@@ -1902,12 +1903,14 @@ def corps_accueil(fiches, adresses, index_recherche):
         f'<a class="chip" href="{escape(t["url"])}">{escape(t["nom"])}</a>'
         for t in communes)
 
-    rubriques = "".join(
-        f'<span class="chip">{escape(r["nom"])}</span>'
-        for r in RUBRIQUES if r["id"] and
-        any(r["id"] in rubriques_actives(d) for d in fiches.values()))
+    rubriques_ouvertes = [r for r in RUBRIQUES if r["id"] and
+                          any(r["id"] in rubriques_actives(d)
+                              for d in fiches.values())]
+    rubriques = "".join(f'<span class="chip">{escape(r["nom"])}</span>'
+                        for r in rubriques_ouvertes)
 
-    return f"""    <div class="hd"><h2>Les données publiques de votre commune</h2></div>
+    return f"""    <div class="hd"><h2>Les données publiques de votre commune</h2>
+      <span class="n">{len(index_recherche)} territoires · {len(rubriques_ouvertes)} rubriques</span></div>
 
     <section class="bloc"><span class="dsp">Ce que vous trouverez ici</span>
       <div class="bl-grille"><article class="bl-item">
