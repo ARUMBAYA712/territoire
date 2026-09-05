@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-04",
+  "genere_le": "2026-09-05",
   "territoire": {
     "niveau": "commune",
     "code": "38394",
@@ -383,10 +383,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 10,
-      "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+      "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
       "valeur": 3,
@@ -398,10 +398,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 20,
-      "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+      "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
       "valeur": 1,
@@ -413,10 +413,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 30,
-      "explication": "Équipements sportifs, de loisir et de culture."
+      "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
       "valeur": 5,
@@ -428,10 +428,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 40,
-      "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+      "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     },
     "ENV-01": {
       "valeur": 6,
@@ -691,40 +691,52 @@
     {
       "rubrique": "equipements",
       "id": "equipements-par-domaine",
-      "titre": "Équipements par domaine — 2024",
+      "titre": "Équipements recensés — 2024",
       "items": [
         {
-          "titre": "Commerces",
+          "titre": "Boulangerie-pâtisserie",
           "details": {
-            "Équipements": "2"
+            "Domaine": "Commerces",
+            "Nombre": "1"
           }
         },
         {
-          "titre": "Santé et action sociale",
+          "titre": "Station de recharge de véhicules électriques",
           "details": {
-            "Équipements": "3"
+            "Domaine": "Commerces",
+            "Nombre": "1"
           }
         },
         {
-          "titre": "Sport, loisir et culture",
+          "titre": "Masseur kinésithérapeute",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Santé et action sociale",
+            "Nombre": "3"
           }
         },
         {
-          "titre": "Services aux particuliers",
+          "titre": "Bibliothèque",
           "details": {
-            "Équipements": "5"
+            "Domaine": "Sport, loisir et culture",
+            "Nombre": "1"
           }
         },
         {
-          "titre": "Enseignement",
+          "titre": "Coiffure",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Services aux particuliers",
+            "Nombre": "5"
+          }
+        },
+        {
+          "titre": "École primaire",
+          "details": {
+            "Domaine": "Enseignement",
+            "Nombre": "1"
           }
         }
       ],
-      "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+      "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     },
     {
       "rubrique": "environnement",

@@ -35,6 +35,9 @@ Marche à suivre la première fois :
     python 11_population.py --colonnes
         affiche les colonnes reconnues dans le fichier mémorisé
 
+    python 11_population.py --equipements 38416
+        détaille les types d'équipement recensés pour une commune
+
     python 11_population.py
         collecte, en réutilisant le fichier mémorisé
 
@@ -56,7 +59,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 4
+VERSION_SCRIPT = 5
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -79,7 +82,7 @@ SOURCE_DEFAUT = ("https://www.insee.fr/fr/statistiques/fichier/5359146/"
 SOURCE = "INSEE — recensement de la population"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 4
+VERSION = 5
 RUBRIQUE = "population"
 ANCRE = "repartition-age"
 DELAI = 300
@@ -447,6 +450,50 @@ def fichier_de_donnees(archive):
         return max(candidats, key=lambda n: z.getinfo(n).file_size)
 
 
+def libelles_variables(archive):
+    """Libellé de chaque variable, lu dans les métadonnées de l'archive.
+
+    Le fichier meta_dossier_complet.csv associe à chaque code de colonne
+    son intitulé en clair. C'est la source à utiliser plutôt que de
+    deviner ce que désigne « BPE_2024_B207 » : elle est fournie par
+    l'INSEE et suit automatiquement les changements de nomenclature.
+    """
+    with zipfile.ZipFile(archive) as z:
+        metas = [n for n in z.namelist()
+                 if "meta" in n.lower() and n.lower().endswith((".csv", ".txt"))]
+        if not metas:
+            return {}
+        brut = z.read(metas[0])
+
+    for encodage in ("utf-8-sig", "latin-1"):
+        try:
+            texte = brut.decode(encodage)
+            break
+        except UnicodeDecodeError:
+            continue
+    else:
+        return {}
+
+    premiere = texte.split("\n", 1)[0]
+    separateur = ";" if premiere.count(";") > premiere.count(",") else ","
+    lecture = csv.DictReader(io.StringIO(texte), delimiter=separateur)
+
+    colonnes = lecture.fieldnames or []
+    cle_code = next((c for c in colonnes if c.strip().upper() == "COD_VAR"), None)
+    cle_libelle = next((c for c in colonnes
+                        if c.strip().upper() in ("LIB_VAR", "LIB_VAR_LONG")), None)
+    if not cle_code or not cle_libelle:
+        return {}
+
+    dictionnaire = {}
+    for ligne in lecture:
+        code = str(ligne.get(cle_code, "")).strip()
+        libelle = str(ligne.get(cle_libelle, "")).strip()
+        if code and libelle:
+            dictionnaire.setdefault(code, libelle)
+    return dictionnaire
+
+
 def parcourir(archive, nom_fichier):
     """Ouvre le CSV en flux, sans jamais le charger entièrement."""
     z = zipfile.ZipFile(archive)
@@ -504,14 +551,15 @@ EXPLICATIONS = {
                "aux appartements."),
     "LOG-05": ("Part des résidences principales occupées par leur "
                "propriétaire."),
-    "EQU-01": ("Commerces recensés par la base permanente des équipements : "
-               "alimentation, équipement de la personne et de la maison, "
-               "services marchands."),
-    "EQU-02": ("Équipements de santé et d'action sociale : médecins, "
-               "pharmacies, infirmiers, établissements d'accueil."),
-    "EQU-03": ("Équipements sportifs, de loisir et de culture."),
-    "EQU-04": ("Services aux particuliers : administration, artisanat, "
-               "services de proximité."),
+    "EQU-01": ("Commerces recensés par la base permanente des équipements. "
+               "Ce fichier n'en retient qu'une sélection de types : le "
+               "décompte est un ordre de grandeur, non un inventaire."),
+    "EQU-02": ("Équipements de santé et d'action sociale, pour la sélection "
+               "de types retenue dans ce fichier."),
+    "EQU-03": ("Équipements sportifs, de loisir et de culture, pour la "
+               "sélection de types retenue dans ce fichier."),
+    "EQU-04": ("Services aux particuliers, pour la sélection de types "
+               "retenue dans ce fichier."),
 }
 
 
@@ -547,7 +595,23 @@ def habiller(ident, m):
     return m
 
 
-def synthetiser(ligne, colonnes, millesime):
+def nettoyer_libelle(texte):
+    """Rend lisible un intitulé de variable INSEE.
+
+    Les libellés sont du type « Nombre de boulangeries en 2024 » : on
+    retire le préfixe de dénombrement et le millésime, qui figurent déjà
+    ailleurs sur la page.
+    """
+    propre = str(texte or "").strip()
+    for prefixe in ("Nombre d'", "Nombre de ", "Nombre des ", "Nb "):
+        if propre.lower().startswith(prefixe.lower()):
+            propre = propre[len(prefixe):]
+            break
+    propre = re.sub(r"\s+en\s+\d{4}\s*$", "", propre)
+    return propre[:1].upper() + propre[1:] if propre else ""
+
+
+def synthetiser(ligne, colonnes, millesime, dictionnaire=None):
     """Indicateurs et bloc d'une commune, à partir d'une ligne du fichier."""
     mesures, tranches = {}, []
 
@@ -637,15 +701,21 @@ def synthetiser(ligne, colonnes, millesime):
                    f"sur {espacer(principales)}")
 
     # ── équipements ──
-    par_domaine = {}
+    dictionnaire = dictionnaire or {}
+    par_domaine, detail_equipements = {}, []
     for lettre, colonnes_domaine in (colonnes.get("equipements") or {}).items():
         total = 0
         vu = False
         for col in colonnes_domaine:
             valeur = nombre(ligne.get(col, ""))
-            if valeur is not None:
-                total += valeur
-                vu = True
+            if valeur is None:
+                continue
+            total += valeur
+            vu = True
+            if valeur:
+                libelle = nettoyer_libelle(dictionnaire.get(col, ""))
+                detail_equipements.append(
+                    (lettre, libelle or col.split("_")[-1], valeur))
         if vu and total:
             par_domaine[lettre] = total
 
@@ -656,8 +726,8 @@ def synthetiser(ligne, colonnes, millesime):
         if par_domaine.get(lettre):
             mesures[ident] = mesure(
                 par_domaine[lettre], "équipements", nom,
-                agregation="somme", ancre=ANCRE_EQUIPEMENTS,
-                unite_pluriel="équipements")
+                agregation="somme", unite_pluriel="équipements",
+                **({"ancre": ANCRE_EQUIPEMENTS} if detail_equipements else {}))
 
     blocs = []
     if tranches:
@@ -699,27 +769,27 @@ def synthetiser(ligne, colonnes, millesime):
                          "compté dans les deux ensembles."),
             })
 
-    if par_domaine:
-        entrees = [{"titre": DOMAINES[lettre][0],
-                    "details": {"Équipements": espacer(total)}}
-                   for lettre, total in sorted(
-                       par_domaine.items(),
-                       key=lambda x: DOMAINES.get(x[0], ("", 99))[1])
-                   if lettre in DOMAINES]
-        if entrees:
-            blocs.append({
-                "rubrique": "equipements",
-                "id": ANCRE_EQUIPEMENTS,
-                "titre": ("Équipements par domaine"
+    if detail_equipements:
+        detail_equipements.sort(
+            key=lambda x: (DOMAINES.get(x[0], ("", 99))[1], -x[2], x[1]))
+        blocs.append({
+            "rubrique": "equipements",
+            "id": ANCRE_EQUIPEMENTS,
+            "titre": ("Équipements recensés"
                       + (f" — {colonnes.get('millesime_equipements')}"
                          if colonnes.get("millesime_equipements") else "")),
-                "items": entrees,
-                "note": ("Recensement de la base permanente des équipements. "
-                         "Un équipement absent d'une commune ne signifie pas "
-                         "que ses habitants n'y ont pas accès : la plupart "
-                         "des services se fréquentent au-delà des limites "
-                         "communales."),
-            })
+            "items": [{"titre": libelle,
+                       "details": {"Domaine": DOMAINES.get(
+                                       lettre, ("Autre", 99))[0],
+                                   "Nombre": espacer(valeur)}}
+                      for lettre, libelle, valeur in detail_equipements],
+            "note": ("Base permanente des équipements. Ce fichier n'en "
+                     "retient qu'une sélection de types : d'autres "
+                     "équipements existent sans figurer ici. Un équipement "
+                     "absent d'une commune ne signifie pas que ses habitants "
+                     "n'y ont pas accès, la plupart des services se "
+                     "fréquentant au-delà des limites communales."),
+        })
 
     mesures = {k: habiller(k, v) for k, v in mesures.items()}
     presentes = {b.get("id") for b in blocs}
@@ -794,6 +864,55 @@ def analyser(colonnes_fichier):
     return colonnes
 
 
+def inspecter_equipements(code_commune):
+    """Liste chaque type d'équipement recensé pour une commune.
+
+    Le fichier ne retient qu'une sélection de types de la base permanente
+    des équipements, et ne donne que leur code. Cette commande affiche le
+    code et l'effectif de chacun : c'est ce qui permettra de leur associer
+    un libellé lisible, et de détailler la rubrique.
+    """
+    url = source_memorisee() or SOURCE_DEFAUT
+    archive = telecharger_archive(url)
+    nom = fichier_de_donnees(archive)
+    dictionnaire = libelles_variables(archive)
+    z, flux, lecture, colonnes_fichier = parcourir(archive, nom)
+    colonnes = reconnaitre(colonnes_fichier)
+
+    equipements = colonnes.get("equipements") or {}
+    toutes = sorted(c for lot in equipements.values() for c in lot)
+    if not toutes:
+        flux.close(); z.close()
+        print("\n  Aucune colonne d'équipement reconnue.\n")
+        return
+
+    cible = None
+    for ligne in lecture:
+        if str(ligne.get(colonnes["code"], "")).strip() == code_commune:
+            cible = ligne
+            break
+    flux.close(); z.close()
+
+    print(f"\nÉquipements recensés — commune {code_commune}")
+    print("─" * 60)
+    print(f"  {len(toutes)} type(s) d'équipement dans le fichier, "
+          f"millésime {colonnes.get('millesime_equipements')}\n")
+
+    for lettre in sorted(equipements):
+        libelle = DOMAINES.get(lettre, ("domaine inconnu", 99))[0]
+        print(f"  ── {lettre} · {libelle} ──")
+        for colonne in sorted(equipements[lettre]):
+            code_type = colonne.split("_")[-1]
+            valeur = nombre(cible.get(colonne, "")) if cible else None
+            marque = f"{valeur:>4}" if valeur else "   ·"
+            libelle = nettoyer_libelle(dictionnaire.get(colonne, ""))
+            print(f"     {code_type:<8} {marque}   {libelle}")
+    if not dictionnaire:
+        print("\n  [attention] Métadonnées introuvables dans l'archive :")
+        print("  les libellés ne peuvent pas être associés aux codes.")
+    print()
+
+
 def main():
     if "--chercher" in sys.argv:
         i = sys.argv.index("--chercher")
@@ -832,6 +951,14 @@ def main():
             ARCHIVE.unlink()
         print(f"\nSource mémorisée : {url}")
 
+    if "--equipements" in sys.argv:
+        i = sys.argv.index("--equipements")
+        code = (sys.argv[i + 1]
+                if i + 1 < len(sys.argv) and not sys.argv[i + 1].startswith("--")
+                else "38416")
+        inspecter_equipements(code)
+        return
+
     if "--colonnes" in sys.argv:
         archive = telecharger_archive(url)
         nom = fichier_de_donnees(archive)
@@ -852,6 +979,12 @@ def main():
     archive = telecharger_archive(url)
     nom = fichier_de_donnees(archive)
     print(f"  Fichier de données : {nom}")
+
+    dictionnaire = libelles_variables(archive)
+    print(f"  Dictionnaire des variables : "
+          f"{len(dictionnaire)} libellé(s)" if dictionnaire
+          else "  [attention] Métadonnées absentes : les équipements "
+               "resteront sans libellé.")
 
     z, flux, lecture, colonnes_fichier = parcourir(archive, nom)
     colonnes = reconnaitre(colonnes_fichier)
@@ -885,7 +1018,8 @@ def main():
         code = str(ligne.get(colonnes["code"], "")).strip()
         if code not in attendues or code in resultat:
             continue
-        synthese = synthetiser(ligne, colonnes, colonnes.get("millesime"))
+        synthese = synthetiser(ligne, colonnes, colonnes.get("millesime"),
+                               dictionnaire)
         if synthese["mesures"]:
             resultat[code] = synthese
         if len(resultat) == len(attendues):

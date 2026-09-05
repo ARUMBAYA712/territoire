@@ -48,7 +48,7 @@ VERSIONS_ATTENDUES = {
     "08_georisques.py": 9,
     "09_nappes.py": 2,
     "10_ecoles.py": 5,
-    "11_population.py": 4,
+    "11_population.py": 5,
 }
 
 
@@ -96,13 +96,11 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 08_georisques.py deux corrections :
-#       – les risques sont imbriqués dans une liste d'objets ; la lecture
-#         à plat ramenait la liste convertie en texte, ou le nom de la
-#         commune. Lecture en profondeur désormais.
-#       – renvoi vers Géorisques rétabli, en lien générique correctement
-#         libellé : le portail n'expose pas d'adresse par commune.
-#     Recollecte nécessaire.
+#   · 02_canton.py     source officielle inscrite : décret n° 2014-180
+#   · 08_georisques.py lecture en profondeur des risques, renvoi Géorisques
+#   · 11_population.py les équipements sont détaillés par type, avec les
+#                      libellés officiels lus dans les métadonnées de
+#                      l'archive INSEE — aucun libellé deviné
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -120,7 +118,9 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("02_canton.py", []),
     ("08_georisques.py", ["--tout"]),
+    ("11_population.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]

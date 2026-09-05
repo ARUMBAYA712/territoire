@@ -1,6 +1,6 @@
 {
- "genere_le": "2026-09-04",
- "version": 4,
+ "genere_le": "2026-09-05",
+ "version": 5,
  "source": "INSEE — recensement de la population",
  "licence": "Licence Ouverte 2.0",
  "frequence": "annuelle",
@@ -157,10 +157,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 5,
@@ -172,10 +172,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 2,
@@ -187,10 +187,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -297,34 +297,45 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "5"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "5"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -479,10 +490,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -589,22 +600,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -854,16 +867,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -1018,10 +1032,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     }
    },
    "blocs": [
@@ -1121,16 +1135,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Station de recharge de véhicules électriques",
+       "details": {
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -1625,16 +1647,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -1789,10 +1812,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -1899,22 +1922,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -2069,10 +2094,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     }
    },
    "blocs": [
@@ -2179,16 +2204,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -2343,10 +2369,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 10,
@@ -2358,10 +2384,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -2373,10 +2399,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 4,
@@ -2388,10 +2414,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -2498,40 +2524,129 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "10"
+        "Domaine": "Commerces",
+        "Nombre": "4"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "10"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Hypermarché et grand magasin",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Station-service",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Supermarché et magasin multi-commerce",
+       "details": {
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Masseur kinésithérapeute",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "5"
+       }
+      },
+      {
+       "titre": "Infirmier",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Médecin généraliste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Psychologue",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "4"
+       }
+      },
+      {
+       "titre": "Collège",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Lycée d’enseignement agricole",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -2686,10 +2801,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -2796,22 +2911,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -3211,10 +3328,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-03": {
      "valeur": 1,
@@ -3226,10 +3343,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -3336,28 +3453,38 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -3607,16 +3734,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -3771,10 +3899,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 1,
@@ -3786,10 +3914,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -3801,10 +3929,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -3911,34 +4039,38 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -4433,16 +4565,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -4597,10 +4730,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -4707,22 +4840,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Psychologue",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -4877,10 +5012,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -4987,22 +5122,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -5157,10 +5294,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -5172,10 +5309,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -5282,28 +5419,45 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Pharmacie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -5458,10 +5612,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -5568,22 +5722,38 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Enseignement",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Collège",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Lycée d’enseignement général et/ou technologique",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -5738,10 +5908,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -5848,22 +6018,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -6018,10 +6190,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -6033,10 +6205,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 2,
@@ -6048,10 +6220,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -6158,34 +6330,45 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Médecin généraliste",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -6340,10 +6523,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 12,
@@ -6355,10 +6538,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -6370,10 +6553,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -6385,10 +6568,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -6495,40 +6678,87 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "12"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "5"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Médecin généraliste",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "4"
+       }
+      },
+      {
+       "titre": "Masseur kinésithérapeute",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Collège",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -7173,10 +7403,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -7188,10 +7418,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -7298,28 +7528,38 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -7474,10 +7714,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -7584,22 +7824,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -7754,10 +7996,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -7769,10 +8011,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -7879,28 +8121,31 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -8055,10 +8300,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-04": {
      "valeur": 1,
@@ -8070,10 +8315,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -8180,28 +8425,31 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -8356,10 +8604,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 9,
@@ -8371,10 +8619,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -8386,10 +8634,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -8401,10 +8649,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -8511,40 +8759,87 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "9"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Supérette",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "4"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
+       }
+      },
+      {
+       "titre": "Médecin généraliste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -8794,16 +9089,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -8958,10 +9254,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -9068,22 +9364,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -9238,10 +9536,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -9348,22 +9646,24 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École maternelle",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -9518,10 +9818,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 3,
@@ -9533,10 +9833,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -9548,10 +9848,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 5,
@@ -9563,10 +9863,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -9673,40 +9973,52 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "5"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "5"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -9861,10 +10173,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 4,
@@ -9876,10 +10188,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -9891,10 +10203,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -9906,10 +10218,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -10016,40 +10328,73 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Supermarché et magasin multi-commerce",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Psychologue",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -10204,10 +10549,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 7,
@@ -10219,10 +10564,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -10234,10 +10579,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -10344,34 +10689,52 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "7"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "4"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Psychologue",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -10526,10 +10889,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 81,
@@ -10541,10 +10904,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 2,
@@ -10556,10 +10919,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 18,
@@ -10571,10 +10934,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -10681,40 +11044,150 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "20"
+        "Domaine": "Commerces",
+        "Nombre": "9"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "81"
+        "Domaine": "Commerces",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Supermarché et magasin multi-commerce",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "18"
+        "Domaine": "Commerces",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Station-service",
        "details": {
-        "Équipements": "9"
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Supérette",
+       "details": {
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Infirmier",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "22"
+       }
+      },
+      {
+       "titre": "Chirurgien dentiste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "21"
+       }
+      },
+      {
+       "titre": "Masseur kinésithérapeute",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "14"
+       }
+      },
+      {
+       "titre": "Psychologue",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "11"
+       }
+      },
+      {
+       "titre": "Médecin généraliste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "10"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "18"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Collège",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Lycée d’enseignement agricole",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Lycée d’enseignement général et/ou technologique",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -10964,16 +11437,17 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -11128,10 +11602,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 7,
@@ -11143,10 +11617,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -11158,10 +11632,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 2,
@@ -11173,10 +11647,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -11283,40 +11757,73 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "7"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "4"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Pharmacie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -11471,10 +11978,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 6,
@@ -11486,10 +11993,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -11501,10 +12008,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 3,
@@ -11516,10 +12023,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -11626,40 +12133,73 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "6"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Masseur kinésithérapeute",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Médecin généraliste",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Pharmacie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "3"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -11814,10 +12354,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 6,
@@ -11829,10 +12369,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 4,
@@ -11844,10 +12384,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -11954,34 +12494,73 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "3"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Hypermarché et grand magasin",
        "details": {
-        "Équipements": "6"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Station-service",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "3"
+       }
+      },
+      {
+       "titre": "Médecin généraliste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Psychologue",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "4"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -12136,10 +12715,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 2,
@@ -12151,10 +12730,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 2,
@@ -12166,10 +12745,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -12276,34 +12855,45 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Médecin généraliste",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -12458,10 +13048,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-04": {
      "valeur": 1,
@@ -12473,10 +13063,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -12583,28 +13173,31 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École primaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -12759,10 +13352,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-04": {
      "valeur": 1,
@@ -12774,10 +13367,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -12884,28 +13477,31 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -13060,10 +13656,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 2,
@@ -13075,10 +13671,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 1,
@@ -13090,10 +13686,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -13200,34 +13796,45 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "2"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Infirmier",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Coiffure",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Services aux particuliers",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -13382,10 +13989,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -13397,10 +14004,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -13507,28 +14114,31 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Santé et action sociale",
+       "titre": "Médecin généraliste",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Bibliothèque",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "École élémentaire",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   },
@@ -13683,10 +14293,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 10,
-     "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+     "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
      "valeur": 31,
@@ -13698,10 +14308,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 20,
-     "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+     "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
      "valeur": 1,
@@ -13713,10 +14323,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 30,
-     "explication": "Équipements sportifs, de loisir et de culture."
+     "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
      "valeur": 8,
@@ -13728,10 +14338,10 @@
      "format": "texte",
      "rubrique": "equipements",
      "agregation": "somme",
-     "ancre": "equipements-par-domaine",
      "unite_pluriel": "équipements",
+     "ancre": "equipements-par-domaine",
      "rang": 40,
-     "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+     "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     }
    },
    "blocs": [
@@ -13838,40 +14448,129 @@
     {
      "rubrique": "equipements",
      "id": "equipements-par-domaine",
-     "titre": "Équipements par domaine — 2024",
+     "titre": "Équipements recensés — 2024",
      "items": [
       {
-       "titre": "Commerces",
+       "titre": "Boulangerie-pâtisserie",
        "details": {
-        "Équipements": "10"
+        "Domaine": "Commerces",
+        "Nombre": "4"
        }
       },
       {
-       "titre": "Santé et action sociale",
+       "titre": "Station-service",
        "details": {
-        "Équipements": "31"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Sport, loisir et culture",
+       "titre": "Épicerie",
        "details": {
-        "Équipements": "1"
+        "Domaine": "Commerces",
+        "Nombre": "2"
        }
       },
       {
-       "titre": "Services aux particuliers",
+       "titre": "Station de recharge de véhicules électriques",
        "details": {
-        "Équipements": "8"
+        "Domaine": "Commerces",
+        "Nombre": "1"
        }
       },
       {
-       "titre": "Enseignement",
+       "titre": "Supermarché et magasin multi-commerce",
        "details": {
-        "Équipements": "4"
+        "Domaine": "Commerces",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Infirmier",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "15"
+       }
+      },
+      {
+       "titre": "Masseur kinésithérapeute",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "8"
+       }
+      },
+      {
+       "titre": "Médecin généraliste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "4"
+       }
+      },
+      {
+       "titre": "Pharmacie",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "2"
+       }
+      },
+      {
+       "titre": "Chirurgien dentiste",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Psychologue",
+       "details": {
+        "Domaine": "Santé et action sociale",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Bibliothèque",
+       "details": {
+        "Domaine": "Sport, loisir et culture",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "Coiffure",
+       "details": {
+        "Domaine": "Services aux particuliers",
+        "Nombre": "8"
+       }
+      },
+      {
+       "titre": "Collège",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École maternelle",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École primaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
+       }
+      },
+      {
+       "titre": "École élémentaire",
+       "details": {
+        "Domaine": "Enseignement",
+        "Nombre": "1"
        }
       }
      ],
-     "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+     "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     }
    ]
   }

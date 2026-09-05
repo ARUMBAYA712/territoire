@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-04",
+  "genere_le": "2026-09-05",
   "territoire": {
     "niveau": "commune",
     "code": "38526",
@@ -383,10 +383,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 20,
-      "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+      "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-03": {
       "valeur": 1,
@@ -398,10 +398,10 @@
       "format": "texte",
       "rubrique": "equipements",
       "agregation": "somme",
-      "ancre": "equipements-par-domaine",
       "unite_pluriel": "équipements",
+      "ancre": "equipements-par-domaine",
       "rang": 30,
-      "explication": "Équipements sportifs, de loisir et de culture."
+      "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "ENV-01": {
       "valeur": 3,
@@ -673,28 +673,31 @@
     {
       "rubrique": "equipements",
       "id": "equipements-par-domaine",
-      "titre": "Équipements par domaine — 2024",
+      "titre": "Équipements recensés — 2024",
       "items": [
         {
-          "titre": "Santé et action sociale",
+          "titre": "Médecin généraliste",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Santé et action sociale",
+            "Nombre": "1"
           }
         },
         {
-          "titre": "Sport, loisir et culture",
+          "titre": "Bibliothèque",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Sport, loisir et culture",
+            "Nombre": "1"
           }
         },
         {
-          "titre": "Enseignement",
+          "titre": "École élémentaire",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Enseignement",
+            "Nombre": "1"
           }
         }
       ],
-      "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+      "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     },
     {
       "rubrique": "environnement",

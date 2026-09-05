@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-04",
+  "genere_le": "2026-09-05",
   "territoire": {
     "niveau": "epci",
     "code": "200070431",
@@ -370,7 +370,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "rang": 10,
-      "explication": "Commerces recensés par la base permanente des équipements : alimentation, équipement de la personne et de la maison, services marchands."
+      "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "EQU-02": {
       "valeur": 201,
@@ -383,7 +383,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "rang": 20,
-      "explication": "Équipements de santé et d'action sociale : médecins, pharmacies, infirmiers, établissements d'accueil."
+      "explication": "Équipements de santé et d'action sociale, pour la sélection de types retenue dans ce fichier."
     },
     "EQU-04": {
       "valeur": 68,
@@ -396,7 +396,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "rang": 40,
-      "explication": "Services aux particuliers : administration, artisanat, services de proximité."
+      "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     },
     "EDU-04": {
       "valeur": 8,
@@ -422,7 +422,7 @@
       "rubrique": "equipements",
       "agregation": "somme",
       "rang": 30,
-      "explication": "Équipements sportifs, de loisir et de culture."
+      "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "EAU-20": {
       "valeur": "Sous les valeurs habituelles",

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-04",
+  "genere_le": "2026-09-05",
   "source": "API Découpage administratif (geo.api.gouv.fr) — INSEE, IGN",
   "licence": "Licence Ouverte 2.0",
   "perimetre": {
@@ -771,7 +771,7 @@
       "bureau_centralisateur": "38416",
       "depuis": "2015",
       "communes_scindees": false,
-      "source_liste": "à confronter au décret de découpage 2015 / INSEE"
+      "source_liste": "décret n° 2014-180 du 18 février 2014, canton n° 23 ; Dionay retiré après sa fusion du 1er janvier 2016"
     }
   ],
   "communes_rattachees_canton": 44

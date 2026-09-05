@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-04",
+  "genere_le": "2026-09-05",
   "territoire": {
     "niveau": "commune",
     "code": "38033",
@@ -657,16 +657,17 @@
     {
       "rubrique": "equipements",
       "id": "equipements-par-domaine",
-      "titre": "Équipements par domaine — 2024",
+      "titre": "Équipements recensés — 2024",
       "items": [
         {
-          "titre": "Enseignement",
+          "titre": "École primaire",
           "details": {
-            "Équipements": "1"
+            "Domaine": "Enseignement",
+            "Nombre": "1"
           }
         }
       ],
-      "note": "Recensement de la base permanente des équipements. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès : la plupart des services se fréquentent au-delà des limites communales."
+      "note": "Base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : d'autres équipements existent sans figurer ici. Un équipement absent d'une commune ne signifie pas que ses habitants n'y ont pas accès, la plupart des services se fréquentant au-delà des limites communales."
     },
     {
       "rubrique": "environnement",
