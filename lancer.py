@@ -41,7 +41,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 11,
+    "04_generation.py": 12,
     "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,
@@ -97,11 +97,10 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py administration à /Terri_Admin/, et ancienne
-#     adresse /administration/ transformée en leurre : fausse page de
-#     connexion, attente imposée, journal des tentatives. Les adresses
-#     y sont tronquées d'un segment avant écriture.
-#   · Journal consultable depuis /Terri_Admin/journal.php
+#   · 04_generation.py assistant de protection par mot de passe pour
+#     /Terri_Admin/. Tant que la protection n'est pas en place, le script
+#     produit chiffrer.php et le signale à chaque exécution. Une fois
+#     .htaccess et .htpasswd créés, l'assistant est supprimé de lui-même.
 #   · MENTIONS reste à renseigner en tête du fichier.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
