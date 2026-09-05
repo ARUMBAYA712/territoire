@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 6
+VERSION_SCRIPT = 7
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -907,6 +907,7 @@ RUBRIQUES = [
          {"id": "eau-potable", "nom": "Eau potable"},
          {"id": "secheresse", "nom": "Sécheresse"},
          {"id": "nappes", "nom": "Nappes"},
+         {"id": "rivieres", "nom": "Rivières"},
          {"id": "risques", "nom": "Risques"},
      ]},
 

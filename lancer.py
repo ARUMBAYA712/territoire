@@ -41,7 +41,8 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 6,
+    "04_generation.py": 7,
+    "12_rivieres.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -98,9 +99,10 @@ def controler_versions():
 # Livraison cumulée — en attente d'installation
 #   · 02_canton.py     source officielle inscrite : décret n° 2014-180
 #   · 08_georisques.py lecture en profondeur des risques, renvoi Géorisques
-#   · 11_population.py les équipements sont détaillés par type, avec les
-#                      libellés officiels lus dans les métadonnées de
-#                      l'archive INSEE — aucun libellé deviné
+#   · 11_population.py équipements détaillés par type, libellés officiels
+#   · 12_rivieres.py   NOUVEAU — débit des cours d'eau, sous-rubrique
+#                      Rivières, rattachée au canton
+#   · 04_generation.py sous-rubrique Rivières déclarée
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -121,6 +123,7 @@ PLAN_LIVRAISON = [
     ("02_canton.py", []),
     ("08_georisques.py", ["--tout"]),
     ("11_population.py", []),
+    ("12_rivieres.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
@@ -154,6 +157,7 @@ COLLECTEURS = [
     ("09_nappes.py", []),
     ("10_ecoles.py", []),
     ("11_population.py", []),
+    ("12_rivieres.py", []),
 ]
 
 PUBLICATION = [
