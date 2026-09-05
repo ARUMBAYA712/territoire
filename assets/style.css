@@ -82,9 +82,15 @@ button{background:none;border:none;cursor:pointer}
 .nav{background:var(--paper);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;gap:2px;padding:0 20px;overflow-x:auto;
   scrollbar-width:thin}
-.nav-item{display:inline-block;white-space:nowrap;padding:11px 15px;
-  font-size:14px;color:var(--soft);border-bottom:2px solid transparent;
+.ico{width:18px;height:18px;flex-shrink:0}
+.ico.petit{width:15px;height:15px}
+
+.nav-item{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+  padding:10px 14px;font-size:14px;color:var(--soft);
+  border-bottom:2px solid transparent;
   transition:color .12s,border-color .12s,background .12s}
+.nav-item .ico{opacity:.75}
+.nav-item.actif .ico,a.nav-item:hover .ico{opacity:1}
 a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
 .nav-item.actif{color:var(--accent);border-bottom-color:var(--accent);
   font-weight:600}
@@ -92,7 +98,8 @@ a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
 
 .sous-nav{background:var(--surface);border-bottom:1px solid var(--line)}
 .sous-nav .wrap{display:flex;gap:4px;padding:0 20px;overflow-x:auto}
-.sous-item{display:inline-block;white-space:nowrap;padding:8px 13px;
+.sous-item{display:inline-flex;align-items:center;gap:6px;
+  white-space:nowrap;padding:7px 12px;
   font-size:13px;color:var(--soft);border-radius:var(--radius);
   margin:6px 0;transition:background .12s,color .12s}
 a.sous-item:hover{background:var(--accent-soft);color:var(--accent)}
@@ -260,6 +267,24 @@ svg.carte .c-nom.principal{font-weight:600;fill:var(--accent)}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
+.bl-grille.pleine{grid-template-columns:1fr}
+.bl-grille.pleine .bl-texte{font-size:14px;color:var(--ink);
+  column-count:2;column-gap:28px}
+
+/* Chiffres clés : une bande sobre, sans cadre, pour éviter l'effet
+   de tableau brut. Le nombre porte l'accent, le pictogramme discret
+   annonce le thème. */
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  margin-top:22px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden}
+.chiffre{background:var(--surface);padding:22px 18px;text-align:center}
+.chiffre .ico{width:22px;height:22px;color:var(--accent);opacity:.55;
+  margin-bottom:8px}
+.chiffre-v{font-family:var(--font-data);font-size:30px;font-weight:500;
+  line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.chiffre-k{font-family:var(--font-display);text-transform:uppercase;
+  letter-spacing:.1em;font-size:11px;color:var(--soft);margin-top:7px}
+
 .bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:18px}
 .bloc > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
@@ -355,7 +380,11 @@ footer.site a{color:var(--link)}
   .terr-parents .p-role{display:inline;font-size:10px;margin-right:5px}
   .terr.compact .terr-parents{font-size:12px}
 }
+@media(max-width:700px){
+  .bl-grille.pleine .bl-texte{column-count:1}
+}
 @media(max-width:560px){
+  .chiffres{grid-template-columns:1fr}
   .bl-grille{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .terr h1{font-size:27px}

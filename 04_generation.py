@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 13
+VERSION_SCRIPT = 14
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -251,9 +251,15 @@ button{background:none;border:none;cursor:pointer}
 .nav{background:var(--paper);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;gap:2px;padding:0 20px;overflow-x:auto;
   scrollbar-width:thin}
-.nav-item{display:inline-block;white-space:nowrap;padding:11px 15px;
-  font-size:14px;color:var(--soft);border-bottom:2px solid transparent;
+.ico{width:18px;height:18px;flex-shrink:0}
+.ico.petit{width:15px;height:15px}
+
+.nav-item{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+  padding:10px 14px;font-size:14px;color:var(--soft);
+  border-bottom:2px solid transparent;
   transition:color .12s,border-color .12s,background .12s}
+.nav-item .ico{opacity:.75}
+.nav-item.actif .ico,a.nav-item:hover .ico{opacity:1}
 a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
 .nav-item.actif{color:var(--accent);border-bottom-color:var(--accent);
   font-weight:600}
@@ -261,7 +267,8 @@ a.nav-item:hover{color:var(--accent);background:var(--accent-soft)}
 
 .sous-nav{background:var(--surface);border-bottom:1px solid var(--line)}
 .sous-nav .wrap{display:flex;gap:4px;padding:0 20px;overflow-x:auto}
-.sous-item{display:inline-block;white-space:nowrap;padding:8px 13px;
+.sous-item{display:inline-flex;align-items:center;gap:6px;
+  white-space:nowrap;padding:7px 12px;
   font-size:13px;color:var(--soft);border-radius:var(--radius);
   margin:6px 0;transition:background .12s,color .12s}
 a.sous-item:hover{background:var(--accent-soft);color:var(--accent)}
@@ -429,6 +436,24 @@ svg.carte .c-nom.principal{font-weight:600;fill:var(--accent)}
 svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   stroke:var(--ink);stroke-width:2;fill-opacity:1}
 
+.bl-grille.pleine{grid-template-columns:1fr}
+.bl-grille.pleine .bl-texte{font-size:14px;color:var(--ink);
+  column-count:2;column-gap:28px}
+
+/* Chiffres clés : une bande sobre, sans cadre, pour éviter l'effet
+   de tableau brut. Le nombre porte l'accent, le pictogramme discret
+   annonce le thème. */
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+  margin-top:22px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden}
+.chiffre{background:var(--surface);padding:22px 18px;text-align:center}
+.chiffre .ico{width:22px;height:22px;color:var(--accent);opacity:.55;
+  margin-bottom:8px}
+.chiffre-v{font-family:var(--font-data);font-size:30px;font-weight:500;
+  line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.chiffre-k{font-family:var(--font-display);text-transform:uppercase;
+  letter-spacing:.1em;font-size:11px;color:var(--soft);margin-top:7px}
+
 .bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:18px}
 .bloc > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
@@ -524,7 +549,11 @@ footer.site a{color:var(--link)}
   .terr-parents .p-role{display:inline;font-size:10px;margin-right:5px}
   .terr.compact .terr-parents{font-size:12px}
 }
+@media(max-width:700px){
+  .bl-grille.pleine .bl-texte{column-count:1}
+}
 @media(max-width:560px){
+  .chiffres{grid-template-columns:1fr}
   .bl-grille{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .terr h1{font-size:27px}
@@ -1033,6 +1062,73 @@ RUBRIQUES = [
 ]
 
 
+
+# ══════════════════════════════════════════════════════════════════
+# ICÔNES
+#
+# Dessinées dans une grammaire commune : trait seul, pas d'aplat,
+# formes géométriques simples, épaisseur unique. L'inspiration vient
+# des légendes de cartes topographiques plutôt que des jeux d'icônes
+# d'interface — c'est ce qui donnera au site une identité propre tout
+# en restant immédiatement lisible.
+#
+# Elles ne portent jamais le sens à elles seules : chaque icône est
+# systématiquement accompagnée de son libellé.
+# ══════════════════════════════════════════════════════════════════
+
+ICONES = {
+    "": '<path d="M4 6.5 12 3l8 3.5M4 6.5v11L12 21l8-3.5v-11M4 6.5 12 10l8-3.5'
+        'M12 10v11"/>',
+    "population": '<circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3 2.5-5.5 '
+                  '5.5-5.5s5.5 2.5 5.5 5.5"/><circle cx="17" cy="9.5" r="2.2"/>'
+                  '<path d="M15.5 14.7c2.6.2 5 2.5 5 5.3"/>',
+    "geographie": '<path d="M3 7.5 9 4.5l6 3 6-3v12l-6 3-6-3-6 3z"/>'
+                  '<path d="M9 4.5v12M15 7.5v12"/>',
+    "urbanisme": '<path d="M3 21h18M5 21V9l5-3.5V21M14 21V11l5-2v12"/>'
+                 '<path d="M7.5 12v.01M7.5 15.5v.01M16.5 13v.01M16.5 16.5v.01"/>',
+    "environnement": '<path d="M3 17c2.5 0 2.5-1.6 5-1.6s2.5 1.6 5 1.6 '
+                     '2.5-1.6 5-1.6 2.5 1.6 3 1.6"/>'
+                     '<path d="M4 12.5 9 6l3.5 4.2L15.5 7l4.5 5.5"/>',
+    "eau-potable": '<path d="M12 3.5c3.2 4.2 5.5 6.9 5.5 9.6a5.5 5.5 0 0 1-11 '
+                   '0c0-2.7 2.3-5.4 5.5-9.6z"/><path d="M9.4 13.3a2.7 2.7 0 0 '
+                   '0 2.6 3"/>',
+    "secheresse": '<circle cx="12" cy="8" r="3.4"/><path d="M12 1.8v1.6M12 '
+                  '12.6v1.6M5.6 8H4M20 8h-1.6M7.5 3.5l1.1 1.1M15.4 11.4l1.1 '
+                  '1.1M7.5 12.5l1.1-1.1M15.4 4.6l1.1-1.1"/>'
+                  '<path d="M3 18.5h4l1.5-2 2 4 2-5 2 3h6.5"/>',
+    "nappes": '<path d="M3 8h18M3 8c0-2.2 4-4 9-4s9 1.8 9 4"/>'
+              '<path d="M3 13c2.4 0 2.4-1.3 4.8-1.3S10.2 13 12.6 13s2.4-1.3 '
+              '4.8-1.3S19.8 13 21 13"/>'
+              '<path d="M3 18c2.4 0 2.4-1.3 4.8-1.3S10.2 18 12.6 18s2.4-1.3 '
+              '4.8-1.3S19.8 18 21 18"/><path d="M3 8v10M21 8v10"/>',
+    "rivieres": '<path d="M4 3c0 5 3.5 6.5 3.5 10.5S4 18.5 4 21"/>'
+                '<path d="M20 3c0 5-3.5 6.5-3.5 10.5S20 18.5 20 21"/>'
+                '<path d="M12 6.5v3M12 13v3"/>',
+    "risques": '<path d="M12 4.2 21 19H3z"/><path d="M12 10v4M12 16.6v.01"/>',
+    "education": '<path d="M3 8.5 12 4.5l9 4-9 4z"/>'
+                 '<path d="M7 11v5c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8v-5"/>'
+                 '<path d="M21 8.5v5"/>',
+    "equipements": '<path d="M4 9.5 5.5 5h13L20 9.5M4 9.5h16M4 9.5V19h16V9.5"/>'
+                   '<path d="M4 9.5a2.2 2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0 2.2 '
+                   '2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0"/>'
+                   '<path d="M10 19v-5h4v5"/>',
+    "transports": '<path d="M12 3v18"/><path d="M6 3v18M18 3v18"/>'
+                  '<path d="M12 5.5v3M12 11v3M12 16.5v3"/>',
+    "elections": '<path d="M4 10.5h16V20H4z"/><path d="M8.5 10.5V6h7v4.5"/>'
+                 '<path d="M9.5 13.5h5"/>',
+}
+
+
+def icone(identifiant, classe="ico"):
+    """Pictogramme d'une rubrique, ou rien si elle n'en a pas."""
+    trace = ICONES.get(identifiant)
+    if not trace:
+        return ""
+    return (f'<svg class="{classe}" viewBox="0 0 24 24" fill="none" '
+            f'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
+            f'stroke-linejoin="round" aria-hidden="true">{trace}</svg>')
+
+
 def rubrique_par_id(ident):
     for r in RUBRIQUES:
         if r["id"] == ident:
@@ -1137,7 +1233,7 @@ def rubriques_actives(fiche):
 def nav_rubriques(base, chemin, actives, courante):
     liens = []
     for r in RUBRIQUES:
-        libelle = escape(r["nom"])
+        libelle = icone(r["id"]) + f'<span>{escape(r["nom"])}</span>'
         if r["id"] == courante:
             liens.append(f'<span class="nav-item actif" '
                          f'aria-current="page">{libelle}</span>')
@@ -1160,14 +1256,15 @@ def nav_sous(base, chemin, rubrique, sous_dispo, courante):
              if courante else
              '<span class="sous-item actif">Vue d\'ensemble</span>']
     for sr in sous_dispo:
+        etiquette = icone(sr["id"], "ico petit") + escape(sr["nom"])
         if courante and sr["id"] == courante["id"]:
             liens.append(f'<span class="sous-item actif" aria-current="page">'
-                         f'{escape(sr["nom"])}</span>')
+                         f'{etiquette}</span>')
         else:
             liens.append(
                 f'<a class="sous-item" '
                 f'href="{base}/{chemin}{rubrique["id"]}/{sr["id"]}/">'
-                f'{escape(sr["nom"])}</a>')
+                f'{etiquette}</a>')
     return ('<nav class="sous-nav" aria-label="Sous-rubriques">'
             '<div class="wrap">' + "".join(liens) + "</div></nav>")
 
@@ -1804,7 +1901,7 @@ mot de passe. Il doit néanmoins rester dans un dépôt privé.</p>
 """
 
 def page_simple(titre, description, corps, base, canonique,
-                indexable=True):
+                indexable=True, bandeau="", navigation=""):
     """Gabarit des pages hors territoire : accueil, mentions légales."""
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -1838,6 +1935,8 @@ def page_simple(titre, description, corps, base, canonique,
   </div>
   <div class="top-fin"></div>
 </div></div>
+{bandeau}
+{navigation}
 
 <main><div class="wrap">
 {corps}
@@ -1878,9 +1977,12 @@ def corps_accueil(fiches, adresses, index_recherche):
         if t.get("nombre_communes"):
             chiffres.insert(0, (str(t["nombre_communes"]), "communes"))
 
+    pictogrammes = {"communes": "geographie", "habitants": "population",
+                    "km²": "environnement"}
     blocs_chiffres = "".join(
-        f'<div class="fact"><div class="v">{valeur}</div>'
-        f'<div class="k">{escape(libelle)}</div></div>'
+        f'<div class="chiffre">{icone(pictogrammes.get(libelle, ""), "ico")}'
+        f'<div class="chiffre-v">{valeur}</div>'
+        f'<div class="chiffre-k">{escape(libelle)}</div></div>'
         for valeur, libelle in chiffres)
 
     portes = []
@@ -1913,7 +2015,7 @@ def corps_accueil(fiches, adresses, index_recherche):
       <span class="n">{len(index_recherche)} territoires · {len(rubriques_ouvertes)} rubriques</span></div>
 
     <section class="bloc"><span class="dsp">Ce que vous trouverez ici</span>
-      <div class="bl-grille"><article class="bl-item">
+      <div class="bl-grille pleine"><article class="bl-item">
         <p class="bl-texte">Population, logement, équipements, écoles,
         qualité de l'eau, restrictions sécheresse, risques naturels,
         niveau des nappes et débit des rivières — pour chaque commune du
@@ -1925,9 +2027,7 @@ def corps_accueil(fiches, adresses, index_recherche):
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Le territoire en trois chiffres</span>
-      <div class="facts">{blocs_chiffres}</div>
-    </section>
+    <section class="chiffres">{blocs_chiffres}</section>
 
     <section class="bloc"><span class="dsp">Par où commencer</span>
       <div class="bl-grille"><article class="bl-item">
@@ -2507,13 +2607,36 @@ def main():
     # ── accueil et mentions légales ──
     recherche.sort(key=lambda x: (x["niveau"] != "commune", x["nom"]))
 
+    fiche_vedette = fiches.get(ACCUEIL)
+    bandeau_accueil, nav_accueil = "", ""
+    if fiche_vedette:
+        t = fiche_vedette["territoire"]
+        chemin_vedette = adresses[ACCUEIL]
+        actives_vedette = rubriques_actives(fiche_vedette)
+        communes_couvertes = sum(1 for c in adresses if c[0] == "commune")
+        bandeau_accueil = f"""<div class="terr"><div class="wrap">
+  <div class="terr-identite">
+    <div class="kind dsp">Section Territoire</div>
+    <h1>{escape(TITRE_SITE)}</h1>
+    <div class="sub">{communes_couvertes} communes · trois échelles ·
+      données publiques</div>
+  </div>
+  <div class="terr-parents">
+    <span class="p-ligne"><span class="p-role">Canton</span>
+      <a href="{chemin_vedette}">{escape(t["nom"])}</a></span>
+    <span class="p-ligne"><span class="p-role">Département</span>Isère</span>
+  </div>
+</div></div>"""
+        nav_accueil = nav_rubriques(".", chemin_vedette, actives_vedette, None)
+
     (RACINE / "index.html").write_text(
         page_simple(
             "Données publiques du Sud Grésivaudan",
             "Population, logement, équipements, eau, risques et écoles pour "
             "chaque commune du Sud Grésivaudan, à partir des sources "
             "publiques françaises.",
-            corps_accueil(fiches, adresses, recherche), ".", SITE + "/"),
+            corps_accueil(fiches, adresses, recherche), ".", SITE + "/",
+            bandeau=bandeau_accueil, navigation=nav_accueil),
         encoding="utf-8")
     liens_site.append(SITE + "/")
 

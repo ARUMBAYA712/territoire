@@ -41,7 +41,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 13,
+    "04_generation.py": 14,
     "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,
@@ -97,11 +97,10 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py assistant de protection par mot de passe pour
-#     /Terri_Admin/. Tant que la protection n'est pas en place, le script
-#     produit chiffrer.php et le signale à chaque exécution. Une fois
-#     .htaccess et .htpasswd créés, l'assistant est supprimé de lui-même.
-#   · MENTIONS reste à renseigner en tête du fichier.
+#   · 04_generation.py jeu d'icônes pour chaque rubrique et sous-rubrique ;
+#     accueil doté des mêmes bandeaux que les fiches, intro en pleine
+#     largeur, chiffres clés redessinés.
+#   · MENTIONS reste à renseigner, et /Terri_Admin/ à protéger.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
