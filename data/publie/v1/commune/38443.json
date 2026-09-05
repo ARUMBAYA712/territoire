@@ -374,7 +374,7 @@
       "explication": "Part des résidences principales occupées par leur propriétaire."
     },
     "ENV-01": {
-      "valeur": 12,
+      "valeur": 8,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -698,28 +698,21 @@
           "details": {}
         },
         {
-          "titre": "Par remontées de nappes naturelles",
-          "details": {}
-        },
-        {
-          "titre": "Par ruissellement et coulée de boue",
-          "details": {}
-        },
-        {
-          "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-          "details": {}
-        },
-        {
-          "titre": "Par une crue à débordement lent de cours d'eau",
-          "details": {}
-        },
-        {
           "titre": "Rupture de barrage",
           "details": {}
         },
         {
           "titre": "Séisme",
           "details": {}
+        },
+        {
+          "titre": "Nature des phénomènes recensés",
+          "details": {
+            "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+            "Type 2": "Crue à débordement lent de cours d'eau",
+            "Type 3": "Remontées de nappes naturelles",
+            "Type 4": "Ruissellement et coulée de boue"
+          }
         }
       ],
       "lien": {

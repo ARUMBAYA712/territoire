@@ -1,6 +1,6 @@
 {
  "genere_le": "2026-09-05",
- "version": 9,
+ "version": 10,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
  "frequence": "trimestrielle",
@@ -8,7 +8,7 @@
   "38004": {
    "mesures": {
     "ENV-01": {
-     "valeur": 11,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -105,28 +105,21 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par ruissellement et coulée de boue",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles",
+        "Type 4": "Ruissellement et coulée de boue"
+       }
       }
      ],
      "lien": {
@@ -198,7 +191,7 @@
   "38018": {
    "mesures": {
     "ENV-01": {
-     "valeur": 8,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -295,16 +288,15 @@
        "details": {}
       },
       {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -365,7 +357,7 @@
   "38033": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -454,16 +446,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -525,7 +519,7 @@
   "38036": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -614,16 +608,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -662,7 +658,7 @@
   "38041": {
    "mesures": {
     "ENV-01": {
-     "valeur": 3,
+     "valeur": 2,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -743,12 +739,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -820,7 +818,7 @@
   "38074": {
    "mesures": {
     "ENV-01": {
-     "valeur": 3,
+     "valeur": 2,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -901,12 +899,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -967,7 +967,7 @@
   "38086": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1056,12 +1056,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -1122,7 +1124,7 @@
   "38092": {
    "mesures": {
     "ENV-01": {
-     "valeur": 9,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1223,16 +1225,15 @@
        "details": {}
       },
       {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -1293,7 +1294,7 @@
   "38095": {
    "mesures": {
     "ENV-01": {
-     "valeur": 11,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1390,28 +1391,21 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par ruissellement et coulée de boue",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles",
+        "Type 4": "Ruissellement et coulée de boue"
+       }
       }
      ],
      "lien": {
@@ -1468,7 +1462,7 @@
   "38099": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1557,12 +1551,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -1656,7 +1652,7 @@
   "38108": {
    "mesures": {
     "ENV-01": {
-     "valeur": 8,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1753,16 +1749,15 @@
        "details": {}
       },
       {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -1834,7 +1829,7 @@
   "38117": {
    "mesures": {
     "ENV-01": {
-     "valeur": 10,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -1931,24 +1926,20 @@
        "details": {}
       },
       {
-       "titre": "Par ruissellement et coulée de boue",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Ruissellement et coulée de boue"
+       }
       }
      ],
      "lien": {
@@ -2134,7 +2125,7 @@
   "38195": {
    "mesures": {
     "ENV-01": {
-     "valeur": 10,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2231,24 +2222,20 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -2287,7 +2274,7 @@
   "38216": {
    "mesures": {
     "ENV-01": {
-     "valeur": 9,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2384,20 +2371,16 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -2594,7 +2577,7 @@
   "38248": {
    "mesures": {
     "ENV-01": {
-     "valeur": 11,
+     "valeur": 7,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2695,24 +2678,17 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par ruissellement et coulée de boue",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles",
+        "Type 4": "Ruissellement et coulée de boue"
+       }
       }
      ],
      "lien": {
@@ -2762,7 +2738,7 @@
   "38263": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -2851,12 +2827,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -3420,7 +3398,7 @@
   "38310": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3501,10 +3479,6 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
@@ -3515,6 +3489,12 @@
       {
        "titre": "Transport de marchandises dangereuses",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -3564,7 +3544,7 @@
   "38319": {
    "mesures": {
     "ENV-01": {
-     "valeur": 8,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3661,16 +3641,15 @@
        "details": {}
       },
       {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -3753,7 +3732,7 @@
   "38322": {
    "mesures": {
     "ENV-01": {
-     "valeur": 8,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3850,16 +3829,15 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau",
+        "Type 2": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -3898,7 +3876,7 @@
   "38330": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -3987,12 +3965,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -4075,7 +4055,7 @@
   "38333": {
    "mesures": {
     "ENV-01": {
-     "valeur": 9,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4172,20 +4152,16 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -4268,7 +4244,7 @@
   "38338": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4357,16 +4333,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -4427,7 +4405,7 @@
   "38345": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4516,16 +4494,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -4564,7 +4544,7 @@
   "38356": {
    "mesures": {
     "ENV-01": {
-     "valeur": 9,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4662,20 +4642,16 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -4736,7 +4712,7 @@
   "38359": {
    "mesures": {
     "ENV-01": {
-     "valeur": 9,
+     "valeur": 6,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -4834,20 +4810,16 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -5123,7 +5095,7 @@
   "38370": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5212,12 +5184,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -5267,7 +5241,7 @@
   "38390": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5356,16 +5330,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -5426,7 +5402,7 @@
   "38394": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5515,16 +5491,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -5692,7 +5670,7 @@
   "38410": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5781,16 +5759,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -5862,7 +5842,7 @@
   "38416": {
    "mesures": {
     "ENV-01": {
-     "valeur": 3,
+     "valeur": 2,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -5943,12 +5923,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -6038,7 +6020,7 @@
   "38443": {
    "mesures": {
     "ENV-01": {
-     "valeur": 12,
+     "valeur": 8,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6139,28 +6121,21 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par ruissellement et coulée de boue",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles",
+        "Type 4": "Ruissellement et coulée de boue"
+       }
       }
      ],
      "lien": {
@@ -6199,7 +6174,7 @@
   "38450": {
    "mesures": {
     "ENV-01": {
-     "valeur": 14,
+     "valeur": 11,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6305,18 +6280,6 @@
        "details": {}
       },
       {
-       "titre": "Par remontées de nappes naturelles",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-       "details": {}
-      },
-      {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Risque industriel",
        "details": {}
       },
@@ -6331,6 +6294,14 @@
       {
        "titre": "Transport de marchandises dangereuses",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+        "Type 2": "Crue à débordement lent de cours d'eau",
+        "Type 3": "Remontées de nappes naturelles"
+       }
       }
      ],
      "lien": {
@@ -6402,7 +6373,7 @@
   "38453": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6491,16 +6462,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -6550,7 +6523,7 @@
   "38454": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6639,16 +6612,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -6694,7 +6669,7 @@
   "38463": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -6783,12 +6758,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -6998,7 +6975,7 @@
   "38500": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -7087,16 +7064,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -7158,7 +7137,7 @@
   "38523": {
    "mesures": {
     "ENV-01": {
-     "valeur": 5,
+     "valeur": 4,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -7247,12 +7226,14 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
+       "titre": "Séisme",
        "details": {}
       },
       {
-       "titre": "Séisme",
-       "details": {}
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {
@@ -7528,7 +7509,7 @@
   "38559": {
    "mesures": {
     "ENV-01": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "risques recensés",
      "nom": "Risques identifiés sur la commune",
      "obtention": "natif",
@@ -7617,16 +7598,18 @@
        "details": {}
       },
       {
-       "titre": "Par une crue à débordement lent de cours d'eau",
-       "details": {}
-      },
-      {
        "titre": "Rupture de barrage",
        "details": {}
       },
       {
        "titre": "Séisme",
        "details": {}
+      },
+      {
+       "titre": "Nature des phénomènes recensés",
+       "details": {
+        "Type 1": "Crue à débordement lent de cours d'eau"
+       }
       }
      ],
      "lien": {

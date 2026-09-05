@@ -36,7 +36,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 9
+VERSION_SCRIPT = 10
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -46,7 +46,7 @@ API = "https://georisques.gouv.fr/api/v1"
 SOURCE = "Géorisques — BRGM et ministère de la Transition écologique"
 LICENCE = "Licence Ouverte 2.0"
 
-VERSION = 9
+VERSION = 10
 
 RUBRIQUE = "environnement"
 SOUS_RUBRIQUE = "risques"
@@ -458,10 +458,20 @@ def synthetiser(lots, code_commune=None):
     mesures, blocs = {}, []
 
     # ── risques recensés ─────────────────────────────────────────
-    libelles = []
+    # Géorisques mêle les risques et leurs déclinaisons : « Inondation »
+    # côtoie « Par une crue à débordement lent de cours d'eau ». Compter
+    # les deux reviendrait à compter l'inondation plusieurs fois. Les
+    # déclinaisons sont donc présentées à part, comme des précisions.
+    libelles, precisions = [], []
     for r in risques:
         for texte in libelles_risques(r):
-            if texte not in libelles:
+            if texte.lower().startswith("par "):
+                nettoye = re.sub(r"^par (une |des |le |la |les )?", "",
+                                 texte, flags=re.I)
+                nettoye = nettoye[:1].upper() + nettoye[1:]
+                if nettoye not in precisions:
+                    precisions.append(nettoye)
+            elif texte not in libelles:
                 libelles.append(texte)
 
     mesures["ENV-01"] = mesure(len(libelles),
@@ -474,7 +484,13 @@ def synthetiser(lots, code_commune=None):
             "sous_rubrique": SOUS_RUBRIQUE,
             "id": ANCRE_RISQUES,
             "titre": "Risques identifiés sur la commune",
-            "items": [{"titre": lib, "details": {}} for lib in sorted(libelles)],
+            "items": ([{"titre": lib, "details": {}}
+                       for lib in sorted(libelles)]
+                      + ([{"titre": "Nature des phénomènes recensés",
+                           "details": {f"Type {i}": p
+                                       for i, p in enumerate(
+                                           sorted(precisions), start=1)}}]
+                         if precisions else [])),
             "lien": renvoi_georisques(
                 code_commune,
                 "Consulter le rapport officiel sur Géorisques",

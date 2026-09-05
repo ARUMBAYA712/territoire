@@ -404,7 +404,7 @@
       "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "ENV-01": {
-      "valeur": 10,
+      "valeur": 7,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -720,24 +720,20 @@
           "details": {}
         },
         {
-          "titre": "Par ruissellement et coulée de boue",
-          "details": {}
-        },
-        {
-          "titre": "Par une crue torrentielle ou à montée rapide de cours d'eau",
-          "details": {}
-        },
-        {
-          "titre": "Par une crue à débordement lent de cours d'eau",
-          "details": {}
-        },
-        {
           "titre": "Rupture de barrage",
           "details": {}
         },
         {
           "titre": "Séisme",
           "details": {}
+        },
+        {
+          "titre": "Nature des phénomènes recensés",
+          "details": {
+            "Type 1": "Crue torrentielle ou à montée rapide de cours d'eau",
+            "Type 2": "Crue à débordement lent de cours d'eau",
+            "Type 3": "Ruissellement et coulée de boue"
+          }
         }
       ],
       "lien": {

@@ -32,7 +32,7 @@ import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
 
-VERSION_SCRIPT = 2
+VERSION_SCRIPT = 5
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -49,8 +49,12 @@ ANCRE = "stations-hydrometriques"
 
 MARGE = 0.10              # degrés ajoutés autour du territoire
 SEUIL_ELOIGNEMENT = 20    # km au-delà desquels la station devient indicative
-STATIONS_MAX = 8
+STATIONS_MAX = 12
 HISTORIQUE = 5            # années de chronique interrogées
+
+# Codes de grandeur des observations élaborées. La nomenclature a varié
+# selon les versions de l'API : on essaie les formes connues.
+GRANDEURS = ("QmJ", "QmnJ", "QJM")
 FRAICHEUR_JOURS = 30      # ancienneté maximale pour servir de référence
 DELAI = 120
 TENTATIVES = 4
@@ -59,7 +63,7 @@ PAUSE = 0.4
 
 # ══════════════════════════════════════════════════════════════════
 
-def appeler(operation, **params):
+def appeler(operation, silencieux=False, **params):
     url = f"{API}/{operation}?" + urllib.parse.urlencode(params)
     attente = 3
     for tentative in range(1, TENTATIVES + 1):
@@ -94,10 +98,11 @@ def appeler(operation, **params):
                              or donnees.get("message") or corps)[:200]
             except Exception:
                 pass
-            print(f"\n  [ERREUR] Hub'Eau a répondu {e.code}")
-            if detail:
-                print(f"  {detail}")
-            print(f"  {url}")
+            if not silencieux:
+                print(f"\n  [ERREUR] Hub'Eau a répondu {e.code}")
+                if detail:
+                    print(f"  {detail}")
+                print(f"  {url}")
             return None
         except (urllib.error.URLError, OSError) as e:
             if tentative < TENTATIVES:
@@ -171,6 +176,46 @@ def debit_lisible(metres_cubes):
 
 # ══════════════════════════════════════════════════════════════════
 
+def sites_du_territoire(boite, repere):
+    """Sites hydrométriques déclarés par l'API elle-même.
+
+    Le référentiel des stations porte un champ code_site, mais tous ces
+    codes ne correspondent pas à un site interrogeable pour les
+    observations élaborées. On demande donc directement à l'API sa liste
+    de sites, plutôt que de la déduire.
+    """
+    lot = appeler("referentiel/sites",
+                  bbox=",".join(str(v) for v in boite),
+                  size=200, format="json")
+    if lot is None:
+        return None
+
+    sites = []
+    for s in lot:
+        code = champ(s, "code_site")
+        if not code:
+            continue
+        x = champ(s, "longitude_site", "longitude")
+        y = champ(s, "latitude_site", "latitude")
+        eloignement = None
+        if repere and x is not None and y is not None:
+            try:
+                eloignement = distance_km(repere, (float(x), float(y)))
+            except (TypeError, ValueError):
+                eloignement = None
+        sites.append({
+            "code": code,
+            "site": str(code),
+            "nom": str(champ(s, "libelle_site") or code),
+            "cours_eau": str(champ(s, "libelle_cours_eau") or ""),
+            "commune": str(champ(s, "libelle_commune") or ""),
+            "distance": eloignement,
+        })
+
+    sites.sort(key=lambda s: (s["distance"] is None, s["distance"] or 0))
+    return sites, len(lot)
+
+
 def stations_du_territoire(boite, repere):
     """Stations hydrométriques de l'emprise, les plus proches d'abord."""
     lot = appeler("referentiel/stations",
@@ -197,9 +242,17 @@ def stations_du_territoire(boite, repere):
             except (TypeError, ValueError):
                 eloignement = None
 
+        # Les observations élaborées s'interrogent par code de SITE et
+        # non de station : un site regroupe plusieurs stations de mesure
+        # successives sur le même point du cours d'eau.
+        site = champ(s, "code_site")
+        if not site:
+            continue
+
         stations.append({
             "code": code,
-            "nom": str(champ(s, "libelle_station") or code),
+            "site": str(site),
+            "nom": str(champ(s, "libelle_site", "libelle_station") or code),
             "cours_eau": str(champ(s, "libelle_cours_eau",
                                    "libelle_entite_hydrographique") or ""),
             "commune": str(champ(s, "libelle_commune") or ""),
@@ -207,10 +260,19 @@ def stations_du_territoire(boite, repere):
         })
 
     stations.sort(key=lambda s: (s["distance"] is None, s["distance"] or 0))
-    return stations, len(lot)
+
+    # Plusieurs stations partagent un même site : elles renverraient la
+    # même chronique. On ne garde que la plus proche de chaque site.
+    vus, uniques = set(), []
+    for s in stations:
+        if s["site"] in vus:
+            continue
+        vus.add(s["site"])
+        uniques.append(s)
+    return uniques, len(lot)
 
 
-def chronique(code_station):
+def chronique(code_site):
     """Débits journaliers des dernières années, du plus récent au plus ancien.
 
     Les observations élaborées fournissent un débit moyen journalier,
@@ -222,18 +284,14 @@ def chronique(code_station):
     # Les paramètres acceptés varient d'une version de l'API à l'autre.
     # Plutôt que d'en supposer un jeu, on essaie les combinaisons par
     # ordre de préférence et on retient la première qui répond.
-    tentatives = [
-        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
-         "date_debut_obs_elab": depuis, "size": 5000},
-        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
-         "date_debut_obs_elab": depuis, "size": 2000},
-        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ",
-         "size": 2000},
-        {"code_entite": code_station, "grandeur_hydro_elab": "QmJ"},
-    ]
+    tentatives = []
+    for grandeur in GRANDEURS:
+        tentatives.append({"code_entite": code_site,
+                           "grandeur_hydro_elab": grandeur,
+                           "date_debut_obs_elab": depuis, "size": 5000})
     lot = None
     for params in tentatives:
-        lot = appeler("obs_elab", **params)
+        lot = appeler("obs_elab", silencieux=True, **params)
         if lot:
             break
     if not lot:
@@ -292,12 +350,12 @@ def situer(mesures):
 
 
 def synthetiser(stations, mesures_par_station):
-    exploitables = [s for s in stations if mesures_par_station.get(s["code"])]
+    exploitables = [s for s in stations if mesures_par_station.get(s["site"])]
     if not exploitables:
         return None
 
     def fraicheur(s):
-        return mesures_par_station[s["code"]][0]["date"]
+        return mesures_par_station[s["site"]][0]["date"]
 
     def eloignement(s):
         return s.get("distance") if s.get("distance") is not None else 999
@@ -308,7 +366,7 @@ def synthetiser(stations, mesures_par_station):
     proches = [s for s in candidates if eloignement(s) <= SEUIL_ELOIGNEMENT]
     reference = min(proches or candidates, key=eloignement)
 
-    derniere, situation = situer(mesures_par_station[reference["code"]])
+    derniere, situation = situer(mesures_par_station[reference["site"]])
     valeur, unite = debit_lisible(derniere["debit"]) if derniere else (None, "")
 
     mesures = {
@@ -333,11 +391,36 @@ def synthetiser(stations, mesures_par_station):
                          "passant chaque seconde."))
     mesures["EAU-32"] = mesure(
         len(exploitables), "station" if len(exploitables) == 1 else "stations",
-        "Stations hydrométriques suivies", ancre=ANCRE, rang=30)
+        "Stations hydrométriques suivies", ancre=ANCRE, rang=30,
+        repere=", ".join(sorted({s["cours_eau"] for s in exploitables
+                                 if s["cours_eau"]})) or None)
+    if mesures["EAU-32"].get("repere") is None:
+        mesures["EAU-32"].pop("repere")
+
+    # Si un affluent est nettement plus bas que la station de référence,
+    # le signaler : c'est lui qui traduit la sécheresse locale.
+    plus_bas = None
+    for s in exploitables:
+        if s["site"] == reference["site"]:
+            continue
+        _, sit = situer(mesures_par_station[s["site"]])
+        if sit and sit["rapport"] < 0.6:
+            if plus_bas is None or sit["rapport"] < plus_bas[1]["rapport"]:
+                plus_bas = (s, sit)
+    if plus_bas and (not situation or situation["rapport"] >= 0.85):
+        mesures["EAU-33"] = mesure(
+            f"{plus_bas[0]['cours_eau'] or plus_bas[0]['nom']}", "",
+            "Affluent le plus bas", rang=25, ancre=ANCRE, ton="attention",
+            repere=f"à {plus_bas[1]['rapport'] * 100:.0f} % de son débit "
+                   f"habituel de saison",
+            explication=("Un affluent nettement plus bas que le cours d'eau "
+                         "principal traduit une sécheresse locale que le "
+                         "grand cours d'eau, soutenu par la montagne et les "
+                         "barrages, ne laisse pas voir."))
 
     items = []
     for s in sorted(exploitables, key=fraicheur, reverse=True):
-        lot = mesures_par_station[s["code"]]
+        lot = mesures_par_station[s["site"]]
         dern, sit = situer(lot)
         v, u = debit_lisible(dern["debit"])
         details = {}
@@ -361,7 +444,7 @@ def synthetiser(stations, mesures_par_station):
                 f"Médiane des mois comparables : {mv} {mu} "
                 f"sur {sit['effectif']} relevés. "
                 f"Débit actuel à {sit['rapport'] * 100:.0f} % de cette valeur.")
-        if s["code"] == reference["code"]:
+        if s["site"] == reference["site"]:
             item["titre"] += " — station de référence"
         items.append(item)
 
@@ -374,7 +457,12 @@ def synthetiser(stations, mesures_par_station):
         "note": ("Les cours d'eau traversent le territoire sans s'arrêter à "
                  "ses limites : ces mesures valent pour l'ensemble, pas pour "
                  "une commune en particulier. Un débit ne s'interprète que "
-                 "par rapport aux valeurs habituelles de la même saison."
+                 "par rapport aux valeurs habituelles de la même saison. "
+                 "Un grand cours d'eau alimenté par la montagne et régulé "
+                 "par des barrages peut afficher un débit normal alors que "
+                 "des restrictions sécheresse sont en vigueur : ce sont les "
+                 "petits affluents qui traduisent le mieux la situation "
+                 "locale."
                  + (" La station de référence est éloignée du territoire : "
                     "son débit n'en est qu'une indication approchée."
                     if (reference.get("distance") or 0) > SEUIL_ELOIGNEMENT
@@ -390,42 +478,61 @@ def inspecter(boite):
     print("\nInspection — hydrométrie")
     print("─" * 60)
     print(f"  Emprise interrogée : {boite}")
-    lot = appeler("referentiel/stations",
-                  bbox=",".join(str(v) for v in boite), size=5, format="json")
-    if not lot:
-        print("  Aucune station trouvée sur cette emprise.\n")
+
+    sites = appeler("referentiel/sites",
+                    bbox=",".join(str(v) for v in boite), size=5, format="json")
+    if not sites:
+        print("\n  Aucun site trouvé sur cette emprise.")
+        print("  Le point d'entrée referentiel/sites répond-il ?\n")
         return
-    print(f"\n  {len(lot)} station(s), champs de la première :")
-    for cle, valeur in lot[0].items():
+
+    print(f"\n  {len(sites)} site(s), champs du premier :")
+    for cle, valeur in sites[0].items():
         print(f"    {cle:<36} {str(valeur)[:52]}")
 
-    code = champ(lot[0], "code_station")
+    code = champ(sites[0], "code_site")
     if not code:
         print()
         return
 
-    depuis = (date.today() - timedelta(days=90)).isoformat()
-    variantes = [
-        ("date + taille", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
+    depuis = (date.today() - timedelta(days=120)).isoformat()
+    print(f"\n  Observations élaborées du site {code} :")
+    for grandeur in GRANDEURS:
+        for libelle, params in (
+            ("avec date", {"code_entite": code,
+                           "grandeur_hydro_elab": grandeur,
                            "date_debut_obs_elab": depuis, "size": 5}),
-        ("taille seule", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
-                          "size": 5}),
-        ("minimale", {"code_entite": code, "grandeur_hydro_elab": "QmJ"}),
-        ("avec tri", {"code_entite": code, "grandeur_hydro_elab": "QmJ",
-                      "size": 5, "sort": "desc"}),
-    ]
-    print(f"\n  Observations de {code} — recherche du bon appel :")
-    for libelle, params in variantes:
-        obs = appeler("obs_elab", **params)
+            ("sans date", {"code_entite": code,
+                           "grandeur_hydro_elab": grandeur, "size": 5}),
+        ):
+            obs = appeler("obs_elab", silencieux=True, **params)
+            etat = ("aucune donnée" if obs == [] else
+                    "refusé" if obs is None else f"{len(obs)} enregistrement(s)")
+            print(f"    {grandeur:<6} {libelle:<12} {etat}")
+            if obs:
+                print("\n    Champs du premier :")
+                for cle, valeur in obs[0].items():
+                    print(f"      {cle:<34} {str(valeur)[:50]}")
+                print()
+                return
+            time.sleep(PAUSE)
+
+    # dernier recours : les observations temps réel, par station
+    stations = appeler("referentiel/stations",
+                       bbox=",".join(str(v) for v in boite), size=3,
+                       format="json")
+    if stations:
+        code_station = champ(stations[0], "code_station")
+        print(f"\n  Observations temps réel de la station {code_station} :")
+        obs = appeler("observations_tr", silencieux=True,
+                      code_entite=code_station, grandeur_hydro="Q", size=3,
+                      sort="desc")
         etat = ("aucune donnée" if obs == [] else
-                "échec" if obs is None else f"{len(obs)} enregistrement(s)")
-        print(f"    {libelle:<18} {etat}")
+                "refusé" if obs is None else f"{len(obs)} enregistrement(s)")
+        print(f"    {etat}")
         if obs:
-            print(f"\n    Champs du premier :")
             for cle, valeur in obs[0].items():
                 print(f"      {cle:<34} {str(valeur)[:50]}")
-            break
-        time.sleep(PAUSE)
     print()
 
 
@@ -454,13 +561,13 @@ def main():
     print(f"  Emprise : {boite[0]}, {boite[1]} → {boite[2]}, {boite[3]}")
 
     repere = centre(communes)
-    resultat_stations = stations_du_territoire(boite, repere)
+    resultat_stations = sites_du_territoire(boite, repere)
     if resultat_stations is None:
         print("\n[BLOCAGE] Impossible d'interroger Hub'Eau.\n")
         sys.exit(1)
 
     stations, recensees = resultat_stations
-    print(f"  Stations recensées : {recensees}, dont {len(stations)} en service")
+    print(f"  Sites hydrométriques recensés : {recensees}")
     if not stations:
         print("\n  Aucune station hydrométrique sur ce territoire.")
         print("  Rien n'a été écrit — c'est un résultat, pas une erreur.\n")
@@ -475,9 +582,9 @@ def main():
                      if st["cours_eau"] else st["nom"])
         print(f"  [{i:>2}/{len(stations)}] {(etiquette + eloigne)[:46]:<46}",
               end=" ", flush=True)
-        lot = chronique(st["code"])
+        lot = chronique(st["site"])
         time.sleep(PAUSE)
-        mesures_par_station[st["code"]] = lot
+        mesures_par_station[st["site"]] = lot
         print(f"{len(lot)} mesure(s)" if lot else "aucune mesure")
 
     synthese = synthetiser(stations, mesures_par_station)

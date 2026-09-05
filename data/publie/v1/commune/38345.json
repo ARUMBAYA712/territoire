@@ -404,7 +404,7 @@
       "explication": "Services aux particuliers, pour la sélection de types retenue dans ce fichier."
     },
     "ENV-01": {
-      "valeur": 6,
+      "valeur": 5,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -705,16 +705,18 @@
           "details": {}
         },
         {
-          "titre": "Par une crue à débordement lent de cours d'eau",
-          "details": {}
-        },
-        {
           "titre": "Rupture de barrage",
           "details": {}
         },
         {
           "titre": "Séisme",
           "details": {}
+        },
+        {
+          "titre": "Nature des phénomènes recensés",
+          "details": {
+            "Type 1": "Crue à débordement lent de cours d'eau"
+          }
         }
       ],
       "lien": {

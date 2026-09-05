@@ -1,0 +1,285 @@
+{
+ "genere_le": "2026-09-05",
+ "version": 1,
+ "source": "Hub'Eau — hydrométrie, services de l'État",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "quotidienne",
+ "territoires": {
+  "canton:3823": {
+   "mesures": {
+    "EAU-30": {
+     "valeur": "Proche des valeurs habituelles",
+     "unite": "",
+     "nom": "Débit des cours d'eau",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "mise_en_avant": true,
+     "ancre": "stations-hydrometriques",
+     "rang": 10,
+     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
+    },
+    "EAU-31": {
+     "valeur": 156.5,
+     "unite": "m³/s",
+     "nom": "Débit mesuré",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "rang": 20,
+     "repere": "L'Isère · 04/09/2026 · à 8 km",
+     "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
+    },
+    "EAU-32": {
+     "valeur": 4,
+     "unite": "stations",
+     "nom": "Stations hydrométriques suivies",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "ancre": "stations-hydrometriques",
+     "rang": 30,
+     "repere": "L'Isère, La Bourne, La Vernaisson, Le Méaudret"
+    },
+    "EAU-33": {
+     "valeur": "La Vernaisson",
+     "unite": "",
+     "nom": "Affluent le plus bas",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "rang": 25,
+     "ancre": "stations-hydrometriques",
+     "ton": "attention",
+     "repere": "à 35 % de son débit habituel de saison",
+     "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "id": "stations-hydrometriques",
+     "titre": "Stations de mesure des débits",
+     "items": [
+      {
+       "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
+       "details": {
+        "Cours d'eau": "L'Isère",
+        "Commune": "['SAINT-GERVAIS']",
+        "Distance du centre du territoire": "8 km",
+        "Débit": "156.5 m³/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 4993
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 161.84 m³/s sur 407 relevés. Débit actuel à 97 % de cette valeur."
+      },
+      {
+       "titre": "La Vernaisson à Pont-en-Royans",
+       "details": {
+        "Cours d'eau": "La Vernaisson",
+        "Commune": "['PONT-EN-ROYANS']",
+        "Distance du centre du territoire": "13 km",
+        "Débit": "109 L/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 3358
+       },
+       "etat": [
+        "Nettement sous les valeurs habituelles",
+        "alerte"
+       ],
+       "texte": "Médiane des mois comparables : 308 L/s sur 237 relevés. Débit actuel à 35 % de cette valeur."
+      },
+      {
+       "titre": "Le Méaudret à Méaudre",
+       "details": {
+        "Cours d'eau": "Le Méaudret",
+        "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "42 L/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 3638
+       },
+       "etat": [
+        "Nettement sous les valeurs habituelles",
+        "alerte"
+       ],
+       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 48 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "['SAINT-JUST-DE-CLAIX']",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.73 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 4997
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.64 m³/s sur 382 relevés. Débit actuel à 103 % de cette valeur."
+      }
+     ],
+     "note": "Les cours d'eau traversent le territoire sans s'arrêter à ses limites : ces mesures valent pour l'ensemble, pas pour une commune en particulier. Un débit ne s'interprète que par rapport aux valeurs habituelles de la même saison. Un grand cours d'eau alimenté par la montagne et régulé par des barrages peut afficher un débit normal alors que des restrictions sécheresse sont en vigueur : ce sont les petits affluents qui traduisent le mieux la situation locale."
+    }
+   ]
+  },
+  "epci:200070431": {
+   "mesures": {
+    "EAU-30": {
+     "valeur": "Proche des valeurs habituelles",
+     "unite": "",
+     "nom": "Débit des cours d'eau",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "mise_en_avant": true,
+     "ancre": "stations-hydrometriques",
+     "rang": 10,
+     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
+    },
+    "EAU-31": {
+     "valeur": 156.5,
+     "unite": "m³/s",
+     "nom": "Débit mesuré",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "rang": 20,
+     "repere": "L'Isère · 04/09/2026 · à 8 km",
+     "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
+    },
+    "EAU-32": {
+     "valeur": 4,
+     "unite": "stations",
+     "nom": "Stations hydrométriques suivies",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "ancre": "stations-hydrometriques",
+     "rang": 30,
+     "repere": "L'Isère, La Bourne, La Vernaisson, Le Méaudret"
+    },
+    "EAU-33": {
+     "valeur": "La Vernaisson",
+     "unite": "",
+     "nom": "Affluent le plus bas",
+     "obtention": "natif",
+     "source": "Hub'Eau — hydrométrie, services de l'État",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "rang": 25,
+     "ancre": "stations-hydrometriques",
+     "ton": "attention",
+     "repere": "à 35 % de son débit habituel de saison",
+     "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "environnement",
+     "sous_rubrique": "rivieres",
+     "id": "stations-hydrometriques",
+     "titre": "Stations de mesure des débits",
+     "items": [
+      {
+       "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
+       "details": {
+        "Cours d'eau": "L'Isère",
+        "Commune": "['SAINT-GERVAIS']",
+        "Distance du centre du territoire": "8 km",
+        "Débit": "156.5 m³/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 4993
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 161.84 m³/s sur 407 relevés. Débit actuel à 97 % de cette valeur."
+      },
+      {
+       "titre": "La Vernaisson à Pont-en-Royans",
+       "details": {
+        "Cours d'eau": "La Vernaisson",
+        "Commune": "['PONT-EN-ROYANS']",
+        "Distance du centre du territoire": "13 km",
+        "Débit": "109 L/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 3358
+       },
+       "etat": [
+        "Nettement sous les valeurs habituelles",
+        "alerte"
+       ],
+       "texte": "Médiane des mois comparables : 308 L/s sur 237 relevés. Débit actuel à 35 % de cette valeur."
+      },
+      {
+       "titre": "Le Méaudret à Méaudre",
+       "details": {
+        "Cours d'eau": "Le Méaudret",
+        "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "42 L/s",
+        "Dernière mesure": "04/09/2026",
+        "Mesures sur 5 ans": 3638
+       },
+       "etat": [
+        "Nettement sous les valeurs habituelles",
+        "alerte"
+       ],
+       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 48 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "['SAINT-JUST-DE-CLAIX']",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.73 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 4997
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.64 m³/s sur 382 relevés. Débit actuel à 103 % de cette valeur."
+      }
+     ],
+     "note": "Les cours d'eau traversent le territoire sans s'arrêter à ses limites : ces mesures valent pour l'ensemble, pas pour une commune en particulier. Un débit ne s'interprète que par rapport aux valeurs habituelles de la même saison. Un grand cours d'eau alimenté par la montagne et régulé par des barrages peut afficher un débit normal alors que des restrictions sécheresse sont en vigueur : ce sont les petits affluents qui traduisent le mieux la situation locale."
+    }
+   ]
+  }
+ }
+}

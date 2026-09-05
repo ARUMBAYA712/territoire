@@ -42,11 +42,11 @@ VERSIONS_ATTENDUES = {
     "02_canton.py": 2,
     "03_agregation.py": 3,
     "04_generation.py": 7,
-    "12_rivieres.py": 2,
+    "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
-    "08_georisques.py": 9,
+    "08_georisques.py": 10,
     "09_nappes.py": 2,
     "10_ecoles.py": 5,
     "11_population.py": 5,
@@ -97,12 +97,10 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 02_canton.py     source officielle inscrite : décret n° 2014-180
-#   · 08_georisques.py lecture en profondeur des risques, renvoi Géorisques
-#   · 11_population.py équipements détaillés par type, libellés officiels
-#   · 12_rivieres.py   NOUVEAU — débit des cours d'eau, sous-rubrique
-#                      Rivières, rattachée au canton
-#   · 04_generation.py sous-rubrique Rivières déclarée
+#   · 12_rivieres.py   les débits fonctionnent. Ajout : signalement de
+#                      l'affluent le plus bas, et explication de la
+#                      contradiction apparente entre un grand cours d'eau
+#                      au débit normal et des restrictions sécheresse.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -120,9 +118,6 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
-    ("02_canton.py", []),
-    ("08_georisques.py", ["--tout"]),
-    ("11_population.py", []),
     ("12_rivieres.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),

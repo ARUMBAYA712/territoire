@@ -344,7 +344,7 @@
       "explication": "Commerces recensés par la base permanente des équipements. Ce fichier n'en retient qu'une sélection de types : le décompte est un ordre de grandeur, non un inventaire."
     },
     "ENV-01": {
-      "valeur": 6,
+      "valeur": 5,
       "unite": "risques recensés",
       "nom": "Risques identifiés sur la commune",
       "obtention": "natif",
@@ -617,16 +617,18 @@
           "details": {}
         },
         {
-          "titre": "Par une crue à débordement lent de cours d'eau",
-          "details": {}
-        },
-        {
           "titre": "Rupture de barrage",
           "details": {}
         },
         {
           "titre": "Séisme",
           "details": {}
+        },
+        {
+          "titre": "Nature des phénomènes recensés",
+          "details": {
+            "Type 1": "Crue à débordement lent de cours d'eau"
+          }
         }
       ],
       "lien": {
