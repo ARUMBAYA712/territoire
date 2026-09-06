@@ -41,7 +41,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 14,
+    "04_generation.py": 15,
     "12_rivieres.py": 5,
     "05_cartes.py": 3,
     "06_eau.py": 4,
@@ -97,9 +97,10 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py jeu d'icônes pour chaque rubrique et sous-rubrique ;
-#     accueil doté des mêmes bandeaux que les fiches, intro en pleine
-#     largeur, chiffres clés redessinés.
+#   · 04_generation.py les icônes portent leurs dimensions dans la balise :
+#     sans cela, un SVG s'affiche en 300 x 150 pixels tant que la feuille
+#     de style n'est pas appliquée. Taille, couleur et épaisseur de trait
+#     sont désormais trois variables du thème.
 #   · MENTIONS reste à renseigner, et /Terri_Admin/ à protéger.
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON

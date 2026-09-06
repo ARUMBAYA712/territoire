@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 14
+VERSION_SCRIPT = 15
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -175,6 +175,13 @@ CSS = """
   --alerte:#A32C1B; --alerte-soft:#FBEAE7;
   --font-display:"Barlow Condensed",sans-serif;
   --font-body:"IBM Plex Sans",system-ui,sans-serif;
+
+  /* Icônes. Taille exprimée en em : elles suivent la police du texte
+     qui les accompagne. Couleur héritée par défaut ; remplacez
+     currentColor par une teinte fixe pour les distinguer du libellé. */
+  --ico-taille:1.25em;
+  --ico-couleur:currentColor;
+  --ico-trait:1.5;
   --font-data:"IBM Plex Mono",monospace;
   --radius:3px;
 }
@@ -251,8 +258,10 @@ button{background:none;border:none;cursor:pointer}
 .nav{background:var(--paper);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;gap:2px;padding:0 20px;overflow-x:auto;
   scrollbar-width:thin}
-.ico{width:18px;height:18px;flex-shrink:0}
-.ico.petit{width:15px;height:15px}
+.ico{width:var(--ico-taille);height:var(--ico-taille);flex-shrink:0;
+  color:var(--ico-couleur);stroke-width:var(--ico-trait)}
+.ico.petit{width:calc(var(--ico-taille) * .85);
+  height:calc(var(--ico-taille) * .85)}
 
 .nav-item{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
   padding:10px 14px;font-size:14px;color:var(--soft);
@@ -447,7 +456,8 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
   margin-top:22px;background:var(--line);border:1px solid var(--line);
   border-radius:var(--radius);overflow:hidden}
 .chiffre{background:var(--surface);padding:22px 18px;text-align:center}
-.chiffre .ico{width:22px;height:22px;color:var(--accent);opacity:.55;
+.chiffre .ico{width:calc(var(--ico-taille) * 1.9);
+  height:calc(var(--ico-taille) * 1.9);color:var(--accent);opacity:.55;
   margin-bottom:8px}
 .chiffre-v{font-family:var(--font-data);font-size:30px;font-weight:500;
   line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
@@ -1124,9 +1134,15 @@ def icone(identifiant, classe="ico"):
     trace = ICONES.get(identifiant)
     if not trace:
         return ""
-    return (f'<svg class="{classe}" viewBox="0 0 24 24" fill="none" '
-            f'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
-            f'stroke-linejoin="round" aria-hidden="true">{trace}</svg>')
+    # Les attributs width et height sont inscrits dans la balise : un SVG
+    # qui en est dépourvu s'affiche en 300 × 150 pixels si la feuille de
+    # style n'est pas encore appliquée. La feuille les remplace ensuite
+    # par la valeur du thème.
+    return (f'<svg class="{classe}" width="18" height="18" '
+            f'viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            f'stroke-width="1.5" stroke-linecap="round" '
+            f'stroke-linejoin="round" aria-hidden="true" '
+            f'focusable="false">{trace}</svg>')
 
 
 def rubrique_par_id(ident):
