@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 15
+VERSION_SCRIPT = 16
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -297,10 +297,13 @@ main .wrap{padding:26px 20px 48px}
 .alertes{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
 .alertes.deux-colonnes{grid-template-columns:repeat(2,1fr)}
 .card.pleine{gap:6px;padding:13px 16px}
-.card-tete{display:flex;align-items:baseline;justify-content:space-between;
-  gap:12px}
-.card-tete h2{font-size:15px}
-.card-tete .id{flex-shrink:0}
+.card-tete{display:flex;align-items:center;gap:9px}
+.card-tete .ico{color:var(--accent);opacity:.6}
+.card-tete .id{margin-left:auto}
+.card.pleine .card-tete h2{font-size:15px;flex:1}
+.card.pleine .card-tete .id{margin-left:0}
+.card.ton-attention .card-tete .ico{color:var(--attention);opacity:1}
+.card.ton-alerte .card-tete .ico{color:var(--alerte);opacity:1}
 .card.pleine .v{font-size:22px;line-height:1.15}
 .card.pleine .card-expl{margin-top:2px}
 .card.pleine footer{padding-top:6px}
@@ -466,9 +469,12 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 
 .bloc{margin-top:22px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:18px}
-.bloc > .dsp{font-family:var(--font-body);font-size:15px;font-weight:600;
-  text-transform:none;letter-spacing:0;color:var(--ink);display:block;
+.bloc > .dsp,.ratt > .dsp,.carte-bloc .dsp{font-family:var(--font-body);
+  font-size:15px;font-weight:600;text-transform:none;letter-spacing:0;
+  color:var(--ink);display:flex;align-items:center;gap:9px;
   margin-bottom:12px}
+.bloc > .dsp .ico,.ratt > .dsp .ico,.carte-bloc .dsp .ico{
+  color:var(--accent);opacity:.6}
 .bl-grille{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .bl-item{border:1px solid var(--line);border-radius:var(--radius);
   padding:13px 14px;background:var(--sunken)}
@@ -907,6 +913,8 @@ def carte(ident, m, renvois=None):
     pas été produit — commune sans réseau connu, sans prélèvement — et
     le lien mènerait alors dans le vide.
     """
+    pictogramme = icone_de(m, ident)
+
     classes = ["card"]
     if m.get("mise_en_avant"):
         classes.append("pleine")
@@ -926,10 +934,12 @@ def carte(ident, m, renvois=None):
     if m.get("mise_en_avant"):
         # Bandeau d'alerte : titre et référence sur une même ligne, pour
         # gagner en hauteur sans perdre d'information.
-        entete = (f'<header class="card-tete"><h2>{escape(m["nom"])}</h2>'
+        entete = (f'<header class="card-tete">{pictogramme}'
+                  f'<h2>{escape(m["nom"])}</h2>'
                   f'<span class="id">{escape(ident)}</span></header>')
     else:
-        entete = (f'<span class="id">{escape(ident)}</span>'
+        entete = (f'<header class="card-tete">{pictogramme}'
+                  f'<span class="id">{escape(ident)}</span></header>'
                   f'<h2>{escape(m["nom"])}</h2>')
 
     return f"""      <article class="{' '.join(classes)}">
@@ -978,7 +988,7 @@ def bloc_rattachements(d, base, adresses):
                 "entières. Les valeurs agrégées y sont donc exactes.")
 
     bloc_note = f'\n      <div class="note">{note}</div>' if note else ""
-    return f"""    <section class="ratt"><span class="dsp">Rattachements</span>
+    return f"""    <section class="ratt"><span class="dsp">{icone("_rattachements")}Rattachements</span>
       <div class="spine">
 {chr(10).join(lignes)}
       </div>{bloc_note}
@@ -1126,7 +1136,40 @@ ICONES = {
                   '<path d="M12 5.5v3M12 11v3M12 16.5v3"/>',
     "elections": '<path d="M4 10.5h16V20H4z"/><path d="M8.5 10.5V6h7v4.5"/>'
                  '<path d="M9.5 13.5h5"/>',
+
+    # Sections transverses, présentes sur toutes les fiches.
+    "_rattachements": '<circle cx="12" cy="5" r="2.2"/>'
+                      '<circle cx="5.5" cy="19" r="2.2"/>'
+                      '<circle cx="18.5" cy="19" r="2.2"/>'
+                      '<path d="M12 7.2v4.3M5.5 16.8v-2.4h13v2.4M12 11.5v2.9"/>',
+    "_carte": '<path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/>'
+              '<path d="M9 4v13.5M15 6.5V20"/>'
+              '<circle cx="12" cy="10.5" r="1.6"/>',
 }
+
+# Rattachement d'une famille d'indicateurs à son pictogramme, quand la
+# mesure ne déclare pas elle-même sa rubrique.
+ICONE_PAR_PREFIXE = {
+    "POP": "population", "GEO": "geographie", "LOG": "urbanisme",
+    "EQU": "equipements", "EDU": "education", "TRA": "transports",
+    "POL": "elections", "ENV": "risques", "EAU": "environnement",
+}
+
+
+def icone_de(objet, identifiant=""):
+    """Pictogramme d'une mesure ou d'un bloc.
+
+    On s'appuie d'abord sur ce que la donnée déclare — sa sous-rubrique,
+    puis sa rubrique — avant de retomber sur le préfixe de son
+    identifiant. Aucune table à tenir à jour : un nouveau collecteur qui
+    déclare sa rubrique hérite du pictogramme correspondant.
+    """
+    for cle in ("sous_rubrique", "rubrique"):
+        valeur = (objet or {}).get(cle)
+        if valeur and valeur in ICONES:
+            return icone(valeur)
+    famille = ICONE_PAR_PREFIXE.get(str(identifiant)[:3])
+    return icone(famille) if famille else ""
 
 
 def icone(identifiant, classe="ico"):
@@ -1544,7 +1587,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None,
         legende = ("Situation dans le territoire — cliquez une commune "
                    "pour ouvrir sa fiche")
         return f"""    <section class="carte-bloc">
-      <span class="dsp">Carte</span>
+      <span class="dsp">{icone("_carte")}Carte</span>
       {svg}
       <p class="carte-legende">{legende}</p>
     </section>"""
@@ -1616,7 +1659,7 @@ def bloc_liste(d, rubrique, sous=None):
         ancre = f' id="{escape(b["id"])}"' if b.get("id") else ""
         sorties.append(
             f'    <section class="bloc"{ancre}>'
-            f'<span class="dsp">{escape(b["titre"])}</span>'
+            f'<span class="dsp">{icone_de(b)}{escape(b["titre"])}</span>'
             f'<div class="bl-grille">{"".join(entrees)}</div>'
             f'{renvoi}{note}</section>')
     return "\n".join(sorties)
