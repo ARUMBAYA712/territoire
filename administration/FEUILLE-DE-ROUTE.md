@@ -21,6 +21,7 @@ Chacune se traite en un collecteur sur le modèle de ceux déjà en place.
 | 7 | **Espaces naturels protégés** (Natura 2000, ZNIEFF, PNR) | INPN | Environnement | Moyenne |
 | 7b | **Espèces protégées présentes sur le territoire** | INPN, occurrences par commune | Environnement | Moyenne à difficile |
 | 8 | **Établissements scolaires** | Annuaire de l'éducation | Éducation | Facile |
+| 9 | **Obligation d'équipements hivernaux** | Arrêté préfectoral, à vérifier sur data.gouv.fr | Transports et fiche commune | Facile |
 
 Les quatre premières partagent une caractéristique précieuse : un seul fichier
 national, aucune limite de débit, aucune reprise à gérer. Ce sont les moins
@@ -114,6 +115,92 @@ chaîne sera rodée bien avant.
 
 ---
 
+## Palier 3 bis — le territoire rural
+
+Quatre sujets propres à un territoire rural, classés du plus simple au plus
+exigeant. Trois d'entre eux reposent sur des arrêtés préfectoraux, ce qui
+introduit une catégorie nouvelle : voir la section « Référentiels saisis à la
+main » plus bas.
+
+### A. Obligation d'équipements hivernaux — le meilleur rapport effort/valeur
+
+Depuis la loi Montagne, certaines communes imposent pneus hiver ou chaînes du
+1er novembre au 31 mars. La liste est fixée par arrêté préfectoral et publiée ;
+plusieurs communes du Vercors sont concernées.
+
+C'est un simple oui/non par commune, avec une période d'application. Il tient
+en une tuile sur la fiche communale, et se répète dans la future rubrique
+Transports. Utile, sans ambiguïté, et à faible risque d'erreur.
+
+**Difficulté : faible.** À vérifier : existence d'un jeu national sur
+data.gouv.fr, sinon saisie depuis l'arrêté départemental.
+
+### B. Cultures, sylviculture et élevage
+
+Deux sources possibles, très différentes.
+
+Le **recensement agricole** d'Agreste publie par commune le nombre
+d'exploitations, la surface agricole utilisée, l'orientation dominante et le
+cheptel. Données riches, mais le secret statistique masque beaucoup de petites
+communes — sur un territoire comme le vôtre, ce sera fréquent.
+
+Le **registre parcellaire graphique** recense les parcelles déclarées par les
+agriculteurs, avec leur culture, chaque année. Il permettrait d'afficher les
+surfaces par type de culture, voire une carte. Mais ce sont des fichiers
+géographiques lourds à traiter, par région.
+
+**Difficulté : moyenne pour Agreste, élevée pour le parcellaire.**
+Je commencerais par Agreste, en assumant les communes masquées.
+
+### C. Dates de chasse
+
+Fixées chaque année par arrêté préfectoral, avec des dates différentes selon
+l'espèce et parfois selon la zone. Aucune source lisible par une machine :
+c'est un document, pas un jeu de données.
+
+**Difficulté : faible techniquement, mais engageante.** Une date erronée peut
+conduire quelqu'un à commettre une infraction. Si ce sujet est retenu, la
+fiche devra citer l'arrêté, sa date, un lien vers le document, et préciser
+qu'il fait seul foi.
+
+### D. Cueillette — champignons et plantes
+
+Le sujet le plus délicat des quatre, et le plus recherché.
+
+Trois réglementations se superposent : les arrêtés préfectoraux qui limitent
+les quantités, le code forestier qui subordonne la cueillette à l'accord du
+propriétaire, et les listes d'espèces protégées dont le ramassage est interdit.
+S'y ajoutent, chez vous, les règles propres au parc naturel régional du Vercors.
+
+**Difficulté : moyenne techniquement, élevée en responsabilité.** Indiquer
+qu'une cueillette est permise alors qu'elle ne l'est pas expose le lecteur.
+Je ne traiterais ce sujet qu'en citant chaque règle avec sa source, et sans
+jamais formuler d'autorisation — seulement rappeler ce que dit le texte.
+
+À noter : ce sujet ne dit rien de la comestibilité. Il ne faudra en aucun cas
+laisser croire qu'il aide à identifier un champignon.
+
+---
+
+## Référentiels saisis à la main
+
+Ces quatre sujets, sauf le parcellaire, introduisent une catégorie que le
+projet n'a pas encore : des données **transcrites depuis un document officiel**
+plutôt que collectées par un programme.
+
+Elles imposent des règles propres, à poser avant le premier de ces sujets :
+
+- **Citer le texte source** — nature, date, autorité — sur la fiche même.
+- **Publier un lien vers le document**, qui fait seul référence.
+- **Dater la saisie** et afficher cette date au visiteur.
+- **Prévoir une péremption** : un arrêté annuel doit être signalé comme
+  périmé passé sa date de validité, plutôt que d'être affiché indéfiniment.
+- **Faire figurer ces référentiels dans la section d'administration**, avec
+  leur échéance, au même titre que les collectes automatiques.
+
+Sans ces règles, ces données vieilliraient en silence — exactement le risque
+contre lequel tout le reste du projet a été construit.
+
 ## Palier 4 — carburants
 
 Traité à part : c'est le seul sujet où vous disposez déjà d'un travail abouti.
@@ -128,6 +215,7 @@ Voir le document dédié.
 2. **Carburants** — voir document dédié, forte valeur d'usage
 3. **Parc de logements et permis de construire** — ouvre la rubrique Urbanisme
 4. **Équipements publics** — alimente Santé, Éducation, Culture d'un coup
+4 bis. **Équipements hivernaux obligatoires** — une tuile, forte valeur d'usage
 5. **Débits de rivière** — complète Environnement, schéma déjà éprouvé
 6. **Mutations immobilières** — très consultée, un peu plus technique
 7. **Prix de l'eau** — après clarification de la voie SISPEA
