@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Administration Sud Gresiv"
+AuthUserFile /home/sudgresi/territoire/Terri_Admin/.htpasswd
+Require valid-user
+
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>

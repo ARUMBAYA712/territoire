@@ -1,0 +1,6878 @@
+{
+ "genere_le": "2026-09-07",
+ "version": 1,
+ "source": "Répertoire national des élus — ministère de l'Intérieur",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "trimestrielle",
+ "communes": {
+  "38004": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Albert Buisson",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Albert Buisson",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Fugier-Dupard",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gérard Cambon",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christèle Baret-Courtial",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Paul Roux",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre Picat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anouchka Dugelet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Chrystelle Regaldo-Gillet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Claude Rochas",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gaël Trocherie",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gaëlle Benistant",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Michel Olive",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marine Pansu",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marlène Guichard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Combe",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38018": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Stéphane Villard",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Stéphane Villard",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Emery",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patricia Liothin",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Clément Charbonnel",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cindy Fromant",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Corinne Marchand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jordan Bazzoli",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurie Chuilon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marc Dursap",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie France Idelon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stephane Feret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38033": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Didier Corvey-Biron",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Didier Corvey-Biron",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Valérie Drouvin",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Noël Mandier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annie Bereche",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Agnès Odier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Audrey Dherbassy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Benjamin Chabert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bertrand Uzel",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Dan Laforge",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "David Grand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Guillaume Croizat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Sophie Barbier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mélanie Satin",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "René Bayle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Samia Ihaddadene",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38036": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Natacha Petter",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 7,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 57.1,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "4 femmes, 3 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Natacha Petter",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Mollier",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Adeline Rony",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Dececco-Cailliere",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Garand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Lou Le Yaouanc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathan Makhloufi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38041": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Sylvain Dherbassy",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Sylvain Dherbassy",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Josette Rimet Meille",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Michel Toucher",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aimé Lambert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "André Mounier-Vehier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brigitte Favre-Giraud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christine Cauchard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Léa Charamel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Olga Grillot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Serge Rabedon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sébastien Montel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38074": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Vincent Roux",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 14/06/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Vincent Roux",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Marie-Laure Gambirasio",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Guillaume Mingat",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Josiane Chavoutier",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Carole Blond",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Charlotte Montmeat",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Delphine Lair",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Sylvian Barry",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Thierry Derval",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Thierry Helly D'Angelin",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      },
+      {
+       "titre": "Thierry Martin",
+       "details": {
+        "Mandat depuis le": "14/06/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Guy Chevallier",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Guy Chevallier",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Martin",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mathilde Marchand",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stephane Chapre",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Delphine Bernard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Floriane Caillat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Vaudagna-Gagne",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Noël Michel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joël Chavat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadège Chapel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Rémy Patras",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38092": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "William Thumy",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 7,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 57.1,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "4 femmes, 3 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "William Thumy",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphanie Blanc",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thomas Huillier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Jud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Amandine Gonon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Ollat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maude Barraquand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "André Roux",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 23,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 47.8,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "11 femmes, 12 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "André Roux",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Laure Butez",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Favetto",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Dorly",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Yvan Bazzoli",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sophie Campagna",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Wilfried Roche",
+       "details": {
+        "Fonction": "6ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Claudepierre",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "David Bazzoli",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Bagot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Eric Barbier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Héléne Mieton",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Girond",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Louet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jennifer Candullo",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jérôme Baudoin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Laure Truchet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Martine Pinet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Ranc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michelle Bruneel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Bousson",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Xavier Tassin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Éléanor Nagearaffe",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Franck Rousset",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Franck Rousset",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Géraldine Cholet",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrick Odier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florence Cotte",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Lyonnet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christine Vescovi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Damien Chanron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emilie Gagnoud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gilles Morat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Kheididja Brombeck",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mickaël Maure",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mohamed Souaï",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Muriel Zapata",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Myriam Pain",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Colomb",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Geneviève Moreau-Glénat",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 54.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "6 femmes, 5 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Geneviève Moreau-Glénat",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Royer",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lola Stille",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Yves Deturin",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jerome Belle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mathilde Eysseric",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Breyton",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Monique Rancoud-Guillon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sophie Richaud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Timothée Roumeas",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Virginie Bourgogne",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Geoffrey Girard",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Geoffrey Girard",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Tarrade",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ingrid Finet",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marc Brugiergarde",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Bith",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brice Govart",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Grugeon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "François Garcia",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Piccarreta",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Pierre Sauvé",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Morgane Gaume",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Aiello",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Olivier Chretien",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thierry Bonta",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Élodie Roux",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Nicole Di Maria",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 8,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 62.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 3 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Nicole Di Maria",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Irène Laurent",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Barbara Morot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Catherine Claudio",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Chantal Trenoy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frédéric Bancheri",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gérard Veyret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Michel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Yannick Brun-Cosme-Bruny",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 53.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "8 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Yannick Brun-Cosme-Bruny",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thierry Sarras-Bournet",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joëlle Aujoux",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Allard-Lyonne",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Carole Baudru",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cyril Gagnoud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cécile Fabry",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "David Charbonnel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Claude Potié",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Margaux Der Agopian",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marlène Dunand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Morgane Brebant",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicole Pognante",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Vittet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thierry Mercier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Jacques Braisaz-Latille",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 7,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 57.1,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "4 femmes, 3 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Jacques Braisaz-Latille",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurent Perez",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Bayot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurentine Froger",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lucie Steulet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Magali Brun",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Manon Dory",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Corinne Mandier",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 10,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 50.0,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 5 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Corinne Mandier",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Roland Bois",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Béatrice Bruyat",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cléo Vincent",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Elsa Boldrini",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Guillaume Buisson",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Guillaume Vial",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lorie Nicolas",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mickaël Bougy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrick Pacaud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Brigitte Murdinet",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Brigitte Murdinet",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florian Parra Oviedo",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fanny Guinot",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Romain Dureault",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Boucaut",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Francis Colin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Guillaume Lombart",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Guy Dreveton",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marlène Grange",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mylène Brutti",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Odile Gerbaux",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pascale Baconnier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pascale Poblet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sébastien Coing-Roy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Vincent Gobaille",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Franck Doriol",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Franck Doriol",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joseph Albanese",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Claire Geymond",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christian Rambert",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bastien Sangiorgio",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Caroline Eyssard-Poncier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Trichard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julie Coulon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lionel Carlin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lyliane Muzelier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryline Perrot-Berton",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Jean-Yves Tizot",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Jean-Yves Tizot",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Loïc Fremont",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anne Leman",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thomas Pelloquin",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Adrien Boissy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lydia Cluze",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Martine Blandino",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pauline Ragache",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "René Matuissi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Rémi Trofin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sophie Ramat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Philippe Roux-Bernard",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Philippe Roux-Bernard",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Catherine Ageron",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bruno Durand",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Amandine Marion-Veyron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Benoit Dye",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Françoise Renn",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joris Champon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lilian Chardon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marilyne Boizou",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thomas Gagelin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Valérie Mazzilli",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Isalia Petmezakis",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 53.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "8 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Isalia Petmezakis",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Vinson",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Noëlle Ravier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Vincent Grigis",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryse Janssen",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Chloé Martin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Claire Brichet-Billet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Canaple",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Grégory Cwicklinski",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Hubert Gabriel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jérôme Robert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mélanie Quineau",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Larcher",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvain Bergerand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvain Marra-Termoz",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Lionel Argoud",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Lionel Argoud",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrick Chabert",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Danièle Allibe",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ludovic Giry",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brigitte Couderc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christelle Ancarnat-Piccardi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christelle Tavel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Delphine Honore",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Eric Martin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ghislain Petit-Roche",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Hubert Charvet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Milesi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryse Salvi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Rocher",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Ferlin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38319": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Arielle Moulin Laporte",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 53.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "8 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Arielle Moulin Laporte",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphan Amozigh",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Audrey Fregny Miguel",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre De Azevedo",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Charlene Sahinovic",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Buisson",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Franc Farandeau",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Horia Viel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Ravix",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laetitia Genitoni",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadia Antri",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nelly Pillard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Maret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéfan Jacquet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Valérie Sebie",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Vincent Dumas",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Vincent Dumas",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Claire Brass",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Grégoire Genot",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Delattre",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Antonin Kasnicki",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Belinda Abonnel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Clara Belle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Chabert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pablo Vasquez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Robin Tellene",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Tilly Creswell",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Lauriane Albertin",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 9,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 55.6,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 4 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Lauriane Albertin",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Magnat",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre La Rizza",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aurore Ferret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Camille Mathias",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Audrapt",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fabrice Reynaud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Josiane Gagnardot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Romain Magnat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Olivier Dutel",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Olivier Dutel",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean Pierre Gally",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Zelda Perret",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Chalumeau",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Allison Fournel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Côme Poncin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fanny Bichebois",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean Claude Duthy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jeanne Bolusset",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Louis Delquignies",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ninon Cros",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Raymond Rolland",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Raymond Rolland",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Magali Bernard-Granger",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Ruggiero",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annik Adiard",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annie La Rocca",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Axelle Tisserant",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Balmont",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fabienne Ricaud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joseph Gabriele",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurent Chanin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Andrée Martin",
+       "details": {
+        "Mandat depuis le": "05/05/2026"
+       }
+      },
+      {
+       "titre": "Meriem Mahnan",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pascal Perrin-Merloz",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Robert Alleyron-Biron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "William Philippe",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Béatrice Genin",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Béatrice Genin",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frederic Merit",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annick Marmottan Petit-Barat",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-François Patout",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Agnès Guinet-Boucher",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Auguste Chevallier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Beatrice Ferron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Coralie Dutertre",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Daniela Ressot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gabrielle Burgat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean Pierre Clerc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Baptiste Rambert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Christophe Dherbey",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Termoz",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Paul Allemand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Frédéric De Azevedo",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Frédéric De Azevedo",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brigitte Vuillod",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Philippe Dode",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Audrey Falbo",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christina Pupino",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gaëlle Brun",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurent Pascal",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lilian Vuillod",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lionel Chevallier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maël Rossat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Virginie Belle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Maryline Longis",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 20,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 55.0,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "11 femmes, 9 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Maryline Longis",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryline Longis",
+       "details": {
+        "Fonction": "Maire délégué",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Roland Grenier",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Véronique Milliat",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Germain",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bernadette Villard",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annie Mandier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Arnaud Seyve",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brigitte Garcia",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Catherine Baudel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "David Brocard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Petrequin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Elodie Guitard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Philippe Amiot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Magali Gaillègue",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nacer Mokhtari",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nancy Pedoja",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pascal Duc-Mauge",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Macari",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Véronique Didier Dit Pontais",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Nathalie Tanchon",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 54.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "6 femmes, 5 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Nathalie Tanchon",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florian Allard",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurence Bancod",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Danielle Simien",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Christophe Ferrari",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julie Bachasson",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lionel Jourdan",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marguerite Mounier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Delporte",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Theron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Walter Bonazza",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Jean-Claude Darlet",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Jean-Claude Darlet",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fabrice Prunelle",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Lantheaume",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bertrand Rey",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ana Cristina Fernandes",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Annie Gueffier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christian Giannasi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Felandes",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dorian Pevet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Etienne Petitjean",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fantine Odile Sabatier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frederic René Léonce Jacquet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Freixas",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurent Richard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Martinet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Didier Cheneau",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Didier Cheneau",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cécile Alvarez Navarro",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Termoz",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anthony Amiot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Faure",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florent Jullien",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Liliane Ortolani",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michèle Tortora",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadia Barek",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Le Parc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicole Granade",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nina Jullien",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Olivia De Rossi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Rodriguez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sebastien Jannon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Sylvain Belle",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 19,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 47.4,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "9 femmes, 10 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Sylvain Belle",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Baffert",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Panarin",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Louis Odeyer",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandrine Belle",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre Ferlay",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Pons",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christine Fernandes",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Charroin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Johan Michal",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laurent Couturier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Loïc Pascal",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marion Level",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Martine Rohaut",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryse Pretet-Duthoit",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mireille Chalaye",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Richard Cauneau",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandra Escoffier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Champavier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Jean-Louis Abert",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 53.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "8 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Jean-Louis Abert",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aline Vuillod",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Follut",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Coralie Pelerin",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christophe Bouchet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Elodie Ollat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fallon Petitjean",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gregory Chirouge",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Julien Lefebvre",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Liliane Abert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mathieu Ezingeard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mylène Grossot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nelly Rubis",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandrine Bernard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thierry Martin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Raymond Payen",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Raymond Payen",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "François Ballouhey",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christelle Landefort",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Richard Traversier",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Estelle Achard",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandra Arnaud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Ribeiro",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Estelle Hours",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fabrice Combet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florence Daussy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Luc Faure",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jennifer Decamp",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lise Tournier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michael Dubois",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Kelen",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Imen De Smedt",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 22/03/2026"
+    },
+    "POL-02": {
+     "valeur": 29,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 48.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "14 femmes, 15 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Imen De Smedt",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Hubert Lagier",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Anne Tournier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Michel Revol",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Celine Perrier",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Benjamin Armand",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Veronique Todesco",
+       "details": {
+        "Fonction": "6ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Yves Balestas",
+       "details": {
+        "Fonction": "7ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Viaud",
+       "details": {
+        "Fonction": "8ème adjoint au maire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre Vehier",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "André Jaune",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Anthony Astruc",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Beatrice Leprohon",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Festivi",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Conceiçao Almeida Verissimo",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Germain",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Ellyne Thaon",
+       "details": {
+        "Mandat depuis le": "28/03/2026"
+       }
+      },
+      {
+       "titre": "Eric Chalancon",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Eric Passarotto",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Gerard Nicoud",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Saragaglia",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jacques Lascoumes",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Luc Piquer",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Laurence Levyn",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Hélène Ballouhey",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Noëlle Thaon",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Olivia Jacquot",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Sandra Buisson",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Vincent Breton",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Michel Ramos",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 11,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 45.5,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "5 femmes, 6 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Michel Ramos",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrice Feugier",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pascale Gautron",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "André Lassard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christian Giroud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Damien Barnier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emilie Inard-Charvin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jonathan Cogne",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marielle Rozand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Mathieu",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Violaine Lagier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Aimée Batteux",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 53.3,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "8 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Aimée Batteux",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gaël Porrot",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Miranda Suco",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Desmiers",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florence Chatelain",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Arnaud Adelise",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Auriane Denis",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bajram Halilaj",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denise Lippert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frédéric Calvez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joël Roland",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Magali Leita",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadine Nugues",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Richard Bietrix Ogier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sophie Bardou",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Yvan Creach",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 19,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 47.4,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "9 femmes, 10 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Yvan Creach",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Karine Tribbia",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Damien Miclo",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gisèle Chourreau",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jérôme Mure-Ravaud",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Amandine Manignal",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre Peyredieu",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anaelle Signoret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Brahim Hamoudi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Bureaux",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Zucaro",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Laetitia Jourdan",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Lamberton",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Micheline Blambert",
+       "details": {
+        "Mandat depuis le": "31/05/2026"
+       }
+      },
+      {
+       "titre": "Nathan Stooss",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Noemie Humbert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Olivier Luya",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandrine Brisset",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Beyle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Isabelle Gauvin",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 19,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 52.6,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "10 femmes, 9 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Isabelle Gauvin",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandrine Marchand",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Chaloin",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sophie Maccagno",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Dezandre",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadège Cartier",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alain Fustier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Catherine Trouillet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christelle Agnus",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christophe Mocellin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cyril Peraldo",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jacqueline Caillat Benoist",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jessica Teixeira",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joselyn Clausi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Joseph Antoine Romera",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marc Cochet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Jeanne Dabadie",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philomene Bourgeois",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thierry Feugier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Dominique Uni",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 19,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 52.6,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "10 femmes, 9 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Dominique Uni",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Philippe Goron",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fabienne Ferrier",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Tournoud",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gwenaëlle Bellet",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Mottuel",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alphonse Martinez Galindo",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anaïs Pevet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aurélie Pevet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aurélie Seurat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Benoit Thierry",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Catherine Gaillard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Juhasz",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lysiane Jullin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Mathieu Le Fur",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Muriel Gaiffier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrice Bertrand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Paul Blanc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pierre Chevillat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Franck Schurrle",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 14,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 50.0,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Franck Schurrle",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Marchand",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Elisabeth Seyve",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Imbert",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anaïs Lochet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anne Bollard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Benjamin Michel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Bertrand Mollier",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emmanuel Bernoux",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emmanuelle Gandy",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marylise Robin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Matteo Gangemi",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Avon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nolwenn Imbert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Philippe Charbonnel",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 14,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 50.0,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 7 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Philippe Charbonnel",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "David Jobin",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aurore Moisson",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sébastien Mathon",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aline Challancin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Angélique Girard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Céline Albertin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Flavien Croizat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Hubert Burtin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Falque",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patrick Courtieu",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphanie Rahoui",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Suzanne Michel",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Véronique Cammarata",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Denis Chevallier",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 15,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 46.7,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "7 femmes, 8 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Denis Chevallier",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jocelyne Cotte",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christian Ferrouillat",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sandrine Margaillan",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cedric Veyret",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Delphine Tulasne",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emeline David",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Emmanuel Nicoud",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lionel Avit",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Anne Vion",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Robert Marchand",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sebastien Callet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Steve Maillet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvie Lambert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Veronique Germain",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Gaëtan Roux-Bernard",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 9,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 44.4,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "4 femmes, 5 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Gaëtan Roux-Bernard",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Patricia Prelle",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cédric Nievollet",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexis Veyret",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Amandine Zammit",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Chanron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florence Suc",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Dobremez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sébastien Zucchelli",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "POL-01": {
+     "valeur": "Philippe Rosaire",
+     "unite": "",
+     "nom": "Maire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-municipal",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+     "valeur": 27,
+     "unite": "élus",
+     "nom": "Conseil municipal",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-municipal",
+     "agregation": "somme"
+    },
+    "POL-03": {
+     "valeur": 44.4,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "12 femmes, 15 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-municipal",
+     "titre": "Conseil municipal",
+     "items": [
+      {
+       "titre": "Philippe Rosaire",
+       "details": {
+        "Fonction": "Maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jacky Somveille",
+       "details": {
+        "Fonction": "1er adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Vanessa Savigny",
+       "details": {
+        "Fonction": "2ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Monnet",
+       "details": {
+        "Fonction": "3ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Myriam Sciabbarrasi",
+       "details": {
+        "Fonction": "4ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Renaud Melinon",
+       "details": {
+        "Fonction": "5ème adjoint au maire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Alexandre Luxos",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Christine Rodrigues Santos-Curto",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Cindy Papin Houbre",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Delphine Reymond-Alloncle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Fermin Lopez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Florence Glenat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frederic Penin",
+       "details": {
+        "Mandat depuis le": "18/03/2026"
+       }
+      },
+      {
+       "titre": "Ghislaine Genin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Gyslaine Sainz",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Ilidio Cordeiro",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Philippe Simoni",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lena Peguet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lucas Geronimo",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marlène Vincendet",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nadine Ghaoui",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Billon-Pierron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Bossu-Picat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Pierre Blunat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvain Winter",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Thomas Pastre",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Veronique Laforest-Berard",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  }
+ },
+ "territoires": {
+  "canton:3823": {
+   "mesures": {
+    "POL-10": {
+     "valeur": 2,
+     "unite": "élus",
+     "nom": "Conseillers départementaux",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseillers-departementaux"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseillers-departementaux",
+     "titre": "Conseillers départementaux du canton",
+     "items": [
+      {
+       "titre": "Bernard Perazio",
+       "details": {
+        "Fonction": "6ème vice-président du conseil départemental",
+        "Mandat depuis le": "01/07/2021"
+       }
+      },
+      {
+       "titre": "Imen De Smedt",
+       "details": {
+        "Mandat depuis le": "01/07/2021"
+       }
+      }
+     ],
+     "note": "Depuis 2015, chaque canton élit un binôme composé d'une femme et d'un homme, pour six ans. Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  }
+ }
+}

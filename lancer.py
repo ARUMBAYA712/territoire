@@ -41,8 +41,12 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 16,
+    "04_generation.py": 22,
     "12_rivieres.py": 5,
+    "13_hivernal.py": 2,
+    "14_vigilance.py": 2,
+    "15_elus.py": 2,
+    "16_bio.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -97,10 +101,17 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison cumulée — en attente d'installation
-#   · 04_generation.py icônes étendues aux tuiles et aux bandeaux de
-#     section. Le pictogramme est déduit de ce que la donnée déclare —
-#     sous-rubrique, puis rubrique, puis préfixe — sans table à tenir.
-#   · MENTIONS reste à renseigner, et /Terri_Admin/ à protéger.
+#   · 13_hivernal.py   équipements hivernaux, référentiel saisi à la main
+#   · 14_vigilance.py  vigilance météo — nécessite une clé Météo-France
+#   · 15_elus.py       élus locaux, commune / canton / intercommunalité
+#   · 16_bio.py        agriculture biologique
+#   · 04_generation.py raccourci vers les élus sur l'aperçu,
+#     sous-rubriques Vigilance et Agriculture, icônes associées
+#
+#   Trois commandes de mise en route, à faire une fois :
+#     python 13_hivernal.py --modele    puis compléter depuis l'arrêté
+#     python 14_vigilance.py --modele   puis renseigner la clé
+#     python 16_bio.py --colonnes       pour vérifier la lecture
 # ══════════════════════════════════════════════════════════════════
 # PLAN DE LA DERNIÈRE LIVRAISON
 #
@@ -118,6 +129,11 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("13_hivernal.py", []),
+    ("14_vigilance.py", []),
+    ("15_elus.py", []),
+    ("16_bio.py", []),
+    ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
 
@@ -151,6 +167,10 @@ COLLECTEURS = [
     ("10_ecoles.py", []),
     ("11_population.py", []),
     ("12_rivieres.py", []),
+    ("13_hivernal.py", []),
+    ("14_vigilance.py", []),
+    ("15_elus.py", []),
+    ("16_bio.py", []),
 ]
 
 PUBLICATION = [

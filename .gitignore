@@ -24,6 +24,16 @@ data/*.zip
 # ── Secrets ──
 # Toute clé d'API, y compris celle de l'INSEE si elle vous est accordée.
 secrets.json
+data/cle-meteofrance.json
+
+# Le fichier .htpasswd doit RESTER dans le dépôt : sans lui, la
+# protection par mot de passe ne serait pas déployée sur le serveur.
+# Il ne contient qu'une empreinte, jamais le mot de passe — mais c'est
+# une raison de plus pour que ce dépôt reste privé.
+#
+# L'assistant de chiffrement, lui, ne doit jamais être publié une fois
+# la protection en place.
+Terri_Admin/chiffrer.php
 *.key
 .env
 

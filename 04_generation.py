@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 16
+VERSION_SCRIPT = 22
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -113,6 +113,22 @@ SOURCES_SUIVIES = [
      "10_ecoles.py", "python 10_ecoles.py", None),
     ("mesures-population.json", "Population, logement, équipements",
      "11_population.py", "python 11_population.py", None),
+    ("mesures-hivernal.json", "Équipements hivernaux (saisi à la main)",
+     "13_hivernal.py", "python 13_hivernal.py", None),
+    ("mesures-vigilance.json", "Vigilance météorologique",
+     "14_vigilance.py", "python 14_vigilance.py", None),
+    ("mesures-elus.json", "Élus locaux",
+     "15_elus.py", "python 15_elus.py", None),
+    ("mesures-bio.json", "Agriculture biologique",
+     "16_bio.py", "python 16_bio.py", None),
+]
+
+# Référentiels transcrits depuis un document officiel. Ils ne se
+# rafraîchissent pas tout seuls : leur date de validité est la seule
+# garantie contre une information périmée.
+REFERENTIELS_SAISIS = [
+    ("reference-equipements-hivernaux.json",
+     "Équipements hivernaux — arrêté préfectoral"),
 ]
 
 # Ancienneté au-delà de laquelle une source est à rafraîchir, en jours.
@@ -1043,8 +1059,12 @@ FONDS = [
 
 RUBRIQUES = [
     {"id": "", "nom": "Aperçu", "prefixes": None, "prevue": True,
+     # Six tuiles au plus par territoire. Les identifiants absents à un
+     # niveau sont simplement ignorés : le maire n'existe qu'à la
+     # commune, les conseillers départementaux qu'au canton.
      "selection": ["POP-01", "GEO-13", "POP-10",
-                   "EAU-10", "EAU-01", "ENV-02"]},
+                   "POL-01", "POL-20", "POL-10",
+                   "EAU-01", "ENV-02"]},
     # ENV-07, mis en avant par le collecteur, remonte automatiquement
     # sur l'aperçu par la règle des alertes.
 
@@ -1065,6 +1085,8 @@ RUBRIQUES = [
          {"id": "secheresse", "nom": "Sécheresse"},
          {"id": "nappes", "nom": "Nappes"},
          {"id": "rivieres", "nom": "Rivières"},
+         {"id": "vigilance", "nom": "Vigilance"},
+         {"id": "agriculture", "nom": "Agriculture"},
          {"id": "risques", "nom": "Risques"},
      ]},
 
@@ -1078,7 +1100,10 @@ RUBRIQUES = [
      "prevue": True},
 
     {"id": "elections", "nom": "Élections", "prefixes": ["POL"],
-     "prevue": True},
+     "prevue": True,
+     "sous": [
+         {"id": "elus", "nom": "Élus"},
+     ]},
 ]
 
 
@@ -1125,6 +1150,13 @@ ICONES = {
                 '<path d="M20 3c0 5-3.5 6.5-3.5 10.5S20 18.5 20 21"/>'
                 '<path d="M12 6.5v3M12 13v3"/>',
     "risques": '<path d="M12 4.2 21 19H3z"/><path d="M12 10v4M12 16.6v.01"/>',
+    "agriculture": '<path d="M4 20c0-4.5 3-8 8-8"/>'
+                   '<path d="M12 12c0-3.3 2.4-6 5.5-6.5C17.5 9 15 12 12 12z"/>'
+                   '<path d="M12 12C9.4 12 7 9.8 6.5 6.6 9.7 7 12 9.2 12 12z"/>'
+                   '<path d="M4 20h16"/>',
+    "vigilance": '<path d="M6.5 10.5a4 4 0 0 1 7.6-1.8 3.2 3.2 0 0 1 3.9 3.1'
+                 ' 2.9 2.9 0 0 1-.8 5.7H7.5a3.5 3.5 0 0 1-1-6.9z"/>'
+                 '<path d="M9.5 20.5 8 22.5M13 20.5l-1.5 2M16.5 20.5 15 22.5"/>',
     "education": '<path d="M3 8.5 12 4.5l9 4-9 4z"/>'
                  '<path d="M7 11v5c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8v-5"/>'
                  '<path d="M21 8.5v5"/>',
@@ -1136,6 +1168,10 @@ ICONES = {
                   '<path d="M12 5.5v3M12 11v3M12 16.5v3"/>',
     "elections": '<path d="M4 10.5h16V20H4z"/><path d="M8.5 10.5V6h7v4.5"/>'
                  '<path d="M9.5 13.5h5"/>',
+    "elus": '<circle cx="12" cy="6.5" r="2.6"/>'
+            '<path d="M7 20v-2.2a5 5 0 0 1 10 0V20"/>'
+            '<path d="M3.5 20v-1.6a3.4 3.4 0 0 1 3-3.4M20.5 20v-1.6a3.4 3.4 '
+            '0 0 0-3-3.4"/>',
 
     # Sections transverses, présentes sur toutes les fiches.
     "_rattachements": '<circle cx="12" cy="5" r="2.2"/>'
@@ -2237,6 +2273,47 @@ def corps_administration(fiches, protegee):
             ("Liens morts", "aucun renvoi vers un bloc absent"),
         ))
 
+    saisis = []
+    for fichier, libelle in REFERENTIELS_SAISIS:
+        chemin = RACINE / "data" / fichier
+        if not chemin.exists():
+            saisis.append((libelle, "Absent", "alerte", {}))
+            continue
+        try:
+            contenu = json.loads(chemin.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            saisis.append((libelle, "Illisible", "alerte", {}))
+            continue
+        echeance = contenu.get("valable_jusqu_au")
+        details = {"Texte": contenu.get("texte", "—"),
+                   "Saisi le": contenu.get("saisi_le", "—"),
+                   "Valable jusqu'au": echeance or "sans limite",
+                   "Saisie complète": ("oui" if contenu.get("saisie_complete")
+                                       else "NON — communes manquantes")}
+        etat, ton = "À jour", "ok"
+        if not contenu.get("saisie_complete"):
+            etat, ton = "Saisie incomplète", "attention"
+        if echeance:
+            try:
+                reste = (date.fromisoformat(echeance) - date.today()).days
+                details["Échéance dans"] = f"{reste} jour(s)"
+                if reste < 0:
+                    etat, ton = "Périmé", "alerte"
+                elif reste < 45:
+                    etat, ton = "À renouveler", "attention"
+            except ValueError:
+                pass
+        saisis.append((libelle, etat, ton, details))
+
+    bloc_saisis = "".join(
+        f'<article class="bl-item"><header><h3>{escape(libelle)}</h3>'
+        f'<span class="bl-etat {ton}">{escape(etat)}</span></header>'
+        + "".join(f'<div class="bl-ligne">'
+                  f'<span class="bl-cle">{escape(c)}</span>'
+                  f'<span class="bl-val">{escape(str(v))}</span></div>'
+                  for c, v in details.items())
+        + "</article>" for libelle, etat, ton, details in saisis)
+
     total_pages = sum(1 for _ in RACINE.rglob("index.html"))
 
     return f"""    <div class="hd"><h2>Administration</h2>
@@ -2262,6 +2339,14 @@ def corps_administration(fiches, protegee):
       scripts. Un écart signale un problème silencieux.</p>
     </section>
 
+    <section class="bloc"><span class="dsp">Référentiels saisis à la main</span>
+      <div class="bl-grille">{bloc_saisis}</div>
+      <p class="bl-note">Ces données sont transcrites d'un document
+      officiel, non collectées. Elles ne se rafraîchissent pas seules :
+      leur date de validité est la seule garantie contre une information
+      périmée. Passée l'échéance, le collecteur refuse de publier.</p>
+    </section>
+
     <section class="bloc"><span class="dsp">Automatisation</span>
       <div class="bl-grille"><article class="bl-item">
         <div class="bl-ligne"><span class="bl-cle">Mode actuel</span>
@@ -2273,6 +2358,10 @@ def corps_administration(fiches, protegee):
         <p class="bl-texte">Une fois en place : sécheresse chaque jour,
         nappes et rivières chaque semaine, le reste chaque mois. Les
         carburants imposeront plusieurs passages par jour.</p>
+        <p class="bl-texte">Marche à suivre détaillée dans
+        <code>AUTOMATISATION.md</code>. Point de vigilance : GitHub
+        désactive les tâches planifiées après soixante jours sans
+        activité humaine sur le dépôt, sans le signaler.</p>
       </article></div>
     </section>
 
