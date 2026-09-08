@@ -107,6 +107,8 @@ versionné, destiné à être appelé par d'autres sites locaux.
 | EF-15 | Faire remonter sur l'Aperçu tout indicateur en état d'alerte, même hors sélection. |
 | EF-16 | N'écrire une page que si elle a du contenu, afin qu'aucun lien ne mène à une page vide. |
 | EF-17 | Publier, pour une rubrique décidée mais pas encore alimentée, une page d'annonce disant ce qui sera diffusé, d'où viendra la donnée et sous quelles réserves. Elle ne s'écrit que si elle porte des faits propres au territoire, n'annonce aucune date, et s'efface d'elle-même dès qu'une mesure arrive. |
+| EF-18 | Permettre à une mesure d'intéresser deux rubriques sans être dupliquée : le détail reste dans la rubrique qu'elle déclare, la seconde reçoit un écho — valeur, source et lien nommé vers la page de détail. Un écho ne rend jamais une rubrique active, ne remonte pas sur l'Aperçu et n'est écrit que si la page visée existe pour ce territoire. |
+| EF-19 | Doter chaque page d'un titre de premier niveau unique et d'un plan de titres sans saut de niveau, et déclarer en JSON-LD le fil d'ariane, le territoire et — sur la page d'accueil du territoire — le jeu de données offert au téléchargement. Ne rien déclarer qui ne soit sur la page. |
 
 ### 3.3 Indicateurs
 
@@ -119,6 +121,8 @@ versionné, destiné à être appelé par d'autres sites locaux.
 | EF-24 | Renvoyer d'un indicateur vers son bloc détaillé, à condition que ce bloc existe sur la page. |
 | EF-25 | Publier un lien vers le document officiel chaque fois qu'il en existe un. |
 | EF-26 | Classer toute liste historique du plus récent au plus ancien, et toute liste d'états en cours du plus grave au moins grave. |
+| EF-27 | Publier des séries historiques sous forme de graphiques écrits dans la page, sans bibliothèque : quatre formes (saison, courbe, barres, bandes), le tableau des valeurs replié sous chacune, et le survol comme simple confort. Une forme qui ne peut être produite honnêtement ne produit rien. |
+| EF-28 | Afficher les lacunes d'une série, ne jamais les interpoler ; ne tracer aucune droite de tendance ; nommer sur le graphique la source et la période couverte. Ces règles sont tenues par le générateur, non par la vigilance du collecteur. |
 
 ### 3.4 Cartes
 
@@ -235,6 +239,14 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
   dans une table séparée. Les périmètres changent, les communes non.
 - **Chaque collecteur déclare où sa donnée s'affiche** — rubrique,
   sous-rubrique, rang. Le générateur ne devine rien.
+- **Une courbe ne dit jamais plus que la série.** Une station déplacée, un
+  capteur remplacé, deux ans de relevés manquants : chacun produit une rupture
+  qui *ressemble* à une tendance. Le générateur montre les trous et refuse de
+  tracer une pente ; il n'existe pas d'option pour en demander une.
+- **Une donnée ne vit qu'à un seul endroit.** Quand elle intéresse deux
+  rubriques, la seconde reçoit un renvoi, jamais une copie : deux tuiles
+  identiques seraient deux vérités à tenir à jour, et deux pages du site
+  se disputant le même mot-clé.
 - **Le moteur d'agrégation reprend tout fichier de mesures qu'il trouve.**
   Ajouter une source ne demande jamais de le modifier.
 - **Un contrôle en défaut arrête le traitement sans rien écrire.**

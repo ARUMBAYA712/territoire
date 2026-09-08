@@ -33,13 +33,32 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 30
+VERSION_SCRIPT = 32
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════════════
 
 SITE = "https://territoire.sudgresiv.com"
+
+# Image d'aperçu des partages (Facebook, LinkedIn, X, Slack, Signal…).
+# Chemin depuis la racine du site, par exemple "assets/partage.png".
+#
+# Laissée vide, aucune balise n'est produite : mieux vaut pas d'image
+# qu'une image absente, qui ferait afficher un cadre gris.
+#
+# Pourquoi ce fichier n'est pas produit ici. Les cartes du site sont
+# des SVG, et aucun des réseaux cités ne sait afficher un SVG en
+# aperçu. Il faudrait donc une image matricielle, portant du texte —
+# ce qu'aucune bibliothèque standard de Python ne sait dessiner, et
+# ajouter un moteur de rendu contredirait la règle qui tient ce projet
+# depuis le début. C'est le seul point du référencement qui demande un
+# fichier fait à la main.
+#
+# Ce qu'il faut : 1200 × 630 pixels, PNG ou JPEG sous 1 Mo, le nom du
+# site lisible en grand, et rien d'important dans les 60 pixels du
+# bord — les vignettes sont recadrées.
+IMAGE_PARTAGE = ""
 
 # ══════════════════════════════════════════════════════════════════
 # MENTIONS LÉGALES
@@ -335,7 +354,7 @@ main .wrap{padding:26px 20px 48px}
 .card{background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
 .card .id{font-family:var(--font-data);font-size:10px;color:var(--dim)}
-.card h2{font-size:15px;font-weight:600;line-height:1.25}
+.card h3{font-size:15px;font-weight:600;line-height:1.25}
 .card .v{font-family:var(--font-data);font-size:28px;color:var(--accent);line-height:1}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
@@ -347,7 +366,7 @@ main .wrap{padding:26px 20px 48px}
 .card-tete{display:flex;align-items:center;gap:9px}
 .card-tete .ico{color:var(--accent);opacity:.6}
 .card-tete .id{margin-left:auto}
-.card.pleine .card-tete h2{font-size:15px;flex:1}
+.card.pleine .card-tete h3{font-size:15px;flex:1}
 .card.pleine .card-tete .id{margin-left:0}
 .card.ton-attention .card-tete .ico{color:var(--attention);opacity:1}
 .card.ton-alerte .card-tete .ico{color:var(--alerte);opacity:1}
@@ -370,6 +389,87 @@ main .wrap{padding:26px 20px 48px}
 .card-lien:hover{color:var(--accent)}
 .card.ton-alerte .card-lien{color:var(--alerte)}
 .card.ton-attention .card-lien{color:var(--attention)}
+/* Retiré de l'affichage, conservé pour les lecteurs d'écran et le plan
+   du document. Surtout pas display:none, qui le retirerait aussi de
+   la restitution vocale : le texte est réduit à un point invisible. */
+.hors-vue{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* Écho : une mesure traitée en détail dans une autre rubrique. Elle
+   doit se lire comme un renvoi, pas comme une donnée de cette page —
+   d'où le fond en creux et la valeur en teinte sourde. Le lien, lui,
+   reste pleinement contrasté : c'est la seule chose à faire ici. */
+.card.echo{background:var(--sunken);border-style:dashed}
+.card.echo .v{color:var(--soft)}
+.card.echo .card-tete .ico{opacity:.45}
+
+/* ── Graphiques ──────────────────────────────────────────────────
+   Marques fines, grille en filets pleins d'une nuance au-dessus du
+   fond. Jamais de pointillés : un axe en pointillé se lit comme un
+   seuil ou une projection, alors que ce n'est qu'une grille. */
+.chr-bloc .chr-fig + .chr-fig{margin-top:26px;padding-top:22px;
+  border-top:1px solid var(--line)}
+.chr-fig figcaption{display:flex;flex-wrap:wrap;align-items:baseline;
+  gap:10px;margin-bottom:10px}
+.chr-titre{font-size:14px;font-weight:600}
+.chr-source{font-size:11px;color:var(--dim);font-family:var(--font-data)}
+.chr-cadre{position:relative}
+.chr{display:block;width:100%;height:auto;overflow:visible}
+.chr-grille line{stroke:var(--line);stroke-width:1}
+.chr-y text,.chr-x text{font-size:10.5px;fill:var(--soft);
+  font-family:var(--font-data);font-variant-numeric:tabular-nums}
+.chr-y text{text-anchor:end}
+.chr-x text{text-anchor:middle}
+.chr-unite{fill:var(--dim);font-size:10px;text-anchor:end}
+.chr-bande{fill:var(--accent);opacity:.16}
+.chr-mediane{fill:none;stroke:var(--soft);stroke-width:1.5;opacity:.75}
+.chr-courant{fill:none;stroke:var(--accent);stroke-width:2;
+  stroke-linejoin:round;stroke-linecap:round}
+.chr-pt{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+.chr-etiq{font-size:11px;font-weight:600;fill:var(--accent);
+  font-family:var(--font-data);paint-order:stroke;stroke:var(--surface);
+  stroke-width:3;stroke-linejoin:round}
+.chr-lacune{fill:var(--dim);opacity:.13}
+.chr-barre{fill:var(--accent)}
+.chr-borne{font-size:11px;fill:var(--soft);font-family:var(--font-data)}
+.chr-leg{list-style:none;display:flex;flex-wrap:wrap;gap:16px;
+  font-size:12px;color:var(--soft);margin-bottom:10px}
+.chr-leg li{display:flex;align-items:center;gap:7px}
+.chr-leg li::before{content:"";width:16px;height:3px;border-radius:2px;
+  background:var(--accent)}
+.l-bande::before{height:12px!important;background:#C9DCD2!important}
+.l-mediane::before{background:var(--soft)!important;height:2px!important}
+.l-lacune::before{height:12px!important;background:#D8DDD8!important}
+.chr-leg-echelle li::before{display:none}
+.chr-leg-echelle li{font-family:var(--font-data);font-size:11px}
+.chr-leg-echelle .l-titre{color:var(--ink);font-family:var(--font-body)}
+.pastille{width:15px;height:15px;border-radius:2px;display:inline-block}
+.chr-note{font-size:12px;color:var(--soft);margin-top:10px;
+  border-left:2px solid var(--mark);padding:6px 11px;background:var(--sunken);
+  border-radius:var(--radius);max-width:72ch}
+.chr-tab{margin-top:10px}
+.chr-tab summary{font-size:12px;color:var(--link);cursor:pointer;
+  display:inline-block;border-bottom:1px solid currentColor}
+.chr-tab[open] summary{margin-bottom:10px}
+.chr-tab table{border-collapse:collapse;font-size:11px;
+  font-family:var(--font-data);font-variant-numeric:tabular-nums}
+.chr-tab th,.chr-tab td{padding:3px 6px;border-top:1px solid var(--line);
+  text-align:right;white-space:nowrap}
+.chr-tab thead th{color:var(--soft);font-weight:500;border-top:none;
+  position:sticky;top:0;background:var(--sunken)}
+.chr-tab tbody th{text-align:left;color:var(--soft);font-weight:500}
+.tab-defile{max-height:320px;overflow:auto;border:1px solid var(--line);
+  border-radius:var(--radius);background:var(--sunken);
+  width:fit-content;max-width:100%}
+/* Le survol est un confort : l'infobulle ne capte jamais le pointeur,
+   et chaque valeur reste lisible dans le tableau replié. */
+.chr-info{position:absolute;pointer-events:none;background:var(--ink);
+  color:var(--surface);font-size:11.5px;line-height:1.4;padding:6px 9px;
+  border-radius:var(--radius);transform:translate(-50%,-115%);
+  white-space:nowrap;z-index:5;font-family:var(--font-data)}
+.chr-viseur{stroke:var(--ink);stroke-width:1;opacity:.28}
+@media(max-width:640px){.chr-leg{gap:11px}}
+
 .bloc{scroll-margin-top:calc(var(--h-top,61px) + 84px)}
 .pill{border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px}
 
@@ -632,6 +732,13 @@ footer.site a{color:var(--link)}
   .mesure-choix{width:100%}
   .mesure-btn{flex:1 1 0}
 }
+
+/* Titre de page des pages hors territoire : accueil, mentions légales,
+   fraîcheur, 404. C'était un h2, sans rien au-dessus : une page sans
+   titre de premier niveau ne dit ni à un lecteur d'écran ni à un
+   moteur de quoi elle parle. La taille reprend exactement celle que
+   le navigateur donnait au h2, pour que rien ne bouge à l'écran. */
+.hd h1,.hd .hd-titre{font-size:1.5em;font-weight:700;line-height:1.2}
 
 /* Raccourcis sous le titre d'une page d'administration. Les classes
    .hd et .n n'ont pas de style propre : sans cette règle, un lien y
@@ -1023,13 +1130,25 @@ def carte(ident, m, renvois=None):
     if m.get("ton") in ("attention", "alerte"):
         classes.append("ton-" + m["ton"])
 
-    destination = (renvois or {}).get(m.get("ancre"))
-    lien = (f'<a class="card-lien" href="{escape(destination)}">'
-            f'Voir le détail</a>' if destination else "")
+    # Un écho : la mesure est traitée en détail sur une autre page, et
+    # ne fait ici que se signaler. Son renvoi nomme sa destination —
+    # « Voir le détail » ne dirait pas au lecteur qu'il change de
+    # rubrique, et un moteur n'apprendrait rien de ce lien.
+    echo = m.get("_echo")
+    if echo:
+        classes.append("echo")
+        lien = (f'<a class="card-lien" href="{escape(echo["adresse"])}">'
+                f'Voir dans {escape(echo["libelle"])}</a>')
+    else:
+        destination = (renvois or {}).get(m.get("ancre"))
+        lien = (f'<a class="card-lien" href="{escape(destination)}">'
+                f'Voir le détail</a>' if destination else "")
     repere = (f'<p class="card-repere">{escape(m["repere"])}</p>'
               if m.get("repere") else "")
+    # L'explication appartient à la page de détail : la répéter dans
+    # l'écho ferait deux fois le même texte sur le site.
     explication = (f'<p class="card-expl">{escape(m["explication"])}</p>'
-                   if m.get("explication") else "")
+                   if m.get("explication") and not echo else "")
     unite = (f' <span class="u">{escape(m["unite"])}</span>'
              if m.get("unite") else "")
 
@@ -1037,12 +1156,12 @@ def carte(ident, m, renvois=None):
         # Bandeau d'alerte : titre et référence sur une même ligne, pour
         # gagner en hauteur sans perdre d'information.
         entete = (f'<header class="card-tete">{pictogramme}'
-                  f'<h2>{escape(m["nom"])}</h2>'
+                  f'<h3>{escape(m["nom"])}</h3>'
                   f'<span class="id">{escape(ident)}</span></header>')
     else:
         entete = (f'<header class="card-tete">{pictogramme}'
                   f'<span class="id">{escape(ident)}</span></header>'
-                  f'<h2>{escape(m["nom"])}</h2>')
+                  f'<h3>{escape(m["nom"])}</h3>')
 
     return f"""      <article class="{' '.join(classes)}">
         {entete}
@@ -1107,7 +1226,7 @@ def bloc_rattachements(d, base, adresses):
                 "entières. Les valeurs agrégées y sont donc exactes.")
 
     bloc_note = f'\n      <div class="note">{note}</div>' if note else ""
-    return f"""    <section class="ratt"><span class="dsp">{icone("_rattachements")}Rattachements</span>
+    return f"""    <section class="ratt"><h2 class="dsp">{icone("_rattachements")}Rattachements</h2>
       <div class="spine">
 {chr(10).join(lignes)}
       </div>{bloc_note}
@@ -1173,6 +1292,470 @@ FONDS = [
      "couche": "ORTHOIMAGERY.ORTHOPHOTOS", "format": "image/jpeg",
      "credit": "Photographies aériennes © IGN — Géoplateforme"},
 ]
+
+# ══════════════════════════════════════════════════════════════════
+# CHRONIQUES — séries historiques et graphiques
+#
+# Une chronique est une suite de valeurs régulièrement espacées dans
+# le temps, attachée à une rubrique comme le sont les mesures et les
+# blocs. Elle est déclarée par le collecteur, dans la fiche, sous la
+# clé « chroniques » :
+#
+#   {"id": "debit-mensuel",
+#    "rubrique": "environnement", "sous_rubrique": "rivieres",
+#    "forme": "saison",              — saison | courbe | barres | bandes
+#    "titre": "Débit mensuel de l'Isère à Saint-Gervais",
+#    "source": "Hub'Eau · débit naturel reconstitué",
+#    "unite": "m³/s", "decimales": 1, "rang": 10,
+#    "note": "…",                    — réserve affichée sous le graphique
+#    "debut": "1969-01", "pas": "mois",         — ou "an" et "1988"
+#    "valeurs": [82.7, 71.4, null, …]}          — null = lacune
+#
+# Le format est volontairement compact : une date de départ, un pas, et
+# un tableau de nombres. Écrire un objet par point triplerait le poids
+# du fichier publié pour ne rien apprendre à personne.
+#
+# Quatre règles tenues par le code, et non par la vigilance de qui
+# écrit un collecteur :
+#
+#  · **les lacunes s'affichent, jamais ne s'interpolent.** Un « null »
+#    interrompt le tracé et grise la période. Un trou est une
+#    information ;
+#  · **aucune droite de tendance.** Une pente calculée sur une série
+#    courte ou lacuneuse n'a pas de valeur, et elle serait reprise
+#    telle quelle par un lecteur. Le générateur n'en trace pas, et il
+#    n'y a pas d'option pour en demander une ;
+#  · **la période couverte est écrite sur le graphique**, pas dans une
+#    note ;
+#  · **toute valeur est lisible sans le graphique**, dans le tableau
+#    replié en dessous. Le survol est un confort ; il n'est jamais le
+#    seul chemin vers un chiffre.
+# ══════════════════════════════════════════════════════════════════
+
+CHR_L, CHR_H = 760, 250
+CHR_MG, CHR_MD, CHR_MH, CHR_MB = 58, 16, 18, 34
+CHR_PL = CHR_L - CHR_MG - CHR_MD
+CHR_PH = CHR_H - CHR_MH - CHR_MB
+
+MOIS_COURT = ["janv.", "févr.", "mars", "avril", "mai", "juin", "juil.",
+              "août", "sept.", "oct.", "nov.", "déc."]
+
+
+def chr_echelle(bas, haut, cible=5):
+    """Bornes arrondies et pas lisible — jamais une graduation à 3,17."""
+    etendue = (haut - bas) or abs(haut) or 1
+    brut = etendue / cible
+    base = 10 ** math.floor(math.log10(brut))
+    pas = next(m for m in (1, 2, 2.5, 5, 10) if m * base >= brut) * base
+    return math.floor(bas / pas) * pas, math.ceil(haut / pas) * pas, pas
+
+
+def chr_nb(v, dec=None):
+    """Nombre à la française. Les décimales suivent la donnée.
+
+    Un niveau de nappe à 250,4 m n'a plus aucun sens arrondi à 250 :
+    c'est la donnée qui décide, pas la magnitude du nombre.
+    """
+    if v is None:
+        return "—"
+    if dec is None:
+        dec = 0 if abs(v) >= 100 else 1
+    return f"{v:,.{dec}f}".replace(",", "\u202f").replace(".", ",")
+
+
+def chr_cadre(bas, haut, pas, positions, unite, dec=None):
+    """Grille, axe des ordonnées, étiquettes d'abscisse."""
+    # Le nombre de décimales des graduations vient du pas : écrire
+    # « 0,0 » sous « 500 » est une incohérence que l'œil relève.
+    if dec is None:
+        dec = 0 if pas >= 1 else len(f"{pas:.10f}".rstrip("0").split(".")[1])
+    lignes, valeurs = [], []
+    v = bas
+    while v <= haut + pas / 2:
+        y = CHR_MH + CHR_PH * (haut - v) / (haut - bas)
+        lignes.append(f'<line x1="{CHR_MG}" y1="{y:.1f}" '
+                      f'x2="{CHR_L-CHR_MD}" y2="{y:.1f}"/>')
+        valeurs.append(f'<text x="{CHR_MG-9}" y="{y+3.5:.1f}">'
+                       f'{chr_nb(v, dec)}</text>')
+        v += pas
+    abscisses = "".join(f'<text x="{x:.1f}" y="{CHR_H-12}">{escape(t)}</text>'
+                        for x, t in positions)
+    return (f'<g class="chr-grille">{"".join(lignes)}</g>'
+            f'<g class="chr-y">{"".join(valeurs)}</g>'
+            f'<text x="{CHR_MG-9}" y="{CHR_MH-7}" class="chr-unite">'
+            f'{escape(unite)}</text>'
+            f'<g class="chr-x">{abscisses}</g>')
+
+
+def chr_survol(points, y1, y2):
+    """Spécification compacte du survol : quatre tableaux parallèles.
+
+    Le graphique reste entier si ce bloc n'est pas lu : c'est un
+    ajout, pas une dépendance.
+    """
+    return {"x": [round(p[0], 1) for p in points],
+            "y": [round(p[1], 1) for p in points],
+            "l": [p[2] for p in points], "v": [p[3] for p in points],
+            "large": CHR_L, "hautTotal": CHR_H, "y1": y1, "y2": y2}
+
+
+def chr_periodes(c):
+    """Étiquettes de chaque point, déduites du départ et du pas."""
+    depart, pas = str(c["debut"]), c.get("pas", "mois")
+    n = len(c["valeurs"])
+    if pas == "an":
+        an0 = int(depart[:4])
+        return [(an0 + i, None, str(an0 + i)) for i in range(n)]
+    an0, mois0 = int(depart[:4]), int(depart[5:7])
+    sortie = []
+    for i in range(n):
+        m = mois0 - 1 + i
+        an, mois = an0 + m // 12, m % 12 + 1
+        sortie.append((an, mois, f"{MOIS_COURT[mois-1]} {an}"))
+    return sortie
+
+
+def chr_figure(c, corps, tableau, legende="", survol=None):
+    d = (f' data-serie="{escape(json.dumps(survol, ensure_ascii=False))}"'
+         if survol else "")
+    note = (f'<p class="chr-note">{escape(c["note"])}</p>'
+            if c.get("note") else "")
+    return f"""    <figure class="chr-fig"{d}>
+      <figcaption><span class="chr-titre">{escape(c["titre"])}</span>
+        <span class="chr-source">{escape(c.get("source", ""))}</span></figcaption>
+      {legende}
+      <div class="chr-cadre">{corps}<div class="chr-info" hidden></div></div>
+      {note}
+      <details class="chr-tab"><summary>Voir les valeurs</summary>
+        <div class="tab-defile">{tableau}</div></details>
+    </figure>"""
+
+
+# ── Forme « saison » : l'année en cours sur fond d'historique ─────
+def chr_saison(c):
+    """Douze mois en abscisse ; la bande dit tout ce qui a été observé.
+
+    C'est la forme des débits et des nappes, où le cycle annuel
+    domine. Elle situe l'année en cours ; elle ne dit rien de la
+    tendance longue, et ne prétend pas le faire.
+    """
+    dec = c.get("decimales")
+    unite = c.get("unite", "")
+    periodes = chr_periodes(c)
+    dernier_an = max(an for an, _, _ in periodes)
+
+    par_mois, courant = {m: [] for m in range(1, 13)}, {}
+    for (an, mois, _), v in zip(periodes, c["valeurs"]):
+        if v is None or mois is None:
+            continue
+        (courant.__setitem__(mois, v) if an == dernier_an
+         else par_mois[mois].append(v))
+    pleins = [m for m in range(1, 13) if par_mois[m]]
+    if len(pleins) < 12 or not courant:
+        return None                     # pas assez d'histoire pour comparer
+
+    def med(xs):
+        xs = sorted(xs)
+        n = len(xs)
+        return xs[n // 2] if n % 2 else (xs[n // 2 - 1] + xs[n // 2]) / 2
+
+    bas, haut, pas = chr_echelle(0, max(max(v) for v in par_mois.values()))
+    x = lambda m: CHR_MG + CHR_PL * (m - 1) / 11
+    y = lambda v: CHR_MH + CHR_PH * (haut - v) / (haut - bas)
+
+    bande = ('<polygon class="chr-bande" points="'
+             + " ".join(f"{x(m):.1f},{y(max(par_mois[m])):.1f}"
+                        for m in range(1, 13)) + " "
+             + " ".join(f"{x(m):.1f},{y(min(par_mois[m])):.1f}"
+                        for m in range(12, 0, -1)) + '"/>')
+    mediane = ('<polyline class="chr-mediane" points="'
+               + " ".join(f"{x(m):.1f},{y(med(par_mois[m])):.1f}"
+                          for m in range(1, 13)) + '"/>')
+    mois_courants = sorted(courant)
+    ligne = ('<polyline class="chr-courant" points="'
+             + " ".join(f"{x(m):.1f},{y(courant[m]):.1f}"
+                        for m in mois_courants) + '"/>')
+    points = "".join(f'<circle class="chr-pt" cx="{x(m):.1f}" '
+                     f'cy="{y(courant[m]):.1f}" r="3"/>' for m in mois_courants)
+    fin = mois_courants[-1]
+    etiquette = (f'<text class="chr-etiq" x="{x(fin):.0f}" '
+                 f'y="{y(courant[fin])-11:.0f}" text-anchor="middle">'
+                 f'{dernier_an}</text>')
+
+    svg = (f'<svg viewBox="0 0 {CHR_L} {CHR_H}" class="chr" role="img" '
+           f'aria-label="{escape(c["titre"])}">'
+           + chr_cadre(bas, haut, pas,
+                       [(x(m), MOIS_COURT[m - 1]) for m in range(1, 13)],
+                       unite)
+           + bande + mediane + ligne + points + etiquette + "</svg>")
+
+    annees = sorted({an for an, _, _ in periodes})
+    legende = (f'<ul class="chr-leg">'
+               f'<li class="l-bande">Minimum et maximum observés depuis '
+               f'{annees[0]}</li>'
+               f'<li class="l-mediane">Médiane des {len(annees)-1} années</li>'
+               f'<li class="l-courant">{dernier_an}</li></ul>')
+
+    rangs = [("Minimum", lambda m: min(par_mois[m])),
+             ("Médiane", lambda m: med(par_mois[m])),
+             ("Maximum", lambda m: max(par_mois[m])),
+             (str(dernier_an), lambda m: courant.get(m))]
+    corps = "".join(
+        f"<tr><th>{escape(nom)}</th>"
+        + "".join(f"<td>{chr_nb(calc(m), dec)}</td>" for m in range(1, 13))
+        + "</tr>" for nom, calc in rangs)
+    tableau = ('<table><thead><tr><th></th>'
+               + "".join(f"<th>{m}</th>" for m in MOIS_COURT)
+               + f"</tr></thead><tbody>{corps}</tbody></table>")
+
+    survol = chr_survol(
+        [(x(m), y(courant[m]), f"{MOIS_COURT[m-1]} {dernier_an}",
+          f"{chr_nb(courant[m], dec)} {unite}".strip())
+         for m in mois_courants], CHR_MH, CHR_MH + CHR_PH)
+    return chr_figure(c, svg, tableau, legende, survol)
+
+
+# ── Forme « courbe » : la chronique entière, lacunes comprises ────
+def chr_courbe(c):
+    dec = c.get("decimales")
+    unite = c.get("unite", "")
+    periodes, valeurs = chr_periodes(c), c["valeurs"]
+    reels = [v for v in valeurs if v is not None]
+    if len(reels) < 3:
+        return None
+    bas, haut, pas = chr_echelle(min(reels), max(reels))
+    n = len(valeurs)
+    x = lambda i: CHR_MG + CHR_PL * i / max(n - 1, 1)
+    y = lambda v: CHR_MH + CHR_PH * (haut - v) / (haut - bas)
+
+    segments, courant, trous, depart = [], [], [], None
+    for i, v in enumerate(valeurs):
+        if v is None:
+            if len(courant) > 1:
+                segments.append(courant)
+            courant = []
+            if depart is None:
+                depart = i
+        else:
+            if depart is not None:
+                trous.append((depart, i))
+                depart = None
+            courant.append(f"{x(i):.1f},{y(v):.1f}")
+    if len(courant) > 1:
+        segments.append(courant)
+    if depart is not None:
+        trous.append((depart, n - 1))
+
+    zones = "".join(
+        f'<rect class="chr-lacune" x="{x(a):.1f}" y="{CHR_MH}" '
+        f'width="{max(x(b)-x(a), 4):.1f}" height="{CHR_PH}"/>' for a, b in trous)
+    trace = "".join(f'<polyline class="chr-courant" points="{" ".join(g)}"/>'
+                    for g in segments)
+
+    premier = {}
+    for i, (an, _, _) in enumerate(periodes):
+        premier.setdefault(an, i)
+    # Une graduation tous les cinq ans quand la série est longue ;
+    # sinon un partage régulier, pour ne pas surcharger l'axe.
+    annees = sorted(premier)
+    marques = [a for a in annees if a % 5 == 0]
+    if len(marques) < 3:
+        marques = annees[::max(1, round(len(annees) / 6))]
+
+    svg = (f'<svg viewBox="0 0 {CHR_L} {CHR_H}" class="chr" role="img" '
+           f'aria-label="{escape(c["titre"])}">'
+           + chr_cadre(bas, haut, pas,
+                       [(x(premier[a]), str(a)) for a in marques], unite)
+           + zones + trace + "</svg>")
+
+    par_an = {}
+    for (an, mois, _), v in zip(periodes, valeurs):
+        par_an.setdefault(an, {})[mois or 1] = v
+    mensuel = c.get("pas", "mois") == "mois"
+    if mensuel:
+        corps = "".join(
+            f"<tr><th>{an}</th>"
+            + "".join(f"<td>{chr_nb(par_an[an].get(m), dec)}</td>"
+                      for m in range(1, 13)) + "</tr>" for an in sorted(par_an))
+        tableau = ('<table><thead><tr><th></th>'
+                   + "".join(f"<th>{m}</th>" for m in MOIS_COURT)
+                   + f"</tr></thead><tbody>{corps}</tbody></table>")
+    else:
+        corps = "".join(f"<tr><th>{an}</th>"
+                        f"<td>{chr_nb(par_an[an].get(1), dec)}</td></tr>"
+                        for an in sorted(par_an))
+        tableau = (f'<table class="tab-paires"><thead><tr><th>Année</th>'
+                   f'<th>{escape(unite)}</th></tr></thead>'
+                   f'<tbody>{corps}</tbody></table>')
+
+    legende = ('<ul class="chr-leg">'
+               f'<li class="l-courant">{escape(c.get("libelle_serie", "Valeur mesurée"))}</li>'
+               + ('<li class="l-lacune">Période sans mesure</li>' if trous else "")
+               + "</ul>")
+    survol = chr_survol(
+        [(x(i), y(v) if v is not None else CHR_MH + CHR_PH / 2, lib,
+          f"{chr_nb(v, dec)} {unite}".strip() if v is not None
+          else "pas de mesure")
+         for i, ((_, _, lib), v) in enumerate(zip(periodes, valeurs))],
+        CHR_MH, CHR_MH + CHR_PH)
+    return chr_figure(c, svg, tableau, legende, survol)
+
+
+# ── Forme « barres » : un comptage par an ────────────────────────
+def chr_barres(c):
+    """Pour ce qui se compte : jours de gel, jours chauds, arrêtés.
+
+    Un comptage ne demande aucune précaution statistique — ni moyenne
+    à défendre, ni valeur aberrante à écarter — et il parle beaucoup
+    plus qu'une moyenne qui bouge d'un dixième par décennie.
+    """
+    unite = c.get("unite", "")
+    periodes, valeurs = chr_periodes(c), c["valeurs"]
+    reels = [v for v in valeurs if v is not None]
+    if not reels:
+        return None
+    bas, haut, pas = chr_echelle(0, max(reels))
+    n = len(valeurs)
+    largeur = CHR_PL / n
+    x = lambda i: CHR_MG + largeur * i
+    y = lambda v: CHR_MH + CHR_PH * (haut - v) / (haut - bas)
+
+    # Un écart de 2 px entre barres — un filet de fond, jamais une
+    # bordure dessinée autour de chaque marque.
+    barres = "".join(
+        f'<rect class="chr-barre" x="{x(i)+1:.1f}" y="{y(v):.1f}" '
+        f'width="{largeur-2:.1f}" height="{max(CHR_PH-(y(v)-CHR_MH), 1):.1f}" '
+        f'rx="2"/>' for i, v in enumerate(valeurs) if v is not None)
+
+    # Trois valeurs écrites, pas davantage : la première, la plus
+    # haute, la dernière. Un nombre sur chaque barre ne se lit pas.
+    plein = [i for i, v in enumerate(valeurs) if v is not None]
+    saillants = sorted({plein[0], max(plein, key=lambda i: valeurs[i]), plein[-1]})
+    etiquettes = "".join(
+        f'<text class="chr-etiq" x="{x(i)+largeur/2:.1f}" '
+        f'y="{y(valeurs[i])-7:.1f}" text-anchor="middle">'
+        f'{chr_nb(valeurs[i], c.get("decimales", 0))}</text>' for i in saillants)
+
+    marques = [i for i, (an, _, _) in enumerate(periodes) if an % 5 == 0]
+    if len(marques) < 3:
+        marques = list(range(0, n, max(1, round(n / 6))))
+    svg = (f'<svg viewBox="0 0 {CHR_L} {CHR_H}" class="chr" role="img" '
+           f'aria-label="{escape(c["titre"])}">'
+           + chr_cadre(bas, haut, pas,
+                       [(x(i) + largeur / 2, periodes[i][2]) for i in marques],
+                       unite, c.get("decimales", 0))
+           + barres + etiquettes + "</svg>")
+
+    lignes = "".join(f"<tr><th>{lib}</th>"
+                     f"<td>{chr_nb(v, c.get('decimales', 0))}</td></tr>"
+                     for (_, _, lib), v in zip(periodes, valeurs))
+    tableau = (f'<table class="tab-paires"><thead><tr><th>Période</th>'
+               f'<th>{escape(unite)}</th></tr></thead>'
+               f'<tbody>{lignes}</tbody></table>')
+    survol = chr_survol(
+        [(x(i) + largeur / 2, y(valeurs[i]), periodes[i][2],
+          f"{chr_nb(valeurs[i], c.get('decimales', 0))} {unite}".strip())
+         for i in plein], CHR_MH, CHR_MH + CHR_PH)
+    return chr_figure(c, svg, tableau, "", survol)
+
+
+# ── Forme « bandes » : l'écart au repère, en couleur ─────────────
+#
+# La palette est divergente au sens strict : deux teintes opposées —
+# le bleu du site et son rouge d'alerte — et un milieu qui doit se
+# lire comme « rien ». Un dégradé arc-en-ciel, ou une teinte au
+# milieu, ferait croire à une progression là où il y a un signe.
+#
+# Le vert d'accent et le bleu du site ne peuvent pas servir ensemble :
+# leur écart perceptuel est de 11,8 là où 15 est nécessaire pour être
+# distingués en vision normale. Le bleu et le rouge sont à 24,8, et
+# tiennent aussi en vision des couleurs déficiente.
+CHR_FROID = (0x1E, 0x4F, 0x6E)
+CHR_NEUTRE = (0xEC, 0xEE, 0xE8)
+CHR_CHAUD = (0x8E, 0x24, 0x17)
+
+
+def chr_teinte(ecart, amplitude):
+    t = max(-1.0, min(1.0, ecart / amplitude)) if amplitude else 0.0
+    a, b = (CHR_NEUTRE, CHR_CHAUD) if t >= 0 else (CHR_NEUTRE, CHR_FROID)
+    return "#%02X%02X%02X" % tuple(
+        round(u + (w - u) * abs(t)) for u, w in zip(a, b))
+
+
+def chr_bandes(c):
+    periodes, valeurs = chr_periodes(c), c["valeurs"]
+    reels = [v for v in valeurs if v is not None]
+    if not reels:
+        return None
+    amplitude = max(abs(v) for v in reels) or 1
+    n = len(valeurs)
+    largeur = CHR_L / n
+    barres = "".join(
+        f'<rect x="{i*largeur:.2f}" y="0" width="{largeur+.4:.2f}" '
+        f'height="96" fill="{chr_teinte(v, amplitude) if v is not None else "#F2F3EF"}"/>'
+        for i, v in enumerate(valeurs))
+    bornes = (f'<text class="chr-borne" x="2" y="112">{periodes[0][2]}</text>'
+              f'<text class="chr-borne" x="{CHR_L-2}" y="112" '
+              f'text-anchor="end">{periodes[-1][2]}</text>')
+    svg = (f'<svg viewBox="0 0 {CHR_L} 118" class="chr chr-bandes" role="img" '
+           f'aria-label="{escape(c["titre"])}">{barres}{bornes}</svg>')
+
+    dec = c.get("decimales", 1)
+    paliers = [-amplitude, -amplitude / 2, 0, amplitude / 2, amplitude]
+    echelle = "".join(
+        f'<li><span class="pastille" style="background:{chr_teinte(v, amplitude)}">'
+        f'</span>{chr_nb(v, dec)}</li>' for v in paliers)
+    legende = (f'<ul class="chr-leg chr-leg-echelle"><li class="l-titre">'
+               f'{escape(c.get("libelle_serie", "Écart au repère"))}'
+               f'{", en " + escape(c["unite"]) if c.get("unite") else ""}</li>'
+               f'{echelle}</ul>')
+    lignes = "".join(f"<tr><th>{lib}</th><td>{chr_nb(v, dec)}</td></tr>"
+                     for (_, _, lib), v in zip(periodes, valeurs))
+    tableau = (f'<table class="tab-paires"><thead><tr><th>Période</th>'
+               f'<th>Écart ({escape(c.get("unite", ""))})</th></tr></thead>'
+               f'<tbody>{lignes}</tbody></table>')
+    return chr_figure(c, svg, tableau, legende)
+
+
+FORMES_CHR = {"saison": chr_saison, "courbe": chr_courbe,
+              "barres": chr_barres, "bandes": chr_bandes}
+
+
+def chroniques_de(fiche, rubrique, sous=None):
+    """Chroniques attachées à cette page, dans l'ordre voulu."""
+    cible = sous["id"] if sous else None
+    trouvees = [c for c in (fiche.get("chroniques") or [])
+                if c.get("rubrique") == rubrique["id"]
+                and (c.get("sous_rubrique") or None) == cible
+                and c.get("valeurs")]
+    return sorted(trouvees, key=lambda c: (c.get("rang", 500), c.get("id", "")))
+
+
+def bloc_chroniques(fiche, rubrique, sous=None):
+    """Rend les graphiques d'une page. Chaîne vide s'il n'y en a pas.
+
+    Une forme inconnue, ou une série trop courte pour la forme
+    demandée, ne produit rien plutôt qu'un graphique faux : le
+    collecteur a pu déclarer une chronique avant que la donnée soit
+    suffisante.
+    """
+    rendus = []
+    for c in chroniques_de(fiche, rubrique, sous):
+        forme = FORMES_CHR.get(c.get("forme", "courbe"))
+        if not forme:
+            continue
+        try:
+            sortie = forme(c)
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            sortie = None
+        if sortie:
+            rendus.append(sortie)
+    if not rendus:
+        return ""
+    return ('    <section class="bloc chr-bloc">'
+            '<h2 class="dsp">' + icone("_chronique") + 'Évolution</h2>'
+            + "\n".join(rendus) + "</section>")
+
 
 # ══════════════════════════════════════════════════════════════════
 # RUBRIQUES
@@ -1316,6 +1899,9 @@ ICONES = {
             '<path d="M3.5 20v-1.6a3.4 3.4 0 0 1 3-3.4M20.5 20v-1.6a3.4 3.4 '
             '0 0 0-3-3.4"/>',
 
+    "_chronique": '<path d="M3.5 20.5h17"/><path d="M4 17l4.5-5.5 3.5 3 4-6.5 3.5 4"/>'
+                  '<circle cx="8.5" cy="11.5" r="1.1"/><circle cx="16" cy="8" r="1.1"/>',
+
     # Sections transverses, présentes sur toutes les fiches.
     "_rattachements": '<circle cx="12" cy="5" r="2.2"/>'
                       '<circle cx="5.5" cy="19" r="2.2"/>'
@@ -1428,6 +2014,161 @@ def blocs_de(fiche, rubrique, sous=None):
             and (b.get("sous_rubrique") or None) == cible_sous]
 
 
+# ══════════════════════════════════════════════════════════════════
+# DOUBLE RATTACHEMENT
+#
+# Une même donnée intéresse parfois deux rubriques. Les cours d'eau
+# relèvent de la géographie physique autant que de l'environnement ;
+# les prix des carburants ont leur rubrique propre mais concernent les
+# transports. On ne sait pas par quel chemin le visiteur arrive.
+#
+# Dupliquer la tuile serait la mauvaise réponse : deux vérités à tenir
+# à jour, et deux pages du même site se disputant le même mot-clé.
+#
+# La règle retenue : **le détail vit dans une seule rubrique**, celle
+# que la mesure déclare. Ailleurs elle laisse un *écho* — son nom, sa
+# valeur, sa source, et un lien nommé vers la page qui la traite.
+#
+# Trois garde-fous, qui sont l'essentiel du mécanisme :
+#
+#  · un écho ne rend jamais une rubrique active. Une rubrique qui
+#    n'aurait que des échos n'aurait rien à elle : elle n'apparaîtrait
+#    ni dans la navigation ni au plan du site, et ce serait une page
+#    creuse de plus pour les moteurs ;
+#  · un écho n'est produit que si la page de destination existe
+#    réellement pour ce territoire. Une commune sans station n'aura pas
+#    d'écho renvoyant vers une page qui n'a pas été écrite ;
+#  · un écho ne remonte jamais sur l'aperçu, ne colore jamais la carte
+#    et ne compte pas dans la description de la page. Il est un renvoi,
+#    pas une mesure de plus.
+#
+# Le collecteur l'écrit ainsi, sur la mesure :
+#
+#     "aussi": {"rubrique": "transports"}
+#     "aussi": {"rubrique": "environnement", "sous_rubrique": "rivieres"}
+#     "aussi": "transports"          — forme abrégée, sans sous-rubrique
+# ══════════════════════════════════════════════════════════════════
+
+def rattachement_second(mesure):
+    """Rubrique d'accueil déclarée par une mesure, ou rien.
+
+    Tolérante à la forme abrégée : un collecteur qui n'a pas de
+    sous-rubrique à viser écrit le nom de la rubrique tout court.
+    """
+    a = mesure.get("aussi")
+    if isinstance(a, str):
+        a = {"rubrique": a}
+    if not isinstance(a, dict):
+        return None
+    rid = a.get("rubrique")
+    if not rid or not isinstance(rid, str):
+        return None
+    return rid, (a.get("sous_rubrique") or "")
+
+
+def rubrique_native(mesure, ident):
+    """Rubrique et sous-rubrique où la mesure vit en détail.
+
+    La mesure la déclare, ou bien on la déduit du préfixe de son
+    identifiant — la même règle que pour l'affichage, afin qu'un
+    collecteur n'ait pas à déclarer sa rubrique juste pour pouvoir
+    faire un écho ailleurs.
+    """
+    rid = mesure.get("rubrique")
+    if rid is None:
+        for r in RUBRIQUES:
+            if r["id"] and r["prefixes"] and any(
+                    str(ident).startswith(p) for p in r["prefixes"]):
+                rid = r["id"]
+                break
+    if not rid:
+        return None
+    r = rubrique_par_id(rid)
+    if r is None:
+        return None
+    sid = mesure.get("sous_rubrique") or ""
+    # Une sous-rubrique qui n'appartient pas à cette rubrique ne donne
+    # aucune adresse valable : on s'en tient à la rubrique.
+    if sid and not any(sr["id"] == sid for sr in r.get("sous", [])):
+        sid = ""
+    return rid, sid
+
+
+def nom_de_rubrique(rid, sid=""):
+    """Libellé affiché d'une rubrique ou d'une de ses sous-rubriques."""
+    r = rubrique_par_id(rid)
+    if r is None or not r["id"]:
+        return None
+    if not sid:
+        return r["nom"]
+    for sr in r.get("sous", []):
+        if sr["id"] == sid:
+            return sr["nom"]
+    return None
+
+
+def adresse_de_rubrique(rid, sid, base, chemin):
+    morceaux = [x for x in (rid, sid) if x]
+    return f"{base}/{chemin}" + "".join(f"{x}/" for x in morceaux)
+
+
+def page_existe(fiche, actives, rid, sid):
+    """La page visée est-elle réellement produite pour ce territoire ?
+
+    C'est le contrôle qui empêche l'écho de devenir un lien mort : les
+    rubriques et sous-rubriques actives se décident fiche par fiche.
+    """
+    if rid not in actives:
+        return False
+    if not sid:
+        return True
+    r = rubrique_par_id(rid)
+    return r is not None and any(
+        sr["id"] == sid for sr in sous_actives(r, fiche))
+
+
+def echos_de(fiche, actives, rubrique, sous, base, chemin):
+    """Mesures d'autres rubriques appelées à résonner sur cette page.
+
+    Le résultat est un dictionnaire de copies : la mesure d'origine
+    n'est jamais modifiée, une même fiche servant à produire une
+    quinzaine de pages.
+    """
+    if not rubrique["id"]:
+        return {}                       # jamais d'écho sur l'aperçu
+    ici = (rubrique["id"], sous["id"] if sous else "")
+
+    trouves = {}
+    for ident, m in fiche["mesures"].items():
+        if m.get("valeur") is None:
+            continue
+        vise = rattachement_second(m)
+        if vise != ici:
+            continue
+        chez = rubrique_native(m, ident)
+        if chez is None or chez == ici:
+            # Un écho vers sa propre page serait un lien sur soi-même.
+            continue
+        if not page_existe(fiche, actives, *chez):
+            continue
+        libelle = nom_de_rubrique(*chez)
+        if not libelle:
+            continue
+        copie = dict(m)
+        # La mise en avant est une revendication de place, et elle ne
+        # vaut que sur la page qui traite la mesure : un écho ne prend
+        # pas le bandeau de tête d'une rubrique qui n'est pas la
+        # sienne. Le ton, lui, est un fait sur la valeur — une eau non
+        # conforme reste non conforme vue depuis l'environnement.
+        copie.pop("mise_en_avant", None)
+        copie["_echo"] = {
+            "adresse": adresse_de_rubrique(*chez, base, chemin),
+            "libelle": libelle,
+        }
+        trouves[ident] = copie
+    return trouves
+
+
 def alertes(mesures, deja):
     """Indicateurs à remonter sur l'aperçu, même hors sélection.
 
@@ -1448,7 +2189,8 @@ def sous_actives(rubrique, fiche):
         a_mesure = any(
             m.get("valeur") is not None
             for m in indicateurs_de(rubrique, fiche["mesures"], sr).values())
-        if a_mesure or blocs_de(fiche, rubrique, sr) or sr.get("annonce"):
+        if (a_mesure or blocs_de(fiche, rubrique, sr)
+                or chroniques_de(fiche, rubrique, sr) or sr.get("annonce")):
             actives.append(sr)
     return actives
 
@@ -1464,6 +2206,9 @@ def rubriques_actives(fiche):
         if any(m.get("valeur") is not None for m in contenu.values()):
             actives.add(r["id"])
         elif any(b.get("rubrique") == r["id"] for b in (fiche.get("blocs") or [])):
+            actives.add(r["id"])
+        elif any(c.get("rubrique") == r["id"] and c.get("valeurs")
+                 for c in (fiche.get("chroniques") or [])):
             actives.add(r["id"])
         elif r.get("annonce") or any(sr.get("annonce")
                                      for sr in r.get("sous", [])):
@@ -1774,7 +2519,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None,
         legende = ("Situation dans le territoire — cliquez une commune "
                    "pour ouvrir sa fiche")
         return f"""    <section class="carte-bloc">
-      <span class="dsp">{icone("_carte")}Carte</span>
+      <h2 class="dsp">{icone("_carte")}Carte</h2>
       {svg}
       <p class="carte-legende">{legende}</p>
     </section>"""
@@ -1787,7 +2532,7 @@ def bloc_carte(t, base, adresses, fiches, membres, rubrique, sous=None,
     })
 
     return f"""    <section class="carte-bloc">
-      <span class="dsp">Carte</span>
+      <h2 class="dsp">Carte</h2>
       <div class="carte-grille">
         {menu_carte(carte)}
         <div class="carte-zone">
@@ -1846,7 +2591,7 @@ def bloc_liste(d, rubrique, sous=None):
         ancre = f' id="{escape(b["id"])}"' if b.get("id") else ""
         sorties.append(
             f'    <section class="bloc"{ancre}>'
-            f'<span class="dsp">{icone_de(b)}{escape(b["titre"])}</span>'
+            f'<h2 class="dsp">{icone_de(b)}{escape(b["titre"])}</h2>'
             f'<div class="bl-grille">{"".join(entrees)}</div>'
             f'{renvoi}{note}</section>')
     return "\n".join(sorties)
@@ -2409,6 +3154,57 @@ passe ni clé : ceux-ci n'ont leur place ni ici, ni dans le dépôt.</p>
 """
 
 
+
+# Survol des graphiques. Chargé uniquement sur les pages qui portent
+# une chronique. Le graphique est entier sans lui : ce script ajoute un
+# viseur et une infobulle, et rien d'autre. Toute valeur reste lisible
+# dans le tableau replié sous le graphique — c'est ce qui la rend
+# accessible au clavier et à un lecteur d'écran.
+GRAPHE_JS = r"""// Survol des graphiques — un confort, jamais une dépendance.
+document.querySelectorAll('.chr-fig[data-serie]').forEach(function (fig) {
+  var s;
+  try { s = JSON.parse(fig.dataset.serie); } catch (e) { return; }
+  var svg = fig.querySelector('svg');
+  var info = fig.querySelector('.chr-info');
+  var cadre = fig.querySelector('.chr-cadre');
+  if (!svg || !info || !cadre || !s.x || !s.x.length) return;
+
+  var viseur = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  viseur.setAttribute('class', 'chr-viseur');
+  viseur.setAttribute('y1', s.y1);
+  viseur.setAttribute('y2', s.y2);
+  viseur.style.display = 'none';
+  svg.appendChild(viseur);
+
+  function place(e) {
+    var r = svg.getBoundingClientRect();
+    if (!r.width) return;
+    var u = (e.clientX - r.left) / r.width * s.large;
+    // Point le plus proche : la zone sensible vaut la moitié de
+    // l'écart aux voisins, jamais un pixel à viser.
+    var i = 0, ecart = Infinity;
+    for (var k = 0; k < s.x.length; k++) {
+      var d = Math.abs(s.x[k] - u);
+      if (d < ecart) { ecart = d; i = k; }
+    }
+    viseur.style.display = '';
+    viseur.setAttribute('x1', s.x[i]);
+    viseur.setAttribute('x2', s.x[i]);
+    info.hidden = false;
+    info.textContent = s.l[i] + ' · ' + s.v[i];
+    info.style.left = (s.x[i] / s.large * 100) + '%';
+    info.style.top = (s.y[i] / s.hautTotal * 100) + '%';
+  }
+  function partir() {
+    info.hidden = true;
+    viseur.style.display = 'none';
+  }
+  cadre.addEventListener('pointermove', place);
+  cadre.addEventListener('pointerleave', partir);
+  cadre.addEventListener('pointercancel', partir);
+});
+"""
+
 MESURE_JS = r"""// Mesure d'audience — chargée seulement après acceptation.
 //
 // Rien de Google n'est demandé tant que le visiteur n'a pas répondu.
@@ -2648,7 +3444,7 @@ def balises_mesure(base, actif=True):
 
 def page_simple(titre, description, corps, base, canonique,
                 indexable=True, bandeau="", navigation="", recherche=True,
-                mesure=True):
+                mesure=True, structure=""):
     """Gabarit des pages hors territoire : accueil, mentions légales.
 
     « recherche » retire la barre de recherche du bandeau. Elle sert au
@@ -2680,10 +3476,12 @@ def page_simple(titre, description, corps, base, canonique,
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonique}">
+{balises_partage(titre, description)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{base}/assets/style.css?v={EMPREINTE}">
+{structure}
 </head>
 <body>
 
@@ -2770,10 +3568,13 @@ def corps_accueil(fiches, adresses, index_recherche):
     rubriques = "".join(f'<span class="chip">{escape(r["nom"])}</span>'
                         for r in rubriques_ouvertes)
 
-    return f"""    <div class="hd"><h2>Les données publiques de votre commune</h2>
+    # Reste un titre de section : l'accueil porte déjà son h1 dans le
+    # bandeau d'identité, et deux titres de premier niveau sur une même
+    # page n'en font aucun.
+    return f"""    <div class="hd"><h2 class="hd-titre">Les données publiques de votre commune</h2>
       <span class="n">{len(index_recherche)} territoires · {len(rubriques_ouvertes)} rubriques</span></div>
 
-    <section class="bloc"><span class="dsp">Ce que vous trouverez ici</span>
+    <section class="bloc"><h2 class="dsp">Ce que vous trouverez ici</h2>
       <div class="bl-grille pleine"><article class="bl-item">
         <p class="bl-texte">Population, logement, équipements, écoles,
         qualité de l'eau, restrictions sécheresse, risques naturels,
@@ -2788,7 +3589,7 @@ def corps_accueil(fiches, adresses, index_recherche):
 
     <section class="chiffres">{blocs_chiffres}</section>
 
-    <section class="bloc"><span class="dsp">Par où commencer</span>
+    <section class="bloc"><h2 class="dsp">Par où commencer</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Cherchez votre commune par son nom ou son code
         postal dans le champ ci-dessus, ou partez d'une vue d'ensemble.</p>
@@ -2800,7 +3601,7 @@ def corps_accueil(fiches, adresses, index_recherche):
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Rubriques disponibles</span>
+    <section class="bloc"><h2 class="dsp">Rubriques disponibles</h2>
       <div class="bl-grille"><article class="bl-item">
         <div class="chips">{rubriques}</div>
         <p class="bl-texte">D'autres rubriques s'ajouteront : transports,
@@ -2866,10 +3667,10 @@ def corps_introuvable(adresses):
             entrees.append(f'<a class="bl-lien" href="/{cible}">'
                            f'Voir la fiche {libelle}</a>')
 
-    return f"""    <div class="hd"><h2>Cette page n'existe pas</h2>
+    return f"""    <div class="hd"><h1>Cette page n'existe pas</h1>
       <span class="n">Erreur 404</span></div>
 
-    <section class="bloc"><span class="dsp">Où aller</span>
+    <section class="bloc"><h2 class="dsp">Où aller</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">L'adresse demandée ne correspond à aucune page
         de ce portail. Elle a peut-être changé, ou comporte une faute de
@@ -2967,11 +3768,11 @@ def corps_fraicheur():
         for l in lignes)
 
     maj = date.today().strftime("%d/%m/%Y")
-    return f"""    <div class="hd"><h2>Fraîcheur des données</h2>
+    return f"""    <div class="hd"><h1>Fraîcheur des données</h1>
       <span class="n">{a_jour} source{"s" if a_jour > 1 else ""} à jour
       sur {total} · pages produites le {maj}</span></div>
 
-    <section class="bloc"><span class="dsp">État de chaque source</span>
+    <section class="bloc"><h2 class="dsp">État de chaque source</h2>
       <div class="bl-grille">{entrees}</div>
       <p class="bl-note">Les dates indiquées sont celles de la collecte par
       ce portail, non celles de la publication par le producteur : une
@@ -2982,7 +3783,7 @@ def corps_fraicheur():
       vieillissant.</p>
     </section>
 
-    <section class="bloc"><span class="dsp">Pourquoi cette page</span>
+    <section class="bloc"><h2 class="dsp">Pourquoi cette page</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Ce portail est un site statique : ses pages
         sont écrites à l'avance, elles n'interrogent aucune source au
@@ -3149,11 +3950,11 @@ def corps_administration(fiches, protegee):
 
     total_pages = sum(1 for _ in RACINE.rglob("index.html"))
 
-    return f"""    <div class="hd"><h2>Administration</h2>
+    return f"""    <div class="hd"><h1>Administration</h1>
       <span class="n"><a href="documents.php">Documents de travail</a>
       · <a href="journal.php">Journal du leurre</a></span></div>
 
-    <section class="bloc"><span class="dsp">État des sources</span>
+    <section class="bloc"><h2 class="dsp">État des sources</h2>
       <div class="bl-grille">{entrees}</div>
       <p class="bl-note">Une source « à rafraîchir » a dépassé la
       fréquence de publication de son producteur. Cela ne rend pas les
@@ -3161,17 +3962,17 @@ def corps_administration(fiches, protegee):
       la source propose.</p>
     </section>
 
-    <section class="bloc"><span class="dsp">Actions à mener</span>
+    <section class="bloc"><h2 class="dsp">Actions à mener</h2>
       <div class="bl-grille"><article class="bl-item">{actions}</article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Contrôles à vérifier</span>
+    <section class="bloc"><h2 class="dsp">Contrôles à vérifier</h2>
       <div class="bl-grille"><article class="bl-item">{controles}</article></div>
       <p class="bl-note">Ces contrôles s'affichent à l'exécution des
       scripts. Un écart signale un problème silencieux.</p>
     </section>
 
-    <section class="bloc"><span class="dsp">Référentiels saisis à la main</span>
+    <section class="bloc"><h2 class="dsp">Référentiels saisis à la main</h2>
       <div class="bl-grille">{bloc_saisis}</div>
       <p class="bl-note">Ces données sont transcrites d'un document
       officiel, non collectées. Elles ne se rafraîchissent pas seules :
@@ -3179,7 +3980,7 @@ def corps_administration(fiches, protegee):
       périmée. Passée l'échéance, le collecteur refuse de publier.</p>
     </section>
 
-    <section class="bloc"><span class="dsp">Automatisation</span>
+    <section class="bloc"><h2 class="dsp">Automatisation</h2>
       <div class="bl-grille"><article class="bl-item">
         <div class="bl-ligne"><span class="bl-cle">Mode actuel</span>
           <span class="bl-val">manuel</span></div>
@@ -3197,11 +3998,11 @@ def corps_administration(fiches, protegee):
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Chantiers ouverts</span>
+    <section class="bloc"><h2 class="dsp">Chantiers ouverts</h2>
       <div class="bl-grille">{chantiers}</div>
     </section>
 
-    <section class="bloc"><span class="dsp">Sécurité</span>
+    <section class="bloc"><h2 class="dsp">Sécurité</h2>
       <div class="bl-grille"><article class="bl-item">
         <div class="bl-ligne"><span class="bl-cle">Accès à cette page</span>
           <span class="bl-val">{"protégé par mot de passe"
@@ -3220,7 +4021,7 @@ def corps_administration(fiches, protegee):
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Documentation</span>
+    <section class="bloc"><h2 class="dsp">Documentation</h2>
       <div class="bl-grille"><article class="bl-item">
         <div class="bl-ligne"><span class="bl-cle">Dossier</span>
           <span class="bl-val">{DOSSIER_ADMIN}/{DOSSIER_DOCUMENTS}/</span></div>
@@ -3235,7 +4036,7 @@ def corps_administration(fiches, protegee):
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Volumétrie</span>
+    <section class="bloc"><h2 class="dsp">Volumétrie</h2>
       <div class="bl-grille"><article class="bl-item">
         <div class="bl-ligne"><span class="bl-cle">Territoires publiés</span>
           <span class="bl-val">{len(fiches)}</span></div>
@@ -3251,7 +4052,7 @@ def corps_mentions():
     # La section n'existe que si la mesure est configurée : un site sans
     # traceur ne doit pas décrire un traceur qu'il n'a pas.
     bloc_mesure = """
-    <section class="bloc"><span class="dsp">Mesure d'audience</span>
+    <section class="bloc"><h2 class="dsp">Mesure d'audience</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Ce site mesure sa fréquentation avec Google
         Analytics, afin de savoir quelles pages sont consultées. Cette
@@ -3287,14 +4088,14 @@ def corps_mentions():
                       f'<span class="bl-cle">{escape(libelle)}</span>'
                       f'<span class="bl-val">{contenu}</span></div>')
 
-    return f"""    <div class="hd"><h2>Mentions légales</h2></div>
-    <section class="bloc"><span class="dsp">Éditeur et hébergement</span>
+    return f"""    <div class="hd"><h1>Mentions légales</h1></div>
+    <section class="bloc"><h2 class="dsp">Éditeur et hébergement</h2>
       <div class="bl-grille"><article class="bl-item">
         {"".join(lignes)}
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Données publiées</span>
+    <section class="bloc"><h2 class="dsp">Données publiées</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Les données présentées proviennent
         exclusivement de sources publiques françaises, diffusées sous
@@ -3309,7 +4110,7 @@ def corps_mentions():
       </article></div>
     </section>
 
-    <section class="bloc"><span class="dsp">Vie privée</span>
+    <section class="bloc"><h2 class="dsp">Vie privée</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Ce site ne demande aucune inscription et ne
         collecte aucune donnée personnelle lors d'une consultation
@@ -3324,7 +4125,7 @@ def corps_mentions():
     </section>
 {bloc_mesure}
 
-    <section class="bloc"><span class="dsp">Signaler une erreur</span>
+    <section class="bloc"><h2 class="dsp">Signaler une erreur</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Une donnée vous paraît inexacte ? Vérifiez
         d'abord auprès de la source citée sur la fiche : une correction
@@ -3377,7 +4178,7 @@ def bloc_annonce(ancre, titre, details, textes, note, lien=None):
     renvoi = (f'<a class="bl-lien" href="{escape(lien[0])}">'
               f'{escape(lien[1])}</a>' if lien else "")
     return (f'    <section class="bloc" id="{escape(ancre)}">'
-            f'<span class="dsp">{icone(ancre)}{escape(titre)}</span>'
+            f'<h2 class="dsp">{icone(ancre)}{escape(titre)}</h2>'
             f'<div class="bl-grille"><article class="bl-item">'
             f'{lignes}{paragraphes}{renvoi}</article></div>'
             f'<p class="bl-note">{escape(note)}</p></section>')
@@ -3572,6 +4373,250 @@ ANNONCES = {
 }
 
 
+# ══════════════════════════════════════════════════════════════════
+# DONNÉES STRUCTURÉES
+#
+# Ce que le HTML dit à un lecteur, le JSON-LD le dit à une machine.
+# Trois déclarations, et pas une de plus : chacune correspond à
+# quelque chose que la page montre réellement.
+#
+#  · BreadcrumbList — le chemin d'accès. C'est la seule qui produise
+#    un effet visible : le fil d'ariane remplace l'URL sous le
+#    résultat de recherche, ce qui aide surtout sur les adresses
+#    profondes, et les nôtres le sont.
+#  · Place — le territoire lui-même : son nom, son code officiel, son
+#    code postal, ce qui le contient. C'est ce qui rattache la page à
+#    une entité connue plutôt qu'à une chaîne de caractères.
+#  · Dataset — les données brutes téléchargeables, avec leur licence.
+#    Portée uniquement par la page d'accueil du territoire, celle qui
+#    a effectivement un fichier à offrir.
+#
+# Une règle tenue partout ici : **ne rien déclarer qui ne soit sur la
+# page**. Des données structurées qui décrivent autre chose que le
+# contenu visible sont une faute au sens des consignes de Google, et
+# la sanction est le retrait des enrichissements, pas un avertissement.
+# ══════════════════════════════════════════════════════════════════
+
+# Schema.org distingue les localités des découpages administratifs.
+# Une commune est une ville ; un canton et une intercommunalité sont
+# des circonscriptions, et les nommer « City » serait faux.
+TYPE_LIEU = {"commune": "City", "canton": "AdministrativeArea",
+             "epci": "AdministrativeArea", "departement": "AdministrativeArea"}
+
+
+def balises_partage(titre, description):
+    """Balises d'aperçu communes à toutes les pages.
+
+    « twitter:card » est lu par plus de lecteurs que son nom ne le
+    laisse croire — Slack, Signal, Discord et plusieurs messageries
+    s'en servent. Sans image déclarée, on demande la vignette étroite :
+    demander la grande sans avoir d'image donne un cadre vide.
+    """
+    lignes = [f'<meta property="og:site_name" content="{escape(TITRE_SITE)}">',
+              '<meta property="og:locale" content="fr_FR">']
+    if IMAGE_PARTAGE:
+        url = f"{SITE}/{IMAGE_PARTAGE.lstrip('/')}"
+        lignes += [f'<meta property="og:image" content="{escape(url)}">',
+                   f'<meta property="og:image:alt" content="{escape(titre)}">',
+                   '<meta name="twitter:card" content="summary_large_image">']
+    else:
+        lignes.append('<meta name="twitter:card" content="summary">')
+    lignes += [f'<meta name="twitter:title" content="{escape(titre)}">',
+               f'<meta name="twitter:description" content="{escape(description)}">']
+    return "\n".join(lignes)
+
+
+def json_ld(objets):
+    """Rend un ou plusieurs objets en un bloc script sûr.
+
+    Le seul risque réel du JSON-LD inséré dans du HTML est la sortie
+    prématurée du script : une chaîne contenant « </script> » ferme la
+    balise et le reste de la page devient du texte. On neutralise le
+    chevron, ce que la norme JSON autorise explicitement.
+    """
+    objets = [o for o in objets if o]
+    if not objets:
+        return ""
+    charge = objets[0] if len(objets) == 1 else objets
+    texte = json.dumps(charge, ensure_ascii=False, separators=(",", ":"))
+    texte = texte.replace("<", "\\u003c").replace(">", "\\u003e")
+    texte = texte.replace("&", "\\u0026")
+    return f'<script type="application/ld+json">{texte}</script>'
+
+
+def fil_ariane(t, chemin, rubrique, sous):
+    """Chemin d'accès de la page, de l'accueil jusqu'à elle."""
+    etapes = [("Accueil", f"{SITE}/"),
+              (t["nom"], f"{SITE}/{chemin}")]
+    if rubrique["id"]:
+        etapes.append((rubrique["nom"], f"{SITE}/{chemin}{rubrique['id']}/"))
+        if sous:
+            etapes.append((sous["nom"],
+                           f"{SITE}/{chemin}{rubrique['id']}/{sous['id']}/"))
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": nom, "item": url}
+            for i, (nom, url) in enumerate(etapes, 1)],
+    }
+
+
+def lieu_structure(d, chemin):
+    """Le territoire, tel qu'une machine peut le reconnaître."""
+    t = d["territoire"]
+    lieu = {
+        "@context": "https://schema.org",
+        "@type": TYPE_LIEU.get(t["niveau"], "AdministrativeArea"),
+        "@id": f"{SITE}/{chemin}#lieu",
+        "name": t["nom"],
+        "url": f"{SITE}/{chemin}",
+    }
+
+    # Le code officiel. Celui d'un EPCI est un SIREN, pas un code
+    # INSEE : les confondre dans une donnée destinée aux machines
+    # serait pire que de ne rien déclarer.
+    lieu["identifier"] = {
+        "@type": "PropertyValue",
+        "propertyID": "SIREN" if t["niveau"] == "epci" else "INSEE",
+        "value": t["code"],
+    }
+
+    # L'adresse postale n'a de sens que pour une commune : un canton
+    # n'a pas de code postal, et lui en prêter un de ses communes
+    # serait une invention.
+    codes = t.get("codes_postaux") or []
+    if codes:
+        lieu["address"] = {"@type": "PostalAddress", "addressCountry": "FR",
+                           "addressLocality": t["nom"],
+                           "postalCode": codes[0]}
+
+    # Ce qui contient le territoire, du plus proche au plus lointain.
+    dessus = [x for x in (d.get("rattachements") or {}).get("au_dessus", [])
+              if x["niveau"] in ("canton", "epci", "departement")]
+    if dessus:
+        lieu["containedInPlace"] = [
+            {"@type": TYPE_LIEU.get(x["niveau"], "AdministrativeArea"),
+             "name": x["nom"]}
+            for x in dessus]
+
+    # Les communes membres d'un canton ou d'une intercommunalité sont
+    # écrites dans la page, et chacune a sa propre fiche : les déclarer
+    # nommément relie les 49 territoires entre eux pour une machine
+    # comme les liens le font pour un lecteur.
+    dessous = (d.get("rattachements") or {}).get("en_dessous") or []
+    if dessous:
+        lieu["containsPlace"] = [
+            {"@type": "City", "name": x["nom"]} for x in dessous]
+    return lieu
+
+
+def jeu_de_donnees(d, chemin):
+    """Le fichier brut du territoire, déclaré pour ce qu'il est.
+
+    Rendu sur la seule page d'accueil du territoire : c'est là que le
+    fichier est offert au téléchargement. Le déclarer sur les quinze
+    pages d'une commune reviendrait à annoncer quinze jeux de données
+    là où il n'y en a qu'un.
+    """
+    t = d["territoire"]
+    niveau = LIBELLE.get(t["niveau"], t["niveau"]).lower()
+    fichier = f"{SITE}/data/publie/v1/{t['niveau']}/{t['code']}.json"
+    # Les thèmes annoncés sont ceux que le fichier contient réellement.
+    # Une description de catalogue qui promet ce qui n'y est pas est
+    # exactement ce que ce site s'interdit ailleurs.
+    presentes = set()
+    for ident, m in d["mesures"].items():
+        if m.get("valeur") is None:
+            continue
+        chez = rubrique_native(m, ident)
+        if chez:
+            presentes.add(chez[0])
+    themes = [r["nom"] for r in RUBRIQUES if r["id"] and r["id"] in presentes]
+    mots = ([t["nom"], "données publiques", "open data", niveau,
+             f"code INSEE {t['code']}"] + themes)
+    sujets = ", ".join(x.lower() for x in themes) or "indicateurs territoriaux"
+    return {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": f"Données publiques de {t['nom']}",
+        "description": (
+            f"Indicateurs publics ouverts pour {t['nom']} ({niveau}) : "
+            f"{sujets}. Agrégés depuis les publications de l'INSEE, de "
+            "l'IGN et des services de l'État, republiés en JSON sous "
+            "Licence Ouverte."),
+        "url": f"{SITE}/{chemin}",
+        "identifier": t["code"],
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "isAccessibleForFree": True,
+        "inLanguage": "fr",
+        "dateModified": d["genere_le"],
+        "keywords": mots,
+        "creator": {"@type": "Person", "name": MENTIONS["editeur"]},
+        "spatialCoverage": {"@id": f"{SITE}/{chemin}#lieu"},
+        "distribution": {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": fichier,
+        },
+    }
+
+
+def site_structure():
+    """Le site lui-même, sur sa page d'accueil.
+
+    Pas de SearchAction : la boîte de recherche du site est un filtre
+    exécuté dans le navigateur, sans adresse de résultat. Déclarer un
+    gabarit d'URL qui ne mène nulle part obtiendrait peut-être la
+    boîte de recherche dans Google, et sûrement un lien mort le jour
+    où quelqu'un s'en sert.
+    """
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": f"{SITE}/#site",
+        "name": TITRE_SITE,
+        "alternateName": "Sud Grésivaudan — données publiques",
+        "url": f"{SITE}/",
+        "inLanguage": "fr",
+        "description": f"{SOUS_TITRE} du Sud Grésivaudan.",
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "publisher": {"@type": "Person", "name": MENTIONS["editeur"]},
+    }
+
+
+def liste_des_territoires(fiches, adresses):
+    """Les 49 territoires listés sur l'accueil, dans l'ordre affiché.
+
+    C'est la seule page du site qui les porte tous : la déclarer donne
+    à un moteur la carte complète du maillage en une lecture.
+    """
+    elements = []
+    for (niveau, code), d in fiches.items():
+        chemin = adresses.get((niveau, code))
+        if not chemin:
+            continue
+        elements.append({
+            "@type": TYPE_LIEU.get(niveau, "AdministrativeArea"),
+            "name": d["territoire"]["nom"],
+            "url": f"{SITE}/{chemin}",
+        })
+    if not elements:
+        return None
+    # Liste non ordonnée, et déclarée telle : les fiches sont rangées
+    # par niveau puis par nom à l'affichage, ce qui n'est pas un
+    # classement. Numéroter les positions laisserait croire à un
+    # palmarès.
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Territoires du Sud Grésivaudan",
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "numberOfItems": len(elements),
+        "itemListElement": elements,
+    }
+
+
 def page(d, base, canonique, adresses, fiches, rubrique,
          chemin_territoire, actives, sous=None, sous_dispo=(),
          accueil=False):
@@ -3597,7 +4642,17 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     else:
         ordre = {}
 
+    # Échos des mesures traitées ailleurs. Ils entrent après le calcul
+    # des alertes et avant le tri : ils s'affichent, mais ne remontent
+    # rien et ne changent pas ce que la page dit d'elle-même.
+    natives = dict(mesures)
+    echos = echos_de(d, actives, rubrique, sous, base, chemin_territoire)
+    for ident, m in echos.items():
+        mesures.setdefault(ident, m)
+
     def rang_de(ident, m):
+        if m.get("_echo"):
+            return 950                        # les échos ferment la page
         if selection is not None:
             return ordre.get(ident, 900)      # alertes remontées en fin
         return m.get("rang", 500)
@@ -3614,7 +4669,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     renvois = {}
     for m in mesures.values():
         ancre = m.get("ancre")
-        if not ancre or ancre in renvois:
+        if m.get("_echo") or not ancre or ancre in renvois:
             continue
         destination = adresse_du_detail(ancre, index, rubrique, sous,
                                         base, chemin_territoire)
@@ -3631,9 +4686,20 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     # de la grille ordinaire.
     bandeaux = {k: v for k, v in mesures.items() if v.get("mise_en_avant")}
     ordinaires = {k: v for k, v in mesures.items() if not v.get("mise_en_avant")}
+    suffixe_titre = (sous["nom"] if sous
+                     else (rubrique["nom"] if rubrique["id"] else niveau))
+
+    # La description dit ce que cette page traite, donc ses seules
+    # mesures natives : un écho parlerait d'une page voisine.
+    en_propre = [m for m in mesures.values() if not m.get("_echo")]
     resume = ", ".join(f"{m['nom'].lower()} {nombre(m['valeur'])} {m['unite']}"
-                       for m in list(mesures.values())[:3])
-    description = (f"{t['nom']} ({niveau}) : {resume}. "
+                       for m in en_propre[:3])
+    # Une page dont le contenu tient en blocs détaillés n'a aucune
+    # valeur chiffrée à résumer : mieux vaut nommer son sujet que
+    # produire « Chatte (commune) : . Données publiques ». Un moteur
+    # rejette une description vide et en fabrique une lui-même.
+    sujet = resume or f"{suffixe_titre.lower()} sur le territoire"
+    description = (f"{t['nom']} ({niveau}) : {sujet}. "
                    f"Données publiques INSEE et IGN.")
 
     # Le code d'un EPCI est un numéro SIREN, pas un code INSEE :
@@ -3657,14 +4723,14 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 
     # Page d'annonce : rendue seulement si la rubrique n'a rien à
     # montrer, et s'effaçant d'elle-même dès qu'une donnée arrive.
+    # Un écho ne peut pas effacer une page d'annonce : la rubrique
+    # n'aurait toujours rien à elle, et le visiteur perdrait le texte
+    # qui lui dit ce qui vient.
     annonce = (ANNONCES.get((sous or rubrique).get("annonce"))
-               if not mesures else None)
+               if not natives else None)
     annonce_html = ""
     if annonce:
         annonce_html, description = annonce(d, base, chemin_territoire)
-
-    suffixe_titre = (sous["nom"] if sous
-                     else (rubrique["nom"] if rubrique["id"] else niveau))
 
     # Le titre de premier niveau doit dire de quoi parle LA page, pas
     # seulement de quel territoire. Sans cela, les quinze pages d'une
@@ -3673,8 +4739,40 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     titre_rubrique = (f'<span class="h1-rub"> — {escape(suffixe_titre)}</span>'
                       if rubrique["id"] else "")
 
+    # La grille de tuiles est la seule section de la page à n'avoir pas
+    # de titre écrit : visuellement elle n'en a pas besoin, elle suit
+    # immédiatement le titre de la page. Mais sans titre, ses tuiles
+    # sont des sous-titres orphelins — un lecteur d'écran ne peut pas
+    # sauter la grille, et le plan du document présente une quinzaine
+    # de titres de même niveau sans rien qui les regroupe. Le titre est
+    # donc écrit, et masqué à l'œil seulement : c'est le même contenu
+    # pour tout le monde, pas du texte réservé aux moteurs.
+    titre_grille = (
+        f'    <h2 class="hors-vue">Indicateurs — {escape(suffixe_titre)}</h2>'
+        if ordinaires else "")
+
+    # Les graphiques ne sont produits que si la fiche en déclare, et
+    # le script de survol n'est chargé que s'il y a un graphique : une
+    # page de population n'a rien à télécharger pour rien.
+    graphiques = bloc_chroniques(d, rubrique, sous)
+    # Le saut de ligne fait partie de la valeur : une page sans
+    # graphique doit sortir exactement comme avant, à l'octet près.
+    script_graphe = (f'\n<script src="{base}/assets/graphiques.js'
+                     f'?v={EMPREINTE}"></script>' if graphiques else "")
+    if graphiques:
+        graphiques = "\n" + graphiques
+
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
     bandeau_mesure, script_mesure = balises_mesure(base)
+
+    # Le jeu de données n'est déclaré que sur la page qui l'offre au
+    # téléchargement — la page d'accueil du territoire.
+    structure = json_ld([
+        fil_ariane(t, chemin_territoire, rubrique, sous),
+        lieu_structure(d, chemin_territoire),
+        (jeu_de_donnees(d, chemin_territoire)
+         if not rubrique["id"] and sous is None else None),
+    ])
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -3684,14 +4782,16 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 <title>{escape(t['nom'])} — {escape(suffixe_titre)} | {escape(TITRE_SITE)}</title>
 <meta name="description" content="{escape(description)}">
 <link rel="canonical" href="{canonique}">
-<meta property="og:title" content="{escape(t['nom'])} — {escape(TITRE_SITE)}">
+<meta property="og:title" content="{escape(t['nom'])} — {escape(suffixe_titre)}">
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonique}">
+{balises_partage(f"{t['nom']} — {suffixe_titre}", description)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{base}/assets/style.css?v={EMPREINTE}">
+{structure}
 </head>
 <body>
 
@@ -3724,9 +4824,10 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 {bloc_rattachements(d, base, adresses)}
 {bloc_bandeaux(bandeaux, renvois)}
 {annonce_html}
+{titre_grille}
     <div class="cards">
 {chr(10).join(carte(k, v, renvois) for k, v in ordinaires.items())}
-    </div>
+    </div>{graphiques}
 {bloc_liste(d, rubrique, sous)}
 {bloc_carte(t, base, adresses, fiches, d["rattachements"].get("en_dessous"), rubrique, sous, points)}
 </div></main>
@@ -3741,7 +4842,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 
 {bandeau_mesure}
 <script>var BASE="{base}";</script>
-<script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>
+<script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>{script_graphe}
 {script_mesure}
 </body>
 </html>
@@ -3780,11 +4881,13 @@ def main():
 
     global EMPREINTE
     EMPREINTE = hashlib.sha1(
-        (CSS + JS + MESURE_JS + ANALYTICS).encode("utf-8")).hexdigest()[:8]
+        (CSS + JS + GRAPHE_JS + MESURE_JS + ANALYTICS).encode("utf-8")).hexdigest()[:8]
     if garde:
         shutil.move(str(garde), str(cartes))
     (ASSETS / "style.css").write_text(CSS.strip(), encoding="utf-8")
     (ASSETS / "recherche.js").write_text(JS.strip(), encoding="utf-8")
+    (ASSETS / "graphiques.js").write_text(GRAPHE_JS.strip(),
+                                          encoding="utf-8")
     if ANALYTICS:
         (ASSETS / "mesure.js").write_text(
             MESURE_JS.replace("IDENTIFIANT", ANALYTICS).strip(),
@@ -3922,7 +5025,9 @@ def main():
             "chaque commune du Sud Grésivaudan, à partir des sources "
             "publiques françaises.",
             corps_accueil(fiches, adresses, recherche), ".", SITE + "/",
-            bandeau=bandeau_accueil, navigation=nav_accueil),
+            bandeau=bandeau_accueil, navigation=nav_accueil,
+            structure=json_ld([site_structure(),
+                               liste_des_territoires(fiches, adresses)])),
         encoding="utf-8")
     liens_site.append(SITE + "/")
 

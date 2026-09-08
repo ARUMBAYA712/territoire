@@ -119,7 +119,7 @@ main .wrap{padding:26px 20px 48px}
 .card{background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
 .card .id{font-family:var(--font-data);font-size:10px;color:var(--dim)}
-.card h2{font-size:15px;font-weight:600;line-height:1.25}
+.card h3{font-size:15px;font-weight:600;line-height:1.25}
 .card .v{font-family:var(--font-data);font-size:28px;color:var(--accent);line-height:1}
 .card .u{font-size:12px;color:var(--soft)}
 .card footer{margin-top:auto;border-top:1px solid var(--line);padding-top:8px;
@@ -131,7 +131,7 @@ main .wrap{padding:26px 20px 48px}
 .card-tete{display:flex;align-items:center;gap:9px}
 .card-tete .ico{color:var(--accent);opacity:.6}
 .card-tete .id{margin-left:auto}
-.card.pleine .card-tete h2{font-size:15px;flex:1}
+.card.pleine .card-tete h3{font-size:15px;flex:1}
 .card.pleine .card-tete .id{margin-left:0}
 .card.ton-attention .card-tete .ico{color:var(--attention);opacity:1}
 .card.ton-alerte .card-tete .ico{color:var(--alerte);opacity:1}
@@ -154,6 +154,19 @@ main .wrap{padding:26px 20px 48px}
 .card-lien:hover{color:var(--accent)}
 .card.ton-alerte .card-lien{color:var(--alerte)}
 .card.ton-attention .card-lien{color:var(--attention)}
+/* Retiré de l'affichage, conservé pour les lecteurs d'écran et le plan
+   du document. Surtout pas display:none, qui le retirerait aussi de
+   la restitution vocale : le texte est réduit à un point invisible. */
+.hors-vue{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* Écho : une mesure traitée en détail dans une autre rubrique. Elle
+   doit se lire comme un renvoi, pas comme une donnée de cette page —
+   d'où le fond en creux et la valeur en teinte sourde. Le lien, lui,
+   reste pleinement contrasté : c'est la seule chose à faire ici. */
+.card.echo{background:var(--sunken);border-style:dashed}
+.card.echo .v{color:var(--soft)}
+.card.echo .card-tete .ico{opacity:.45}
 .bloc{scroll-margin-top:calc(var(--h-top,61px) + 84px)}
 .pill{border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px}
 
@@ -416,6 +429,13 @@ footer.site a{color:var(--link)}
   .mesure-choix{width:100%}
   .mesure-btn{flex:1 1 0}
 }
+
+/* Titre de page des pages hors territoire : accueil, mentions légales,
+   fraîcheur, 404. C'était un h2, sans rien au-dessus : une page sans
+   titre de premier niveau ne dit ni à un lecteur d'écran ni à un
+   moteur de quoi elle parle. La taille reprend exactement celle que
+   le navigateur donnait au h2, pour que rien ne bouge à l'écran. */
+.hd h1,.hd .hd-titre{font-size:1.5em;font-weight:700;line-height:1.2}
 
 /* Raccourcis sous le titre d'une page d'administration. Les classes
    .hd et .n n'ont pas de style propre : sans cette règle, un lien y
