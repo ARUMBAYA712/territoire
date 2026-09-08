@@ -355,6 +355,30 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .rung .lvl{font-family:var(--font-display);text-transform:uppercase;
   letter-spacing:.08em;font-size:11px;color:var(--soft);width:96px;flex-shrink:0}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
+
+/* Rubrique rappelée dans le titre de premier niveau. Discrète à l'œil,
+   décisive pour un moteur : c'est elle qui distingue les quinze pages
+   d'un même territoire. */
+.h1-rub{font-weight:400;color:var(--soft);white-space:nowrap}
+
+/* Repli de la liste des communes. Balise details native : elle
+   fonctionne sans JavaScript, se pilote au clavier et laisse les liens
+   dans la page. Le marqueur par défaut du navigateur est masqué au
+   profit d'un triangle qui pivote à l'ouverture. */
+.repli{flex:1 1 100%}
+.repli > summary{display:inline-flex;align-items:center;gap:7px;
+  cursor:pointer;font-size:13px;color:var(--link);list-style:none;
+  padding:3px 0}
+.repli > summary::-webkit-details-marker{display:none}
+.repli > summary::before{content:"";width:0;height:0;
+  border-left:5px solid currentColor;border-top:4px solid transparent;
+  border-bottom:4px solid transparent;transition:transform .15s}
+.repli[open] > summary::before{transform:rotate(90deg)}
+.repli > summary:hover{text-decoration:underline}
+.repli .chips{margin-top:10px}
+.repli-moins{display:none}
+.repli[open] .repli-plus{display:none}
+.repli[open] .repli-moins{display:inline}
 .chip{border:1px solid var(--line);border-radius:var(--radius);padding:4px 10px;
   font-size:13px;display:inline-block}
 a.chip{transition:background .12s,color .12s,border-color .12s}
@@ -368,6 +392,13 @@ a.chip:hover,a.chip:focus-visible{background:var(--accent);color:var(--surface);
 footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
+
+/* Raccourcis sous le titre d'une page d'administration. Les classes
+   .hd et .n n'ont pas de style propre : sans cette règle, un lien y
+   serait indiscernable du texte, puisque « a » hérite de la couleur
+   courante partout ailleurs sur le site. */
+.hd .n a{color:var(--link);border-bottom:1px solid rgba(42,111,151,.35)}
+.hd .n a:hover{border-bottom-color:var(--link)}
 
 @media(max-width:820px){
   .cards{grid-template-columns:repeat(2,1fr)}

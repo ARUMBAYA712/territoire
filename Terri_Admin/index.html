@@ -14,20 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=3e6fcfba">
+<link rel="stylesheet" href="../assets/style.css?v=45367526">
 </head>
 <body>
 
 <div class="top"><div class="wrap">
   <a class="logo" href="../">Sud Grésiv&#x27;</a>
-  <div class="find-groupe">
-    <label class="find-label" for="q">Recherche</label>
-    <div class="find">
-      <input id="q" type="text" placeholder="Commune, code postal…"
-             autocomplete="off">
-      <div class="hits" id="hits"></div>
-    </div>
-  </div>
+  
   <div class="top-fin"></div>
 </div></div>
 
@@ -35,9 +28,8 @@
 
 <main><div class="wrap">
     <div class="hd"><h2>Administration</h2>
-      <span class="n">Page interne — non indexée, non liée, absente du
-      robots.txt. Discrétion seulement : protégez ce dossier par mot de
-      passe depuis l'espace client OVH.</span></div>
+      <span class="n"><a href="documents.php">Documents de travail</a>
+      · <a href="journal.php">Journal du leurre</a></span></div>
 
     <section class="bloc"><span class="dsp">État des sources</span>
       <div class="bl-grille"><article class="bl-item"><header><h3>Référentiel des communes</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">annuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python lancer.py --complet</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">19 Ko</span></div></article><article class="bl-item"><header><h3>Qualité de l&#x27;eau potable</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">mensuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 06_eau.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">286 Ko</span></div></article><article class="bl-item"><header><h3>Restrictions sécheresse</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">quotidienne</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 07_vigieau.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">190 Ko</span></div></article><article class="bl-item"><header><h3>Risques et catastrophes naturelles</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">trimestrielle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 08_georisques.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">275 Ko</span></div></article><article class="bl-item"><header><h3>Niveau des nappes</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">hebdomadaire</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">2 territoires</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 09_nappes.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">14 Ko</span></div></article><article class="bl-item"><header><h3>Débit des cours d&#x27;eau</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">quotidienne</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">2 territoires</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 12_rivieres.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">11 Ko</span></div></article><article class="bl-item"><header><h3>Établissements scolaires</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">annuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 10_ecoles.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">118 Ko</span></div></article><article class="bl-item"><header><h3>Population, logement, équipements</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">annuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 11_population.py</span></div><div class="bl-ligne"><span class="bl-cle">Millésime des données</span><span class="bl-val">2022</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">437 Ko</span></div></article><article class="bl-item"><header><h3>Équipements hivernaux (saisi à la main)</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">annuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">3 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 13_hivernal.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">6 Ko</span></div></article><article class="bl-item"><header><h3>Vigilance météorologique</h3><span class="bl-etat alerte">Jamais collectée</span></header><div class="bl-ligne"><span class="bl-cle">Script</span><span class="bl-val">14_vigilance.py</span></div><div class="bl-ligne"><span class="bl-cle">Commande</span><span class="bl-val">python 14_vigilance.py</span></div><p class="bl-texte">Cette source n&#x27;a pas encore été collectée.</p></article><article class="bl-item"><header><h3>Élus locaux</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">trimestrielle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 15_elus.py</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">195 Ko</span></div></article><article class="bl-item"><header><h3>Agriculture biologique</h3><span class="bl-etat ok">À jour</span></header><div class="bl-ligne"><span class="bl-cle">Collecté le</span><span class="bl-val">08/09/2026</span></div><div class="bl-ligne"><span class="bl-cle">Ancienneté</span><span class="bl-val">0 jour(s)</span></div><div class="bl-ligne"><span class="bl-cle">Fréquence attendue</span><span class="bl-val">annuelle</span></div><div class="bl-ligne"><span class="bl-cle">Couverture</span><span class="bl-val">47 communes</span></div><div class="bl-ligne"><span class="bl-cle">Rafraîchir par</span><span class="bl-val">python 16_bio.py</span></div><div class="bl-ligne"><span class="bl-cle">Millésime des données</span><span class="bl-val">2025</span></div><div class="bl-ligne"><span class="bl-cle">Poids du fichier</span><span class="bl-val">110 Ko</span></div></article></div>
@@ -110,7 +102,7 @@
         <div class="bl-ligne"><span class="bl-cle">Dossier</span>
           <span class="bl-val">Terri_Admin/Documents/</span></div>
         <div class="bl-ligne"><span class="bl-cle">Documents lisibles</span>
-          <span class="bl-val">21</span></div>
+          <span class="bl-val">23</span></div>
         <p class="bl-texte">Les documents de travail du projet, relisibles
         depuis un téléphone. La page ne sert que les extensions qu'elle
         déclare : une clé ou un fichier de configuration déposés là par
@@ -125,7 +117,7 @@
         <div class="bl-ligne"><span class="bl-cle">Territoires publiés</span>
           <span class="bl-val">49</span></div>
         <div class="bl-ligne"><span class="bl-cle">Pages produites</span>
-          <span class="bl-val">727</span></div>
+          <span class="bl-val">728</span></div>
         <div class="bl-ligne"><span class="bl-cle">Générées le</span>
           <span class="bl-val">08/09/2026</span></div>
       </article></div>
@@ -134,10 +126,10 @@
 
 <footer class="site"><div class="wrap">
   Données publiques du territoire — Licence Ouverte 2.0
+  · <a href="../fraicheur/">Fraîcheur des données</a>
   · <a href="../mentions-legales/">Mentions légales</a>
 </div></footer>
 
-<script>var BASE="..";</script>
-<script src="../assets/recherche.js?v=3e6fcfba"></script>
+
 </body>
 </html>
