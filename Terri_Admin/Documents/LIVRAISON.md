@@ -9,7 +9,7 @@ biologique débloquée, pages d'annonce pour l'indexation.
 
 | Fichier | Version | Nature |
 |---|---|---|
-| `04_generation.py` | 23 → **29** | Mentions, documents, pages d'annonce, administration allégée, page de fraîcheur, rattachements repliables |
+| `04_generation.py` | 23 → **30** | Mentions, documents, pages d'annonce, administration allégée, page de fraîcheur, rattachements repliables |
 | `16_bio.py` | 1 → **3** | Choix du fichier source, puis lecture du code commune |
 | `lancer.py` | mis à jour | Versions attendues et plan de livraison |
 | `.gitignore` | mis à jour | Caches volumineux exclus du dépôt |
@@ -196,7 +196,12 @@ l'indexation et de la liste des 404.
 - **Une vraie page 404**, `404.html`, servie par `ErrorDocument`, en
   `noindex`, avec la recherche et les renvois utiles. Elle répond bien
   404 — une redirection vers l'accueil serait une « soft 404 », que
-  Google compte comme une erreur.
+  Google compte comme une erreur. Ses chemins sont **absolus** : cette
+  page est servie à l'adresse demandée, quelle que soit sa profondeur, et
+  en relatif la feuille de style d'une erreur sur
+  `/commune/x/population/` aurait été cherchée dans
+  `/commune/x/population/assets/`. La page se serait affichée sans mise
+  en forme. Corrigé en version 30.
 - **Des redirections pour l'ancien site.** Une recherche a montré que
   l'index de Google porte encore des adresses en PHP sous `/rubriques/`.
   Une règle par commune les renvoie vers la fiche correspondante, avec

@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 29
+VERSION_SCRIPT = 30
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -3943,10 +3943,14 @@ def main():
         print("              sont obligatoires avant toute communication.")
 
     # ── page d'erreur ──
+    # Base vide, donc chemins absolus : cette page est servie à l'adresse
+    # demandée, quelle que soit sa profondeur. En relatif, la feuille de
+    # style d'une 404 sur /commune/x/y/ serait cherchée dans
+    # /commune/x/y/assets/ — la page s'afficherait sans style.
     (RACINE / "404.html").write_text(
         page_simple("Page introuvable",
                     "Cette adresse ne correspond à aucune page du portail.",
-                    corps_introuvable(adresses), ".",
+                    corps_introuvable(adresses), "",
                     f"{SITE}/404.html", indexable=False),
         encoding="utf-8")
 

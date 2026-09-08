@@ -45,7 +45,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 29,
+    "04_generation.py": 30,
     "12_rivieres.py": 5,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
@@ -110,6 +110,8 @@ def controler_versions():
 #     communes repliées, titres de page distinctifs, page 404,
 #     redirections de l'ancien site, et mesure d'audience Google
 #     Analytics soumise au consentement
+#   · 04_generation.py v30  la page 404 utilise des chemins absolus :
+#     servie à une adresse profonde, elle s'affichait sans style
 #   · 04_generation.py  pages d'annonce Carburants et Élections/Résultats,
 #     aux trois échelles, pour amorcer l'indexation
 #   · 16_bio.py        retenait le fichier des cheptels au lieu de celui
