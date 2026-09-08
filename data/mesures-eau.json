@@ -1,6 +1,6 @@
 {
- "genere_le": "2026-09-04",
- "version": 3,
+ "genere_le": "2026-09-08",
+ "version": 4,
  "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
  "licence": "Licence Ouverte 2.0",
  "frequence": "mensuelle",
@@ -314,6 +314,19 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
+       "titre": "AUBERIVES PLAINE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038003836",
+        "Secteur desservi": "plaine",
+        "Dernier prélèvement": "25/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
        "titre": "AUBERIVES BOURG",
        "etat": [
         "Conforme",
@@ -337,19 +350,6 @@
         "Secteur desservi": "hs",
         "Dernier prélèvement": "21/05/2026",
         "Analyses réalisées": 30
-       }
-      },
-      {
-       "titre": "AUBERIVES PLAINE",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038003836",
-        "Secteur desservi": "plaine",
-        "Dernier prélèvement": "25/06/2026",
-        "Analyses réalisées": 4
        }
       }
      ],
@@ -503,6 +503,20 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
+       "titre": "BEAULIEU PRINCIPALE",
+       "etat": [
+        "Non conforme",
+        "alerte"
+       ],
+       "details": {
+        "Code réseau": "038002016",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "17/06/2026",
+        "Analyses réalisées": 4,
+        "Non-conformités sur 12 mois": "17/06/2026 (physico-chimie)"
+       }
+      },
+      {
        "titre": "VINAY BOURG",
        "etat": [
         "Conforme",
@@ -526,20 +540,6 @@
         "Secteur desservi": "blache",
         "Dernier prélèvement": "03/06/2026",
         "Analyses réalisées": 30
-       }
-      },
-      {
-       "titre": "BEAULIEU PRINCIPALE",
-       "etat": [
-        "Non conforme",
-        "alerte"
-       ],
-       "details": {
-        "Code réseau": "038002016",
-        "Secteur desservi": "bourg",
-        "Dernier prélèvement": "17/06/2026",
-        "Analyses réalisées": 4,
-        "Non-conformités sur 12 mois": "17/06/2026 (physico-chimie)"
        }
       }
      ],
@@ -693,19 +693,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "BEAUVOIR BOURG",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038002021",
-        "Secteur desservi": "bourg",
-        "Dernier prélèvement": "12/05/2026",
-        "Analyses réalisées": 30
-       }
-      },
-      {
        "titre": "BEAUVOIR PERDRISE PETIT BOIS",
        "etat": [
         "Conforme",
@@ -716,6 +703,19 @@
         "Secteur desservi": "-",
         "Dernier prélèvement": "25/06/2026",
         "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "BEAUVOIR BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002021",
+        "Secteur desservi": "bourg",
+        "Dernier prélèvement": "12/05/2026",
+        "Analyses réalisées": 30
        }
       }
      ],
@@ -1069,7 +1069,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -2099,7 +2099,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -2714,18 +2714,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "ST BONNET ST ANTOINE",
-       "etat": [
-        "Sans donnée",
-        "neutre"
-       ],
-       "details": {
-        "Code réseau": "038001534",
-        "Secteur desservi": "les bruyères",
-        "Dernier prélèvement": "aucun sur la période"
-       }
-      },
-      {
        "titre": "MONTAGNE - HAUT ST LATTIER",
        "etat": [
         "Conforme",
@@ -2736,6 +2724,18 @@
         "Secteur desservi": "-",
         "Dernier prélèvement": "16/06/2026",
         "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "ST BONNET ST ANTOINE",
+       "etat": [
+        "Sans donnée",
+        "neutre"
+       ],
+       "details": {
+        "Code réseau": "038001534",
+        "Secteur desservi": "les bruyères",
+        "Dernier prélèvement": "aucun sur la période"
        }
       }
      ],
@@ -2926,7 +2926,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 7,
+     "valeur": 6,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -3407,7 +3407,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 2,
+     "valeur": 1,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -3570,7 +3570,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 15,
+     "valeur": 14,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -3696,19 +3696,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "POLIENAS PRINCIPAL",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038001899",
-        "Secteur desservi": "bourg, le moulin, le puits",
-        "Dernier prélèvement": "03/06/2026",
-        "Analyses réalisées": 400
-       }
-      },
-      {
        "titre": "POLIENAS FONTAINE",
        "etat": [
         "Conforme",
@@ -3719,6 +3706,19 @@
         "Secteur desservi": "roche",
         "Dernier prélèvement": "03/06/2026",
         "Analyses réalisées": 30
+       }
+      },
+      {
+       "titre": "POLIENAS PRINCIPAL",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038001899",
+        "Secteur desservi": "bourg, le moulin, le puits",
+        "Dernier prélèvement": "03/06/2026",
+        "Analyses réalisées": 400
        }
       },
       {
@@ -5039,16 +5039,16 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "ST ANTOINE NORD EST",
+       "titre": "DIONAY",
        "etat": [
         "Conforme",
         "ok"
        ],
        "details": {
-        "Code réseau": "038001533",
-        "Secteur desservi": "nord est",
+        "Code réseau": "038007349",
+        "Secteur desservi": "dionay",
         "Dernier prélèvement": "25/06/2026",
-        "Analyses réalisées": 4
+        "Analyses réalisées": 30
        }
       },
       {
@@ -5065,16 +5065,16 @@
        }
       },
       {
-       "titre": "DIONAY",
+       "titre": "ST ANTOINE NORD EST",
        "etat": [
         "Conforme",
         "ok"
        ],
        "details": {
-        "Code réseau": "038007349",
-        "Secteur desservi": "dionay",
+        "Code réseau": "038001533",
+        "Secteur desservi": "nord est",
         "Dernier prélèvement": "25/06/2026",
-        "Analyses réalisées": 30
+        "Analyses réalisées": 4
        }
       }
      ],
@@ -5554,19 +5554,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "ALBENC ST GERVAIS RESEAU",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038000042",
-        "Secteur desservi": "le port, bourg",
-        "Dernier prélèvement": "01/06/2026",
-        "Analyses réalisées": 30
-       }
-      },
-      {
        "titre": "ST GERVAIS PIERRE MOUTON",
        "etat": [
         "Conforme",
@@ -5577,6 +5564,19 @@
         "Secteur desservi": "pierre mouton",
         "Dernier prélèvement": "29/06/2026",
         "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "ALBENC ST GERVAIS RESEAU",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000042",
+        "Secteur desservi": "le port, bourg",
+        "Dernier prélèvement": "01/06/2026",
+        "Analyses réalisées": 30
        }
       },
       {
@@ -6070,6 +6070,19 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
+       "titre": "ST LATTIER BAUDIERE",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038008563",
+        "Secteur desservi": "-",
+        "Dernier prélèvement": "16/06/2026",
+        "Analyses réalisées": 30
+       }
+      },
+      {
        "titre": "ST LATTIER VILLAGE",
        "etat": [
         "Conforme",
@@ -6092,19 +6105,6 @@
         "Code réseau": "038001565",
         "Secteur desservi": "haut service",
         "Dernier prélèvement": "26/03/2026",
-        "Analyses réalisées": 30
-       }
-      },
-      {
-       "titre": "ST LATTIER BAUDIERE",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038008563",
-        "Secteur desservi": "-",
-        "Dernier prélèvement": "16/06/2026",
         "Analyses réalisées": 30
        }
       }
@@ -6435,15 +6435,16 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "PRESLES RESEAU",
+       "titre": "ST PIERRE DE CHERENNES GUINARDS",
        "etat": [
-        "Sans donnée",
-        "neutre"
+        "Conforme",
+        "ok"
        ],
        "details": {
-        "Code réseau": "038002122",
-        "Secteur desservi": "le Faz",
-        "Dernier prélèvement": "aucun sur la période"
+        "Code réseau": "038003369",
+        "Secteur desservi": "guinards, raillets",
+        "Dernier prélèvement": "12/05/2026",
+        "Analyses réalisées": 30
        }
       },
       {
@@ -6460,16 +6461,15 @@
        }
       },
       {
-       "titre": "ST PIERRE DE CHERENNES GUINARDS",
+       "titre": "PRESLES RESEAU",
        "etat": [
-        "Conforme",
-        "ok"
+        "Sans donnée",
+        "neutre"
        ],
        "details": {
-        "Code réseau": "038003369",
-        "Secteur desservi": "guinards, raillets",
-        "Dernier prélèvement": "12/05/2026",
-        "Analyses réalisées": 30
+        "Code réseau": "038002122",
+        "Secteur desservi": "le Faz",
+        "Dernier prélèvement": "aucun sur la période"
        }
       }
      ],
@@ -7289,19 +7289,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "CHATTE ET SONE NORD",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038000476",
-        "Secteur desservi": "la Sône nord - Epînasse",
-        "Dernier prélèvement": "06/11/2025",
-        "Analyses réalisées": 21
-       }
-      },
-      {
        "titre": "LA SONE BOURG",
        "etat": [
         "Non conforme",
@@ -7313,6 +7300,19 @@
         "Dernier prélèvement": "25/06/2026",
         "Analyses réalisées": 4,
         "Non-conformités sur 12 mois": "25/06/2026 (physico-chimie)"
+       }
+      },
+      {
+       "titre": "CHATTE ET SONE NORD",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038000476",
+        "Secteur desservi": "la Sône nord - Epînasse",
+        "Dernier prélèvement": "06/11/2025",
+        "Analyses réalisées": 21
        }
       }
      ],
@@ -7466,19 +7466,6 @@
      "titre": "Réseaux d'eau potable desservant la commune",
      "items": [
       {
-       "titre": "TECHE BOURG",
-       "etat": [
-        "Conforme",
-        "ok"
-       ],
-       "details": {
-        "Code réseau": "038002175",
-        "Secteur desservi": "bourg",
-        "Dernier prélèvement": "24/06/2026",
-        "Analyses réalisées": 4
-       }
-      },
-      {
        "titre": "SARRELOUP",
        "etat": [
         "Conforme",
@@ -7487,6 +7474,19 @@
        "details": {
         "Code réseau": "038002176",
         "Secteur desservi": "sarreloup",
+        "Dernier prélèvement": "24/06/2026",
+        "Analyses réalisées": 4
+       }
+      },
+      {
+       "titre": "TECHE BOURG",
+       "etat": [
+        "Conforme",
+        "ok"
+       ],
+       "details": {
+        "Code réseau": "038002175",
+        "Secteur desservi": "bourg",
         "Dernier prélèvement": "24/06/2026",
         "Analyses réalisées": 4
        }
@@ -7692,7 +7692,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 7,
+     "valeur": 6,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -8007,15 +8007,15 @@
        }
       },
       {
-       "titre": "BLACHE VINAY BEAULIEU",
+       "titre": "VINAY LES_AYES",
        "etat": [
         "Conforme",
         "ok"
        ],
        "details": {
-        "Code réseau": "038000059",
-        "Secteur desservi": "blache",
-        "Dernier prélèvement": "16/02/2026",
+        "Code réseau": "038007216",
+        "Secteur desservi": "AYES",
+        "Dernier prélèvement": "02/06/2026",
         "Analyses réalisées": 30
        }
       },
@@ -8033,15 +8033,15 @@
        }
       },
       {
-       "titre": "VINAY LES_AYES",
+       "titre": "BLACHE VINAY BEAULIEU",
        "etat": [
         "Conforme",
         "ok"
        ],
        "details": {
-        "Code réseau": "038007216",
-        "Secteur desservi": "AYES",
-        "Dernier prélèvement": "02/06/2026",
+        "Code réseau": "038000059",
+        "Secteur desservi": "blache",
+        "Dernier prélèvement": "16/02/2026",
         "Analyses réalisées": 30
        }
       }

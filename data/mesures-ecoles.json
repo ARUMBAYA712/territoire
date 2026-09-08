@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-04",
+ "genere_le": "2026-09-08",
  "version": 5,
  "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
  "licence": "Licence Ouverte 2.0",
@@ -2691,6 +2691,13 @@
        "categorie": "premier"
       },
       {
+       "nom": "Ecole primaire privée Le Dauphin",
+       "lat": 45.152952,
+       "lon": 5.32381,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
        "nom": "Collège le Savouret",
        "lat": 45.158639,
        "lon": 5.31907,
@@ -2698,9 +2705,9 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole primaire privée Le Dauphin",
-       "lat": 45.152952,
-       "lon": 5.32381,
+       "nom": "Ecole maternelle Le Stade",
+       "lat": 45.15102,
+       "lon": 5.31423,
        "info": "Ecole",
        "categorie": "premier"
       },
@@ -2712,11 +2719,18 @@
        "categorie": "autre"
       },
       {
-       "nom": "Ecole maternelle Le Stade",
-       "lat": 45.15102,
-       "lon": 5.31423,
-       "info": "Ecole",
-       "categorie": "premier"
+       "nom": "Lycée polyvalent La Saulaie",
+       "lat": 45.15765,
+       "lon": 5.31767,
+       "info": "Lycée",
+       "categorie": "second"
+      },
+      {
+       "nom": "Lycée d'enseignement agricole privé Bellevue",
+       "lat": 45.157108,
+       "lon": 5.321999,
+       "info": "Lycée",
+       "categorie": "second"
       },
       {
        "nom": "Ecole maternelle Centre",
@@ -2726,25 +2740,11 @@
        "categorie": "premier"
       },
       {
-       "nom": "Lycée polyvalent La Saulaie",
-       "lat": 45.15765,
-       "lon": 5.31767,
-       "info": "Lycée",
-       "categorie": "second"
-      },
-      {
        "nom": "Ecole primaire La Plaine",
        "lat": 45.148222,
        "lon": 5.319721,
        "info": "Ecole",
        "categorie": "premier"
-      },
-      {
-       "nom": "Lycée d'enseignement agricole privé Bellevue",
-       "lat": 45.157108,
-       "lon": 5.321999,
-       "info": "Lycée",
-       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

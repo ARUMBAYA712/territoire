@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-07",
+ "genere_le": "2026-09-08",
  "version": 1,
  "source": "Répertoire national des élus — ministère de l'Intérieur",
  "licence": "Licence Ouverte 2.0",
@@ -6871,6 +6871,514 @@
       }
      ],
      "note": "Depuis 2015, chaque canton élit un binôme composé d'une femme et d'un homme, pour six ans. Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    }
+   ]
+  },
+  "epci:200070431": {
+   "mesures": {
+    "POL-20": {
+     "valeur": "André Roux",
+     "unite": "",
+     "nom": "Président",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 10,
+     "ancre": "conseil-communautaire",
+     "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-21": {
+     "valeur": 73,
+     "unite": "élus",
+     "nom": "Conseil communautaire",
+     "obtention": "natif",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 20,
+     "ancre": "conseil-communautaire"
+    },
+    "POL-22": {
+     "valeur": 38.4,
+     "unite": "%",
+     "nom": "Part de femmes au conseil",
+     "obtention": "recalculé",
+     "source": "Répertoire national des élus — ministère de l'Intérieur",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "rang": 30,
+     "repere": "28 femmes, 45 hommes",
+     "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "elections",
+     "sous_rubrique": "elus",
+     "id": "conseil-communautaire",
+     "titre": "Conseil communautaire",
+     "items": [
+      {
+       "titre": "André Roux",
+       "details": {
+        "Fonction": "4eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Arielle Moulin Laporte",
+       "details": {
+        "Fonction": "9eme vice-président du conseil communautaire",
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Dominique Uni",
+       "details": {
+        "Fonction": "12eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Frédéric De Azevedo",
+       "details": {
+        "Fonction": "Président du conseil communautaire",
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Gaëtan Roux-Bernard",
+       "details": {
+        "Fonction": "8eme vice-président du conseil communautaire",
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Geneviève Moreau-Glénat",
+       "details": {
+        "Fonction": "3eme vice-président du conseil communautaire",
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Imen De Smedt",
+       "details": {
+        "Fonction": "1er vice-président du conseil communautaire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Claude Darlet",
+       "details": {
+        "Fonction": "6eme vice-président du conseil communautaire",
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Lionel Argoud",
+       "details": {
+        "Fonction": "11eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Maryline Longis",
+       "details": {
+        "Fonction": "7eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nicole Di Maria",
+       "details": {
+        "Fonction": "5eme vice-président du conseil communautaire",
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Rosaire",
+       "details": {
+        "Fonction": "2eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvain Belle",
+       "details": {
+        "Fonction": "10eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Yvan Creach",
+       "details": {
+        "Fonction": "13eme vice-président du conseil communautaire",
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aimée Batteux",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Albert Buisson",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Aline Vuillod",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Anne Tournier",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Anthony Astruc",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Benjamin Armand",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Bernard Pons",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Béatrice Genin",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Christelle Landefort",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Corinne Mandier",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Cyril Peraldo",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Delphine Reymond-Alloncle",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Denis Chevallier",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Cheneau",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Didier Corvey-Biron",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Eric Chalancon",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Florian Parra Oviedo",
+       "details": {
+        "Mandat depuis le": "30/03/2026"
+       }
+      },
+      {
+       "titre": "Franck Doriol",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Franck Rousset",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Franck Schurrle",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Gaël Porrot",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Geoffrey Girard",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Guy Chevallier",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Hubert Lagier",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Isabelle Gauvin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Isalia Petmezakis",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Jacques Braisaz-Latille",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jacques Lascoumes",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Louis Abert",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Philippe Goron",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Pierre Favetto",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Yves Balestas",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Jean-Yves Tizot",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Karine Tribbia",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Lauriane Albertin",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Hélène Ballouhey",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Jeanne Dabadie",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Marie-Laure Butez",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Michel Ramos",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Nadine Ghaoui",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Natacha Petter",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Panarin",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Tanchon",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Nathalie Viaud",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Nicolas Bossu-Picat",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Noëlle Thaon",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Olivier Dutel",
+       "details": {
+        "Mandat depuis le": "21/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Charbonnel",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Philippe Roux-Bernard",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Raymond Payen",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Raymond Rolland",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Renaud Melinon",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Stéphane Villard",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Sylvain Dherbassy",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Vanessa Savigny",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "Veronique Todesco",
+       "details": {
+        "Mandat depuis le": "22/03/2026"
+       }
+      },
+      {
+       "titre": "Vincent Dumas",
+       "details": {
+        "Mandat depuis le": "15/03/2026"
+       }
+      },
+      {
+       "titre": "William Thumy",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      },
+      {
+       "titre": "Yannick Brun-Cosme-Bruny",
+       "details": {
+        "Mandat depuis le": "20/03/2026"
+       }
+      }
+     ],
+     "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     }
    ]
   }

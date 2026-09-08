@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-06",
+ "genere_le": "2026-09-08",
  "version": 1,
  "source": "Hub'Eau — hydrométrie, services de l'État",
  "licence": "Licence Ouverte 2.0",
@@ -23,7 +23,7 @@
      "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
     },
     "EAU-31": {
-     "valeur": 156.5,
+     "valeur": 144.46,
      "unite": "m³/s",
      "nom": "Débit mesuré",
      "obtention": "natif",
@@ -33,7 +33,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "rivieres",
      "rang": 20,
-     "repere": "L'Isère · 04/09/2026 · à 8 km",
+     "repere": "L'Isère · 06/09/2026 · à 8 km",
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -80,15 +80,15 @@
         "Cours d'eau": "L'Isère",
         "Commune": "['SAINT-GERVAIS']",
         "Distance du centre du territoire": "8 km",
-        "Débit": "156.5 m³/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "144.46 m³/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 4993
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 162.44 m³/s sur 404 relevés. Débit actuel à 96 % de cette valeur."
+       "texte": "Médiane des mois comparables : 162.68 m³/s sur 400 relevés. Débit actuel à 89 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -96,15 +96,15 @@
         "Cours d'eau": "La Vernaisson",
         "Commune": "['PONT-EN-ROYANS']",
         "Distance du centre du territoire": "13 km",
-        "Débit": "109 L/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "106 L/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 3356
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 308 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
+       "texte": "Médiane des mois comparables : 302 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -112,15 +112,15 @@
         "Cours d'eau": "Le Méaudret",
         "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
         "Distance du centre du territoire": "14 km",
-        "Débit": "42 L/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "37 L/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 3636
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 47 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 41 % de cette valeur."
       },
       {
        "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
@@ -161,7 +161,7 @@
      "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
     },
     "EAU-31": {
-     "valeur": 156.5,
+     "valeur": 144.46,
      "unite": "m³/s",
      "nom": "Débit mesuré",
      "obtention": "natif",
@@ -171,7 +171,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "rivieres",
      "rang": 20,
-     "repere": "L'Isère · 04/09/2026 · à 8 km",
+     "repere": "L'Isère · 06/09/2026 · à 8 km",
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -218,15 +218,15 @@
         "Cours d'eau": "L'Isère",
         "Commune": "['SAINT-GERVAIS']",
         "Distance du centre du territoire": "8 km",
-        "Débit": "156.5 m³/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "144.46 m³/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 4993
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 162.44 m³/s sur 404 relevés. Débit actuel à 96 % de cette valeur."
+       "texte": "Médiane des mois comparables : 162.68 m³/s sur 400 relevés. Débit actuel à 89 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -234,15 +234,15 @@
         "Cours d'eau": "La Vernaisson",
         "Commune": "['PONT-EN-ROYANS']",
         "Distance du centre du territoire": "13 km",
-        "Débit": "109 L/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "106 L/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 3356
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 308 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
+       "texte": "Médiane des mois comparables : 302 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -250,15 +250,15 @@
         "Cours d'eau": "Le Méaudret",
         "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
         "Distance du centre du territoire": "14 km",
-        "Débit": "42 L/s",
-        "Dernière mesure": "04/09/2026",
+        "Débit": "37 L/s",
+        "Dernière mesure": "06/09/2026",
         "Mesures sur 5 ans": 3636
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 47 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 41 % de cette valeur."
       },
       {
        "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",

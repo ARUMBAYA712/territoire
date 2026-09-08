@@ -43,7 +43,7 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
-VERSION_SCRIPT = 1
+VERSION_SCRIPT = 2
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -81,8 +81,10 @@ MANDATS = [
 CHAMPS = {
     "code_commune": ["code de la commune", "code commune", "codgeo"],
     "code_canton": ["code du canton", "code canton"],
+    "code_departement": ["code du département", "code du departement",
+                         "code département", "code departement"],
     "code_epci": ["code de l'epci", "code epci", "n° siren de l'epci",
-                  "siren de l'epci"],
+                  "siren de l'epci", "siren"],
     "nom": ["nom de l'élu", "nom de l elu", "nom"],
     "prenom": ["prénom de l'élu", "prenom de l elu", "prénom", "prenom"],
     "sexe": ["code sexe", "sexe"],
@@ -164,18 +166,30 @@ def lecteur(texte):
 
 
 def reconnaitre(colonnes):
-    """Associe chaque rôle à la colonne correspondante."""
+    """Associe chaque rôle à la colonne correspondante.
+
+    Deux précautions apprises à l'usage : une colonne commençant par
+    « date de » ne désigne jamais un libellé — « Date de début de la
+    fonction » n'est pas la fonction — et la correspondance exacte
+    prime sur la correspondance par fragment.
+    """
     trouve = {}
     normalisees = {c: str(c).strip().lower() for c in (colonnes or [])}
+
+    def eligible(propre, role):
+        if role in ("nom", "prenom", "fonction") and propre.startswith("date"):
+            return False
+        return True
+
     for role, fragments in CHAMPS.items():
         for colonne, propre in normalisees.items():
-            if any(propre == f for f in fragments):
+            if propre in fragments and eligible(propre, role):
                 trouve[role] = colonne
                 break
         if role in trouve:
             continue
         for colonne, propre in normalisees.items():
-            if any(f in propre for f in fragments):
+            if any(f in propre for f in fragments) and eligible(propre, role):
                 trouve[role] = colonne
                 break
     return trouve
@@ -204,10 +218,16 @@ def _date_fr(valeur):
     return texte or None
 
 
-def elu_lisible(ligne, colonnes):
-    """Fiche d'un élu, réduite à ce qui est utile au visiteur."""
+def elu_lisible(ligne, colonnes, fonction_implicite=None):
+    """Fiche d'un élu, réduite à ce qui est utile au visiteur.
+
+    Certains fichiers ne portent pas de colonne de fonction — celui des
+    maires, par exemple, où elle va de soi. On la fournit alors.
+    """
     details = {}
     fonction = str(ligne.get(colonnes.get("fonction", ""), "") or "").strip()
+    if not fonction and fonction_implicite:
+        fonction = fonction_implicite
     if fonction:
         details["Fonction"] = fonction.capitalize()
     debut = _date_fr(ligne.get(colonnes.get("debut_mandat", ""), ""))
@@ -265,13 +285,13 @@ def part_de_femmes(lignes, colonnes):
 
 
 def synthetiser_assemblee(lignes, colonnes, libelle, ancre, titre_bloc,
-                          identifiants, note):
+                          identifiants, note, fonction_implicite=None):
     """Indicateurs et bloc d'une assemblée délibérante."""
     if not lignes:
         return None
 
-    items = sorted((elu_lisible(l, colonnes) for l in lignes),
-                   key=rang_fonction)
+    items = sorted((elu_lisible(l, colonnes, fonction_implicite)
+                    for l in lignes), key=rang_fonction)
 
     mesures = {}
     tete = next((i for i in items
@@ -381,6 +401,20 @@ def main():
 
     resultat_communes, resultat_territoires = {}, {}
 
+    # ── maires, lus à part : leur fichier ne porte pas de fonction ──
+    maires_par_commune = {}
+    if "maires" in lots:
+        lecture = lecteur(lots["maires"])
+        colonnes_maires = reconnaitre(lecture.fieldnames)
+        if colonnes_maires.get("code_commune"):
+            for ligne in lecture:
+                code = str(
+                    ligne.get(colonnes_maires["code_commune"], "")).strip()
+                if code in attendues:
+                    maires_par_commune[code] = nom_affiche(
+                        ligne, colonnes_maires)
+        print(f"\n  maires retrouvés : {len(maires_par_commune)}")
+
     # ── conseils municipaux ──
     if "municipaux" in lots:
         lecture = lecteur(lots["municipaux"])
@@ -404,6 +438,14 @@ def main():
                 {"tete": "POL-01", "effectif": "POL-02",
                  "parite": "POL-03", "agregation": "somme"},
                 NOTE_COMMUNE)
+            # Le libellé de fonction manque parfois dans le fichier des
+            # conseillers : le fichier des maires le rétablit.
+            if synthese and "POL-01" not in synthese["mesures"]:
+                nom_maire = maires_par_commune.get(code)
+                if nom_maire:
+                    synthese["mesures"]["POL-01"] = mesure(
+                        nom_maire, "", "Maire", rang=10,
+                        ancre="conseil-municipal")
             if synthese:
                 resultat_communes[code] = synthese
 
@@ -411,12 +453,27 @@ def main():
     if "departementaux" in lots and canton:
         lecture = lecteur(lots["departementaux"])
         colonnes = reconnaitre(lecture.fieldnames)
+
+        # Notre code de canton est national — 3823 — tandis que le
+        # répertoire numérote les cantons à l'intérieur du département :
+        # département 38, canton 23. On rapproche les deux.
         cible = str(canton["code"])
+        departement = cible[:2]
+        local = cible[2:].lstrip("0") or cible[2:]
+        formes = {cible, local, local.zfill(2), local.zfill(3)}
+
         lignes = []
+        cle_canton = colonnes.get("code_canton")
+        cle_dept = colonnes.get("code_departement")
         for ligne in lecture:
-            code = str(ligne.get(colonnes.get("code_canton", ""), "")).strip()
-            if code.lstrip("0") == cible.lstrip("0") or code == cible:
-                lignes.append(ligne)
+            code = str(ligne.get(cle_canton, "") or "").strip()
+            if code not in formes and code.lstrip("0") not in formes:
+                continue
+            if cle_dept:
+                dept = str(ligne.get(cle_dept, "") or "").strip().zfill(2)
+                if dept != departement:
+                    continue
+            lignes.append(ligne)
         synthese = synthetiser_assemblee(
             lignes, colonnes,
             {"tete": "Conseiller départemental",
@@ -434,9 +491,16 @@ def main():
         lecture = lecteur(lots["communautaires"])
         colonnes = reconnaitre(lecture.fieldnames)
         lignes = []
+        # Le fichier ne porte pas toujours le code de l'intercommunalité.
+        # Les conseillers étant rattachés à leur commune d'élection, on
+        # retient ceux des communes membres : le résultat est le même.
+        cle_epci = colonnes.get("code_epci")
+        cle_commune = colonnes.get("code_commune")
         for ligne in lecture:
-            code = str(ligne.get(colonnes.get("code_epci", ""), "")).strip()
-            if code == str(code_epci):
+            if cle_epci and str(ligne.get(cle_epci, "")).strip() == str(code_epci):
+                lignes.append(ligne)
+            elif cle_commune and str(
+                    ligne.get(cle_commune, "")).strip().zfill(5) in attendues:
                 lignes.append(ligne)
         synthese = synthetiser_assemblee(
             lignes, colonnes,
