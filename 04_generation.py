@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 28
+VERSION_SCRIPT = 29
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -167,6 +167,31 @@ MENTIONS = {
     "hebergeur": ("OVH SAS, 2 rue Kellermann, 59100 Roubaix, France — "
                   "ovhcloud.com"),
 }
+# ══════════════════════════════════════════════════════════════════
+# MESURE D'AUDIENCE
+#
+# Identifiant Google Analytics 4. **Vide, rien n'est ajouté au site** :
+# ni script, ni bandeau, et les mentions légales restent celles d'un
+# site sans traceur. C'est le seul interrupteur.
+#
+# Quand il est renseigné, la règle appliquée est stricte : le script de
+# Google n'est PAS chargé tant que le visiteur n'a pas accepté. Un refus,
+# ou l'absence de réponse, ne charge rien du tout. C'est ce que demande
+# l'article 82 de la loi Informatique et Libertés pour un traceur qui
+# n'est pas strictement nécessaire au service.
+#
+# Trois conséquences, assumées :
+#   · le choix du visiteur est conservé dans son navigateur — cette
+#     conservation-là est dispensée de consentement, elle sert à ne pas
+#     lui reposer la question ;
+#   · sans JavaScript, aucun bandeau et aucune mesure : le défaut est le
+#     silence, jamais le suivi ;
+#   · les signaux publicitaires de Google sont désactivés à la
+#     configuration, la mesure se limite à l'audience.
+# ══════════════════════════════════════════════════════════════════
+
+ANALYTICS = "G-ER3H1G7XSP"
+
 TITRE_SITE = "Sud Grésiv'"
 SOUS_TITRE = "Données publiques du territoire"
 
@@ -583,6 +608,30 @@ a.chip:hover,a.chip:focus-visible{background:var(--accent);color:var(--surface);
 footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
+
+/* Bandeau de consentement à la mesure d'audience. Masqué tant que le
+   script ne l'a pas révélé : sans JavaScript, il n'y a ni bandeau ni
+   mesure — le défaut est le silence. */
+.mesure{position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:var(--surface);border-top:2px solid var(--accent);
+  box-shadow:0 -2px 14px rgba(22,33,28,.12)}
+.mesure .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  justify-content:space-between;padding:14px 20px}
+.mesure p{margin:0;font-size:13px;line-height:1.5;color:var(--soft);
+  max-width:62ch}
+.mesure-choix{display:flex;gap:9px;flex-shrink:0}
+.mesure-btn{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  padding:8px 18px;border-radius:3px;border:1px solid var(--line);
+  background:var(--sunken);color:var(--ink)}
+.mesure-btn:hover{border-color:var(--soft)}
+.mesure-btn.oui{background:var(--accent);border-color:var(--accent);
+  color:#fff}
+.mesure-btn.oui:hover{background:#245a3f}
+@media(max-width:640px){
+  .mesure .wrap{padding:12px 16px}
+  .mesure-choix{width:100%}
+  .mesure-btn{flex:1 1 0}
+}
 
 /* Raccourcis sous le titre d'une page d'administration. Les classes
    .hd et .n n'ont pas de style propre : sans cette règle, un lien y
@@ -2360,6 +2409,85 @@ passe ni clé : ceux-ci n'ont leur place ni ici, ni dans le dépôt.</p>
 """
 
 
+MESURE_JS = r"""// Mesure d'audience — chargée seulement après acceptation.
+//
+// Rien de Google n'est demandé tant que le visiteur n'a pas répondu.
+// Son choix est conservé localement pour ne pas le lui redemander ; ce
+// stockage-là est dispensé de consentement puisqu'il ne sert qu'à
+// respecter sa décision.
+(function () {
+  var CLE = "sg-mesure";
+  var ID = "IDENTIFIANT";
+
+  function memoire(action, valeur) {
+    try {
+      if (action === "lire") { return localStorage.getItem(CLE); }
+      localStorage.setItem(CLE, valeur);
+    } catch (e) { return null; }   // navigation privée, stockage refusé
+  }
+
+  function charger() {
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    gtag("js", new Date());
+    // Mesure d'audience seule : aucun signal publicitaire.
+    gtag("config", ID, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+  }
+
+  function repondre(choix) {
+    memoire("ecrire", choix);
+    var b = document.getElementById("mesure-bandeau");
+    if (b) { b.hidden = true; }
+    if (choix === "oui") { charger(); }
+  }
+
+  var choix = memoire("lire");
+  if (choix === "oui") { charger(); }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var bandeau = document.getElementById("mesure-bandeau");
+    if (!bandeau) { return; }
+    if (!choix) { bandeau.hidden = false; }
+    var oui = document.getElementById("mesure-oui");
+    var non = document.getElementById("mesure-non");
+    if (oui) { oui.addEventListener("click", function () { repondre("oui"); }); }
+    if (non) { non.addEventListener("click", function () { repondre("non"); }); }
+
+    // Bouton présent sur les mentions légales : permet de revenir sur
+    // son choix, dans un sens comme dans l'autre.
+    var revenir = document.getElementById("mesure-revenir");
+    if (revenir) {
+      revenir.hidden = false;
+      revenir.addEventListener("click", function () {
+        try { localStorage.removeItem(CLE); } catch (e) {}
+        location.reload();
+      });
+    }
+  });
+})();
+"""
+
+
+BANDEAU_MESURE = """
+<div class="mesure" id="mesure-bandeau" hidden role="region"
+     aria-label="Mesure d'audience"><div class="wrap">
+  <p>Ce site peut mesurer sa fréquentation avec Google Analytics, pour
+  savoir quelles pages sont consultées. Rien n'est chargé tant que vous
+  n'avez pas accepté, et un refus n'enlève rien au contenu.</p>
+  <div class="mesure-choix">
+    <button type="button" id="mesure-non" class="mesure-btn">Refuser</button>
+    <button type="button" id="mesure-oui" class="mesure-btn oui">Accepter</button>
+  </div>
+</div></div>"""
+
+
 JOURNAL_PHP = """<?php
 // Lecture du journal du leurre. Même réserve que pour le reste de cette
 // section : discrétion, pas protection. Protégez le dossier par mot de
@@ -2505,8 +2633,22 @@ mot de passe. Il doit néanmoins rester dans un dépôt privé.</p>
 </html>
 """
 
+def balises_mesure(base, actif=True):
+    """Bandeau de consentement et script de mesure.
+
+    Renvoie deux chaînes vides si aucun identifiant n'est configuré, ou
+    si la page ne doit pas être mesurée — l'espace d'administration, par
+    exemple, qui est privé.
+    """
+    if not ANALYTICS or not actif:
+        return "", ""
+    return (BANDEAU_MESURE,
+            f'<script src="{base}/assets/mesure.js?v={EMPREINTE}"></script>')
+
+
 def page_simple(titre, description, corps, base, canonique,
-                indexable=True, bandeau="", navigation="", recherche=True):
+                indexable=True, bandeau="", navigation="", recherche=True,
+                mesure=True):
     """Gabarit des pages hors territoire : accueil, mentions légales.
 
     « recherche » retire la barre de recherche du bandeau. Elle sert au
@@ -2524,6 +2666,7 @@ def page_simple(titre, description, corps, base, canonique,
     script_recherche = (f'<script>var BASE="{base}";</script>\n'
                         f'<script src="{base}/assets/recherche.js'
                         f'?v={EMPREINTE}"></script>') if recherche else ""
+    bandeau_mesure, script_mesure = balises_mesure(base, mesure)
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -2562,7 +2705,9 @@ def page_simple(titre, description, corps, base, canonique,
   · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
 
+{bandeau_mesure}
 {script_recherche}
+{script_mesure}
 </body>
 </html>
 """
@@ -3103,6 +3248,30 @@ def corps_administration(fiches, protegee):
 
 
 def corps_mentions():
+    # La section n'existe que si la mesure est configurée : un site sans
+    # traceur ne doit pas décrire un traceur qu'il n'a pas.
+    bloc_mesure = """
+    <section class="bloc"><span class="dsp">Mesure d'audience</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Ce site mesure sa fréquentation avec Google
+        Analytics, afin de savoir quelles pages sont consultées. Cette
+        mesure dépose des traceurs sur votre appareil : elle ne
+        s'active donc qu'après votre accord explicite, demandé par un
+        bandeau lors de votre première visite.</p>
+        <p class="bl-texte">Tant que vous n'avez pas accepté, et si vous
+        refusez, <strong>aucun script de Google n'est chargé</strong> et
+        aucune donnée ne lui est transmise. Le refus n'enlève rien au
+        contenu du site. Votre réponse est conservée dans votre
+        navigateur, pour ne pas vous la redemander à chaque page.</p>
+        <p class="bl-texte">Les signaux publicitaires sont désactivés :
+        la mesure se limite à l'audience et ne sert ni au ciblage
+        publicitaire ni au recoupement entre sites.</p>
+        <button type="button" id="mesure-revenir" class="bl-lien" hidden
+          style="cursor:pointer;border:0;background:none;padding:0">
+          Revenir sur mon choix</button>
+      </article></div>
+    </section>""" if ANALYTICS else ""
+
     lignes = []
     for cle, libelle in (("editeur", "Éditeur"), ("statut", "Statut"),
                          ("siret", "SIRET"), ("adresse", "Adresse"),
@@ -3142,17 +3311,18 @@ def corps_mentions():
 
     <section class="bloc"><span class="dsp">Vie privée</span>
       <div class="bl-grille"><article class="bl-item">
-        <p class="bl-texte">Ce site ne dépose aucun traceur, ne demande
-        aucune inscription et ne collecte aucune donnée personnelle lors
-        d'une consultation ordinaire. Seules les tentatives d'accès à
-        l'espace d'administration sont consignées à des fins de sécurité,
-        avec une adresse tronquée de son dernier segment et une
-        conservation limitée à quelques mois. Les
-        fonds de carte sont fournis par la Géoplateforme de l'IGN et les
-        polices de caractères par Google Fonts : la consultation d'une
-        page comportant une carte adresse une requête à ces services.</p>
+        <p class="bl-texte">Ce site ne demande aucune inscription et ne
+        collecte aucune donnée personnelle lors d'une consultation
+        ordinaire. Seules les tentatives d'accès à l'espace
+        d'administration sont consignées à des fins de sécurité, avec une
+        adresse tronquée de son dernier segment et une conservation
+        limitée à quelques mois. Les fonds de carte sont fournis par la
+        Géoplateforme de l'IGN et les polices de caractères par Google
+        Fonts : la consultation d'une page comportant une carte adresse
+        une requête à ces services.</p>
       </article></div>
     </section>
+{bloc_mesure}
 
     <section class="bloc"><span class="dsp">Signaler une erreur</span>
       <div class="bl-grille"><article class="bl-item">
@@ -3504,6 +3674,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
                       if rubrique["id"] else "")
 
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
+    bandeau_mesure, script_mesure = balises_mesure(base)
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -3568,8 +3739,10 @@ def page(d, base, canonique, adresses, fiches, rubrique,
   · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
 
+{bandeau_mesure}
 <script>var BASE="{base}";</script>
 <script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>
+{script_mesure}
 </body>
 </html>
 """
@@ -3607,11 +3780,19 @@ def main():
 
     global EMPREINTE
     EMPREINTE = hashlib.sha1(
-        (CSS + JS).encode("utf-8")).hexdigest()[:8]
+        (CSS + JS + MESURE_JS + ANALYTICS).encode("utf-8")).hexdigest()[:8]
     if garde:
         shutil.move(str(garde), str(cartes))
     (ASSETS / "style.css").write_text(CSS.strip(), encoding="utf-8")
     (ASSETS / "recherche.js").write_text(JS.strip(), encoding="utf-8")
+    if ANALYTICS:
+        (ASSETS / "mesure.js").write_text(
+            MESURE_JS.replace("IDENTIFIANT", ANALYTICS).strip(),
+            encoding="utf-8")
+    elif (ASSETS / "mesure.js").exists():
+        # L'identifiant a été retiré : le script doit disparaître du site,
+        # pas seulement cesser d'être appelé.
+        (ASSETS / "mesure.js").unlink()
 
     # ── premier passage : table des adresses ─────────────────────
     # Le nom porté par un territoire dans ses propres données fait foi.
@@ -3846,7 +4027,7 @@ def main():
                         protection.exists() and (dossier / ".htpasswd").exists()),
                     "..",
                     f"{SITE}/{DOSSIER_ADMIN}/", indexable=False,
-                    recherche=False),
+                    recherche=False, mesure=False),
         encoding="utf-8")
 
     # index de recherche : propre à l'affichage, distinct du contrat v1

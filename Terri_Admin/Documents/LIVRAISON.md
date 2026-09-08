@@ -9,7 +9,7 @@ biologique débloquée, pages d'annonce pour l'indexation.
 
 | Fichier | Version | Nature |
 |---|---|---|
-| `04_generation.py` | 23 → **28** | Mentions, documents, pages d'annonce, administration allégée, page de fraîcheur, rattachements repliables |
+| `04_generation.py` | 23 → **29** | Mentions, documents, pages d'annonce, administration allégée, page de fraîcheur, rattachements repliables |
 | `16_bio.py` | 1 → **3** | Choix du fichier source, puis lecture du code commune |
 | `lancer.py` | mis à jour | Versions attendues et plan de livraison |
 | `.gitignore` | mis à jour | Caches volumineux exclus du dépôt |
@@ -136,6 +136,51 @@ annoncés comme tels.
 
 Ceci consomme l'exigence **EF-17**, ajoutée au cahier des charges, qui
 tempère EF-16 — « n'écrire une page que si elle a du contenu ».
+
+### Mesure d'audience — Google Analytics, après consentement
+
+Identifiant `G-ER3H1G7XSP`, configuré dans `ANALYTICS` en tête de
+`04_generation.py`. **Vide, rien n'est ajouté au site** : ni script, ni
+bandeau, et le fichier `assets/mesure.js` est même supprimé. C'est le
+seul interrupteur.
+
+Le script que Google fournit se colle tel quel dans chaque page et se
+charge immédiatement. **Je ne l'ai pas posé ainsi**, pour trois raisons
+qui tiennent au projet lui-même :
+
+- vos mentions légales affirment que « ce site ne dépose aucun
+  traceur » — la phrase serait devenue fausse sur une page qui vous
+  identifie comme éditeur ;
+- ENF-01 interdit tout traceur en consultation ordinaire, ENF-06 toute
+  requête au chargement hors polices ;
+- GA4 dépose des traceurs qui ne sont pas nécessaires au service : sans
+  recueil du consentement, c'est un manquement à l'article 82 de la loi
+  Informatique et Libertés.
+
+**Ce qui est en place.** Un bandeau discret en bas de page, deux
+boutons, « Refuser » à gauche de « Accepter » — pas de bouton unique ni
+d'acceptation par défaut. Rien de Google n'est chargé tant que le
+visiteur n'a pas répondu, et un refus ne charge rien du tout. Le choix
+est conservé dans le navigateur pour ne pas être redemandé, et se révoque
+depuis les mentions légales, qui décrivent désormais la mesure et
+comportent un bouton « Revenir sur mon choix ».
+
+Sans JavaScript : ni bandeau, ni mesure. Le défaut est le silence.
+
+Les signaux publicitaires de Google sont désactivés à la configuration
+(`allow_google_signals` et `allow_ad_personalization_signals` à faux) :
+la mesure se limite à l'audience, sans ciblage ni recoupement entre
+sites. L'espace d'administration n'est pas mesuré.
+
+**Parcours éprouvé sur un serveur local**, appels réseau observés :
+arrivée — bandeau affiché, zéro appel à Google ; refus — zéro appel, et
+toujours zéro après rechargement ; acceptation — un appel, au bon
+identifiant ; réinitialisation depuis les mentions légales — le bandeau
+revient.
+
+Le cahier des charges passe en version 2.0 : ENF-01 est reformulée,
+ENF-01 b ajoutée, ENF-06 amendée, et l'arbitrage inscrit en section 7
+avec les options écartées.
 
 ### Référencement — trois correctifs
 

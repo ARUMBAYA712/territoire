@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=45367526">
+<link rel="stylesheet" href="../assets/style.css?v=5fe829c4">
 </head>
 <body>
 
@@ -58,15 +58,36 @@
 
     <section class="bloc"><span class="dsp">Vie privée</span>
       <div class="bl-grille"><article class="bl-item">
-        <p class="bl-texte">Ce site ne dépose aucun traceur, ne demande
-        aucune inscription et ne collecte aucune donnée personnelle lors
-        d'une consultation ordinaire. Seules les tentatives d'accès à
-        l'espace d'administration sont consignées à des fins de sécurité,
-        avec une adresse tronquée de son dernier segment et une
-        conservation limitée à quelques mois. Les
-        fonds de carte sont fournis par la Géoplateforme de l'IGN et les
-        polices de caractères par Google Fonts : la consultation d'une
-        page comportant une carte adresse une requête à ces services.</p>
+        <p class="bl-texte">Ce site ne demande aucune inscription et ne
+        collecte aucune donnée personnelle lors d'une consultation
+        ordinaire. Seules les tentatives d'accès à l'espace
+        d'administration sont consignées à des fins de sécurité, avec une
+        adresse tronquée de son dernier segment et une conservation
+        limitée à quelques mois. Les fonds de carte sont fournis par la
+        Géoplateforme de l'IGN et les polices de caractères par Google
+        Fonts : la consultation d'une page comportant une carte adresse
+        une requête à ces services.</p>
+      </article></div>
+    </section>
+
+    <section class="bloc"><span class="dsp">Mesure d'audience</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Ce site mesure sa fréquentation avec Google
+        Analytics, afin de savoir quelles pages sont consultées. Cette
+        mesure dépose des traceurs sur votre appareil : elle ne
+        s'active donc qu'après votre accord explicite, demandé par un
+        bandeau lors de votre première visite.</p>
+        <p class="bl-texte">Tant que vous n'avez pas accepté, et si vous
+        refusez, <strong>aucun script de Google n'est chargé</strong> et
+        aucune donnée ne lui est transmise. Le refus n'enlève rien au
+        contenu du site. Votre réponse est conservée dans votre
+        navigateur, pour ne pas vous la redemander à chaque page.</p>
+        <p class="bl-texte">Les signaux publicitaires sont désactivés :
+        la mesure se limite à l'audience et ne sert ni au ciblage
+        publicitaire ni au recoupement entre sites.</p>
+        <button type="button" id="mesure-revenir" class="bl-lien" hidden
+          style="cursor:pointer;border:0;background:none;padding:0">
+          Revenir sur mon choix</button>
       </article></div>
     </section>
 
@@ -86,7 +107,19 @@
   · <a href="../mentions-legales/">Mentions légales</a>
 </div></footer>
 
+
+<div class="mesure" id="mesure-bandeau" hidden role="region"
+     aria-label="Mesure d'audience"><div class="wrap">
+  <p>Ce site peut mesurer sa fréquentation avec Google Analytics, pour
+  savoir quelles pages sont consultées. Rien n'est chargé tant que vous
+  n'avez pas accepté, et un refus n'enlève rien au contenu.</p>
+  <div class="mesure-choix">
+    <button type="button" id="mesure-non" class="mesure-btn">Refuser</button>
+    <button type="button" id="mesure-oui" class="mesure-btn oui">Accepter</button>
+  </div>
+</div></div>
 <script>var BASE="..";</script>
-<script src="../assets/recherche.js?v=45367526"></script>
+<script src="../assets/recherche.js?v=5fe829c4"></script>
+<script src="../assets/mesure.js?v=5fe829c4"></script>
 </body>
 </html>

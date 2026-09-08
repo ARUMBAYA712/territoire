@@ -5,7 +5,7 @@ Document interne
 
 | | |
 |---|---|
-| Version du document | 1.9 |
+| Version du document | 2.0 |
 | Date | 8 septembre 2026 |
 | Plateforme cible | Site web statique — ordinateur, tablette, téléphone |
 | Adresse | territoire.sudgresiv.com |
@@ -76,6 +76,7 @@ versionné, destiné à être appelé par d'autres sites locaux.
 | Automatisation des mises à jour | GitHub Actions retenu. CRON OVH écarté pour les collecteurs : Python n'est pas disponible sur l'hébergement mutualisé | — |
 | Résultats en direct le soir d'élection | **Décision révisée** : retenu. Motif invoqué : crédibilité du site, non fréquentation. Architecture à concevoir, contrainte légale d'embargo à respecter | — |
 | Amorcer l'indexation avant la donnée | Retenu. Pages d'annonce Carburants et Élections / Résultats, aux trois échelles, portant des faits propres à chaque territoire et s'effaçant à l'arrivée de la donnée | 1.8 |
+| Mesurer l'audience du site | Retenu. Google Analytics, chargé après consentement explicite seulement | 2.0 |
 
 ---
 
@@ -162,12 +163,13 @@ Applicable les soirs de scrutin uniquement. Le reste du temps, la rubrique
 
 | Réf. | Domaine | Exigence |
 |---|---|---|
-| ENF-01 | Confidentialité | Aucun compte, aucun formulaire, aucun traceur, aucune donnée personnelle lors d'une consultation ordinaire. Seules les tentatives d'accès à l'espace d'administration sont consignées, avec une adresse tronquée. |
+| ENF-01 | Confidentialité | Aucun compte, aucun formulaire, aucune donnée personnelle lors d'une consultation ordinaire. Seules les tentatives d'accès à l'espace d'administration sont consignées, avec une adresse tronquée. |
+| ENF-01 b | Mesure d'audience | La mesure de fréquentation par Google Analytics n'est activée qu'après accord explicite du visiteur. Tant qu'il n'a pas répondu, et s'il refuse, aucun script du mesureur n'est chargé et aucune donnée ne lui est transmise. Sans JavaScript, ni bandeau ni mesure : le défaut est le silence. Les signaux publicitaires sont désactivés. Le choix est réversible depuis les mentions légales. |
 | ENF-02 | Publicité | Aucune publicité, aucune mise en avant rémunérée. |
 | ENF-03 | Coût d'exploitation | Aucune API payante, aucune clé, aucun quota facturable. |
 | ENF-04 | Référencement | Contenu écrit dans la page, une adresse par territoire et par rubrique, plan du site, adresses canoniques. |
 | ENF-05 | Dégradation | Sans JavaScript, le contenu, les chiffres et les liens restent accessibles. |
-| ENF-06 | Réactivité | Pages statiques, aucune requête au chargement hors polices ; tuiles à la demande. |
+| ENF-06 | Réactivité | Pages statiques, aucune requête au chargement hors polices et, après accord seulement, du mesureur d'audience ; tuiles à la demande. |
 | ENF-07 | Adaptation aux écrans | Ordinateur, tablette et téléphone ; les tableaux deviennent des listes sur écran étroit. |
 | ENF-08 | Accessibilité | Libellés vocaux sur les cartes et les boutons, navigation au clavier, contrastes conformes. |
 | ENF-09 | Identité visuelle | Contenue dans un fichier de thème unique, remplaçable sans toucher à la structure. |
@@ -275,6 +277,7 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Prix de l'eau | Reporté, voie SISPEA | API Hub'Eau | Arrêt de l'API au 10 septembre 2026 |
 | Résultats en direct | Retenu, sur données publiées après 20 h | Abstention le soir du scrutin | Arbitrage rouvert : être absent le seul soir de forte affluence dessert la crédibilité recherchée |
 | Diffusion du direct | Fichiers de données rafraîchis, page qui interroge la même origine | Régénération complète du site à chaque relève | 250 pages régénérées toutes les dix minutes pour quelques chiffres qui changent |
+| Mesure d'audience | Google Analytics soumis au consentement | Google Analytics sans bandeau ; compteur maison sans cookie ; aucune mesure | Un traceur non nécessaire au service exige le consentement, article 82 de la loi Informatique et Libertés. Le poser sans bandeau rendait fausses les mentions légales du site. Le compteur maison évitait le bandeau mais n'aurait pas donné les analyses attendues |
 | Rubrique décidée, sans donnée | Page d'annonce indexable | Aucune page jusqu'à la donnée, conformément à EF-16 | L'exploration puis l'indexation d'une adresse prennent des semaines : les engager d'avance fait gagner ce délai. Réserve assumée : quarante-sept pages au texte identique sont le schéma que les moteurs déclassent, d'où l'obligation de faits propres à chaque territoire |
 | Prix des carburants sur un site statique | Prix de la dernière génération, horodatage affiché | Interrogation du flux en direct comme dans l'application Carbu | Un site statique ne peut pas interroger une source à l'ouverture ; la différence de nature est dite au visiteur plutôt que masquée |
 

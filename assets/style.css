@@ -393,6 +393,30 @@ footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
 
+/* Bandeau de consentement à la mesure d'audience. Masqué tant que le
+   script ne l'a pas révélé : sans JavaScript, il n'y a ni bandeau ni
+   mesure — le défaut est le silence. */
+.mesure{position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:var(--surface);border-top:2px solid var(--accent);
+  box-shadow:0 -2px 14px rgba(22,33,28,.12)}
+.mesure .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  justify-content:space-between;padding:14px 20px}
+.mesure p{margin:0;font-size:13px;line-height:1.5;color:var(--soft);
+  max-width:62ch}
+.mesure-choix{display:flex;gap:9px;flex-shrink:0}
+.mesure-btn{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  padding:8px 18px;border-radius:3px;border:1px solid var(--line);
+  background:var(--sunken);color:var(--ink)}
+.mesure-btn:hover{border-color:var(--soft)}
+.mesure-btn.oui{background:var(--accent);border-color:var(--accent);
+  color:#fff}
+.mesure-btn.oui:hover{background:#245a3f}
+@media(max-width:640px){
+  .mesure .wrap{padding:12px 16px}
+  .mesure-choix{width:100%}
+  .mesure-btn{flex:1 1 0}
+}
+
 /* Raccourcis sous le titre d'une page d'administration. Les classes
    .hd et .n n'ont pas de style propre : sans cette règle, un lien y
    serait indiscernable du texte, puisque « a » hérite de la couleur
