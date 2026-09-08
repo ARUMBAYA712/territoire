@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-06",
+  "genere_le": "2026-09-08",
   "territoire": {
     "niveau": "commune",
     "code": "38416",
@@ -247,6 +247,48 @@
       "unite_pluriel": "établissements",
       "rang": 40,
       "explication": "Collèges et lycées, second degré. Leur absence sur une commune ne signifie pas que les élèves n'en fréquentent pas : la sectorisation dépasse les limites communales."
+    },
+    "POL-01": {
+      "valeur": "Imen De Smedt",
+      "unite": "",
+      "nom": "Maire",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 10,
+      "ancre": "conseil-municipal",
+      "repere": "En fonction depuis le 22/03/2026"
+    },
+    "POL-02": {
+      "valeur": 29,
+      "unite": "élus",
+      "nom": "Conseil municipal",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 20,
+      "ancre": "conseil-municipal",
+      "agregation": "somme"
+    },
+    "POL-03": {
+      "valeur": 48.3,
+      "unite": "%",
+      "nom": "Part de femmes au conseil",
+      "obtention": "recalculé",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 30,
+      "repere": "14 femmes, 15 hommes",
+      "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
     "POP-20": {
       "valeur": 13.0,
@@ -736,6 +778,13 @@
           "categorie": "premier"
         },
         {
+          "nom": "Ecole primaire privée Le Dauphin",
+          "lat": 45.152952,
+          "lon": 5.32381,
+          "info": "Ecole",
+          "categorie": "premier"
+        },
+        {
           "nom": "Collège le Savouret",
           "lat": 45.158639,
           "lon": 5.31907,
@@ -743,9 +792,9 @@
           "categorie": "second"
         },
         {
-          "nom": "Ecole primaire privée Le Dauphin",
-          "lat": 45.152952,
-          "lon": 5.32381,
+          "nom": "Ecole maternelle Le Stade",
+          "lat": 45.15102,
+          "lon": 5.31423,
           "info": "Ecole",
           "categorie": "premier"
         },
@@ -757,11 +806,18 @@
           "categorie": "autre"
         },
         {
-          "nom": "Ecole maternelle Le Stade",
-          "lat": 45.15102,
-          "lon": 5.31423,
-          "info": "Ecole",
-          "categorie": "premier"
+          "nom": "Lycée polyvalent La Saulaie",
+          "lat": 45.15765,
+          "lon": 5.31767,
+          "info": "Lycée",
+          "categorie": "second"
+        },
+        {
+          "nom": "Lycée d'enseignement agricole privé Bellevue",
+          "lat": 45.157108,
+          "lon": 5.321999,
+          "info": "Lycée",
+          "categorie": "second"
         },
         {
           "nom": "Ecole maternelle Centre",
@@ -771,28 +827,206 @@
           "categorie": "premier"
         },
         {
-          "nom": "Lycée polyvalent La Saulaie",
-          "lat": 45.15765,
-          "lon": 5.31767,
-          "info": "Lycée",
-          "categorie": "second"
-        },
-        {
           "nom": "Ecole primaire La Plaine",
           "lat": 45.148222,
           "lon": 5.319721,
           "info": "Ecole",
           "categorie": "premier"
-        },
-        {
-          "nom": "Lycée d'enseignement agricole privé Bellevue",
-          "lat": 45.157108,
-          "lon": 5.321999,
-          "info": "Lycée",
-          "categorie": "second"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
+    },
+    {
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "id": "conseil-municipal",
+      "titre": "Conseil municipal",
+      "items": [
+        {
+          "titre": "Imen De Smedt",
+          "details": {
+            "Fonction": "Maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Hubert Lagier",
+          "details": {
+            "Fonction": "1er adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Anne Tournier",
+          "details": {
+            "Fonction": "2ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Jean-Michel Revol",
+          "details": {
+            "Fonction": "3ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Celine Perrier",
+          "details": {
+            "Fonction": "4ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Benjamin Armand",
+          "details": {
+            "Fonction": "5ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Veronique Todesco",
+          "details": {
+            "Fonction": "6ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Jean-Yves Balestas",
+          "details": {
+            "Fonction": "7ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Nathalie Viaud",
+          "details": {
+            "Fonction": "8ème adjoint au maire",
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Alexandre Vehier",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "André Jaune",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Anthony Astruc",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Beatrice Leprohon",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Bernard Festivi",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Conceiçao Almeida Verissimo",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Denis Germain",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Ellyne Thaon",
+          "details": {
+            "Mandat depuis le": "28/03/2026"
+          }
+        },
+        {
+          "titre": "Eric Chalancon",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Eric Passarotto",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Gerard Nicoud",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Isabelle Saragaglia",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Jacques Lascoumes",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Jean-Luc Piquer",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Laurence Levyn",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Marie-Hélène Ballouhey",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Noëlle Thaon",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Olivia Jacquot",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Sandra Buisson",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        },
+        {
+          "titre": "Vincent Breton",
+          "details": {
+            "Mandat depuis le": "22/03/2026"
+          }
+        }
+      ],
+      "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     },
     {
       "rubrique": "population",
@@ -1159,7 +1393,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Nappes de Chambaran",
+            "Zone d'alerte": "Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -1209,7 +1443,7 @@
           }
         }
       ],
-      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }

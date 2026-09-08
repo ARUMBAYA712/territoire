@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-06",
+  "genere_le": "2026-09-08",
   "territoire": {
     "niveau": "commune",
     "code": "38523",
@@ -233,6 +233,48 @@
       "unite_pluriel": "écoles",
       "rang": 30,
       "explication": "Nombre d'écoles maternelles et élémentaires, premier degré."
+    },
+    "POL-01": {
+      "valeur": "Denis Chevallier",
+      "unite": "",
+      "nom": "Maire",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 10,
+      "ancre": "conseil-municipal",
+      "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+      "valeur": 15,
+      "unite": "élus",
+      "nom": "Conseil municipal",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 20,
+      "ancre": "conseil-municipal",
+      "agregation": "somme"
+    },
+    "POL-03": {
+      "valeur": 46.7,
+      "unite": "%",
+      "nom": "Part de femmes au conseil",
+      "obtention": "recalculé",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 30,
+      "repere": "7 femmes, 8 hommes",
+      "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
     "POP-20": {
       "valeur": 19.1,
@@ -586,6 +628,110 @@
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
     },
     {
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "id": "conseil-municipal",
+      "titre": "Conseil municipal",
+      "items": [
+        {
+          "titre": "Denis Chevallier",
+          "details": {
+            "Fonction": "Maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Jocelyne Cotte",
+          "details": {
+            "Fonction": "1er adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Christian Ferrouillat",
+          "details": {
+            "Fonction": "2ème adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Sandrine Margaillan",
+          "details": {
+            "Fonction": "3ème adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Cedric Veyret",
+          "details": {
+            "Fonction": "4ème adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Delphine Tulasne",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Emeline David",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Emmanuel Nicoud",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Lionel Avit",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Marie-Anne Vion",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Robert Marchand",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Sebastien Callet",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Steve Maillet",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Sylvie Lambert",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Veronique Germain",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        }
+      ],
+      "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -842,7 +988,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Nappes de Chambaran",
+            "Zone d'alerte": "Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -892,7 +1038,7 @@
           }
         }
       ],
-      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }

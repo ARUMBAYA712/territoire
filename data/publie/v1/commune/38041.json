@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-06",
+  "genere_le": "2026-09-08",
   "territoire": {
     "niveau": "commune",
     "code": "38041",
@@ -188,6 +188,48 @@
       "rang": 80,
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
+    },
+    "POL-01": {
+      "valeur": "Sylvain Dherbassy",
+      "unite": "",
+      "nom": "Maire",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 10,
+      "ancre": "conseil-municipal",
+      "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+      "valeur": 11,
+      "unite": "élus",
+      "nom": "Conseil municipal",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 20,
+      "ancre": "conseil-municipal",
+      "agregation": "somme"
+    },
+    "POL-03": {
+      "valeur": 45.5,
+      "unite": "%",
+      "nom": "Part de femmes au conseil",
+      "obtention": "recalculé",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 30,
+      "repere": "5 femmes, 6 hommes",
+      "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
     "POP-20": {
       "valeur": 16.2,
@@ -456,6 +498,84 @@
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 25/03/2026."
     },
     {
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "id": "conseil-municipal",
+      "titre": "Conseil municipal",
+      "items": [
+        {
+          "titre": "Sylvain Dherbassy",
+          "details": {
+            "Fonction": "Maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Josette Rimet Meille",
+          "details": {
+            "Fonction": "1er adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Jean-Michel Toucher",
+          "details": {
+            "Fonction": "2ème adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Aimé Lambert",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "André Mounier-Vehier",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Brigitte Favre-Giraud",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Christine Cauchard",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Léa Charamel",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Olga Grillot",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Serge Rabedon",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Sébastien Montel",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        }
+      ],
+      "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -654,7 +774,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Nappes de Chambaran",
+            "Zone d'alerte": "Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -704,7 +824,7 @@
           }
         }
       ],
-      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }

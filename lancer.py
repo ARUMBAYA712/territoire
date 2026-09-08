@@ -13,6 +13,10 @@ Utilisation :
     python lancer.py --tout       séquence entière, en recollectant tout
     python lancer.py --collecte   collecteurs, puis agrégation et site
     python lancer.py --site       régénère le site sans rien collecter
+    python lancer.py --quotidien      sources qui changent chaque jour
+    python lancer.py --hebdomadaire   sources qui changent chaque semaine
+    python lancer.py --mensuel        sources qui changent chaque mois
+    python lancer.py --trimestriel    sources lentes et gros fichiers
     python lancer.py --initial    remise à niveau après installation, une fois
     python lancer.py --liste      affiche ce qui serait lancé, sans le lancer
     python lancer.py --forcer     passe outre un contrôle de version
@@ -41,12 +45,12 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 22,
+    "04_generation.py": 24,
     "12_rivieres.py": 5,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
     "15_elus.py": 2,
-    "16_bio.py": 1,
+    "16_bio.py": 2,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -100,7 +104,19 @@ def controler_versions():
 # « python lancer.py » sans option : le strict nécessaire pour que les
 # corrections livrées prennent effet.
 #
-# Livraison cumulée — en attente d'installation
+# Livraison du 8 septembre 2026 — mentions, documentation, bio, annonces
+#   · 04_generation.py  pages d'annonce Carburants et Élections/Résultats,
+#     aux trois échelles, pour amorcer l'indexation
+#   · 16_bio.py        retenait le fichier des cheptels au lieu de celui
+#     des surfaces ; le choix est désormais explicite et le cache porte
+#     l'empreinte du fichier retenu
+#   · 04_generation.py  MENTIONS renseignées : la page /mentions-legales/
+#     est désormais produite ; nouvelle page Terri_Admin/documents.php,
+#     qui liste et affiche le sous-dossier Documents/
+#
+#   Rien à faire d'autre que « python lancer.py --site ».
+#
+# Livraison précédente — en attente d'installation
 #   · 13_hivernal.py   équipements hivernaux, référentiel saisi à la main
 #   · 14_vigilance.py  vigilance météo — nécessite une clé Météo-France
 #   · 15_elus.py       élus locaux, commune / canton / intercommunalité
@@ -181,6 +197,60 @@ PUBLICATION = [
 
 COMPLET = REFERENTIEL + COLLECTEURS + PUBLICATION
 
+# ══════════════════════════════════════════════════════════════════
+# PLANS PÉRIODIQUES
+#
+# Ce sont eux qu'appellent les tâches planifiées de GitHub Actions.
+# L'ordre reste défini ici, et nulle part ailleurs : un fichier de
+# tâche planifiée qui énumérerait lui-même les scripts finirait par
+# diverger de ce lanceur sans que personne ne le voie.
+#
+# Chaque plan se termine par l'agrégation puis la génération, sans
+# quoi la collecte ne serait pas publiée.
+#
+# 05_cartes.py n'y figure pas : les contours ne changent qu'au
+# remaniement d'un périmètre, et leur cache pèse lourd. Après une
+# modification du périmètre, lancer une séquence complète à la main.
+# ══════════════════════════════════════════════════════════════════
+
+QUOTIDIEN = [
+    ("07_vigieau.py", []),        # restrictions sécheresse, arrêtés quotidiens
+    ("14_vigilance.py", []),      # vigilance météo, plusieurs fois par jour
+]
+
+HEBDOMADAIRE = [
+    ("09_nappes.py", []),         # relevés piézométriques hebdomadaires
+    ("12_rivieres.py", []),       # débits journaliers, lissés sur la semaine
+]
+
+# Sources interrogées par API, sans fichier volumineux : une exécution
+# légère, qui peut passer tous les mois sans rien coûter.
+MENSUEL = [
+    ("06_eau.py", []),            # contrôle sanitaire, publication mensuelle
+    ("08_georisques.py", []),     # arrêtés de catastrophe naturelle
+    ("10_ecoles.py", []),
+    ("13_hivernal.py", []),       # surveille surtout la péremption de l'arrêté
+]
+
+# Sources lentes, et surtout gros fichiers : 198 Mo pour l'INSEE, 78 Mo
+# pour le répertoire des élus, 41 Mo pour l'Agence Bio. Les télécharger
+# tous les mois n'aurait aucun sens — la population est annuelle, les
+# élus trimestriels, le bio annuel. GitHub supprime par ailleurs un
+# cache inutilisé depuis sept jours : entre deux exécutions espacées,
+# il n'y a rien à conserver.
+TRIMESTRIEL = [
+    ("01_referentiel.py", []),    # fusions de communes, populations légales
+    ("02_canton.py", []),
+    ("11_population.py", []),
+    ("15_elus.py", []),
+    ("16_bio.py", []),
+]
+
+PUBLIER = [
+    ("03_agregation.py", []),
+    ("04_generation.py", []),
+]
+
 
 def avec_option(etapes, option):
     """Ajoute une option aux seuls scripts qui la comprennent."""
@@ -195,6 +265,10 @@ PLANS = {
                REFERENTIEL + avec_option(COLLECTEURS, "--tout") + PUBLICATION),
     "--collecte": ("collecte puis publication", COLLECTEURS + PUBLICATION),
     "--site": ("régénération du site seul", PUBLICATION),
+    "--quotidien": ("sources quotidiennes", QUOTIDIEN + PUBLIER),
+    "--hebdomadaire": ("sources hebdomadaires", HEBDOMADAIRE + PUBLIER),
+    "--mensuel": ("sources mensuelles", MENSUEL + PUBLIER),
+    "--trimestriel": ("sources lentes et gros fichiers", TRIMESTRIEL + PUBLIER),
 }
 
 

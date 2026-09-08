@@ -30,13 +30,15 @@ Produit :
     data/mesures-bio.json   repris par 03_agregation.py
 
 Utilisation :
-    python 16_bio.py                collecte
-    python 16_bio.py --ressources   liste les fichiers publiés
-    python 16_bio.py --colonnes     affiche les colonnes reconnues
-    python 16_bio.py --tout         force un nouveau téléchargement
+    python 16_bio.py                    collecte
+    python 16_bio.py --ressources       liste les fichiers publiés
+    python 16_bio.py --colonnes         affiche les colonnes reconnues
+    python 16_bio.py --fichier surfaces retient un autre fichier du jeu
+    python 16_bio.py --tout             force un nouveau téléchargement
 """
 
 import csv
+import hashlib
 import io
 import json
 import re
@@ -46,12 +48,23 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
-VERSION_SCRIPT = 1
+VERSION_SCRIPT = 2
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
 SORTIE = DONNEES / "mesures-bio.json"
-CACHE = DONNEES / "cache-bio.csv"
+
+
+def cache_de(url):
+    """Fichier de cache propre au fichier retenu.
+
+    Un cache unique faisait relire l'ancien fichier après un changement
+    de source : le jeu de données en publie cinq, et l'un d'eux avait
+    été téléchargé par erreur. Le nom porte donc l'empreinte de
+    l'adresse. Un « cache-bio.csv » hérité d'une version antérieure
+    n'est plus lu : il peut être supprimé.
+    """
+    return DONNEES / f"cache-bio-{hashlib.md5(url.encode()).hexdigest()[:8]}.csv"
 
 DATAGOUV = "https://www.data.gouv.fr/api/1/datasets/"
 JEU = "surfaces-cheptels-et-nombre-doperateurs-bio-a-la-commune"
@@ -99,14 +112,43 @@ def ressources_du_jeu():
     return contenu.get("resources", [])
 
 
-def choisir(ressources):
-    """Fichier communal le plus récent, au format tabulaire."""
-    candidates = [r for r in ressources
-                  if str(r.get("format") or "").lower() in ("csv", "txt")
-                  and "commune" in str(r.get("title") or "").lower()]
-    if not candidates:
-        candidates = [r for r in ressources
-                      if str(r.get("format") or "").lower() in ("csv", "txt")]
+# Le jeu de données publie cinq fichiers communaux, dont un seul porte
+# les surfaces sous une forme exploitable ici :
+#
+#   surfaces et cheptels ....... xlsx, 146 Mo, deux sujets mêlés
+#   cheptels ................... effectifs animaux
+#   opérateurs ................. nombre d'exploitations
+#   surfaces ................... CELUI-CI, 41 Mo
+#   surfaces de production ..... 465 Mo, détail par production
+#
+# Retenir « le titre au millésime le plus élevé » ne suffisait pas :
+# tous portent une plage d'années, et les cheptels l'emportaient. Le
+# script a ainsi téléchargé 47 Mo du mauvais fichier avant de bloquer,
+# faute d'y trouver un code commune. On exige donc « surface » dans le
+# titre et on écarte explicitement les trois autres sujets.
+EXIGES = ["surface"]
+ECARTES = ["cheptel", "production", "opérateur", "operateur"]
+
+
+def choisir(ressources, fragment=None):
+    """Fichier des surfaces communales, au format tabulaire.
+
+    « fragment » force un autre fichier du jeu, par un morceau de son
+    titre : utile le jour où l'Agence Bio renomme ou scinde ses
+    publications, sans avoir à modifier ce script.
+    """
+    def titre(r):
+        return str(r.get("title") or "").lower()
+
+    tabulaires = [r for r in ressources
+                  if str(r.get("format") or "").lower() in ("csv", "txt")]
+    if fragment:
+        vises = [r for r in tabulaires if fragment.lower() in titre(r)]
+        return vises[0] if vises else None
+
+    candidates = [r for r in tabulaires
+                  if all(m in titre(r) for m in EXIGES)
+                  and not any(m in titre(r) for m in ECARTES)]
     if not candidates:
         return None
 
@@ -114,16 +156,23 @@ def choisir(ressources):
         annees = re.findall(r"20\d{2}", str(r.get("title") or ""))
         return max((int(a) for a in annees), default=0)
 
-    return max(candidates, key=millesime)
+    # Le plus récent ; à millésime égal, le plus léger — un fichier
+    # nettement plus volumineux porte un autre niveau de détail.
+    return max(candidates,
+               key=lambda r: (millesime(r), -(r.get("filesize") or 0)))
 
 
 def telecharger(ressource):
     DONNEES.mkdir(exist_ok=True)
-    if CACHE.exists() and "--tout" not in sys.argv:
-        return CACHE.read_text(encoding="utf-8")
+    url = ressource.get("url")
+    cache = cache_de(url)
+    if cache.exists() and "--tout" not in sys.argv:
+        print(f"    déjà en cache : {cache.name} "
+              f"({cache.stat().st_size / 1048576:.0f} Mo)")
+        return cache.read_text(encoding="utf-8")
     print("    téléchargement…", end=" ", flush=True)
     try:
-        brut = lire(ressource.get("url"), binaire=True)
+        brut = lire(url, binaire=True)
     except (urllib.error.URLError, OSError) as e:
         print(f"échec : {e}")
         return None
@@ -135,8 +184,8 @@ def telecharger(ressource):
             continue
     else:
         texte = brut.decode("utf-8", errors="replace")
-    CACHE.write_text(texte, encoding="utf-8")
-    print(f"{len(brut) / 1024:.0f} Ko")
+    cache.write_text(texte, encoding="utf-8")
+    print(f"{len(brut) / 1048576:.0f} Mo")
     return texte
 
 
@@ -324,12 +373,30 @@ def main():
         print()
         return
 
-    ressource = choisir(ressources)
+    fragment = None
+    if "--fichier" in sys.argv:
+        i = sys.argv.index("--fichier")
+        if i + 1 >= len(sys.argv) or sys.argv[i + 1].startswith("--"):
+            print("\n  Précisez un fragment de titre : "
+                  "python 16_bio.py --fichier surfaces\n")
+            sys.exit(1)
+        fragment = sys.argv[i + 1]
+
+    ressource = choisir(ressources, fragment)
     if not ressource:
-        print("\n[BLOCAGE] Aucun fichier communal trouvé.")
-        print("  Lancez --ressources pour voir ce qui est publié.\n")
+        print("\n[BLOCAGE] Aucun fichier de surfaces communales trouvé.")
+        print("  Titres publiés :")
+        for r in ressources:
+            print(f"    · {str(r.get('title'))[:66]}  [{r.get('format')}]")
+        print("\n  Retenez-en un : python 16_bio.py --fichier <fragment>\n")
         sys.exit(1)
-    print(f"  Fichier : {str(ressource.get('title'))[:52]}")
+
+    # Le titre est affiché en entier : c'est en le voyant tronqué qu'un
+    # fichier de cheptels est passé pour un fichier de surfaces.
+    taille = ressource.get("filesize")
+    print(f"  Fichier retenu : {ressource.get('title')}")
+    print(f"  Format {ressource.get('format')}"
+          + (f", {taille / 1048576:.0f} Mo" if taille else ""))
 
     texte = telecharger(ressource)
     if not texte:
@@ -347,15 +414,20 @@ def main():
               f"{len(colonnes['cultures'])} groupe(s)")
         for code, colonne in colonnes["cultures"].items():
             print(f"      {code:<4} {CULTURES[code][:34]:<36} {colonne}")
-        if not colonnes.get("code"):
-            print(f"\n    [BLOCAGE] colonnes du fichier : "
-                  f"{(lecture.fieldnames or [])[:12]}")
+        print("\n    ── toutes les colonnes du fichier ──")
+        for i, nom in enumerate(lecture.fieldnames or [], start=1):
+            print(f"    {i:>3}. {nom}")
         print()
         return
 
     if not colonnes.get("code"):
         print("\n[BLOCAGE] Colonne de code commune introuvable.")
-        print("  Lancez --colonnes pour voir le fichier.\n")
+        print("  Colonnes du fichier :")
+        for nom in (lecture.fieldnames or [])[:40]:
+            print(f"    · {nom}")
+        print("\n  Ce fichier n'est probablement pas celui des surfaces "
+              "communales.")
+        print("  Vérifiez : python 16_bio.py --ressources\n")
         sys.exit(1)
 
     communes = json.loads(REFERENTIEL.read_text(encoding="utf-8"))["communes"]

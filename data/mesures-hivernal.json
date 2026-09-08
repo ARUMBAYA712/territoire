@@ -5,8 +5,147 @@
  "licence": "Licence Ouverte 2.0",
  "frequence": "annuelle",
  "texte": "Arrêté préfectoral du 12 janvier 2026",
- "saisi_le": "2026-09-07",
+ "saisi_le": "2026-09-08",
  "valable_jusqu_au": "2026-10-31",
  "saisie_complete": false,
- "communes": {}
+ "communes": {
+  "38117": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+    }
+   ]
+  }
+ }
 }

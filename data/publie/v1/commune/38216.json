@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-06",
+  "genere_le": "2026-09-08",
   "territoire": {
     "niveau": "commune",
     "code": "38216",
@@ -188,6 +188,48 @@
       "rang": 80,
       "explication": "Résiduel du traitement de désinfection, qui protège l'eau jusqu'au robinet. C'est lui que l'on sent parfois au goût ou à l'odeur.",
       "repere": "Aucune limite sanitaire · le goût devient perceptible vers 0,3 mg/L"
+    },
+    "POL-01": {
+      "valeur": "Jacques Braisaz-Latille",
+      "unite": "",
+      "nom": "Maire",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 10,
+      "ancre": "conseil-municipal",
+      "repere": "En fonction depuis le 15/03/2026"
+    },
+    "POL-02": {
+      "valeur": 7,
+      "unite": "élus",
+      "nom": "Conseil municipal",
+      "obtention": "natif",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 20,
+      "ancre": "conseil-municipal",
+      "agregation": "somme"
+    },
+    "POL-03": {
+      "valeur": 57.1,
+      "unite": "%",
+      "nom": "Part de femmes au conseil",
+      "obtention": "recalculé",
+      "source": "Répertoire national des élus — ministère de l'Intérieur",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "rang": 30,
+      "repere": "4 femmes, 3 hommes",
+      "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
     "POP-20": {
       "valeur": 21.8,
@@ -456,6 +498,59 @@
       "note": "Un réseau de distribution dessert souvent plusieurs communes, et une commune peut être alimentée par plusieurs réseaux : ces informations ne sont pas transposables au canton ni à l'intercommunalité. Une non-conformité ponctuelle est le plus souvent transitoire et suivie de mesures correctives ; elle ne signifie pas que l'eau est impropre en permanence. Pour toute question sanitaire, l'agence régionale de santé et votre distributeur d'eau font référence. Dernier contrôle pris en compte : 01/06/2026."
     },
     {
+      "rubrique": "elections",
+      "sous_rubrique": "elus",
+      "id": "conseil-municipal",
+      "titre": "Conseil municipal",
+      "items": [
+        {
+          "titre": "Jacques Braisaz-Latille",
+          "details": {
+            "Fonction": "Maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Laurent Perez",
+          "details": {
+            "Fonction": "1er adjoint au maire",
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Julien Bayot",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Laurentine Froger",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Lucie Steulet",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Magali Brun",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        },
+        {
+          "titre": "Manon Dory",
+          "details": {
+            "Mandat depuis le": "15/03/2026"
+          }
+        }
+      ],
+      "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -689,7 +784,7 @@
           }
         }
       ],
-      "note": "Situation au 04/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ]
 }

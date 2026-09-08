@@ -3,17 +3,17 @@
  "texte": "Arrêté préfectoral du 12 janvier 2026",
  "autorite": "Préfecture de l'Isère",
  "lien": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
- "saisi_le": "2026-09-07",
+ "saisi_le": "2026-09-08",
  "valable_jusqu_au": "2026-10-31",
  "saisie_complete": false,
  "communes": {
-  "38131": {
+  "Cognin-les-Gorges": {
    "portee": "totale"
   },
-  "38424": {
+  "Saint-Gervais": {
    "portee": "totale"
   },
-  "38343": {
+  "Rovon": {
    "portee": "totale"
   }
  }

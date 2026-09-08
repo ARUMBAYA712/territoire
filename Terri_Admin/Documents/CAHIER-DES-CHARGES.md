@@ -5,8 +5,8 @@ Document interne
 
 | | |
 |---|---|
-| Version du document | 1.6 |
-| Date | Septembre 2026 |
+| Version du document | 1.7 |
+| Date | 8 septembre 2026 |
 | Plateforme cible | Site web statique — ordinateur, tablette, téléphone |
 | Adresse | territoire.sudgresiv.com |
 | Intégration | Sous-ensemble du site sudgresiv.com, à regrouper après les carburants et les élections |
@@ -310,7 +310,7 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 
 | Priorité | Tâche | Nature |
 |---|---|---|
-| Bloquant | Mentions légales et page de contact | Obligation d'identification de l'éditeur |
+| Fait | Mentions légales | Renseignées le 8 septembre 2026 ; page `/mentions-legales/` produite |
 | Bloquant | Vérifier le lien vers le rapport Géorisques | Adresse supposée, jamais éprouvée |
 | Élevée | Donner un contenu propre à l'accueil | Aujourd'hui identique à la fiche du canton |
 | Élevée | Mettre en place GitHub Actions | Prérequis des carburants |
@@ -321,7 +321,7 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Moyenne | Éprouver la chaîne du direct hors période électorale | Un premier essai en conditions réelles ne doit pas avoir lieu un soir de scrutin |
 | Faible | Logo et identité typographique | Le nom doit rester du texte, non une image |
 | À planifier | Regroupement avec sudgresiv.com | Après carburants et élections ; conditionne l'arborescence et le thème |
-| À planifier | Documentation copiée dans un sous-dossier de `/Terri_Admin/` | Doit être exclue de l'indexation et de la recherche interne ; contient des informations internes, donc à protéger par mot de passe plutôt que par la seule discrétion |
+| Fait | Documentation consultable dans `/Terri_Admin/Documents/` | Page `documents.php` : lecture seule, extensions filtrées, hors indexation, derrière le mot de passe du dossier parent |
 
 ---
 

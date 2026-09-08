@@ -14,6 +14,13 @@ data/cache-population.csv
 data/contours.json
 data/*.zip
 
+# Caches de collecte volumineux, retéléchargeables. Sans ces lignes,
+# le dépôt recevrait 78 Mo de fichiers du répertoire des élus et 47 Mo
+# de l'Agence Bio — au-delà de la limite au-delà de laquelle GitHub
+# refuse un fichier.
+data/cache-elus/
+data/cache-bio*.csv
+
 # ── Caches de collecte : régénérés par les collecteurs ──
 # À conserver si vous voulez éviter de resolliciter les serveurs à
 # chaque installation sur une nouvelle machine ; à ignorer si vous
