@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-08",
+  "genere_le": "2026-09-09",
   "territoire": {
     "niveau": "commune",
     "code": "38463",
@@ -1125,7 +1125,7 @@
           }
         }
       ],
-      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 09/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
@@ -1224,7 +1224,7 @@
         0
       ],
       "agregation": "somme",
-      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 06/11/1982. Une période dominée par un épisode unique ne se compare pas aux autres."
+      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 08/08/1984. Une période dominée par un épisode unique ne se compare pas aux autres."
     }
   ]
 }

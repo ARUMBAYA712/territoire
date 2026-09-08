@@ -185,10 +185,17 @@ def debit_lisible(metres_cubes):
 def sites_du_territoire(boite, repere):
     """Sites hydrométriques déclarés par l'API elle-même.
 
-    Le référentiel des stations porte un champ code_site, mais tous ces
-    codes ne correspondent pas à un site interrogeable pour les
-    observations élaborées. On demande donc directement à l'API sa liste
-    de sites, plutôt que de la déduire.
+    **N'est plus utilisée par le traitement**, et conservée pour
+    mémoire. Interroger les observations par site paraissait plus sûr :
+    un site regroupe les stations qui se sont succédé au même point du
+    cours d'eau, et l'API répond à un code de site.
+
+    C'est faux quand deux stations y sont simultanées. Sur la
+    Vernaisson, l'interrogation par site renvoyait 1 454 valeurs
+    mensuelles pour une chronique de soixante-deux ans — soit deux fois
+    trop : deux stations différentes empilées dans la même suite, sans
+    que rien ne le signale. Voir « stations_du_territoire », qui la
+    remplace.
     """
     lot = appeler("referentiel/sites",
                   bbox=",".join(str(v) for v in boite),
@@ -455,6 +462,24 @@ def chronique_mensuelle(code_station):
     return retenus, ecartes
 
 
+def doublons_mensuels(points):
+    """Nombre de mois apparaissant plus d'une fois dans la suite.
+
+    Un mois ne peut être mesuré qu'une fois par une station donnée. En
+    voir deux signifie que la réponse empile plusieurs stations — ce qui
+    arrivait tant que les observations étaient demandées par site.
+    C'est le contrôle qui aurait dû exister dès le premier jour : il
+    détecte l'erreur au lieu de la laisser produire une courbe
+    plausible.
+    """
+    vus, doubles = set(), 0
+    for a, m, _ in points:
+        if (a, m) in vus:
+            doubles += 1
+        vus.add((a, m))
+    return doubles
+
+
 def homogene(points):
     """La série décrit-elle la même chose d'un bout à l'autre ?
 
@@ -462,6 +487,11 @@ def homogene(points):
     vraisemblance hydrologique : il détecte un changement d'échelle,
     qu'aucune rivière ne produit d'elle-même.
     """
+    doubles = doublons_mensuels(points)
+    if doubles:
+        return False, (f"{doubles} mois apparaissent plusieurs fois — la "
+                       f"réponse empile plusieurs stations, la suite n'a "
+                       f"pas de sens")
     if len(points) < MOIS_MINIMUM:
         return False, f"{len(points)} mois qualifiés, moins que les {MOIS_MINIMUM} requis"
     premiere = points[0][0]
@@ -502,7 +532,38 @@ def serie_continue(points):
     return suite, f"{a0}-{m0:02d}"
 
 
-def chroniques_debit(stations, mensuelles):
+def accord_avec_le_journalier(points, journalier):
+    """La chronique mensuelle mesure-t-elle la même chose que le reste ?
+
+    Le script interroge déjà, pour chaque station, un débit moyen
+    JOURNALIER sur cinq ans : c'est lui qui alimente l'indicateur
+    « proche des valeurs habituelles ». La chronique mensuelle vient de
+    la même station et devrait donc s'accorder avec lui.
+
+    Si les deux médianes divergent d'un facteur deux sur la période
+    commune, c'est que l'une des deux grandeurs ne décrit pas ce que
+    l'on croit — un débit dérivé, un débit réservé, une autre unité. Le
+    contrôle ne coûte rien : les deux séries sont déjà en mémoire.
+    """
+    if not journalier:
+        return True, None
+    debut = min(m["date"][:7] for m in journalier)
+    communs = [v for (a, m, v) in points if f"{a}-{m:02d}" >= debut]
+    if len(communs) < 12:
+        return True, None
+    m1 = mediane(communs)
+    m2 = mediane([m["debit"] for m in journalier])
+    if not m1 or not m2:
+        return True, None
+    rapport = max(m1, m2) / min(m1, m2)
+    if rapport > 2:
+        return False, (f"médiane mensuelle {m1:.2f} m³/s contre {m2:.2f} en "
+                       f"journalier sur la même période — les deux grandeurs "
+                       f"ne décrivent pas la même chose")
+    return True, None
+
+
+def chroniques_debit(stations, mensuelles, journalieres=None):
     """Graphiques de débit du territoire, et le journal de ce qui a été écarté.
 
     Une seule station porte les graphiques : celle dont la série
@@ -516,6 +577,11 @@ def chroniques_debit(stations, mensuelles):
         if not points:
             continue
         bon, motif = homogene(points)
+        if not bon:
+            journal.append((st, motif))
+            continue
+        bon, motif = accord_avec_le_journalier(
+            points, (journalieres or {}).get(st["code"]))
         if not bon:
             journal.append((st, motif))
             continue
@@ -810,7 +876,7 @@ def main():
     print(f"  Emprise : {boite[0]}, {boite[1]} → {boite[2]}, {boite[3]}")
 
     repere = centre(communes)
-    resultat_stations = sites_du_territoire(boite, repere)
+    resultat_stations = stations_du_territoire(boite, repere)
     if resultat_stations is None:
         print("\n[BLOCAGE] Impossible d'interroger Hub'Eau.\n")
         sys.exit(1)
@@ -850,11 +916,13 @@ def main():
         if points or ecartes:
             mensuelles[st["code"]] = points
             etendue = (f"{points[0][0]}-{points[-1][0]}" if points else "—")
-            print(f"    {st['code']:<12} {len(points):>4} mois qualifiés "
-                  f"{etendue:<12}"
-                  + (f"  ({ecartes} écarté(s), non qualifiés)" if ecartes else ""))
+            libelle = (st["cours_eau"] or st["nom"])[:22]
+            print(f"    {st['code']:<12} {libelle:<24} {len(points):>4} mois "
+                  f"{etendue:<10}"
+                  + (f" ({ecartes} non qualifié(s))" if ecartes else ""))
 
-    series, journal = chroniques_debit(stations, mensuelles)
+    series, journal = chroniques_debit(stations, mensuelles,
+                                       mesures_par_station)
     for st, motif in journal:
         print(f"    [écartée] {st['code']} — {motif}")
     if series:

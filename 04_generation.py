@@ -1684,7 +1684,7 @@ def chr_barres(c):
            f'aria-label="{escape(c["titre"])}">'
            + chr_cadre(bas, haut, pas,
                        [(x(i) + largeur / 2, periodes[i][2]) for i in marques],
-                       unite, c.get("decimales", 0))
+                       unite)
            + barres + etiquettes + "</svg>")
 
     lignes = "".join(f"<tr><th>{lib}</th>"
@@ -1836,6 +1836,7 @@ RUBRIQUES = [
          {"id": "secheresse", "nom": "Sécheresse"},
          {"id": "nappes", "nom": "Nappes"},
          {"id": "rivieres", "nom": "Rivières"},
+         {"id": "climat", "nom": "Climat"},
          {"id": "vigilance", "nom": "Vigilance"},
          {"id": "agriculture", "nom": "Agriculture"},
          {"id": "risques", "nom": "Risques"},
@@ -1910,6 +1911,9 @@ ICONES = {
     "rivieres": '<path d="M4 3c0 5 3.5 6.5 3.5 10.5S4 18.5 4 21"/>'
                 '<path d="M20 3c0 5-3.5 6.5-3.5 10.5S20 18.5 20 21"/>'
                 '<path d="M12 6.5v3M12 13v3"/>',
+    "climat": '<path d="M10 14.5V5.5a2 2 0 0 1 4 0v9a3.4 3.4 0 1 1-4 0z"/>'
+              '<circle cx="12" cy="17" r="1.4"/><path d="M14.5 7.5h2M14.5 '
+              '10.5h2M14.5 13.5h2"/>',
     "risques": '<path d="M12 4.2 21 19H3z"/><path d="M12 10v4M12 16.6v.01"/>',
     "agriculture": '<path d="M4 20c0-4.5 3-8 8-8"/>'
                    '<path d="M12 12c0-3.3 2.4-6 5.5-6.5C17.5 9 15 12 12 12z"/>'

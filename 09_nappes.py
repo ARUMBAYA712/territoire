@@ -283,6 +283,21 @@ def chronique(code_bss):
 # ══════════════════════════════════════════════════════════════════
 
 MOIS_MINIMUM_SERIE = 60      # cinq ans : en deçà, « l'évolution » n'existe pas
+
+# Au-delà de quinze ans, une chronique de plus n'apprend plus grand
+# chose sur le cycle d'une nappe : le cycle annuel et les épisodes de
+# sécheresse y sont déjà tous. C'est alors la PROXIMITÉ qui fait la
+# valeur du graphique — une nappe suivie à vingt kilomètres du
+# territoire ne parle plus de lui.
+MOIS_SUFFISANTS = 180
+
+# Deux stations à un kilomètre l'une de l'autre sont, du point de vue
+# du visiteur, à la même distance : les départager sur la distance
+# revient à tirer au sort. Dans cette bande, c'est la chronique la plus
+# longue qui l'emporte. Sans cela, Fontchaude et ses vingt et un ans
+# perdait contre Vatilieu et ses quinze, pour quelques centaines de
+# mètres.
+BANDE_DISTANCE = 3.0        # km
 # Nombre de relevés en deçà duquel un mois est jugé non représenté. Il
 # ne peut pas être fixe : une sonde automatique mesure tous les jours,
 # un piézomètre relevé à la main une fois par mois. Exiger trois
@@ -652,20 +667,32 @@ def main():
         mois = max(len(par_mois(complet, "niveau")),
                    len(par_mois(complet, "profondeur")))
         etendue = f"{complet[0]['date'][:4]}-{complet[-1]['date'][:4]}"
+        eloignement = (f" · {st['distance']:.0f} km"
+                       if st.get("distance") is not None else "")
         print(f"    {st['code']:<18} {len(complet):>5} mesure(s), "
-              f"{mois:>3} mois {etendue}")
+              f"{mois:>3} mois {etendue}{eloignement}")
         if mois >= MOIS_MINIMUM_SERIE:
             profondes.append((mois, st, complet))
 
     if profondes:
-        # À profondeur comparable — dix pour cent près — on préfère la
-        # station la plus proche du territoire.
-        plafond = max(m for m, _, _ in profondes)
-        eligibles = [x for x in profondes if x[0] >= plafond * 0.9]
-        mois, st, complet = min(
-            eligibles,
-            key=lambda x: (x[1].get("distance") is None,
-                           x[1].get("distance") or 0))
+        # Dès qu'une station dépasse quinze ans de mesures, la plus
+        # proche l'emporte : l'histoire est déjà suffisante, et ce qui
+        # départage est la pertinence pour le territoire. Si aucune n'y
+        # parvient, on se rabat sur la plus longue.
+        suffisantes = [x for x in profondes if x[0] >= MOIS_SUFFISANTS]
+        if suffisantes:
+            plus_proche = min((x[1].get("distance") or 0)
+                              for x in suffisantes
+                              if x[1].get("distance") is not None) \
+                if any(x[1].get("distance") is not None
+                       for x in suffisantes) else 0
+            voisines = [x for x in suffisantes
+                        if (x[1].get("distance") or 0)
+                        <= plus_proche + BANDE_DISTANCE]
+            mois, st, complet = max(voisines or suffisantes,
+                                    key=lambda x: x[0])
+        else:
+            mois, st, complet = max(profondes, key=lambda x: x[0])
         series = chroniques_nappe(st, complet)
         if series:
             synthese["chroniques"] = series

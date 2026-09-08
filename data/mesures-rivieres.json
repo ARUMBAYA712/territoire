@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-08",
+ "genere_le": "2026-09-09",
  "version": 1,
  "source": "Hub'Eau — hydrométrie, services de l'État",
  "licence": "Licence Ouverte 2.0",
@@ -37,7 +37,7 @@
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
-     "valeur": 4,
+     "valeur": 9,
      "unite": "stations",
      "nom": "Stations hydrométriques suivies",
      "obtention": "natif",
@@ -48,7 +48,7 @@
      "sous_rubrique": "rivieres",
      "ancre": "stations-hydrometriques",
      "rang": 30,
-     "repere": "L'Isère, La Bourne, La Vernaisson, Le Méaudret"
+     "repere": "L'Adouin, L'Isère, La Bourne, La Galaure, La Joyeuse, La Vernaisson, Le Méaudret"
     },
     "EAU-33": {
      "valeur": "La Vernaisson",
@@ -78,65 +78,140 @@
        "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
        "details": {
         "Cours d'eau": "L'Isère",
-        "Commune": "['SAINT-GERVAIS']",
+        "Commune": "SAINT-GERVAIS",
         "Distance du centre du territoire": "8 km",
         "Débit": "150.62 m³/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 4993
+        "Mesures sur 5 ans": 1678
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 162.61 m³/s sur 401 relevés. Débit actuel à 93 % de cette valeur."
+       "texte": "Médiane des mois comparables : 155.1 m³/s sur 117 relevés. Débit actuel à 97 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
        "details": {
         "Cours d'eau": "La Vernaisson",
-        "Commune": "['PONT-EN-ROYANS']",
+        "Commune": "PONT-EN-ROYANS",
         "Distance du centre du territoire": "13 km",
         "Débit": "101 L/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 3358
+        "Mesures sur 5 ans": 1678
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 302 L/s sur 237 relevés. Débit actuel à 33 % de cette valeur."
+       "texte": "Médiane des mois comparables : 302 L/s sur 117 relevés. Débit actuel à 33 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
        "details": {
         "Cours d'eau": "Le Méaudret",
-        "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
+        "Commune": "AUTRANS-MEAUDRE EN VERCORS",
         "Distance du centre du territoire": "14 km",
         "Débit": "37 L/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 3638
+        "Mesures sur 5 ans": 1818
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 42 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 147 relevés. Débit actuel à 41 % de cette valeur."
       },
       {
-       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "titre": "La Joyeuse à Parnans [Pont D123]",
        "details": {
-        "Cours d'eau": "La Bourne",
-        "Commune": "['SAINT-JUST-DE-CLAIX']",
-        "Distance du centre du territoire": "14 km",
-        "Débit": "3.73 m³/s",
+        "Cours d'eau": "La Joyeuse",
+        "Commune": "PARNANS",
+        "Distance du centre du territoire": "19 km",
+        "Débit": "57 L/s",
+        "Dernière mesure": "07/09/2026",
+        "Mesures sur 5 ans": 1579
+       },
+       "etat": [
+        "Au-dessus des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 42 L/s sur 126 relevés. Débit actuel à 136 % de cette valeur."
+      },
+      {
+       "titre": "L'Adouin à Saint-Martin-en-Vercors [Tourtre]",
+       "details": {
+        "Cours d'eau": "L'Adouin",
+        "Commune": "SAINT-MARTIN-EN-VERCORS",
+        "Distance du centre du territoire": "20 km",
+        "Débit": "86 L/s",
+        "Dernière mesure": "07/09/2026",
+        "Mesures sur 5 ans": 1824
+       },
+       "etat": [
+        "Sous les valeurs habituelles",
+        "attention"
+       ],
+       "texte": "Médiane des mois comparables : 145 L/s sur 147 relevés. Débit actuel à 59 % de cette valeur."
+      },
+      {
+       "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
+       "details": {
+        "Cours d'eau": "L'Isère",
+        "Commune": "SAINT-GERVAIS",
+        "Distance du centre du territoire": "8 km",
+        "Débit": "219.81 m³/s",
         "Dernière mesure": "06/07/2026",
-        "Mesures sur 5 ans": 4997
+        "Mesures sur 5 ans": 1755
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 3.64 m³/s sur 382 relevés. Débit actuel à 103 % de cette valeur."
+       "texte": "Médiane des mois comparables : 252.51 m³/s sur 129 relevés. Débit actuel à 87 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "SAINT-JUST-DE-CLAIX",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.73 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 1615
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.72 m³/s sur 129 relevés. Débit actuel à 100 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "SAINT-JUST-DE-CLAIX",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.79 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 1755
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.65 m³/s sur 128 relevés. Débit actuel à 104 % de cette valeur."
+      },
+      {
+       "titre": "La Galaure [La Galaure à Roybon] à Roybon",
+       "details": {
+        "Cours d'eau": "La Galaure",
+        "Commune": "ROYBON",
+        "Distance du centre du territoire": "17 km",
+        "Débit": "131 L/s",
+        "Dernière mesure": "12/06/2026",
+        "Mesures sur 5 ans": 107
+       }
       }
      ],
      "note": "Les cours d'eau traversent le territoire sans s'arrêter à ses limites : ces mesures valent pour l'ensemble, pas pour une commune en particulier. Un débit ne s'interprète que par rapport aux valeurs habituelles de la même saison. Un grand cours d'eau alimenté par la montagne et régulé par des barrages peut afficher un débit normal alors que des restrictions sécheresse sont en vigueur : ce sont les petits affluents qui traduisent le mieux la situation locale."
@@ -892,7 +967,7 @@
       0.18,
       0.16
      ],
-     "source": "Hub'Eau — hydrométrie, services de l'État · station W3335212 · 1965-2026",
+     "source": "Hub'Eau — hydrométrie, services de l'État · station W333521201 · 1965-2026",
      "id": "debit-saison",
      "forme": "saison",
      "rang": 10,
@@ -1648,7 +1723,7 @@
       0.18,
       0.16
      ],
-     "source": "Hub'Eau — hydrométrie, services de l'État · station W3335212 · 1965-2026",
+     "source": "Hub'Eau — hydrométrie, services de l'État · station W333521201 · 1965-2026",
      "id": "debit-chronique",
      "forme": "courbe",
      "rang": 20,
@@ -1690,7 +1765,7 @@
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
-     "valeur": 4,
+     "valeur": 9,
      "unite": "stations",
      "nom": "Stations hydrométriques suivies",
      "obtention": "natif",
@@ -1701,7 +1776,7 @@
      "sous_rubrique": "rivieres",
      "ancre": "stations-hydrometriques",
      "rang": 30,
-     "repere": "L'Isère, La Bourne, La Vernaisson, Le Méaudret"
+     "repere": "L'Adouin, L'Isère, La Bourne, La Galaure, La Joyeuse, La Vernaisson, Le Méaudret"
     },
     "EAU-33": {
      "valeur": "La Vernaisson",
@@ -1731,65 +1806,140 @@
        "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
        "details": {
         "Cours d'eau": "L'Isère",
-        "Commune": "['SAINT-GERVAIS']",
+        "Commune": "SAINT-GERVAIS",
         "Distance du centre du territoire": "8 km",
         "Débit": "150.62 m³/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 4993
+        "Mesures sur 5 ans": 1678
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 162.61 m³/s sur 401 relevés. Débit actuel à 93 % de cette valeur."
+       "texte": "Médiane des mois comparables : 155.1 m³/s sur 117 relevés. Débit actuel à 97 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
        "details": {
         "Cours d'eau": "La Vernaisson",
-        "Commune": "['PONT-EN-ROYANS']",
+        "Commune": "PONT-EN-ROYANS",
         "Distance du centre du territoire": "13 km",
         "Débit": "101 L/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 3358
+        "Mesures sur 5 ans": 1678
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 302 L/s sur 237 relevés. Débit actuel à 33 % de cette valeur."
+       "texte": "Médiane des mois comparables : 302 L/s sur 117 relevés. Débit actuel à 33 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
        "details": {
         "Cours d'eau": "Le Méaudret",
-        "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
+        "Commune": "AUTRANS-MEAUDRE EN VERCORS",
         "Distance du centre du territoire": "14 km",
         "Débit": "37 L/s",
         "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 3638
+        "Mesures sur 5 ans": 1818
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 42 % de cette valeur."
+       "texte": "Médiane des mois comparables : 90 L/s sur 147 relevés. Débit actuel à 41 % de cette valeur."
       },
       {
-       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "titre": "La Joyeuse à Parnans [Pont D123]",
        "details": {
-        "Cours d'eau": "La Bourne",
-        "Commune": "['SAINT-JUST-DE-CLAIX']",
-        "Distance du centre du territoire": "14 km",
-        "Débit": "3.73 m³/s",
+        "Cours d'eau": "La Joyeuse",
+        "Commune": "PARNANS",
+        "Distance du centre du territoire": "19 km",
+        "Débit": "57 L/s",
+        "Dernière mesure": "07/09/2026",
+        "Mesures sur 5 ans": 1579
+       },
+       "etat": [
+        "Au-dessus des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 42 L/s sur 126 relevés. Débit actuel à 136 % de cette valeur."
+      },
+      {
+       "titre": "L'Adouin à Saint-Martin-en-Vercors [Tourtre]",
+       "details": {
+        "Cours d'eau": "L'Adouin",
+        "Commune": "SAINT-MARTIN-EN-VERCORS",
+        "Distance du centre du territoire": "20 km",
+        "Débit": "86 L/s",
+        "Dernière mesure": "07/09/2026",
+        "Mesures sur 5 ans": 1824
+       },
+       "etat": [
+        "Sous les valeurs habituelles",
+        "attention"
+       ],
+       "texte": "Médiane des mois comparables : 145 L/s sur 147 relevés. Débit actuel à 59 % de cette valeur."
+      },
+      {
+       "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
+       "details": {
+        "Cours d'eau": "L'Isère",
+        "Commune": "SAINT-GERVAIS",
+        "Distance du centre du territoire": "8 km",
+        "Débit": "219.81 m³/s",
         "Dernière mesure": "06/07/2026",
-        "Mesures sur 5 ans": 4997
+        "Mesures sur 5 ans": 1755
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 3.64 m³/s sur 382 relevés. Débit actuel à 103 % de cette valeur."
+       "texte": "Médiane des mois comparables : 252.51 m³/s sur 129 relevés. Débit actuel à 87 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "SAINT-JUST-DE-CLAIX",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.73 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 1615
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.72 m³/s sur 129 relevés. Débit actuel à 100 % de cette valeur."
+      },
+      {
+       "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",
+       "details": {
+        "Cours d'eau": "La Bourne",
+        "Commune": "SAINT-JUST-DE-CLAIX",
+        "Distance du centre du territoire": "14 km",
+        "Débit": "3.79 m³/s",
+        "Dernière mesure": "06/07/2026",
+        "Mesures sur 5 ans": 1755
+       },
+       "etat": [
+        "Proche des valeurs habituelles",
+        "neutre"
+       ],
+       "texte": "Médiane des mois comparables : 3.65 m³/s sur 128 relevés. Débit actuel à 104 % de cette valeur."
+      },
+      {
+       "titre": "La Galaure [La Galaure à Roybon] à Roybon",
+       "details": {
+        "Cours d'eau": "La Galaure",
+        "Commune": "ROYBON",
+        "Distance du centre du territoire": "17 km",
+        "Débit": "131 L/s",
+        "Dernière mesure": "12/06/2026",
+        "Mesures sur 5 ans": 107
+       }
       }
      ],
      "note": "Les cours d'eau traversent le territoire sans s'arrêter à ses limites : ces mesures valent pour l'ensemble, pas pour une commune en particulier. Un débit ne s'interprète que par rapport aux valeurs habituelles de la même saison. Un grand cours d'eau alimenté par la montagne et régulé par des barrages peut afficher un débit normal alors que des restrictions sécheresse sont en vigueur : ce sont les petits affluents qui traduisent le mieux la situation locale."
@@ -2545,7 +2695,7 @@
       0.18,
       0.16
      ],
-     "source": "Hub'Eau — hydrométrie, services de l'État · station W3335212 · 1965-2026",
+     "source": "Hub'Eau — hydrométrie, services de l'État · station W333521201 · 1965-2026",
      "id": "debit-saison",
      "forme": "saison",
      "rang": 10,
@@ -3301,7 +3451,7 @@
       0.18,
       0.16
      ],
-     "source": "Hub'Eau — hydrométrie, services de l'État · station W3335212 · 1965-2026",
+     "source": "Hub'Eau — hydrométrie, services de l'État · station W333521201 · 1965-2026",
      "id": "debit-chronique",
      "forme": "courbe",
      "rang": 20,

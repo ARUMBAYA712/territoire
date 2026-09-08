@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-08",
+ "genere_le": "2026-09-09",
  "version": 10,
  "source": "Géorisques — BRGM et ministère de la Transition écologique",
  "licence": "Licence Ouverte 2.0",
@@ -5759,7 +5759,7 @@
       0
      ],
      "agregation": "somme",
-     "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 24/04/1983. Une période dominée par un épisode unique ne se compare pas aux autres."
+     "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 06/11/1982. Une période dominée par un épisode unique ne se compare pas aux autres."
     }
    ]
   },
@@ -7965,7 +7965,7 @@
       0
      ],
      "agregation": "somme",
-     "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 06/11/1982. Une période dominée par un épisode unique ne se compare pas aux autres."
+     "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines. Attention à la lecture : sur 1980-89, 2 des 5 arrêtés relèvent d'un seul événement, reconnu le 08/08/1984. Une période dominée par un épisode unique ne se compare pas aux autres."
     }
    ]
   },

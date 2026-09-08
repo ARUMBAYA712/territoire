@@ -14,12 +14,19 @@ data/cache-population.csv
 data/contours.json
 data/*.zip
 
-# Caches de collecte volumineux, retéléchargeables. Sans ces lignes,
-# le dépôt recevrait 78 Mo de fichiers du répertoire des élus et 47 Mo
-# de l'Agence Bio — au-delà de la limite au-delà de laquelle GitHub
-# refuse un fichier.
-data/cache-elus/
-data/cache-bio*.csv
+# Caches de collecte volumineux, retéléchargeables. Sans ces lignes, le
+# dépôt recevrait 78 Mo du répertoire des élus, 90 Mo de l'Agence Bio et
+# 27 Mo de Météo-France — au-delà de la limite à partir de laquelle
+# GitHub refuse un fichier.
+#
+# La règle est volontairement générique : tout collecteur qui déposera
+# demain un cache sous data/cache-… est couvert sans qu'il faille y
+# repenser. C'est la leçon du 8 septembre 2026, où l'arrivée de
+# 17_climat.py a créé trois fichiers de 27 Mo qu'aucune ligne existante
+# ne couvrait.
+data/cache-*/
+data/cache-*.csv
+data/cache-*.json
 
 # ── Caches de collecte : régénérés par les collecteurs ──
 # À conserver si vous voulez éviter de resolliciter les serveurs à

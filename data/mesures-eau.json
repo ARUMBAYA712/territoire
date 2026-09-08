@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-08",
+ "genere_le": "2026-09-09",
  "version": 4,
  "source": "Hub'Eau — contrôle sanitaire (ministère de la Santé)",
  "licence": "Licence Ouverte 2.0",
@@ -567,7 +567,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 7,
+     "valeur": 5,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -2425,7 +2425,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 6,
+     "valeur": 5,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -4424,7 +4424,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 11,
+     "valeur": 10,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -4587,7 +4587,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 9,
+     "valeur": 8,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -5428,7 +5428,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 12,
+     "valeur": 11,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -6497,7 +6497,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 11,
+     "valeur": 10,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",
@@ -6660,7 +6660,7 @@
      "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-     "valeur": 9,
+     "valeur": 8,
      "unite": "prélèvements",
      "nom": "Contrôles sanitaires sur 12 mois",
      "obtention": "natif",

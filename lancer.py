@@ -51,6 +51,7 @@ VERSIONS_ATTENDUES = {
     "14_vigilance.py": 2,
     "15_elus.py": 2,
     "16_bio.py": 4,
+    "17_climat.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -156,6 +157,7 @@ PLAN_LIVRAISON = [
     ("14_vigilance.py", []),
     ("15_elus.py", []),
     ("16_bio.py", []),
+    ("17_climat.py", []),
     ("03_agregation.py", []),
     ("04_generation.py", []),
 ]
@@ -194,6 +196,7 @@ COLLECTEURS = [
     ("14_vigilance.py", []),
     ("15_elus.py", []),
     ("16_bio.py", []),
+    ("17_climat.py", []),
 ]
 
 PUBLICATION = [
@@ -237,6 +240,7 @@ MENSUEL = [
     ("08_georisques.py", []),     # arrêtés de catastrophe naturelle
     ("10_ecoles.py", []),
     ("13_hivernal.py", []),       # surveille surtout la péremption de l'arrêté
+    ("17_climat.py", []),         # le fichier courant est réécrit chaque jour
 ]
 
 # Sources lentes, et surtout gros fichiers : 198 Mo pour l'INSEE, 78 Mo

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-08",
+  "genere_le": "2026-09-09",
   "territoire": {
     "niveau": "commune",
     "code": "38345",
@@ -103,7 +103,7 @@
       "ancre": "reseaux-eau-potable"
     },
     "EAU-02": {
-      "valeur": 9,
+      "valeur": 8,
       "unite": "prélèvements",
       "nom": "Contrôles sanitaires sur 12 mois",
       "obtention": "natif",
@@ -1052,7 +1052,7 @@
           }
         }
       ],
-      "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 09/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
