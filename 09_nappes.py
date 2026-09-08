@@ -35,7 +35,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 2
+VERSION_SCRIPT = 3
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -253,6 +253,166 @@ def chronique(code_bss):
     # toute la lecture suppose la mesure la plus récente en tête.
     mesures.sort(key=lambda m: m["date"], reverse=True)
     return mesures
+
+
+
+# ══════════════════════════════════════════════════════════════════
+# SÉRIE HISTORIQUE — moyennes mensuelles de la nappe
+#
+# Hub'Eau ne calcule pas de moyenne mensuelle pour les nappes, à la
+# différence des débits : c'est à nous de regrouper les mesures
+# journalières. Trois décisions en découlent, et chacune change ce que
+# la courbe raconte.
+#
+# **On trace le niveau, pas la profondeur.** Le piézomètre publie les
+# deux : la profondeur sous le sol, et l'altitude de la nappe. La
+# tuile de la fiche affiche la profondeur, qui parle à tout le monde —
+# « l'eau est à 41 mètres ». Mais sur une courbe elle s'inverse : elle
+# monte quand la nappe baisse. Un lecteur qui voit un trait qui monte
+# comprend « plus d'eau ». On trace donc l'altitude, où monter veut
+# dire monter. Si la station ne publie que la profondeur, on la trace,
+# et la note dit dans quel sens la lire.
+#
+# **La médiane, pas la moyenne.** Un relevé aberrant — purge, pompage
+# d'essai — déplace la moyenne d'un mois entier. La médiane l'ignore.
+#
+# **Un mois sans mesure reste vide.** Il n'est ni comblé ni sauté : la
+# suite mensuelle est régulière, et le trou s'y voit. Un piézomètre
+# hors service pendant un an est une information, pas un défaut de
+# présentation.
+# ══════════════════════════════════════════════════════════════════
+
+MOIS_MINIMUM_SERIE = 60      # cinq ans : en deçà, « l'évolution » n'existe pas
+# Nombre de relevés en deçà duquel un mois est jugé non représenté. Il
+# ne peut pas être fixe : une sonde automatique mesure tous les jours,
+# un piézomètre relevé à la main une fois par mois. Exiger trois
+# relevés partout jetterait toutes les chroniques anciennes. Le seuil
+# se règle donc sur la cadence de la station elle-même.
+MESURES_PAR_MOIS_MAX = 3
+
+
+def chronique_complete(code_bss):
+    """Toutes les mesures publiées pour une station, sans limite de date.
+
+    Le reste du script ne regarde que les cinq dernières années, ce qui
+    suffit à situer la mesure du jour. Une chronique, elle, prend tout
+    ce que la station a publié — c'est justement son objet.
+    """
+    lot = appeler("chroniques", code_bss=code_bss, size=20000, sort="asc")
+    if not lot:
+        return []
+    mesures = []
+    for m in lot:
+        jour = champ(m, "date_mesure")
+        if jour is None:
+            continue
+        mesures.append({
+            "date": str(jour)[:10],
+            "profondeur": champ(m, "profondeur_nappe"),
+            "niveau": champ(m, "niveau_nappe_eau"),
+        })
+    mesures.sort(key=lambda m: m["date"])
+    return mesures
+
+
+def mediane(valeurs):
+    suite = sorted(v for v in valeurs if v is not None)
+    if not suite:
+        return None
+    n = len(suite)
+    return suite[n // 2] if n % 2 else (suite[n // 2 - 1] + suite[n // 2]) / 2
+
+
+def par_mois(mesures, champ_valeur):
+    """Médiane mensuelle, et rien pour les mois trop peu mesurés.
+
+    Le seuil suit la cadence habituelle de la station : un mois n'est
+    écarté que s'il est nettement moins relevé que les autres.
+    """
+    groupes = {}
+    for m in mesures:
+        v = m.get(champ_valeur)
+        if v is None:
+            continue
+        try:
+            v = float(v)
+        except (TypeError, ValueError):
+            continue
+        cle = (int(m["date"][:4]), int(m["date"][5:7]))
+        groupes.setdefault(cle, []).append(v)
+    if not groupes:
+        return {}
+    # Un quart de la cadence habituelle, plafonné : il s'agit d'écarter
+    # le mois presque vide, pas d'exiger la cadence pleine. Une sonde
+    # quotidienne demande trois relevés, un piézomètre relevé quatre
+    # fois par mois se contente d'un.
+    cadence = mediane([len(vs) for vs in groupes.values()]) or 1
+    seuil = max(1, min(MESURES_PAR_MOIS_MAX, round(cadence / 4)))
+    return {cle: round(mediane(vs), 2)
+            for cle, vs in groupes.items() if len(vs) >= seuil}
+
+
+def suite_mensuelle(mensuel):
+    """Suite régulière du premier au dernier mois, trous compris."""
+    if not mensuel:
+        return [], None, 0
+    cles = sorted(mensuel)
+    (a0, m0), (a1, m1) = cles[0], cles[-1]
+    suite, a, m, trous = [], a0, m0, 0
+    while (a, m) <= (a1, m1):
+        v = mensuel.get((a, m))
+        suite.append(v)
+        if v is None:
+            trous += 1
+        m += 1
+        if m > 12:
+            a, m = a + 1, 1
+    return suite, f"{a0}-{m0:02d}", trous
+
+
+def chroniques_nappe(station, mesures):
+    """Graphiques d'une station piézométrique, ou rien.
+
+    Deux formes : la saison, qui situe l'année en cours contre son
+    histoire, et la chronique entière, qui montre l'évolution longue.
+    """
+    # L'altitude d'abord ; la profondeur en repli, avec sa mise en garde.
+    for champ_valeur, unite, sens, note_sens in (
+            ("niveau", "m NGF", "altitude de la nappe",
+             "La courbe monte quand la nappe se recharge."),
+            ("profondeur", "m", "profondeur sous le sol",
+             "Attention au sens de lecture : la courbe monte quand l'eau "
+             "s'enfonce, donc quand la nappe baisse.")):
+        mensuel = par_mois(mesures, champ_valeur)
+        if len(mensuel) >= MOIS_MINIMUM_SERIE:
+            break
+    else:
+        return []
+
+    valeurs, depart, trous = suite_mensuelle(mensuel)
+    cles = sorted(mensuel)
+    nom = station.get("nom") or station["code"]
+    source = (f"{SOURCE} · {station['code']} · "
+              f"{cles[0][0]}-{cles[-1][0]}")
+    commun = {"rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE,
+              "unite": unite, "decimales": 2,
+              "debut": depart, "pas": "mois", "valeurs": valeurs,
+              "source": source}
+    lacunes = (f" {trous} mois de la période ne portent aucune mesure et "
+               f"restent vides." if trous else "")
+    return [
+        dict(commun, id="nappe-saison", forme="saison", rang=10,
+             titre=f"Niveau de la nappe — {nom}, l'année en cours",
+             note=("Médiane mensuelle des relevés, comparée à tout ce qui a "
+                   "été observé le même mois depuis le début de la "
+                   f"chronique. {note_sens}")),
+        dict(commun, id="nappe-chronique", forme="courbe", rang=20,
+             libelle_serie=f"Médiane mensuelle ({sens})",
+             titre=f"Niveau de la nappe — {nom}, toute la chronique",
+             note=(f"{note_sens} Aucune droite de tendance n'est tracée : "
+                   "sur une chronique lacuneuse, une pente n'a pas de "
+                   f"valeur.{lacunes}")),
+    ]
 
 
 def situer(mesures):
@@ -473,6 +633,48 @@ def main():
     if not synthese:
         print("\n  Aucune station exploitable. Rien n'a été écrit.\n")
         return
+
+    # ── série historique ─────────────────────────────────────────
+    #
+    # Les indicateurs se lisent sur la station la plus PROCHE et la plus
+    # fraîche : c'est ce qui compte pour dire où en est la nappe
+    # aujourd'hui. Une chronique se lit sur la station la plus ANCIENNE :
+    # c'est ce qui compte pour montrer une évolution. Les deux critères
+    # ne désignent pas forcément la même station, et le graphique nomme
+    # la sienne.
+    print("\n  Chroniques mensuelles :")
+    profondes = []
+    for st in stations:
+        complet = chronique_complete(st["code"])
+        time.sleep(PAUSE)
+        if not complet:
+            continue
+        mois = max(len(par_mois(complet, "niveau")),
+                   len(par_mois(complet, "profondeur")))
+        etendue = f"{complet[0]['date'][:4]}-{complet[-1]['date'][:4]}"
+        print(f"    {st['code']:<18} {len(complet):>5} mesure(s), "
+              f"{mois:>3} mois {etendue}")
+        if mois >= MOIS_MINIMUM_SERIE:
+            profondes.append((mois, st, complet))
+
+    if profondes:
+        # À profondeur comparable — dix pour cent près — on préfère la
+        # station la plus proche du territoire.
+        plafond = max(m for m, _, _ in profondes)
+        eligibles = [x for x in profondes if x[0] >= plafond * 0.9]
+        mois, st, complet = min(
+            eligibles,
+            key=lambda x: (x[1].get("distance") is None,
+                           x[1].get("distance") or 0))
+        series = chroniques_nappe(st, complet)
+        if series:
+            synthese["chroniques"] = series
+            print(f"    → série retenue : {series[0]['source']}")
+        else:
+            print("    → aucune série publiable.")
+    else:
+        print(f"    → aucune station n'atteint {MOIS_MINIMUM_SERIE} mois "
+              f"de mesures ; les indicateurs restent seuls.")
 
     territoires = {}
     if canton:

@@ -46,7 +46,7 @@ VERSIONS_ATTENDUES = {
     "02_canton.py": 2,
     "03_agregation.py": 4,
     "04_generation.py": 33,
-    "12_rivieres.py": 5,
+    "12_rivieres.py": 6,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
     "15_elus.py": 2,
@@ -55,7 +55,7 @@ VERSIONS_ATTENDUES = {
     "06_eau.py": 4,
     "07_vigieau.py": 4,
     "08_georisques.py": 11,
-    "09_nappes.py": 2,
+    "09_nappes.py": 3,
     "10_ecoles.py": 5,
     "11_population.py": 5,
 }

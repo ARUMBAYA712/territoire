@@ -1,17 +1,21 @@
 # Livraison — lots 2 et 3 : débits et nappes mensuels
 
-8 septembre 2026, cinquième livraison. **Prête, mais pas encore posée
-dans votre dépôt** : je l'ai gardée de côté le temps que votre
-`lancer.py --tout` se termine, `lancer.py` contrôlant les versions au
-démarrage.
+8 septembre 2026, cinquième livraison. **Les fichiers sont posés dans
+votre dépôt.**
 
 | Fichier | Version | Ce qui change |
 |---|---|---|
-| `12_rivieres.py` | 5 → **6** | Débits moyens mensuels, avec deux filets de contrôle |
+| `12_rivieres.py` | 5 → **6** | Débits moyens mensuels, deux filets de contrôle, et l'interrogation **par station** |
 | `09_nappes.py` | 2 → **3** | Chronique complète du piézomètre, agrégée au mois |
+| `08_georisques.py` | 11 → **11** *(retouche)* | Une note quand une décennie est dominée par un événement unique |
+| `lancer.py` | — | Versions attendues |
 
-Aucune modification du générateur : ces deux collecteurs se contentent
+Aucune modification du générateur : ces collecteurs se contentent
 d'écrire des chroniques au format livré en version 32.
+
+```
+python lancer.py --tout
+```
 
 ---
 
@@ -40,11 +44,9 @@ graphique produit par nous.
 **Un troisième piège au passage** : le même site porte deux stations
 simultanées, EDF et DREAL. En janvier 2003, l'une annonce 0,9 m³/s et
 l'autre **20,5 m³/s** pour la même rivière au même endroit. Le
-collecteur interroge les observations **par site**, ce qui les mélange.
-Les chroniques interrogent désormais la **station**. Je n'ai pas touché
-à l'interrogation par site des débits journaliers : elle alimente un
-indicateur déjà publié, et je ne change pas des valeurs en ligne sans
-que vous l'ayez décidé. **C'est un point à trancher.**
+collecteur interrogeait les observations **par site**, ce qui les
+mélangeait. **Vous avez tranché pour la station, et c'est fait** — voir
+la section 5.
 
 ---
 
@@ -144,6 +146,51 @@ décompte réel ne se connaîtra qu'à la première collecte.
 
 ---
 
+## 5. Le passage à la station, et ce qu'il entraîne
+
+Les débits journaliers sont désormais demandés **par station**, comme
+les chroniques. Deux conséquences, à connaître avant de regarder le
+site :
+
+**La valeur affichée peut changer.** L'indicateur « Débit : proche des
+valeurs habituelles » se calculait sur un mélange de deux stations
+lorsqu'un site en portait deux. Il se calcule maintenant sur une seule,
+nommée. Si le chiffre bouge, ce n'est pas une régression.
+
+**Le dédoublonnage a dû changer de règle.** Tant que l'on interrogeait
+le site, ne garder qu'une station par site allait de soi : elles
+renvoyaient la même chronique, et la plus proche faisait l'affaire.
+Ce n'est plus vrai. Deux stations au même endroit ont la même distance :
+« la plus proche » les départageait au hasard. Le script en conserve
+donc **deux par site**, les interroge, et retient celle qui est la
+mieux fournie — la densité réelle des mesures est le seul signal
+disponible pour distinguer la station de référence du dispositif d'un
+exploitant.
+
+---
+
+## 6. Une retouche à `08_georisques.py`
+
+Vos données publiées ont révélé un piège de lecture. Sur le canton, les
+arrêtés par décennie donnent :
+
+```
+    1980s  98   ·   1990s  34   ·   2000s  27   ·   2010s  12   ·   2020-26  15
+```
+
+Lu tel quel, cela raconte une forte baisse des catastrophes naturelles
+depuis quarante ans. C'est faux : la tempête de novembre 1982 a été
+reconnue le même jour pour presque toutes les communes de France, et le
+dispositif venait d'être créé. Une décennie entière est portée par un
+épisode unique.
+
+Le collecteur le détecte désormais tout seul : quand **une seule date
+fait plus du tiers** des arrêtés d'une période, elle est nommée sous le
+graphique. Aucune valeur n'est retirée — c'est la lecture qui est
+cadrée, pas la donnée qui est corrigée.
+
+---
+
 ## À vérifier après installation
 
 | # | Attendu |
@@ -155,23 +202,7 @@ décompte réel ne se connaîtra qu'à la première collecte.
 | 5 | Sur `/canton/…/environnement/nappes/`, les deux mêmes formes, en m NGF |
 | 6 | Si la station retenue est sur l'Isère, la réserve « rivière fortement aménagée » est écrite sous le graphique |
 | 7 | Les collectes sont plus longues : une requête de plus par station, soit une douzaine au total |
+| 8 | Sur le canton, la note du graphique des arrêtés nomme l'événement de novembre 1982 |
+| 9 | L'indicateur « Débit » peut afficher une autre valeur qu'avant : c'est attendu |
 
 ---
-
-## Le point à trancher
-
-L'interrogation **par site** des débits journaliers mélange
-potentiellement deux stations qui ne mesurent pas la même chose. Je ne
-l'ai pas modifiée : elle alimente l'indicateur « Débit : proche des
-valeurs habituelles », publié aujourd'hui, et changer une valeur en
-ligne est votre décision, pas la mienne.
-
-Deux façons de la traiter :
-
-- **interroger par station**, comme le font les chroniques. C'est
-  correct, et cela peut changer la valeur affichée ;
-- **garder le site**, mais écarter les stations dont la médiane
-  s'écarte trop de celle des autres du même site. Plus prudent, plus
-  compliqué, et cela masque le problème au lieu de le nommer.
-
-Je penche pour la première. Dites-moi.

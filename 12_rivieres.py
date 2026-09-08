@@ -23,6 +23,7 @@ Utilisation :
 
 import json
 import math
+import re
 import statistics
 import sys
 import time
@@ -32,7 +33,7 @@ import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
 
-VERSION_SCRIPT = 5
+VERSION_SCRIPT = 6
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -50,6 +51,11 @@ ANCRE = "stations-hydrometriques"
 MARGE = 0.10              # degrés ajoutés autour du territoire
 SEUIL_ELOIGNEMENT = 20    # km au-delà desquels la station devient indicative
 STATIONS_MAX = 12
+
+# Nombre de stations conservées par site hydrométrique. Deux, parce
+# qu'un site en porte rarement plus, et parce qu'il faut les
+# interroger pour savoir laquelle fait référence.
+STATIONS_PAR_SITE = 2
 HISTORIQUE = 5            # années de chronique interrogées
 
 # Codes de grandeur des observations élaborées. La nomenclature a varié
@@ -261,23 +267,43 @@ def stations_du_territoire(boite, repere):
 
     stations.sort(key=lambda s: (s["distance"] is None, s["distance"] or 0))
 
-    # Plusieurs stations partagent un même site : elles renverraient la
-    # même chronique. On ne garde que la plus proche de chaque site.
-    vus, uniques = set(), []
+    # Plusieurs stations partagent parfois un même site. Tant que les
+    # observations étaient demandées par site, elles renvoyaient la
+    # même chronique et n'en garder qu'une allait de soi.
+    #
+    # Ce n'est plus le cas : deux stations d'un même site peuvent être
+    # simultanées et mesurer des grandeurs différentes — sur la Bourne,
+    # l'une annonce 0,9 m³/s quand l'autre en annonce 20,5. Choisir
+    # « la plus proche » n'a alors aucun sens : elles sont au même
+    # endroit, et le tri retiendrait l'une ou l'autre au hasard.
+    #
+    # On en garde donc deux par site, et c'est la densité réelle des
+    # mesures — connue seulement après interrogation — qui départagera.
+    par_site, uniques = {}, []
     for s in stations:
-        if s["site"] in vus:
+        garde = par_site.setdefault(s["site"], 0)
+        if garde >= STATIONS_PAR_SITE:
             continue
-        vus.add(s["site"])
+        par_site[s["site"]] = garde + 1
         uniques.append(s)
     return uniques, len(lot)
 
 
-def chronique(code_site):
+def chronique(code_station):
     """Débits journaliers des dernières années, du plus récent au plus ancien.
 
     Les observations élaborées fournissent un débit moyen journalier,
     plus représentatif qu'une mesure instantanée pour comparer d'une
     année sur l'autre.
+
+    **Interrogation par station, non par site.** Ce script demandait
+    auparavant les observations d'un SITE, en supposant qu'un site
+    regroupe des stations qui se succèdent dans le temps. C'est vrai
+    souvent, faux ici : le site de la Bourne à Saint-Just-de-Claix
+    porte deux stations simultanées, une EDF et une DREAL, qui
+    n'annoncent pas la même chose — 0,9 m³/s contre 20,5 m³/s pour le
+    même mois de janvier 2003. Les mélanger revenait à calculer une
+    médiane sur deux grandeurs différentes.
     """
     depuis = (date.today() - timedelta(days=365 * HISTORIQUE)).isoformat()
 
@@ -286,7 +312,7 @@ def chronique(code_site):
     # ordre de préférence et on retient la première qui répond.
     tentatives = []
     for grandeur in GRANDEURS:
-        tentatives.append({"code_entite": code_site,
+        tentatives.append({"code_entite": code_station,
                            "grandeur_hydro_elab": grandeur,
                            "date_debut_obs_elab": depuis, "size": 5000})
     lot = None
@@ -312,6 +338,222 @@ def chronique(code_site):
 
     mesures.sort(key=lambda m: m["date"], reverse=True)
     return mesures
+
+
+
+# ══════════════════════════════════════════════════════════════════
+# SÉRIE HISTORIQUE — débits moyens mensuels
+#
+# Hub'Eau calcule lui-même le débit moyen mensuel (grandeur « QmM ») et
+# le sert avec sa qualification. Sur ce territoire, certaines stations
+# remontent à 1967 : il y a de quoi montrer une évolution.
+#
+# ── Ce qui a failli être publié de travers ───────────────────────
+#
+# La station EDF de la Bourne à Saint-Just-de-Claix annonce 708 valeurs
+# mensuelles depuis janvier 1967. Vérification faite :
+#
+#     janvier 1967 :    947 L/s  ·  qualification « Non qualifiée »
+#     janvier 1990 :  1 542 L/s  ·  qualification « Bonne »
+#     janvier 2020 :  8 536 L/s  ·  qualification « Bonne »
+#
+# Les valeurs les plus anciennes sont environ dix fois trop faibles,
+# et ce sont exactement celles que la source déclare non qualifiées.
+# Tracées telles quelles, elles auraient dessiné une hausse
+# spectaculaire du débit de la Bourne depuis cinquante ans — une
+# impression fausse appuyée sur des données vraies, c'est-à-dire
+# précisément ce que ce site s'interdit.
+#
+# ── Les deux filets, et pourquoi il en faut deux ─────────────────
+#
+# 1. **La qualification, qui vient de la source.** On ne retient que
+#    les mois qualifiés. « Non qualifiée » veut dire que le producteur
+#    n'a pas expertisé la valeur : ce n'est pas à nous de le faire à sa
+#    place.
+#
+# 2. **Un contrôle d'homogénéité, qui ne vient de personne.** On
+#    compare la médiane des premières années à celle des dernières. Un
+#    rapport supérieur à trois n'est pas une tendance hydrologique,
+#    c'est une rupture de méthode ou d'unité. La série entière est
+#    alors refusée, et le motif écrit dans la sortie du script.
+#
+# Le second filet existe parce que le premier repose sur un champ que
+# le producteur remplit — et qu'un champ peut être rempli à tort.
+#
+# ── Une interrogation par station, non par site ──────────────────
+#
+# Le reste de ce script interroge les observations par code de SITE,
+# ce qui convient à des stations qui se succèdent dans le temps. Mais
+# un même site porte parfois deux stations simultanées — ici une EDF
+# et une DREAL — qui ne mesurent pas la même chose : sur la Bourne en
+# 2003, l'une donne 0,9 m³/s quand l'autre en donne 20,5. Pour une
+# chronique, on interroge donc la STATION, dont on sait quoi dire.
+# ══════════════════════════════════════════════════════════════════
+
+GRANDEUR_MENSUELLE = "QmM"
+
+# Qualifications retenues. « Non qualifiée » signifie que le producteur
+# n'a pas expertisé la valeur : elle ne sert ni de courbe ni de repère.
+QUALIFICATIONS = ("bonne", "douteuse", "correcte")
+
+MOIS_MINIMUM = 120          # dix ans : en deçà, une « évolution » n'en est pas une
+ANNEES_TEMOIN = 5           # fenêtres comparées pour le contrôle d'homogénéité
+ECART_MAXIMUM = 3.0         # au-delà, rupture de méthode plutôt que tendance
+
+# Cours d'eau dont le débit mesuré traduit autant la gestion des
+# ouvrages que la pluie. Leur courbe reste publiable — c'est le débit
+# réel de la rivière — mais elle ne raconte pas le climat, et la fiche
+# doit le dire.
+COURS_EAU_AMENAGES = ("isère", "romanche", "drac")
+
+RESERVE_AMENAGE = (
+    "Cette rivière est fortement aménagée : le débit mesuré traduit "
+    "autant la gestion des ouvrages hydroélectriques que la pluie et la "
+    "fonte des neiges. La courbe décrit la rivière telle qu'elle coule, "
+    "non le climat du bassin.")
+
+
+def mediane(valeurs):
+    suite = sorted(v for v in valeurs if v is not None)
+    if not suite:
+        return None
+    n = len(suite)
+    return suite[n // 2] if n % 2 else (suite[n // 2 - 1] + suite[n // 2]) / 2
+
+
+def chronique_mensuelle(code_station):
+    """Débits moyens mensuels qualifiés d'une station, du plus ancien.
+
+    Renvoie une liste de (année, mois, débit en m³/s) ; les mois sans
+    valeur retenue sont absents, les trous seront rendus visibles au
+    moment de construire la série.
+    """
+    lot = appeler("obs_elab", silencieux=True,
+                  code_entite=code_station,
+                  grandeur_hydro_elab=GRANDEUR_MENSUELLE,
+                  size=5000)
+    if not lot:
+        return [], 0
+
+    retenus, ecartes = [], 0
+    for o in lot:
+        jour = champ(o, "date_obs_elab", "date_obs")
+        brut = champ(o, "resultat_obs_elab", "resultat_obs")
+        if jour is None or brut is None:
+            continue
+        qualification = str(champ(o, "libelle_qualification") or "").lower()
+        if qualification and not any(q in qualification for q in QUALIFICATIONS):
+            ecartes += 1
+            continue
+        try:
+            texte = str(jour)[:10]
+            retenus.append((int(texte[:4]), int(texte[5:7]),
+                            float(brut) / 1000.0))
+        except (TypeError, ValueError):
+            continue
+    retenus.sort()
+    return retenus, ecartes
+
+
+def homogene(points):
+    """La série décrit-elle la même chose d'un bout à l'autre ?
+
+    Renvoie (True, None) ou (False, motif). Le contrôle ne juge pas la
+    vraisemblance hydrologique : il détecte un changement d'échelle,
+    qu'aucune rivière ne produit d'elle-même.
+    """
+    if len(points) < MOIS_MINIMUM:
+        return False, f"{len(points)} mois qualifiés, moins que les {MOIS_MINIMUM} requis"
+    premiere = points[0][0]
+    derniere = points[-1][0]
+    if derniere - premiere < 2 * ANNEES_TEMOIN:
+        return True, None            # trop courte pour comparer deux fenêtres
+
+    debut = [v for (a, _, v) in points if a < premiere + ANNEES_TEMOIN]
+    fin = [v for (a, _, v) in points if a > derniere - ANNEES_TEMOIN]
+    m1, m2 = mediane(debut), mediane(fin)
+    if not m1 or not m2:
+        return True, None
+    rapport = max(m1, m2) / min(m1, m2)
+    if rapport > ECART_MAXIMUM:
+        return False, (f"médiane {m1:.2f} m³/s au début contre {m2:.2f} à la "
+                       f"fin, soit un rapport de {rapport:.0f} — rupture "
+                       f"d'échelle, pas une tendance")
+    return True, None
+
+
+def serie_continue(points):
+    """Suite mensuelle régulière, du premier au dernier mois retenu.
+
+    Les mois absents deviennent des trous explicites : c'est le
+    générateur qui les affichera comme tels, et il ne les interpolera
+    pas.
+    """
+    valeurs = {(a, m): v for a, m, v in points}
+    a0, m0, _ = points[0]
+    a1, m1, _ = points[-1]
+    suite, a, m = [], a0, m0
+    while (a, m) <= (a1, m1):
+        v = valeurs.get((a, m))
+        suite.append(round(v, 2) if v is not None else None)
+        m += 1
+        if m > 12:
+            a, m = a + 1, 1
+    return suite, f"{a0}-{m0:02d}"
+
+
+def chroniques_debit(stations, mensuelles):
+    """Graphiques de débit du territoire, et le journal de ce qui a été écarté.
+
+    Une seule station porte les graphiques : celle dont la série
+    qualifiée est la plus longue. En publier plusieurs multiplierait
+    les courbes sans ajouter de sens — le visiteur n'a pas à arbitrer
+    entre deux stations dont il ignore tout.
+    """
+    journal, candidates = [], []
+    for st in stations:
+        points = mensuelles.get(st["code"]) or []
+        if not points:
+            continue
+        bon, motif = homogene(points)
+        if not bon:
+            journal.append((st, motif))
+            continue
+        candidates.append((st, points))
+
+    if not candidates:
+        return [], journal
+
+    st, points = max(candidates, key=lambda x: len(x[1]))
+    valeurs, depart = serie_continue(points)
+    # Le libellé du producteur est le bon : « La Bourne à
+    # Saint-Just-de-Claix ». Le reconstruire à partir du nom de commune
+    # donnerait « Saint-Just-De-Claix », les particules prenant la
+    # majuscule. On se contente d'en retirer la précision technique
+    # entre crochets, qui ne dit rien au visiteur.
+    nom = re.sub(r"\s*\[[^\]]*\]", "", st["nom"]).strip() or st["code"]
+    amenage = any(x in st["cours_eau"].lower() for x in COURS_EAU_AMENAGES)
+    source = (f"{SOURCE} · station {st['code']} · "
+              f"{points[0][0]}-{points[-1][0]}")
+
+    commun = {"rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE,
+              "unite": "m³/s", "decimales": 1,
+              "debut": depart, "pas": "mois", "valeurs": valeurs,
+              "source": source}
+    series = [
+        dict(commun, id="debit-saison", forme="saison", rang=10,
+             titre=f"Débit mensuel — {nom}, l'année en cours",
+             note=("La bande montre tout ce qui a été observé chaque mois "
+                   "depuis le début de la chronique. "
+                   + (RESERVE_AMENAGE if amenage else ""))),
+        dict(commun, id="debit-chronique", forme="courbe", rang=20,
+             libelle_serie="Débit moyen mensuel",
+             titre=f"Débit mensuel — {nom}, toute la chronique",
+             note=("Seuls les mois qualifiés par le producteur sont tracés ; "
+                   "les périodes grisées n'en portent aucun. "
+                   + (RESERVE_AMENAGE if amenage else ""))),
+    ]
+    return series, journal
 
 
 def situer(mesures):
@@ -350,23 +592,30 @@ def situer(mesures):
 
 
 def synthetiser(stations, mesures_par_station):
-    exploitables = [s for s in stations if mesures_par_station.get(s["site"])]
+    exploitables = [s for s in stations if mesures_par_station.get(s["code"])]
     if not exploitables:
         return None
 
     def fraicheur(s):
-        return mesures_par_station[s["site"]][0]["date"]
+        return mesures_par_station[s["code"]][0]["date"]
 
     def eloignement(s):
         return s.get("distance") if s.get("distance") is not None else 999
+
+    def densite(s):
+        return len(mesures_par_station[s["code"]])
 
     limite = (date.today() - timedelta(days=FRAICHEUR_JOURS)).isoformat()
     recentes = [s for s in exploitables if fraicheur(s) >= limite]
     candidates = recentes or exploitables
     proches = [s for s in candidates if eloignement(s) <= SEUIL_ELOIGNEMENT]
-    reference = min(proches or candidates, key=eloignement)
+    # À distance égale — deux stations au même endroit — la mieux
+    # fournie l'emporte : c'est le seul signal disponible pour
+    # distinguer la station de référence du dispositif d'un exploitant.
+    reference = min(proches or candidates,
+                    key=lambda s: (eloignement(s), -densite(s)))
 
-    derniere, situation = situer(mesures_par_station[reference["site"]])
+    derniere, situation = situer(mesures_par_station[reference["code"]])
     valeur, unite = debit_lisible(derniere["debit"]) if derniere else (None, "")
 
     mesures = {
@@ -403,7 +652,7 @@ def synthetiser(stations, mesures_par_station):
     for s in exploitables:
         if s["site"] == reference["site"]:
             continue
-        _, sit = situer(mesures_par_station[s["site"]])
+        _, sit = situer(mesures_par_station[s["code"]])
         if sit and sit["rapport"] < 0.6:
             if plus_bas is None or sit["rapport"] < plus_bas[1]["rapport"]:
                 plus_bas = (s, sit)
@@ -420,7 +669,7 @@ def synthetiser(stations, mesures_par_station):
 
     items = []
     for s in sorted(exploitables, key=fraicheur, reverse=True):
-        lot = mesures_par_station[s["site"]]
+        lot = mesures_par_station[s["code"]]
         dern, sit = situer(lot)
         v, u = debit_lisible(dern["debit"])
         details = {}
@@ -582,15 +831,37 @@ def main():
                      if st["cours_eau"] else st["nom"])
         print(f"  [{i:>2}/{len(stations)}] {(etiquette + eloigne)[:46]:<46}",
               end=" ", flush=True)
-        lot = chronique(st["site"])
+        lot = chronique(st["code"])
         time.sleep(PAUSE)
-        mesures_par_station[st["site"]] = lot
+        mesures_par_station[st["code"]] = lot
         print(f"{len(lot)} mesure(s)" if lot else "aucune mesure")
 
     synthese = synthetiser(stations, mesures_par_station)
     if not synthese:
         print("\n  Aucune station exploitable. Rien n'a été écrit.\n")
         return
+
+    # ── série historique ─────────────────────────────────────────
+    print("\n  Chroniques mensuelles :")
+    mensuelles = {}
+    for st in stations:
+        points, ecartes = chronique_mensuelle(st["code"])
+        time.sleep(PAUSE)
+        if points or ecartes:
+            mensuelles[st["code"]] = points
+            etendue = (f"{points[0][0]}-{points[-1][0]}" if points else "—")
+            print(f"    {st['code']:<12} {len(points):>4} mois qualifiés "
+                  f"{etendue:<12}"
+                  + (f"  ({ecartes} écarté(s), non qualifiés)" if ecartes else ""))
+
+    series, journal = chroniques_debit(stations, mensuelles)
+    for st, motif in journal:
+        print(f"    [écartée] {st['code']} — {motif}")
+    if series:
+        synthese["chroniques"] = series
+        print(f"    → série retenue : {series[0]['source']}")
+    else:
+        print("    → aucune série publiable ; les indicateurs restent seuls.")
 
     territoires = {}
     if canton:

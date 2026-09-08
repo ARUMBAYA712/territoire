@@ -724,6 +724,23 @@ def chronique_catnat(catnat, aujourdhui=None):
         etiquettes.append(f"{debut}-{str(fin)[-2:]}" if fin != debut + 9
                           else f"{debut}s")
 
+    # Un événement national reconnu pour presque toutes les communes le
+    # même jour — la tempête de novembre 1982 en est le cas d'école —
+    # gonfle une décennie entière et fait lire une « baisse » là où il
+    # n'y a qu'un épisode exceptionnel au départ du dispositif. Quand
+    # une seule date fait plus du tiers d'une période, elle est nommée.
+    domination = None
+    for debut in range(premiere, derniere + 1, 10):
+        fin = min(debut + 9, aujourdhui.year)
+        dedans = [d for d in dates if debut <= d.year <= fin]
+        if len(dedans) < 5:
+            continue
+        jour, combien = max(
+            ((j, dedans.count(j)) for j in set(dedans)), key=lambda x: x[1])
+        if combien * 3 > len(dedans):
+            domination = (jour, combien, len(dedans), debut, fin)
+            break
+
     incomplete = (aujourdhui.year % 10) != 9
     return {
         "id": "catnat-decennies",
@@ -738,7 +755,14 @@ def chronique_catnat(catnat, aujourdhui=None):
                  + (f" La dernière période ne compte que "
                     f"{aujourdhui.year - derniere + 1} année(s) : elle n'est "
                     f"pas comparable telle quelle aux décennies pleines."
-                    if incomplete else "")),
+                    if incomplete else "")
+                 + (f" Attention à la lecture : sur {domination[3]}-"
+                    f"{str(domination[4])[-2:]}, {domination[1]} des "
+                    f"{domination[2]} arrêtés relèvent d'un seul événement, "
+                    f"reconnu le {domination[0].strftime('%d/%m/%Y')}. Une "
+                    f"période dominée par un épisode unique ne se compare "
+                    f"pas aux autres."
+                    if domination else "")),
     }
 
 
