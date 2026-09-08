@@ -2,30 +2,38 @@ FUTURS PROMPTS
 
 Ancien chat : 
 
-Peux-tu me redonner les fichiers "Audit" et "Test" que tu verseras dans le projet « Data Locales » (dossier sudgresiv/) pour poursuivre dans le nouveau chat ? Idem avec le fichier "catalogue-sources-opendata.xlsx" que tu mettras à jour avant de le poser dans ce dossier.
+OK ----Peux-tu me redonner les fichiers "Audit" et "Test" que tu verseras dans le projet « Data Locales » (dossier sudgresiv/) pour poursuivre dans le nouveau chat ? Idem avec le fichier "catalogue-sources-opendata.xlsx" que tu mettras à jour avant de le poser dans ce dossier
 
 Nouveau chat : 
 
-0- Les fichiers sont posés dans le dossier "sudgresiv/", tu peux continuer la tâche en cours
+OK ----0- Voici les fichiers a poser dans le dossier "sudgresiv/", tu peux continuer la tâche en cours. Je te lie aussi les fichiers Python existants.
 
-1- Prends en compte pour plus tard la partie Carburants que tu retrouves dans les fichiers du dossier "sudgresiv/" du projet. 
-
-2- Peux-tu créer une page pour Carburant afin que l'indexation de la page par les moteurs de recherche puisse commencer. Idem pour les pages Election du Canton, de la Communauté de Commune, et de chaque Commune. A chaque fois, fais un texte d'attente avec les bon mots clés pour les bots.
-
-3- Le dossier dans l'hébergement "Terri_Admin/" est maintenant protégé. 
+OK ----1- Le dossier dans l'hébergement "Terri_Admin/" est maintenant protégé. 
 J'ai créé un sous-dossier "Documents" afin de stocker les différents document de travail. Peux-tu me créer une page php qui vienne lire le contenu de ce répertorie et me proposer une liste cliquable à partir de l'index du répertoire "Terri_Admin/". 
 Quand tu créeras ou modifieras un document, il faudra en plus des autres lieux enregistrer ces documents dans ce sous-répertoire. Le but est que je puisse à partir d'un smartphone ou autre accéder à ces documents. 
 Attention, si tu as des contenus critiques pour la sécurité, il va falloir que l'on échange si c'est raisonnable de les stocker dans ce répertoire au cas par cas.
 
-4- Dans "Canton Le Sud Grésivaudan" et "Intercommunalité Saint-Marcellin Vercors Isère", il faudrait diminuer la hauteur de "Rattachements". On ne laisse pas voir les communes rattachées et on pourrait agrandir le bandeau par le bas un expand en cliquant sur "Voir les communes". On gagnera en place et cela valorisera le contenu des tuiles en dessous tout en laissant les communes accessibles facilement.
+OK ----2- Prends en compte pour plus tard la partie Carburants que tu retrouves dans les fichiers du dossier "sudgresiv/" du projet. 
 
-5- Est-ce que l'on peut avoir les cours d'eaux existants et les zones humides pour chaque commune ? Ces informations seraient présentées sous forme de tuiles avec plus de détails si on en a. Ces 2 informations pourrait être dans les rubriques "Géographie" et "Environnement" car nous ne pouvons pas connaitre sous quel cheminement la visite va se réaliser. 
+????? ----3- Peux-tu créer une page pour Carburant afin que l'indexation de la page par les moteurs de recherche puisse commencer. Idem pour les pages Election du Canton, de la Communauté de Commune, et de chaque Commune. A chaque fois, fais un texte d'attente avec les bon mots clés pour les bots.
 
-6- Peux-tu voir si on peut faire des historiques sur les datas liées au niveau mensuel des nappes, le débit mensuel des rivières, des moyennes mensuelles températures et autres datas environnementales? 
+
+OK ----4- Dans "Canton Le Sud Grésivaudan" et "Intercommunalité Saint-Marcellin Vercors Isère", il faudrait diminuer la hauteur de "Rattachements". On ne laisse pas voir les communes rattachées et on pourrait agrandir le bandeau par le bas un expand en cliquant sur "Voir les communes". On gagnera en place et cela valorisera le contenu des tuiles en dessous tout en laissant les communes accessibles facilement.
+
+????? ----5- Est-ce que l'on peut avoir les cours d'eaux existants et les zones humides pour chaque commune ? Ces informations seraient présentées sous forme de tuiles avec plus de détails si on en a. Ces 2 informations pourrait être dans les rubriques "Géographie" et "Environnement" car nous ne pouvons pas connaitre sous quel cheminement la visite va se réaliser. 
+
+????? ----6- Peux-tu voir si on peut faire des historiques sur les datas liées au niveau mensuel des nappes, le débit mensuel des rivières, des moyennes mensuelles températures et autres datas environnementales? 
 L'intérêt est de voir l'évolution depuis x années et de mieux se rendre compte que les évolutions sont marquées. Le nombre d'année sera en fonction des historiques de chaque datas pour chaque communes. Sous forme de graphique si possible interactif. Propose moi d'autres Data, d'autres formes de présentation si besoin, je te laisse voir la possibilité de la finesse au mois, au trimestre, à l'année.
 
-7- Peux-tu détecter les liens que Google dans son référencement de Territoire.Sudgresiv.com ? Fais moi en un document pour le 50 premiers liens. Indique moi s'il y a des erreurs 404. Peux-tu faire un fichier de redirection vers la page index de Territoire.Sudgresiv.com 
+OK ----7- Peux-tu détecter les liens que Google dans son référencement de Territoire.Sudgresiv.com ? Fais moi en un document pour le 50 premiers liens. Indique moi s'il y a des erreurs 404. Peux-tu faire un fichier de redirection vers la page index de Territoire.Sudgresiv.com 
 Est-ce que ce la programmation actuelle commence à bien être indexée ? Est-ce que la programmation des pages et des entêtes HTML des pages sont excellent d'un point de vu SOE ?
 Je pense que pour un meilleur référencement il faudrait amener un peut plus de texte d'explication avec les datas présentées. C'est un point à noter pour le faire un peu plus tard.
 
-8- Donne moi la marche à suivre pas à pas et expliquée de façon simple, chaque étape de mise en place de GitHub Actions
+OK ----8- Donne moi la marche à suivre pas à pas et expliquée de façon simple, chaque étape de mise en place de GitHub Actions
+
+ToDo ----9- Quand on est dans une rubrique spécifique d'une page (quelque que soit la maille), par exemple Environnement, quand on clique sur une commune sur la carte, il serait mieux d'arriver dans la même rubrique sur la cible. Par exemple, si je suis sur la commune de Chatte page Environnement, si je clique sur Izeron, alors s'affiche la page Environnement de la commune d'Izeron. Cela permet de nviguer de commune à commune.
+
+10- A réfléchir sur la possiblité de comparer 2 communes entre elles sur des datas. Je ne sais pas encore lesquelles mais cela pourrait être pertinent d'avoir une page pour cela. Peut-être aussi mais dans la page d'une commune, situer la data d'une commune par rapport au territoire/canton. A mettre dans les évolutions possibles.
+
+
+
