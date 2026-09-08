@@ -186,6 +186,7 @@ main .wrap{padding:26px 20px 48px}
 .chr-y text{text-anchor:end}
 .chr-x text{text-anchor:middle}
 .chr-unite{fill:var(--dim);font-size:10px;text-anchor:end}
+.chr-unite-large{text-anchor:start}
 .chr-bande{fill:var(--accent);opacity:.16}
 .chr-mediane{fill:none;stroke:var(--soft);stroke-width:1.5;opacity:.75}
 .chr-courant{fill:none;stroke:var(--accent);stroke-width:2;

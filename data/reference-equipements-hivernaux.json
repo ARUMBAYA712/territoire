@@ -1,20 +1,41 @@
 {
- "_lisez_moi": "Référentiel saisi à la main depuis l'arrêté préfectoral. Complétez « communes » à partir de la liste annexée à l'arrêté, puis passez « saisie_complete » à true. Tant qu'elle est false, les communes absentes de la liste n'affichent aucune information plutôt qu'un « non concernée » qui pourrait être faux.",
+ "_lisez_moi": "Référentiel saisi à la main depuis l'arrêté préfectoral. La liste ci-dessous est celle de l'arrêté du 12 janvier 2026, relevée sur le document numérisé fourni le 8 septembre 2026 : neuf communes du territoire y figurent, six sur la totalité de leur territoire et trois sur des axes précis. Aucune autre commune du périmètre n'apparaît dans l'arrêté. La saisie est donc déclarée complète.",
  "texte": "Arrêté préfectoral du 12 janvier 2026",
  "autorite": "Préfecture de l'Isère",
  "lien": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
  "saisi_le": "2026-09-08",
- "valable_jusqu_au": "2026-10-31",
- "saisie_complete": false,
+ "valable_jusqu_au": "2027-10-31",
+ "saisie_complete": true,
  "communes": {
-  "Cognin-les-Gorges": {
+  "Châtelus": {
    "portee": "totale"
+  },
+  "Choranche": {
+   "portee": "totale"
+  },
+  "Malleval-en-Vercors": {
+   "portee": "totale"
+  },
+  "Montaud": {
+   "portee": "totale"
+  },
+  "Presles": {
+   "portee": "totale"
+  },
+  "Rencurel": {
+   "portee": "totale"
+  },
+  "Cognin-les-Gorges": {
+   "portee": "partielle",
+   "precision": "RD22, à partir du PR 13+380, carrefour avec le chemin des Garrigues."
   },
   "Saint-Gervais": {
-   "portee": "totale"
+   "portee": "partielle",
+   "precision": "RD35, à partir du PR 8+720, portail aval de fermeture des Écouges."
   },
   "Rovon": {
-   "portee": "totale"
+   "portee": "partielle",
+   "precision": "RD35, à partir du PR 8+720, portail aval de fermeture des Écouges."
   }
  }
 }

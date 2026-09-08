@@ -6,10 +6,10 @@
  "frequence": "annuelle",
  "texte": "Arrêté préfectoral du 12 janvier 2026",
  "saisi_le": "2026-09-08",
- "valable_jusqu_au": "2026-10-31",
- "saisie_complete": false,
+ "valable_jusqu_au": "2027-10-31",
+ "saisie_complete": true,
  "communes": {
-  "38117": {
+  "38092": {
    "mesures": {
     "TRA-01": {
      "valeur": "Sur toute la commune",
@@ -51,14 +51,291 @@
       "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
       "libelle": "Consulter l'arrêté préfectoral"
      },
-     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur toute la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur toute la commune",
+       "details": {
+        "Portée": "Toute la commune",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère"
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Sur une partie de la commune",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "ancre": "equipements-hivernaux",
+     "explication": "L'obligation ne s'applique qu'à certains axes de cette commune, signalés par des panneaux. Hors de ces sections, elle ne s'applique pas.",
+     "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "id": "equipements-hivernaux",
+     "titre": "Équipements hivernaux obligatoires",
+     "items": [
+      {
+       "titre": "Obligation sur une partie de la commune",
+       "details": {
+        "Portée": "Une partie de la commune, sur les axes signalés",
+        "Période": "Du 1er novembre au 31 mars",
+        "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+        "Autorité": "Préfecture de l'Isère",
+        "Axes concernés": "RD22, à partir du PR 13+380, carrefour avec le chemin des Garrigues."
+       },
+       "etat": [
+        "Hors période",
+        "neutre"
+       ],
+       "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+      }
+     ],
+     "lien": {
+      "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+      "libelle": "Consulter l'arrêté préfectoral"
+     },
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
     }
    ]
   },
   "38390": {
    "mesures": {
     "TRA-01": {
-     "valeur": "Sur toute la commune",
+     "valeur": "Sur une partie de la commune",
      "unite": "",
      "nom": "Équipements hivernaux obligatoires",
      "obtention": "saisi",
@@ -68,7 +345,7 @@
      "rubrique": "transports",
      "rang": 10,
      "ancre": "equipements-hivernaux",
-     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "explication": "L'obligation ne s'applique qu'à certains axes de cette commune, signalés par des panneaux. Hors de ces sections, elle ne s'applique pas.",
      "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
     }
    },
@@ -79,12 +356,13 @@
      "titre": "Équipements hivernaux obligatoires",
      "items": [
       {
-       "titre": "Obligation sur toute la commune",
+       "titre": "Obligation sur une partie de la commune",
        "details": {
-        "Portée": "Toute la commune",
+        "Portée": "Une partie de la commune, sur les axes signalés",
         "Période": "Du 1er novembre au 31 mars",
         "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
-        "Autorité": "Préfecture de l'Isère"
+        "Autorité": "Préfecture de l'Isère",
+        "Axes concernés": "RD35, à partir du PR 8+720, portail aval de fermeture des Écouges."
        },
        "etat": [
         "Hors période",
@@ -97,14 +375,14 @@
       "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
       "libelle": "Consulter l'arrêté préfectoral"
      },
-     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
     }
    ]
   },
   "38345": {
    "mesures": {
     "TRA-01": {
-     "valeur": "Sur toute la commune",
+     "valeur": "Sur une partie de la commune",
      "unite": "",
      "nom": "Équipements hivernaux obligatoires",
      "obtention": "saisi",
@@ -114,7 +392,7 @@
      "rubrique": "transports",
      "rang": 10,
      "ancre": "equipements-hivernaux",
-     "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+     "explication": "L'obligation ne s'applique qu'à certains axes de cette commune, signalés par des panneaux. Hors de ces sections, elle ne s'applique pas.",
      "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
     }
    },
@@ -125,12 +403,13 @@
      "titre": "Équipements hivernaux obligatoires",
      "items": [
       {
-       "titre": "Obligation sur toute la commune",
+       "titre": "Obligation sur une partie de la commune",
        "details": {
-        "Portée": "Toute la commune",
+        "Portée": "Une partie de la commune, sur les axes signalés",
         "Période": "Du 1er novembre au 31 mars",
         "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
-        "Autorité": "Préfecture de l'Isère"
+        "Autorité": "Préfecture de l'Isère",
+        "Axes concernés": "RD35, à partir du PR 8+720, portail aval de fermeture des Écouges."
        },
        "etat": [
         "Hors période",
@@ -143,9 +422,693 @@
       "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
       "libelle": "Consulter l'arrêté préfectoral"
      },
-     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+     "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
     }
    ]
+  },
+  "38004": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38018": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38033": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38036": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38041": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38074": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38086": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38095": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38099": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38137": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38195": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38245": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38263": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38272": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38275": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38278": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38310": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38319": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38330": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38338": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38356": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38359": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38360": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38370": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38394": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38409": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38410": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38416": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38443": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38450": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38453": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38454": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38463": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38495": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38500": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38523": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38526": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
+  },
+  "38559": {
+   "mesures": {
+    "TRA-01": {
+     "valeur": "Non concernée",
+     "unite": "",
+     "nom": "Équipements hivernaux obligatoires",
+     "obtention": "saisi",
+     "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "rang": 10,
+     "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+     "repere": "Arrêté préfectoral du 12 janvier 2026"
+    }
+   },
+   "blocs": []
   }
  }
 }

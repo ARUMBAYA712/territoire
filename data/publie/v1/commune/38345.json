@@ -308,7 +308,7 @@
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
     "TRA-01": {
-      "valeur": "Sur toute la commune",
+      "valeur": "Sur une partie de la commune",
       "unite": "",
       "nom": "Équipements hivernaux obligatoires",
       "obtention": "saisi",
@@ -318,7 +318,7 @@
       "rubrique": "transports",
       "rang": 10,
       "ancre": "equipements-hivernaux",
-      "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+      "explication": "L'obligation ne s'applique qu'à certains axes de cette commune, signalés par des panneaux. Hors de ces sections, elle ne s'applique pas.",
       "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
     },
     "POP-20": {
@@ -772,12 +772,13 @@
       "titre": "Équipements hivernaux obligatoires",
       "items": [
         {
-          "titre": "Obligation sur toute la commune",
+          "titre": "Obligation sur une partie de la commune",
           "details": {
-            "Portée": "Toute la commune",
+            "Portée": "Une partie de la commune, sur les axes signalés",
             "Période": "Du 1er novembre au 31 mars",
             "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
-            "Autorité": "Préfecture de l'Isère"
+            "Autorité": "Préfecture de l'Isère",
+            "Axes concernés": "RD35, à partir du PR 8+720, portail aval de fermeture des Écouges."
           },
           "etat": [
             "Hors période",
@@ -790,7 +791,7 @@
         "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
         "libelle": "Consulter l'arrêté préfectoral"
       },
-      "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
+      "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
     },
     {
       "rubrique": "population",
@@ -969,13 +970,15 @@
         {
           "titre": "Tempête",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         }
       ],
@@ -1050,6 +1053,78 @@
         }
       ],
       "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        13.2,
+        13.1,
+        13.1,
+        13.2,
+        13.2,
+        13.2,
+        13.2,
+        13.2,
+        12.9,
+        12.9,
+        12.9,
+        12.9,
+        12.9,
+        12.9,
+        12.8,
+        12.8,
+        12.8,
+        12.8
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
     }
   ]
 }

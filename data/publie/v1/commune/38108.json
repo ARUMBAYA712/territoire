@@ -276,6 +276,20 @@
       "repere": "6 femmes, 5 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
+    "TRA-01": {
+      "valeur": "Sur toute la commune",
+      "unite": "",
+      "nom": "Équipements hivernaux obligatoires",
+      "obtention": "saisi",
+      "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "rang": 10,
+      "ancre": "equipements-hivernaux",
+      "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+      "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
+    },
     "POP-20": {
       "valeur": 17.9,
       "unite": "%",
@@ -655,6 +669,32 @@
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     },
     {
+      "rubrique": "transports",
+      "id": "equipements-hivernaux",
+      "titre": "Équipements hivernaux obligatoires",
+      "items": [
+        {
+          "titre": "Obligation sur toute la commune",
+          "details": {
+            "Portée": "Toute la commune",
+            "Période": "Du 1er novembre au 31 mars",
+            "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+            "Autorité": "Préfecture de l'Isère"
+          },
+          "etat": [
+            "Hors période",
+            "neutre"
+          ],
+          "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+        }
+      ],
+      "lien": {
+        "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+        "libelle": "Consulter l'arrêté préfectoral"
+      },
+      "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. "
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -805,21 +845,22 @@
       "titre": "Catastrophes naturelles reconnues depuis 1982",
       "items": [
         {
-          "titre": "Tempête",
+          "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "05/08/2022",
+            "Arrêté publié le": "19/09/2022",
+            "Numéro NOR": "IOME2226252A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2226252A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
+            "Événement": "du 21/08/2005 au 23/08/2005",
+            "Arrêté publié le": "06/10/2005",
             "Numéro NOR": "INTE0500697A"
           },
           "lien": {
@@ -830,7 +871,8 @@
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
+            "Événement": "du 07/07/1996 au 09/07/1996",
+            "Arrêté publié le": "01/10/1996",
             "Numéro NOR": "INTE9600421A"
           },
           "lien": {
@@ -839,14 +881,17 @@
           }
         },
         {
+          "titre": "Tempête",
+          "details": {
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
+          }
+        },
+        {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
-            "Numéro NOR": "IOME2226252A"
-          },
-          "lien": {
-            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=IOME2226252A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
-            "libelle": "Consulter l'arrêté sur Légifrance"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         }
       ],
@@ -921,6 +966,105 @@
         }
       ],
       "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16.9,
+        54.5,
+        62.1,
+        52.0,
+        7.6,
+        52.1,
+        56.4
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        4,
+        3,
+        2,
+        5,
+        5
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
+    },
+    {
+      "id": "catnat-decennies",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "forme": "barres",
+      "rang": 10,
+      "titre": "Arrêtés de catastrophe naturelle, par décennie",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique · depuis 1982",
+      "unite": "arrêtés",
+      "decimales": 0,
+      "etiquettes": [
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020-26"
+      ],
+      "valeurs": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "agregation": "somme",
+      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines."
     }
   ]
 }

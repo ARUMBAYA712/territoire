@@ -321,6 +321,19 @@
       "repere": "10 femmes, 9 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
+    "TRA-01": {
+      "valeur": "Non concernée",
+      "unite": "",
+      "nom": "Équipements hivernaux obligatoires",
+      "obtention": "saisi",
+      "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "rang": 10,
+      "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+      "repere": "Arrêté préfectoral du 12 janvier 2026"
+    },
     "POP-20": {
       "valeur": 15.0,
       "unite": "%",
@@ -1038,22 +1051,25 @@
       "titre": "Catastrophes naturelles reconnues depuis 1982",
       "items": [
         {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "14/05/1988",
+            "Arrêté publié le": "22/02/1989",
+            "Référence": "ECOZ890006A"
+          }
+        },
+        {
           "titre": "Tempête",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
-            "Référence": "ECOZ890006A"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         }
       ],
@@ -1128,6 +1144,105 @@
         }
       ],
       "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        43.6,
+        43.1,
+        43.1,
+        43.1,
+        43.0,
+        43.0,
+        43.1,
+        45.9
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
+    },
+    {
+      "id": "catnat-decennies",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "forme": "barres",
+      "rang": 10,
+      "titre": "Arrêtés de catastrophe naturelle, par décennie",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique · depuis 1982",
+      "unite": "arrêtés",
+      "decimales": 0,
+      "etiquettes": [
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020-26"
+      ],
+      "valeurs": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "agregation": "somme",
+      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines."
     }
   ]
 }

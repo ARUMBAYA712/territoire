@@ -48,7 +48,7 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
-VERSION_SCRIPT = 3
+VERSION_SCRIPT = 4
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -358,6 +358,63 @@ def synthetiser(ligne, colonnes, millesime):
 
 # ══════════════════════════════════════════════════════════════════
 
+
+# ══════════════════════════════════════════════════════════════════
+# SÉRIE HISTORIQUE
+#
+# Le fichier de l'Agence Bio couvre dix-huit millésimes ; nous n'en
+# lisions qu'un. Les publier tous ne coûte rien — le fichier est déjà
+# téléchargé — et c'est la série la plus parlante du site : sur ce
+# territoire, les surfaces bio ont été multipliées par sept en dix-huit
+# ans.
+#
+# **Une absence vaut zéro, et non « pas de donnée ».** Le fichier ne
+# liste une commune une année donnée que si elle compte au moins un
+# opérateur certifié. Une commune absente en 2008 n'a donc pas de
+# surface bio cette année-là : c'est une valeur, pas une lacune, et
+# c'est la différence avec un capteur en panne. Le trou ne serait
+# honnête que si l'Agence Bio cessait de publier une année entière —
+# auquel cas l'année manquerait pour toutes les communes, et la série
+# n'aurait tout simplement pas ce point.
+# ══════════════════════════════════════════════════════════════════
+
+def chroniques_bio(suite, annees):
+    """Séries annuelles d'une commune, sur la période commune à toutes.
+
+    On ne produit rien pour une commune qui n'a jamais rien déclaré :
+    dix-huit barres à zéro n'apprennent rien et occupent un écran.
+    """
+    if not suite or not annees:
+        return []
+    surfaces = [hectares(suite.get(a, (0.0, 0))[0]) or 0 for a in annees]
+    fermes = [int(suite.get(a, (0.0, 0))[1] or 0) for a in annees]
+    if not any(surfaces) and not any(fermes):
+        return []
+
+    commun = {"rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE,
+              "forme": "barres", "pas": "an", "debut": str(annees[0]),
+              "source": f"{SOURCE} · {annees[0]}-{annees[-1]}",
+              "agregation": "somme"}
+    series = []
+    if any(surfaces):
+        series.append(dict(commun, id="bio-surfaces", rang=10,
+                           titre="Surface en agriculture biologique, "
+                                 "année par année",
+                           unite="ha", decimales=0, valeurs=surfaces,
+                           note=RESERVE))
+    if any(fermes):
+        series.append(dict(commun, id="bio-exploitations", rang=20,
+                           titre="Exploitations engagées en bio, "
+                                 "année par année",
+                           unite="exploitations", decimales=0,
+                           valeurs=fermes,
+                           note="Une année sans exploitation certifiée "
+                                "compte pour zéro : le fichier de l'Agence "
+                                "Bio ne cite une commune que lorsqu'elle "
+                                "compte au moins un opérateur."))
+    return series
+
+
 def main():
     if not REFERENTIEL.exists():
         print(f"\n[ERREUR] {REFERENTIEL} introuvable.\n")
@@ -441,9 +498,10 @@ def main():
     communes = json.loads(REFERENTIEL.read_text(encoding="utf-8"))["communes"]
     attendues = {c["code"]: c["nom"] for c in communes}
 
-    # Le fichier couvre plusieurs millésimes : on ne retient que le plus
-    # récent pour chaque commune.
+    # Le fichier couvre dix-huit millésimes. Le dernier alimente les
+    # indicateurs ; tous alimentent la série historique.
     retenues, millesime = {}, None
+    historique = {}          # code -> {annee: (surface, exploitations)}
     for ligne in lecture:
         code = str(ligne.get(colonnes["code"], "")).strip().zfill(5)
         if code not in attendues:
@@ -453,6 +511,10 @@ def main():
             retenues[code] = (annee, ligne)
         if annee and (millesime is None or annee > millesime):
             millesime = annee
+        if annee:
+            historique.setdefault(code, {})[int(annee)] = (
+                nombre(ligne.get(colonnes.get("surface_bio", ""), "")) or 0.0,
+                nombre(ligne.get(colonnes.get("exploitations", ""), "")) or 0)
 
     etiquette = str(int(millesime)) if millesime else None
     resultat = {}
@@ -460,6 +522,13 @@ def main():
         synthese = synthetiser(ligne, colonnes, etiquette)
         if synthese:
             resultat[code] = synthese
+
+    annees = sorted({a for suite in historique.values() for a in suite})
+    for code, synthese in resultat.items():
+        suite = historique.get(code) or {}
+        chroniques = chroniques_bio(suite, annees)
+        if chroniques:
+            synthese["chroniques"] = chroniques
 
     if not resultat:
         print("\n[BLOCAGE] Aucune commune renseignée. Rien n'a été écrit.\n")

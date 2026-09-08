@@ -798,5 +798,107 @@
       ],
       "note": "Les cours d'eau traversent le territoire sans s'arrêter à ses limites : ces mesures valent pour l'ensemble, pas pour une commune en particulier. Un débit ne s'interprète que par rapport aux valeurs habituelles de la même saison. Un grand cours d'eau alimenté par la montagne et régulé par des barrages peut afficher un débit normal alors que des restrictions sécheresse sont en vigueur : ce sont les petits affluents qui traduisent le mieux la situation locale."
     }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        389.8,
+        635.6,
+        712.9,
+        774.3,
+        746.0,
+        748.1,
+        747.7,
+        842.9,
+        943.2,
+        1075.4,
+        1575.2,
+        1797.7,
+        2389.3,
+        2693.1,
+        2634.4,
+        2715.0,
+        2527.5,
+        2707.1
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement.",
+      "obtention": "agrégé"
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        27,
+        34,
+        40,
+        44,
+        43,
+        40,
+        44,
+        48,
+        57,
+        65,
+        84,
+        101,
+        126,
+        148,
+        157,
+        156,
+        150,
+        144
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur.",
+      "obtention": "agrégé"
+    },
+    {
+      "id": "catnat-decennies",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "forme": "barres",
+      "rang": 10,
+      "titre": "Arrêtés de catastrophe naturelle, par décennie",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique · depuis 1982",
+      "unite": "arrêtés",
+      "decimales": 0,
+      "etiquettes": [
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020-26"
+      ],
+      "valeurs": [
+        98,
+        34,
+        27,
+        12,
+        15
+      ],
+      "agregation": "somme",
+      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines.",
+      "obtention": "agrégé"
+    }
   ]
 }

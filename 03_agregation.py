@@ -28,7 +28,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 3
+VERSION_SCRIPT = 4
 
 DOSSIER = Path("data")
 SOURCE = DOSSIER / "referentiel-communes.json"
@@ -158,9 +158,11 @@ def charger_complements():
         contenu = json.loads(fichier.read_text(encoding="utf-8"))
 
         for code, bloc in contenu.get("communes", {}).items():
-            entree = communes.setdefault(code, {"mesures": {}, "blocs": []})
+            entree = communes.setdefault(
+                code, {"mesures": {}, "blocs": [], "chroniques": []})
             entree["mesures"].update(bloc.get("mesures", {}))
             entree["blocs"].extend(bloc.get("blocs", []))
+            entree["chroniques"].extend(bloc.get("chroniques", []))
 
         # Certaines données n'ont de sens qu'à une échelle large : le
         # niveau d'une nappe, le débit d'une rivière se mesurent en
@@ -168,9 +170,11 @@ def charger_complements():
         # mesures sont rattachées directement au territoire, sous une
         # clé « niveau:code ».
         for cle, bloc in contenu.get("territoires", {}).items():
-            entree = territoires.setdefault(cle, {"mesures": {}, "blocs": []})
+            entree = territoires.setdefault(
+                cle, {"mesures": {}, "blocs": [], "chroniques": []})
             entree["mesures"].update(bloc.get("mesures", {}))
             entree["blocs"].extend(bloc.get("blocs", []))
+            entree["chroniques"].extend(bloc.get("chroniques", []))
 
         detail = []
         if contenu.get("communes"):
@@ -232,9 +236,75 @@ def agreger_complements(communes_membres, complements):
     return agregees
 
 
-def enveloppe(territoire, mesures, rattachements, blocs=None):
+
+def agreger_chroniques(communes_membres, complements):
+    """Somme, point par point, les séries qui s'y prêtent.
+
+    Mêmes règles que pour les mesures : une chronique ne remonte que si
+    elle déclare « agregation »: « somme ». Une surface bio s'additionne
+    ; un niveau de nappe ne s'additionnerait pas, et ne le déclare pas.
+
+    Deux séries ne s'additionnent que si elles décrivent **la même
+    période, découpée pareil** : même départ, même pas, mêmes
+    étiquettes, même longueur. Sinon on additionnerait 2008 avec 2012,
+    et le total serait faux sans que rien ne le signale. Une série
+    écartée pour ce motif est rapportée, jamais tue.
+
+    Une valeur absente compte pour rien dans la somme, mais si **aucune**
+    commune n'a de valeur pour un point, le point reste vide : un
+    territoire sans mesure ne vaut pas zéro.
+    """
+    groupes, ecartes = {}, []
+    for commune in communes_membres:
+        for serie in complements.get(commune["code"], {}).get("chroniques", []):
+            if serie.get("agregation") != "somme" or not serie.get("valeurs"):
+                continue
+            forme = (serie.get("id"), serie.get("debut"), serie.get("pas"),
+                     tuple(serie.get("etiquettes") or ()),
+                     len(serie["valeurs"]))
+            groupes.setdefault(serie.get("id"), {}).setdefault(
+                forme, []).append(serie)
+
+    agregees = []
+    for ident, formes in groupes.items():
+        # Découpage majoritaire : s'il en existe deux, c'est un défaut
+        # de collecteur, et il vaut mieux publier la série la mieux
+        # partagée que rien du tout.
+        retenue = max(formes.values(), key=len)
+        for autre in formes.values():
+            if autre is not retenue:
+                ecartes.append((ident, len(autre)))
+
+        n = len(retenue[0]["valeurs"])
+        totaux, presents = [0.0] * n, [0] * n
+        for serie in retenue:
+            for i, v in enumerate(serie["valeurs"]):
+                if isinstance(v, (int, float)):
+                    totaux[i] += v
+                    presents[i] += 1
+
+        modele = dict(retenue[0])
+        entiers = all(
+            isinstance(v, int) for s in retenue for v in s["valeurs"]
+            if v is not None)
+        modele["valeurs"] = [
+            (int(round(t)) if entiers else round(t, 2)) if p else None
+            for t, p in zip(totaux, presents)]
+        modele["obtention"] = "agrégé"
+        modele["agregation"] = "somme"
+        agregees.append(modele)
+
+    if ecartes:
+        for ident, combien in ecartes:
+            print(f"  [attention] chronique « {ident} » : {combien} commune(s) "
+                  f"au découpage différent, écartées de la somme.")
+    return agregees
+
+
+def enveloppe(territoire, mesures, rattachements, blocs=None,
+              chroniques=None):
     """Forme commune à tous les fichiers publiés — le contrat d'échange."""
-    return {
+    fiche = {
         "version_contrat": VERSION_CONTRAT,
         "genere_le": date.today().isoformat(),
         "territoire": territoire,
@@ -242,6 +312,11 @@ def enveloppe(territoire, mesures, rattachements, blocs=None):
         "mesures": mesures,
         "blocs": blocs or [],
     }
+    # La clé n'apparaît que si le territoire a des séries : un fichier
+    # publié ne porte pas de tableau vide pour rien.
+    if chroniques:
+        fiche["chroniques"] = chroniques
+    return fiche
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -318,7 +393,8 @@ def main():
              "codes_postaux": c["codes_postaux"]},
             mesures,
             rattachements,
-            extra.get("blocs", []))
+            extra.get("blocs", []),
+            extra.get("chroniques", []))
         (PUBLIE / "commune" / f"{c['code']}.json").write_text(
             json.dumps(fichier, ensure_ascii=False, indent=2), encoding="utf-8")
         index["territoires"].append(
@@ -340,7 +416,9 @@ def main():
         mesures_canton,
         {"au_dessus": [{"niveau": "departement", "code": "38", "nom": "Isère"}],
          "en_dessous": membres},
-        extra.get("blocs", []))
+        extra.get("blocs", []),
+        agreger_chroniques(du_canton, complements)
+        + extra.get("chroniques", []))
     (PUBLIE / "canton" / f"{canton['code']}.json").write_text(
         json.dumps(fichier, ensure_ascii=False, indent=2), encoding="utf-8")
     index["territoires"].append(
@@ -361,7 +439,9 @@ def main():
         mesures_epci,
         {"au_dessus": [{"niveau": "departement", "code": "38", "nom": "Isère"}],
          "en_dessous": membres},
-        extra.get("blocs", []))
+        extra.get("blocs", []),
+        agreger_chroniques(de_l_epci, complements)
+        + extra.get("chroniques", []))
     (PUBLIE / "epci" / f"{code_epci}.json").write_text(
         json.dumps(fichier, ensure_ascii=False, indent=2), encoding="utf-8")
     index["territoires"].append(

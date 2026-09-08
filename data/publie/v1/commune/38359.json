@@ -321,6 +321,19 @@
       "repere": "11 femmes, 9 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
+    "TRA-01": {
+      "valeur": "Non concernée",
+      "unite": "",
+      "nom": "Équipements hivernaux obligatoires",
+      "obtention": "saisi",
+      "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "rang": 10,
+      "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+      "repere": "Arrêté préfectoral du 12 janvier 2026"
+    },
     "POP-20": {
       "valeur": 16.9,
       "unite": "%",
@@ -1095,64 +1108,8 @@
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 20/07/1983"
-          }
-        },
-        {
-          "titre": "Mouvement de Terrain",
-          "details": {
-            "Événement": "publié au Journal officiel le 20/07/1983"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
-          }
-        },
-        {
-          "titre": "Tempête",
-          "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
-            "Numéro NOR": "ECOA8800084A"
-          },
-          "lien": {
-            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
-            "libelle": "Consulter l'arrêté sur Légifrance"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
-            "Numéro NOR": "INTE0000173A"
-          },
-          "lien": {
-            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
-            "libelle": "Consulter l'arrêté sur Légifrance"
-          }
-        },
-        {
-          "titre": "Mouvement de Terrain",
-          "details": {
-            "Événement": "date non précisée",
-            "Numéro NOR": "INTE0100760A"
-          },
-          "lien": {
-            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100760A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
-            "libelle": "Consulter l'arrêté sur Légifrance"
-          }
-        },
-        {
-          "titre": "Inondations et/ou Coulées de Boue",
-          "details": {
-            "Événement": "date non précisée",
+            "Événement": "23/10/2013",
+            "Arrêté publié le": "31/01/2014",
             "Numéro NOR": "INTE1402613A"
           },
           "lien": {
@@ -1163,7 +1120,8 @@
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
+            "Événement": "du 22/10/2013 au 24/10/2013",
+            "Arrêté publié le": "07/08/2014",
             "Numéro NOR": "INTE1418131A"
           },
           "lien": {
@@ -1172,14 +1130,79 @@
           }
         },
         {
+          "titre": "Mouvement de Terrain",
+          "details": {
+            "Événement": "16/06/2001",
+            "Arrêté publié le": "27/12/2001",
+            "Numéro NOR": "INTE0100760A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0100760A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
+          }
+        },
+        {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "date non précisée",
+            "Événement": "du 25/09/1999 au 26/09/1999",
+            "Arrêté publié le": "14/04/2000",
+            "Numéro NOR": "INTE0000173A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE0000173A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
+          }
+        },
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "du 05/10/1993 au 10/10/1993",
+            "Arrêté publié le": "19/10/1993",
             "Numéro NOR": "INTE9300601A"
           },
           "lien": {
             "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=INTE9300601A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
             "libelle": "Consulter l'arrêté sur Légifrance"
+          }
+        },
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "du 13/06/1988 au 16/06/1988",
+            "Arrêté publié le": "19/10/1988",
+            "Numéro NOR": "ECOA8800084A"
+          },
+          "lien": {
+            "url": "https://www.legifrance.gouv.fr/search/jorf?tab_selection=jorf&query=%7B(%40ALL%5Bt%22*%22%5D)%7D&nor=ECOA8800084A&isAdvancedResult=true&sortValue=SIGNATURE_DATE_DESC&pageSize=10&typeRecherche=date&init=true&page=1",
+            "libelle": "Consulter l'arrêté sur Légifrance"
+          }
+        },
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "du 24/04/1983 au 31/05/1983",
+            "Arrêté publié le": "20/07/1983"
+          }
+        },
+        {
+          "titre": "Mouvement de Terrain",
+          "details": {
+            "Événement": "du 24/04/1983 au 31/05/1983",
+            "Arrêté publié le": "20/07/1983"
+          }
+        },
+        {
+          "titre": "Inondations et/ou Coulées de Boue",
+          "details": {
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
+          }
+        },
+        {
+          "titre": "Tempête",
+          "details": {
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         }
       ],
@@ -1254,6 +1277,105 @@
         }
       ],
       "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        61.1,
+        61.9,
+        61.1,
+        61.1,
+        55.2,
+        55.2,
+        13.4,
+        13.2,
+        33.0,
+        60.5,
+        73.8,
+        90.1,
+        93.9,
+        97.7,
+        92.0,
+        91.5
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
+    },
+    {
+      "id": "catnat-decennies",
+      "rubrique": "environnement",
+      "sous_rubrique": "risques",
+      "forme": "barres",
+      "rang": 10,
+      "titre": "Arrêtés de catastrophe naturelle, par décennie",
+      "source": "Géorisques — BRGM et ministère de la Transition écologique · depuis 1982",
+      "unite": "arrêtés",
+      "decimales": 0,
+      "etiquettes": [
+        "1980s",
+        "1990s",
+        "2000s",
+        "2010s",
+        "2020-26"
+      ],
+      "valeurs": [
+        5,
+        2,
+        1,
+        2,
+        0
+      ],
+      "agregation": "somme",
+      "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines."
     }
   ]
 }

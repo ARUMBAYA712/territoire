@@ -307,6 +307,19 @@
       "repere": "8 femmes, 7 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
+    "TRA-01": {
+      "valeur": "Non concernée",
+      "unite": "",
+      "nom": "Équipements hivernaux obligatoires",
+      "obtention": "saisi",
+      "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "rang": 10,
+      "explication": "Cette commune ne figure pas dans la liste annexée à l'arrêté préfectoral.",
+      "repere": "Arrêté préfectoral du 12 janvier 2026"
+    },
     "POP-20": {
       "valeur": 20.5,
       "unite": "%",
@@ -1008,13 +1021,15 @@
         {
           "titre": "Tempête",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         },
         {
           "titre": "Inondations et/ou Coulées de Boue",
           "details": {
-            "Événement": "publié au Journal officiel le 18/11/1982"
+            "Événement": "du 06/11/1982 au 10/11/1982",
+            "Arrêté publié le": "18/11/1982"
           }
         }
       ],
@@ -1089,6 +1104,78 @@
         }
       ],
       "note": "Situation au 08/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+    }
+  ],
+  "chroniques": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-surfaces",
+      "rang": 10,
+      "titre": "Surface en agriculture biologique, année par année",
+      "unite": "ha",
+      "decimales": 0,
+      "valeurs": [
+        7.3,
+        7.3,
+        7.3,
+        7.3,
+        7.3,
+        7.3,
+        4.6,
+        4.6,
+        4.6,
+        7.3,
+        7.6,
+        11.5,
+        10.9,
+        14.4,
+        17.4,
+        12.5,
+        12.5,
+        12.5
+      ],
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "forme": "barres",
+      "pas": "an",
+      "debut": "2008",
+      "source": "Agence Bio — organismes certificateurs · 2008-2025",
+      "agregation": "somme",
+      "id": "bio-exploitations",
+      "rang": 20,
+      "titre": "Exploitations engagées en bio, année par année",
+      "unite": "exploitations",
+      "decimales": 0,
+      "valeurs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
     }
   ]
 }

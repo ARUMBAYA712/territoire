@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 32
+VERSION_SCRIPT = 33
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -421,6 +421,7 @@ main .wrap{padding:26px 20px 48px}
 .chr-y text{text-anchor:end}
 .chr-x text{text-anchor:middle}
 .chr-unite{fill:var(--dim);font-size:10px;text-anchor:end}
+.chr-unite-large{text-anchor:start}
 .chr-bande{fill:var(--accent);opacity:.16}
 .chr-mediane{fill:none;stroke:var(--soft);stroke-width:1.5;opacity:.75}
 .chr-courant{fill:none;stroke:var(--accent);stroke-width:2;
@@ -1341,12 +1342,20 @@ MOIS_COURT = ["janv.", "févr.", "mars", "avril", "mai", "juin", "juil.",
               "août", "sept.", "oct.", "nov.", "déc."]
 
 
-def chr_echelle(bas, haut, cible=5):
-    """Bornes arrondies et pas lisible — jamais une graduation à 3,17."""
+def chr_echelle(bas, haut, cible=5, entier=False):
+    """Bornes arrondies et pas lisible — jamais une graduation à 3,17.
+
+    « entier » sert aux comptages. Sur une série qui plafonne à deux
+    exploitations, un pas de 0,5 donne l'axe « 0 0 1 2 2 » : les
+    graduations sont justes, leur affichage arrondi ne l'est plus. Un
+    comptage se gradue en entiers, ou il ne se gradue pas.
+    """
     etendue = (haut - bas) or abs(haut) or 1
     brut = etendue / cible
     base = 10 ** math.floor(math.log10(brut))
     pas = next(m for m in (1, 2, 2.5, 5, 10) if m * base >= brut) * base
+    if entier:
+        pas = max(1, round(pas))
     return math.floor(bas / pas) * pas, math.ceil(haut / pas) * pas, pas
 
 
@@ -1380,10 +1389,19 @@ def chr_cadre(bas, haut, pas, positions, unite, dec=None):
         v += pas
     abscisses = "".join(f'<text x="{x:.1f}" y="{CHR_H-12}">{escape(t)}</text>'
                         for x, t in positions)
+    # L'unité s'aligne à droite sur les graduations quand elle est
+    # courte — « ha », « m³/s » — et passe à gauche du cadre au-delà :
+    # « exploitations » alignée à droite déborderait hors de l'image.
+    if len(unite) <= 6:
+        etiquette_unite = (f'<text x="{CHR_MG-9}" y="{CHR_MH-7}" '
+                           f'class="chr-unite">{escape(unite)}</text>')
+    else:
+        etiquette_unite = (f'<text x="{CHR_MG}" y="{CHR_MH-7}" '
+                           f'class="chr-unite chr-unite-large">'
+                           f'{escape(unite)}</text>')
     return (f'<g class="chr-grille">{"".join(lignes)}</g>'
             f'<g class="chr-y">{"".join(valeurs)}</g>'
-            f'<text x="{CHR_MG-9}" y="{CHR_MH-7}" class="chr-unite">'
-            f'{escape(unite)}</text>'
+            f'{etiquette_unite}'
             f'<g class="chr-x">{abscisses}</g>')
 
 
@@ -1400,7 +1418,17 @@ def chr_survol(points, y1, y2):
 
 
 def chr_periodes(c):
-    """Étiquettes de chaque point, déduites du départ et du pas."""
+    """Étiquettes de chaque point, déduites du départ et du pas.
+
+    Un collecteur peut aussi fournir ses propres étiquettes, sous la
+    clé « etiquettes ». C'est le cas des périodes qui ne tombent pas à
+    intervalle régulier — des décennies, ou les années d'élection.
+    Le pas est alors ignoré, et seules les formes qui n'ont pas besoin
+    de dates gardent un sens : barres et bandes.
+    """
+    libres = c.get("etiquettes")
+    if libres:
+        return [(None, None, str(t)) for t in libres[:len(c["valeurs"])]]
     depart, pas = str(c["debut"]), c.get("pas", "mois")
     n = len(c["valeurs"])
     if pas == "an":
@@ -1450,6 +1478,8 @@ def chr_saison(c):
             continue
         (courant.__setitem__(mois, v) if an == dernier_an
          else par_mois[mois].append(v))
+    if c.get("etiquettes"):
+        return None            # cette forme a besoin de vraies dates
     pleins = [m for m in range(1, 13) if par_mois[m]]
     if len(pleins) < 12 or not courant:
         return None                     # pas assez d'histoire pour comparer
@@ -1521,7 +1551,7 @@ def chr_courbe(c):
     unite = c.get("unite", "")
     periodes, valeurs = chr_periodes(c), c["valeurs"]
     reels = [v for v in valeurs if v is not None]
-    if len(reels) < 3:
+    if len(reels) < 3 or c.get("etiquettes"):
         return None
     bas, haut, pas = chr_echelle(min(reels), max(reels))
     n = len(valeurs)
@@ -1571,7 +1601,7 @@ def chr_courbe(c):
     par_an = {}
     for (an, mois, _), v in zip(periodes, valeurs):
         par_an.setdefault(an, {})[mois or 1] = v
-    mensuel = c.get("pas", "mois") == "mois"
+    mensuel = c.get("pas", "mois") == "mois" and not c.get("etiquettes")
     if mensuel:
         corps = "".join(
             f"<tr><th>{an}</th>"
@@ -1614,7 +1644,8 @@ def chr_barres(c):
     reels = [v for v in valeurs if v is not None]
     if not reels:
         return None
-    bas, haut, pas = chr_echelle(0, max(reels))
+    bas, haut, pas = chr_echelle(0, max(reels),
+                                 entier=c.get("decimales", 0) == 0)
     n = len(valeurs)
     largeur = CHR_PL / n
     x = lambda i: CHR_MG + largeur * i
@@ -1629,16 +1660,26 @@ def chr_barres(c):
 
     # Trois valeurs écrites, pas davantage : la première, la plus
     # haute, la dernière. Un nombre sur chaque barre ne se lit pas.
+    # Étiqueter une première barre à zéro n'apprend rien et attire
+    # l'œil sur le seul point qui ne dit rien.
     plein = [i for i, v in enumerate(valeurs) if v is not None]
-    saillants = sorted({plein[0], max(plein, key=lambda i: valeurs[i]), plein[-1]})
+    saillants = {max(plein, key=lambda i: valeurs[i]), plein[-1]}
+    if valeurs[plein[0]]:
+        saillants.add(plein[0])
+    saillants = sorted(saillants)
     etiquettes = "".join(
         f'<text class="chr-etiq" x="{x(i)+largeur/2:.1f}" '
         f'y="{y(valeurs[i])-7:.1f}" text-anchor="middle">'
         f'{chr_nb(valeurs[i], c.get("decimales", 0))}</text>' for i in saillants)
 
-    marques = [i for i, (an, _, _) in enumerate(periodes) if an % 5 == 0]
-    if len(marques) < 3:
-        marques = list(range(0, n, max(1, round(n / 6))))
+    if c.get("etiquettes"):
+        # Étiquettes fournies : toutes affichées si elles tiennent,
+        # une sur deux au-delà. Elles portent le sens, pas l'axe.
+        marques = list(range(n)) if n <= 12 else list(range(0, n, 2))
+    else:
+        marques = [i for i, (an, _, _) in enumerate(periodes) if an % 5 == 0]
+        if len(marques) < 3:
+            marques = list(range(0, n, max(1, round(n / 6))))
     svg = (f'<svg viewBox="0 0 {CHR_L} {CHR_H}" class="chr" role="img" '
            f'aria-label="{escape(c["titre"])}">'
            + chr_cadre(bas, haut, pas,

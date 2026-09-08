@@ -36,7 +36,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 10
+VERSION_SCRIPT = 11
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -333,13 +333,42 @@ def date_substitut(enregistrement):
     return None
 
 
+def lire_date(valeur):
+    """Date d'un champ de l'API, quelle que soit son écriture.
+
+    Géorisques sert ses dates en « 14/05/1988 ». Ce script ne savait
+    lire que l'ISO : toute date postérieure à 1987 était donc perdue,
+    et seuls les arrêtés d'avant 1987 — dont la date se déduit du
+    substitut de NOR — restaient exploitables. Conséquences observées
+    sur le site : « date non précisée » sur la plupart des arrêtés, une
+    liste annoncée « du plus récent au plus ancien » qui ne l'était
+    pas, et un bandeau de reconnaissance récente qui ne pouvait jamais
+    s'afficher.
+
+    Les deux écritures sont désormais acceptées. L'ISO d'abord : une
+    date à quatre chiffres en tête n'est jamais un jour.
+    """
+    texte = str(valeur or "").strip()[:10]
+    if not texte:
+        return None
+    try:
+        return date.fromisoformat(texte)
+    except ValueError:
+        pass
+    morceaux = texte.replace(".", "/").replace("-", "/").split("/")
+    if len(morceaux) == 3 and len(morceaux[0]) <= 2:
+        try:
+            j, m, a = (int(x) for x in morceaux)
+            return date(a, m, j)
+        except ValueError:
+            return None
+    return None
+
+
 def _jour(valeur):
     """Date au format français, ou None."""
-    texte = str(valeur or "")[:10]
-    try:
-        return date.fromisoformat(texte).strftime("%d/%m/%Y")
-    except ValueError:
-        return None
+    jour = lire_date(valeur)
+    return jour.strftime("%d/%m/%Y") if jour else None
 
 
 def date_objet(enregistrement, *fragments, exclus=()):
@@ -350,10 +379,9 @@ def date_objet(enregistrement, *fragments, exclus=()):
             continue
         if any(x in nom for x in exclus):
             continue
-        try:
-            return date.fromisoformat(str(valeur or "")[:10])
-        except ValueError:
-            continue
+        jour = lire_date(valeur)
+        if jour:
+            return jour
     return None
 
 
@@ -645,13 +673,74 @@ def synthetiser(lots, code_commune=None):
 
     mesures = {k: habiller(k, v) for k, v in mesures.items()}
     mesures = sans_ancre_orpheline(mesures, blocs)
+    serie = chronique_catnat(catnat) if catnat else None
     resultat = {"mesures": mesures, "blocs": blocs}
+    if serie:
+        resultat["chroniques"] = [serie]
     if manquants:
         resultat["_incomplet"] = manquants
     return resultat
 
 
 # ══════════════════════════════════════════════════════════════════
+
+
+# ══════════════════════════════════════════════════════════════════
+# SÉRIE HISTORIQUE — arrêtés par décennie
+#
+# Les arrêtés sont déjà collectés ; seule leur répartition dans le
+# temps ne l'était pas. Groupés par décennie, ils montrent une chose
+# qu'aucun compteur ne montre : la fréquence des reconnaissances a
+# changé.
+#
+# **La décennie, et pas l'année.** Une commune connaît zéro, un ou
+# deux arrêtés par an ; une courbe annuelle serait un hérisson de
+# barres à zéro d'où l'on ne tirerait rien. La décennie lisse ce bruit
+# sans effacer la tendance.
+#
+# **La dernière décennie est incomplète, et c'est écrit.** Comparer
+# 2020-2026, sept années, à 1990-1999, dix années, ferait croire à une
+# baisse là où il n'y a qu'un décompte plus court. La note le dit, et
+# l'étiquette de la dernière barre porte ses années réelles.
+# ══════════════════════════════════════════════════════════════════
+
+DEBUT_CATNAT = 1982        # première année du dispositif
+
+
+def chronique_catnat(catnat, aujourdhui=None):
+    """Nombre d'arrêtés par décennie, du plus ancien au plus récent."""
+    aujourdhui = aujourdhui or date.today()
+    dates = [d for d in (date_tri(a) for a in catnat) if d != date.min]
+    if len(dates) < 3:
+        return None                # trop peu pour qu'une répartition dise quoi que ce soit
+
+    premiere = (min(min(d.year for d in dates), DEBUT_CATNAT) // 10) * 10
+    derniere = (aujourdhui.year // 10) * 10
+
+    etiquettes, valeurs = [], []
+    for debut in range(premiere, derniere + 1, 10):
+        fin = min(debut + 9, aujourdhui.year)
+        valeurs.append(sum(1 for d in dates if debut <= d.year <= fin))
+        etiquettes.append(f"{debut}-{str(fin)[-2:]}" if fin != debut + 9
+                          else f"{debut}s")
+
+    incomplete = (aujourdhui.year % 10) != 9
+    return {
+        "id": "catnat-decennies",
+        "rubrique": RUBRIQUE, "sous_rubrique": SOUS_RUBRIQUE,
+        "forme": "barres", "rang": 10,
+        "titre": "Arrêtés de catastrophe naturelle, par décennie",
+        "source": f"{SOURCE} · depuis {DEBUT_CATNAT}",
+        "unite": "arrêtés", "decimales": 0,
+        "etiquettes": etiquettes, "valeurs": valeurs,
+        "agregation": "somme",
+        "note": ("Le dispositif existe depuis 1982."
+                 + (f" La dernière période ne compte que "
+                    f"{aujourdhui.year - derniere + 1} année(s) : elle n'est "
+                    f"pas comparable telle quelle aux décennies pleines."
+                    if incomplete else "")),
+    }
+
 
 def inspecter(code):
     """Affiche les champs bruts renvoyés pour une commune."""
