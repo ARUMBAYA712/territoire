@@ -48,7 +48,7 @@ import urllib.error
 from datetime import date
 from pathlib import Path
 
-VERSION_SCRIPT = 2
+VERSION_SCRIPT = 3
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -89,7 +89,14 @@ CULTURES = {
     "AU": "Autres — jachères, engrais verts",
 }
 
-MOTIF_CODE = re.compile(r"^(code[_ ]?insee|codgeo|code[_ ]?commune)$", re.I)
+# Le code communal de ce fichier s'écrit « codeinseecommune », en un
+# seul mot. Le motif exigeait un séparateur et ne reconnaissait rien.
+# Attention en le modifiant : « codepostalcommune » est juste à côté
+# dans le fichier, et le confondre avec le code INSEE ferait échouer
+# tout le rapprochement sans le moindre message.
+MOTIF_CODE = re.compile(
+    r"^(code[_ ]?insee([_ ]?commune)?|code[_ ]?commune|codgeo"
+    r"|insee[_ ]?com(mune)?)$", re.I)
 MOTIF_ANNEE = re.compile(r"^(annee|année|an)$", re.I)
 
 
@@ -206,7 +213,8 @@ def reconnaitre(colonnes):
         propre = str(nom).strip()
         plat = propre.lower().replace("_", "").replace(" ", "")
 
-        if MOTIF_CODE.match(propre) or plat in ("codeinsee", "codgeo"):
+        if MOTIF_CODE.match(propre) or plat in ("codeinsee", "codgeo",
+                                                "codeinseecommune"):
             trouve.setdefault("code", propre)
         elif MOTIF_ANNEE.match(propre):
             trouve.setdefault("annee", propre)

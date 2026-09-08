@@ -50,7 +50,7 @@ VERSIONS_ATTENDUES = {
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
     "15_elus.py": 2,
-    "16_bio.py": 2,
+    "16_bio.py": 3,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -105,6 +105,7 @@ def controler_versions():
 # corrections livrées prennent effet.
 #
 # Livraison du 8 septembre 2026 — mentions, documentation, bio, annonces
+#   · 16_bio.py v3   « codeinseecommune » reconnu comme code de commune
 #   · 04_generation.py  pages d'annonce Carburants et Élections/Résultats,
 #     aux trois échelles, pour amorcer l'indexation
 #   · 16_bio.py        retenait le fichier des cheptels au lieu de celui

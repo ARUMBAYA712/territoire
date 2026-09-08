@@ -49,6 +49,51 @@
       "format": "carte",
       "nom": "Densité de population"
     },
+    "AGR-01": {
+      "valeur": 28.8,
+      "unite": "ha",
+      "nom": "Surface en agriculture biologique",
+      "obtention": "natif",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 10,
+      "ancre": "agriculture-biologique",
+      "agregation": "somme",
+      "explication": "Surfaces certifiées biologiques ou en cours de conversion, déclarées par les exploitations dont le siège est dans la commune."
+    },
+    "AGR-02": {
+      "valeur": 2,
+      "unite": "exploitations",
+      "nom": "Exploitations engagées en bio",
+      "obtention": "natif",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 20,
+      "ancre": "agriculture-biologique",
+      "agregation": "somme",
+      "unite_pluriel": "exploitations",
+      "explication": "Exploitations engagées en agriculture biologique, qu'elles disposent ou non de surfaces cultivées."
+    },
+    "AGR-03": {
+      "valeur": 5.3,
+      "unite": "%",
+      "nom": "Part en cours de conversion",
+      "obtention": "recalculé",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 30,
+      "repere": "1.5 ha sur 28.8",
+      "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -560,6 +605,26 @@
     }
   },
   "blocs": [
+    {
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "id": "agriculture-biologique",
+      "titre": "Agriculture biologique — 2025",
+      "items": [
+        {
+          "titre": "Surfaces engagées",
+          "details": {
+            "Certifiée": "27.3 ha",
+            "En conversion": "1.5 ha"
+          }
+        }
+      ],
+      "lien": {
+        "url": "https://www.agencebio.org/",
+        "libelle": "Agence Bio"
+      },
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
     {
       "rubrique": "environnement",
       "sous_rubrique": "eau-potable",

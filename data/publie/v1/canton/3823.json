@@ -268,6 +268,34 @@
       "format": "carte",
       "nom": "Densité de population"
     },
+    "AGR-01": {
+      "valeur": 2707.2,
+      "unite": "ha",
+      "nom": "Surface en agriculture biologique",
+      "obtention": "agrégé",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 10,
+      "agregation": "somme",
+      "explication": "Surfaces certifiées biologiques ou en cours de conversion, déclarées par les exploitations dont le siège est dans la commune."
+    },
+    "AGR-02": {
+      "valeur": 145,
+      "unite": "exploitations",
+      "nom": "Exploitations engagées en bio",
+      "obtention": "agrégé",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 20,
+      "agregation": "somme",
+      "explication": "Exploitations engagées en agriculture biologique, qu'elles disposent ou non de surfaces cultivées."
+    },
     "EDU-01": {
       "valeur": 61,
       "unite": "établissements",

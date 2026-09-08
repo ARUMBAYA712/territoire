@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 23
+VERSION_SCRIPT = 24
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -1109,7 +1109,17 @@ RUBRIQUES = [
      "prevue": True,
      "sous": [
          {"id": "elus", "nom": "Élus"},
+         # Décidée, pas encore alimentée : la page existe pour être
+         # explorée par les moteurs, et s'efface dès qu'une donnée
+         # arrive. Voir la section PAGES D'ANNONCE.
+         {"id": "resultats", "nom": "Résultats",
+          "annonce": "elections-resultats"},
      ]},
+
+    # En bout de barre, comme arbitré. La donnée se périme en heures :
+    # elle attend l'automatisation par GitHub Actions.
+    {"id": "carburants", "nom": "Carburants", "prefixes": ["CAR"],
+     "prevue": True, "annonce": "carburants"},
 ]
 
 
@@ -1170,6 +1180,12 @@ ICONES = {
                    '<path d="M4 9.5a2.2 2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0 2.2 '
                    '2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0"/>'
                    '<path d="M10 19v-5h4v5"/>',
+    "carburants": '<path d="M4 21V5.5A2.5 2.5 0 0 1 6.5 3h4A2.5 2.5 0 0 1 13 '
+                  '5.5V21"/><path d="M3 21h11M6.5 8.5h4"/>'
+                  '<path d="M13 10h3.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 0 3 '
+                  '0V9.5L18.5 7"/>',
+    "resultats": '<path d="M3.5 20.5h17"/><path d="M7 20.5v-5.5M12 20.5V7'
+                 'M17 20.5v-9"/>',
     "transports": '<path d="M12 3v18"/><path d="M6 3v18M18 3v18"/>'
                   '<path d="M12 5.5v3M12 11v3M12 16.5v3"/>',
     "elections": '<path d="M4 10.5h16V20H4z"/><path d="M8.5 10.5V6h7v4.5"/>'
@@ -1311,7 +1327,7 @@ def sous_actives(rubrique, fiche):
         a_mesure = any(
             m.get("valeur") is not None
             for m in indicateurs_de(rubrique, fiche["mesures"], sr).values())
-        if a_mesure or blocs_de(fiche, rubrique, sr):
+        if a_mesure or blocs_de(fiche, rubrique, sr) or sr.get("annonce"):
             actives.append(sr)
     return actives
 
@@ -1327,6 +1343,14 @@ def rubriques_actives(fiche):
         if any(m.get("valeur") is not None for m in contenu.values()):
             actives.add(r["id"])
         elif any(b.get("rubrique") == r["id"] for b in (fiche.get("blocs") or [])):
+            actives.add(r["id"])
+        elif r.get("annonce") or any(sr.get("annonce")
+                                     for sr in r.get("sous", [])):
+            # Rubrique décidée mais pas encore alimentée : sa page
+            # d'annonce lui tient lieu de contenu, et doit donc être
+            # atteignable depuis la navigation. Une sous-rubrique
+            # d'annonce suffit : sans cela, l'échec d'une collecte
+            # ferait disparaître des adresses déjà indexées.
             actives.add(r["id"])
     return actives
 
@@ -2910,6 +2934,244 @@ def corps_mentions():
     </section>"""
 
 
+# ══════════════════════════════════════════════════════════════════
+# PAGES D'ANNONCE
+#
+# Une rubrique décidée mais pas encore alimentée peut porter une page
+# d'annonce : elle dit ce qui sera publié, d'où viendra la donnée, et
+# sous quelles réserves.
+#
+# Le motif : une adresse met des semaines à être explorée puis indexée
+# par les moteurs. La créer avant la donnée fait gagner ce délai.
+#
+# La réserve, sérieuse : quarante-sept pages au texte identique sont
+# exactement le schéma que les moteurs déclassent. Chaque annonce porte
+# donc des faits propres au territoire — nom, code, codes postaux,
+# rattachements, et pour les élections les élus déjà collectés. Une
+# annonce qui n'aurait rien de propre au territoire ne vaudrait pas
+# la peine d'être publiée.
+#
+# Elle s'efface d'elle-même : elle n'est rendue que si la rubrique n'a
+# aucune mesure à montrer. Le jour où la donnée arrive, l'annonce
+# disparaît sans intervention — même principe que le référentiel saisi
+# à la main qui se retire à sa péremption.
+#
+# Ces pages n'annoncent aucune date : une promesse tenue en retard vaut
+# moins que pas de promesse du tout.
+# ══════════════════════════════════════════════════════════════════
+
+
+def parents_de(d):
+    """Canton et intercommunalité de rattachement, par niveau."""
+    return {r["niveau"]: r["nom"]
+            for r in ((d.get("rattachements") or {}).get("au_dessus") or [])}
+
+
+def bloc_annonce(ancre, titre, details, textes, note, lien=None):
+    """Gabarit commun aux pages d'annonce."""
+    lignes = "".join(
+        f'<div class="bl-ligne"><span class="bl-cle">{escape(cle)}</span>'
+        f'<span class="bl-val">{escape(str(valeur))}</span></div>'
+        for cle, valeur in details.items())
+    paragraphes = "".join(f'<p class="bl-texte">{escape(x)}</p>' for x in textes)
+    renvoi = (f'<a class="bl-lien" href="{escape(lien[0])}">'
+              f'{escape(lien[1])}</a>' if lien else "")
+    return (f'    <section class="bloc" id="{escape(ancre)}">'
+            f'<span class="dsp">{icone(ancre)}{escape(titre)}</span>'
+            f'<div class="bl-grille"><article class="bl-item">'
+            f'{lignes}{paragraphes}{renvoi}</article></div>'
+            f'<p class="bl-note">{escape(note)}</p></section>')
+
+
+def article_contracte(nom):
+    """« Le Sud Grésivaudan » → « du Sud Grésivaudan »."""
+    bas = nom.lower()
+    for debut, forme in (("le ", "du "), ("la ", "de la "),
+                         ("les ", "des "), ("l'", "de l'")):
+        if bas.startswith(debut):
+            return forme + nom[len(debut):]
+    return "de " + nom
+
+
+def situe_dans(t):
+    """Formule de lieu correcte selon le niveau du territoire.
+
+    « à Saint-Marcellin », mais « dans le canton du Sud Grésivaudan » :
+    écrire « à Le Sud Grésivaudan » suffirait à décrédibiliser la page.
+    """
+    if t["niveau"] == "commune":
+        return f"à {t['nom']}"
+    if t["niveau"] == "canton":
+        return f"dans le canton {article_contracte(t['nom'])}"
+    return f"dans l'intercommunalité {t['nom']}"
+
+
+def enumerer(elements):
+    """« a, b et c » — une énumération française se termine par « et »."""
+    elements = [x for x in elements if x]
+    if len(elements) <= 1:
+        return "".join(elements)
+    return ", ".join(elements[:-1]) + " et " + elements[-1]
+
+
+def identite(t):
+    """Code et codes postaux, pour ancrer l'annonce dans son territoire."""
+    details = {}
+    libelle = {"epci": "Code SIREN", "canton": "Code INSEE du canton"}
+    details[libelle.get(t["niveau"], "Code INSEE")] = t["code"]
+    codes = t.get("codes_postaux") or []
+    if codes:
+        details["Code postal" if len(codes) == 1
+                else "Codes postaux"] = ", ".join(codes)
+    elif t.get("nombre_communes"):
+        details["Communes"] = t["nombre_communes"]
+    return details
+
+
+def annonce_carburants(d, base, chemin):
+    t = d["territoire"]
+    nom = t["nom"]
+    parents = parents_de(d)
+    nombre = t.get("nombre_communes")
+
+    details = {
+        "État": "en préparation",
+        "Carburants suivis": "Gazole, SP95, SP95-E10, SP98, E85, GPL",
+        "Source": "Base nationale des prix des carburants, "
+                  "data.economie.gouv.fr",
+        "Maille": "la station-service",
+        "Rythme prévu": "plusieurs relevés par jour",
+    }
+    details.update(identite(t))
+
+    if t["niveau"] == "commune":
+        rattachement = " et ".join(
+            x for x in (f"du canton {parents['canton']}" if parents.get("canton")
+                        else "",
+                        f"de l'intercommunalité {parents['epci']}"
+                        if parents.get("epci") else "") if x)
+        situe = (f"{nom} relève {rattachement}. " if rattachement else "")
+        etendue = (f"Les stations-service situées à {nom} y figureront, ainsi "
+                   f"que les plus proches des communes voisines : un "
+                   f"automobiliste ne compare pas les prix à l'intérieur "
+                   f"d'une seule commune.")
+    else:
+        situe = ""
+        etendue = (f"Les stations-service des {nombre} communes seront "
+                   f"listées, du prix le plus bas au plus élevé, avec la date "
+                   f"et l'heure du dernier relevé de chacune."
+                   if nombre else
+                   "Les stations-service du territoire seront listées, du "
+                   "prix le plus bas au plus élevé.")
+
+    textes = [
+        f"Le prix des carburants n'est pas encore publié {situe_dans(t)}. "
+        f"Cette page annonce ce qui le sera : le prix du gazole, du SP95, du "
+        f"SP95-E10, du SP98, du superéthanol E85 et du GPL, station-service "
+        f"par station-service, avec l'heure du dernier relevé.",
+        situe + etendue,
+        "La donnée vient de la base nationale que les distributeurs "
+        "alimentent eux-mêmes. Elle change plusieurs fois par jour : sa "
+        "publication attend la mise en place de la collecte automatique, "
+        "sans laquelle le portail afficherait des prix de la veille.",
+    ]
+    note = ("Les prix sont déclarés par les distributeurs et peuvent changer "
+            "entre deux relevés : le prix affiché en station fait seul foi. "
+            "Ce portail ne comporte aucune publicité ni mise en avant "
+            "rémunérée, et n'en comportera pas.")
+
+    codes = t.get("codes_postaux") or []
+    reperage = f" ({codes[0]})" if codes else ""
+    description = (f"Prix des carburants {situe_dans(t)}{reperage} : gazole, "
+                   f"SP95-E10, SP98, E85 et GPL par station-service. Relevés "
+                   f"en préparation sur le portail de données du Sud "
+                   f"Grésivaudan.")
+
+    return bloc_annonce("carburants", "Prix des carburants — en préparation",
+                        details, textes, note), description
+
+
+def annonce_elections(d, base, chemin):
+    t = d["territoire"]
+    nom = t["nom"]
+    m = d["mesures"]
+
+    def valeur(ident):
+        return (m.get(ident) or {}).get("valeur")
+
+    details = {
+        "État": "en préparation",
+        "Source": "Ministère de l'Intérieur — résultats officiels",
+        "Maille": "le bureau de vote",
+        "Scrutins prévus": "présidentielle, législatives, départementales, "
+                           "municipales, européennes",
+        "Le soir du scrutin": "publication après 20 heures, à la fermeture "
+                              "du dernier bureau de vote",
+    }
+    details.update(identite(t))
+
+    # Faits déjà collectés : ils distinguent cette page de ses voisines
+    # et lui donnent une valeur propre dès aujourd'hui.
+    acquis = []
+    if valeur("POL-01"):
+        details["Maire en fonction"] = valeur("POL-01")
+        acquis.append(f"le maire {valeur('POL-01')}")
+    if valeur("POL-02"):
+        details["Conseil municipal"] = f"{valeur('POL-02')} élus"
+        acquis.append(f"les {valeur('POL-02')} membres du conseil municipal")
+    if valeur("POL-10"):
+        details["Conseillers départementaux"] = f"{valeur('POL-10')} élus"
+        acquis.append(f"le binôme de {valeur('POL-10')} conseillers "
+                      f"départementaux")
+    if valeur("POL-20"):
+        details["Président"] = valeur("POL-20")
+        acquis.append(f"la présidence assurée par {valeur('POL-20')}")
+    if valeur("POL-21"):
+        details["Conseil communautaire"] = f"{valeur('POL-21')} élus"
+        acquis.append(f"les {valeur('POL-21')} conseillers communautaires")
+
+    textes = [
+        f"Les résultats des élections {situe_dans(t)} ne sont pas encore "
+        f"publiés. "
+        f"Cette page annonce ce qui le sera : par bureau de vote, le nombre "
+        f"d'inscrits, de votants et d'abstentions, les bulletins blancs et "
+        f"nuls, et les voix obtenues par chaque candidat ou chaque liste, du "
+        f"scrutin le plus récent au plus ancien.",
+    ]
+    if acquis:
+        textes.append("En attendant, les élus en fonction sont déjà "
+                      "publiés : " + enumerer(acquis) + ".")
+    textes.append(
+        "Le soir d'un scrutin, aucun chiffre ne sera publié avant 20 heures, "
+        "à la fermeture du dernier bureau de vote. C'est une obligation "
+        "légale ; le verrou horaire est posé dans le traitement lui-même, et "
+        "pas seulement à l'affichage. Tant que le dépouillement n'est pas "
+        "achevé, les résultats seront annoncés comme partiels, avec l'heure "
+        "de la dernière relève et la part de bureaux dépouillés.")
+
+    note = ("Les résultats proclamés par le ministère de l'Intérieur et le "
+            "bureau centralisateur font seuls foi. Les chiffres publiés ici "
+            "seront repris de la publication officielle, jamais saisis à "
+            "la main.")
+
+    lien = ((f"{base}/{chemin}elections/elus/", "Voir les élus en fonction")
+            if acquis else None)
+
+    description = (f"Résultats des élections {situe_dans(t)} : présidentielle, "
+                   f"législatives, départementales, municipales et "
+                   f"européennes par bureau de vote. Publication en "
+                   f"préparation sur le portail de données du Sud Grésivaudan.")
+
+    return bloc_annonce("resultats", "Résultats électoraux — en préparation",
+                        details, textes, note, lien), description
+
+
+ANNONCES = {
+    "carburants": annonce_carburants,
+    "elections-resultats": annonce_elections,
+}
+
+
 def page(d, base, canonique, adresses, fiches, rubrique,
          chemin_territoire, actives, sous=None, sous_dispo=(),
          accueil=False):
@@ -2993,6 +3255,14 @@ def page(d, base, canonique, adresses, fiches, rubrique,
         description = (f"{t['nom']} ({codes[0]}) : {resume}. "
                        f"Données publiques INSEE et IGN.")
 
+    # Page d'annonce : rendue seulement si la rubrique n'a rien à
+    # montrer, et s'effaçant d'elle-même dès qu'une donnée arrive.
+    annonce = (ANNONCES.get((sous or rubrique).get("annonce"))
+               if not mesures else None)
+    annonce_html = ""
+    if annonce:
+        annonce_html, description = annonce(d, base, chemin_territoire)
+
     suffixe_titre = (sous["nom"] if sous
                      else (rubrique["nom"] if rubrique["id"] else niveau))
 
@@ -3045,6 +3315,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 <main><div class="wrap">
 {bloc_rattachements(d, base, adresses)}
 {bloc_bandeaux(bandeaux, renvois)}
+{annonce_html}
     <div class="cards">
 {chr(10).join(carte(k, v, renvois) for k, v in ordinaires.items())}
     </div>

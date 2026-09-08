@@ -54,6 +54,37 @@
       "format": "carte",
       "nom": "Densité de population"
     },
+    "AGR-01": {
+      "valeur": 12.8,
+      "unite": "ha",
+      "nom": "Surface en agriculture biologique",
+      "obtention": "natif",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 10,
+      "ancre": "agriculture-biologique",
+      "agregation": "somme",
+      "explication": "Surfaces certifiées biologiques ou en cours de conversion, déclarées par les exploitations dont le siège est dans la commune."
+    },
+    "AGR-02": {
+      "valeur": 1,
+      "unite": "exploitation",
+      "nom": "Exploitations engagées en bio",
+      "obtention": "natif",
+      "source": "Agence Bio — organismes certificateurs",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "rang": 20,
+      "ancre": "agriculture-biologique",
+      "agregation": "somme",
+      "unite_pluriel": "exploitations",
+      "explication": "Exploitations engagées en agriculture biologique, qu'elles disposent ou non de surfaces cultivées."
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -275,6 +306,20 @@
       "rang": 30,
       "repere": "7 femmes, 8 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-01": {
+      "valeur": "Sur toute la commune",
+      "unite": "",
+      "nom": "Équipements hivernaux obligatoires",
+      "obtention": "saisi",
+      "source": "Arrêté préfectoral — obligation d'équipements hivernaux",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "rang": 10,
+      "ancre": "equipements-hivernaux",
+      "explication": "L'obligation s'applique à l'ensemble du territoire communal, du 1er novembre au 31 mars.",
+      "repere": "Du 1er novembre au 31 mars · Arrêté préfectoral du 12 janvier 2026"
     },
     "POP-20": {
       "valeur": 20.0,
@@ -552,6 +597,25 @@
   "blocs": [
     {
       "rubrique": "environnement",
+      "sous_rubrique": "agriculture",
+      "id": "agriculture-biologique",
+      "titre": "Agriculture biologique — 2025",
+      "items": [
+        {
+          "titre": "Surfaces engagées",
+          "details": {
+            "Certifiée": "12.8 ha"
+          }
+        }
+      ],
+      "lien": {
+        "url": "https://www.agencebio.org/",
+        "libelle": "Agence Bio"
+      },
+      "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "environnement",
       "sous_rubrique": "eau-potable",
       "id": "reseaux-eau-potable",
       "titre": "Réseaux d'eau potable desservant la commune",
@@ -701,6 +765,32 @@
         }
       ],
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
+      "rubrique": "transports",
+      "id": "equipements-hivernaux",
+      "titre": "Équipements hivernaux obligatoires",
+      "items": [
+        {
+          "titre": "Obligation sur toute la commune",
+          "details": {
+            "Portée": "Toute la commune",
+            "Période": "Du 1er novembre au 31 mars",
+            "Texte de référence": "Arrêté préfectoral du 12 janvier 2026",
+            "Autorité": "Préfecture de l'Isère"
+          },
+          "etat": [
+            "Hors période",
+            "neutre"
+          ],
+          "texte": "Au choix : détenir des dispositifs antidérapants amovibles — chaînes ou chaussettes — permettant d'équiper au moins deux roues motrices, ou être équipé de quatre pneus hiver portant le marquage 3PMSF. Les véhicules à pneus à clous en sont dispensés."
+        }
+      ],
+      "lien": {
+        "url": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipement-obligatoire-en-periode-hivernale",
+        "libelle": "Consulter l'arrêté préfectoral"
+      },
+      "note": "Information transcrite depuis Arrêté préfectoral du 12 janvier 2026, saisie le 08/09/2026. L'arrêté fait seul foi, et la signalisation sur place détermine l'opposabilité de la mesure. La liste des communes n'est pas encore intégralement reprise : l'absence d'information sur une commune ne signifie pas qu'elle n'est pas concernée."
     },
     {
       "rubrique": "population",
