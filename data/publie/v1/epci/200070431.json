@@ -536,7 +536,7 @@
       "rang": 30
     },
     "EAU-22": {
-      "valeur": 41.33,
+      "valeur": 41.34,
       "unite": "m",
       "nom": "Profondeur de la nappe",
       "obtention": "natif",
@@ -546,7 +546,7 @@
       "rubrique": "environnement",
       "sous_rubrique": "nappes",
       "rang": 20,
-      "repere": "Mesure du 03/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+      "repere": "Mesure du 06/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
       "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     },
     "EAU-30": {
@@ -565,7 +565,7 @@
       "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
     },
     "EAU-31": {
-      "valeur": 144.46,
+      "valeur": 150.62,
       "unite": "m³/s",
       "nom": "Débit mesuré",
       "obtention": "natif",
@@ -575,7 +575,7 @@
       "rubrique": "environnement",
       "sous_rubrique": "rivieres",
       "rang": 20,
-      "repere": "L'Isère · 06/09/2026 · à 8 km",
+      "repere": "L'Isère · 07/09/2026 · à 8 km",
       "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -605,7 +605,7 @@
       "rang": 25,
       "ancre": "stations-hydrometriques",
       "ton": "attention",
-      "repere": "à 35 % de son débit habituel de saison",
+      "repere": "à 33 % de son débit habituel de saison",
       "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
     }
   },
@@ -1084,16 +1084,16 @@
             "Commune": "Vatilieu",
             "Distance du centre du territoire": "12 km",
             "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
-            "Profondeur": "41.33 m",
-            "Altitude de la nappe": "568.67 m NGF",
-            "Dernière mesure": "03/09/2026",
-            "Mesures sur 5 ans": 1821
+            "Profondeur": "41.34 m",
+            "Altitude de la nappe": "568.66 m NGF",
+            "Dernière mesure": "06/09/2026",
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Sous les valeurs habituelles",
             "attention"
           ],
-          "texte": "Médiane des mois comparables : 40.77 m sur 144 relevés. Écart : +0.56 m."
+          "texte": "Médiane des mois comparables : 40.77 m sur 147 relevés. Écart : +0.57 m."
         },
         {
           "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -1104,14 +1104,14 @@
             "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
             "Profondeur": "7.68 m",
             "Altitude de la nappe": "249.54 m NGF",
-            "Dernière mesure": "03/09/2026",
-            "Mesures sur 5 ans": 1786
+            "Dernière mesure": "06/09/2026",
+            "Mesures sur 5 ans": 1789
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 7.52 m sur 136 relevés. Écart : +0.16 m."
+          "texte": "Médiane des mois comparables : 7.52 m sur 139 relevés. Écart : +0.16 m."
         },
         {
           "titre": "Piezometre de Veyer — Saint-Étienne-de-Saint-Geoirs",
@@ -1120,16 +1120,16 @@
             "Commune": "Saint-Étienne-de-Saint-Geoirs",
             "Distance du centre du territoire": "20 km",
             "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-            "Profondeur": "38.62 m",
-            "Altitude de la nappe": "362.59 m NGF",
-            "Dernière mesure": "03/09/2026",
-            "Mesures sur 5 ans": 1821
+            "Profondeur": "38.66 m",
+            "Altitude de la nappe": "362.55 m NGF",
+            "Dernière mesure": "06/09/2026",
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 38.50 m sur 144 relevés. Écart : +0.12 m."
+          "texte": "Médiane des mois comparables : 38.51 m sur 147 relevés. Écart : +0.15 m."
         },
         {
           "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -1137,16 +1137,16 @@
             "Code BSS": "07951X0028/F",
             "Commune": "Châtillon-Saint-Jean",
             "Distance du centre du territoire": "21 km",
-            "Profondeur": "49.73 m",
-            "Altitude de la nappe": "240.84 m NGF",
-            "Dernière mesure": "03/09/2026",
-            "Mesures sur 5 ans": 1821
+            "Profondeur": "51.57 m",
+            "Altitude de la nappe": "239.00 m NGF",
+            "Dernière mesure": "06/09/2026",
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
-            "Proche des valeurs habituelles",
-            "neutre"
+            "Nettement sous les valeurs habituelles",
+            "alerte"
           ],
-          "texte": "Médiane des mois comparables : 49.42 m sur 144 relevés. Écart : +0.31 m."
+          "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +2.15 m."
         },
         {
           "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -1217,15 +1217,15 @@
             "Cours d'eau": "L'Isère",
             "Commune": "['SAINT-GERVAIS']",
             "Distance du centre du territoire": "8 km",
-            "Débit": "144.46 m³/s",
-            "Dernière mesure": "06/09/2026",
+            "Débit": "150.62 m³/s",
+            "Dernière mesure": "07/09/2026",
             "Mesures sur 5 ans": 4993
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 162.68 m³/s sur 400 relevés. Débit actuel à 89 % de cette valeur."
+          "texte": "Médiane des mois comparables : 162.61 m³/s sur 401 relevés. Débit actuel à 93 % de cette valeur."
         },
         {
           "titre": "La Vernaisson à Pont-en-Royans",
@@ -1233,15 +1233,15 @@
             "Cours d'eau": "La Vernaisson",
             "Commune": "['PONT-EN-ROYANS']",
             "Distance du centre du territoire": "13 km",
-            "Débit": "106 L/s",
-            "Dernière mesure": "06/09/2026",
-            "Mesures sur 5 ans": 3356
+            "Débit": "101 L/s",
+            "Dernière mesure": "07/09/2026",
+            "Mesures sur 5 ans": 3358
           },
           "etat": [
             "Nettement sous les valeurs habituelles",
             "alerte"
           ],
-          "texte": "Médiane des mois comparables : 302 L/s sur 235 relevés. Débit actuel à 35 % de cette valeur."
+          "texte": "Médiane des mois comparables : 302 L/s sur 237 relevés. Débit actuel à 33 % de cette valeur."
         },
         {
           "titre": "Le Méaudret à Méaudre",
@@ -1250,14 +1250,14 @@
             "Commune": "['AUTRANS-MEAUDRE EN VERCORS']",
             "Distance du centre du territoire": "14 km",
             "Débit": "37 L/s",
-            "Dernière mesure": "06/09/2026",
-            "Mesures sur 5 ans": 3636
+            "Dernière mesure": "07/09/2026",
+            "Mesures sur 5 ans": 3638
           },
           "etat": [
             "Nettement sous les valeurs habituelles",
             "alerte"
           ],
-          "texte": "Médiane des mois comparables : 90 L/s sur 295 relevés. Débit actuel à 41 % de cette valeur."
+          "texte": "Médiane des mois comparables : 88 L/s sur 297 relevés. Débit actuel à 42 % de cette valeur."
         },
         {
           "titre": "La Bourne à Saint-Just-de-Claix [Pont de Manne]",

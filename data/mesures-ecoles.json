@@ -2383,14 +2383,14 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire",
+       "nom": "Ecole maternelle",
        "lat": 45.074246,
        "lon": 5.28338,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole maternelle",
+       "nom": "Ecole primaire",
        "lat": 45.074246,
        "lon": 5.28338,
        "info": "Ecole",
@@ -2684,13 +2684,6 @@
        "categorie": "autre"
       },
       {
-       "nom": "Ecole primaire Centre",
-       "lat": 45.152406,
-       "lon": 5.32117,
-       "info": "Ecole",
-       "categorie": "premier"
-      },
-      {
        "nom": "Ecole primaire privée Le Dauphin",
        "lat": 45.152952,
        "lon": 5.32381,
@@ -2705,9 +2698,9 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole maternelle Le Stade",
-       "lat": 45.15102,
-       "lon": 5.31423,
+       "nom": "Ecole primaire Centre",
+       "lat": 45.152406,
+       "lon": 5.32117,
        "info": "Ecole",
        "categorie": "premier"
       },
@@ -2719,18 +2712,11 @@
        "categorie": "autre"
       },
       {
-       "nom": "Lycée polyvalent La Saulaie",
-       "lat": 45.15765,
-       "lon": 5.31767,
-       "info": "Lycée",
-       "categorie": "second"
-      },
-      {
-       "nom": "Lycée d'enseignement agricole privé Bellevue",
-       "lat": 45.157108,
-       "lon": 5.321999,
-       "info": "Lycée",
-       "categorie": "second"
+       "nom": "Ecole maternelle Le Stade",
+       "lat": 45.15102,
+       "lon": 5.31423,
+       "info": "Ecole",
+       "categorie": "premier"
       },
       {
        "nom": "Ecole maternelle Centre",
@@ -2745,6 +2731,20 @@
        "lon": 5.319721,
        "info": "Ecole",
        "categorie": "premier"
+      },
+      {
+       "nom": "Lycée polyvalent La Saulaie",
+       "lat": 45.15765,
+       "lon": 5.31767,
+       "info": "Lycée",
+       "categorie": "second"
+      },
+      {
+       "nom": "Lycée d'enseignement agricole privé Bellevue",
+       "lat": 45.157108,
+       "lon": 5.321999,
+       "info": "Lycée",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2906,16 +2906,16 @@
      ],
      "points": [
       {
-       "nom": "Ecole maternelle",
-       "lat": 45.280299,
-       "lon": 5.54275,
+       "nom": "Ecole primaire Louis Pergaud",
+       "lat": 45.280055,
+       "lon": 5.54357,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole primaire Louis Pergaud",
-       "lat": 45.280055,
-       "lon": 5.54357,
+       "nom": "Ecole maternelle",
+       "lat": 45.280299,
+       "lon": 5.54275,
        "info": "Ecole",
        "categorie": "premier"
       }
@@ -3631,18 +3631,18 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole maternelle",
-       "lat": 45.208713,
-       "lon": 5.40538,
-       "info": "Ecole",
-       "categorie": "premier"
-      },
-      {
        "nom": "institut médico éducatif",
        "lat": 45.206889,
        "lon": 5.40097,
        "info": "Médico-social",
        "categorie": "autre"
+      },
+      {
+       "nom": "Ecole maternelle",
+       "lat": 45.208713,
+       "lon": 5.40538,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

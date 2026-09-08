@@ -801,18 +801,18 @@
           "categorie": "second"
         },
         {
-          "nom": "Ecole maternelle",
-          "lat": 45.208713,
-          "lon": 5.40538,
-          "info": "Ecole",
-          "categorie": "premier"
-        },
-        {
           "nom": "institut médico éducatif",
           "lat": 45.206889,
           "lon": 5.40097,
           "info": "Médico-social",
           "categorie": "autre"
+        },
+        {
+          "nom": "Ecole maternelle",
+          "lat": 45.208713,
+          "lon": 5.40538,
+          "info": "Ecole",
+          "categorie": "premier"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

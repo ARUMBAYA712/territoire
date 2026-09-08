@@ -836,13 +836,6 @@
           "categorie": "autre"
         },
         {
-          "nom": "Ecole primaire Centre",
-          "lat": 45.152406,
-          "lon": 5.32117,
-          "info": "Ecole",
-          "categorie": "premier"
-        },
-        {
           "nom": "Ecole primaire privée Le Dauphin",
           "lat": 45.152952,
           "lon": 5.32381,
@@ -857,9 +850,9 @@
           "categorie": "second"
         },
         {
-          "nom": "Ecole maternelle Le Stade",
-          "lat": 45.15102,
-          "lon": 5.31423,
+          "nom": "Ecole primaire Centre",
+          "lat": 45.152406,
+          "lon": 5.32117,
           "info": "Ecole",
           "categorie": "premier"
         },
@@ -871,18 +864,11 @@
           "categorie": "autre"
         },
         {
-          "nom": "Lycée polyvalent La Saulaie",
-          "lat": 45.15765,
-          "lon": 5.31767,
-          "info": "Lycée",
-          "categorie": "second"
-        },
-        {
-          "nom": "Lycée d'enseignement agricole privé Bellevue",
-          "lat": 45.157108,
-          "lon": 5.321999,
-          "info": "Lycée",
-          "categorie": "second"
+          "nom": "Ecole maternelle Le Stade",
+          "lat": 45.15102,
+          "lon": 5.31423,
+          "info": "Ecole",
+          "categorie": "premier"
         },
         {
           "nom": "Ecole maternelle Centre",
@@ -897,6 +883,20 @@
           "lon": 5.319721,
           "info": "Ecole",
           "categorie": "premier"
+        },
+        {
+          "nom": "Lycée polyvalent La Saulaie",
+          "lat": 45.15765,
+          "lon": 5.31767,
+          "info": "Lycée",
+          "categorie": "second"
+        },
+        {
+          "nom": "Lycée d'enseignement agricole privé Bellevue",
+          "lat": 45.157108,
+          "lon": 5.321999,
+          "info": "Lycée",
+          "categorie": "second"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

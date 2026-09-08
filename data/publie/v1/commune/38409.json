@@ -680,14 +680,14 @@
       ],
       "points": [
         {
-          "nom": "Ecole primaire",
+          "nom": "Ecole maternelle",
           "lat": 45.074246,
           "lon": 5.28338,
           "info": "Ecole",
           "categorie": "premier"
         },
         {
-          "nom": "Ecole maternelle",
+          "nom": "Ecole primaire",
           "lat": 45.074246,
           "lon": 5.28338,
           "info": "Ecole",

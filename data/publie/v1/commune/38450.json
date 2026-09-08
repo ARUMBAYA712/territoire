@@ -676,16 +676,16 @@
       ],
       "points": [
         {
-          "nom": "Ecole maternelle",
-          "lat": 45.280299,
-          "lon": 5.54275,
+          "nom": "Ecole primaire Louis Pergaud",
+          "lat": 45.280055,
+          "lon": 5.54357,
           "info": "Ecole",
           "categorie": "premier"
         },
         {
-          "nom": "Ecole primaire Louis Pergaud",
-          "lat": 45.280055,
-          "lon": 5.54357,
+          "nom": "Ecole maternelle",
+          "lat": 45.280299,
+          "lon": 5.54275,
           "info": "Ecole",
           "categorie": "premier"
         }
