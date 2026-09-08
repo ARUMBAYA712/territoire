@@ -45,7 +45,7 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 3,
-    "04_generation.py": 24,
+    "04_generation.py": 28,
     "12_rivieres.py": 5,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
@@ -106,6 +106,9 @@ def controler_versions():
 #
 # Livraison du 8 septembre 2026 — mentions, documentation, bio, annonces
 #   · 16_bio.py v3   « codeinseecommune » reconnu comme code de commune
+#   · 04_generation.py v28  administration allégée, page /fraicheur/,
+#     communes repliées, titres de page distinctifs, page 404 et
+#     redirections des adresses de l'ancien site
 #   · 04_generation.py  pages d'annonce Carburants et Élections/Résultats,
 #     aux trois échelles, pour amorcer l'indexation
 #   · 16_bio.py        retenait le fichier des cheptels au lieu de celui

@@ -60,7 +60,7 @@ pas été remplacé. **Ce mécanisme existe parce que trois allers-retours ont
 | `01_referentiel.py` | 1 | Communes, depuis geo.api.gouv.fr |
 | `02_canton.py` | 2 | Rattachement cantonal, décret n° 2014-180 |
 | `03_agregation.py` | 3 | Agrégation et publication |
-| `04_generation.py` | 23 | Pages, thème, cartes, administration |
+| `04_generation.py` | 24 | Pages, thème, cartes, administration, annonces |
 | `05_cartes.py` | 3 | SVG en projection Web Mercator |
 | `06_eau.py` | 4 | Eau potable, Hub'Eau |
 | `07_vigieau.py` | 4 | Restrictions sécheresse |
@@ -153,10 +153,22 @@ emphase. Les réserves et les limites sont dites, pas tues.
 ## 8. État des sources
 
 **En place et vérifiées** : référentiel, canton, eau potable, sécheresse,
-risques, nappes, rivières, écoles, population, logement, équipements.
+risques, nappes, rivières, écoles, population, logement, équipements,
+élus, agriculture biologique.
 
-**Livrées, non encore éprouvées en conditions réelles** : équipements
-hivernaux, vigilance météo, élus, agriculture biologique.
+Les élus ont été éprouvés le 8 septembre 2026 : 47/47 communes, 658 élus
+municipaux, le binôme départemental et les 73 conseillers communautaires.
+L'agriculture biologique le même jour : 47/47 communes, millésime 2025,
+2 769 ha cumulés et 151 exploitations. Réserve connue sur cette dernière —
+le fichier de l'Agence Bio retenu ne porte aucune répartition par groupe
+de cultures ; ce détail vit dans un autre fichier de 465 Mo, non traité.
+
+**Livrées, en attente d'une configuration** :
+
+| Source | Ce qui manque |
+|---|---|
+| Vigilance météo | La clé Météo-France. Le collecteur s'arrête proprement sans elle. |
+| Équipements hivernaux | La liste complète des communes de l'arrêté. Trois seulement sont saisies, et `saisie_complete` reste à `false` : les 44 autres n'affichent rien. **Le référentiel expire le 31 octobre 2026** — passée cette date, le collecteur publie un fichier vide et l'information disparaît du site. |
 
 **En attente d'une source** :
 
@@ -193,9 +205,17 @@ hivernaux, vigilance météo, élus, agriculture biologique.
 
 **Ensuite**
 
-7. Automatisation par GitHub Actions — `AUTOMATISATION.md` est prêt
-8. Carburants — cahier des charges de l'application Carbu disponible, la
-   plupart des arbitrages sont déjà rendus
+7. Automatisation par GitHub Actions — `AUTOMATISATION.md` est prêt.
+   À traiter **avant** les carburants, non après : le prix se périme en
+   heures, et personne ne lance un script deux fois par jour pendant deux
+   ans. Point préalable à vérifier dans l'espace client OVH : Python n'est
+   pas disponible sur l'hébergement mutualisé, ce qui condamne le CRON OVH.
+8. Carburants — cahier des charges de l'application Carbu versé au projet
+   dans `sudgresiv/carbu/`. Les arbitrages sont rendus : six carburants du
+   flux `data.economie.gouv.fr`, prix porté directement sur le marqueur,
+   catégorie « sans enseigne » assumée, ni GNR ni fioul faute de source par
+   point de vente, fond de carte IGN commun aux deux produits. Les pages
+   d'annonce sont déjà en ligne aux trois échelles.
 9. Élections — historique puis direct le soir des scrutins, avec embargo
    légal jusqu'à 20 heures
 10. Regroupement avec sudgresiv.com

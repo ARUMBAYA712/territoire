@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 24
+VERSION_SCRIPT = 28
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -546,6 +546,30 @@ svg.carte a:hover path[class*="n"],svg.carte a:focus path[class*="n"]{
 .rung .lvl{font-family:var(--font-display);text-transform:uppercase;
   letter-spacing:.08em;font-size:11px;color:var(--soft);width:96px;flex-shrink:0}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
+
+/* Rubrique rappelée dans le titre de premier niveau. Discrète à l'œil,
+   décisive pour un moteur : c'est elle qui distingue les quinze pages
+   d'un même territoire. */
+.h1-rub{font-weight:400;color:var(--soft);white-space:nowrap}
+
+/* Repli de la liste des communes. Balise details native : elle
+   fonctionne sans JavaScript, se pilote au clavier et laisse les liens
+   dans la page. Le marqueur par défaut du navigateur est masqué au
+   profit d'un triangle qui pivote à l'ouverture. */
+.repli{flex:1 1 100%}
+.repli > summary{display:inline-flex;align-items:center;gap:7px;
+  cursor:pointer;font-size:13px;color:var(--link);list-style:none;
+  padding:3px 0}
+.repli > summary::-webkit-details-marker{display:none}
+.repli > summary::before{content:"";width:0;height:0;
+  border-left:5px solid currentColor;border-top:4px solid transparent;
+  border-bottom:4px solid transparent;transition:transform .15s}
+.repli[open] > summary::before{transform:rotate(90deg)}
+.repli > summary:hover{text-decoration:underline}
+.repli .chips{margin-top:10px}
+.repli-moins{display:none}
+.repli[open] .repli-plus{display:none}
+.repli[open] .repli-moins{display:inline}
 .chip{border:1px solid var(--line);border-radius:var(--radius);padding:4px 10px;
   font-size:13px;display:inline-block}
 a.chip{transition:background .12s,color .12s,border-color .12s}
@@ -559,6 +583,13 @@ a.chip:hover,a.chip:focus-visible{background:var(--accent);color:var(--surface);
 footer.site{border-top:1px solid var(--line);background:var(--surface);
   padding:18px 0;font-size:11px;color:var(--soft)}
 footer.site a{color:var(--link)}
+
+/* Raccourcis sous le titre d'une page d'administration. Les classes
+   .hd et .n n'ont pas de style propre : sans cette règle, un lien y
+   serait indiscernable du texte, puisque « a » hérite de la couleur
+   courante partout ailleurs sur le site. */
+.hd .n a{color:var(--link);border-bottom:1px solid rgba(42,111,151,.35)}
+.hd .n a:hover{border-bottom-color:var(--link)}
 
 @media(max-width:820px){
   .cards{grid-template-columns:repeat(2,1fr)}
@@ -981,6 +1012,12 @@ def lien(r, base, adresses):
     return f'<a class="chip" href="{base}/{cible}">{escape(r["nom"])}</a>' 
 
 
+# Au-delà de ce nombre, la liste des communes rattachées est repliée.
+# En dessous, elle tient sur une ou deux lignes et le repli coûterait
+# un clic pour rien.
+SEUIL_REPLI = 6
+
+
 def bloc_rattachements(d, base, adresses):
     t, r = d["territoire"], d["rattachements"]
     lignes = []
@@ -995,10 +1032,21 @@ def bloc_rattachements(d, base, adresses):
     lignes.append(f"""      <div class="rung ici"><span class="lvl">Ici</span>
         <div class="chips"><span class="chip now">{escape(t['nom'])}</span></div></div>""")
 
+    # Sur un canton ou une intercommunalité, la liste des communes
+    # occupait la moitié de l'écran avant la première tuile. Elle est
+    # repliée par défaut, en HTML natif : les liens restent dans la page
+    # — donc explorables par les moteurs et atteignables au clavier —
+    # mais ne prennent plus la place du contenu.
     dessous = r.get("en_dessous", [])
     if dessous:
-        lignes.append(f"""      <div class="rung"><span class="lvl">Communes</span>
-        <div class="chips">{''.join(lien(x, base, adresses) for x in dessous)}</div></div>""")
+        chips = "".join(lien(x, base, adresses) for x in dessous)
+        if len(dessous) > SEUIL_REPLI:
+            lignes.append(f"""      <div class="rung"><span class="lvl">Communes</span>
+        <details class="repli"><summary><span class="repli-plus">Voir les {len(dessous)} communes</span><span class="repli-moins">Masquer les {len(dessous)} communes</span></summary>
+        <div class="chips">{chips}</div></details></div>""")
+        else:
+            lignes.append(f"""      <div class="rung"><span class="lvl">Communes</span>
+        <div class="chips">{chips}</div></div>""")
 
     note = ""
     if t["niveau"] == "commune":
@@ -1015,6 +1063,30 @@ def bloc_rattachements(d, base, adresses):
 {chr(10).join(lignes)}
       </div>{bloc_note}
     </section>"""
+
+
+def variantes_anciennes(nom):
+    """Graphies possibles d'un nom de commune dans l'ancien site.
+
+    Les adresses retrouvées dans l'index de Google — par exemple
+    « commune_chevrieres.php » — suivent une convention sans accent, en
+    minuscules, mots liés par un souligné. « Saint » y apparaît aussi
+    abrégé en « st », d'où plusieurs variantes par commune.
+
+    Ces motifs sont des hypothèses tirées de deux adresses observées.
+    Ils ne peuvent rien casser — ils ne s'appliquent qu'à des chemins qui
+    n'existent pas sur ce site — mais ils restent à confronter à la liste
+    réelle des 404 relevés par la Search Console.
+    """
+    texte = unicodedata.normalize("NFD", nom.lower())
+    texte = "".join(c for c in texte if unicodedata.category(c) != "Mn")
+    base = re.sub(r"[^a-z0-9]+", "_", texte).strip("_")
+    formes = {base}
+    if base.startswith("saint_"):
+        formes.add("st_" + base[len("saint_"):])
+    if base.startswith(("l_", "la_", "le_", "les_")):
+        formes.add(base.split("_", 1)[1])
+    return sorted(formes)
 
 
 MOTIF_FORME = re.compile(
@@ -2434,8 +2506,24 @@ mot de passe. Il doit néanmoins rester dans un dépôt privé.</p>
 """
 
 def page_simple(titre, description, corps, base, canonique,
-                indexable=True, bandeau="", navigation=""):
-    """Gabarit des pages hors territoire : accueil, mentions légales."""
+                indexable=True, bandeau="", navigation="", recherche=True):
+    """Gabarit des pages hors territoire : accueil, mentions légales.
+
+    « recherche » retire la barre de recherche du bandeau. Elle sert au
+    visiteur à trouver un territoire ; sur une page d'administration
+    elle ne fait que prendre de la place.
+    """
+    champ_recherche = """<div class="find-groupe">
+    <label class="find-label" for="q">Recherche</label>
+    <div class="find">
+      <input id="q" type="text" placeholder="Commune, code postal…"
+             autocomplete="off">
+      <div class="hits" id="hits"></div>
+    </div>
+  </div>""" if recherche else ""
+    script_recherche = (f'<script>var BASE="{base}";</script>\n'
+                        f'<script src="{base}/assets/recherche.js'
+                        f'?v={EMPREINTE}"></script>') if recherche else ""
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -2458,14 +2546,7 @@ def page_simple(titre, description, corps, base, canonique,
 
 <div class="top"><div class="wrap">
   <a class="logo" href="{base}/">{escape(TITRE_SITE)}</a>
-  <div class="find-groupe">
-    <label class="find-label" for="q">Recherche</label>
-    <div class="find">
-      <input id="q" type="text" placeholder="Commune, code postal…"
-             autocomplete="off">
-      <div class="hits" id="hits"></div>
-    </div>
-  </div>
+  {champ_recherche}
   <div class="top-fin"></div>
 </div></div>
 {bandeau}
@@ -2477,11 +2558,11 @@ def page_simple(titre, description, corps, base, canonique,
 
 <footer class="site"><div class="wrap">
   {escape(SOUS_TITRE)} — Licence Ouverte 2.0
+  · <a href="{base}/fraicheur/">Fraîcheur des données</a>
   · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
 
-<script>var BASE="{base}";</script>
-<script src="{base}/assets/recherche.js?v={EMPREINTE}"></script>
+{script_recherche}
 </body>
 </html>
 """
@@ -2622,6 +2703,156 @@ def etat_source(fichier, frequence_forcee=None):
             "source": contenu.get("source", ""),
             "millesime": contenu.get("millesime"),
             "poids": chemin.stat().st_size}
+
+
+def corps_introuvable(adresses):
+    """Page servie quand une adresse n'existe pas.
+
+    Elle répond bien 404. Rediriger vers l'accueil ferait croire au
+    moteur que la page existe — une « soft 404 », que Google traite
+    comme une erreur — et ferait perdre au visiteur ce qu'il cherchait
+    sans le lui dire.
+    """
+    entrees = []
+    for niveau, libelle in (("canton", "du canton"),
+                            ("epci", "de l'intercommunalité")):
+        cible = next((c for (n, _), c in adresses.items() if n == niveau), None)
+        if cible:
+            entrees.append(f'<a class="bl-lien" href="/{cible}">'
+                           f'Voir la fiche {libelle}</a>')
+
+    return f"""    <div class="hd"><h2>Cette page n'existe pas</h2>
+      <span class="n">Erreur 404</span></div>
+
+    <section class="bloc"><span class="dsp">Où aller</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">L'adresse demandée ne correspond à aucune page
+        de ce portail. Elle a peut-être changé, ou comporte une faute de
+        frappe.</p>
+        <p class="bl-texte">La recherche, en haut de page, trouve une
+        commune par son nom, son code postal ou son code INSEE. C'est le
+        plus rapide.</p>
+        <a class="bl-lien" href="/">Retour à l'accueil</a>
+        {" ".join(entrees)}
+      </article></div>
+    </section>"""
+
+
+def corps_fraicheur():
+    """Page publique : quand chaque donnée a été collectée pour la dernière fois.
+
+    Un site statique affiche des chiffres figés à sa dernière génération.
+    Le visiteur n'a aucun moyen de savoir si une source a cessé d'être
+    mise à jour, et l'exploitant non plus tant que rien ne le montre.
+    Cette page le dit.
+
+    Elle n'expose rien du fonctionnement interne : ni nom de script, ni
+    commande, ni chemin. C'est ce qui la distingue de la page
+    d'administration, qui affiche les mêmes états avec les moyens d'agir.
+    """
+    lignes, a_jour, total = [], 0, 0
+
+    for fichier, libelle, _script, _commande, frequence in SOURCES_SUIVIES:
+        e = etat_source(fichier, frequence)
+        total += 1
+
+        if not e["present"]:
+            lignes.append({"titre": libelle, "rang": 1,
+                           "etat": ["Pas encore collectée", "attention"],
+                           "details": {},
+                           "texte": "Cette donnée n'est pas encore publiée "
+                                    "sur le portail."})
+            continue
+        if e.get("illisible"):
+            lignes.append({"titre": libelle, "rang": 0,   # le plus grave
+                           "etat": ["Indisponible", "alerte"], "details": {},
+                           "texte": "La dernière collecte est inexploitable ; "
+                                    "les chiffres affichés sont ceux de la "
+                                    "collecte précédente."})
+            continue
+
+        details = {}
+        if e["genere"]:
+            details["Dernière collecte"] = date.fromisoformat(
+                e["genere"]).strftime("%d/%m/%Y")
+        if e["age"] is not None:
+            details["Ancienneté"] = ("le jour même" if e["age"] == 0
+                                     else f"{e['age']} jour"
+                                          f"{'s' if e['age'] > 1 else ''}")
+        details["Rythme de publication"] = e["frequence"]
+        if e.get("millesime"):
+            details["Millésime des données"] = e["millesime"]
+        if e.get("source"):
+            details["Producteur"] = e["source"]
+        if e["volume"]:
+            details["Couverture"] = f"{e['volume']} {e['portee']}"
+
+        if e["etat"] == "À jour":
+            a_jour += 1
+            texte = None
+        else:
+            texte = ("Cette donnée a dépassé le rythme de publication de son "
+                     "producteur. Elle n'est pas fausse pour autant : elle "
+                     "est simplement plus ancienne que ce qui est disponible "
+                     "à la source.")
+
+        entree = {"titre": libelle, "details": details,
+                  "etat": [e["etat"], e["ton"]],
+                  "rang": 2 if e["etat"] != "À jour" else 3,
+                  "age": e["age"] if e["age"] is not None else 9999}
+        if texte:
+            entree["texte"] = texte
+        lignes.append(entree)
+
+    # Règle du site : un état en cours se lit du plus grave au moins
+    # grave. Ici : collecte inexploitable, puis donnée absente, puis
+    # retard, puis à jour. À état égal, la plus ancienne d'abord.
+    lignes.sort(key=lambda x: (x.get("rang", 2), -x.get("age", 0), x["titre"]))
+
+    entrees = "".join(
+        f'<article class="bl-item"><header><h3>{escape(l["titre"])}</h3>'
+        f'<span class="bl-etat {escape(l["etat"][1])}">'
+        f'{escape(l["etat"][0])}</span></header>'
+        + "".join(f'<div class="bl-ligne"><span class="bl-cle">{escape(k)}'
+                  f'</span><span class="bl-val">{escape(str(v))}</span></div>'
+                  for k, v in l["details"].items())
+        + (f'<p class="bl-texte">{escape(l["texte"])}</p>'
+           if l.get("texte") else "")
+        + "</article>"
+        for l in lignes)
+
+    maj = date.today().strftime("%d/%m/%Y")
+    return f"""    <div class="hd"><h2>Fraîcheur des données</h2>
+      <span class="n">{a_jour} source{"s" if a_jour > 1 else ""} à jour
+      sur {total} · pages produites le {maj}</span></div>
+
+    <section class="bloc"><span class="dsp">État de chaque source</span>
+      <div class="bl-grille">{entrees}</div>
+      <p class="bl-note">Les dates indiquées sont celles de la collecte par
+      ce portail, non celles de la publication par le producteur : une
+      donnée collectée hier peut porter sur une année antérieure, et son
+      millésime est alors précisé. Une source « à rafraîchir » a dépassé
+      le rythme annoncé par son producteur ; ses valeurs restent celles
+      qui ont été publiées, elles ne deviennent pas fausses en
+      vieillissant.</p>
+    </section>
+
+    <section class="bloc"><span class="dsp">Pourquoi cette page</span>
+      <div class="bl-grille"><article class="bl-item">
+        <p class="bl-texte">Ce portail est un site statique : ses pages
+        sont écrites à l'avance, elles n'interrogent aucune source au
+        moment où vous les consultez. Les chiffres affichés sont donc
+        ceux de la dernière collecte, et non ceux de l'instant.</p>
+        <p class="bl-texte">Plutôt que de laisser croire à une
+        actualisation permanente, cette page montre l'âge réel de chaque
+        donnée. Si une source cesse d'être mise à jour, cela se voit
+        ici — c'est la contrepartie honnête d'un site qui ne prétend pas
+        être un service en temps réel.</p>
+        <p class="bl-texte">Pour toute décision engageante, l'organisme
+        producteur et le document officiel font seuls foi. Chaque
+        indicateur du site porte le nom de sa source.</p>
+      </article></div>
+    </section>"""
 
 
 EXTENSIONS_DOCUMENTS = (".md", ".txt", ".csv", ".pdf", ".png", ".jpg",
@@ -2774,9 +3005,8 @@ def corps_administration(fiches, protegee):
     total_pages = sum(1 for _ in RACINE.rglob("index.html"))
 
     return f"""    <div class="hd"><h2>Administration</h2>
-      <span class="n">Page interne — non indexée, non liée, absente du
-      robots.txt. Discrétion seulement : protégez ce dossier par mot de
-      passe depuis l'espace client OVH.</span></div>
+      <span class="n"><a href="documents.php">Documents de travail</a>
+      · <a href="journal.php">Journal du leurre</a></span></div>
 
     <section class="bloc"><span class="dsp">État des sources</span>
       <div class="bl-grille">{entrees}</div>
@@ -3266,6 +3496,13 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     suffixe_titre = (sous["nom"] if sous
                      else (rubrique["nom"] if rubrique["id"] else niveau))
 
+    # Le titre de premier niveau doit dire de quoi parle LA page, pas
+    # seulement de quel territoire. Sans cela, les quinze pages d'une
+    # commune portent le même « Saint-Marcellin » : pour un moteur, rien
+    # ne les distingue, et le signal le plus fort de la page est perdu.
+    titre_rubrique = (f'<span class="h1-rub"> — {escape(suffixe_titre)}</span>'
+                      if rubrique["id"] else "")
+
     maj = date.fromisoformat(d["genere_le"]).strftime("%d/%m/%Y")
 
     return f"""<!DOCTYPE html>
@@ -3303,7 +3540,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 <div class="terr"><div class="wrap">
   <div class="terr-identite">
     <div class="kind dsp">{escape(niveau)}</div>
-    <h1>{escape(t['nom'])}</h1>
+    <h1>{escape(t['nom'])}{titre_rubrique}</h1>
     <div class="sub">{sous_titre}</div>
   </div>
   {rappel_parents(d, base, adresses)}
@@ -3327,6 +3564,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
   {escape(SOUS_TITRE)} — Licence Ouverte 2.0 · Contrat v{d['version_contrat']}
   · Mise à jour du {maj}
   · <a href="{base}/data/publie/v1/{t['niveau']}/{t['code']}.json">données brutes</a>
+  · <a href="{base}/fraicheur/">Fraîcheur des données</a>
   · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
 
@@ -3523,6 +3761,28 @@ def main():
         print("              MENTIONS en tête de 04_generation.py. Elles")
         print("              sont obligatoires avant toute communication.")
 
+    # ── page d'erreur ──
+    (RACINE / "404.html").write_text(
+        page_simple("Page introuvable",
+                    "Cette adresse ne correspond à aucune page du portail.",
+                    corps_introuvable(adresses), ".",
+                    f"{SITE}/404.html", indexable=False),
+        encoding="utf-8")
+
+    # ── fraîcheur des données ──
+    # Publique et indexable : c'est un argument de crédibilité, pas une
+    # information interne.
+    fraicheur = RACINE / "fraicheur"
+    fraicheur.mkdir(exist_ok=True)
+    fraicheur.joinpath("index.html").write_text(
+        page_simple("Fraîcheur des données",
+                    "Date de la dernière collecte de chaque source du "
+                    "portail, son rythme de publication et son producteur.",
+                    corps_fraicheur(), "..",
+                    f"{SITE}/fraicheur/"),
+        encoding="utf-8")
+    liens_site.append(f"{SITE}/fraicheur/")
+
     # ── leurre ──
     leurre = RACINE / DOSSIER_LEURRE
     leurre.mkdir(exist_ok=True)
@@ -3585,7 +3845,8 @@ def main():
                         fiches,
                         protection.exists() and (dossier / ".htpasswd").exists()),
                     "..",
-                    f"{SITE}/{DOSSIER_ADMIN}/", indexable=False),
+                    f"{SITE}/{DOSSIER_ADMIN}/", indexable=False,
+                    recherche=False),
         encoding="utf-8")
 
     # index de recherche : propre à l'affichage, distinct du contrat v1
@@ -3600,12 +3861,49 @@ def main():
     # RedirectMatch avec une expression ancrée est le seul moyen sûr.
     lignes = "\n".join(
         f'RedirectMatch 301 "^{a}/?$" "{b}"' for a, b in sorted(redirections))
+
+    # ── adresses de l'ancien site ──
+    # L'index de Google porte encore des adresses de la version
+    # précédente, en PHP, sous /rubriques/. Elles renvoient aujourd'hui
+    # une erreur. Les rediriger vers leur équivalent conserve
+    # l'ancienneté acquise par ces pages ; les laisser en 404 la perd.
+    #
+    # L'ordre compte : Apache applique la première règle qui correspond.
+    # Les communes d'abord, puis le canton, puis le reste de l'ancienne
+    # arborescence vers l'accueil — un dernier recours qui vaut mieux
+    # qu'une erreur, mais qui ne s'applique qu'à ce dossier.
+    heritage = []
+    for (niveau, code), chemin in sorted(adresses.items()):
+        if niveau != "commune":
+            continue
+        nom = fiches[(niveau, code)]["territoire"]["nom"]
+        formes = "|".join(variantes_anciennes(nom))
+        heritage.append(
+            f'RedirectMatch 301 "^/rubriques/.*commune[_-]({formes})\\.php$"'
+            f' "/{chemin}"')
+
+    cible_canton = next((c for (n, _), c in sorted(adresses.items())
+                         if n == "canton"), None)
+    if cible_canton:
+        heritage.append(
+            'RedirectMatch 301 "^/rubriques/.*(carte[_-]communes'
+            '|canton[_-][a-z_-]+)\\.php$" ' f'"/{cible_canton}"')
+    heritage.append('RedirectMatch 301 "^/rubriques/.*$" "/"')
+
     (RACINE / ".htaccess").write_text(
         "# Fichier généré par 04_generation.py — ne pas modifier à la main.\n"
         "# Redirige les anciennes adresses sans nom vers les nouvelles.\n"
         "# RedirectMatch et non Redirect : ce dernier opère par préfixe et\n"
         "# capturerait les adresses complètes.\n"
-        f"{lignes}\n", encoding="utf-8")
+        f"{lignes}\n"
+        "\n# Page servie quand aucune adresse ne correspond. Elle répond\n"
+        "# bien 404 : une redirection vers l'accueil serait une « soft\n"
+        "# 404 », que les moteurs traitent comme une erreur.\n"
+        "ErrorDocument 404 /404.html\n"
+        "\n# Adresses de l'ancien site, encore présentes dans l'index des\n"
+        "# moteurs. À confronter à la liste réelle des 404 de la Search\n"
+        "# Console : ces motifs sont déduits de deux adresses observées.\n"
+        + "\n".join(heritage) + "\n", encoding="utf-8")
 
     # plan du site
     aujourdhui = date.today().isoformat()
@@ -3653,7 +3951,9 @@ def main():
     else:
         print("  Cartes          : absentes — lancez 05_cartes.py")
     print(f"  Thème           : assets/style.css")
-    print(f"  Redirections    : .htaccess ({len(redirections)} anciennes adresses)")
+    print(f"  Redirections    : .htaccess ({len(redirections)} anciennes "
+          f"adresses, {len(heritage)} règles d'héritage)")
+    print(f"  Page d'erreur   : 404.html, servie par ErrorDocument")
     print(f"  Plan du site    : sitemap.xml ({len(set(liens_site))} adresses)")
     print(f"\n  Exemples d'adresses :")
     for u in list(sorted(set(liens_site)))[:3]:

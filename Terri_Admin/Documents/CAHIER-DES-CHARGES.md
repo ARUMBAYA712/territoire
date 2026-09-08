@@ -5,7 +5,7 @@ Document interne
 
 | | |
 |---|---|
-| Version du document | 1.7 |
+| Version du document | 1.9 |
 | Date | 8 septembre 2026 |
 | Plateforme cible | Site web statique — ordinateur, tablette, téléphone |
 | Adresse | territoire.sudgresiv.com |
@@ -75,6 +75,7 @@ versionné, destiné à être appelé par d'autres sites locaux.
 | Rubrique Prix des carburants | Décidée, non développée. Onglet dédié en bout de barre, plus un résumé dans Transports | — |
 | Automatisation des mises à jour | GitHub Actions retenu. CRON OVH écarté pour les collecteurs : Python n'est pas disponible sur l'hébergement mutualisé | — |
 | Résultats en direct le soir d'élection | **Décision révisée** : retenu. Motif invoqué : crédibilité du site, non fréquentation. Architecture à concevoir, contrainte légale d'embargo à respecter | — |
+| Amorcer l'indexation avant la donnée | Retenu. Pages d'annonce Carburants et Élections / Résultats, aux trois échelles, portant des faits propres à chaque territoire et s'effaçant à l'arrivée de la donnée | 1.8 |
 
 ---
 
@@ -104,6 +105,7 @@ versionné, destiné à être appelé par d'autres sites locaux.
 | EF-14 | Limiter l'Aperçu à une sélection de six indicateurs choisis, et non à l'ensemble. |
 | EF-15 | Faire remonter sur l'Aperçu tout indicateur en état d'alerte, même hors sélection. |
 | EF-16 | N'écrire une page que si elle a du contenu, afin qu'aucun lien ne mène à une page vide. |
+| EF-17 | Publier, pour une rubrique décidée mais pas encore alimentée, une page d'annonce disant ce qui sera diffusé, d'où viendra la donnée et sous quelles réserves. Elle ne s'écrit que si elle porte des faits propres au territoire, n'annonce aucune date, et s'efface d'elle-même dès qu'une mesure arrive. |
 
 ### 3.3 Indicateurs
 
@@ -273,6 +275,8 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Prix de l'eau | Reporté, voie SISPEA | API Hub'Eau | Arrêt de l'API au 10 septembre 2026 |
 | Résultats en direct | Retenu, sur données publiées après 20 h | Abstention le soir du scrutin | Arbitrage rouvert : être absent le seul soir de forte affluence dessert la crédibilité recherchée |
 | Diffusion du direct | Fichiers de données rafraîchis, page qui interroge la même origine | Régénération complète du site à chaque relève | 250 pages régénérées toutes les dix minutes pour quelques chiffres qui changent |
+| Rubrique décidée, sans donnée | Page d'annonce indexable | Aucune page jusqu'à la donnée, conformément à EF-16 | L'exploration puis l'indexation d'une adresse prennent des semaines : les engager d'avance fait gagner ce délai. Réserve assumée : quarante-sept pages au texte identique sont le schéma que les moteurs déclassent, d'où l'obligation de faits propres à chaque territoire |
+| Prix des carburants sur un site statique | Prix de la dernière génération, horodatage affiché | Interrogation du flux en direct comme dans l'application Carbu | Un site statique ne peut pas interroger une source à l'ouverture ; la différence de nature est dite au visiteur plutôt que masquée |
 
 ---
 
@@ -314,7 +318,7 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Bloquant | Vérifier le lien vers le rapport Géorisques | Adresse supposée, jamais éprouvée |
 | Élevée | Donner un contenu propre à l'accueil | Aujourd'hui identique à la fiche du canton |
 | Élevée | Mettre en place GitHub Actions | Prérequis des carburants |
-| Élevée | Page publique de fraîcheur des données | Argument de crédibilité |
+| Fait | Page publique de fraîcheur des données | `/fraicheur/`, liée en pied de page : date de collecte, ancienneté et rythme de chaque source, sans rien exposer du fonctionnement interne |
 | Moyenne | Script unique enchaînant la séquence | La séquence n'est plus mémorisable |
 | Moyenne | Héberger les polices localement | Un appel externe par page |
 | Moyenne | Documenter le service de données | Condition de son usage par des tiers |
