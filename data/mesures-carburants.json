@@ -4,7 +4,7 @@
  "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
  "licence": "Licence Ouverte 2.0",
  "frequence": "quotidienne",
- "releve_le": "2026-09-09T10:46+00:00",
+ "releve_le": "2026-09-09T11:04+00:00",
  "communes": {
   "38004": {
    "mesures": {

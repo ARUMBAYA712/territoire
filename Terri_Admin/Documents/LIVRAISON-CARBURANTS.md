@@ -1,12 +1,12 @@
-# Livraison — la rubrique Carburants, et le générateur en version 34
+# Livraison — la rubrique Carburants, et le générateur en version 35
 
-8 septembre 2026, sixième livraison. **Les fichiers sont posés dans
+8 septembre 2026, sixième livraison — révisée le 9 après trois collectes réelles. **Les fichiers sont posés dans
 votre dépôt.**
 
 | Fichier | Version | Ce qui change |
 |---|---|---|
-| `18_carburants.py` | **nouveau, v1** | Prix des carburants, commune par commune |
-| `04_generation.py` | 33 → **34** | Les pages « en préparation » sortent du plan du site |
+| `18_carburants.py` | **nouveau, v3** | Prix des carburants, commune par commune |
+| `04_generation.py` | 33 → **35** | Les pages « en préparation » sortent du plan du site |
 | `lancer.py` | — | Le collecteur entre au plan quotidien |
 
 ```
@@ -102,11 +102,15 @@ intégralement dans la chaîne :
 
 | | |
 |---|---|
-| Stations dans l'emprise | 13 |
-| **Sur le territoire** | **6**, sur 5 communes |
-| Aux abords, à moins de 10 km | 6 |
-| Écartée | 1 — Autrans-Méaudre, aucun relevé de moins de huit jours |
+| Stations dans l'emprise de collecte | 97 |
+| **Sur le territoire** | **5**, sur 5 communes |
+| Retenues aux alentours | 88, dont **10 villes réellement citées** |
+| Écartées | 4 — aucun relevé de moins de huit jours |
 | **Communes servies** | **47 sur 47** |
+
+La seconde station de Vinay — 2,219 €/L, la moins chère du territoire —
+est écartée depuis le 9 septembre : le distributeur n'a rien redéclaré
+depuis le 31 août. C'est le seuil de huit jours qui joue son rôle.
 
 Ce dernier chiffre est le plus important, et il n'allait pas de soi.
 Cinq communes ont une station ; les quarante-deux autres reçoivent
@@ -128,8 +132,7 @@ En tête du canton :
 |---|---|
 | Gazole le moins cher | **2,256 €/L** — Chatte, relevé aujourd'hui |
 | Écart entre stations du territoire | **0,063 €/L** — de Chatte à Saint-Marcellin, 3 € sur un plein de 50 litres |
-| Stations sur le territoire | 6, et 6 à moins de 10 km |
-| Moins cher juste à côté | 2,249 €/L à Saint-Laurent-en-Royans |
+| Stations sur le territoire | 5 |
 
 **Le chiffre mis en avant est celui du territoire, jamais celui d'une
 voisine.** Une page du Sud Grésivaudan qui annoncerait en tête le prix
@@ -202,11 +205,33 @@ leur situation écrite. Elles sont également exclues du calcul de la
 station la plus proche : à vol d'oiseau elle peut être toute proche, et
 inaccessible sans dix kilomètres jusqu'à l'échangeur.
 
-**La marge autour du territoire est de dix kilomètres.** Six stations
-sur quarante-sept communes ne font pas une page utile : sans les
-voisines, le lecteur n'a rien à comparer. Au-delà d'une dizaine de
-kilomètres, la page cesse de parler du territoire. C'est le réglage le
-plus discutable des trois, et le plus facile à changer — une ligne.
+**Ce qui s'affiche est décidé page par page, et non par un rayon
+unique.** C'est le point sur lequel je me suis trompé d'abord, et la
+première collecte réelle l'a montré sans appel : une marge de dix
+kilomètres autour du territoire ramenait quarante-neuf stations, dont
+quarante-trois extérieures — Voiron, Moirans, Échirolles,
+Romans-sur-Isère. La raison est géométrique : **votre territoire est
+une bande étroite**, et un rectangle autour de lui attrape deux
+agglomérations qui ne sont proches d'aucune de ses communes. La page du
+canton se serait mise à parler de Grenoble.
+
+| Page | Ce qu'elle montre |
+|---|---|
+| **Canton, intercommunalité** | **uniquement les stations du territoire** — la comparaison entre elles *est* le sujet |
+| **Commune** | les siennes, puis les **trois plus proches à moins de 15 km**, avec leur distance |
+
+Chaque page répond ainsi à sa propre question : « qu'est-ce que le
+carburant coûte ici » pour le canton, « où vais-je faire le plein »
+depuis un village. Sur la collecte du 9 septembre, les voisines citées
+sont toutes des voisines réelles — distances de 1 à 12 km, médiane 7 —
+et aucune station de Grenoble, de Voiron ni de Romans n'apparaît nulle
+part.
+
+**Tullins figure sur vingt-huit des quarante-sept pages.** Ce n'est pas
+un défaut de réglage, c'est un fait sur le territoire : la moitié nord
+— Vatilieu, Quincieu, Cras, Chantesse, Morette, Têche — n'a aucune
+station, et c'est vers Tullins qu'elle se tourne. La rubrique le dit
+sans le commenter.
 
 **Le collecteur entre au plan quotidien.** Les prix se périment en
 jours ; si ce plan cesse de tourner, la rubrique **se vide d'elle-même**
@@ -227,8 +252,8 @@ décision, pas un réglage : nous deviendrions **producteur** d'une
 donnée, avec ce que cela suppose de continuité. Une série interrompue
 six mois est pire que pas de série.
 
-Votre remarque d'hier tenait : sur six stations, l'intérêt d'un
-historique est mince. Il grandit si l'on retient les treize.
+Votre remarque tenait : sur cinq stations, l'intérêt d'un historique
+est mince. Il grandit si l'on y ajoute les voisines les plus citées.
 
 **Deux points de la fiche du jeu de données restent à lire** : la
 licence exacte, et la stabilité des identifiants de station dans le
@@ -237,16 +262,40 @@ constituerions.
 
 ---
 
+## 7. L'erreur qui vaut d'être écrite
+
+La première collecte réelle a publié « aucune station dans l'emprise »
+sur un territoire qui en compte cinq. La cause : **l'API Explore attend
+`in_bbox(champ, lat_min, lon_min, lat_max, lon_max)` — la latitude
+d'abord.** Je l'avais écrite longitude d'abord. Le filtre reste
+syntaxiquement valable, la requête répond `200`, et elle renvoie zéro
+ligne.
+
+Deux enseignements, et le second est le plus utile :
+
+- **une requête qui réussit n'est pas une requête juste.** Le
+  collecteur traitait déjà « zéro station » différemment de « la source
+  n'a pas répondu », et c'est ce qui a rendu la panne lisible en une
+  ligne au lieu de passer pour une absence de stations ;
+- **un banc d'essai qui rejoue une collecte enregistrée ne teste pas la
+  collecte.** Les quatre filets avaient été éprouvés sur des données
+  réelles, mais la requête qui va les chercher ne l'avait jamais été.
+  C'est la limite de la méthode, et elle vaut pour tous les collecteurs
+  à venir.
+
+---
+
 ## À vérifier après installation
 
 | # | Attendu |
 |---|---|
-| 1 | `04_generation.py` annonce la **version 34**, `18_carburants.py` la **version 1** |
+| 1 | `04_generation.py` annonce la **version 35**, `18_carburants.py` la **version 3** |
 | 2 | Le collecteur imprime les stations retenues **et** les écartées avec leur motif |
 | 3 | « Communes servies : 47 sur 47 » — si le chiffre est plus bas, une commune n'a pas trouvé de station proche |
-| 4 | Le plan du site **ne contient plus les 49 pages carburants vides**, mais les 49 pages carburants **pleines** |
+| 3 bis | « Stations du territoire » n'est **pas zéro** — sinon la collecte a échoué et il ne faut rien publier |
+| 4 | Le plan du site compte **726 adresses** : les 49 pages carburants y sont, pleines |
 | 5 | Il reste 49 pages en attente : `elections/resultats`, jusqu'en octobre |
-| 6 | Sur `/canton/…/carburants/`, les stations du territoire figurent **avant** les voisines |
+| 6 | Sur `/canton/…/carburants/`, **seules** les stations du territoire figurent |
 | 7 | Sur `/commune/38416-saint-marcellin/transports/`, une tuile « Gazole » renvoie « Voir dans Carburants » |
 | 8 | Sur une commune sans station — L'Albenc, Rencurel — la tuile nomme la station la plus proche et sa distance |
 | 9 | Aucun `[ATTENTION] … hors des bornes` : s'il y en a, la source a changé quelque chose |

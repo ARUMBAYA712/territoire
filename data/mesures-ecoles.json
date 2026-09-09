@@ -1285,13 +1285,6 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole secondaire privée Saint Joseph",
-       "lat": 45.250449,
-       "lon": 5.360617,
-       "info": "Lycée",
-       "categorie": "second"
-      },
-      {
        "nom": "Ecole primaire",
        "lat": 45.257978,
        "lon": 5.37423,
@@ -1304,6 +1297,13 @@
        "lon": 5.36529,
        "info": "Ecole",
        "categorie": "premier"
+      },
+      {
+       "nom": "Ecole secondaire privée Saint Joseph",
+       "lat": 45.250449,
+       "lon": 5.360617,
+       "info": "Lycée",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2684,9 +2684,9 @@
        "categorie": "autre"
       },
       {
-       "nom": "Ecole primaire Centre",
-       "lat": 45.152406,
-       "lon": 5.32117,
+       "nom": "Ecole primaire privée Le Dauphin",
+       "lat": 45.152952,
+       "lon": 5.32381,
        "info": "Ecole",
        "categorie": "premier"
       },
@@ -2698,16 +2698,9 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole primaire privée Le Dauphin",
-       "lat": 45.152952,
-       "lon": 5.32381,
-       "info": "Ecole",
-       "categorie": "premier"
-      },
-      {
-       "nom": "Ecole maternelle Le Stade",
-       "lat": 45.15102,
-       "lon": 5.31423,
+       "nom": "Ecole primaire Centre",
+       "lat": 45.152406,
+       "lon": 5.32117,
        "info": "Ecole",
        "categorie": "premier"
       },
@@ -2717,6 +2710,20 @@
        "lon": 5.320337,
        "info": "Service Administratif",
        "categorie": "autre"
+      },
+      {
+       "nom": "Ecole maternelle Le Stade",
+       "lat": 45.15102,
+       "lon": 5.31423,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole maternelle Centre",
+       "lat": 45.153239,
+       "lon": 5.31875,
+       "info": "Ecole",
+       "categorie": "premier"
       },
       {
        "nom": "Ecole primaire La Plaine",
@@ -2738,13 +2745,6 @@
        "lon": 5.321999,
        "info": "Lycée",
        "categorie": "second"
-      },
-      {
-       "nom": "Ecole maternelle Centre",
-       "lat": 45.153239,
-       "lon": 5.31875,
-       "info": "Ecole",
-       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -2906,16 +2906,16 @@
      ],
      "points": [
       {
-       "nom": "Ecole maternelle",
-       "lat": 45.280299,
-       "lon": 5.54275,
+       "nom": "Ecole primaire Louis Pergaud",
+       "lat": 45.280055,
+       "lon": 5.54357,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole primaire Louis Pergaud",
-       "lat": 45.280055,
-       "lon": 5.54357,
+       "nom": "Ecole maternelle",
+       "lat": 45.280299,
+       "lon": 5.54275,
        "info": "Ecole",
        "categorie": "premier"
       }
@@ -3631,18 +3631,18 @@
        "categorie": "second"
       },
       {
-       "nom": "institut médico éducatif",
-       "lat": 45.206889,
-       "lon": 5.40097,
-       "info": "Médico-social",
-       "categorie": "autre"
-      },
-      {
        "nom": "Ecole maternelle",
        "lat": 45.208713,
        "lon": 5.40538,
        "info": "Ecole",
        "categorie": "premier"
+      },
+      {
+       "nom": "institut médico éducatif",
+       "lat": 45.206889,
+       "lon": 5.40097,
+       "info": "Médico-social",
+       "categorie": "autre"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
