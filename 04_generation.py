@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 35
+VERSION_SCRIPT = 36
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -146,6 +146,14 @@ SOURCES_SUIVIES = [
      "15_elus.py", "python 15_elus.py", None),
     ("mesures-bio.json", "Agriculture biologique",
      "16_bio.py", "python 16_bio.py", None),
+    ("mesures-climat.json", "Climat mensuel",
+     "17_climat.py", "python 17_climat.py", None),
+    ("mesures-carburants.json", "Prix des carburants",
+     "18_carburants.py", "python 18_carburants.py", None),
+    ("mesures-gares.json", "Gares et fréquentation ferroviaire",
+     "19_gares.py", "python 19_gares.py", None),
+    ("mesures-cars.json", "Desserte en autocar",
+     "20_cars.py", "python 20_cars.py", None),
 ]
 
 # Référentiels transcrits depuis un document officiel. Ils ne se
@@ -161,6 +169,107 @@ TOLERANCE_FRAICHEUR = {
     "quotidienne": 2, "hebdomadaire": 10, "mensuelle": 45,
     "trimestrielle": 120, "annuelle": 400,
 }
+
+# ══════════════════════════════════════════════════════════════════
+# LICENCES
+#
+# Le site a longtemps annoncé « Licence Ouverte 2.0 » partout, ce qui
+# était exact tant que toutes ses sources l'étaient. L'arrivée des
+# données de transport — SNCF, cars Région Isère, réseaux urbains —
+# a changé cela : elles sont publiées sous ODbL.
+#
+# La différence n'est pas de forme. L'ODbL est une licence de BASE DE
+# DONNÉES qui, au-delà de l'attribution qu'exige aussi la Licence
+# Ouverte, impose le PARTAGE À L'IDENTIQUE : une base dérivée que l'on
+# republie doit l'être sous ODbL. Or ce site republie ses données en
+# téléchargement, fiche par fiche.
+#
+# La règle retenue, arbitrée le 9 septembre 2026 : chaque mesure porte
+# déjà sa licence dans le contrat de données ; le site l'affiche
+# désormais telle qu'elle est, source par source, plutôt que d'annoncer
+# une licence unique qui serait fausse pour une partie du contenu.
+#
+# Ce tableau ne sert qu'à mettre en forme : il nomme les licences et
+# donne leur texte de référence. Ce sont les collecteurs qui décident,
+# chacun pour sa source.
+# ══════════════════════════════════════════════════════════════════
+
+LICENCES = {
+    "Licence Ouverte 2.0": {
+        "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "court": "Licence Ouverte 2.0",
+        "partage": False,
+    },
+    "ODbL 1.0": {
+        "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "court": "ODbL 1.0",
+        "partage": True,
+    },
+}
+
+# Employée quand une licence inconnue apparaît : on ne l'invente pas,
+# on la cite telle que le collecteur l'a écrite.
+LICENCE_PAR_DEFAUT = {"url": "", "court": "", "partage": False}
+
+
+def licence_connue(nom):
+    """Fiche d'une licence, ou son nom brut si elle est inconnue."""
+    fiche = dict(LICENCES.get(str(nom or "").strip(), LICENCE_PAR_DEFAUT))
+    fiche["court"] = fiche["court"] or str(nom or "").strip()
+    return fiche
+
+
+# Relevé au début de la génération, à partir des fichiers réellement
+# présents : [(libellé de la source, producteur, nom de licence)].
+# Rien n'est écrit en dur — le jour où une source change de licence,
+# c'est le collecteur qui le dit, et le site suit.
+LICENCES_PRESENTES = []
+MENTION_LICENCE = "Licence Ouverte 2.0"
+URL_LICENCE = LICENCES["Licence Ouverte 2.0"]["url"]
+
+
+def relever_licences():
+    """Licences des sources effectivement collectées, dans l'ordre.
+
+    Met à jour les trois valeurs que le pied de page, les mentions
+    légales et le JSON-LD emploient. Appelée une fois, avant l'écriture
+    des pages.
+    """
+    global LICENCES_PRESENTES, MENTION_LICENCE, URL_LICENCE
+
+    relevees = []
+    for fichier, libelle, _s, _c, _f in SOURCES_SUIVIES:
+        chemin = RACINE / "data" / fichier
+        if not chemin.exists():
+            continue
+        try:
+            contenu = json.loads(chemin.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        nom = str(contenu.get("licence") or "").strip()
+        if nom:
+            relevees.append((libelle, str(contenu.get("source") or ""), nom))
+
+    LICENCES_PRESENTES = relevees
+    distinctes = []
+    for _l, _p, nom in relevees:
+        if nom not in distinctes:
+            distinctes.append(nom)
+
+    if len(distinctes) == 1:
+        # Cas d'un site mono-licence : la mention reste exactement celle
+        # qu'elle a toujours été, à l'octet près.
+        MENTION_LICENCE = licence_connue(distinctes[0])["court"]
+        URL_LICENCE = licence_connue(distinctes[0])["url"]
+    elif distinctes:
+        courts = [licence_connue(n)["court"] for n in distinctes]
+        MENTION_LICENCE = " et ".join([", ".join(courts[:-1]), courts[-1]]) \
+            if len(courts) > 2 else " et ".join(courts)
+        # Plusieurs licences : le document qui fait foi est la page des
+        # mentions légales, qui dit laquelle s'applique à quoi. C'est
+        # l'adresse que JSON-LD doit désigner, et non l'une des deux.
+        URL_LICENCE = f"{SITE}/mentions-legales/"
+    return distinctes
 
 # Rubriques annoncées mais pas encore alimentées.
 CHANTIERS = [
@@ -1848,8 +1957,18 @@ RUBRIQUES = [
     {"id": "equipements", "nom": "Équipements", "prefixes": ["EQU"],
      "prevue": True},
 
+    # Trois choses différentes vivent ici : une obligation réglementaire
+    # saisie à la main, le train, et l'autocar. Les deux dernières ont
+    # leur propre page — une adresse par mode, ce qui vaut mieux qu'une
+    # page unique où « gare » et « arrêt de car » se disputeraient le
+    # même titre. L'obligation hivernale reste au niveau de la rubrique :
+    # elle ne relève d'aucun mode.
     {"id": "transports", "nom": "Transports", "prefixes": ["TRA"],
-     "prevue": True},
+     "prevue": True,
+     "sous": [
+         {"id": "train", "nom": "Train"},
+         {"id": "autocar", "nom": "Autocar"},
+     ]},
 
     {"id": "elections", "nom": "Élections", "prefixes": ["POL"],
      "prevue": True,
@@ -1915,6 +2034,12 @@ ICONES = {
     "rivieres": '<path d="M4 3c0 5 3.5 6.5 3.5 10.5S4 18.5 4 21"/>'
                 '<path d="M20 3c0 5-3.5 6.5-3.5 10.5S20 18.5 20 21"/>'
                 '<path d="M12 6.5v3M12 13v3"/>',
+    "train": '<rect x="6" y="3.5" width="12" height="12" rx="2.5"/>'
+             '<path d="M6 10h12M9.5 19 7 21.5M14.5 19 17 21.5M8 16v-.01'
+             'M16 16v-.01M9 15.5h6"/>',
+    "autocar": '<rect x="3.5" y="5" width="17" height="10" rx="2"/>'
+               '<path d="M3.5 10h17M8 15v2.5M16 15v2.5M6.5 12.5v-.01'
+               'M17.5 12.5v-.01"/>',
     "climat": '<path d="M10 14.5V5.5a2 2 0 0 1 4 0v9a3.4 3.4 0 1 1-4 0z"/>'
               '<circle cx="12" cy="17" r="1.4"/><path d="M14.5 7.5h2M14.5 '
               '10.5h2M14.5 13.5h2"/>',
@@ -3590,7 +3715,7 @@ def page_simple(titre, description, corps, base, canonique,
 </div></main>
 
 <footer class="site"><div class="wrap">
-  {escape(SOUS_TITRE)} — Licence Ouverte 2.0
+  {escape(SOUS_TITRE)} — {escape(MENTION_LICENCE)}
   · <a href="{base}/fraicheur/">Fraîcheur des données</a>
   · <a href="{base}/mentions-legales/">Mentions légales</a>
 </div></footer>
@@ -3739,6 +3864,7 @@ def etat_source(fichier, frequence_forcee=None):
             "volume": volume, "portee": portee,
             "version": contenu.get("version"),
             "source": contenu.get("source", ""),
+            "licence": contenu.get("licence", ""),
             "millesime": contenu.get("millesime"),
             "poids": chemin.stat().st_size}
 
@@ -3822,6 +3948,11 @@ def corps_fraicheur():
             details["Millésime des données"] = e["millesime"]
         if e.get("source"):
             details["Producteur"] = e["source"]
+        if e.get("licence"):
+            # La licence se lit à côté de la source, pas dans une page
+            # séparée : c'est là que le visiteur regarde quand il se
+            # demande ce qu'il a le droit de faire de la donnée.
+            details["Licence"] = licence_connue(e["licence"])["court"]
         if e["volume"]:
             details["Couverture"] = f"{e['volume']} {e['portee']}"
 
@@ -4140,6 +4271,40 @@ def corps_administration(fiches, protegee):
     </section>"""
 
 
+def bloc_licences():
+    """Tableau des sources et de leur licence, construit sur la collecte.
+
+    Écrit à partir des fichiers réellement présents, jamais d'une liste
+    tenue à la main : une source ajoutée demain y figure sans que
+    personne ait à y penser, et une source retirée en disparaît.
+
+    Le partage à l'identique est signalé là où il s'applique. C'est
+    l'obligation que l'ODbL ajoute à l'attribution, et celle qui
+    concerne un visiteur qui réutiliserait nos fichiers.
+    """
+    if not LICENCES_PRESENTES:
+        return ""
+
+    par_licence = {}
+    for libelle, producteur, nom in LICENCES_PRESENTES:
+        par_licence.setdefault(nom, []).append((libelle, producteur))
+
+    blocs = []
+    for nom, sources in par_licence.items():
+        fiche = licence_connue(nom)
+        titre = (f'<a href="{escape(fiche["url"])}" rel="noopener">'
+                 f'{escape(fiche["court"])}</a>' if fiche["url"]
+                 else escape(fiche["court"]))
+        rubriques = ", ".join(escape(l) for l, _p in sorted(sources))
+        reserve = (" Une réutilisation de ces données, y compris "
+                   "recomposée, doit être partagée sous la même licence."
+                   if fiche["partage"] else "")
+        blocs.append(
+            f'<div class="bl-ligne"><span class="bl-cle">{titre}</span>'
+            f'<span class="bl-val">{rubriques}.{escape(reserve)}</span></div>')
+    return "".join(blocs)
+
+
 def corps_mentions():
     # La section n'existe que si la mesure est configurée : un site sans
     # traceur ne doit pas décrire un traceur qu'il n'a pas.
@@ -4190,10 +4355,11 @@ def corps_mentions():
     <section class="bloc"><h2 class="dsp">Données publiées</h2>
       <div class="bl-grille"><article class="bl-item">
         <p class="bl-texte">Les données présentées proviennent
-        exclusivement de sources publiques françaises, diffusées sous
-        Licence Ouverte 2.0 : INSEE, IGN, Hub'Eau, VigiEau, Géorisques,
-        ministère de l'Éducation nationale. Chaque valeur affichée porte
-        le nom de sa source et la date de sa collecte.</p>
+        exclusivement de sources publiques françaises. Chaque valeur
+        affichée porte le nom de sa source et la date de sa collecte.
+        Toutes ne sont pas diffusées sous la même licence : le tableau
+        ci-dessous dit laquelle s'applique à quoi.</p>
+        {bloc_licences()}
         <p class="bl-texte">Ce site n'est ni officiel ni institutionnel.
         En cas d'écart avec la publication d'origine, cette dernière fait
         seule référence. Les données sont republiées sans modification de
@@ -4635,11 +4801,11 @@ def jeu_de_donnees(d, chemin):
         "description": (
             f"Indicateurs publics ouverts pour {t['nom']} ({niveau}) : "
             f"{sujets}. Agrégés depuis les publications de l'INSEE, de "
-            "l'IGN et des services de l'État, republiés en JSON sous "
-            "Licence Ouverte."),
+            "l'IGN et des services de l'État, republiés en JSON. Chaque "
+            "mesure porte la licence de sa source."),
         "url": f"{SITE}/{chemin}",
         "identifier": t["code"],
-        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "license": URL_LICENCE,
         "isAccessibleForFree": True,
         "inLanguage": "fr",
         "dateModified": d["genere_le"],
@@ -4672,7 +4838,7 @@ def site_structure():
         "url": f"{SITE}/",
         "inLanguage": "fr",
         "description": f"{SOUS_TITRE} du Sud Grésivaudan.",
-        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "license": URL_LICENCE,
         "publisher": {"@type": "Person", "name": MENTIONS["editeur"]},
     }
 
@@ -4935,7 +5101,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 </div></main>
 
 <footer class="site"><div class="wrap">
-  {escape(SOUS_TITRE)} — Licence Ouverte 2.0 · Contrat v{d['version_contrat']}
+  {escape(SOUS_TITRE)} — {escape(MENTION_LICENCE)} · Contrat v{d['version_contrat']}
   · Mise à jour du {maj}
   · <a href="{base}/data/publie/v1/{t['niveau']}/{t['code']}.json">données brutes</a>
   · <a href="{base}/fraicheur/">Fraîcheur des données</a>
@@ -5022,6 +5188,10 @@ def main():
     if not fiches:
         print("\n[BLOCAGE] Aucune fiche exploitable.")
         sys.exit(1)
+
+    # Les licences sont relevées AVANT toute écriture : le pied de page
+    # de la première page produite doit déjà dire la vérité.
+    distinctes = relever_licences()
 
     # ── second passage : écriture des pages ──────────────────────
     liens_site, recherche, redirections = [], [], []
@@ -5354,6 +5524,19 @@ def main():
               f"les noms de communes — {etat}")
     else:
         print("  Cartes          : absentes — lancez 05_cartes.py")
+    if LICENCES_PRESENTES:
+        print(f"  Licences        : {MENTION_LICENCE} — "
+              f"{len(LICENCES_PRESENTES)} source(s) déclarée(s)")
+        if len(distinctes) > 1:
+            for nom in distinctes:
+                n = sum(1 for _l, _p, x in LICENCES_PRESENTES if x == nom)
+                print(f"                    {licence_connue(nom)['court']} : "
+                      f"{n} source(s)")
+    else:
+        # Aucun fichier de collecte lisible : ne rien affirmer. Le pied
+        # de page garde sa valeur par défaut, et la sortie le dit.
+        print(f"  Licences        : aucune source déclarée — le pied de "
+              f"page garde « {MENTION_LICENCE} » par défaut")
     print(f"  Thème           : assets/style.css")
     print(f"  Redirections    : .htaccess ({len(redirections)} anciennes "
           f"adresses, {len(heritage)} règles d'héritage)")

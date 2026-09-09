@@ -44,8 +44,8 @@ RACINE = Path(__file__).resolve().parent
 VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
-    "03_agregation.py": 4,
-    "04_generation.py": 35,
+    "03_agregation.py": 5,
+    "04_generation.py": 36,
     "12_rivieres.py": 6,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
@@ -53,6 +53,8 @@ VERSIONS_ATTENDUES = {
     "16_bio.py": 4,
     "17_climat.py": 1,
     "18_carburants.py": 3,
+    "19_gares.py": 1,
+    "20_cars.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -154,6 +156,8 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("19_gares.py", []),
+    ("20_cars.py", []),
     ("18_carburants.py", []),
     ("13_hivernal.py", []),
     ("14_vigilance.py", []),
@@ -200,6 +204,8 @@ COLLECTEURS = [
     ("16_bio.py", []),
     ("17_climat.py", []),
     ("18_carburants.py", []),
+    ("19_gares.py", []),
+    ("20_cars.py", []),
 ]
 
 PUBLICATION = [
@@ -248,6 +254,9 @@ MENSUEL = [
     ("10_ecoles.py", []),
     ("13_hivernal.py", []),       # surveille surtout la péremption de l'arrêté
     ("17_climat.py", []),         # le fichier courant est réécrit chaque jour
+    # Trente mégaoctets d'archive GTFS, et une offre fixée jusqu'en
+    # août 2027 : la collecter tous les mois suffit largement.
+    ("20_cars.py", []),
 ]
 
 # Sources lentes, et surtout gros fichiers : 198 Mo pour l'INSEE, 78 Mo
@@ -262,6 +271,7 @@ TRIMESTRIEL = [
     ("11_population.py", []),
     ("15_elus.py", []),
     ("16_bio.py", []),
+    ("19_gares.py", []),          # fréquentation publiée une fois l'an
 ]
 
 PUBLIER = [

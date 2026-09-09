@@ -28,7 +28,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 4
+VERSION_SCRIPT = 5
 
 DOSSIER = Path("data")
 SOURCE = DOSSIER / "referentiel-communes.json"
@@ -284,6 +284,19 @@ def agreger_chroniques(communes_membres, complements):
                     presents[i] += 1
 
         modele = dict(retenue[0])
+        # Un titre qui nomme UN objet devient faux dès qu'on somme :
+        # « Voyageurs à la gare de Poliénas » sur la page du canton
+        # décrirait un graphique qui additionne quatre gares. Le
+        # collecteur, qui seul sait ce que sa série désigne, peut donc
+        # fournir un titre et une note de remplacement pour l'échelle
+        # agrégée. Sans eux, le titre est conservé tel quel — c'est le
+        # cas des surfaces bio, dont le libellé est déjà générique.
+        for cle, remplacant in (("titre", "titre_agrege"),
+                                ("note", "note_agregee")):
+            if modele.get(remplacant):
+                modele[cle] = modele[remplacant]
+        modele.pop("titre_agrege", None)
+        modele.pop("note_agregee", None)
         entiers = all(
             isinstance(v, int) for s in retenue for v in s["valeurs"]
             if v is not None)
