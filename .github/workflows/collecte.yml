@@ -1,0 +1,62 @@
+name: Collecte et publication
+on:
+schedule:
+- cron: '17 5 * * *' # chaque jour
+- cron: '37 5 * * 1' # chaque lundi
+- cron: '47 5 1 * *' # le 1er du mois
+- cron: '7 6 5 1,4,7,10 *' # chaque trimestre
+workflow_dispatch:
+inputs:
+plan:
+description: "Plan a executer"
+type: choice
+default: quotidien
+options: [quotidien, hebdomadaire, mensuel, trimestriel, site]
+# Aucun droit par defaut, sauf celui d'ecrire dans le depot : c'est ce
+# qui permet d'enregistrer les fichiers produits, et rien d'autre.
+permissions:
+contents: write
+# Deux executions ne doivent jamais publier en meme temps : la seconde
+# serait refusee, et la collecte perdue. Elles font la queue.
+concurrency:
+group: publication
+cancel-in-progress: false
+jobs:
+collecte:
+runs-on: ubuntu-latest
+timeout-minutes: 60
+steps:
+- name: Recuperer le depot
+uses: actions/checkout@v4
+- name: Choisir le plan selon l'heure
+id: plan
+run: |
+case "${{ github.event.schedule }}" in
+"17 5 * * *") plan=quotidien ;;
+"37 5 * * 1") plan=hebdomadaire ;;
+"47 5 1 * *") plan=mensuel ;;
+"7 6 5 1,4,7,10 *") plan=trimestriel ;;
+*) plan="${{ inputs.plan }}" ;;
+esac
+echo "plan=${plan:-quotidien}" >> "$GITHUB_OUTPUT"
+echo "Plan retenu : ${plan:-quotidien}"
+- name: Collecter et generer
+env:
+METEOFRANCE_APIKEY: ${{ secrets.METEOFRANCE_APIKEY }}
+run: python3 lancer.py --${{ steps.plan.outputs.plan }}
+- name: Publier dans le depot
+run: |
+git config user.name "github-actions[bot]"
+git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+git add -A
+if git diff --cached --quiet; then
+echo "Aucun changement : rien a publier."
+exit 0
+fi
+git commit -m "Collecte ${{ steps.plan.outputs.plan }} du $(date -u '+%d/%m/%Y %H:%M
+UTC')"
+git pull --rebase --autostash
+git push
+- name: Resume
+if: always()
+run: git log -1 --stat >> "$GITHUB_STEP_SUMMARY"
