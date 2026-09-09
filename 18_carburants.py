@@ -74,7 +74,7 @@ import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-VERSION_SCRIPT = 2
+VERSION_SCRIPT = 3
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -813,15 +813,21 @@ def main():
             continue
         stations.append(st)
 
-    print(f"\n  Stations retenues : {len(stations)}")
-    for st in sorted(stations, key=lambda s: (s["_voisine"], s["ville"])):
+    # Seules les stations DU TERRITOIRE sont détaillées. L'enveloppe de
+    # collecte en ramène nonante et quelques, dont la quasi-totalité ne
+    # sera jamais citée : les énumérer noierait les cinq lignes que
+    # cette sortie existe pour faire lire. Les voisines réellement
+    # retenues sont récapitulées plus bas, une fois les pages
+    # construites — c'est à ce moment seulement qu'on sait lesquelles.
+    a_nous_vue = [s for s in stations if not s["_voisine"]]
+    print(f"\n  Stations du territoire : {len(a_nous_vue)}")
+    for st in sorted(a_nous_vue, key=lambda s: s["ville"]):
         prix = st["prix"].get("gazole")
-        marque = " (hors territoire)" if st["_voisine"] else ""
         autoroute = " · autoroute" if st["autoroute"] else ""
         detail = (f"gazole {euros(prix)} €/L, relevé "
                   f"{dire_age(st['ages']['gazole'])}" if prix
                   else "pas de gazole publiable")
-        print(f"    {st['ville']}{marque}{autoroute} — {detail}")
+        print(f"    {st['ville']}{autoroute} — {detail}")
     for ville, motif in ecartees:
         print(f"    [écartée] {ville or '?'} — {motif}")
 
@@ -876,9 +882,23 @@ def main():
 
     avec = sum(1 for v in resultat.values()
                if any(k in v["mesures"] for k in ("CAR-01", "CAR-03")))
+    # Quelles voisines ont réellement servi, et sur combien de pages.
+    # C'est le seul chiffre qui dise si le rayon est bien réglé : une
+    # ville qui apparaît sur quarante pages est trop dominante, une
+    # enveloppe dont rien ne ressort est trop large pour rien.
+    citees = {}
+    for bloc in resultat.values():
+        for b in bloc["blocs"]:
+            for item in b["items"]:
+                if "(hors territoire)" in item["titre"]:
+                    ville = item["titre"].replace(" (hors territoire)", "")
+                    citees[ville] = citees.get(ville, 0) + 1
+
     print(f"\n  Sur le territoire  : {len(a_nous)} station(s)")
-    print(f"  Dans l'enveloppe   : {len(voisines)} station(s) hors "
-          f"territoire")
+    print(f"  Enveloppe          : {len(voisines)} station(s) hors "
+          f"territoire collectée(s), {len(citees)} ville(s) citée(s)")
+    for ville, n in sorted(citees.items(), key=lambda kv: (-kv[1], kv[0])):
+        print(f"    {ville} — sur {n} page(s) de commune")
     print(f"  Communes servies   : {len(resultat)} sur {len(par_code)} "
           f"({avec} avec une station, "
           f"{len(resultat) - avec} avec la plus proche)")
@@ -888,8 +908,6 @@ def main():
     if bas:
         print(f"  Gazole le moins cher : {euros(bas['prix']['gazole'])} €/L "
               f"à {bas['ville']} (territoire)")
-    print(f"  Voisines             : {len(voisines)} collectée(s), "
-          f"réparties page par page selon leur distance à chaque commune")
     print(f"\n  Fichier : {SORTIE}\n")
 
 

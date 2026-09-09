@@ -52,7 +52,7 @@ VERSIONS_ATTENDUES = {
     "15_elus.py": 2,
     "16_bio.py": 4,
     "17_climat.py": 1,
-    "18_carburants.py": 2,
+    "18_carburants.py": 3,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
