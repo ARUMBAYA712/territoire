@@ -99,6 +99,23 @@
       "repere": "39.5 ha sur 93.0",
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
+    "CAR-04": {
+      "valeur": "Saint-Martin-en-Vercors, à 5 km",
+      "unite": "",
+      "nom": "Station la plus proche",
+      "obtention": "natif",
+      "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "carburants",
+      "rang": 15,
+      "ancre": "stations-service",
+      "repere": "Gazole 2,267 €/L · relevé il y a 5 jours",
+      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+      "aussi": {
+        "rubrique": "transports"
+      }
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -568,6 +585,68 @@
         "libelle": "Agence Bio"
       },
       "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "carburants",
+      "id": "stations-service",
+      "titre": "Stations-service les plus proches",
+      "items": [
+        {
+          "titre": "Saint-Martin-en-Vercors (hors territoire)",
+          "details": {
+            "Gazole": "2,267 €/L — relevé le 03/09/2026",
+            "SP95": "2,117 €/L — relevé le 03/09/2026",
+            "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+            "Distance": "5 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé il y a 5 jours",
+            "attention"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
+          "titre": "Saint-Laurent-en-Royans (hors territoire)",
+          "details": {
+            "Gazole": "2,310 €/L",
+            "SP95": "2,210 €/L",
+            "SP98": "2,240 €/L",
+            "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+            "Distance": "7 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
+          "titre": "Saint-Jean-en-Royans (hors territoire)",
+          "details": {
+            "Gazole": "2,269 €/L",
+            "SP95": "2,109 €/L",
+            "SP98": "2,149 €/L — relevé le 04/09/2026",
+            "E85": "0,839 €/L — relevé le 04/09/2026",
+            "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+            "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+            "Distance": "9 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        }
+      ],
+      "lien": {
+        "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
     },
     {
       "rubrique": "environnement",

@@ -85,6 +85,23 @@
       "unite_pluriel": "exploitations",
       "explication": "Exploitations engagées en agriculture biologique, qu'elles disposent ou non de surfaces cultivées."
     },
+    "CAR-04": {
+      "valeur": "Saint-Sauveur, à 3 km",
+      "unite": "",
+      "nom": "Station la plus proche",
+      "obtention": "natif",
+      "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "carburants",
+      "rang": 15,
+      "ancre": "stations-service",
+      "repere": "Gazole 2,256 €/L · relevé hier",
+      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+      "aussi": {
+        "rubrique": "transports"
+      }
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -612,6 +629,70 @@
         "libelle": "Agence Bio"
       },
       "note": "Les surfaces sont rattachées à la commune du siège de l'exploitation, non à celle où se trouvent les parcelles. Une commune peut donc afficher des terres cultivées ailleurs, et une autre ne rien afficher alors qu'elle en porte. À l'échelle du canton, ces écarts se compensent largement."
+    },
+    {
+      "rubrique": "carburants",
+      "id": "stations-service",
+      "titre": "Stations-service les plus proches",
+      "items": [
+        {
+          "titre": "Saint-Sauveur",
+          "details": {
+            "Gazole": "2,256 €/L",
+            "SP95-E10": "2,080 €/L",
+            "SP98": "2,173 €/L",
+            "Adresse": "28, route de Grenoble, Saint-Sauveur",
+            "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+            "Distance": "3 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé hier",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
+          "titre": "Vinay",
+          "details": {
+            "Gazole": "2,259 €/L — relevé le 04/09/2026",
+            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+            "SP98": "2,169 €/L — relevé le 04/09/2026",
+            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "GPLc": "0,995 €/L — relevé le 01/09/2026",
+            "Adresse": "251, Rue de l'Europe, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement)",
+            "Distance": "4 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé il y a 5 jours",
+            "attention"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
+          "titre": "Saint-Marcellin",
+          "details": {
+            "Gazole": "2,319 €/L",
+            "SP95-E10": "2,139 €/L",
+            "SP98": "2,209 €/L",
+            "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Distance": "6 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé hier",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        }
+      ],
+      "lien": {
+        "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
     },
     {
       "rubrique": "environnement",

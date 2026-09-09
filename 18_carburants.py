@@ -74,7 +74,7 @@ import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-VERSION_SCRIPT = 1
+VERSION_SCRIPT = 2
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -100,11 +100,31 @@ TENTATIVES = 4
 # Ces quatre nombres décident de ce que la rubrique montre. Ils sont
 # groupés ici pour être discutés, pas cherchés.
 
-# Marge autour du territoire, en kilomètres. Six stations sur
-# quarante-sept communes ne font pas une page utile : sans les voisines
-# immédiates, le lecteur n'a rien à comparer. Au-delà d'une dizaine de
-# kilomètres en revanche, la page cesse de parler du territoire.
-MARGE_KM = 10
+# Marge autour du territoire pour la COLLECTE, en kilomètres. Ce n'est
+# pas une règle d'affichage : c'est l'enveloppe dans laquelle on va
+# chercher, et elle doit être large pour qu'une commune de bordure
+# trouve ses voisines. Ce qui s'affiche est décidé page par page, plus
+# bas.
+MARGE_KM = 15
+
+# Rayon dans lequel une page de COMMUNE va chercher des stations hors
+# du territoire, et nombre maximal qu'elle en retient.
+#
+# La première collecte réelle a montré pourquoi cette distinction est
+# nécessaire. Une simple marge de dix kilomètres autour du territoire
+# ramenait quarante-neuf stations, dont quarante-trois hors territoire :
+# Voiron, Moirans, Échirolles, Romans-sur-Isère. Le territoire est une
+# bande étroite entre le Voironnais et la plaine de Romans, et un
+# rectangle autour de lui attrape deux agglomérations qui ne sont
+# proches d'aucune de ses communes. La page du canton se serait mise à
+# parler de Grenoble.
+#
+# La règle retenue : une page de canton ne montre QUE les stations du
+# territoire — c'est la comparaison entre elles qui fait le sujet. Une
+# page de commune montre les siennes, puis les plus proches d'où
+# qu'elles viennent — c'est la question qu'on se pose depuis un village.
+VOISINES_KM = 15
+VOISINES_MAXI = 3
 
 # Un relevé plus vieux que cela n'est pas publié du tout.
 PERIME_JOURS = 8
@@ -254,19 +274,34 @@ def stations_candidates(boite):
     carburants, et le décompte des stations serait faux.
     """
     lonmin, latmin, lonmax, latmax = boite
-    filtre = (f"in_bbox(geom, {lonmin:.5f}, {latmin:.5f}, "
-              f"{lonmax:.5f}, {latmax:.5f})")
-    lignes = appeler(QUOTIDIEN, where=filtre, limit=100,
-                     select="id,com_arm_code,com_arm_name",
-                     group_by="id,com_arm_code,com_arm_name")
-    if lignes is None:
-        return None
+    # ATTENTION à l'ordre : l'API Explore attend in_bbox(champ, lat_min,
+    # lon_min, lat_max, lon_max) — la LATITUDE d'abord. Donné dans
+    # l'autre sens, le filtre est syntaxiquement valable, la requête
+    # répond 200, et elle renvoie zéro ligne. C'est l'erreur qui a fait
+    # publier « aucune station dans l'emprise » à la première collecte
+    # réelle du 9 septembre 2026, sur un territoire qui en compte six.
+    filtre = (f"in_bbox(geom, {latmin:.5f}, {lonmin:.5f}, "
+              f"{latmax:.5f}, {lonmax:.5f})")
+
+    # L'API plafonne une réponse à cent lignes : au-delà, il faut
+    # pagineriser. Avec une marge de quinze kilomètres autour d'un
+    # territoire bordé par le Voironnais et la plaine de Romans, ce
+    # plafond est atteint.
     candidates = {}
-    for l in lignes:
-        ident = str(l.get("id") or "").strip()
-        code = str(l.get("com_arm_code") or "").strip()
-        if ident and code:
-            candidates[ident] = (code, str(l.get("com_arm_name") or "").strip())
+    for depart in range(0, 1000, 100):
+        lignes = appeler(QUOTIDIEN, where=filtre, limit=100, offset=depart,
+                         select="id,com_arm_code,com_arm_name",
+                         group_by="id,com_arm_code,com_arm_name")
+        if lignes is None:
+            return None
+        for l in lignes:
+            ident = str(l.get("id") or "").strip()
+            code = str(l.get("com_arm_code") or "").strip()
+            if ident and code:
+                candidates[ident] = (code,
+                                     str(l.get("com_arm_name") or "").strip())
+        if len(lignes) < 100:
+            break
     return candidates
 
 
@@ -475,9 +510,10 @@ def note_commune(nb_stations, nb_voisines):
     ]
     if nb_voisines:
         morceaux.append(
-            f"Les stations situées hors du territoire, à moins de "
-            f"{MARGE_KM} km, sont signalées comme telles : elles sont "
-            f"là pour la comparaison, pas pour gonfler le décompte.")
+            f"Les stations qui ne sont pas sur la commune, à moins de "
+            f"{VOISINES_KM} km, sont signalées comme telles avec leur "
+            f"distance : elles sont là pour la comparaison, pas pour "
+            f"gonfler le décompte.")
     morceaux.append(
         f"Un relevé de plus de {PERIME_JOURS} jours n'est pas publié ; "
         f"au-delà de {SIGNALE_JOURS} jours, sa date est écrite.")
@@ -506,14 +542,17 @@ def moins_cher(stations, cle):
 
 
 def synthese_territoire(stations, nb_chez_nous, nb_voisines):
-    """Mesures et bloc pour une échelle qui englobe plusieurs communes."""
-    mesures, items = {}, []
+    """Mesures et bloc d'une échelle qui englobe plusieurs communes.
 
-    # Le chiffre mis en avant est celui du TERRITOIRE. Les stations
-    # voisines servent à comparer, pas à fournir le titre : une page du
-    # Sud Grésivaudan qui annonce en tête le prix d'une station de la
-    # Drôme ne parle plus de son territoire.
+    Ne montre QUE les stations du territoire. Une page de canton
+    répond à « qu'est-ce que le carburant coûte ici », et la réponse
+    est la comparaison de nos stations entre elles. Les voisines
+    n'ont leur place que sur une page de commune, où la question
+    devient « où vais-je faire le plein depuis ce village ».
+    """
+    mesures, items = {}, []
     a_nous = [s for s in stations if not s.get("_voisine")]
+
     bas = moins_cher(a_nous, "gazole")
     if bas:
         chez_nous = [s for s in a_nous
@@ -521,74 +560,72 @@ def synthese_territoire(stations, nb_chez_nous, nb_voisines):
         haut = max(chez_nous, key=lambda s: s["prix"]["gazole"])
         ecart = haut["prix"]["gazole"] - bas["prix"]["gazole"]
         mesures["CAR-01"] = mesure(
-            euros(bas["prix"]["gazole"]), "€/L",
+            euros(bas["prix"]["gazole"]), "\u20ac/L",
             "Gazole le moins cher", rang=10, ancre=ANCRE,
-            repere=f"{bas['ville']} · relevé {dire_age(bas['ages']['gazole'])}",
-            explication=("Prix le plus bas relevé dans les stations du "
+            repere=f"{bas['ville']} \u00b7 relev\u00e9 {dire_age(bas['ages']['gazole'])}",
+            explication=("Prix le plus bas relev\u00e9 dans les stations du "
                          "territoire, hors aires d'autoroute."),
-            # Le carburant intéresse aussi qui consulte les transports.
-            # Le détail reste ici : la page Transports n'en porte qu'un
-            # renvoi. Voir le mécanisme d'écho, version 31.
+            # Le carburant int\u00e9resse aussi qui consulte les transports.
+            # Le d\u00e9tail reste ici : la page Transports n'en porte qu'un
+            # renvoi. Voir le m\u00e9canisme d'\u00e9cho, version 31.
             aussi={"rubrique": "transports"})
 
         if ecart >= 0.02:
             mesures["CAR-02"] = mesure(
-                euros(ecart), "€/L",
-                "Écart entre stations du territoire", rang=20, ancre=ANCRE,
-                repere=(f"de {bas['ville']} à {haut['ville']} · "
-                        f"{ecart * 50:.0f} € sur un plein de 50 litres"),
-                explication=("Différence entre la station la moins chère et "
-                             "la plus chère du territoire, pour le gazole. "
-                             "C'est ce que coûte le fait de prendre l'une "
-                             "plutôt que l'autre."))
-
-        # Une station voisine nettement moins chère est une information
-        # que le lecteur cherche et qu'aucune page nationale ne lui
-        # donne : elle ne raisonne pas par territoire.
-        dehors = moins_cher([s for s in stations if s.get("_voisine")], "gazole")
-        if dehors and bas["prix"]["gazole"] - dehors["prix"]["gazole"] >= 0.02:
-            gain = bas["prix"]["gazole"] - dehors["prix"]["gazole"]
-            mesures["CAR-05"] = mesure(
-                euros(dehors["prix"]["gazole"]), "€/L",
-                "Moins cher juste à côté", rang=25, ancre=ANCRE,
-                repere=(f"{dehors['ville']}, hors territoire · "
-                        f"{gain * 50:.0f} € de moins sur un plein"),
-                explication=("Station située hors du territoire, à moins de "
-                             f"{MARGE_KM} km de l'une de ses communes."))
+                euros(ecart), "\u20ac/L",
+                "\u00c9cart entre stations du territoire", rang=20, ancre=ANCRE,
+                repere=(f"de {bas['ville']} \u00e0 {haut['ville']} \u00b7 "
+                        f"{ecart * 50:.0f} \u20ac sur un plein de 50 litres"),
+                explication=("Diff\u00e9rence entre la station la moins ch\u00e8re et "
+                             "la plus ch\u00e8re du territoire, pour le gazole. "
+                             "C'est ce que co\u00fbte le fait de prendre l'une "
+                             "plut\u00f4t que l'autre."))
 
     mesures["CAR-03"] = mesure(
         str(nb_chez_nous), "", "Stations sur le territoire", rang=30,
         ancre=ANCRE,
-        repere=(f"et {nb_voisines} à moins de {MARGE_KM} km"
-                if nb_voisines else None),
-        explication=("Stations-service déclarant leurs prix au portail "
-                     "national. Une station qui ne les déclare pas n'y "
-                     "figure pas."))
+        explication=("Stations-service d\u00e9clarant leurs prix au portail "
+                     "national. Une station qui ne les d\u00e9clare pas n'y "
+                     "figure pas. Les stations voisines sont nomm\u00e9es sur "
+                     "la page de chaque commune, non ici."))
 
-    # Les stations du territoire d'abord, du moins cher au plus cher ;
-    # puis les voisines ; les aires d'autoroute en dernier. Trier sur le
-    # seul prix mettrait une station de la Drôme en tête d'une page du
-    # Sud Grésivaudan, ce qui n'est pas ce que la page raconte.
-    ordre = sorted(
-        stations,
-        key=lambda s: (s.get("_voisine", False),
-                       s["autoroute"],
-                       s["prix"].get("gazole", 9.99),
-                       s["ville"]))
-    for st in ordre:
-        items.append(item_station(st, not st.get("_voisine")))
+    ordre = sorted(a_nous, key=lambda s: (s["autoroute"],
+                                          s["prix"].get("gazole", 9.99),
+                                          s["ville"]))
+    items = [item_station(st, True) for st in ordre]
 
     blocs = [{
         "rubrique": RUBRIQUE,
         "id": ANCRE,
-        "titre": "Stations-service et prix relevés",
+        "titre": "Stations-service et prix relev\u00e9s",
         "items": items,
         "lien": {"url": f"https://data.economie.gouv.fr/explore/dataset/{FLUX}/",
                  "libelle": "Consulter la source"},
-        "note": note_commune(nb_chez_nous, nb_voisines),
+        "note": note_commune(nb_chez_nous, 0),
     }] if items else []
 
     return {"mesures": mesures, "blocs": blocs}
+
+
+def voisines_de(commune, toutes, exclure_codes):
+    """Les stations les plus proches d'une commune, hors les siennes.
+
+    Mesurées depuis le centre de la commune. Les aires d'autoroute en
+    sont exclues : la plus proche à vol d'oiseau peut être
+    inaccessible sans dix kilomètres jusqu'à l'échangeur.
+    """
+    candidates = []
+    for st in toutes:
+        if st.get("code_commune") in exclure_codes or st["autoroute"]:
+            continue
+        if st.get("latitude") is None or "gazole" not in st["prix"]:
+            continue
+        km = distance_km(commune["latitude"], commune["longitude"],
+                         st["latitude"], st["longitude"])
+        if km <= VOISINES_KM:
+            candidates.append((km, st))
+    candidates.sort(key=lambda c: (c[0], c[1]["ville"]))
+    return candidates[:VOISINES_MAXI]
 
 
 def synthese_commune(commune, siennes, toutes):
@@ -598,10 +635,27 @@ def synthese_commune(commune, siennes, toutes):
     savoir où est la pompe la plus proche, et à quel prix, est
     précisément ce qu'un habitant d'un village cherche. C'est même la
     seule page du site où l'absence de la chose vaut d'être écrite.
+
+    D'où qu'elles viennent, les stations voisines sont ici légitimes :
+    la question posée depuis un village est « où vais-je faire le
+    plein », et elle ne s'arrête pas à la limite du canton. C'est
+    l'inverse de la page du canton, qui ne montre que les siennes.
     """
+    proches = voisines_de(commune, toutes, {commune["code"]})
+    items = [item_station(s, True) for s in siennes]
+    for km, st in proches:
+        # « hors territoire » qualifie la station, pas la page : Chatte
+        # vue depuis Saint-Marcellin est une commune voisine du même
+        # canton, et l'annoncer « hors territoire » serait faux. Seule
+        # une station réellement extérieure porte la mention ; pour les
+        # autres, la distance suffit à dire qu'elle est ailleurs.
+        item = item_station(st, not st.get("_voisine"))
+        item["details"]["Distance"] = f"{km:.0f} km du centre de la commune"
+        items.append(item)
+
+    mesures = {}
     if siennes:
         bas = moins_cher(siennes, "gazole") or siennes[0]
-        mesures = {}
         if "gazole" in bas["prix"]:
             mesures["CAR-01"] = mesure(
                 euros(bas["prix"]["gazole"]), "€/L", "Gazole", rang=10,
@@ -616,47 +670,32 @@ def synthese_commune(commune, siennes, toutes):
             "Station sur la commune" if len(siennes) == 1
             else "Stations sur la commune",
             rang=30, ancre=ANCRE)
-        blocs = [{
-            "rubrique": RUBRIQUE,
-            "id": ANCRE,
-            "titre": "Stations-service de la commune",
-            "items": [item_station(s, True) for s in siennes],
-            "lien": {"url": f"https://data.economie.gouv.fr/explore/dataset/{FLUX}/",
-                     "libelle": "Consulter la source"},
-            "note": note_commune(len(siennes), 0),
-        }]
-        return {"mesures": mesures, "blocs": blocs}
-
-    # Aucune station ici : on nomme la plus proche.
-    # Les aires d'autoroute sont exclues : la plus proche à vol d'oiseau
-    # peut être inaccessible sans faire dix kilomètres jusqu'à l'échangeur.
-    avec_position = [s for s in toutes
-                     if not s["autoroute"]
-                     and s.get("latitude") is not None
-                     and s.get("longitude") is not None
-                     and "gazole" in s["prix"]]
-    if not avec_position:
+    elif proches:
+        km, proche = proches[0]
+        mesures["CAR-04"] = mesure(
+            f"{proche['ville']}, à {km:.0f} km", "",
+            "Station la plus proche", rang=15, ancre=ANCRE,
+            repere=(f"Gazole {euros(proche['prix']['gazole'])} €/L · "
+                    f"relevé {dire_age(proche['ages']['gazole'])}"),
+            explication=("Aucune station-service ne déclare de prix sur "
+                         "cette commune. La distance est mesurée à vol "
+                         "d'oiseau depuis le centre de la commune."),
+            aussi={"rubrique": "transports"})
+    else:
         return None
-    proche = min(avec_position,
-                 key=lambda s: distance_km(commune["latitude"],
-                                           commune["longitude"],
-                                           s["latitude"], s["longitude"]))
-    km = distance_km(commune["latitude"], commune["longitude"],
-                     proche["latitude"], proche["longitude"])
-    return {
-        "mesures": {
-            "CAR-04": mesure(
-                f"{proche['ville']}, à {km:.0f} km", "",
-                "Station la plus proche", rang=15,
-                repere=(f"Gazole {euros(proche['prix']['gazole'])} €/L · "
-                        f"relevé {dire_age(proche['ages']['gazole'])}"),
-                explication=("Aucune station-service ne déclare de prix sur "
-                             "cette commune. La distance est mesurée à vol "
-                             "d'oiseau depuis le centre de la commune."),
-                aussi={"rubrique": "transports"}),
-        },
-        "blocs": [],
-    }
+
+    blocs = [{
+        "rubrique": RUBRIQUE,
+        "id": ANCRE,
+        "titre": ("Stations-service de la commune" if siennes
+                  else "Stations-service les plus proches"),
+        "items": items,
+        "lien": {"url": f"https://data.economie.gouv.fr/explore/dataset/{FLUX}/",
+                 "libelle": "Consulter la source"},
+        "note": note_commune(len(siennes), len(proches)),
+    }] if items else []
+
+    return {"mesures": mesures, "blocs": blocs}
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -838,8 +877,8 @@ def main():
     avec = sum(1 for v in resultat.values()
                if any(k in v["mesures"] for k in ("CAR-01", "CAR-03")))
     print(f"\n  Sur le territoire  : {len(a_nous)} station(s)")
-    print(f"  Aux abords         : {len(voisines)} station(s) à moins de "
-          f"{MARGE_KM} km")
+    print(f"  Dans l'enveloppe   : {len(voisines)} station(s) hors "
+          f"territoire")
     print(f"  Communes servies   : {len(resultat)} sur {len(par_code)} "
           f"({avec} avec une station, "
           f"{len(resultat) - avec} avec la plus proche)")
@@ -849,10 +888,8 @@ def main():
     if bas:
         print(f"  Gazole le moins cher : {euros(bas['prix']['gazole'])} €/L "
               f"à {bas['ville']} (territoire)")
-    dehors = moins_cher(voisines, "gazole")
-    if dehors and bas and dehors["prix"]["gazole"] < bas["prix"]["gazole"]:
-        print(f"  Moins cher à côté    : "
-              f"{euros(dehors['prix']['gazole'])} €/L à {dehors['ville']}")
+    print(f"  Voisines             : {len(voisines)} collectée(s), "
+          f"réparties page par page selon leur distance à chaque commune")
     print(f"\n  Fichier : {SORTIE}\n")
 
 

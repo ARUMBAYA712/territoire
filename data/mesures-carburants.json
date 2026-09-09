@@ -4,7 +4,4505 @@
  "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
  "licence": "Licence Ouverte 2.0",
  "frequence": "quotidienne",
- "motif_absence": "aucune station dans l'emprise",
- "communes": {},
- "territoires": {}
+ "releve_le": "2026-09-09T10:46+00:00",
+ "communes": {
+  "38004": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38018": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Just-de-Claix, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Jean-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,269 €/L",
+        "SP95": "2,109 €/L",
+        "SP98": "2,149 €/L — relevé le 04/09/2026",
+        "E85": "0,839 €/L — relevé le 04/09/2026",
+        "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+        "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38033": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 2 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38036": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Chatte, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38041": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Marcellin, à 7 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,319 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38074": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Siméon-de-Bressieux (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,089 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Le Bizolle, Saint-Siméon-de-Bressieux",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Étienne-de-Saint-Geoirs (hors territoire)",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Adresse": "2 CHEMIN DE LA PIERRE ZONE COMMERCIALE, Saint-Étienne-de-Saint-Geoirs",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38092": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Martin-en-Vercors, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "details": {
+        "Gazole": "2,267 €/L — relevé le 03/09/2026",
+        "SP95": "2,117 €/L — relevé le 03/09/2026",
+        "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Jean-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,269 €/L",
+        "SP95": "2,109 €/L",
+        "SP98": "2,149 €/L — relevé le 04/09/2026",
+        "E85": "0,839 €/L — relevé le 04/09/2026",
+        "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+        "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,256",
+     "unite": "€/L",
+     "nom": "Gazole",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "ZI LES GAMEUX · relevé aujourd'hui",
+     "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-03": {
+     "valeur": "1",
+     "unite": "",
+     "nom": "Station sur la commune",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service de la commune",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Marcellin, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,319 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Martin-en-Vercors, à 7 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "details": {
+        "Gazole": "2,267 €/L — relevé le 03/09/2026",
+        "SP95": "2,117 €/L — relevé le 03/09/2026",
+        "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Tullins, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,299 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Sauveur, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Chatte, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Eymeux (hors territoire)",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "SP95-E10": "1,990 €/L",
+        "SP98": "1,990 €/L",
+        "Adresse": "4030 Les Fauries - RN 532, Eymeux",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Veurey-Voroize, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,397 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Veurey-Voroize (hors territoire)",
+       "details": {
+        "Gazole": "2,397 €/L",
+        "SP95-E10": "2,250 €/L",
+        "SP98": "2,290 €/L",
+        "Adresse": "Route de Valence, Veurey-Voroize",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Tullins, à 3 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,299 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Sauveur, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "11 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Tullins, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,279 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38319": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Laurent-en-Royans, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,310 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Jean-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,269 €/L",
+        "SP95": "2,109 €/L",
+        "SP98": "2,149 €/L — relevé le 04/09/2026",
+        "E85": "0,839 €/L — relevé le 04/09/2026",
+        "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+        "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Martin-en-Vercors, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "details": {
+        "Gazole": "2,267 €/L — relevé le 03/09/2026",
+        "SP95": "2,117 €/L — relevé le 03/09/2026",
+        "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Tullins, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,299 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Villard-de-Lans, à 7 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,252 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Villard-de-Lans (hors territoire)",
+       "details": {
+        "Gazole": "2,252 €/L",
+        "SP95-E10": "2,061 €/L",
+        "SP95": "2,119 €/L",
+        "SP98": "2,181 €/L",
+        "Adresse": "190 Rue des Machurons Zone des Geymonds, Villard-de-Lans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Villard-de-Lans (hors territoire)",
+       "details": {
+        "Gazole": "2,309 €/L",
+        "SP95": "2,179 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "531 AVENUE DU GENERAL DE GAULLE, Villard-de-Lans",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "details": {
+        "Gazole": "2,267 €/L — relevé le 03/09/2026",
+        "SP95": "2,117 €/L — relevé le 03/09/2026",
+        "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Distance": "11 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "12 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Laurent-en-Royans, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,310 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Jean-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,269 €/L",
+        "SP95": "2,109 €/L",
+        "SP98": "2,149 €/L — relevé le 04/09/2026",
+        "E85": "0,839 €/L — relevé le 04/09/2026",
+        "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+        "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Marcellin, à 8 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,319 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "11 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Marcellin, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,319 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Just-de-Claix, à 7 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Eymeux (hors territoire)",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "SP95-E10": "1,990 €/L",
+        "SP98": "1,990 €/L",
+        "Adresse": "4030 Les Fauries - RN 532, Eymeux",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 7 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "12 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "12 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Just-de-Claix, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,267 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Eymeux (hors territoire)",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "SP95-E10": "1,990 €/L",
+        "SP98": "1,990 €/L",
+        "Adresse": "4030 Les Fauries - RN 532, Eymeux",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,267",
+     "unite": "€/L",
+     "nom": "Gazole",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "Quartier Clairivaux · relevé hier",
+     "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-03": {
+     "valeur": "1",
+     "unite": "",
+     "nom": "Station sur la commune",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service de la commune",
+     "items": [
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,310 €/L",
+        "SP95": "2,210 €/L",
+        "SP98": "2,240 €/L",
+        "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Jean-en-Royans (hors territoire)",
+       "details": {
+        "Gazole": "2,269 €/L",
+        "SP95": "2,109 €/L",
+        "SP98": "2,149 €/L — relevé le 04/09/2026",
+        "E85": "0,839 €/L — relevé le 04/09/2026",
+        "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
+        "Non distribué": "GPLc (définitivement), E10 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Eymeux (hors territoire)",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "SP95-E10": "1,990 €/L",
+        "SP98": "1,990 €/L",
+        "Adresse": "4030 Les Fauries - RN 532, Eymeux",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Eymeux, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,250 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Eymeux (hors territoire)",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "SP95-E10": "1,990 €/L",
+        "SP98": "1,990 €/L",
+        "Adresse": "4030 Les Fauries - RN 532, Eymeux",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Paul-lès-Romans (hors territoire)",
+       "details": {
+        "Gazole": "2,249 €/L",
+        "SP95-E10": "2,065 €/L",
+        "SP95": "2,128 €/L",
+        "SP98": "2,148 €/L",
+        "E85": "0,824 €/L",
+        "GPLc": "1,038 €/L",
+        "Adresse": "95 RUE CLAIR, Saint-Paul-lès-Romans",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,319",
+     "unite": "€/L",
+     "nom": "Gazole",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "2 avenue de ROMANS · relevé hier",
+     "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-03": {
+     "valeur": "1",
+     "unite": "",
+     "nom": "Station sur la commune",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service de la commune",
+     "items": [
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "1 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Sauveur, à 5 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Tullins, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,279 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,119 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Veurey-Voroize (hors territoire)",
+       "details": {
+        "Gazole": "2,397 €/L",
+        "SP95-E10": "2,250 €/L",
+        "SP98": "2,290 €/L",
+        "Adresse": "Route de Valence, Veurey-Voroize",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Chatte, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,256",
+     "unite": "€/L",
+     "nom": "Gazole",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "28, route de Grenoble · relevé hier",
+     "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-03": {
+     "valeur": "1",
+     "unite": "",
+     "nom": "Station sur la commune",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service de la commune",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Sauveur, à 2 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Chatte, à 4 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Saint-Sauveur, à 3 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,256 €/L · relevé hier",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "CAR-04": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Station la plus proche",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 15,
+     "ancre": "stations-service",
+     "repere": "Gazole 2,259 €/L · relevé il y a 5 jours",
+     "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service les plus proches",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,349 €/L — relevé le 05/09/2026",
+        "SP95-E10": "2,229 €/L",
+        "SP98": "2,309 €/L",
+        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,259",
+     "unite": "€/L",
+     "nom": "Gazole",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "251, Rue de l'Europe · relevé il y a 5 jours",
+     "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-03": {
+     "valeur": "1",
+     "unite": "",
+     "nom": "Station sur la commune",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service"
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service de la commune",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,299 €/L",
+        "SP95-E10": "2,109 €/L",
+        "SP98": "2,219 €/L",
+        "Adresse": "Avenue de la Contamine, Tullins",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Distance": "11 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  }
+ },
+ "territoires": {
+  "canton:3823": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,256",
+     "unite": "€/L",
+     "nom": "Gazole le moins cher",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "Chatte · relevé aujourd'hui",
+     "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-02": {
+     "valeur": "0,063",
+     "unite": "€/L",
+     "nom": "Écart entre stations du territoire",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 20,
+     "ancre": "stations-service",
+     "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
+    },
+    "CAR-03": {
+     "valeur": "5",
+     "unite": "",
+     "nom": "Stations sur le territoire",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service",
+     "explication": "Stations-service déclarant leurs prix au portail national. Une station qui ne les déclare pas n'y figure pas. Les stations voisines sont nommées sur la page de chaque commune, non ici."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service et prix relevés",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  },
+  "epci:200070431": {
+   "mesures": {
+    "CAR-01": {
+     "valeur": "2,256",
+     "unite": "€/L",
+     "nom": "Gazole le moins cher",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 10,
+     "ancre": "stations-service",
+     "repere": "Chatte · relevé aujourd'hui",
+     "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
+     "aussi": {
+      "rubrique": "transports"
+     }
+    },
+    "CAR-02": {
+     "valeur": "0,063",
+     "unite": "€/L",
+     "nom": "Écart entre stations du territoire",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 20,
+     "ancre": "stations-service",
+     "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
+    },
+    "CAR-03": {
+     "valeur": "5",
+     "unite": "",
+     "nom": "Stations sur le territoire",
+     "obtention": "natif",
+     "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+     "licence": "Licence Ouverte 2.0",
+     "format": "texte",
+     "rubrique": "carburants",
+     "rang": 30,
+     "ancre": "stations-service",
+     "explication": "Stations-service déclarant leurs prix au portail national. Une station qui ne les déclare pas n'y figure pas. Les stations voisines sont nommées sur la page de chaque commune, non ici."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "carburants",
+     "id": "stations-service",
+     "titre": "Stations-service et prix relevés",
+     "items": [
+      {
+       "titre": "Chatte",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP95": "2,132 €/L",
+        "SP98": "2,173 €/L",
+        "GPLc": "1,067 €/L",
+        "Adresse": "ZI LES GAMEUX, Chatte",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "E85 (définitivement)"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Sauveur",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,080 €/L",
+        "SP98": "2,173 €/L",
+        "Adresse": "28, route de Grenoble, Saint-Sauveur",
+        "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Gazole": "2,259 €/L — relevé le 04/09/2026",
+        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
+        "SP98": "2,169 €/L — relevé le 04/09/2026",
+        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "GPLc": "0,995 €/L — relevé le 01/09/2026",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)"
+       },
+       "etat": [
+        "Relevé il y a 5 jours",
+        "attention"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,267 €/L",
+        "SP95-E10": "2,129 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Saint-Marcellin",
+       "details": {
+        "Gazole": "2,319 €/L",
+        "SP95-E10": "2,139 €/L",
+        "SP98": "2,209 €/L",
+        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      }
+     ],
+     "lien": {
+      "url": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    }
+   ]
+  }
+ }
 }

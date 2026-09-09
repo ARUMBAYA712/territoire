@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 34
+VERSION_SCRIPT = 35
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -5323,7 +5323,11 @@ def main():
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n",
         encoding="utf-8")
 
-    produites = len(set(liens_site))
+    # Les pages d'annonce sont écrites comme les autres : elles ne sont
+    # simplement pas proposées aux moteurs. Les retirer de ce décompte
+    # ferait croire que la version 34 a supprimé des pages, alors
+    # qu'elle n'a fait que retirer des adresses du plan du site.
+    produites = len(set(liens_site)) + len(set(en_attente))
     par_rubrique = {}
     for r in RUBRIQUES:
         n = sum(1 for d in fiches.values()
