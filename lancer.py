@@ -45,13 +45,14 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 4,
-    "04_generation.py": 33,
+    "04_generation.py": 34,
     "12_rivieres.py": 6,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
     "15_elus.py": 2,
     "16_bio.py": 4,
     "17_climat.py": 1,
+    "18_carburants.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -153,6 +154,7 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("18_carburants.py", []),
     ("13_hivernal.py", []),
     ("14_vigilance.py", []),
     ("15_elus.py", []),
@@ -197,6 +199,7 @@ COLLECTEURS = [
     ("15_elus.py", []),
     ("16_bio.py", []),
     ("17_climat.py", []),
+    ("18_carburants.py", []),
 ]
 
 PUBLICATION = [
@@ -226,6 +229,10 @@ COMPLET = REFERENTIEL + COLLECTEURS + PUBLICATION
 QUOTIDIEN = [
     ("07_vigieau.py", []),        # restrictions sécheresse, arrêtés quotidiens
     ("14_vigilance.py", []),      # vigilance météo, plusieurs fois par jour
+    # Les prix se périment en jours : le collecteur refuse de publier un
+    # relevé de plus de huit jours. Si ce plan cesse de tourner, la
+    # rubrique se vide d'elle-même plutôt que d'afficher des prix faux.
+    ("18_carburants.py", []),
 ]
 
 HEBDOMADAIRE = [

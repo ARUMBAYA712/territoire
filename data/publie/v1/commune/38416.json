@@ -884,20 +884,6 @@
           "categorie": "premier"
         },
         {
-          "nom": "Ecole maternelle Centre",
-          "lat": 45.153239,
-          "lon": 5.31875,
-          "info": "Ecole",
-          "categorie": "premier"
-        },
-        {
-          "nom": "Ecole primaire La Plaine",
-          "lat": 45.148222,
-          "lon": 5.319721,
-          "info": "Ecole",
-          "categorie": "premier"
-        },
-        {
           "nom": "Lycée polyvalent La Saulaie",
           "lat": 45.15765,
           "lon": 5.31767,
@@ -910,6 +896,20 @@
           "lon": 5.321999,
           "info": "Lycée",
           "categorie": "second"
+        },
+        {
+          "nom": "Ecole maternelle Centre",
+          "lat": 45.153239,
+          "lon": 5.31875,
+          "info": "Ecole",
+          "categorie": "premier"
+        },
+        {
+          "nom": "Ecole primaire La Plaine",
+          "lat": 45.148222,
+          "lon": 5.319721,
+          "info": "Ecole",
+          "categorie": "premier"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

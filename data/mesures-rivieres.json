@@ -8,7 +8,7 @@
   "canton:3823": {
    "mesures": {
     "EAU-30": {
-     "valeur": "Proche des valeurs habituelles",
+     "valeur": "Sous les valeurs habituelles",
      "unite": "",
      "nom": "Débit des cours d'eau",
      "obtention": "natif",
@@ -20,10 +20,11 @@
      "mise_en_avant": true,
      "ancre": "stations-hydrometriques",
      "rang": 10,
-     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
+     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence.",
+     "ton": "attention"
     },
     "EAU-31": {
-     "valeur": 150.62,
+     "valeur": 125.46,
      "unite": "m³/s",
      "nom": "Débit mesuré",
      "obtention": "natif",
@@ -33,7 +34,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "rivieres",
      "rang": 20,
-     "repere": "L'Isère · 07/09/2026 · à 8 km",
+     "repere": "L'Isère · 08/09/2026 · à 8 km",
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -49,22 +50,6 @@
      "ancre": "stations-hydrometriques",
      "rang": 30,
      "repere": "L'Adouin, L'Isère, La Bourne, La Galaure, La Joyeuse, La Vernaisson, Le Méaudret"
-    },
-    "EAU-33": {
-     "valeur": "La Vernaisson",
-     "unite": "",
-     "nom": "Affluent le plus bas",
-     "obtention": "natif",
-     "source": "Hub'Eau — hydrométrie, services de l'État",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "environnement",
-     "sous_rubrique": "rivieres",
-     "rang": 25,
-     "ancre": "stations-hydrometriques",
-     "ton": "attention",
-     "repere": "à 33 % de son débit habituel de saison",
-     "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
     }
    },
    "blocs": [
@@ -80,15 +65,15 @@
         "Cours d'eau": "L'Isère",
         "Commune": "SAINT-GERVAIS",
         "Distance du centre du territoire": "8 km",
-        "Débit": "150.62 m³/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1678
+        "Débit": "125.46 m³/s",
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1679
        },
        "etat": [
-        "Proche des valeurs habituelles",
-        "neutre"
+        "Sous les valeurs habituelles",
+        "attention"
        ],
-       "texte": "Médiane des mois comparables : 155.1 m³/s sur 117 relevés. Débit actuel à 97 % de cette valeur."
+       "texte": "Médiane des mois comparables : 154.43 m³/s sur 118 relevés. Débit actuel à 81 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -97,14 +82,14 @@
         "Commune": "PONT-EN-ROYANS",
         "Distance du centre du territoire": "13 km",
         "Débit": "101 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1678
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1679
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 302 L/s sur 117 relevés. Débit actuel à 33 % de cette valeur."
+       "texte": "Médiane des mois comparables : 300 L/s sur 118 relevés. Débit actuel à 34 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -113,14 +98,14 @@
         "Commune": "AUTRANS-MEAUDRE EN VERCORS",
         "Distance du centre du territoire": "14 km",
         "Débit": "37 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1818
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1819
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 90 L/s sur 147 relevés. Débit actuel à 41 % de cette valeur."
+       "texte": "Médiane des mois comparables : 89 L/s sur 148 relevés. Débit actuel à 42 % de cette valeur."
       },
       {
        "titre": "La Joyeuse à Parnans [Pont D123]",
@@ -128,15 +113,15 @@
         "Cours d'eau": "La Joyeuse",
         "Commune": "PARNANS",
         "Distance du centre du territoire": "19 km",
-        "Débit": "57 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1579
+        "Débit": "56 L/s",
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1580
        },
        "etat": [
         "Au-dessus des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 42 L/s sur 126 relevés. Débit actuel à 136 % de cette valeur."
+       "texte": "Médiane des mois comparables : 42 L/s sur 127 relevés. Débit actuel à 133 % de cette valeur."
       },
       {
        "titre": "L'Adouin à Saint-Martin-en-Vercors [Tourtre]",
@@ -145,14 +130,14 @@
         "Commune": "SAINT-MARTIN-EN-VERCORS",
         "Distance du centre du territoire": "20 km",
         "Débit": "86 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1824
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 145 L/s sur 147 relevés. Débit actuel à 59 % de cette valeur."
+       "texte": "Médiane des mois comparables : 145 L/s sur 148 relevés. Débit actuel à 59 % de cette valeur."
       },
       {
        "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
@@ -1736,7 +1721,7 @@
   "epci:200070431": {
    "mesures": {
     "EAU-30": {
-     "valeur": "Proche des valeurs habituelles",
+     "valeur": "Sous les valeurs habituelles",
      "unite": "",
      "nom": "Débit des cours d'eau",
      "obtention": "natif",
@@ -1748,10 +1733,11 @@
      "mise_en_avant": true,
      "ancre": "stations-hydrometriques",
      "rang": 10,
-     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
+     "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence.",
+     "ton": "attention"
     },
     "EAU-31": {
-     "valeur": 150.62,
+     "valeur": 125.46,
      "unite": "m³/s",
      "nom": "Débit mesuré",
      "obtention": "natif",
@@ -1761,7 +1747,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "rivieres",
      "rang": 20,
-     "repere": "L'Isère · 07/09/2026 · à 8 km",
+     "repere": "L'Isère · 08/09/2026 · à 8 km",
      "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -1777,22 +1763,6 @@
      "ancre": "stations-hydrometriques",
      "rang": 30,
      "repere": "L'Adouin, L'Isère, La Bourne, La Galaure, La Joyeuse, La Vernaisson, Le Méaudret"
-    },
-    "EAU-33": {
-     "valeur": "La Vernaisson",
-     "unite": "",
-     "nom": "Affluent le plus bas",
-     "obtention": "natif",
-     "source": "Hub'Eau — hydrométrie, services de l'État",
-     "licence": "Licence Ouverte 2.0",
-     "format": "texte",
-     "rubrique": "environnement",
-     "sous_rubrique": "rivieres",
-     "rang": 25,
-     "ancre": "stations-hydrometriques",
-     "ton": "attention",
-     "repere": "à 33 % de son débit habituel de saison",
-     "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
     }
    },
    "blocs": [
@@ -1808,15 +1778,15 @@
         "Cours d'eau": "L'Isère",
         "Commune": "SAINT-GERVAIS",
         "Distance du centre du territoire": "8 km",
-        "Débit": "150.62 m³/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1678
+        "Débit": "125.46 m³/s",
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1679
        },
        "etat": [
-        "Proche des valeurs habituelles",
-        "neutre"
+        "Sous les valeurs habituelles",
+        "attention"
        ],
-       "texte": "Médiane des mois comparables : 155.1 m³/s sur 117 relevés. Débit actuel à 97 % de cette valeur."
+       "texte": "Médiane des mois comparables : 154.43 m³/s sur 118 relevés. Débit actuel à 81 % de cette valeur."
       },
       {
        "titre": "La Vernaisson à Pont-en-Royans",
@@ -1825,14 +1795,14 @@
         "Commune": "PONT-EN-ROYANS",
         "Distance du centre du territoire": "13 km",
         "Débit": "101 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1678
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1679
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 302 L/s sur 117 relevés. Débit actuel à 33 % de cette valeur."
+       "texte": "Médiane des mois comparables : 300 L/s sur 118 relevés. Débit actuel à 34 % de cette valeur."
       },
       {
        "titre": "Le Méaudret à Méaudre",
@@ -1841,14 +1811,14 @@
         "Commune": "AUTRANS-MEAUDRE EN VERCORS",
         "Distance du centre du territoire": "14 km",
         "Débit": "37 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1818
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1819
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 90 L/s sur 147 relevés. Débit actuel à 41 % de cette valeur."
+       "texte": "Médiane des mois comparables : 89 L/s sur 148 relevés. Débit actuel à 42 % de cette valeur."
       },
       {
        "titre": "La Joyeuse à Parnans [Pont D123]",
@@ -1856,15 +1826,15 @@
         "Cours d'eau": "La Joyeuse",
         "Commune": "PARNANS",
         "Distance du centre du territoire": "19 km",
-        "Débit": "57 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1579
+        "Débit": "56 L/s",
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1580
        },
        "etat": [
         "Au-dessus des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 42 L/s sur 126 relevés. Débit actuel à 136 % de cette valeur."
+       "texte": "Médiane des mois comparables : 42 L/s sur 127 relevés. Débit actuel à 133 % de cette valeur."
       },
       {
        "titre": "L'Adouin à Saint-Martin-en-Vercors [Tourtre]",
@@ -1873,14 +1843,14 @@
         "Commune": "SAINT-MARTIN-EN-VERCORS",
         "Distance du centre du territoire": "20 km",
         "Débit": "86 L/s",
-        "Dernière mesure": "07/09/2026",
-        "Mesures sur 5 ans": 1824
+        "Dernière mesure": "08/09/2026",
+        "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 145 L/s sur 147 relevés. Débit actuel à 59 % de cette valeur."
+       "texte": "Médiane des mois comparables : 145 L/s sur 148 relevés. Débit actuel à 59 % de cette valeur."
       },
       {
        "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",

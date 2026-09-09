@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 33
+VERSION_SCRIPT = 34
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -1856,8 +1856,12 @@ RUBRIQUES = [
      "sous": [
          {"id": "elus", "nom": "Élus"},
          # Décidée, pas encore alimentée : la page existe pour être
-         # explorée par les moteurs, et s'efface dès qu'une donnée
-         # arrive. Voir la section PAGES D'ANNONCE.
+         # atteignable depuis la navigation, et s'efface dès qu'une
+         # donnée arrive. Voir la section PAGES D'ANNONCE.
+         #
+         # Elle n'est en revanche PAS offerte aux moteurs tant qu'elle
+         # est vide — c'est l'arbitrage du 8 septembre 2026, revenant
+         # sur l'intention initiale. Voir page_en_annonce().
          {"id": "resultats", "nom": "Résultats",
           "annonce": "elections-resultats"},
      ]},
@@ -2264,6 +2268,49 @@ def rubriques_actives(fiche):
             # ferait disparaître des adresses déjà indexées.
             actives.add(r["id"])
     return actives
+
+
+def page_en_annonce(fiche, rubrique, sous=None):
+    """Vrai quand cette page n'a rien d'autre à montrer que son annonce.
+
+    Une page d'annonce reste en ligne et atteignable depuis la
+    navigation : elle nomme la source, dit ce qui vient et pourquoi ce
+    n'est pas encore là. C'est une information honnête, et un visiteur
+    qui suit le menu a le droit de la lire.
+
+    Mais elle ne va pas au plan du site, et elle porte une balise
+    « noindex ». Quatre-vingt-dix-huit adresses vides — carburants et
+    résultats électoraux, sur quarante-neuf territoires — représentaient
+    un huitième du sitemap. Les offrir à l'indexation d'un site qui n'a
+    encore aucune autorité revient à faire connaître d'abord ses pages
+    creuses, et l'adresse « carburants » est précisément celle qui doit
+    peser. Un moteur qui l'a d'abord connue vide met des semaines à
+    revenir.
+
+    « noindex, follow » et non « nofollow » : la page reste un chemin
+    vers les autres. C'est son contenu qui n'est pas prêt, pas ses
+    liens.
+
+    Le prédicat est le miroir de rubriques_actives et de sous_actives :
+    une page est alimentée dès qu'elle porte un indicateur chiffré, un
+    bloc, ou une chronique. Le jour où le collecteur écrit sa première
+    mesure, la page réintègre le plan du site d'elle-même — il n'y a
+    rien à décommenter, et donc rien à oublier.
+
+    Un écho ne compte pas. Il renvoie vers une donnée qui vit ailleurs :
+    la page n'aurait toujours rien à elle, et son adresse ne mérite pas
+    d'être proposée pour cela.
+    """
+    if not (sous or rubrique).get("annonce"):
+        return False
+    if any(m.get("valeur") is not None for m
+           in indicateurs_de(rubrique, fiche["mesures"], sous).values()):
+        return False
+    if blocs_de(fiche, rubrique, sous):
+        return False
+    if chroniques_de(fiche, rubrique, sous):
+        return False
+    return True
 
 
 def nav_rubriques(base, chemin, actives, courante):
@@ -4771,11 +4818,21 @@ def page(d, base, canonique, adresses, fiches, rubrique,
     # Un écho ne peut pas effacer une page d'annonce : la rubrique
     # n'aurait toujours rien à elle, et le visiteur perdrait le texte
     # qui lui dit ce qui vient.
+    # La condition est déléguée à page_en_annonce() : la boucle
+    # principale s'en sert pour décider du plan du site, et les deux
+    # décisions ne doivent pas pouvoir diverger. Une page annoncée ici
+    # est une page absente du sitemap, toujours, et réciproquement.
+    en_annonce = page_en_annonce(d, rubrique, sous)
     annonce = (ANNONCES.get((sous or rubrique).get("annonce"))
-               if not natives else None)
+               if en_annonce else None)
     annonce_html = ""
     if annonce:
         annonce_html, description = annonce(d, base, chemin_territoire)
+
+    # Écrite à la suite du lien canonique, sans ligne propre : une page
+    # ordinaire doit sortir exactement comme avant, à l'octet près.
+    robots = ('\n<meta name="robots" content="noindex, follow">'
+              if en_annonce else "")
 
     # Le titre de premier niveau doit dire de quoi parle LA page, pas
     # seulement de quel territoire. Sans cela, les quinze pages d'une
@@ -4826,7 +4883,7 @@ def page(d, base, canonique, adresses, fiches, rubrique,
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(t['nom'])} — {escape(suffixe_titre)} | {escape(TITRE_SITE)}</title>
 <meta name="description" content="{escape(description)}">
-<link rel="canonical" href="{canonique}">
+<link rel="canonical" href="{canonique}">{robots}
 <meta property="og:title" content="{escape(t['nom'])} — {escape(suffixe_titre)}">
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:type" content="website">
@@ -4968,6 +5025,11 @@ def main():
 
     # ── second passage : écriture des pages ──────────────────────
     liens_site, recherche, redirections = [], [], []
+    # Adresses écrites mais non proposées aux moteurs : voir
+    # page_en_annonce(). Comptées pour être dites en fin d'exécution —
+    # une page qui disparaît du sitemap sans que rien ne le signale est
+    # une page qu'on ne retrouve pas.
+    en_attente = []
 
     for (niveau, code), d in fiches.items():
         t = d["territoire"]
@@ -4986,7 +5048,10 @@ def main():
                 page(d, profondeur.rstrip("/"), url, adresses, fiches,
                      rubrique, chemin, actives, sous, sous_dispo),
                 encoding="utf-8")
-            liens_site.append(url)
+            if page_en_annonce(d, rubrique, sous):
+                en_attente.append(url)
+            else:
+                liens_site.append(url)
 
         for r in RUBRIQUES:
             if r["id"] and r["id"] not in actives:
@@ -5290,6 +5355,19 @@ def main():
           f"adresses, {len(heritage)} règles d'héritage)")
     print(f"  Page d'erreur   : 404.html, servie par ErrorDocument")
     print(f"  Plan du site    : sitemap.xml ({len(set(liens_site))} adresses)")
+    if en_attente:
+        # Regroupées par rubrique : la liste des quarante-neuf adresses
+        # n'apprendrait rien, le nom de la rubrique tout.
+        par_attente = {}
+        for u in sorted(set(en_attente)):
+            morceaux = [m for m in u.split("/") if m]
+            par_attente.setdefault("/".join(morceaux[4:]) or "?", []).append(u)
+        print(f"  En attente      : {len(set(en_attente))} page(s) hors "
+              f"plan du site et en noindex, faute de donnée —")
+        for rub, liste in sorted(par_attente.items()):
+            print(f"                    {rub} ({len(liste)})")
+        print(f"                    Elles y reviendront seules à la "
+              f"première mesure publiée.")
     print(f"\n  Exemples d'adresses :")
     for u in list(sorted(set(liens_site)))[:3]:
         print(f"    {u}")

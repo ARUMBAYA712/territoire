@@ -1,0 +1,10 @@
+{
+ "genere_le": "2026-09-09",
+ "version": 1,
+ "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "quotidienne",
+ "motif_absence": "aucune station dans l'emprise",
+ "communes": {},
+ "territoires": {}
+}
