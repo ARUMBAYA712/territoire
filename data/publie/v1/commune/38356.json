@@ -110,11 +110,52 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,310 €/L · relevé aujourd'hui",
+      "repere": "Garage Magnan · Gazole 2,310 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
       }
+    },
+    "TRA-20": {
+      "valeur": "32",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "aucun le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "17",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MRC14, PER04, PER07, PSARA",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
     },
     "EAU-01": {
       "valeur": 100.0,
@@ -652,7 +693,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Saint-Laurent-en-Royans (hors territoire)",
+          "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
           "details": {
             "Gazole": "2,310 €/L",
             "SP95": "2,210 €/L",
@@ -660,6 +701,7 @@
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+            "Enseigne": "Garage Magnan",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
@@ -669,17 +711,18 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Saint-Just-de-Claix",
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,267 €/L",
             "SP95-E10": "2,129 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -696,7 +739,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -707,6 +750,206 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Balai",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Balai",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Guibaudiere-Cimetiere",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ferme Guerin",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "L'Enchere",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Croix du Beau Geai",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Guibaudiere-Cimetiere",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Mairie",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Tunnel de Bluvinaye",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ferme Guerin",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "L'Enchere",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Croix du Beau Geai",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Mairie",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",

@@ -45,16 +45,17 @@ VERSIONS_ATTENDUES = {
     "01_referentiel.py": 1,
     "02_canton.py": 2,
     "03_agregation.py": 5,
-    "04_generation.py": 36,
+    "04_generation.py": 37,
     "12_rivieres.py": 6,
     "13_hivernal.py": 2,
     "14_vigilance.py": 2,
     "15_elus.py": 2,
     "16_bio.py": 4,
     "17_climat.py": 1,
-    "18_carburants.py": 3,
+    "18_carburants.py": 4,
     "19_gares.py": 1,
-    "20_cars.py": 1,
+    "20_cars.py": 2,
+    "21_elections.py": 1,
     "05_cartes.py": 3,
     "06_eau.py": 4,
     "07_vigieau.py": 4,
@@ -66,12 +67,21 @@ VERSIONS_ATTENDUES = {
 
 
 def version_installee(script):
-    """Numéro déclaré par le fichier présent, ou None."""
+    """Numéro déclaré par le fichier présent, ou None.
+
+    Le fichier est lu ENTIÈREMENT. Une version antérieure s'arrêtait aux
+    quatre-vingts premières lignes, ce qui suffisait tant que les
+    en-têtes tenaient en une page. Puis 19_gares.py et 21_elections.py
+    ont porté leur VERSION_SCRIPT en lignes 83 et 93 : le lanceur les a
+    déclarés « absents » alors qu'ils étaient bien là, et a refusé de
+    partir. Une limite qui dépend de la longueur d'un commentaire n'a
+    aucune raison d'être.
+    """
     chemin = RACINE / script
     if not chemin.exists():
         return None
-    for ligne in chemin.read_text(encoding="utf-8").split("\n")[:80]:
-        if ligne.startswith("VERSION_SCRIPT"):
+    for ligne in chemin.read_text(encoding="utf-8").splitlines():
+        if ligne.startswith("VERSION_SCRIPT") and "=" in ligne:
             try:
                 return int(ligne.split("=")[1].strip())
             except (IndexError, ValueError):
@@ -93,7 +103,17 @@ def controler_versions():
     print("  ATTENTION — fichiers non remplacés")
     print("═" * 62)
     for script, installee, attendue in retard:
-        etat = "absent" if installee is None else f"version {installee}"
+        # Trois états distincts, et non deux : « absent » et « version
+        # illisible » n'appellent pas le même geste, et les confondre a
+        # coûté une relance. C'est la règle du projet appliquée au
+        # lanceur lui-même — ne jamais confondre une donnée absente
+        # avec un échec de lecture.
+        if not (RACINE / script).exists():
+            etat = "absent"
+        elif installee is None:
+            etat = "version illisible"
+        else:
+            etat = f"version {installee}"
         print(f"    {script:<24} {etat:<14} attendu : version {attendue}")
     print()
     print("  Ces scripts produiront des résultats incohérents avec les")
@@ -156,6 +176,7 @@ def controler_versions():
 # lui-même de ce qu'il refait, grâce à son numéro de version. Solliciter
 # les serveurs publics sans nécessité n'a aucun intérêt.
 PLAN_LIVRAISON = [
+    ("21_elections.py", []),
     ("19_gares.py", []),
     ("20_cars.py", []),
     ("18_carburants.py", []),
@@ -206,6 +227,7 @@ COLLECTEURS = [
     ("18_carburants.py", []),
     ("19_gares.py", []),
     ("20_cars.py", []),
+    ("21_elections.py", []),
 ]
 
 PUBLICATION = [
@@ -272,6 +294,10 @@ TRIMESTRIEL = [
     ("15_elus.py", []),
     ("16_bio.py", []),
     ("19_gares.py", []),          # fréquentation publiée une fois l'an
+    # Les résultats ne changent qu'au scrutin suivant : une collecte
+    # trimestrielle suffit, et suffira encore le soir des élections —
+    # ce jour-là, on lancera à la main.
+    ("21_elections.py", []),
 ]
 
 PUBLIER = [

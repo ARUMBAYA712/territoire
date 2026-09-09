@@ -74,7 +74,7 @@ import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-VERSION_SCRIPT = 3
+VERSION_SCRIPT = 4
 
 DONNEES = Path("data")
 REFERENTIEL = DONNEES / "referentiel-communes.json"
@@ -88,6 +88,44 @@ QUOTIDIEN = "prix-carburants-quotidien"
 SOURCE = ("Prix des carburants — flux instantané, "
           "ministère de l'Économie (data.economie.gouv.fr)")
 LICENCE = "Licence Ouverte 2.0"
+
+# ── Les enseignes ────────────────────────────────────────────────────
+# AUCUN des deux jeux officiels ne porte le nom commercial de la
+# station. Ce n'est pas un oubli : l'arrêté du 12 décembre 2006 oblige
+# les stations à déclarer leurs PRIX, pas leur enseigne.
+#
+# Or « Leclerc » ou « Avia » est ce qu'un habitant reconnaît, bien plus
+# que « 2 avenue de Romans ». Deux sources complémentaires y pourvoient,
+# dans cet ordre de priorité :
+#
+#   1. le fichier de saisie ci-dessous, tenu à la main. Il fait toujours
+#      foi : c'est une vérification humaine ;
+#   2. OpenStreetMap, interrogé par Overpass, où seize des dix-huit
+#      stations du secteur portent une étiquette « brand ».
+#
+# Relevé le 9 septembre 2026, en rapprochant les stations officielles
+# des nœuds OSM les plus proches :
+#
+#     Chatte                45 m → E.Leclerc
+#     Vinay (Grenoble)      65 m → Total
+#     Vinay (Europe)        77 m → Super U
+#     Saint-Just-de-Claix   11 m → Comptoir Énergie
+#     Saint-Sauveur      1 278 m → AUCUN APPARIEMENT FIABLE
+#     Saint-Marcellin      734 m → AUCUN APPARIEMENT FIABLE
+#
+# D'où le seuil : au-delà de ENSEIGNE_DISTANCE_MAXIMUM_M, on ne nomme
+# rien. Un nœud à sept cents mètres est une AUTRE station, et lui
+# emprunter son enseigne afficherait « Avia » sur une station qui n'en
+# est pas une. Mieux vaut pas d'enseigne qu'une fausse enseigne.
+#
+# OpenStreetMap est sous ODbL : le fichier produit déclare donc DEUX
+# licences, et le générateur, depuis la version 37, sait les afficher
+# toutes les deux.
+OSM_API = "https://overpass-api.de/api/interpreter"
+LICENCE_OSM = "ODbL 1.0"
+SOURCE_OSM = "OpenStreetMap — enseignes des stations (contributeurs OSM)"
+ENSEIGNE_DISTANCE_MAXIMUM_M = 150
+REFERENCE_ENSEIGNES = DONNEES / "reference-enseignes-carburants.json"
 
 VERSION = 1
 RUBRIQUE = "carburants"
@@ -335,6 +373,102 @@ def prix_des_stations(identifiants):
 
 
 # ══════════════════════════════════════════════════════════════════
+# ENSEIGNES
+# ══════════════════════════════════════════════════════════════════
+
+MODELE_ENSEIGNES = {
+    "_lisez_moi": (
+        "Enseignes saisies à la main, par identifiant de station tel "
+        "qu'il figure dans le flux officiel. Ce fichier fait toujours "
+        "foi sur OpenStreetMap : une vérification humaine l'emporte sur "
+        "une étiquette contributive. Laissez une entrée vide pour "
+        "effacer une enseigne qu'OSM propose à tort."),
+    "saisi_le": "",
+    "enseignes": {
+        "38160007": "",
+        "38160003": "",
+    },
+}
+
+
+def enseignes_saisies():
+    """Enseignes vérifiées à la main, par identifiant de station."""
+    if not REFERENCE_ENSEIGNES.exists():
+        return {}, None
+    try:
+        contenu = json.loads(REFERENCE_ENSEIGNES.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        print(f"  [attention] {REFERENCE_ENSEIGNES} est illisible, ignoré.")
+        return {}, None
+    saisies = {str(k): str(v).strip()
+               for k, v in (contenu.get("enseignes") or {}).items()}
+    return saisies, contenu.get("saisi_le")
+
+
+def enseignes_osm(boite):
+    """Enseignes trouvées dans OpenStreetMap, avec leur position.
+
+    Renvoie une liste de (latitude, longitude, enseigne), ou None si
+    Overpass n'a pas répondu. Une absence de réponse n'est PAS une
+    erreur : les prix sont publiés sans enseigne, et la sortie le dit.
+    Overpass est un service bénévole, souvent saturé ; en faire une
+    dépendance dure serait déraisonnable.
+    """
+    lonmin, latmin, lonmax, latmax = boite
+    requete = (f'[out:json][timeout:60];'
+               f'(node["amenity"="fuel"]({latmin:.4f},{lonmin:.4f},'
+               f'{latmax:.4f},{lonmax:.4f});'
+               f'way["amenity"="fuel"]({latmin:.4f},{lonmin:.4f},'
+               f'{latmax:.4f},{lonmax:.4f}););out center tags;')
+    url = OSM_API + "?" + urllib.parse.urlencode({"data": requete})
+    try:
+        demande = urllib.request.Request(
+            url, headers={"User-Agent": "portail-territorial/1.0",
+                          "Accept": "application/json"})
+        with urllib.request.urlopen(demande, timeout=90) as reponse:
+            donnees = json.loads(reponse.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  [attention] OpenStreetMap n'a pas répondu "
+              f"({type(e).__name__}) : les enseignes automatiques sont "
+              f"sautées.")
+        return None
+
+    trouvees = []
+    for e in donnees.get("elements", []):
+        centre = e.get("center") or {}
+        lat = e.get("lat", centre.get("lat"))
+        lon = e.get("lon", centre.get("lon"))
+        etiquettes = e.get("tags") or {}
+        nom = (etiquettes.get("brand") or etiquettes.get("operator")
+               or etiquettes.get("name") or "").strip()
+        if lat is None or lon is None or not nom:
+            continue
+        trouvees.append((float(lat), float(lon), nom))
+    return trouvees
+
+
+def apparier_enseigne(station, noeuds):
+    """(enseigne, distance en mètres) du nœud OSM le plus proche, ou None.
+
+    Le seuil est ce qui fait la sûreté de ce rapprochement. Sur la
+    collecte du 9 septembre, quatre stations sur six tombaient à moins
+    de quatre-vingts mètres d'un nœud, et les deux autres à plus de sept
+    cents — c'est-à-dire sur une station différente. Sans seuil, elles
+    auraient hérité d'une enseigne qui n'est pas la leur.
+    """
+    if not noeuds or station.get("latitude") is None:
+        return None
+    meilleur, distance = None, None
+    for lat, lon, nom in noeuds:
+        d = distance_km(station["latitude"], station["longitude"], lat, lon) * 1000
+        if distance is None or d < distance:
+            meilleur, distance = nom, d
+    if distance is None or distance > ENSEIGNE_DISTANCE_MAXIMUM_M:
+        return None
+    return meilleur, distance
+
+
+# ══════════════════════════════════════════════════════════════════
 # FILTRES
 # ══════════════════════════════════════════════════════════════════
 
@@ -427,6 +561,8 @@ def station_lisible(station, anomalies=None):
         "ages": {},
         "dates": {},
         "absents": [],
+        "enseigne": "",
+        "enseigne_origine": "",
     }
     geom = station.get("geom") or {}
     lu["latitude"] = geom.get("lat")
@@ -489,7 +625,14 @@ def item_station(st, chez_nous):
     else:
         etat = [f"Relevé {dire_age(frais)}", "neutre"]
 
-    titre = st["ville"] if chez_nous else f"{st['ville']} (hors territoire)"
+    # L'enseigne passe en tête du titre : « Super U — Vinay » se
+    # reconnaît d'un coup d'œil, « Vinay » ne distingue pas les deux
+    # stations de la commune. Sans enseigne connue, le titre reste la
+    # commune, et rien n'est inventé.
+    lieu = st["ville"] if chez_nous else f"{st['ville']} (hors territoire)"
+    titre = f"{st['enseigne']} — {lieu}" if st.get("enseigne") else lieu
+    if st.get("enseigne"):
+        details["Enseigne"] = st["enseigne"]
     return {"titre": titre, "details": details, "etat": etat,
             "texte": ("Prix déclarés par le distributeur. Le prix affiché "
                       "à la pompe fait seul foi.")}
@@ -542,13 +685,13 @@ def moins_cher(stations, cle):
 
 
 def synthese_territoire(stations, nb_chez_nous, nb_voisines):
-    """Mesures et bloc d'une échelle qui englobe plusieurs communes.
+    """Mesures et bloc d'une Ã©chelle qui englobe plusieurs communes.
 
     Ne montre QUE les stations du territoire. Une page de canton
-    répond à « qu'est-ce que le carburant coûte ici », et la réponse
+    rÃ©pond Ã  Â« qu'est-ce que le carburant coÃ»te ici Â», et la rÃ©ponse
     est la comparaison de nos stations entre elles. Les voisines
-    n'ont leur place que sur une page de commune, où la question
-    devient « où vais-je faire le plein depuis ce village ».
+    n'ont leur place que sur une page de commune, oÃ¹ la question
+    devient Â« oÃ¹ vais-je faire le plein depuis ce village Â».
     """
     mesures, items = {}, []
     a_nous = [s for s in stations if not s.get("_voisine")]
@@ -560,33 +703,35 @@ def synthese_territoire(stations, nb_chez_nous, nb_voisines):
         haut = max(chez_nous, key=lambda s: s["prix"]["gazole"])
         ecart = haut["prix"]["gazole"] - bas["prix"]["gazole"]
         mesures["CAR-01"] = mesure(
-            euros(bas["prix"]["gazole"]), "\u20ac/L",
+            euros(bas["prix"]["gazole"]), "€/L",
             "Gazole le moins cher", rang=10, ancre=ANCRE,
-            repere=f"{bas['ville']} \u00b7 relev\u00e9 {dire_age(bas['ages']['gazole'])}",
-            explication=("Prix le plus bas relev\u00e9 dans les stations du "
+            repere=((f"{bas['enseigne']} à {bas['ville']}"
+                     if bas.get("enseigne") else bas["ville"])
+                    + f" · relevé {dire_age(bas['ages']['gazole'])}"),
+            explication=("Prix le plus bas relevé dans les stations du "
                          "territoire, hors aires d'autoroute."),
-            # Le carburant int\u00e9resse aussi qui consulte les transports.
-            # Le d\u00e9tail reste ici : la page Transports n'en porte qu'un
-            # renvoi. Voir le m\u00e9canisme d'\u00e9cho, version 31.
+            # Le carburant intéresse aussi qui consulte les transports.
+            # Le détail reste ici : la page Transports n'en porte qu'un
+            # renvoi. Voir le mécanisme d'écho, version 31.
             aussi={"rubrique": "transports"})
 
         if ecart >= 0.02:
             mesures["CAR-02"] = mesure(
-                euros(ecart), "\u20ac/L",
-                "\u00c9cart entre stations du territoire", rang=20, ancre=ANCRE,
-                repere=(f"de {bas['ville']} \u00e0 {haut['ville']} \u00b7 "
-                        f"{ecart * 50:.0f} \u20ac sur un plein de 50 litres"),
-                explication=("Diff\u00e9rence entre la station la moins ch\u00e8re et "
-                             "la plus ch\u00e8re du territoire, pour le gazole. "
-                             "C'est ce que co\u00fbte le fait de prendre l'une "
-                             "plut\u00f4t que l'autre."))
+                euros(ecart), "€/L",
+                "Écart entre stations du territoire", rang=20, ancre=ANCRE,
+                repere=(f"de {bas['ville']} à {haut['ville']} · "
+                        f"{ecart * 50:.0f} € sur un plein de 50 litres"),
+                explication=("Différence entre la station la moins chère et "
+                             "la plus chère du territoire, pour le gazole. "
+                             "C'est ce que coûte le fait de prendre l'une "
+                             "plutôt que l'autre."))
 
     mesures["CAR-03"] = mesure(
         str(nb_chez_nous), "", "Stations sur le territoire", rang=30,
         ancre=ANCRE,
-        explication=("Stations-service d\u00e9clarant leurs prix au portail "
-                     "national. Une station qui ne les d\u00e9clare pas n'y "
-                     "figure pas. Les stations voisines sont nomm\u00e9es sur "
+        explication=("Stations-service déclarant leurs prix au portail "
+                     "national. Une station qui ne les déclare pas n'y "
+                     "figure pas. Les stations voisines sont nommées sur "
                      "la page de chaque commune, non ici."))
 
     ordre = sorted(a_nous, key=lambda s: (s["autoroute"],
@@ -597,7 +742,7 @@ def synthese_territoire(stations, nb_chez_nous, nb_voisines):
     blocs = [{
         "rubrique": RUBRIQUE,
         "id": ANCRE,
-        "titre": "Stations-service et prix relev\u00e9s",
+        "titre": "Stations-service et prix relevés",
         "items": items,
         "lien": {"url": f"https://data.economie.gouv.fr/explore/dataset/{FLUX}/",
                  "libelle": "Consulter la source"},
@@ -660,8 +805,9 @@ def synthese_commune(commune, siennes, toutes):
             mesures["CAR-01"] = mesure(
                 euros(bas["prix"]["gazole"]), "€/L", "Gazole", rang=10,
                 ancre=ANCRE,
-                repere=(f"{bas['adresse'] or bas['ville']} · relevé "
-                        f"{dire_age(bas['ages']['gazole'])}"),
+                repere=((f"{bas['enseigne']} · " if bas.get("enseigne") else "")
+                        + f"{bas['adresse'] or bas['ville']} · relevé "
+                        + dire_age(bas["ages"]["gazole"])),
                 explication=("Prix déclaré par le distributeur. Le prix "
                              "affiché à la pompe fait seul foi."),
                 aussi={"rubrique": "transports"})
@@ -675,8 +821,10 @@ def synthese_commune(commune, siennes, toutes):
         mesures["CAR-04"] = mesure(
             f"{proche['ville']}, à {km:.0f} km", "",
             "Station la plus proche", rang=15, ancre=ANCRE,
-            repere=(f"Gazole {euros(proche['prix']['gazole'])} €/L · "
-                    f"relevé {dire_age(proche['ages']['gazole'])}"),
+            repere=((f"{proche['enseigne']} · " if proche.get("enseigne")
+                     else "")
+                    + f"Gazole {euros(proche['prix']['gazole'])} €/L · "
+                    + f"relevé {dire_age(proche['ages']['gazole'])}"),
             explication=("Aucune station-service ne déclare de prix sur "
                          "cette commune. La distance est mesurée à vol "
                          "d'oiseau depuis le centre de la commune."),
@@ -733,6 +881,21 @@ def main():
     codes_epci = {c.get("code_epci") for c in communes if c.get("code_epci")}
     cantons = {c.get("code_canton") for c in communes if c.get("code_canton")}
 
+    if "--modele-enseignes" in sys.argv:
+        DONNEES.mkdir(exist_ok=True)
+        if REFERENCE_ENSEIGNES.exists():
+            print(f"\n  {REFERENCE_ENSEIGNES} existe déjà — rien écrasé.\n")
+        else:
+            modele = json.loads(json.dumps(MODELE_ENSEIGNES))
+            modele["saisi_le"] = date.today().isoformat()
+            REFERENCE_ENSEIGNES.write_text(
+                json.dumps(modele, ensure_ascii=False, indent=1),
+                encoding="utf-8")
+            print(f"\n  Modèle créé : {REFERENCE_ENSEIGNES}")
+            print("  Complétez-le avec les identifiants affichés par une")
+            print("  collecte ordinaire, puis relancez.\n")
+        return
+
     rejeu = None
     if "--rejouer" in sys.argv:
         i = sys.argv.index("--rejouer")
@@ -768,6 +931,14 @@ def main():
         ecrire_vide("le flux instantané n'a renvoyé aucune station")
         return
 
+    # ── enseignes : la saisie d'abord, OSM ensuite ───────────────────
+    saisies, saisi_le = enseignes_saisies()
+    noeuds = None
+    if rejeu is not None:
+        noeuds = [tuple(n) for n in (rejeu.get("osm") or [])]
+    elif "--sans-osm" not in sys.argv:
+        noeuds = enseignes_osm(emprise(communes, MARGE_KM))
+
     if "--exemple" in sys.argv:
         DONNEES.mkdir(exist_ok=True)
         EXEMPLE.write_text(json.dumps(
@@ -778,8 +949,23 @@ def main():
 
     # ── rattachement, et le filet qui le contrôle ────────────────────
     stations, ecartees, anomalies = [], [], []
+    enseignes_par_origine = {"saisie": 0, "OpenStreetMap": 0}
     for brute in brutes:
         st = station_lisible(brute, anomalies)
+        # La saisie l'emporte, toujours : une chaîne vide dans le
+        # fichier de référence est une décision — « cette station n'a
+        # pas d'enseigne » — et non une absence de valeur.
+        if st["id"] in saisies:
+            st["enseigne"] = saisies[st["id"]]
+            st["enseigne_origine"] = "saisie"
+            if st["enseigne"]:
+                enseignes_par_origine["saisie"] += 1
+        else:
+            trouve = apparier_enseigne(st, noeuds)
+            if trouve:
+                st["enseigne"], _distance = trouve
+                st["enseigne_origine"] = "OpenStreetMap"
+                enseignes_par_origine["OpenStreetMap"] += 1
         rattachement = candidates.get(st["id"])
         if not rattachement:
             ecartees.append((st["ville"], "sans code INSEE dans le jeu "
@@ -871,10 +1057,23 @@ def main():
         territoires[f"epci:{epci}"] = synthese
 
     DONNEES.mkdir(exist_ok=True)
+    # Le fichier déclare DEUX licences dès qu'une enseigne vient d'OSM :
+    # les prix restent sous Licence Ouverte, l'enseigne est sous ODbL.
+    # Ne déclarer que la première serait inexact, et déclarer l'ODbL
+    # sur tout serait inexact dans l'autre sens.
+    licences = [LICENCE]
+    sources = [SOURCE]
+    if any(s.get("enseigne") and s["enseigne_origine"] == "OpenStreetMap"
+           for s in stations):
+        licences.append(LICENCE_OSM)
+        sources.append(SOURCE_OSM)
+
     SORTIE.write_text(json.dumps({
         "genere_le": date.today().isoformat(),
         "version": VERSION,
-        "source": SOURCE, "licence": LICENCE, "frequence": "quotidienne",
+        "source": " · ".join(sources),
+        "licence": licences if len(licences) > 1 else LICENCE,
+        "frequence": "quotidienne",
         "releve_le": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "communes": resultat,
         "territoires": territoires,
@@ -893,6 +1092,29 @@ def main():
                 if "(hors territoire)" in item["titre"]:
                     ville = item["titre"].replace(" (hors territoire)", "")
                     citees[ville] = citees.get(ville, 0) + 1
+
+    # Comptées sur les stations RETENUES, pas sur toutes celles qu'on a
+    # regardées : une enseigne trouvée pour une station écartée plus loin
+    # ne figure nulle part, et la faire apparaître au décompte donnerait
+    # deux nombres qui ne s'additionnent pas.
+    par_saisie = sum(1 for s in stations
+                     if s.get("enseigne") and s["enseigne_origine"] == "saisie")
+    par_osm = sum(1 for s in stations
+                  if s.get("enseigne")
+                  and s["enseigne_origine"] == "OpenStreetMap")
+    print(f"\n  Enseignes nommées  : {par_saisie + par_osm} sur "
+          f"{len(stations)} ({par_saisie} par saisie, "
+          f"{par_osm} par OpenStreetMap)")
+    if noeuds is None:
+        print(f"                       OpenStreetMap n'a pas été interrogé : "
+              f"seule la saisie a servi.")
+    anonymes = [s for s in a_nous if not s.get("enseigne")]
+    if anonymes:
+        print(f"  Sans enseigne sur le territoire ({len(anonymes)}) — "
+              f"identifiants à saisir dans")
+        print(f"  {REFERENCE_ENSEIGNES} :")
+        for s in anonymes:
+            print(f"    {s['id']}  {s['ville']} — {s['adresse']}")
 
     print(f"\n  Sur le territoire  : {len(a_nous)} station(s)")
     print(f"  Enveloppe          : {len(voisines)} station(s) hors "

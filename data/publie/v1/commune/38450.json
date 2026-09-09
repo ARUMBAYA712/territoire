@@ -91,11 +91,52 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,279 €/L · relevé aujourd'hui",
+      "repere": "Carrefour · Gazole 2,279 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
       }
+    },
+    "TRA-20": {
+      "valeur": "94",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "aucun le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "28",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MOI01, MRC10, PSQIA, T60, TUL01, TUL02",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
     },
     "EAU-01": {
       "valeur": 100.0,
@@ -662,7 +703,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Tullins (hors territoire)",
+          "titre": "Carrefour — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,119 €/L",
@@ -670,6 +711,7 @@
             "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Carrefour",
             "Distance": "4 km du centre de la commune"
           },
           "etat": [
@@ -679,7 +721,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Tullins (hors territoire)",
+          "titre": "Avia — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,349 €/L — relevé le 05/09/2026",
             "SP95-E10": "2,229 €/L",
@@ -687,6 +729,7 @@
             "Adresse": "Route de Saint-Quentin, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Avia",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
@@ -696,7 +739,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Veurey-Voroize (hors territoire)",
+          "titre": "Esso — Veurey-Voroize (hors territoire)",
           "details": {
             "Gazole": "2,397 €/L",
             "SP95-E10": "2,250 €/L",
@@ -704,6 +747,7 @@
             "Adresse": "Route de Valence, Veurey-Voroize",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Esso",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
@@ -718,6 +762,327 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Replat Cab.Bambou",
+          "details": {
+            "Passages le mardi": "8"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Château",
+          "details": {
+            "Passages le mardi": "6"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Golf",
+          "details": {
+            "Passages le mardi": "6"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Pharmacie",
+          "details": {
+            "Passages le mardi": "6"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Sous-Gibraltar RD1532",
+          "details": {
+            "Passages le mardi": "6"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Château",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Golf",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Replat-Société Perrin",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Peraudiere",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Pharmacie",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Sous-Gibraltar RD1532",
+          "details": {
+            "Passages le mardi": "5"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Fontbesset RD1532",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Fontbesset-Pisciculture",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Renaudiere",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Git",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Martinet",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Brunieres",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Replat Cab.Bambou",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Fontbesset RD1532",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Fontbesset-Pisciculture",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Renaudiere",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Git",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Martinet",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Brunieres",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Peraudiere",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",
@@ -769,16 +1134,16 @@
       ],
       "points": [
         {
-          "nom": "Ecole primaire Louis Pergaud",
-          "lat": 45.280055,
-          "lon": 5.54357,
+          "nom": "Ecole maternelle",
+          "lat": 45.280299,
+          "lon": 5.54275,
           "info": "Ecole",
           "categorie": "premier"
         },
         {
-          "nom": "Ecole maternelle",
-          "lat": 45.280299,
-          "lon": 5.54275,
+          "nom": "Ecole primaire Louis Pergaud",
+          "lat": 45.280055,
+          "lon": 5.54357,
           "info": "Ecole",
           "categorie": "premier"
         }

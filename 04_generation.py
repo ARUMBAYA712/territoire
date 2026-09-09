@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Numéro de version du script, affiché à l'exécution : il permet
 # de vérifier d'un coup d'œil que le fichier installé est le bon.
-VERSION_SCRIPT = 36
+VERSION_SCRIPT = 37
 
 # ══════════════════════════════════════════════════════════════════
 # CONFIGURATION
@@ -246,9 +246,18 @@ def relever_licences():
             contenu = json.loads(chemin.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
-        nom = str(contenu.get("licence") or "").strip()
-        if nom:
-            relevees.append((libelle, str(contenu.get("source") or ""), nom))
+        # Une source peut en mêler deux : les prix des carburants
+        # viennent de la Licence Ouverte, l'enseigne des stations
+        # d'OpenStreetMap, sous ODbL. Un collecteur peut donc écrire
+        # une liste au lieu d'un nom, et les deux licences figurent
+        # alors séparément dans le tableau des mentions.
+        brut = contenu.get("licence")
+        noms = brut if isinstance(brut, list) else [brut]
+        for nom in noms:
+            nom = str(nom or "").strip()
+            if nom:
+                relevees.append((libelle, str(contenu.get("source") or ""),
+                                 nom))
 
     LICENCES_PRESENTES = relevees
     distinctes = []
@@ -3952,7 +3961,10 @@ def corps_fraicheur():
             # La licence se lit à côté de la source, pas dans une page
             # séparée : c'est là que le visiteur regarde quand il se
             # demande ce qu'il a le droit de faire de la donnée.
-            details["Licence"] = licence_connue(e["licence"])["court"]
+            brut = e["licence"]
+            noms = brut if isinstance(brut, list) else [brut]
+            details["Licence"] = " et ".join(
+                licence_connue(n)["court"] for n in noms if str(n or "").strip())
         if e["volume"]:
             details["Couverture"] = f"{e['volume']} {e['portee']}"
 

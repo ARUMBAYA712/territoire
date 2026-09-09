@@ -128,6 +128,47 @@
       "rang": 30,
       "ancre": "stations-service"
     },
+    "TRA-20": {
+      "valeur": "88",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "8 le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "8",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MRC01, MRC02, MRC03, MRC04, MRC05, MRC06…",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -723,7 +764,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,080 €/L",
@@ -733,6 +774,7 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc",
             "Distance": "1 km du centre de la commune"
           },
           "etat": [
@@ -758,16 +800,16 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,259 €/L — relevé le 04/09/2026",
             "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
             "SP98": "2,169 €/L — relevé le 04/09/2026",
             "E85": "0,835 €/L — relevé le 04/09/2026",
-            "GPLc": "0,995 €/L — relevé le 01/09/2026",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
@@ -782,6 +824,109 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Parking la Saulaie",
+          "details": {
+            "Passages le mardi": "45"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Gare",
+          "details": {
+            "Passages le mardi": "21",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Gare",
+          "details": {
+            "Passages le mardi": "12",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour Haut Plan",
+          "details": {
+            "Passages le mardi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour la Revord",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Echavagnes Area",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour les Maisonnes",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Echavagnes Area",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",
@@ -960,9 +1105,9 @@
           "categorie": "autre"
         },
         {
-          "nom": "Ecole primaire privée Le Dauphin",
-          "lat": 45.152952,
-          "lon": 5.32381,
+          "nom": "Ecole primaire Centre",
+          "lat": 45.152406,
+          "lon": 5.32117,
           "info": "Ecole",
           "categorie": "premier"
         },
@@ -974,18 +1119,11 @@
           "categorie": "second"
         },
         {
-          "nom": "Ecole primaire Centre",
-          "lat": 45.152406,
-          "lon": 5.32117,
+          "nom": "Ecole primaire privée Le Dauphin",
+          "lat": 45.152952,
+          "lon": 5.32381,
           "info": "Ecole",
           "categorie": "premier"
-        },
-        {
-          "nom": "Circonscription d'inspection du 1er degré de Saint Marcellin",
-          "lat": 45.154268,
-          "lon": 5.320337,
-          "info": "Service Administratif",
-          "categorie": "autre"
         },
         {
           "nom": "Ecole maternelle Le Stade",
@@ -995,11 +1133,11 @@
           "categorie": "premier"
         },
         {
-          "nom": "Ecole maternelle Centre",
-          "lat": 45.153239,
-          "lon": 5.31875,
-          "info": "Ecole",
-          "categorie": "premier"
+          "nom": "Circonscription d'inspection du 1er degré de Saint Marcellin",
+          "lat": 45.154268,
+          "lon": 5.320337,
+          "info": "Service Administratif",
+          "categorie": "autre"
         },
         {
           "nom": "Ecole primaire La Plaine",
@@ -1021,6 +1159,13 @@
           "lon": 5.321999,
           "info": "Lycée",
           "categorie": "second"
+        },
+        {
+          "nom": "Ecole maternelle Centre",
+          "lat": 45.153239,
+          "lon": 5.31875,
+          "info": "Ecole",
+          "categorie": "premier"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."

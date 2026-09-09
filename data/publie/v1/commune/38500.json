@@ -102,6 +102,47 @@
         "rubrique": "transports"
       }
     },
+    "TRA-20": {
+      "valeur": "46",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "8 le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "18",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MRC13, MRC15, PBLIA, PTECA, T62",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -652,16 +693,16 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,259 €/L — relevé le 04/09/2026",
             "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
             "SP98": "2,169 €/L — relevé le 04/09/2026",
             "E85": "0,835 €/L — relevé le 04/09/2026",
-            "GPLc": "0,995 €/L — relevé le 01/09/2026",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U",
             "Distance": "4 km du centre de la commune"
           },
           "etat": [
@@ -693,6 +734,219 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Fromagerie",
+          "details": {
+            "Passages le mardi": "11",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Fromagerie",
+          "details": {
+            "Passages le mardi": "10",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Grand Champ",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Grand Champ",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Lotissement Breton",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Maison Brachet",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Maison Puy",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Sarreloups",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Becourt RD1092",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Becourt RD1092",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Chataigniere",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Chataigniere",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Village",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Village",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Montée de Teche",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Montée de Teche",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",

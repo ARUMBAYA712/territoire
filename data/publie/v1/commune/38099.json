@@ -116,6 +116,47 @@
         "rubrique": "transports"
       }
     },
+    "TRA-20": {
+      "valeur": "91",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "aucun le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "47",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MRC02, MRC03, MRC04, PAPPB",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
+    },
     "EAU-01": {
       "valeur": 100.0,
       "unite": "%",
@@ -653,7 +694,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,080 €/L",
@@ -663,6 +704,7 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
@@ -693,6 +735,459 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Les Garennes",
+          "details": {
+            "Passages le mardi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Platres",
+          "details": {
+            "Passages le mardi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Blagneux",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Blagneux",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Chalvin de Blagneux",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Chemin de Messins",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecole",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Intersection des Joux",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Mathieu",
+          "details": {
+            "Passages le mardi": "3"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Aux Pins",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bayannes",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Blagneux Château",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Blagneux Château",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bonaux-Terrifaux",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour Haut Plan",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour Montolivet",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour Montolivet",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour de Murinais",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour la Revord",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Chemin de Messins",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Crois. Porte et Gariolle RD20A",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Girardiere-Flats",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Intersection des Joux",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Croix Rouge",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Combes",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Grands Pains",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Selliers",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Les Selliers",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Porte et Gariolle-Château Rost",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Quiviere",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Aux Pins",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bonaux-Terrifaux",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Bourg",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour de Murinais",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Carrefour les Maisonnes",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Crois. Porte et Gariolle RD20A",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Girardiere-Flats",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "La Croix Rouge",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",

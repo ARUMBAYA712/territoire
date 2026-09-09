@@ -1,0 +1,10 @@
+{
+ "genere_le": "2026-09-09",
+ "version": 1,
+ "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+ "licence": "ODbL 1.0",
+ "frequence": "annuelle",
+ "motif_absence": "le référentiel des gares n'a pas répondu",
+ "communes": {},
+ "territoires": {}
+}

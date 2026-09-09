@@ -96,11 +96,52 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,299 €/L · relevé hier",
+      "repere": "Intermarché · Gazole 2,299 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
       }
+    },
+    "TRA-20": {
+      "valeur": "30",
+      "unite": "passages",
+      "nom": "Cars un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "8 le samedi",
+      "explication": "Nombre d'arrêts marqués par un car sur la commune, tous sens confondus, sur l'offre théorique du 22/09/2026."
+    },
+    "TRA-21": {
+      "valeur": "5",
+      "unite": "",
+      "nom": "Points d'arrêt",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car"
+    },
+    "TRA-22": {
+      "valeur": "MOI01, PCRSA, T62, TUL04",
+      "unite": "",
+      "nom": "Lignes desservantes",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 30,
+      "ancre": "arrets-de-car"
     },
     "EAU-01": {
       "valeur": 100.0,
@@ -606,13 +647,14 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Tullins (hors territoire)",
+          "titre": "Intermarché — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,299 €/L",
             "SP95-E10": "2,109 €/L",
             "SP98": "2,219 €/L",
             "Adresse": "Avenue de la Contamine, Tullins",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Intermarché",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
@@ -622,7 +664,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Tullins (hors territoire)",
+          "titre": "Avia — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,349 €/L — relevé le 05/09/2026",
             "SP95-E10": "2,229 €/L",
@@ -630,6 +672,7 @@
             "Adresse": "Route de Saint-Quentin, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Avia",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
@@ -639,7 +682,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Tullins (hors territoire)",
+          "titre": "Carrefour — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,119 €/L",
@@ -647,6 +690,7 @@
             "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Carrefour",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
@@ -661,6 +705,76 @@
         "libelle": "Consulter la source"
       },
       "note": "Prix déclarés par les distributeurs sur le portail national, et repris tels quels. Les stations qui ne sont pas sur la commune, à moins de 15 km, sont signalées comme telles avec leur distance : elles sont là pour la comparaison, pas pour gonfler le décompte. Un relevé de plus de 8 jours n'est pas publié ; au-delà de 3 jours, sa date est écrite."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "id": "arrets-de-car",
+      "titre": "Arrêts d'autocar",
+      "items": [
+        {
+          "titre": "Les Essarts",
+          "details": {
+            "Passages le mardi": "12",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "RN92-Route de Poliénas",
+          "details": {
+            "Passages le mardi": "11",
+            "Passages le samedi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Ecoles",
+          "details": {
+            "Passages le mardi": "4"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Bourg",
+          "details": {
+            "Passages le mardi": "2"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        },
+        {
+          "titre": "Le Bourg",
+          "details": {
+            "Passages le mardi": "1"
+          },
+          "etat": [
+            "Desservi",
+            "neutre"
+          ],
+          "texte": ""
+        }
+      ],
+      "lien": {
+        "url": "https://transport.data.gouv.fr/datasets/reseau-interurbain-isere-38",
+        "libelle": "Consulter la source"
+      },
+      "note": "Passages comptés sur l'offre théorique publiée par le réseau : le mardi 22/09/2026 et le samedi 19/09/2026. Un passage est un arrêt marqué par un car, tous sens confondus. Les services scolaires ne sont pas distingués des lignes ouvertes à tous : le chiffre du mardi les comprend."
     },
     {
       "rubrique": "environnement",

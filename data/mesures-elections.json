@@ -1,0 +1,10 @@
+{
+ "genere_le": "2026-09-09",
+ "version": 1,
+ "source": "Ministère de l'Intérieur — résultats électoraux par commune (data.gouv.fr)",
+ "licence": "Licence Ouverte 2.0",
+ "frequence": "annuelle",
+ "motif_absence": "aucun scrutin n'a pu être lu",
+ "communes": {},
+ "territoires": {}
+}

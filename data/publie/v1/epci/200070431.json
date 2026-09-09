@@ -476,7 +476,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Chatte · relevé aujourd'hui",
+      "repere": "E.Leclerc à Chatte · relevé aujourd'hui",
       "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
       "aussi": {
         "rubrique": "transports"
@@ -508,6 +508,35 @@
       "rang": 30,
       "ancre": "stations-service",
       "explication": "Stations-service déclarant leurs prix au portail national. Une station qui ne les déclare pas n'y figure pas. Les stations voisines sont nommées sur la page de chaque commune, non ici."
+    },
+    "TRA-23": {
+      "valeur": "46 sur 47",
+      "unite": "",
+      "nom": "Communes desservies un mardi",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 10,
+      "ancre": "arrets-de-car",
+      "repere": "46 pourvues d'un arrêt · 888 points d'arrêt",
+      "explication": "Communes où au moins un car marque l'arrêt le jour de référence. Une commune peut compter un point d'arrêt sans être desservie ce jour-là."
+    },
+    "TRA-24": {
+      "valeur": "2163",
+      "unite": "passages",
+      "nom": "Cars un mardi sur le territoire",
+      "obtention": "recalculé",
+      "source": "cars Région Isère — offre théorique GTFS (transport.data.gouv.fr)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "autocar",
+      "rang": 20,
+      "ancre": "arrets-de-car",
+      "repere": "60 ligne(s)"
     },
     "MET-10": {
       "valeur": 13.52,
@@ -702,7 +731,7 @@
       "titre": "Stations-service et prix relevés",
       "items": [
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,080 €/L",
@@ -711,7 +740,8 @@
             "GPLc": "1,067 €/L",
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "E85 (définitivement)"
+            "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc"
           },
           "etat": [
             "Relevé aujourd'hui",
@@ -735,16 +765,16 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,259 €/L — relevé le 04/09/2026",
             "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
             "SP98": "2,169 €/L — relevé le 04/09/2026",
             "E85": "0,835 €/L — relevé le 04/09/2026",
-            "GPLc": "0,995 €/L — relevé le 01/09/2026",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement)"
+            "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U"
           },
           "etat": [
             "Relevé il y a 5 jours",
@@ -753,16 +783,17 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Saint-Just-de-Claix",
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,267 €/L",
             "SP95-E10": "2,129 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

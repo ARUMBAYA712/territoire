@@ -1,0 +1,30 @@
+# Manifeste — jeu complet des scripts
+# Sud Grésiv', 9 septembre 2026
+#
+# Les 22 fichiers de ce paquet forment un ensemble cohérent :
+# lancer.py attend exactement ces versions et refuse de partir
+# si l'une manque. Remplacez-les TOUS, sans en garder aucun.
+
+fichier                 version
+01_referentiel.py       1
+02_canton.py            2
+03_agregation.py        5
+04_generation.py        37
+05_cartes.py            3
+06_eau.py               4
+07_vigieau.py           4
+08_georisques.py        11
+09_nappes.py            3
+10_ecoles.py            5
+11_population.py        5
+12_rivieres.py          6
+13_hivernal.py          2
+14_vigilance.py         2
+15_elus.py              2
+16_bio.py               4
+17_climat.py            1
+18_carburants.py        4
+19_gares.py             1
+20_cars.py              2
+21_elections.py         1
+lancer.py               —  (le lanceur)

@@ -160,6 +160,10 @@ Applicable les soirs de scrutin uniquement. Le reste du temps, la rubrique
 | EF-41 | Faire porter à chaque valeur sa source, sa licence et la date de génération. |
 | EF-42 | Ne publier aucune valeur mise en forme : la présentation appartient au site qui affiche. |
 | EF-43 | Conserver la stabilité des identifiants d'indicateurs, qui constituent le contrat. |
+| EF-44 | Afficher sur chaque page les licences **réellement présentes dans la collecte**, relevées à partir de ce que les collecteurs déclarent. Aucune licence ne doit être écrite en dur dans une page. |
+| EF-45 | Dire dans les mentions légales quelle licence couvre quelle famille de sources, et signaler l'obligation de partage à l'identique là où elle s'applique. |
+| EF-46 | Ne publier un nom, une enseigne ou un rattachement issus d'un rapprochement géométrique que sous un seuil de distance vérifié, et ne rien publier au-delà. |
+| EF-47 | Quand une donnée manque pour trancher un critère, inventorier et le dire, plutôt que supposer. Un mode d'inspection dédié tient lieu de réponse provisoire. |
 
 ---
 
@@ -291,6 +295,11 @@ Toutes les sources sont publiques, gratuites et sans clé d'API.
 | Diffusion du direct | Fichiers de données rafraîchis, page qui interroge la même origine | Régénération complète du site à chaque relève | 250 pages régénérées toutes les dix minutes pour quelques chiffres qui changent |
 | Mesure d'audience | Google Analytics soumis au consentement | Google Analytics sans bandeau ; compteur maison sans cookie ; aucune mesure | Un traceur non nécessaire au service exige le consentement, article 82 de la loi Informatique et Libertés. Le poser sans bandeau rendait fausses les mentions légales du site. Le compteur maison évitait le bandeau mais n'aurait pas donné les analyses attendues |
 | Rubrique décidée, sans donnée | Page d'annonce indexable | Aucune page jusqu'à la donnée, conformément à EF-16 | L'exploration puis l'indexation d'une adresse prennent des semaines : les engager d'avance fait gagner ce délai. Réserve assumée : quarante-sept pages au texte identique sont le schéma que les moteurs déclassent, d'où l'obligation de faits propres à chaque territoire |
+| Licences des sources | Affichage source par source, construit sur la collecte | Licence unique annoncée en pied de page | L'arrivée des données de transport, sous ODbL, a rendu fausse l'annonce « Licence Ouverte 2.0 » qui couvrait tout. L'ODbL impose le partage à l'identique des bases dérivées, et le site publie ses fiches en téléchargement : annoncer une licence unique aurait été inexact dans un sens ou dans l'autre |
+| Enseignes des stations-service | OpenStreetMap sous un seuil de 150 m, saisie manuelle prioritaire | Nœud le plus proche sans seuil ; renoncer aux enseignes | Aucun jeu officiel ne porte l'enseigne : l'arrêté de 2006 impose de déclarer les prix, pas le nom commercial. Sans seuil, deux stations sur six auraient hérité de l'enseigne d'un voisin situé à sept cents mètres |
+| Transport scolaire dans la desserte | Inventaire des lignes avant tout filtre | Motif de nom deviné | Le GTFS ne porte aucun champ normalisé distinguant le scolaire. Un filtre inventé fausserait la desserte des petites communes d'un facteur deux ou trois, sans que rien ne le signale |
+| Volume des fichiers électoraux | Lecture partielle par requêtes Range, bloc départemental | Téléchargement complet ; API tabulaire de data.gouv.fr | 1,2 Mo au lieu de 75 pour l'Isère, mesuré. L'API tabulaire déclare ces ressources supprimées alors qu'elles se téléchargent : elle n'indexe pas les fichiers à nombre de colonnes variable |
+| Détail des résultats hors municipales | Participation seule | Détail des candidats sur tous les scrutins | Quatre colonnes sont communes à tous les fichiers ; le reste change de nom et de forme d'un scrutin à l'autre. Lire le détail partout aurait multiplié les cas particuliers sans gain proportionné |
 | Prix des carburants sur un site statique | Prix de la dernière génération, horodatage affiché | Interrogation du flux en direct comme dans l'application Carbu | Un site statique ne peut pas interroger une source à l'ouverture ; la différence de nature est dite au visiteur plutôt que masquée |
 
 ---
