@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-09",
+  "genere_le": "2026-09-10",
   "territoire": {
     "niveau": "canton",
     "code": "3823",
@@ -768,7 +768,7 @@
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

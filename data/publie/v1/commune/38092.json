@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-09",
+  "genere_le": "2026-09-10",
   "territoire": {
     "niveau": "commune",
     "code": "38092",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 5 jours",
+      "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -644,7 +644,7 @@
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 5 jours",
+            "Relevé il y a 6 jours",
             "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1238,7 +1238,7 @@
           }
         }
       ],
-      "note": "Situation au 09/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
