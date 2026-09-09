@@ -1,0 +1,74 @@
+# sources mensuelles — plan « --mensuel »
+#
+# Eau potable, risques, écoles, arrêté hivernal, climat, autocars. Le 2 du mois : le 1er, les producteurs n'ont pas toujours fini de publier.
+#
+# L'ordre des scripts n'est PAS écrit ici : il vit dans lancer.py, et
+# nulle part ailleurs. Un fichier de tâche planifiée qui énumérerait
+# lui-même les collecteurs finirait par diverger du lanceur sans que
+# personne ne le voie.
+
+name: Collecte — sources mensuelles
+
+on:
+  schedule:
+    - cron: "0 3 2 * *"
+  # Permet de lancer ce plan à la main depuis l'onglet Actions. C'est
+  # aussi ce qui remet le compteur des soixante jours à zéro : GitHub
+  # désactive les tâches planifiées d'un dépôt resté sans activité
+  # humaine, et les commits de la tâche elle-même ne comptent pas.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Les quatre plans écrivent dans le même dépôt. Sans ce garde-fou, deux
+# exécutions qui se chevauchent produiraient un conflit de poussée.
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Les collecteurs n'emploient que la bibliothèque standard : il
+      # n'y a rien à installer. C'est une contrainte du projet, et elle
+      # se paie ici en simplicité.
+
+      - name: Rétablir la clé Météo-France
+        if: env.CLE_METEOFRANCE != ''
+        env:
+          CLE_METEOFRANCE: ${{ secrets.CLE_METEOFRANCE }}
+        run: |
+          mkdir -p data
+          printf '%s' "$CLE_METEOFRANCE" > data/cle-meteofrance.json
+
+      - name: Collecter et publier
+        run: python lancer.py --mensuel
+
+      - name: Enregistrer ce qui a changé
+        run: |
+          git config user.name  "Collecte automatique"
+          git config user.email "actions@users.noreply.github.com"
+          # Rien à valider : le cas est normal, pas une panne. Une
+          # source qui n'a pas bougé ne doit pas produire de commit.
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Aucun changement — rien à valider."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Collecte mensuel du $(date -u +%d/%m/%Y)"
+          # Quelqu'un a pu pousser entre-temps : on se replace derrière
+          # lui plutôt que de refuser ou d'écraser.
+          git pull --rebase --autostash
+          git push
