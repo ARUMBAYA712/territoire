@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-09",
+  "genere_le": "2026-09-10",
   "territoire": {
     "niveau": "commune",
     "code": "38338",
@@ -96,7 +96,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+      "repere": "Super U · Gazole 2,279 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -664,10 +664,10 @@
         {
           "titre": "Super U — Vinay",
           "details": {
-            "Gazole": "2,259 €/L — relevé le 04/09/2026",
-            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-            "SP98": "2,169 €/L — relevé le 04/09/2026",
-            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "Gazole": "2,279 €/L",
+            "SP95-E10": "2,149 €/L",
+            "SP98": "2,229 €/L",
+            "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
@@ -675,8 +675,8 @@
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 5 jours",
-            "attention"
+            "Relevé aujourd'hui",
+            "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
@@ -701,7 +701,7 @@
         {
           "titre": "Avia — Tullins (hors territoire)",
           "details": {
-            "Gazole": "2,349 €/L — relevé le 05/09/2026",
+            "Gazole": "2,389 €/L",
             "SP95-E10": "2,229 €/L",
             "SP98": "2,309 €/L",
             "Adresse": "Route de Saint-Quentin, Tullins",
@@ -711,7 +711,7 @@
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1230,7 +1230,7 @@
           }
         }
       ],
-      "note": "Situation au 09/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
