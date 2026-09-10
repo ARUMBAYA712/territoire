@@ -100,7 +100,7 @@
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
     "CAR-04": {
-      "valeur": "Vinay, à 4 km",
+      "valeur": "Vinay, à 2 km",
       "unite": "",
       "nom": "Station la plus proche",
       "obtention": "natif",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Super U · Gazole 2,279 €/L · relevé aujourd'hui",
+      "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -707,6 +707,22 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total",
+            "Distance": "2 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,279 €/L",
@@ -737,25 +753,7 @@
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
-            "neutre"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Carrefour — Tullins (hors territoire)",
-          "details": {
-            "Gazole": "2,279 €/L",
-            "SP95-E10": "2,119 €/L",
-            "SP98": "2,229 €/L",
-            "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Carrefour",
-            "Distance": "9 km du centre de la commune"
-          },
-          "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Intermarché · Gazole 2,252 €/L · relevé aujourd'hui",
+      "repere": "Intermarché · Gazole 2,260 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -695,10 +695,10 @@
         {
           "titre": "Intermarché — Villard-de-Lans (hors territoire)",
           "details": {
-            "Gazole": "2,252 €/L",
-            "SP95-E10": "2,061 €/L",
-            "SP95": "2,119 €/L",
-            "SP98": "2,181 €/L",
+            "Gazole": "2,260 €/L",
+            "SP95-E10": "2,083 €/L",
+            "SP95": "2,138 €/L",
+            "SP98": "2,185 €/L",
             "Adresse": "190 Rue des Machurons Zone des Geymonds, Villard-de-Lans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement)",
@@ -723,7 +723,7 @@
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

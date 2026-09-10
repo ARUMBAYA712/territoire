@@ -86,7 +86,7 @@
       "explication": "Exploitations engagées en agriculture biologique, qu'elles disposent ou non de surfaces cultivées."
     },
     "CAR-01": {
-      "valeur": "2,267",
+      "valeur": "2,256",
       "unite": "€/L",
       "nom": "Gazole",
       "obtention": "natif",
@@ -96,7 +96,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Quartier Clairivaux · relevé il y a 2 jours",
+      "repere": "Comptoir Énergie · Quartier Clairivaux · relevé aujourd'hui",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -721,15 +721,15 @@
         {
           "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
-            "Gazole": "2,267 €/L",
-            "SP95-E10": "2,129 €/L",
+            "Gazole": "2,256 €/L",
+            "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
             "Enseigne": "Comptoir Énergie"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -737,7 +737,7 @@
         {
           "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
           "details": {
-            "Gazole": "2,310 €/L",
+            "Gazole": "2,330 €/L",
             "SP95": "2,210 €/L",
             "SP98": "2,240 €/L",
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -764,7 +764,7 @@
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -782,7 +782,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

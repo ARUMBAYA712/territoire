@@ -100,7 +100,7 @@
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
     "CAR-01": {
-      "valeur": "2,279",
+      "valeur": "2,250",
       "unite": "€/L",
       "nom": "Gazole",
       "obtention": "natif",
@@ -110,16 +110,16 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Super U · 251, Rue de l'Europe · relevé aujourd'hui",
+      "repere": "Total · 2375 ROUTE DE GRENOBLE · relevé aujourd'hui",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
       }
     },
     "CAR-03": {
-      "valeur": "1",
+      "valeur": "2",
       "unite": "",
-      "nom": "Station sur la commune",
+      "nom": "Stations sur la commune",
       "obtention": "natif",
       "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
       "licence": "Licence Ouverte 2.0",
@@ -748,6 +748,21 @@
       "titre": "Stations-service de la commune",
       "items": [
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,279 €/L",
@@ -776,7 +791,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -810,7 +825,7 @@
             "Distance": "11 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

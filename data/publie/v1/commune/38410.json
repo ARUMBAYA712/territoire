@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
+      "repere": "Total · Gazole 2,250 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -719,7 +719,7 @@
             "Distance": "4 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -727,8 +727,8 @@
         {
           "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
-            "Gazole": "2,267 €/L",
-            "SP95-E10": "2,129 €/L",
+            "Gazole": "2,256 €/L",
+            "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -736,7 +736,7 @@
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -747,7 +747,7 @@
             "Gazole": "2,249 €/L",
             "SP95-E10": "2,065 €/L",
             "SP95": "2,128 €/L",
-            "SP98": "2,148 €/L",
+            "SP98": "2,132 €/L",
             "E85": "0,824 €/L",
             "GPLc": "1,038 €/L",
             "Adresse": "95 RUE CLAIR, Saint-Paul-lès-Romans",

@@ -696,6 +696,22 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total",
+            "Distance": "9 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Intermarché — Saint-Siméon-de-Bressieux (hors territoire)",
           "details": {
             "Gazole": "2,299 €/L",
@@ -707,26 +723,7 @@
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
-            "neutre"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Super U — Saint-Étienne-de-Saint-Geoirs (hors territoire)",
-          "details": {
-            "Gazole": "2,279 €/L",
-            "SP95-E10": "2,149 €/L",
-            "SP98": "2,229 €/L",
-            "E85": "0,839 €/L",
-            "Adresse": "2 CHEMIN DE LA PIERRE ZONE COMMERCIALE, Saint-Étienne-de-Saint-Geoirs",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Super U",
-            "Distance": "10 km du centre de la commune"
-          },
-          "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

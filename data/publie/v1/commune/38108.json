@@ -637,7 +637,7 @@
         {
           "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
           "details": {
-            "Gazole": "2,310 €/L",
+            "Gazole": "2,330 €/L",
             "SP95": "2,210 €/L",
             "SP98": "2,240 €/L",
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -663,7 +663,7 @@
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

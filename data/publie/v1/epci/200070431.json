@@ -466,7 +466,7 @@
       "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "CAR-01": {
-      "valeur": "2,256",
+      "valeur": "2,250",
       "unite": "€/L",
       "nom": "Gazole le moins cher",
       "obtention": "natif",
@@ -476,14 +476,14 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "E.Leclerc à Chatte · relevé aujourd'hui",
+      "repere": "Total à Vinay · relevé aujourd'hui",
       "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
       "aussi": {
         "rubrique": "transports"
       }
     },
     "CAR-02": {
-      "valeur": "0,063",
+      "valeur": "0,069",
       "unite": "€/L",
       "nom": "Écart entre stations du territoire",
       "obtention": "natif",
@@ -493,11 +493,11 @@
       "rubrique": "carburants",
       "rang": 20,
       "ancre": "stations-service",
-      "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+      "repere": "de Vinay à Saint-Marcellin · 3 € sur un plein de 50 litres",
       "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
-      "valeur": "5",
+      "valeur": "6",
       "unite": "",
       "nom": "Stations sur le territoire",
       "obtention": "natif",
@@ -731,6 +731,21 @@
       "titre": "Stations-service et prix relevés",
       "items": [
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
@@ -750,6 +765,22 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "details": {
+            "Gazole": "2,256 €/L",
+            "SP95-E10": "2,119 €/L",
+            "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Saint-Sauveur",
           "details": {
             "Gazole": "2,256 €/L",
@@ -757,22 +788,6 @@
             "SP98": "2,173 €/L",
             "Adresse": "28, route de Grenoble, Saint-Sauveur",
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
-          },
-          "etat": [
-            "Relevé hier",
-            "neutre"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
-          "details": {
-            "Gazole": "2,267 €/L",
-            "SP95-E10": "2,129 €/L",
-            "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie"
           },
           "etat": [
             "Relevé il y a 2 jours",

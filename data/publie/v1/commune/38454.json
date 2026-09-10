@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "28, route de Grenoble · relevé hier",
+      "repere": "28, route de Grenoble · relevé il y a 2 jours",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -728,7 +728,7 @@
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

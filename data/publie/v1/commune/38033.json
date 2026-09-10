@@ -681,6 +681,22 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total",
+            "Distance": "4 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Saint-Sauveur",
           "details": {
             "Gazole": "2,256 €/L",
@@ -689,23 +705,6 @@
             "Adresse": "28, route de Grenoble, Saint-Sauveur",
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
             "Distance": "5 km du centre de la commune"
-          },
-          "etat": [
-            "Relevé hier",
-            "neutre"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Saint-Marcellin",
-          "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
-            "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-            "Distance": "8 km du centre de la commune"
           },
           "etat": [
             "Relevé il y a 2 jours",
