@@ -797,7 +797,11 @@
             "Enseigne": "Super U"
           },
           "etat": [
+<<<<<<< HEAD
             "Relevé hier",
+=======
+            "Relevé aujourd'hui",
+>>>>>>> 2e79a4cef9e536aeaa23718826604b06f5d17e40
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

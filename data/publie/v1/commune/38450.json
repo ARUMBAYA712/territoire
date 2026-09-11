@@ -91,7 +91,11 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
+<<<<<<< HEAD
       "repere": "Carrefour · Gazole 2,289 €/L · relevé aujourd'hui",
+=======
+      "repere": "Carrefour · Gazole 2,279 €/L · relevé hier",
+>>>>>>> 2e79a4cef9e536aeaa23718826604b06f5d17e40
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -729,7 +733,7 @@
             "Distance": "4 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

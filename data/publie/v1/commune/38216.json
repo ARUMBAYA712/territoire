@@ -96,7 +96,11 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
+<<<<<<< HEAD
       "repere": "Super U · Gazole 2,279 €/L · relevé hier",
+=======
+      "repere": "Super U · Gazole 2,279 €/L · relevé aujourd'hui",
+>>>>>>> 2e79a4cef9e536aeaa23718826604b06f5d17e40
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -630,7 +634,11 @@
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
+<<<<<<< HEAD
             "Relevé hier",
+=======
+            "Relevé aujourd'hui",
+>>>>>>> 2e79a4cef9e536aeaa23718826604b06f5d17e40
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
