@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Garage Magnan · Gazole 2,330 €/L · relevé aujourd'hui",
+      "repere": "Gazole 2,330 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -707,7 +707,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
+          "titre": "Saint-Laurent-en-Royans (hors territoire)",
           "details": {
             "Gazole": "2,330 €/L",
             "SP95": "2,210 €/L",
@@ -715,28 +715,26 @@
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
-            "Enseigne": "Garage Magnan",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "titre": "Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -744,8 +742,8 @@
         {
           "titre": "Saint-Jean-en-Royans (hors territoire)",
           "details": {
-            "Gazole": "2,269 €/L",
-            "SP95": "2,109 €/L",
+            "Gazole": "2,269 €/L — relevé le 08/09/2026",
+            "SP95": "2,109 €/L — relevé le 08/09/2026",
             "SP98": "2,149 €/L — relevé le 04/09/2026",
             "E85": "0,839 €/L — relevé le 04/09/2026",
             "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
@@ -753,8 +751,8 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
-            "neutre"
+            "Relevé il y a 3 jours",
+            "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         }

@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
+      "repere": "Gazole 2,282 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -632,33 +632,14 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
+          "titre": "Saint-Martin-en-Vercors (hors territoire)",
           "details": {
-            "Gazole": "2,267 €/L — relevé le 03/09/2026",
-            "SP95": "2,117 €/L — relevé le 03/09/2026",
+            "Gazole": "2,282 €/L",
+            "SP95": "2,155 €/L",
             "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
-            "Enseigne": "Comptoir Énergie",
             "Distance": "7 km du centre de la commune"
-          },
-          "etat": [
-            "Relevé il y a 7 jours",
-            "attention"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
-          "details": {
-            "Gazole": "2,330 €/L",
-            "SP95": "2,210 €/L",
-            "SP98": "2,240 €/L",
-            "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
-            "Enseigne": "Garage Magnan",
-            "Distance": "8 km du centre de la commune"
           },
           "etat": [
             "Relevé aujourd'hui",
@@ -667,17 +648,34 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
+          "titre": "Saint-Laurent-en-Royans (hors territoire)",
+          "details": {
+            "Gazole": "2,330 €/L",
+            "SP95": "2,210 €/L",
+            "SP98": "2,240 €/L",
+            "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+            "Distance": "8 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé hier",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Saint-Sauveur",
           "details": {
-            "Gazole": "2,256 €/L",
-            "SP95-E10": "2,080 €/L",
-            "SP98": "2,173 €/L",
+            "Gazole": "2,256 €/L — relevé le 08/09/2026",
+            "SP95-E10": "2,086 €/L",
+            "SP98": "2,173 €/L — relevé le 08/09/2026",
             "Adresse": "28, route de Grenoble, Saint-Sauveur",
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

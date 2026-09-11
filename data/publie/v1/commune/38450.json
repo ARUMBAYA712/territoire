@@ -91,11 +91,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-<<<<<<< HEAD
-      "repere": "Carrefour · Gazole 2,289 €/L · relevé aujourd'hui",
-=======
-      "repere": "Carrefour · Gazole 2,279 €/L · relevé hier",
->>>>>>> 2e79a4cef9e536aeaa23718826604b06f5d17e40
+      "repere": "Gazole 2,289 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -721,7 +717,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Carrefour — Tullins (hors territoire)",
+          "titre": "Tullins (hors territoire)",
           "details": {
             "Gazole": "2,289 €/L",
             "SP95-E10": "2,129 €/L",
@@ -729,17 +725,16 @@
             "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Carrefour",
             "Distance": "4 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Avia — Tullins (hors territoire)",
+          "titre": "Tullins (hors territoire)",
           "details": {
             "Gazole": "2,389 €/L",
             "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
@@ -747,7 +742,6 @@
             "Adresse": "Route de Saint-Quentin, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Avia",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
@@ -757,19 +751,18 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Esso — Veurey-Voroize (hors territoire)",
+          "titre": "Veurey-Voroize (hors territoire)",
           "details": {
             "Gazole": "2,397 €/L",
             "SP95-E10": "2,250 €/L",
-            "SP98": "2,290 €/L",
+            "SP98": "2,360 €/L",
             "Adresse": "Route de Valence, Veurey-Voroize",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Esso",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
