@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38272",
@@ -710,16 +710,16 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1349,7 +1349,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Nappes de Chambaran",
+            "Zone d'alerte": "Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -1399,7 +1399,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

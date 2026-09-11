@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "canton",
     "code": "3823",
@@ -470,7 +470,7 @@
       }
     },
     "CAR-02": {
-      "valeur": "0,069",
+      "valeur": "0,109",
       "unite": "€/L",
       "nom": "Écart entre stations du territoire",
       "obtention": "natif",
@@ -480,7 +480,7 @@
       "rubrique": "carburants",
       "rang": 20,
       "ancre": "stations-service",
-      "repere": "de Vinay à Saint-Marcellin · 3 € sur un plein de 50 litres",
+      "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
       "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
@@ -775,15 +775,15 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

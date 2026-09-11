@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-10",
+ "genere_le": "2026-09-11",
  "version": 1,
  "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr) · OpenStreetMap — enseignes des stations (contributeurs OSM)",
  "licence": [
@@ -7,7 +7,7 @@
   "ODbL 1.0"
  ],
  "frequence": "quotidienne",
- "releve_le": "2026-09-10T15:24+00:00",
+ "releve_le": "2026-09-11T05:23+00:00",
  "communes": {
   "38004": {
    "mesures": {
@@ -334,16 +334,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -370,7 +370,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -386,16 +386,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -632,7 +632,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -657,7 +657,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -766,16 +766,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -835,7 +835,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -851,16 +851,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -923,7 +923,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -948,7 +948,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1129,8 +1129,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1138,7 +1138,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1234,16 +1234,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1392,16 +1392,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1499,8 +1499,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1508,7 +1508,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1569,8 +1569,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1578,7 +1578,7 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1655,16 +1655,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2057,7 +2057,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2082,7 +2082,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2293,7 +2293,7 @@
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2581,7 +2581,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2597,16 +2597,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2669,7 +2669,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2685,16 +2685,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3220,7 +3220,7 @@
   "38416": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,319",
+     "valeur": "2,359",
      "unite": "€/L",
      "nom": "Gazole",
      "obtention": "natif",
@@ -3230,7 +3230,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "2 avenue de ROMANS · relevé il y a 2 jours",
+     "repere": "2 avenue de ROMANS · relevé aujourd'hui",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -3258,15 +3258,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3400,16 +3400,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3471,8 +3471,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -3480,7 +3480,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3561,16 +3561,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3657,16 +3657,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3764,16 +3764,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3856,16 +3856,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3960,16 +3960,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4246,16 +4246,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4308,7 +4308,7 @@
      }
     },
     "CAR-02": {
-     "valeur": "0,069",
+     "valeur": "0,109",
      "unite": "€/L",
      "nom": "Écart entre stations du territoire",
      "obtention": "natif",
@@ -4318,7 +4318,7 @@
      "rubrique": "carburants",
      "rang": 20,
      "ancre": "stations-service",
-     "repere": "de Vinay à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
      "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
@@ -4427,15 +4427,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4469,7 +4469,7 @@
      }
     },
     "CAR-02": {
-     "valeur": "0,069",
+     "valeur": "0,109",
      "unite": "€/L",
      "nom": "Écart entre stations du territoire",
      "obtention": "natif",
@@ -4479,7 +4479,7 @@
      "rubrique": "carburants",
      "rang": 20,
      "ancre": "stations-service",
-     "repere": "de Vinay à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
      "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
@@ -4588,15 +4588,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
