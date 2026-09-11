@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-10",
+ "genere_le": "2026-09-11",
  "version": 1,
  "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr) · OpenStreetMap — enseignes des stations (contributeurs OSM)",
  "licence": [
@@ -7,12 +7,12 @@
   "ODbL 1.0"
  ],
  "frequence": "quotidienne",
- "releve_le": "2026-09-09T22:07+00:00",
+ "releve_le": "2026-09-11T07:27+00:00",
  "communes": {
   "38004": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 4 km",
+     "valeur": "Vinay, à 2 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -22,7 +22,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -36,12 +36,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -49,8 +65,8 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -66,25 +82,7 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Carrefour — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
-        "SP98": "2,229 €/L",
-        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Carrefour",
-        "Distance": "9 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -111,7 +109,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -127,8 +125,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -136,7 +134,7 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -144,7 +142,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -171,7 +169,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -198,7 +196,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -214,10 +212,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -225,8 +223,24 @@
         "Distance": "2 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -239,23 +253,6 @@
         "Adresse": "28, route de Grenoble, Saint-Sauveur",
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Marcellin",
-       "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
-        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Distance": "8 km du centre de la commune"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -329,7 +326,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -337,16 +334,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -373,7 +370,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -389,16 +386,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -434,7 +431,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -451,7 +448,7 @@
   "38074": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 5 km",
+     "valeur": "Vinay, à 3 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -461,7 +458,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -475,12 +472,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -488,8 +501,8 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -505,25 +518,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Avia — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
-        "Distance": "7 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -550,7 +545,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -566,10 +561,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -577,8 +572,24 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -594,27 +605,8 @@
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Super U — Saint-Étienne-de-Saint-Geoirs (hors territoire)",
-       "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
-        "Adresse": "2 CHEMIN DE LA PIERRE ZONE COMMERCIALE, Saint-Étienne-de-Saint-Geoirs",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Super U",
-        "Distance": "10 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       }
@@ -640,7 +632,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -665,7 +657,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -673,7 +665,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -700,7 +692,7 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -774,16 +766,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -799,7 +791,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -807,8 +799,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -816,7 +808,7 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -843,7 +835,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -859,16 +851,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -904,7 +896,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -931,7 +923,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -956,7 +948,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -964,7 +956,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -990,7 +982,7 @@
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1017,7 +1009,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1033,10 +1025,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1044,8 +1036,8 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -1060,24 +1052,23 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Marcellin",
+       "titre": "Total — Vinay",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
-        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Distance": "8 km du centre de la commune"
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1104,7 +1095,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Intermarché · Gazole 2,299 €/L · relevé hier",
+     "repere": "Intermarché · Gazole 2,299 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1129,7 +1120,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1138,8 +1129,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1147,7 +1138,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1155,8 +1146,8 @@
       {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -1192,7 +1183,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé hier",
+     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1216,7 +1207,7 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1224,10 +1215,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1235,24 +1226,24 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1279,7 +1270,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1295,10 +1286,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1306,8 +1297,24 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -1320,23 +1327,6 @@
         "Adresse": "28, route de Grenoble, Saint-Sauveur",
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Marcellin",
-       "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
-        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Distance": "10 km du centre de la commune"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -1402,16 +1392,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1421,15 +1411,14 @@
        "details": {
         "Gazole": "2,250 €/L",
         "SP95-E10": "1,990 €/L",
-        "SP98": "1,990 €/L",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
         "Enseigne": "Total",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1456,7 +1445,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Esso · Gazole 2,397 €/L · relevé aujourd'hui",
+     "repere": "Esso · Gazole 2,397 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1482,7 +1471,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1490,8 +1479,8 @@
       {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -1509,8 +1498,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1518,7 +1507,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1545,7 +1534,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Intermarché · Gazole 2,299 €/L · relevé hier",
+     "repere": "Intermarché · Gazole 2,299 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1570,7 +1559,7 @@
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1579,8 +1568,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -1588,7 +1577,7 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1596,8 +1585,8 @@
       {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -1633,7 +1622,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé hier",
+     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1657,7 +1646,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1665,16 +1654,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1682,10 +1671,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1693,8 +1682,8 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       }
@@ -1720,7 +1709,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1734,12 +1723,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1747,8 +1752,8 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -1762,22 +1767,6 @@
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Enseigne": "Intermarché",
         "Distance": "10 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Sauveur",
-       "details": {
-        "Gazole": "2,256 €/L",
-        "SP95-E10": "2,080 €/L",
-        "SP98": "2,173 €/L",
-        "Adresse": "28, route de Grenoble, Saint-Sauveur",
-        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-        "Distance": "11 km du centre de la commune"
        },
        "etat": [
         "Relevé hier",
@@ -1797,7 +1786,7 @@
   "38278": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 4 km",
+     "valeur": "Vinay, à 3 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -1807,7 +1796,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1821,12 +1810,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -1834,8 +1839,8 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -1851,25 +1856,7 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Avia — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
-        "Distance": "10 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1886,7 +1873,7 @@
   "38310": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Tullins, à 6 km",
+     "valeur": "Vinay, à 5 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -1896,7 +1883,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Carrefour · Gazole 2,279 €/L · relevé aujourd'hui",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1910,10 +1897,26 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -1939,25 +1942,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Avia — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
-        "Distance": "6 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1984,7 +1969,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Garage Magnan · Gazole 2,310 €/L · relevé aujourd'hui",
+     "repere": "Garage Magnan · Gazole 2,330 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2000,7 +1985,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -2018,8 +2003,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -2027,7 +2012,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2044,7 +2029,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2071,7 +2056,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2096,7 +2081,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2112,7 +2097,7 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2149,7 +2134,7 @@
   "38330": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Tullins, à 8 km",
+     "valeur": "Vinay, à 7 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -2159,7 +2144,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Intermarché · Gazole 2,299 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2173,6 +2158,22 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,299 €/L",
@@ -2184,7 +2185,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2192,10 +2193,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -2203,25 +2204,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Avia — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
-        "Distance": "9 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2248,7 +2231,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Intermarché · Gazole 2,252 €/L · relevé aujourd'hui",
+     "repere": "Intermarché · Gazole 2,260 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2264,10 +2247,10 @@
       {
        "titre": "Intermarché — Villard-de-Lans (hors territoire)",
        "details": {
-        "Gazole": "2,252 €/L",
-        "SP95-E10": "2,061 €/L",
-        "SP95": "2,119 €/L",
-        "SP98": "2,181 €/L",
+        "Gazole": "2,260 €/L",
+        "SP95-E10": "2,083 €/L",
+        "SP95": "2,138 €/L",
+        "SP98": "2,185 €/L",
         "Adresse": "190 Rue des Machurons Zone des Geymonds, Villard-de-Lans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement)",
@@ -2283,16 +2266,16 @@
       {
        "titre": "Avia — Villard-de-Lans (hors territoire)",
        "details": {
-        "Gazole": "2,309 €/L",
-        "SP95": "2,179 €/L",
-        "SP98": "2,219 €/L",
+        "Gazole": "2,349 €/L",
+        "SP95": "2,229 €/L",
+        "SP98": "2,269 €/L",
         "Adresse": "531 AVENUE DU GENERAL DE GAULLE, Villard-de-Lans",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement)",
         "Enseigne": "Avia",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2309,7 +2292,7 @@
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 6 jours",
+        "Relevé il y a 7 jours",
         "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2326,7 +2309,7 @@
   "38338": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 8 km",
+     "valeur": "Vinay, à 6 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -2336,7 +2319,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2350,35 +2333,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Super U — Vinay",
+       "titre": "Total — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
-        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement)",
-        "Enseigne": "Super U",
-        "Distance": "8 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Carrefour — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
-        "SP98": "2,229 €/L",
-        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Carrefour",
-        "Distance": "8 km du centre de la commune"
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "6 km du centre de la commune"
        },
        "etat": [
         "Relevé aujourd'hui",
@@ -2387,15 +2349,34 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Avia — Tullins (hors territoire)",
+       "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
+        "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
+        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Carrefour — Tullins (hors territoire)",
+       "details": {
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
+        "SP98": "2,229 €/L",
+        "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2426,7 +2407,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2440,12 +2421,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -2453,8 +2450,8 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -2467,23 +2464,6 @@
         "Adresse": "28, route de Grenoble, Saint-Sauveur",
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
         "Distance": "9 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Marcellin",
-       "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
-        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Distance": "12 km du centre de la commune"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -2513,7 +2493,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Garage Magnan · Gazole 2,310 €/L · relevé aujourd'hui",
+     "repere": "Garage Magnan · Gazole 2,330 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2529,7 +2509,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -2547,8 +2527,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -2556,7 +2536,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2573,7 +2553,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2600,7 +2580,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2616,16 +2596,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2661,7 +2641,7 @@
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2688,7 +2668,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,319 €/L · relevé il y a 2 jours",
+     "repere": "Gazole 2,359 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2704,16 +2684,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2749,7 +2729,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2776,7 +2756,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2792,8 +2772,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -2801,7 +2781,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2831,15 +2811,14 @@
        "details": {
         "Gazole": "2,250 €/L",
         "SP95-E10": "1,990 €/L",
-        "SP98": "1,990 €/L",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
         "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2856,7 +2835,7 @@
   "38390": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 7 km",
+     "valeur": "Vinay, à 6 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -2866,7 +2845,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2880,12 +2859,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -2893,16 +2888,16 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -2912,22 +2907,6 @@
        },
        "etat": [
         "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Sauveur",
-       "details": {
-        "Gazole": "2,256 €/L",
-        "SP95-E10": "2,080 €/L",
-        "SP98": "2,173 €/L",
-        "Adresse": "28, route de Grenoble, Saint-Sauveur",
-        "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-        "Distance": "12 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2954,7 +2933,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2970,8 +2949,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -2979,7 +2958,7 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -2989,15 +2968,14 @@
        "details": {
         "Gazole": "2,250 €/L",
         "SP95-E10": "1,990 €/L",
-        "SP98": "1,990 €/L",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
         "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3034,7 +3012,7 @@
   "38409": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,267",
+     "valeur": "2,256",
      "unite": "€/L",
      "nom": "Gazole",
      "obtention": "natif",
@@ -3044,7 +3022,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "Comptoir Énergie · Quartier Clairivaux · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Quartier Clairivaux · relevé aujourd'hui",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -3072,15 +3050,15 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
         "Enseigne": "Comptoir Énergie"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3088,7 +3066,7 @@
       {
        "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
-        "Gazole": "2,310 €/L",
+        "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L",
         "SP98": "2,240 €/L",
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
@@ -3115,7 +3093,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3125,15 +3103,14 @@
        "details": {
         "Gazole": "2,250 €/L",
         "SP95-E10": "1,990 €/L",
-        "SP98": "1,990 €/L",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
         "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3160,7 +3137,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
+     "repere": "Total · Gazole 2,250 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3178,15 +3155,14 @@
        "details": {
         "Gazole": "2,250 €/L",
         "SP95-E10": "1,990 €/L",
-        "SP98": "1,990 €/L",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
         "Enseigne": "Total",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3194,8 +3170,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -3203,7 +3179,7 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3214,7 +3190,7 @@
         "Gazole": "2,249 €/L",
         "SP95-E10": "2,065 €/L",
         "SP95": "2,128 €/L",
-        "SP98": "2,148 €/L",
+        "SP98": "2,132 €/L",
         "E85": "0,824 €/L",
         "GPLc": "1,038 €/L",
         "Adresse": "95 RUE CLAIR, Saint-Paul-lès-Romans",
@@ -3239,7 +3215,7 @@
   "38416": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,319",
+     "valeur": "2,359",
      "unite": "€/L",
      "nom": "Gazole",
      "obtention": "natif",
@@ -3249,7 +3225,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "2 avenue de ROMANS · relevé il y a 2 jours",
+     "repere": "2 avenue de ROMANS · relevé aujourd'hui",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -3277,15 +3253,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3321,7 +3297,7 @@
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3329,10 +3305,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -3340,8 +3316,8 @@
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       }
@@ -3367,7 +3343,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé hier",
+     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3391,7 +3367,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3419,16 +3395,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3455,7 +3431,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Carrefour · Gazole 2,279 €/L · relevé aujourd'hui",
+     "repere": "Carrefour · Gazole 2,289 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3471,8 +3447,8 @@
       {
        "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,119 €/L",
+        "Gazole": "2,289 €/L",
+        "SP95-E10": "2,129 €/L",
         "SP98": "2,229 €/L",
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
@@ -3490,8 +3466,8 @@
        "titre": "Avia — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
+        "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+        "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -3499,7 +3475,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3517,7 +3493,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3580,16 +3556,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3597,8 +3573,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -3606,7 +3582,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3633,7 +3609,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "28, route de Grenoble · relevé hier",
+     "repere": "28, route de Grenoble · relevé il y a 2 jours",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -3668,7 +3644,7 @@
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3676,16 +3652,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3713,10 +3689,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -3724,8 +3700,8 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       }
@@ -3751,7 +3727,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé hier",
+     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3775,7 +3751,7 @@
         "Distance": "2 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3783,16 +3759,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3875,16 +3851,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3892,8 +3868,8 @@
       {
        "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
@@ -3901,7 +3877,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3928,7 +3904,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé hier",
+     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3952,7 +3928,7 @@
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3960,10 +3936,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -3971,24 +3947,24 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4015,7 +3991,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -4031,10 +4007,10 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -4042,8 +4018,24 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -4056,23 +4048,6 @@
         "Adresse": "28, route de Grenoble, Saint-Sauveur",
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
         "Distance": "7 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Saint-Marcellin",
-       "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
-        "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Distance": "8 km du centre de la commune"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4092,7 +4067,7 @@
   "38526": {
    "mesures": {
     "CAR-04": {
-     "valeur": "Vinay, à 6 km",
+     "valeur": "Vinay, à 5 km",
      "unite": "",
      "nom": "Station la plus proche",
      "obtention": "natif",
@@ -4102,7 +4077,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -4116,12 +4091,28 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
@@ -4129,8 +4120,8 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -4146,25 +4137,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Avia — Tullins (hors territoire)",
-       "details": {
-        "Gazole": "2,389 €/L",
-        "SP95-E10": "2,229 €/L",
-        "SP98": "2,309 €/L",
-        "Adresse": "Route de Saint-Quentin, Tullins",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-        "Enseigne": "Avia",
-        "Distance": "8 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4181,7 +4154,7 @@
   "38559": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,259",
+     "valeur": "2,250",
      "unite": "€/L",
      "nom": "Gazole",
      "obtention": "natif",
@@ -4191,16 +4164,16 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "Super U · 251, Rue de l'Europe · relevé il y a 5 jours",
+     "repere": "Total · 2375 ROUTE DE GRENOBLE · relevé aujourd'hui",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
      }
     },
     "CAR-03": {
-     "valeur": "1",
+     "valeur": "2",
      "unite": "",
-     "nom": "Station sur la commune",
+     "nom": "Stations sur la commune",
      "obtention": "natif",
      "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
      "licence": "Licence Ouverte 2.0",
@@ -4217,20 +4190,35 @@
      "titre": "Stations-service de la commune",
      "items": [
       {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
         "Enseigne": "Super U"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
+        "Relevé hier",
+        "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
@@ -4245,7 +4233,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4253,16 +4241,16 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4279,7 +4267,7 @@
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
-        "Relevé aujourd'hui",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4298,7 +4286,7 @@
   "canton:3823": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,256",
+     "valeur": "2,250",
      "unite": "€/L",
      "nom": "Gazole le moins cher",
      "obtention": "natif",
@@ -4308,14 +4296,14 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "E.Leclerc à Chatte · relevé aujourd'hui",
+     "repere": "Total à Vinay · relevé aujourd'hui",
      "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
      "aussi": {
       "rubrique": "transports"
      }
     },
     "CAR-02": {
-     "valeur": "0,063",
+     "valeur": "0,109",
      "unite": "€/L",
      "nom": "Écart entre stations du territoire",
      "obtention": "natif",
@@ -4325,11 +4313,11 @@
      "rubrique": "carburants",
      "rang": 20,
      "ancre": "stations-service",
-     "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
      "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
-     "valeur": "5",
+     "valeur": "6",
      "unite": "",
      "nom": "Stations sur le territoire",
      "obtention": "natif",
@@ -4348,6 +4336,21 @@
      "id": "stations-service",
      "titre": "Stations-service et prix relevés",
      "items": [
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
       {
        "titre": "E.Leclerc — Chatte",
        "details": {
@@ -4368,6 +4371,22 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Saint-Sauveur",
        "details": {
         "Gazole": "2,256 €/L",
@@ -4377,7 +4396,7 @@
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4385,33 +4404,17 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
         "Enseigne": "Super U"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
-       "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
-        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-        "Enseigne": "Comptoir Énergie"
-       },
-       "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4419,15 +4422,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4444,7 +4447,7 @@
   "epci:200070431": {
    "mesures": {
     "CAR-01": {
-     "valeur": "2,256",
+     "valeur": "2,250",
      "unite": "€/L",
      "nom": "Gazole le moins cher",
      "obtention": "natif",
@@ -4454,14 +4457,14 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "E.Leclerc à Chatte · relevé aujourd'hui",
+     "repere": "Total à Vinay · relevé aujourd'hui",
      "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
      "aussi": {
       "rubrique": "transports"
      }
     },
     "CAR-02": {
-     "valeur": "0,063",
+     "valeur": "0,109",
      "unite": "€/L",
      "nom": "Écart entre stations du territoire",
      "obtention": "natif",
@@ -4471,11 +4474,11 @@
      "rubrique": "carburants",
      "rang": 20,
      "ancre": "stations-service",
-     "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+     "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
      "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
-     "valeur": "5",
+     "valeur": "6",
      "unite": "",
      "nom": "Stations sur le territoire",
      "obtention": "natif",
@@ -4494,6 +4497,21 @@
      "id": "stations-service",
      "titre": "Stations-service et prix relevés",
      "items": [
+      {
+       "titre": "Total — Vinay",
+       "details": {
+        "Gazole": "2,250 €/L",
+        "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
       {
        "titre": "E.Leclerc — Chatte",
        "details": {
@@ -4514,6 +4532,22 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+       "details": {
+        "Gazole": "2,256 €/L",
+        "SP95-E10": "2,119 €/L",
+        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie"
+       },
+       "etat": [
+        "Relevé aujourd'hui",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
        "titre": "Saint-Sauveur",
        "details": {
         "Gazole": "2,256 €/L",
@@ -4523,7 +4557,7 @@
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4531,33 +4565,17 @@
       {
        "titre": "Super U — Vinay",
        "details": {
-        "Gazole": "2,259 €/L — relevé le 04/09/2026",
-        "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-        "SP98": "2,169 €/L — relevé le 04/09/2026",
-        "E85": "0,835 €/L — relevé le 04/09/2026",
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
         "Enseigne": "Super U"
        },
        "etat": [
-        "Relevé il y a 5 jours",
-        "attention"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
-       "details": {
-        "Gazole": "2,267 €/L",
-        "SP95-E10": "2,129 €/L",
-        "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-        "Enseigne": "Comptoir Énergie"
-       },
-       "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé hier",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4565,15 +4583,15 @@
       {
        "titre": "Saint-Marcellin",
        "details": {
-        "Gazole": "2,319 €/L",
-        "SP95-E10": "2,139 €/L",
-        "SP98": "2,209 €/L",
+        "Gazole": "2,359 €/L",
+        "SP95-E10": "2,169 €/L",
+        "SP98": "2,259 €/L",
         "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé il y a 2 jours",
+        "Relevé aujourd'hui",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38450",
@@ -91,7 +91,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Carrefour · Gazole 2,279 €/L · relevé aujourd'hui",
+      "repere": "Carrefour · Gazole 2,289 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -359,6 +359,20 @@
       "rang": 30,
       "repere": "8 femmes, 7 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-11": {
+      "valeur": "Moirans-la-Galifette, à 6 km",
+      "unite": "",
+      "nom": "Gare la plus proche",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 15,
+      "ancre": "gares",
+      "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
     },
     "TRA-01": {
       "valeur": "Non concernée",
@@ -705,8 +719,8 @@
         {
           "titre": "Carrefour — Tullins (hors territoire)",
           "details": {
-            "Gazole": "2,279 €/L",
-            "SP95-E10": "2,119 €/L",
+            "Gazole": "2,289 €/L",
+            "SP95-E10": "2,129 €/L",
             "SP98": "2,229 €/L",
             "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
             "Accès": "Automate ouvert 24 h/24",
@@ -724,8 +738,8 @@
           "titre": "Avia — Tullins (hors territoire)",
           "details": {
             "Gazole": "2,389 €/L",
-            "SP95-E10": "2,229 €/L",
-            "SP98": "2,309 €/L",
+            "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
+            "SP98": "2,309 €/L — relevé le 07/09/2026",
             "Adresse": "Route de Saint-Quentin, Tullins",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
@@ -733,7 +747,7 @@
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -751,7 +765,7 @@
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1255,6 +1269,33 @@
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     },
     {
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Gare la plus proche",
+      "items": [
+        {
+          "titre": "Moirans-la-Galifette",
+          "details": {
+            "Commune": "Moirans",
+            "Voyageurs en 2024": "195 920",
+            "Catégorie": "Halte",
+            "Distance": "6 km du centre de la commune"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -1617,7 +1658,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

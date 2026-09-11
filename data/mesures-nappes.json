@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-09",
+ "genere_le": "2026-09-11",
  "version": 2,
  "source": "Hub'Eau — niveaux des nappes (BRGM, réseau ADES)",
  "licence": "Licence Ouverte 2.0",
@@ -47,7 +47,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "nappes",
      "rang": 20,
-     "repere": "Mesure du 08/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+     "repere": "Mesure du 10/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
    },
@@ -67,14 +67,14 @@
         "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
         "Profondeur": "41.30 m",
         "Altitude de la nappe": "568.70 m NGF",
-        "Dernière mesure": "08/09/2026",
+        "Dernière mesure": "10/09/2026",
         "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 40.78 m sur 148 relevés. Écart : +0.52 m."
+       "texte": "Médiane des mois comparables : 40.80 m sur 148 relevés. Écart : +0.50 m."
       },
       {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -85,7 +85,7 @@
         "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
         "Profondeur": "7.68 m",
         "Altitude de la nappe": "249.54 m NGF",
-        "Dernière mesure": "08/09/2026",
+        "Dernière mesure": "10/09/2026",
         "Mesures sur 5 ans": 1790
        },
        "etat": [
@@ -101,16 +101,16 @@
         "Commune": "Saint-Étienne-de-Saint-Geoirs",
         "Distance du centre du territoire": "20 km",
         "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.69 m",
-        "Altitude de la nappe": "362.52 m NGF",
-        "Dernière mesure": "08/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Profondeur": "38.70 m",
+        "Altitude de la nappe": "362.51 m NGF",
+        "Dernière mesure": "09/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 38.53 m sur 148 relevés. Écart : +0.16 m."
+       "texte": "Médiane des mois comparables : 38.55 m sur 147 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -118,16 +118,16 @@
         "Code BSS": "07951X0028/F",
         "Commune": "Châtillon-Saint-Jean",
         "Distance du centre du territoire": "21 km",
-        "Profondeur": "51.65 m",
-        "Altitude de la nappe": "238.92 m NGF",
-        "Dernière mesure": "08/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Profondeur": "51.38 m",
+        "Altitude de la nappe": "239.19 m NGF",
+        "Dernière mesure": "09/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 49.42 m sur 148 relevés. Écart : +2.23 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +1.96 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -139,7 +139,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1592
+        "Mesures sur 5 ans": 1590
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -148,7 +148,7 @@
        "texte": "Médiane des mois comparables : -0.18 m sur 142 relevés. Écart : +0.03 m."
       },
       {
-       "titre": "Pz4 Aval Cet — Chatuzange-le-Goubet",
+       "titre": "Provisoire-07-Rha- Pz4 Aval Cet-Chatuzange — Chatuzange-le-Goubet",
        "details": {
         "Code BSS": "BSS004NBZY/X",
         "Commune": "Chatuzange-le-Goubet",
@@ -175,13 +175,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 373
+        "Mesures sur 5 ans": 371
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 37 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 35 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."
@@ -735,7 +735,7 @@
      "rubrique": "environnement",
      "sous_rubrique": "nappes",
      "rang": 20,
-     "repere": "Mesure du 08/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+     "repere": "Mesure du 10/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
      "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     }
    },
@@ -755,14 +755,14 @@
         "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
         "Profondeur": "41.30 m",
         "Altitude de la nappe": "568.70 m NGF",
-        "Dernière mesure": "08/09/2026",
+        "Dernière mesure": "10/09/2026",
         "Mesures sur 5 ans": 1825
        },
        "etat": [
         "Sous les valeurs habituelles",
         "attention"
        ],
-       "texte": "Médiane des mois comparables : 40.78 m sur 148 relevés. Écart : +0.52 m."
+       "texte": "Médiane des mois comparables : 40.80 m sur 148 relevés. Écart : +0.50 m."
       },
       {
        "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -773,7 +773,7 @@
         "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
         "Profondeur": "7.68 m",
         "Altitude de la nappe": "249.54 m NGF",
-        "Dernière mesure": "08/09/2026",
+        "Dernière mesure": "10/09/2026",
         "Mesures sur 5 ans": 1790
        },
        "etat": [
@@ -789,16 +789,16 @@
         "Commune": "Saint-Étienne-de-Saint-Geoirs",
         "Distance du centre du territoire": "20 km",
         "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-        "Profondeur": "38.69 m",
-        "Altitude de la nappe": "362.52 m NGF",
-        "Dernière mesure": "08/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Profondeur": "38.70 m",
+        "Altitude de la nappe": "362.51 m NGF",
+        "Dernière mesure": "09/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 38.53 m sur 148 relevés. Écart : +0.16 m."
+       "texte": "Médiane des mois comparables : 38.55 m sur 147 relevés. Écart : +0.15 m."
       },
       {
        "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -806,16 +806,16 @@
         "Code BSS": "07951X0028/F",
         "Commune": "Châtillon-Saint-Jean",
         "Distance du centre du territoire": "21 km",
-        "Profondeur": "51.65 m",
-        "Altitude de la nappe": "238.92 m NGF",
-        "Dernière mesure": "08/09/2026",
-        "Mesures sur 5 ans": 1825
+        "Profondeur": "51.38 m",
+        "Altitude de la nappe": "239.19 m NGF",
+        "Dernière mesure": "09/09/2026",
+        "Mesures sur 5 ans": 1824
        },
        "etat": [
         "Nettement sous les valeurs habituelles",
         "alerte"
        ],
-       "texte": "Médiane des mois comparables : 49.42 m sur 148 relevés. Écart : +2.23 m."
+       "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +1.96 m."
       },
       {
        "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -827,7 +827,7 @@
         "Profondeur": "-0.15 m",
         "Altitude de la nappe": "986.15 m NGF",
         "Dernière mesure": "21/01/2026",
-        "Mesures sur 5 ans": 1592
+        "Mesures sur 5 ans": 1590
        },
        "etat": [
         "Proche des valeurs habituelles",
@@ -836,7 +836,7 @@
        "texte": "Médiane des mois comparables : -0.18 m sur 142 relevés. Écart : +0.03 m."
       },
       {
-       "titre": "Pz4 Aval Cet — Chatuzange-le-Goubet",
+       "titre": "Provisoire-07-Rha- Pz4 Aval Cet-Chatuzange — Chatuzange-le-Goubet",
        "details": {
         "Code BSS": "BSS004NBZY/X",
         "Commune": "Chatuzange-le-Goubet",
@@ -863,13 +863,13 @@
         "Profondeur": "1.30 m",
         "Altitude de la nappe": "798.70 m NGF",
         "Dernière mesure": "17/09/2022",
-        "Mesures sur 5 ans": 373
+        "Mesures sur 5 ans": 371
        },
        "etat": [
         "Proche des valeurs habituelles",
         "neutre"
        ],
-       "texte": "Médiane des mois comparables : 1.29 m sur 37 relevés. Écart : +0.01 m."
+       "texte": "Médiane des mois comparables : 1.29 m sur 35 relevés. Écart : +0.01 m."
       }
      ],
      "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."

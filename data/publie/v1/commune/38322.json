@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38322",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 6 jours",
+      "repere": "Comptoir Énergie · Gazole 2,267 €/L · relevé il y a 7 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -333,6 +333,20 @@
       "rang": 30,
       "repere": "5 femmes, 6 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-11": {
+      "valeur": "St-Marcellin, à 9 km",
+      "unite": "",
+      "nom": "Gare la plus proche",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 15,
+      "ancre": "gares",
+      "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
     },
     "TRA-01": {
       "valeur": "Sur toute la commune",
@@ -629,7 +643,7 @@
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 6 jours",
+            "Relevé il y a 7 jours",
             "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -645,7 +659,7 @@
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -936,6 +950,33 @@
     },
     {
       "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Gare la plus proche",
+      "items": [
+        {
+          "titre": "St-Marcellin",
+          "details": {
+            "Commune": "Saint-Marcellin",
+            "Voyageurs en 2024": "601 317",
+            "Catégorie": "Proximité",
+            "Distance": "9 km du centre de la commune"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    },
+    {
+      "rubrique": "transports",
       "id": "equipements-hivernaux",
       "titre": "Équipements hivernaux obligatoires",
       "items": [
@@ -1195,7 +1236,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38245",
@@ -379,6 +379,20 @@
       "repere": "5 femmes, 5 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
     },
+    "TRA-11": {
+      "valeur": "St-Hilaire-St-Nazaire, à 8 km",
+      "unite": "",
+      "nom": "Gare la plus proche",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 15,
+      "ancre": "gares",
+      "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    },
     "TRA-01": {
       "valeur": "Non concernée",
       "unite": "",
@@ -684,16 +698,16 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -703,15 +717,14 @@
           "details": {
             "Gazole": "2,250 €/L",
             "SP95-E10": "1,990 €/L",
-            "SP98": "1,990 €/L",
             "Adresse": "4030 Les Fauries - RN 532, Eymeux",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
             "Enseigne": "Total",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1057,6 +1070,33 @@
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     },
     {
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Gare la plus proche",
+      "items": [
+        {
+          "titre": "St-Hilaire-St-Nazaire",
+          "details": {
+            "Commune": "Saint-Hilaire-du-Rosier",
+            "Voyageurs en 2024": "110 057",
+            "Catégorie": "Halte",
+            "Distance": "8 km du centre de la commune"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    },
+    {
       "rubrique": "population",
       "id": "repartition-age",
       "titre": "Population par tranche d'âge — recensement 2022",
@@ -1323,7 +1363,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

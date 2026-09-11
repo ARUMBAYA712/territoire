@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38416",
@@ -100,7 +100,7 @@
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
     "CAR-01": {
-      "valeur": "2,319",
+      "valeur": "2,359",
       "unite": "€/L",
       "nom": "Gazole",
       "obtention": "natif",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "2 avenue de ROMANS · relevé il y a 2 jours",
+      "repere": "2 avenue de ROMANS · relevé aujourd'hui",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -404,6 +404,21 @@
       "rang": 30,
       "repere": "14 femmes, 15 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-10": {
+      "valeur": "St-Marcellin",
+      "unite": "",
+      "nom": "Gare",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 10,
+      "ancre": "gares",
+      "repere": "601 317 voyageurs en 2024",
+      "explication": "Gare ou halte du réseau ferré national située sur la commune."
     },
     "TRA-01": {
       "valeur": "Non concernée",
@@ -750,15 +765,15 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -794,7 +809,7 @@
             "Distance": "3 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -802,10 +817,10 @@
         {
           "titre": "Super U — Vinay",
           "details": {
-            "Gazole": "2,259 €/L — relevé le 04/09/2026",
-            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-            "SP98": "2,169 €/L — relevé le 04/09/2026",
-            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "Gazole": "2,279 €/L",
+            "SP95-E10": "2,149 €/L",
+            "SP98": "2,229 €/L",
+            "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
@@ -813,8 +828,8 @@
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 5 jours",
-            "attention"
+            "Relevé hier",
+            "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         }
@@ -1091,25 +1106,18 @@
       ],
       "points": [
         {
-          "nom": "Ecole primaire Le Stade",
-          "lat": 45.150796,
-          "lon": 5.3139,
+          "nom": "Ecole primaire privée Le Dauphin",
+          "lat": 45.152952,
+          "lon": 5.32381,
           "info": "Ecole",
           "categorie": "premier"
         },
         {
-          "nom": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
-          "lat": 45.15765,
-          "lon": 5.31767,
-          "info": "Collège",
-          "categorie": "autre"
-        },
-        {
-          "nom": "Ecole primaire Centre",
-          "lat": 45.152406,
-          "lon": 5.32117,
-          "info": "Ecole",
-          "categorie": "premier"
+          "nom": "Lycée d'enseignement agricole privé Bellevue",
+          "lat": 45.157108,
+          "lon": 5.321999,
+          "info": "Lycée",
+          "categorie": "second"
         },
         {
           "nom": "Collège le Savouret",
@@ -1119,16 +1127,16 @@
           "categorie": "second"
         },
         {
-          "nom": "Ecole primaire privée Le Dauphin",
-          "lat": 45.152952,
-          "lon": 5.32381,
+          "nom": "Ecole maternelle Le Stade",
+          "lat": 45.15102,
+          "lon": 5.31423,
           "info": "Ecole",
           "categorie": "premier"
         },
         {
-          "nom": "Ecole maternelle Le Stade",
-          "lat": 45.15102,
-          "lon": 5.31423,
+          "nom": "Ecole primaire La Plaine",
+          "lat": 45.148222,
+          "lon": 5.319721,
           "info": "Ecole",
           "categorie": "premier"
         },
@@ -1140,11 +1148,18 @@
           "categorie": "autre"
         },
         {
-          "nom": "Ecole primaire La Plaine",
-          "lat": 45.148222,
-          "lon": 5.319721,
+          "nom": "Ecole primaire Centre",
+          "lat": 45.152406,
+          "lon": 5.32117,
           "info": "Ecole",
           "categorie": "premier"
+        },
+        {
+          "nom": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
+          "lat": 45.15765,
+          "lon": 5.31767,
+          "info": "Collège",
+          "categorie": "autre"
         },
         {
           "nom": "Lycée polyvalent La Saulaie",
@@ -1154,16 +1169,16 @@
           "categorie": "second"
         },
         {
-          "nom": "Lycée d'enseignement agricole privé Bellevue",
-          "lat": 45.157108,
-          "lon": 5.321999,
-          "info": "Lycée",
-          "categorie": "second"
-        },
-        {
           "nom": "Ecole maternelle Centre",
           "lat": 45.153239,
           "lon": 5.31875,
+          "info": "Ecole",
+          "categorie": "premier"
+        },
+        {
+          "nom": "Ecole primaire Le Stade",
+          "lat": 45.150796,
+          "lon": 5.3139,
           "info": "Ecole",
           "categorie": "premier"
         }
@@ -1361,6 +1376,32 @@
         }
       ],
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Desserte ferroviaire",
+      "items": [
+        {
+          "titre": "St-Marcellin",
+          "details": {
+            "Commune": "Saint-Marcellin",
+            "Voyageurs en 2024": "601 317",
+            "Catégorie": "Proximité"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
     },
     {
       "rubrique": "population",
@@ -1784,7 +1825,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
@@ -1857,6 +1898,36 @@
         2
       ],
       "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
+    },
+    {
+      "id": "gare-frequentation",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "forme": "barres",
+      "titre": "Voyageurs à la gare de St-Marcellin",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "unite": "voyageurs",
+      "decimales": 0,
+      "rang": 10,
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+      "debut": 2015,
+      "pas": "an",
+      "valeurs": [
+        479187,
+        471767,
+        534373,
+        476660,
+        552928,
+        346192,
+        450834,
+        569062,
+        564893,
+        601317
+      ],
+      "agregation": "somme",
+      "titre_agrege": "Voyageurs dans les gares du territoire",
+      "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
     },
     {
       "id": "catnat-decennies",

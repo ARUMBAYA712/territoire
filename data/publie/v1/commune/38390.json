@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38390",
@@ -100,7 +100,7 @@
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
     "CAR-04": {
-      "valeur": "Vinay, à 7 km",
+      "valeur": "Vinay, à 6 km",
       "unite": "",
       "nom": "Station la plus proche",
       "obtention": "natif",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Super U · Gazole 2,259 €/L · relevé il y a 5 jours",
+      "repere": "Total · Gazole 2,250 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -378,6 +378,20 @@
       "rang": 30,
       "repere": "7 femmes, 8 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-11": {
+      "valeur": "Vinay, à 7 km",
+      "unite": "",
+      "nom": "Gare la plus proche",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 15,
+      "ancre": "gares",
+      "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
     },
     "TRA-01": {
       "valeur": "Sur une partie de la commune",
@@ -678,12 +692,28 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total",
+            "Distance": "6 km du centre de la commune"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Super U — Vinay",
           "details": {
-            "Gazole": "2,259 €/L — relevé le 04/09/2026",
-            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-            "SP98": "2,169 €/L — relevé le 04/09/2026",
-            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "Gazole": "2,279 €/L",
+            "SP95-E10": "2,149 €/L",
+            "SP98": "2,229 €/L",
+            "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
@@ -691,16 +721,16 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 5 jours",
-            "attention"
+            "Relevé hier",
+            "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
           "titre": "Carrefour — Tullins (hors territoire)",
           "details": {
-            "Gazole": "2,279 €/L",
-            "SP95-E10": "2,119 €/L",
+            "Gazole": "2,289 €/L",
+            "SP95-E10": "2,129 €/L",
             "SP98": "2,229 €/L",
             "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
             "Accès": "Automate ouvert 24 h/24",
@@ -710,22 +740,6 @@
           },
           "etat": [
             "Relevé aujourd'hui",
-            "neutre"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Saint-Sauveur",
-          "details": {
-            "Gazole": "2,256 €/L",
-            "SP95-E10": "2,080 €/L",
-            "SP98": "2,173 €/L",
-            "Adresse": "28, route de Grenoble, Saint-Sauveur",
-            "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-            "Distance": "12 km du centre de la commune"
-          },
-          "etat": [
-            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1061,6 +1075,33 @@
     },
     {
       "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Gare la plus proche",
+      "items": [
+        {
+          "titre": "Vinay",
+          "details": {
+            "Commune": "Vinay",
+            "Voyageurs en 2024": "206 591",
+            "Catégorie": "Halte",
+            "Distance": "7 km du centre de la commune"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    },
+    {
+      "rubrique": "transports",
       "id": "equipements-hivernaux",
       "titre": "Équipements hivernaux obligatoires",
       "items": [
@@ -1362,7 +1403,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

@@ -1,10 +1,2508 @@
 {
- "genere_le": "2026-09-09",
+ "genere_le": "2026-09-11",
  "version": 1,
  "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
  "licence": "ODbL 1.0",
  "frequence": "annuelle",
- "motif_absence": "le référentiel des gares n'a pas répondu",
- "communes": {},
- "territoires": {}
+ "millesime": "2024",
+ "communes": {
+  "38004": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38018": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38033": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 2 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38036": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38041": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 8 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38074": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 2 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38086": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 8 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38092": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 12 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "12 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38095": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 3 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38099": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38108": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 10 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "10 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38117": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38137": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 3 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38195": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38216": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 7 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38245": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 8 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38248": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Voreppe, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Voreppe",
+       "details": {
+        "Commune": "Voreppe",
+        "Voyageurs en 2024": "386 656",
+        "Catégorie": "Halte",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38263": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38272": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 7 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38275": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38278": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 3 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38310": {
+   "mesures": {
+    "TRA-10": {
+     "valeur": "Poliénas",
+     "unite": "",
+     "nom": "Gare",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "42 133 voyageurs en 2024",
+     "explication": "Gare ou halte du réseau ferré national située sur la commune."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ],
+   "chroniques": [
+    {
+     "id": "gare-frequentation",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "forme": "barres",
+     "titre": "Voyageurs à la gare de Poliénas",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "unite": "voyageurs",
+     "decimales": 0,
+     "rang": 10,
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+     "debut": 2015,
+     "pas": "an",
+     "valeurs": [
+      23765,
+      27218,
+      32515,
+      28145,
+      32826,
+      24212,
+      29666,
+      37566,
+      36427,
+      42133
+     ],
+     "agregation": "somme",
+     "titre_agrege": "Voyageurs dans les gares du territoire",
+     "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
+    }
+   ]
+  },
+  "38319": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 8 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38322": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 9 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38330": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 7 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38333": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 11 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "11 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38338": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38345": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38356": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 8 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "8 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38359": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 9 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "9 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38360": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 7 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38370": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38390": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 7 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "7 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38394": {
+   "mesures": {
+    "TRA-10": {
+     "valeur": "St-Hilaire-St-Nazaire",
+     "unite": "",
+     "nom": "Gare",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "110 057 voyageurs en 2024",
+     "explication": "Gare ou halte du réseau ferré national située sur la commune."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ],
+   "chroniques": [
+    {
+     "id": "gare-frequentation",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "forme": "barres",
+     "titre": "Voyageurs à la gare de St-Hilaire-St-Nazaire",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "unite": "voyageurs",
+     "decimales": 0,
+     "rang": 10,
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+     "debut": 2015,
+     "pas": "an",
+     "valeurs": [
+      57959,
+      64778,
+      73427,
+      60475,
+      73432,
+      43997,
+      63464,
+      92489,
+      96987,
+      110057
+     ],
+     "agregation": "somme",
+     "titre_agrege": "Voyageurs dans les gares du territoire",
+     "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
+    }
+   ]
+  },
+  "38409": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 3 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "3 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38410": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Hilaire-St-Nazaire, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38416": {
+   "mesures": {
+    "TRA-10": {
+     "valeur": "St-Marcellin",
+     "unite": "",
+     "nom": "Gare",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "601 317 voyageurs en 2024",
+     "explication": "Gare ou halte du réseau ferré national située sur la commune."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ],
+   "chroniques": [
+    {
+     "id": "gare-frequentation",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "forme": "barres",
+     "titre": "Voyageurs à la gare de St-Marcellin",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "unite": "voyageurs",
+     "decimales": 0,
+     "rang": 10,
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+     "debut": 2015,
+     "pas": "an",
+     "valeurs": [
+      479187,
+      471767,
+      534373,
+      476660,
+      552928,
+      346192,
+      450834,
+      569062,
+      564893,
+      601317
+     ],
+     "agregation": "somme",
+     "titre_agrege": "Voyageurs dans les gares du territoire",
+     "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
+    }
+   ]
+  },
+  "38443": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38450": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Moirans-la-Galifette, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Moirans-la-Galifette",
+       "details": {
+        "Commune": "Moirans",
+        "Voyageurs en 2024": "195 920",
+        "Catégorie": "Halte",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38453": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38454": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 2 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "2 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38463": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38495": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "St-Marcellin, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38500": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 4 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "4 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38523": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Vinay, à 6 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38526": {
+   "mesures": {
+    "TRA-11": {
+     "valeur": "Poliénas, à 5 km",
+     "unite": "",
+     "nom": "Gare la plus proche",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 15,
+     "ancre": "gares",
+     "explication": "Aucune gare sur la commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune, non par la route."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Gare la plus proche",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte",
+        "Distance": "5 km du centre de la commune"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "38559": {
+   "mesures": {
+    "TRA-10": {
+     "valeur": "Vinay",
+     "unite": "",
+     "nom": "Gare",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "206 591 voyageurs en 2024",
+     "explication": "Gare ou halte du réseau ferré national située sur la commune."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire",
+     "items": [
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ],
+   "chroniques": [
+    {
+     "id": "gare-frequentation",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "forme": "barres",
+     "titre": "Voyageurs à la gare de Vinay",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "unite": "voyageurs",
+     "decimales": 0,
+     "rang": 10,
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+     "debut": 2015,
+     "pas": "an",
+     "valeurs": [
+      123108,
+      127613,
+      148939,
+      135474,
+      170161,
+      106879,
+      152301,
+      179020,
+      182708,
+      206591
+     ],
+     "agregation": "somme",
+     "titre_agrege": "Voyageurs dans les gares du territoire",
+     "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
+    }
+   ]
+  }
+ },
+ "territoires": {
+  "canton:3823": {
+   "mesures": {
+    "TRA-13": {
+     "valeur": "3",
+     "unite": "",
+     "nom": "Gares et haltes",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "917 965 voyageurs en 2024",
+     "explication": "Points d'arrêt du réseau ferré national situés sur le territoire."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire du territoire",
+     "items": [
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      },
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  },
+  "epci:200070431": {
+   "mesures": {
+    "TRA-13": {
+     "valeur": "4",
+     "unite": "",
+     "nom": "Gares et haltes",
+     "obtention": "natif",
+     "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+     "licence": "ODbL 1.0",
+     "format": "texte",
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "rang": 10,
+     "ancre": "gares",
+     "repere": "960 098 voyageurs en 2024",
+     "explication": "Points d'arrêt du réseau ferré national situés sur le territoire."
+    }
+   },
+   "blocs": [
+    {
+     "rubrique": "transports",
+     "sous_rubrique": "train",
+     "id": "gares",
+     "titre": "Desserte ferroviaire du territoire",
+     "items": [
+      {
+       "titre": "Poliénas",
+       "details": {
+        "Commune": "Poliénas",
+        "Voyageurs en 2024": "42 133",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      },
+      {
+       "titre": "St-Hilaire-St-Nazaire",
+       "details": {
+        "Commune": "Saint-Hilaire-du-Rosier",
+        "Voyageurs en 2024": "110 057",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      },
+      {
+       "titre": "St-Marcellin",
+       "details": {
+        "Commune": "Saint-Marcellin",
+        "Voyageurs en 2024": "601 317",
+        "Catégorie": "Proximité"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      },
+      {
+       "titre": "Vinay",
+       "details": {
+        "Commune": "Vinay",
+        "Voyageurs en 2024": "206 591",
+        "Catégorie": "Halte"
+       },
+       "etat": [
+        "Desservie",
+        "neutre"
+       ],
+       "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+      }
+     ],
+     "lien": {
+      "url": "https://ressources.data.sncf.com/",
+      "libelle": "Consulter la source"
+     },
+     "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    }
+   ]
+  }
+ }
 }

@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "canton",
     "code": "3823",
@@ -453,7 +453,7 @@
       "explication": "Équipements sportifs, de loisir et de culture, pour la sélection de types retenue dans ce fichier."
     },
     "CAR-01": {
-      "valeur": "2,256",
+      "valeur": "2,250",
       "unite": "€/L",
       "nom": "Gazole le moins cher",
       "obtention": "natif",
@@ -463,14 +463,14 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "E.Leclerc à Chatte · relevé aujourd'hui",
+      "repere": "Total à Vinay · relevé aujourd'hui",
       "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
       "aussi": {
         "rubrique": "transports"
       }
     },
     "CAR-02": {
-      "valeur": "0,063",
+      "valeur": "0,109",
       "unite": "€/L",
       "nom": "Écart entre stations du territoire",
       "obtention": "natif",
@@ -480,11 +480,11 @@
       "rubrique": "carburants",
       "rang": 20,
       "ancre": "stations-service",
-      "repere": "de Chatte à Saint-Marcellin · 3 € sur un plein de 50 litres",
+      "repere": "de Vinay à Saint-Marcellin · 5 € sur un plein de 50 litres",
       "explication": "Différence entre la station la moins chère et la plus chère du territoire, pour le gazole. C'est ce que coûte le fait de prendre l'une plutôt que l'autre."
     },
     "CAR-03": {
-      "valeur": "5",
+      "valeur": "6",
       "unite": "",
       "nom": "Stations sur le territoire",
       "obtention": "natif",
@@ -595,6 +595,21 @@
       "rang": 20,
       "ancre": "conseillers-departementaux"
     },
+    "TRA-13": {
+      "valeur": "3",
+      "unite": "",
+      "nom": "Gares et haltes",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 10,
+      "ancre": "gares",
+      "repere": "917 965 voyageurs en 2024",
+      "explication": "Points d'arrêt du réseau ferré national situés sur le territoire."
+    },
     "EAU-20": {
       "valeur": "Sous les valeurs habituelles",
       "unite": "",
@@ -635,11 +650,11 @@
       "rubrique": "environnement",
       "sous_rubrique": "nappes",
       "rang": 20,
-      "repere": "Mesure du 08/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
+      "repere": "Mesure du 10/09/2026 · Forage de Croix du platre — Vatilieu · à 12 km",
       "explication": "Distance entre le sol et la surface de la nappe. Plus la valeur est élevée, plus la nappe est basse."
     },
     "EAU-30": {
-      "valeur": "Sous les valeurs habituelles",
+      "valeur": "Proche des valeurs habituelles",
       "unite": "",
       "nom": "Débit des cours d'eau",
       "obtention": "natif",
@@ -651,11 +666,10 @@
       "mise_en_avant": true,
       "ancre": "stations-hydrometriques",
       "rang": 10,
-      "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence.",
-      "ton": "attention"
+      "explication": "Comparaison du dernier débit journalier aux valeurs relevées le même mois les années précédentes, sur la station de référence."
     },
     "EAU-31": {
-      "valeur": 125.46,
+      "valeur": 162.5,
       "unite": "m³/s",
       "nom": "Débit mesuré",
       "obtention": "natif",
@@ -665,7 +679,7 @@
       "rubrique": "environnement",
       "sous_rubrique": "rivieres",
       "rang": 20,
-      "repere": "L'Isère · 08/09/2026 · à 8 km",
+      "repere": "L'Isère · 09/09/2026 · à 8 km",
       "explication": "Débit moyen du jour, exprimé en volume d'eau passant chaque seconde."
     },
     "EAU-32": {
@@ -681,6 +695,22 @@
       "ancre": "stations-hydrometriques",
       "rang": 30,
       "repere": "L'Adouin, L'Isère, La Bourne, La Galaure, La Joyeuse, La Vernaisson, Le Méaudret"
+    },
+    "EAU-33": {
+      "valeur": "La Vernaisson",
+      "unite": "",
+      "nom": "Affluent le plus bas",
+      "obtention": "natif",
+      "source": "Hub'Eau — hydrométrie, services de l'État",
+      "licence": "Licence Ouverte 2.0",
+      "format": "texte",
+      "rubrique": "environnement",
+      "sous_rubrique": "rivieres",
+      "rang": 25,
+      "ancre": "stations-hydrometriques",
+      "ton": "attention",
+      "repere": "à 46 % de son débit habituel de saison",
+      "explication": "Un affluent nettement plus bas que le cours d'eau principal traduit une sécheresse locale que le grand cours d'eau, soutenu par la montagne et les barrages, ne laisse pas voir."
     }
   },
   "blocs": [
@@ -689,6 +719,21 @@
       "id": "stations-service",
       "titre": "Stations-service et prix relevés",
       "items": [
+        {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
         {
           "titre": "E.Leclerc — Chatte",
           "details": {
@@ -709,6 +754,22 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "details": {
+            "Gazole": "2,256 €/L",
+            "SP95-E10": "2,119 €/L",
+            "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Saint-Sauveur",
           "details": {
             "Gazole": "2,256 €/L",
@@ -718,7 +779,7 @@
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -726,33 +787,17 @@
         {
           "titre": "Super U — Vinay",
           "details": {
-            "Gazole": "2,259 €/L — relevé le 04/09/2026",
-            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-            "SP98": "2,169 €/L — relevé le 04/09/2026",
-            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "Gazole": "2,279 €/L",
+            "SP95-E10": "2,149 €/L",
+            "SP98": "2,229 €/L",
+            "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
             "Enseigne": "Super U"
           },
           "etat": [
-            "Relevé il y a 5 jours",
-            "attention"
-          ],
-          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-        },
-        {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
-          "details": {
-            "Gazole": "2,267 €/L",
-            "SP95-E10": "2,129 €/L",
-            "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
-            "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie"
-          },
-          "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -760,15 +805,15 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -828,6 +873,58 @@
       "note": "Depuis 2015, chaque canton élit un binôme composé d'une femme et d'un homme, pour six ans. Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
     },
     {
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Desserte ferroviaire du territoire",
+      "items": [
+        {
+          "titre": "St-Hilaire-St-Nazaire",
+          "details": {
+            "Commune": "Saint-Hilaire-du-Rosier",
+            "Voyageurs en 2024": "110 057",
+            "Catégorie": "Halte"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        },
+        {
+          "titre": "St-Marcellin",
+          "details": {
+            "Commune": "Saint-Marcellin",
+            "Voyageurs en 2024": "601 317",
+            "Catégorie": "Proximité"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        },
+        {
+          "titre": "Vinay",
+          "details": {
+            "Commune": "Vinay",
+            "Voyageurs en 2024": "206 591",
+            "Catégorie": "Halte"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
+    },
+    {
       "rubrique": "environnement",
       "sous_rubrique": "nappes",
       "id": "stations-piezometriques",
@@ -842,14 +939,14 @@
             "Masse d'eau": "Formations variées de l'Avant-Pays savoyard dans BV du Rhône",
             "Profondeur": "41.30 m",
             "Altitude de la nappe": "568.70 m NGF",
-            "Dernière mesure": "08/09/2026",
+            "Dernière mesure": "10/09/2026",
             "Mesures sur 5 ans": 1825
           },
           "etat": [
             "Sous les valeurs habituelles",
             "attention"
           ],
-          "texte": "Médiane des mois comparables : 40.78 m sur 148 relevés. Écart : +0.52 m."
+          "texte": "Médiane des mois comparables : 40.80 m sur 148 relevés. Écart : +0.50 m."
         },
         {
           "titre": "Puits de Fontchaude — Saint-Bonnet-de-Chavagne",
@@ -860,7 +957,7 @@
             "Masse d'eau": "Molasses miocènes du Bas Dauphiné plaine de Valence et Drôme des collines",
             "Profondeur": "7.68 m",
             "Altitude de la nappe": "249.54 m NGF",
-            "Dernière mesure": "08/09/2026",
+            "Dernière mesure": "10/09/2026",
             "Mesures sur 5 ans": 1790
           },
           "etat": [
@@ -876,16 +973,16 @@
             "Commune": "Saint-Étienne-de-Saint-Geoirs",
             "Distance du centre du territoire": "20 km",
             "Masse d'eau": "Alluvions de la Plaine de Bièvre-Valloire",
-            "Profondeur": "38.69 m",
-            "Altitude de la nappe": "362.52 m NGF",
-            "Dernière mesure": "08/09/2026",
-            "Mesures sur 5 ans": 1825
+            "Profondeur": "38.70 m",
+            "Altitude de la nappe": "362.51 m NGF",
+            "Dernière mesure": "09/09/2026",
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 38.53 m sur 148 relevés. Écart : +0.16 m."
+          "texte": "Médiane des mois comparables : 38.55 m sur 147 relevés. Écart : +0.15 m."
         },
         {
           "titre": "Piezometre de La Fontanille — Châtillon-Saint-Jean",
@@ -893,16 +990,16 @@
             "Code BSS": "07951X0028/F",
             "Commune": "Châtillon-Saint-Jean",
             "Distance du centre du territoire": "21 km",
-            "Profondeur": "51.65 m",
-            "Altitude de la nappe": "238.92 m NGF",
-            "Dernière mesure": "08/09/2026",
-            "Mesures sur 5 ans": 1825
+            "Profondeur": "51.38 m",
+            "Altitude de la nappe": "239.19 m NGF",
+            "Dernière mesure": "09/09/2026",
+            "Mesures sur 5 ans": 1824
           },
           "etat": [
             "Nettement sous les valeurs habituelles",
             "alerte"
           ],
-          "texte": "Médiane des mois comparables : 49.42 m sur 148 relevés. Écart : +2.23 m."
+          "texte": "Médiane des mois comparables : 49.42 m sur 147 relevés. Écart : +1.96 m."
         },
         {
           "titre": "Source de Pied Chatelet — Saint-Julien-en-Vercors",
@@ -914,7 +1011,7 @@
             "Profondeur": "-0.15 m",
             "Altitude de la nappe": "986.15 m NGF",
             "Dernière mesure": "21/01/2026",
-            "Mesures sur 5 ans": 1592
+            "Mesures sur 5 ans": 1590
           },
           "etat": [
             "Proche des valeurs habituelles",
@@ -923,7 +1020,7 @@
           "texte": "Médiane des mois comparables : -0.18 m sur 142 relevés. Écart : +0.03 m."
         },
         {
-          "titre": "Pz4 Aval Cet — Chatuzange-le-Goubet",
+          "titre": "Provisoire-07-Rha- Pz4 Aval Cet-Chatuzange — Chatuzange-le-Goubet",
           "details": {
             "Code BSS": "BSS004NBZY/X",
             "Commune": "Chatuzange-le-Goubet",
@@ -950,13 +1047,13 @@
             "Profondeur": "1.30 m",
             "Altitude de la nappe": "798.70 m NGF",
             "Dernière mesure": "17/09/2022",
-            "Mesures sur 5 ans": 373
+            "Mesures sur 5 ans": 371
           },
           "etat": [
             "Proche des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 1.29 m sur 37 relevés. Écart : +0.01 m."
+          "texte": "Médiane des mois comparables : 1.29 m sur 35 relevés. Écart : +0.01 m."
         }
       ],
       "note": "Les nappes ne suivent pas les limites administratives : ces mesures valent pour le territoire dans son ensemble, pas pour une commune en particulier. Une profondeur s'interprète toujours par rapport aux valeurs habituelles de la même saison, jamais dans l'absolu."
@@ -968,52 +1065,20 @@
       "titre": "Stations de mesure des débits",
       "items": [
         {
-          "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
-          "details": {
-            "Cours d'eau": "L'Isère",
-            "Commune": "SAINT-GERVAIS",
-            "Distance du centre du territoire": "8 km",
-            "Débit": "125.46 m³/s",
-            "Dernière mesure": "08/09/2026",
-            "Mesures sur 5 ans": 1679
-          },
-          "etat": [
-            "Sous les valeurs habituelles",
-            "attention"
-          ],
-          "texte": "Médiane des mois comparables : 154.43 m³/s sur 118 relevés. Débit actuel à 81 % de cette valeur."
-        },
-        {
-          "titre": "La Vernaisson à Pont-en-Royans",
-          "details": {
-            "Cours d'eau": "La Vernaisson",
-            "Commune": "PONT-EN-ROYANS",
-            "Distance du centre du territoire": "13 km",
-            "Débit": "101 L/s",
-            "Dernière mesure": "08/09/2026",
-            "Mesures sur 5 ans": 1679
-          },
-          "etat": [
-            "Nettement sous les valeurs habituelles",
-            "alerte"
-          ],
-          "texte": "Médiane des mois comparables : 300 L/s sur 118 relevés. Débit actuel à 34 % de cette valeur."
-        },
-        {
           "titre": "Le Méaudret à Méaudre",
           "details": {
             "Cours d'eau": "Le Méaudret",
             "Commune": "AUTRANS-MEAUDRE EN VERCORS",
             "Distance du centre du territoire": "14 km",
-            "Débit": "37 L/s",
-            "Dernière mesure": "08/09/2026",
+            "Débit": "67 L/s",
+            "Dernière mesure": "10/09/2026",
             "Mesures sur 5 ans": 1819
           },
           "etat": [
-            "Nettement sous les valeurs habituelles",
-            "alerte"
+            "Sous les valeurs habituelles",
+            "attention"
           ],
-          "texte": "Médiane des mois comparables : 89 L/s sur 148 relevés. Débit actuel à 42 % de cette valeur."
+          "texte": "Médiane des mois comparables : 89 L/s sur 148 relevés. Débit actuel à 75 % de cette valeur."
         },
         {
           "titre": "La Joyeuse à Parnans [Pont D123]",
@@ -1021,15 +1086,15 @@
             "Cours d'eau": "La Joyeuse",
             "Commune": "PARNANS",
             "Distance du centre du territoire": "19 km",
-            "Débit": "56 L/s",
-            "Dernière mesure": "08/09/2026",
-            "Mesures sur 5 ans": 1580
+            "Débit": "60 L/s",
+            "Dernière mesure": "10/09/2026",
+            "Mesures sur 5 ans": 1582
           },
           "etat": [
             "Au-dessus des valeurs habituelles",
             "neutre"
           ],
-          "texte": "Médiane des mois comparables : 42 L/s sur 127 relevés. Débit actuel à 133 % de cette valeur."
+          "texte": "Médiane des mois comparables : 42 L/s sur 129 relevés. Débit actuel à 143 % de cette valeur."
         },
         {
           "titre": "L'Adouin à Saint-Martin-en-Vercors [Tourtre]",
@@ -1037,15 +1102,47 @@
             "Cours d'eau": "L'Adouin",
             "Commune": "SAINT-MARTIN-EN-VERCORS",
             "Distance du centre du territoire": "20 km",
-            "Débit": "86 L/s",
-            "Dernière mesure": "08/09/2026",
+            "Débit": "88 L/s",
+            "Dernière mesure": "10/09/2026",
             "Mesures sur 5 ans": 1825
           },
           "etat": [
             "Sous les valeurs habituelles",
             "attention"
           ],
-          "texte": "Médiane des mois comparables : 145 L/s sur 148 relevés. Débit actuel à 59 % de cette valeur."
+          "texte": "Médiane des mois comparables : 145 L/s sur 148 relevés. Débit actuel à 61 % de cette valeur."
+        },
+        {
+          "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
+          "details": {
+            "Cours d'eau": "L'Isère",
+            "Commune": "SAINT-GERVAIS",
+            "Distance du centre du territoire": "8 km",
+            "Débit": "162.5 m³/s",
+            "Dernière mesure": "09/09/2026",
+            "Mesures sur 5 ans": 1678
+          },
+          "etat": [
+            "Proche des valeurs habituelles",
+            "neutre"
+          ],
+          "texte": "Médiane des mois comparables : 152.79 m³/s sur 117 relevés. Débit actuel à 106 % de cette valeur."
+        },
+        {
+          "titre": "La Vernaisson à Pont-en-Royans",
+          "details": {
+            "Cours d'eau": "La Vernaisson",
+            "Commune": "PONT-EN-ROYANS",
+            "Distance du centre du territoire": "13 km",
+            "Débit": "132 L/s",
+            "Dernière mesure": "09/09/2026",
+            "Mesures sur 5 ans": 1678
+          },
+          "etat": [
+            "Nettement sous les valeurs habituelles",
+            "alerte"
+          ],
+          "texte": "Médiane des mois comparables : 290 L/s sur 117 relevés. Débit actuel à 46 % de cette valeur."
         },
         {
           "titre": "L'Isère à Saint-Gervais [Le Port] — station de référence",
@@ -1055,7 +1152,7 @@
             "Distance du centre du territoire": "8 km",
             "Débit": "219.81 m³/s",
             "Dernière mesure": "06/07/2026",
-            "Mesures sur 5 ans": 1755
+            "Mesures sur 5 ans": 1753
           },
           "etat": [
             "Proche des valeurs habituelles",
@@ -1071,7 +1168,7 @@
             "Distance du centre du territoire": "14 km",
             "Débit": "3.73 m³/s",
             "Dernière mesure": "06/07/2026",
-            "Mesures sur 5 ans": 1615
+            "Mesures sur 5 ans": 1613
           },
           "etat": [
             "Proche des valeurs habituelles",
@@ -1087,7 +1184,7 @@
             "Distance du centre du territoire": "14 km",
             "Débit": "3.79 m³/s",
             "Dernière mesure": "06/07/2026",
-            "Mesures sur 5 ans": 1755
+            "Mesures sur 5 ans": 1753
           },
           "etat": [
             "Proche des valeurs habituelles",
@@ -1209,6 +1306,35 @@
       ],
       "agregation": "somme",
       "note": "Le dispositif existe depuis 1982. La dernière période ne compte que 7 année(s) : elle n'est pas comparable telle quelle aux décennies pleines.",
+      "obtention": "agrégé"
+    },
+    {
+      "id": "gare-frequentation",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "forme": "barres",
+      "titre": "Voyageurs dans les gares du territoire",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "unite": "voyageurs",
+      "decimales": 0,
+      "rang": 10,
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire.",
+      "debut": 2015,
+      "pas": "an",
+      "valeurs": [
+        660254,
+        664158,
+        756739,
+        672609,
+        796521,
+        497068,
+        666599,
+        840571,
+        844588,
+        917965
+      ],
+      "agregation": "somme",
       "obtention": "agrégé"
     },
     {

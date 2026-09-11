@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-10",
+  "genere_le": "2026-09-11",
   "territoire": {
     "niveau": "commune",
     "code": "38559",
@@ -100,7 +100,7 @@
       "explication": "La conversion dure deux à trois ans selon les cultures. Une part élevée signale un mouvement récent vers le bio."
     },
     "CAR-01": {
-      "valeur": "2,259",
+      "valeur": "2,250",
       "unite": "€/L",
       "nom": "Gazole",
       "obtention": "natif",
@@ -110,16 +110,16 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Super U · 251, Rue de l'Europe · relevé il y a 5 jours",
+      "repere": "Total · 2375 ROUTE DE GRENOBLE · relevé aujourd'hui",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
       }
     },
     "CAR-03": {
-      "valeur": "1",
+      "valeur": "2",
       "unite": "",
-      "nom": "Station sur la commune",
+      "nom": "Stations sur la commune",
       "obtention": "natif",
       "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
       "licence": "Licence Ouverte 2.0",
@@ -404,6 +404,21 @@
       "rang": 30,
       "repere": "12 femmes, 15 hommes",
       "explication": "Part des femmes dans l'assemblée. Le sexe est utilisé pour ce seul calcul et n'est pas publié individuellement."
+    },
+    "TRA-10": {
+      "valeur": "Vinay",
+      "unite": "",
+      "nom": "Gare",
+      "obtention": "natif",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "format": "texte",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "rang": 10,
+      "ancre": "gares",
+      "repere": "206 591 voyageurs en 2024",
+      "explication": "Gare ou halte du réseau ferré national située sur la commune."
     },
     "TRA-01": {
       "valeur": "Non concernée",
@@ -748,20 +763,35 @@
       "titre": "Stations-service de la commune",
       "items": [
         {
+          "titre": "Total — Vinay",
+          "details": {
+            "Gazole": "2,250 €/L",
+            "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
+            "Accès": "Automate ouvert 24 h/24",
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total"
+          },
+          "etat": [
+            "Relevé aujourd'hui",
+            "neutre"
+          ],
+          "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+        },
+        {
           "titre": "Super U — Vinay",
           "details": {
-            "Gazole": "2,259 €/L — relevé le 04/09/2026",
-            "SP95-E10": "2,079 €/L — relevé le 04/09/2026",
-            "SP98": "2,169 €/L — relevé le 04/09/2026",
-            "E85": "0,835 €/L — relevé le 04/09/2026",
+            "Gazole": "2,279 €/L",
+            "SP95-E10": "2,149 €/L",
+            "SP98": "2,229 €/L",
+            "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
             "Enseigne": "Super U"
           },
           "etat": [
-            "Relevé il y a 5 jours",
-            "attention"
+            "Relevé hier",
+            "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
@@ -776,7 +806,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -784,16 +814,16 @@
         {
           "titre": "Saint-Marcellin",
           "details": {
-            "Gazole": "2,319 €/L",
-            "SP95-E10": "2,139 €/L",
-            "SP98": "2,209 €/L",
+            "Gazole": "2,359 €/L",
+            "SP95-E10": "2,169 €/L",
+            "SP98": "2,259 €/L",
             "Adresse": "2 avenue de ROMANS, Saint-Marcellin",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -810,7 +840,7 @@
             "Distance": "11 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1395,25 +1425,11 @@
       ],
       "points": [
         {
-          "nom": "Ecole primaire privée de la Providence",
-          "lat": 45.209957,
-          "lon": 5.40416,
-          "info": "Ecole",
-          "categorie": "premier"
-        },
-        {
           "nom": "Ecole Elementaire Publique La Mayette",
           "lat": 45.208725,
           "lon": 5.406051,
           "info": "Ecole",
           "categorie": "premier"
-        },
-        {
-          "nom": "Collège Joseph Chassigneux",
-          "lat": 45.210015,
-          "lon": 5.40734,
-          "info": "Collège",
-          "categorie": "second"
         },
         {
           "nom": "Ecole maternelle",
@@ -1428,6 +1444,20 @@
           "lon": 5.40097,
           "info": "Médico-social",
           "categorie": "autre"
+        },
+        {
+          "nom": "Ecole primaire privée de la Providence",
+          "lat": 45.209957,
+          "lon": 5.40416,
+          "info": "Ecole",
+          "categorie": "premier"
+        },
+        {
+          "nom": "Collège Joseph Chassigneux",
+          "lat": 45.210015,
+          "lon": 5.40734,
+          "info": "Collège",
+          "categorie": "second"
         }
       ],
       "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1608,6 +1638,32 @@
         }
       ],
       "note": "Répertoire national des élus, tenu par les préfectures et publié chaque trimestre. Une élection récente peut ne pas encore y figurer. Seuls le nom, la fonction et la date de début de mandat sont repris : la date de naissance et la profession déclarée, présentes dans la source, ne sont pas republiées ici."
+    },
+    {
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "id": "gares",
+      "titre": "Desserte ferroviaire",
+      "items": [
+        {
+          "titre": "Vinay",
+          "details": {
+            "Commune": "Vinay",
+            "Voyageurs en 2024": "206 591",
+            "Catégorie": "Halte"
+          },
+          "etat": [
+            "Desservie",
+            "neutre"
+          ],
+          "texte": "Gare ou halte du réseau ferré national. Les horaires et l'état du trafic se consultent auprès du transporteur."
+        }
+      ],
+      "lien": {
+        "url": "https://ressources.data.sncf.com/",
+        "libelle": "Consulter la source"
+      },
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement."
     },
     {
       "rubrique": "population",
@@ -2044,7 +2100,7 @@
           }
         }
       ],
-      "note": "Situation au 10/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [
@@ -2117,6 +2173,36 @@
         3
       ],
       "note": "Une année sans exploitation certifiée compte pour zéro : le fichier de l'Agence Bio ne cite une commune que lorsqu'elle compte au moins un opérateur."
+    },
+    {
+      "id": "gare-frequentation",
+      "rubrique": "transports",
+      "sous_rubrique": "train",
+      "forme": "barres",
+      "titre": "Voyageurs à la gare de Vinay",
+      "source": "SNCF — gares de voyageurs et fréquentation (ressources.data.sncf.com)",
+      "licence": "ODbL 1.0",
+      "unite": "voyageurs",
+      "decimales": 0,
+      "rang": 10,
+      "note": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement.",
+      "debut": 2015,
+      "pas": "an",
+      "valeurs": [
+        123108,
+        127613,
+        148939,
+        135474,
+        170161,
+        106879,
+        152301,
+        179020,
+        182708,
+        206591
+      ],
+      "agregation": "somme",
+      "titre_agrege": "Voyageurs dans les gares du territoire",
+      "note_agregee": "Comptage annuel des voyageurs publié par SNCF Voyageurs. Les accompagnants, que la source estime séparément, ne sont pas comptés ici. Le creux de 2020 correspond aux périodes de confinement. Cette série additionne toutes les gares du territoire."
     },
     {
       "id": "catnat-decennies",

@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-09-09",
+ "genere_le": "2026-09-11",
  "version": 5,
  "source": "Annuaire de l'éducation — ministère de l'Éducation nationale",
  "licence": "Licence Ouverte 2.0",
@@ -505,13 +505,6 @@
      ],
      "points": [
       {
-       "nom": "Collège Olympe de Gouges",
-       "lat": 45.139456,
-       "lon": 5.29169,
-       "info": "Collège",
-       "categorie": "second"
-      },
-      {
        "nom": "Maison Familiale Rurale de Chatte",
        "lat": 45.146094,
        "lon": 5.302294,
@@ -519,16 +512,23 @@
        "categorie": "autre"
       },
       {
-       "nom": "Ecole primaire Léa Blain",
-       "lat": 45.141967,
-       "lon": 5.283235,
-       "info": "Ecole",
-       "categorie": "premier"
+       "nom": "Collège Olympe de Gouges",
+       "lat": 45.139456,
+       "lon": 5.29169,
+       "info": "Collège",
+       "categorie": "second"
       },
       {
        "nom": "Ecole maternelle Les Chatons",
        "lat": 45.141873,
        "lon": 5.28377,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole primaire Léa Blain",
+       "lat": 45.141967,
+       "lon": 5.283235,
        "info": "Ecole",
        "categorie": "premier"
       }
@@ -1561,18 +1561,18 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire",
-       "lat": 45.062161,
-       "lon": 5.343367,
-       "info": "Ecole",
-       "categorie": "premier"
-      },
-      {
        "nom": "Collège Raymond Guelen",
        "lat": 45.064219,
        "lon": 5.34223,
        "info": "Collège",
        "categorie": "second"
+      },
+      {
+       "nom": "Ecole primaire",
+       "lat": 45.062161,
+       "lon": 5.343367,
+       "info": "Ecole",
+       "categorie": "premier"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
@@ -1664,16 +1664,16 @@
      ],
      "points": [
       {
-       "nom": "ECOLE PRIMAIRE PUBLIQUE La Balme",
-       "lat": 45.088739,
-       "lon": 5.46704,
+       "nom": "Ecole primaire Le Village",
+       "lat": 45.104155,
+       "lon": 5.472941,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole primaire Le Village",
-       "lat": 45.104155,
-       "lon": 5.472941,
+       "nom": "ECOLE PRIMAIRE PUBLIQUE La Balme",
+       "lat": 45.088739,
+       "lon": 5.46704,
        "info": "Ecole",
        "categorie": "premier"
       }
@@ -2383,14 +2383,14 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire",
+       "nom": "Ecole maternelle",
        "lat": 45.074246,
        "lon": 5.28338,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole maternelle",
+       "nom": "Ecole primaire",
        "lat": 45.074246,
        "lon": 5.28338,
        "info": "Ecole",
@@ -2670,25 +2670,18 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire Le Stade",
-       "lat": 45.150796,
-       "lon": 5.3139,
+       "nom": "Ecole primaire privée Le Dauphin",
+       "lat": 45.152952,
+       "lon": 5.32381,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
-       "lat": 45.15765,
-       "lon": 5.31767,
-       "info": "Collège",
-       "categorie": "autre"
-      },
-      {
-       "nom": "Ecole primaire Centre",
-       "lat": 45.152406,
-       "lon": 5.32117,
-       "info": "Ecole",
-       "categorie": "premier"
+       "nom": "Lycée d'enseignement agricole privé Bellevue",
+       "lat": 45.157108,
+       "lon": 5.321999,
+       "info": "Lycée",
+       "categorie": "second"
       },
       {
        "nom": "Collège le Savouret",
@@ -2698,16 +2691,16 @@
        "categorie": "second"
       },
       {
-       "nom": "Ecole primaire privée Le Dauphin",
-       "lat": 45.152952,
-       "lon": 5.32381,
+       "nom": "Ecole maternelle Le Stade",
+       "lat": 45.15102,
+       "lon": 5.31423,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole maternelle Le Stade",
-       "lat": 45.15102,
-       "lon": 5.31423,
+       "nom": "Ecole primaire La Plaine",
+       "lat": 45.148222,
+       "lon": 5.319721,
        "info": "Ecole",
        "categorie": "premier"
       },
@@ -2719,11 +2712,18 @@
        "categorie": "autre"
       },
       {
-       "nom": "Ecole primaire La Plaine",
-       "lat": 45.148222,
-       "lon": 5.319721,
+       "nom": "Ecole primaire Centre",
+       "lat": 45.152406,
+       "lon": 5.32117,
        "info": "Ecole",
        "categorie": "premier"
+      },
+      {
+       "nom": "Section d'enseignement général et professionnel adapté du Collège Le Savouret",
+       "lat": 45.15765,
+       "lon": 5.31767,
+       "info": "Collège",
+       "categorie": "autre"
       },
       {
        "nom": "Lycée polyvalent La Saulaie",
@@ -2733,16 +2733,16 @@
        "categorie": "second"
       },
       {
-       "nom": "Lycée d'enseignement agricole privé Bellevue",
-       "lat": 45.157108,
-       "lon": 5.321999,
-       "info": "Lycée",
-       "categorie": "second"
-      },
-      {
        "nom": "Ecole maternelle Centre",
        "lat": 45.153239,
        "lon": 5.31875,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Ecole primaire Le Stade",
+       "lat": 45.150796,
+       "lon": 5.3139,
        "info": "Ecole",
        "categorie": "premier"
       }
@@ -3001,14 +3001,14 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire",
+       "nom": "Ecole maternelle",
        "lat": 45.115068,
        "lon": 5.32746,
        "info": "Ecole",
        "categorie": "premier"
       },
       {
-       "nom": "Ecole maternelle",
+       "nom": "Ecole primaire",
        "lat": 45.115068,
        "lon": 5.32746,
        "info": "Ecole",
@@ -3610,25 +3610,11 @@
      ],
      "points": [
       {
-       "nom": "Ecole primaire privée de la Providence",
-       "lat": 45.209957,
-       "lon": 5.40416,
-       "info": "Ecole",
-       "categorie": "premier"
-      },
-      {
        "nom": "Ecole Elementaire Publique La Mayette",
        "lat": 45.208725,
        "lon": 5.406051,
        "info": "Ecole",
        "categorie": "premier"
-      },
-      {
-       "nom": "Collège Joseph Chassigneux",
-       "lat": 45.210015,
-       "lon": 5.40734,
-       "info": "Collège",
-       "categorie": "second"
       },
       {
        "nom": "Ecole maternelle",
@@ -3643,6 +3629,20 @@
        "lon": 5.40097,
        "info": "Médico-social",
        "categorie": "autre"
+      },
+      {
+       "nom": "Ecole primaire privée de la Providence",
+       "lat": 45.209957,
+       "lon": 5.40416,
+       "info": "Ecole",
+       "categorie": "premier"
+      },
+      {
+       "nom": "Collège Joseph Chassigneux",
+       "lat": 45.210015,
+       "lon": 5.40734,
+       "info": "Collège",
+       "categorie": "second"
       }
      ],
      "note": "Recensement du ministère de l'Éducation nationale. La sectorisation ne suit pas les limites communales : les élèves d'une commune sans collège en fréquentent un ailleurs. Les effectifs ne sont pas renseignés par tous les établissements."
