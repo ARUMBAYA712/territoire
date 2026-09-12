@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé hier",
+      "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -691,24 +691,23 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "titre": "Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "E.Leclerc — Chatte",
+          "titre": "Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -718,7 +717,6 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
-            "Enseigne": "E.Leclerc",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -728,19 +726,18 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Total — Eymeux (hors territoire)",
+          "titre": "Eymeux (hors territoire)",
           "details": {
-            "Gazole": "2,250 €/L",
-            "SP95-E10": "1,990 €/L",
+            "Gazole": "2,250 €/L — relevé le 09/09/2026",
+            "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
             "Adresse": "4030 Les Fauries - RN 532, Eymeux",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
-            "Enseigne": "Total",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
-            "neutre"
+            "Relevé il y a 3 jours",
+            "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         }

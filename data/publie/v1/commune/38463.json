@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,256 €/L · relevé il y a 3 jours",
+      "repere": "Gazole 2,256 €/L · relevé il y a 4 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -731,7 +731,7 @@
             "Distance": "2 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -754,7 +754,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "E.Leclerc — Chatte",
+          "titre": "Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -764,7 +764,6 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
-            "Enseigne": "E.Leclerc",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [

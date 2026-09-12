@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,256 €/L · relevé il y a 3 jours",
+      "repere": "Gazole 2,256 €/L · relevé il y a 4 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -716,7 +716,7 @@
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -739,7 +739,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Super U — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -748,11 +748,10 @@
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
-            "Enseigne": "Super U",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

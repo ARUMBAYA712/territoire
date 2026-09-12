@@ -96,7 +96,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Comptoir Énergie · Quartier Clairivaux · relevé hier",
+      "repere": "Quartier Clairivaux · relevé il y a 2 jours",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -733,35 +733,33 @@
       "titre": "Stations-service de la commune",
       "items": [
         {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "titre": "Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie"
+            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
+          "titre": "Saint-Laurent-en-Royans (hors territoire)",
           "details": {
             "Gazole": "2,330 €/L",
-            "SP95": "2,210 €/L",
-            "SP98": "2,240 €/L",
+            "SP95": "2,210 €/L — relevé le 09/09/2026",
+            "SP98": "2,240 €/L — relevé le 09/09/2026",
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
-            "Enseigne": "Garage Magnan",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -771,32 +769,29 @@
           "details": {
             "Gazole": "2,269 €/L — relevé le 08/09/2026",
             "SP95": "2,109 €/L — relevé le 08/09/2026",
-            "SP98": "2,149 €/L — relevé le 04/09/2026",
-            "E85": "0,839 €/L — relevé le 04/09/2026",
             "Adresse": "Zone d'activité de la roue est, Saint-Jean-en-Royans",
             "Non distribué": "GPLc (définitivement), E10 (définitivement)",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 3 jours",
+            "Relevé il y a 4 jours",
             "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Total — Eymeux (hors territoire)",
+          "titre": "Eymeux (hors territoire)",
           "details": {
-            "Gazole": "2,250 €/L",
-            "SP95-E10": "1,990 €/L",
+            "Gazole": "2,250 €/L — relevé le 09/09/2026",
+            "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
             "Adresse": "4030 Les Fauries - RN 532, Eymeux",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
-            "Enseigne": "Total",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
-            "neutre"
+            "Relevé il y a 3 jours",
+            "attention"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         }

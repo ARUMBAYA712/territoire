@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "E.Leclerc · ZI LES GAMEUX · relevé aujourd'hui",
+      "repere": "ZI LES GAMEUX · relevé aujourd'hui",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -762,7 +762,7 @@
       "titre": "Stations-service de la commune",
       "items": [
         {
-          "titre": "E.Leclerc — Chatte",
+          "titre": "Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -771,8 +771,7 @@
             "GPLc": "1,067 €/L",
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "E85 (définitivement)",
-            "Enseigne": "E.Leclerc"
+            "Non distribué": "E85 (définitivement)"
           },
           "etat": [
             "Relevé aujourd'hui",
@@ -808,24 +807,23 @@
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
+          "titre": "Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
-            "Enseigne": "Comptoir Énergie",
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

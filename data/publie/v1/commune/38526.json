@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Total · Gazole 2,250 €/L · relevé hier",
+      "repere": "Gazole 2,250 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -706,13 +706,12 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Total — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,250 €/L",
             "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement)",
-            "Enseigne": "Total",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
@@ -722,7 +721,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Super U — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -731,28 +730,26 @@
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
-            "Enseigne": "Super U",
             "Distance": "6 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Intermarché — Tullins (hors territoire)",
+          "titre": "Tullins (hors territoire)",
           "details": {
             "Gazole": "2,349 €/L",
             "SP95-E10": "2,129 €/L",
             "SP98": "2,249 €/L",
             "Adresse": "Avenue de la Contamine, Tullins",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Intermarché",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

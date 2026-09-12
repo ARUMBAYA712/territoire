@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Super U · Gazole 2,279 €/L · relevé hier",
+      "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -691,7 +691,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Super U — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -700,23 +700,21 @@
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
-            "Enseigne": "Super U",
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Total — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,250 €/L",
             "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement)",
-            "Enseigne": "Total",
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
@@ -726,18 +724,18 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Intermarché — Saint-Siméon-de-Bressieux (hors territoire)",
+          "titre": "Saint-Siméon-de-Bressieux (hors territoire)",
           "details": {
-            "Gazole": "2,299 €/L",
-            "SP95-E10": "2,089 €/L",
-            "SP98": "2,229 €/L",
+            "Gazole": "2,399 €/L",
+            "SP95-E10": "2,159 €/L",
+            "SP98": "2,279 €/L",
+            "E85": "0,848 €/L",
             "Adresse": "Le Bizolle, Saint-Siméon-de-Bressieux",
             "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Intermarché",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
-            "Relevé il y a 2 jours",
+            "Relevé aujourd'hui",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."

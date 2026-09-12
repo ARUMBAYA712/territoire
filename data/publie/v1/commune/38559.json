@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Total · 2375 ROUTE DE GRENOBLE · relevé hier",
+      "repere": "2375 ROUTE DE GRENOBLE · relevé hier",
       "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
       "aussi": {
         "rubrique": "transports"
@@ -763,13 +763,12 @@
       "titre": "Stations-service de la commune",
       "items": [
         {
-          "titre": "Total — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,250 €/L",
             "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
-            "Enseigne": "Total"
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)"
           },
           "etat": [
             "Relevé hier",
@@ -778,7 +777,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Super U — Vinay",
+          "titre": "Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -786,11 +785,10 @@
             "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement)",
-            "Enseigne": "Super U"
+            "Non distribué": "SP95 (définitivement)"
           },
           "etat": [
-            "Relevé hier",
+            "Relevé il y a 2 jours",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -806,7 +804,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -829,18 +827,17 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Intermarché — Tullins (hors territoire)",
+          "titre": "Tullins (hors territoire)",
           "details": {
             "Gazole": "2,349 €/L",
             "SP95-E10": "2,129 €/L",
             "SP98": "2,249 €/L",
             "Adresse": "Avenue de la Contamine, Tullins",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
-            "Enseigne": "Intermarché",
             "Distance": "11 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
