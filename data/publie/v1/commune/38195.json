@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-11",
+  "genere_le": "2026-09-12",
   "territoire": {
     "niveau": "commune",
     "code": "38195",
@@ -737,7 +737,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -746,6 +746,7 @@
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -766,7 +767,7 @@
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1367,7 +1368,7 @@
           }
         }
       ],
-      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

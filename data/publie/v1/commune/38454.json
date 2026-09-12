@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-11",
+  "genere_le": "2026-09-12",
   "territoire": {
     "niveau": "commune",
     "code": "38454",
@@ -759,13 +759,13 @@
             "Distance": "3 km du centre de la commune"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -775,6 +775,7 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc",
             "Distance": "3 km du centre de la commune"
           },
           "etat": [
@@ -784,7 +785,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -793,6 +794,7 @@
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U",
             "Distance": "9 km du centre de la commune"
           },
           "etat": [
@@ -1521,7 +1523,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Chambaran",
+            "Zone d'alerte": "Nappes de Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -1571,7 +1573,7 @@
           }
         }
       ],
-      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

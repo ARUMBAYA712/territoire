@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-11",
+  "genere_le": "2026-09-12",
   "territoire": {
     "niveau": "commune",
     "code": "38092",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,282 €/L · relevé aujourd'hui",
+      "repere": "Comptoir Énergie · Gazole 2,282 €/L · relevé aujourd'hui",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -647,13 +647,14 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Saint-Martin-en-Vercors (hors territoire)",
+          "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
           "details": {
             "Gazole": "2,282 €/L",
             "SP95": "2,155 €/L",
             "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+            "Enseigne": "Comptoir Énergie",
             "Distance": "5 km du centre de la commune"
           },
           "etat": [
@@ -663,7 +664,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Saint-Laurent-en-Royans (hors territoire)",
+          "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
           "details": {
             "Gazole": "2,330 €/L",
             "SP95": "2,210 €/L",
@@ -671,6 +672,7 @@
             "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+            "Enseigne": "Garage Magnan",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -1277,7 +1279,7 @@
           }
         }
       ],
-      "note": "Situation au 11/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

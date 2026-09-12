@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-11",
+  "genere_le": "2026-09-12",
   "territoire": {
     "niveau": "epci",
     "code": "200070431",
@@ -476,7 +476,7 @@
       "rubrique": "carburants",
       "rang": 10,
       "ancre": "stations-service",
-      "repere": "Vinay · relevé aujourd'hui",
+      "repere": "Total à Vinay · relevé hier",
       "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
       "aussi": {
         "rubrique": "transports"
@@ -761,21 +761,22 @@
       "titre": "Stations-service et prix relevés",
       "items": [
         {
-          "titre": "Vinay",
+          "titre": "Total — Vinay",
           "details": {
             "Gazole": "2,250 €/L",
             "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement), E85 (définitivement)"
+            "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+            "Enseigne": "Total"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -784,7 +785,8 @@
             "GPLc": "1,067 €/L",
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "E85 (définitivement)"
+            "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc"
           },
           "etat": [
             "Relevé aujourd'hui",
@@ -793,13 +795,14 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Saint-Just-de-Claix",
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+            "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie"
           },
           "etat": [
             "Relevé hier",
@@ -823,7 +826,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Vinay",
+          "titre": "Super U — Vinay",
           "details": {
             "Gazole": "2,279 €/L",
             "SP95-E10": "2,149 €/L",
@@ -831,7 +834,8 @@
             "E85": "0,839 €/L",
             "Adresse": "251, Rue de l'Europe, Vinay",
             "Accès": "Automate ouvert 24 h/24",
-            "Non distribué": "SP95 (définitivement)"
+            "Non distribué": "SP95 (définitivement)",
+            "Enseigne": "Super U"
           },
           "etat": [
             "Relevé hier",
@@ -850,7 +854,7 @@
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
           },
           "etat": [
-            "Relevé aujourd'hui",
+            "Relevé hier",
             "neutre"
           ],
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
