@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-12",
+  "genere_le": "2026-09-13",
   "territoire": {
     "niveau": "commune",
     "code": "38322",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,282 €/L · relevé hier",
+      "repere": "Comptoir Énergie · Gazole 2,282 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -632,13 +632,14 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Saint-Martin-en-Vercors (hors territoire)",
+          "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
           "details": {
             "Gazole": "2,282 €/L",
             "SP95": "2,155 €/L",
             "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+            "Enseigne": "Comptoir Énergie",
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
@@ -664,7 +665,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -674,6 +675,7 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc",
             "Distance": "10 km du centre de la commune"
           },
           "etat": [
@@ -1234,7 +1236,7 @@
           }
         }
       ],
-      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 13/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

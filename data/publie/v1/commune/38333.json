@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-12",
+  "genere_le": "2026-09-13",
   "territoire": {
     "niveau": "commune",
     "code": "38333",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,271 €/L · relevé hier",
+      "repere": "Intermarché · Gazole 2,271 €/L · relevé hier",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -707,7 +707,7 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Villard-de-Lans (hors territoire)",
+          "titre": "Intermarché — Villard-de-Lans (hors territoire)",
           "details": {
             "Gazole": "2,271 €/L",
             "SP95-E10": "2,083 €/L",
@@ -716,6 +716,7 @@
             "Adresse": "190 Rue des Machurons Zone des Geymonds, Villard-de-Lans",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement)",
+            "Enseigne": "Intermarché",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -725,13 +726,14 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Villard-de-Lans (hors territoire)",
+          "titre": "Avia — Villard-de-Lans (hors territoire)",
           "details": {
             "Gazole": "2,349 €/L",
             "SP95": "2,229 €/L",
             "SP98": "2,269 €/L",
             "Adresse": "531 AVENUE DU GENERAL DE GAULLE, Villard-de-Lans",
             "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement)",
+            "Enseigne": "Avia",
             "Distance": "8 km du centre de la commune"
           },
           "etat": [
@@ -741,13 +743,14 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Saint-Martin-en-Vercors (hors territoire)",
+          "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
           "details": {
             "Gazole": "2,282 €/L",
             "SP95": "2,155 €/L",
             "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+            "Enseigne": "Comptoir Énergie",
             "Distance": "11 km du centre de la commune"
           },
           "etat": [
@@ -1648,7 +1651,7 @@
           }
         }
       ],
-      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 13/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

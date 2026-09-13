@@ -1,6 +1,6 @@
 {
   "version_contrat": "1.0",
-  "genere_le": "2026-09-12",
+  "genere_le": "2026-09-13",
   "territoire": {
     "niveau": "commune",
     "code": "38370",
@@ -110,7 +110,7 @@
       "rubrique": "carburants",
       "rang": 15,
       "ancre": "stations-service",
-      "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
+      "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé il y a 2 jours",
       "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
       "aussi": {
         "rubrique": "transports"
@@ -691,13 +691,14 @@
       "titre": "Stations-service les plus proches",
       "items": [
         {
-          "titre": "Saint-Just-de-Claix",
+          "titre": "Comptoir Énergie — Saint-Just-de-Claix",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,119 €/L",
             "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+            "Enseigne": "Comptoir Énergie",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -707,7 +708,7 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Chatte",
+          "titre": "E.Leclerc — Chatte",
           "details": {
             "Gazole": "2,256 €/L",
             "SP95-E10": "2,086 €/L",
@@ -717,6 +718,7 @@
             "Adresse": "ZI LES GAMEUX, Chatte",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "E85 (définitivement)",
+            "Enseigne": "E.Leclerc",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -726,13 +728,14 @@
           "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
         },
         {
-          "titre": "Eymeux (hors territoire)",
+          "titre": "Total — Eymeux (hors territoire)",
           "details": {
             "Gazole": "2,250 €/L — relevé le 09/09/2026",
             "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
             "Adresse": "4030 Les Fauries - RN 532, Eymeux",
             "Accès": "Automate ouvert 24 h/24",
             "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+            "Enseigne": "Total",
             "Distance": "7 km du centre de la commune"
           },
           "etat": [
@@ -1579,7 +1582,7 @@
           ],
           "details": {
             "Type d'eau": "Eau potable (réseau)",
-            "Zone d'alerte": "Nappes de Chambaran",
+            "Zone d'alerte": "Chambaran",
             "En vigueur depuis": "20/08/2026",
             "Jusqu'au": "30/09/2026",
             "Usages concernés": 27
@@ -1629,7 +1632,7 @@
           }
         }
       ],
-      "note": "Situation au 12/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
+      "note": "Situation au 13/09/2026. Les arrêtés préfectoraux évoluent rapidement : en cas de doute, l'arrêté publié et affiché en mairie fait seul référence. Une commune peut relever de plusieurs zones d'alerte selon l'origine de l'eau."
     }
   ],
   "chroniques": [

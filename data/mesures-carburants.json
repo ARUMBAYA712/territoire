@@ -1,10 +1,13 @@
 {
- "genere_le": "2026-09-12",
+ "genere_le": "2026-09-13",
  "version": 1,
- "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr)",
- "licence": "Licence Ouverte 2.0",
+ "source": "Prix des carburants — flux instantané, ministère de l'Économie (data.economie.gouv.fr) · OpenStreetMap — enseignes des stations (contributeurs OSM)",
+ "licence": [
+  "Licence Ouverte 2.0",
+  "ODbL 1.0"
+ ],
  "frequence": "quotidienne",
- "releve_le": "2026-09-12T15:21+00:00",
+ "releve_le": "2026-09-13T05:21+00:00",
  "communes": {
   "38004": {
    "mesures": {
@@ -19,7 +22,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -33,22 +36,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "2 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -57,6 +61,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -66,13 +71,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
@@ -103,7 +109,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -117,13 +123,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -133,7 +140,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -141,6 +148,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -186,7 +194,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -200,7 +208,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -209,6 +217,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "2 km du centre de la commune"
        },
        "etat": [
@@ -218,16 +227,17 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -270,7 +280,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "repere": "E.Leclerc · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -284,7 +294,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -294,6 +304,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -330,7 +341,7 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -357,7 +368,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,359 €/L · relevé hier",
+     "repere": "Gazole 2,359 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -382,13 +393,13 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -398,6 +409,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -444,7 +456,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -458,22 +470,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -482,6 +495,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -491,13 +505,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -528,7 +543,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -542,7 +557,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -551,6 +566,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -560,22 +576,23 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Siméon-de-Bressieux (hors territoire)",
+       "titre": "Intermarché — Saint-Siméon-de-Bressieux (hors territoire)",
        "details": {
         "Gazole": "2,399 €/L",
         "SP95-E10": "2,159 €/L",
@@ -583,6 +600,7 @@
         "E85": "0,848 €/L",
         "Adresse": "Le Bizolle, Saint-Siméon-de-Bressieux",
         "Non distribué": "SP95 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
@@ -613,7 +631,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,282 €/L · relevé hier",
+     "repere": "Comptoir Énergie · Gazole 2,282 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -627,13 +645,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
        "details": {
         "Gazole": "2,282 €/L",
         "SP95": "2,155 €/L",
         "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -643,7 +662,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -651,6 +670,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -696,7 +716,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "ZI LES GAMEUX · relevé aujourd'hui",
+     "repere": "E.Leclerc · ZI LES GAMEUX · relevé aujourd'hui",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -722,7 +742,7 @@
      "titre": "Stations-service de la commune",
      "items": [
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -731,7 +751,8 @@
         "GPLc": "1,067 €/L",
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "E85 (définitivement)"
+        "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc"
        },
        "etat": [
         "Relevé aujourd'hui",
@@ -751,7 +772,7 @@
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -773,13 +794,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
@@ -810,7 +832,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,359 €/L · relevé hier",
+     "repere": "Gazole 2,359 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -835,13 +857,13 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -851,6 +873,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -897,7 +920,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,282 €/L · relevé hier",
+     "repere": "Comptoir Énergie · Gazole 2,282 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -911,13 +934,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
        "details": {
         "Gazole": "2,282 €/L",
         "SP95": "2,155 €/L",
         "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -927,7 +951,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -935,6 +959,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -981,7 +1006,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -995,7 +1020,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -1004,6 +1029,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -1029,16 +1055,17 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1065,7 +1092,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,349 €/L · relevé hier",
+     "repere": "Intermarché · Gazole 2,349 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1079,13 +1106,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -1095,24 +1123,25 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Avia — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,389 €/L",
+        "Gazole": "2,389 €/L — relevé le 09/09/2026",
         "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
         "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Avia",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
-        "neutre"
+        "Relevé il y a 3 jours",
+        "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -1120,6 +1149,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1180,7 +1210,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -1189,6 +1219,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -1209,7 +1240,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1236,7 +1267,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1250,7 +1281,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -1259,6 +1290,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1268,16 +1300,17 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -1320,7 +1353,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "repere": "E.Leclerc · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1334,7 +1367,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -1344,6 +1377,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -1364,19 +1398,20 @@
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Eymeux (hors territoire)",
+       "titre": "Total — Eymeux (hors territoire)",
        "details": {
         "Gazole": "2,250 €/L — relevé le 09/09/2026",
         "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+        "Enseigne": "Total",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
@@ -1407,7 +1442,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,397 €/L · relevé hier",
+     "repere": "Esso · Gazole 2,397 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1421,7 +1456,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Veurey-Voroize (hors territoire)",
+       "titre": "Esso — Veurey-Voroize (hors territoire)",
        "details": {
         "Gazole": "2,397 €/L",
         "SP95-E10": "2,250 €/L",
@@ -1429,6 +1464,7 @@
         "Adresse": "Route de Valence, Veurey-Voroize",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Esso",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -1438,7 +1474,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -1446,6 +1482,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1455,19 +1492,20 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Avia — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,389 €/L",
+        "Gazole": "2,389 €/L — relevé le 09/09/2026",
         "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
         "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Avia",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
-        "neutre"
+        "Relevé il y a 3 jours",
+        "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       }
@@ -1493,7 +1531,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,349 €/L · relevé hier",
+     "repere": "Intermarché · Gazole 2,349 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1507,13 +1545,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
@@ -1523,24 +1562,25 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Avia — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,389 €/L",
+        "Gazole": "2,389 €/L — relevé le 09/09/2026",
         "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
         "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Avia",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
-        "neutre"
+        "Relevé il y a 3 jours",
+        "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -1548,6 +1588,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -1619,13 +1660,13 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -1634,6 +1675,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -1664,7 +1706,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1678,30 +1720,13 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
-        "Distance": "6 km du centre de la commune"
-       },
-       "etat": [
-        "Relevé hier",
-        "neutre"
-       ],
-       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
-      },
-      {
-       "titre": "Vinay",
-       "details": {
-        "Gazole": "2,279 €/L",
-        "SP95-E10": "2,149 €/L",
-        "SP98": "2,229 €/L",
-        "E85": "0,839 €/L",
-        "Adresse": "251, Rue de l'Europe, Vinay",
-        "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1711,13 +1736,33 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Super U — Vinay",
+       "details": {
+        "Gazole": "2,279 €/L",
+        "SP95-E10": "2,149 €/L",
+        "SP98": "2,229 €/L",
+        "E85": "0,839 €/L",
+        "Adresse": "251, Rue de l'Europe, Vinay",
+        "Accès": "Automate ouvert 24 h/24",
+        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
+        "Distance": "6 km du centre de la commune"
+       },
+       "etat": [
+        "Relevé il y a 2 jours",
+        "neutre"
+       ],
+       "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
+      },
+      {
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
@@ -1748,7 +1793,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1762,22 +1807,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -1786,6 +1832,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -1795,13 +1842,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
@@ -1832,7 +1880,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1846,22 +1894,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -1869,6 +1918,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1878,13 +1928,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1915,7 +1966,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,330 €/L · relevé il y a 2 jours",
+     "repere": "Garage Magnan · Gazole 2,330 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -1929,7 +1980,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -1937,6 +1988,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -1946,13 +1998,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -1998,7 +2051,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,282 €/L · relevé hier",
+     "repere": "Comptoir Énergie · Gazole 2,282 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2012,13 +2065,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
        "details": {
         "Gazole": "2,282 €/L",
         "SP95": "2,155 €/L",
         "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2044,7 +2098,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -2054,6 +2108,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
@@ -2084,7 +2139,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2098,28 +2153,30 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2129,7 +2186,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -2138,6 +2195,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2168,7 +2226,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,271 €/L · relevé hier",
+     "repere": "Intermarché · Gazole 2,271 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2182,7 +2240,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Villard-de-Lans (hors territoire)",
+       "titre": "Intermarché — Villard-de-Lans (hors territoire)",
        "details": {
         "Gazole": "2,271 €/L",
         "SP95-E10": "2,083 €/L",
@@ -2191,6 +2249,7 @@
         "Adresse": "190 Rue des Machurons Zone des Geymonds, Villard-de-Lans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2200,13 +2259,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Villard-de-Lans (hors territoire)",
+       "titre": "Avia — Villard-de-Lans (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95": "2,229 €/L",
         "SP98": "2,269 €/L",
         "Adresse": "531 AVENUE DU GENERAL DE GAULLE, Villard-de-Lans",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement)",
+        "Enseigne": "Avia",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2216,13 +2276,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Martin-en-Vercors (hors territoire)",
+       "titre": "Comptoir Énergie — Saint-Martin-en-Vercors (hors territoire)",
        "details": {
         "Gazole": "2,282 €/L",
         "SP95": "2,155 €/L",
         "Adresse": "225 Rte de St Julien en Vercors, Saint-Martin-en-Vercors",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement), GPLc (définitivement), E10 (définitivement), SP98 (définitivement)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
@@ -2253,7 +2314,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2267,22 +2328,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -2291,6 +2353,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2300,7 +2363,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -2308,6 +2371,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2338,7 +2402,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2352,22 +2416,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -2376,6 +2441,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -2422,7 +2488,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,330 €/L · relevé il y a 2 jours",
+     "repere": "Garage Magnan · Gazole 2,330 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2436,7 +2502,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -2444,6 +2510,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -2453,13 +2520,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -2505,7 +2573,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,359 €/L · relevé hier",
+     "repere": "Gazole 2,359 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2530,13 +2598,13 @@
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -2546,6 +2614,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -2592,7 +2661,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,359 €/L · relevé hier",
+     "repere": "Gazole 2,359 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2617,13 +2686,13 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -2633,6 +2702,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -2679,7 +2749,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2693,13 +2763,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2709,7 +2780,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -2719,6 +2790,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2728,13 +2800,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Eymeux (hors territoire)",
+       "titre": "Total — Eymeux (hors territoire)",
        "details": {
         "Gazole": "2,250 €/L — relevé le 09/09/2026",
         "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+        "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2765,7 +2838,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2779,22 +2852,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -2803,6 +2877,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2812,7 +2887,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -2820,6 +2895,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "12 km du centre de la commune"
        },
        "etat": [
@@ -2850,7 +2926,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Gazole 2,256 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -2864,13 +2940,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -2880,13 +2957,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Eymeux (hors territoire)",
+       "titre": "Total — Eymeux (hors territoire)",
        "details": {
         "Gazole": "2,250 €/L — relevé le 09/09/2026",
         "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+        "Enseigne": "Total",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -2896,7 +2974,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -2906,6 +2984,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -2936,7 +3015,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "Quartier Clairivaux · relevé il y a 2 jours",
+     "repere": "Comptoir Énergie · Quartier Clairivaux · relevé il y a 2 jours",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -2962,13 +3041,14 @@
      "titre": "Stations-service de la commune",
      "items": [
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -2977,7 +3057,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Laurent-en-Royans (hors territoire)",
+       "titre": "Garage Magnan — Saint-Laurent-en-Royans (hors territoire)",
        "details": {
         "Gazole": "2,330 €/L",
         "SP95": "2,210 €/L — relevé le 09/09/2026",
@@ -2985,6 +3065,7 @@
         "Adresse": "Route de Saint-Thomas, Saint-Laurent-en-Royans",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (pour l'instant), GPLc (pour l'instant), E10 (pour l'instant)",
+        "Enseigne": "Garage Magnan",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -3009,13 +3090,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Eymeux (hors territoire)",
+       "titre": "Total — Eymeux (hors territoire)",
        "details": {
         "Gazole": "2,250 €/L — relevé le 09/09/2026",
         "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+        "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -3046,7 +3128,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé il y a 3 jours",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 3 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3060,13 +3142,14 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Eymeux (hors territoire)",
+       "titre": "Total — Eymeux (hors territoire)",
        "details": {
         "Gazole": "2,250 €/L — relevé le 09/09/2026",
         "SP95-E10": "1,990 €/L — relevé le 09/09/2026",
         "Adresse": "4030 Les Fauries - RN 532, Eymeux",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement), SP98 (pour l'instant)",
+        "Enseigne": "Total",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -3076,13 +3159,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -3092,7 +3176,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Paul-lès-Romans (hors territoire)",
+       "titre": "E.Leclerc — Saint-Paul-lès-Romans (hors territoire)",
        "details": {
         "Gazole": "2,251 €/L",
         "SP95-E10": "2,066 €/L",
@@ -3101,6 +3185,7 @@
         "E85": "0,824 €/L",
         "GPLc": "1,038 €/L",
         "Adresse": "95 RUE CLAIR, Saint-Paul-lès-Romans",
+        "Enseigne": "E.Leclerc",
         "Distance": "8 km du centre de la commune"
        },
        "etat": [
@@ -3131,7 +3216,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "2 avenue de ROMANS · relevé hier",
+     "repere": "2 avenue de ROMANS · relevé il y a 2 jours",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -3167,13 +3252,13 @@
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3183,6 +3268,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "1 km du centre de la commune"
        },
        "etat": [
@@ -3208,7 +3294,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -3217,6 +3303,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
@@ -3277,7 +3364,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3287,6 +3374,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -3307,7 +3395,7 @@
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3334,7 +3422,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,289 €/L · relevé hier",
+     "repere": "Carrefour · Gazole 2,289 €/L · relevé hier",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3348,7 +3436,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Carrefour — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,289 €/L",
         "SP95-E10": "2,129 €/L",
@@ -3356,6 +3444,7 @@
         "Adresse": "Route de Saint-Quentin S/ Isère, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Carrefour",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -3365,24 +3454,25 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Avia — Tullins (hors territoire)",
        "details": {
-        "Gazole": "2,389 €/L",
+        "Gazole": "2,389 €/L — relevé le 09/09/2026",
         "SP95-E10": "2,229 €/L — relevé le 07/09/2026",
         "SP98": "2,309 €/L — relevé le 07/09/2026",
         "Adresse": "Route de Saint-Quentin, Tullins",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Avia",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé il y a 2 jours",
-        "neutre"
+        "Relevé il y a 3 jours",
+        "attention"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Veurey-Voroize (hors territoire)",
+       "titre": "Esso — Veurey-Voroize (hors territoire)",
        "details": {
         "Gazole": "2,397 €/L",
         "SP95-E10": "2,250 €/L",
@@ -3390,6 +3480,7 @@
         "Adresse": "Route de Valence, Veurey-Voroize",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Esso",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -3420,7 +3511,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "repere": "E.Leclerc · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3434,7 +3525,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3444,6 +3535,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -3464,19 +3556,20 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -3559,13 +3652,13 @@
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3575,6 +3668,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "3 km du centre de la commune"
        },
        "etat": [
@@ -3584,7 +3678,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -3593,6 +3687,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "9 km du centre de la commune"
        },
        "etat": [
@@ -3664,13 +3759,13 @@
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3680,6 +3775,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
@@ -3710,7 +3806,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,256 €/L · relevé aujourd'hui",
+     "repere": "E.Leclerc · Gazole 2,256 €/L · relevé aujourd'hui",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3724,7 +3820,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -3734,6 +3830,7 @@
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -3754,19 +3851,20 @@
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -3827,7 +3925,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -3836,6 +3934,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "4 km du centre de la commune"
        },
        "etat": [
@@ -3856,7 +3955,7 @@
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3883,7 +3982,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,279 €/L · relevé il y a 2 jours",
+     "repere": "Super U · Gazole 2,279 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3897,7 +3996,7 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -3906,6 +4005,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -3915,16 +4015,17 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -3967,7 +4068,7 @@
      "rubrique": "carburants",
      "rang": 15,
      "ancre": "stations-service",
-     "repere": "Gazole 2,250 €/L · relevé hier",
+     "repere": "Total · Gazole 2,250 €/L · relevé il y a 2 jours",
      "explication": "Aucune station-service ne déclare de prix sur cette commune. La distance est mesurée à vol d'oiseau depuis le centre de la commune.",
      "aussi": {
       "rubrique": "transports"
@@ -3981,22 +4082,23 @@
      "titre": "Stations-service les plus proches",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total",
         "Distance": "5 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -4005,6 +4107,7 @@
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
         "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U",
         "Distance": "6 km du centre de la commune"
        },
        "etat": [
@@ -4014,13 +4117,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "7 km du centre de la commune"
        },
        "etat": [
@@ -4051,7 +4155,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "2375 ROUTE DE GRENOBLE · relevé hier",
+     "repere": "Total · 2375 ROUTE DE GRENOBLE · relevé il y a 2 jours",
      "explication": "Prix déclaré par le distributeur. Le prix affiché à la pompe fait seul foi.",
      "aussi": {
       "rubrique": "transports"
@@ -4077,21 +4181,22 @@
      "titre": "Stations-service de la commune",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement)"
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -4099,7 +4204,8 @@
         "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement)"
+        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4135,19 +4241,20 @@
         "Distance": "10 km du centre de la commune"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Tullins (hors territoire)",
+       "titre": "Intermarché — Tullins (hors territoire)",
        "details": {
         "Gazole": "2,349 €/L",
         "SP95-E10": "2,129 €/L",
         "SP98": "2,249 €/L",
         "Adresse": "Avenue de la Contamine, Tullins",
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)",
+        "Enseigne": "Intermarché",
         "Distance": "11 km du centre de la commune"
        },
        "etat": [
@@ -4180,7 +4287,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "Vinay · relevé hier",
+     "repere": "Total à Vinay · relevé il y a 2 jours",
      "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
      "aussi": {
       "rubrique": "transports"
@@ -4221,21 +4328,22 @@
      "titre": "Stations-service et prix relevés",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement)"
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -4244,7 +4352,8 @@
         "GPLc": "1,067 €/L",
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "E85 (définitivement)"
+        "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc"
        },
        "etat": [
         "Relevé aujourd'hui",
@@ -4253,13 +4362,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4283,7 +4393,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -4291,7 +4401,8 @@
         "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement)"
+        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4310,7 +4421,7 @@
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
@@ -4337,7 +4448,7 @@
      "rubrique": "carburants",
      "rang": 10,
      "ancre": "stations-service",
-     "repere": "Vinay · relevé hier",
+     "repere": "Total à Vinay · relevé il y a 2 jours",
      "explication": "Prix le plus bas relevé dans les stations du territoire, hors aires d'autoroute.",
      "aussi": {
       "rubrique": "transports"
@@ -4378,21 +4489,22 @@
      "titre": "Stations-service et prix relevés",
      "items": [
       {
-       "titre": "Vinay",
+       "titre": "Total — Vinay",
        "details": {
         "Gazole": "2,250 €/L",
         "Adresse": "2375 ROUTE DE GRENOBLE, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement), E85 (définitivement)"
+        "Non distribué": "SP95 (définitivement), E85 (définitivement)",
+        "Enseigne": "Total"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Chatte",
+       "titre": "E.Leclerc — Chatte",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,086 €/L",
@@ -4401,7 +4513,8 @@
         "GPLc": "1,067 €/L",
         "Adresse": "ZI LES GAMEUX, Chatte",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "E85 (définitivement)"
+        "Non distribué": "E85 (définitivement)",
+        "Enseigne": "E.Leclerc"
        },
        "etat": [
         "Relevé aujourd'hui",
@@ -4410,13 +4523,14 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Saint-Just-de-Claix",
+       "titre": "Comptoir Énergie — Saint-Just-de-Claix",
        "details": {
         "Gazole": "2,256 €/L",
         "SP95-E10": "2,119 €/L",
         "Adresse": "Quartier Clairivaux, Saint-Just-de-Claix",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)"
+        "Non distribué": "SP95 (pour l'instant), E85 (pour l'instant), GPLc (pour l'instant), SP98 (pour l'instant)",
+        "Enseigne": "Comptoir Énergie"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4440,7 +4554,7 @@
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
       },
       {
-       "titre": "Vinay",
+       "titre": "Super U — Vinay",
        "details": {
         "Gazole": "2,279 €/L",
         "SP95-E10": "2,149 €/L",
@@ -4448,7 +4562,8 @@
         "E85": "0,839 €/L",
         "Adresse": "251, Rue de l'Europe, Vinay",
         "Accès": "Automate ouvert 24 h/24",
-        "Non distribué": "SP95 (définitivement)"
+        "Non distribué": "SP95 (définitivement)",
+        "Enseigne": "Super U"
        },
        "etat": [
         "Relevé il y a 2 jours",
@@ -4467,7 +4582,7 @@
         "Non distribué": "SP95 (définitivement), E85 (définitivement), GPLc (définitivement)"
        },
        "etat": [
-        "Relevé hier",
+        "Relevé il y a 2 jours",
         "neutre"
        ],
        "texte": "Prix déclarés par le distributeur. Le prix affiché à la pompe fait seul foi."
